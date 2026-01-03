@@ -1,0 +1,3143 @@
+{
+  "$schema": "template-matrix-v1",
+  "version": "1.0.0",
+  "created": "2026-01-03",
+  "last_updated": "2026-01-03",
+  "description": "Comprehensive Australian construction template matrix with NRM Level 4 integration. Covers residential, commercial, healthcare, industrial, and education sectors with realistic GFA values and construction specifications.",
+  "metadata": {
+    "total_templates": 76,
+    "sectors": [
+      "residential",
+      "commercial",
+      "healthcare",
+      "industrial",
+      "education",
+      "civil"
+    ],
+    "swap_categories": [
+      "cladding",
+      "roofing",
+      "flooring",
+      "windows",
+      "kitchen",
+      "bathroom",
+      "pavement_surface",
+      "pipe_material",
+      "base_material",
+      "kerb_type"
+    ],
+    "wall_systems": [
+      "brick_veneer",
+      "cavity_brick_block",
+      "cavity_brick_metal_stud",
+      "rendered_masonry",
+      "metal_cladding",
+      "timber_frame"
+    ],
+    "default_location": "Australian suburban",
+    "nrm_compliance": "NRM Level 2 & 4"
+  },
+  "sectors": {
+    "residential": [
+      {
+        "template_id": "au-res-2bed-house-100",
+        "name": "2-Bedroom House",
+        "description": "Single storey detached house, 100m² GFA, brick veneer, steel roof, strip footings",
+        "building_type": "residential_house",
+        "sector": "residential",
+        "specifications": {
+          "gfa_m2": 100,
+          "storeys": 1,
+          "bedrooms": 2,
+          "bathrooms": 1,
+          "living_areas": 1,
+          "garage_spaces": 1,
+          "default_construction": "brick_veneer",
+          "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Strip Footings",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian suburban"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "cladding",
+          "roofing",
+          "flooring",
+          "windows",
+          "kitchen",
+          "bathroom"
+        ],
+        "tags": [
+          "residential",
+          "brick_veneer",
+          "single_storey",
+          "new_build",
+          "australia",
+          "2bed"
+        ]
+      },
+      {
+        "template_id": "au-res-3bed-house-150",
+        "name": "3-Bedroom House",
+        "description": "Single storey detached house, 150m² GFA, brick veneer, steel roof, strip footings",
+        "building_type": "residential_house",
+        "sector": "residential",
+        "specifications": {
+          "gfa_m2": 150,
+          "storeys": 1,
+          "bedrooms": 3,
+          "bathrooms": 2,
+          "living_areas": 2,
+          "garage_spaces": 2,
+          "default_construction": "brick_veneer",
+          "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Strip Footings",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian suburban"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "cladding",
+          "roofing",
+          "flooring",
+          "windows",
+          "kitchen",
+          "bathroom"
+        ],
+        "tags": [
+          "residential",
+          "brick_veneer",
+          "single_storey",
+          "new_build",
+          "australia",
+          "3bed"
+        ]
+      },
+      {
+        "template_id": "au-res-4bed-house-200",
+        "name": "4-Bedroom House",
+        "description": "Single storey detached house, 200m² GFA, brick veneer, steel roof, strip footings",
+        "building_type": "residential_house",
+        "sector": "residential",
+        "specifications": {
+          "gfa_m2": 200,
+          "storeys": 1,
+          "bedrooms": 4,
+          "bathrooms": 2,
+          "living_areas": 2,
+          "garage_spaces": 2,
+          "default_construction": "brick_veneer",
+          "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Strip Footings",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian suburban"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "cladding",
+          "roofing",
+          "flooring",
+          "windows",
+          "kitchen",
+          "bathroom"
+        ],
+        "tags": [
+          "residential",
+          "brick_veneer",
+          "single_storey",
+          "new_build",
+          "australia",
+          "4bed"
+        ]
+      },
+      {
+        "template_id": "au-res-5bed-house-280",
+        "name": "5-Bedroom House",
+        "description": "Single storey detached house, 280m² GFA, brick veneer, steel roof, strip footings",
+        "building_type": "residential_house",
+        "sector": "residential",
+        "specifications": {
+          "gfa_m2": 280,
+          "storeys": 1,
+          "bedrooms": 5,
+          "bathrooms": 3,
+          "living_areas": 3,
+          "garage_spaces": 2,
+          "default_construction": "brick_veneer",
+          "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Strip Footings",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian suburban"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "cladding",
+          "roofing",
+          "flooring",
+          "windows",
+          "kitchen",
+          "bathroom"
+        ],
+        "tags": [
+          "residential",
+          "brick_veneer",
+          "single_storey",
+          "new_build",
+          "australia",
+          "5bed"
+        ]
+      },
+      {
+        "template_id": "au-res-2bed-townhouse-90",
+        "name": "2-Bedroom Townhouse",
+        "description": "Townhouse, 90m² GFA, brick veneer, steel roof, slab on ground",
+        "building_type": "townhouse",
+        "sector": "residential",
+        "specifications": {
+          "gfa_m2": 90,
+          "storeys": 2,
+          "bedrooms": 2,
+          "bathrooms": 1,
+          "living_areas": 1,
+          "garage_spaces": 1,
+          "default_construction": "brick_veneer",
+          "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian suburban"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "cladding",
+          "roofing",
+          "flooring",
+          "windows",
+          "kitchen",
+          "bathroom"
+        ],
+        "tags": [
+          "residential",
+          "townhouse",
+          "brick_veneer",
+          "new_build",
+          "australia",
+          "2bed"
+        ]
+      },
+      {
+        "template_id": "au-res-3bed-townhouse-130",
+        "name": "3-Bedroom Townhouse",
+        "description": "Townhouse, 130m² GFA, brick veneer, steel roof, slab on ground",
+        "building_type": "townhouse",
+        "sector": "residential",
+        "specifications": {
+          "gfa_m2": 130,
+          "storeys": 2,
+          "bedrooms": 3,
+          "bathrooms": 2,
+          "living_areas": 2,
+          "garage_spaces": 1,
+          "default_construction": "brick_veneer",
+          "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian suburban"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "cladding",
+          "roofing",
+          "flooring",
+          "windows",
+          "kitchen",
+          "bathroom"
+        ],
+        "tags": [
+          "residential",
+          "townhouse",
+          "brick_veneer",
+          "new_build",
+          "australia",
+          "3bed"
+        ]
+      },
+      {
+        "template_id": "au-res-4bed-townhouse-170",
+        "name": "4-Bedroom Townhouse",
+        "description": "Townhouse, 170m² GFA, brick veneer, steel roof, slab on ground",
+        "building_type": "townhouse",
+        "sector": "residential",
+        "specifications": {
+          "gfa_m2": 170,
+          "storeys": 2,
+          "bedrooms": 4,
+          "bathrooms": 2,
+          "living_areas": 2,
+          "garage_spaces": 2,
+          "default_construction": "brick_veneer",
+          "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian suburban"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "cladding",
+          "roofing",
+          "flooring",
+          "windows",
+          "kitchen",
+          "bathroom"
+        ],
+        "tags": [
+          "residential",
+          "townhouse",
+          "brick_veneer",
+          "new_build",
+          "australia",
+          "4bed"
+        ]
+      },
+      {
+        "template_id": "au-res-2bed-duplex-85",
+        "name": "2-Bedroom Duplex (per side)",
+        "description": "Duplex unit, 85m² GFA per side, brick veneer, steel roof, slab on ground",
+        "building_type": "duplex",
+        "sector": "residential",
+        "specifications": {
+          "gfa_m2": 85,
+          "storeys": 1,
+          "bedrooms": 2,
+          "bathrooms": 1,
+          "living_areas": 1,
+          "garage_spaces": 1,
+          "default_construction": "brick_veneer",
+          "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian suburban"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "cladding",
+          "roofing",
+          "flooring",
+          "windows",
+          "kitchen",
+          "bathroom"
+        ],
+        "tags": [
+          "residential",
+          "duplex",
+          "brick_veneer",
+          "new_build",
+          "australia",
+          "2bed"
+        ]
+      },
+      {
+        "template_id": "au-res-3bed-duplex-125",
+        "name": "3-Bedroom Duplex (per side)",
+        "description": "Duplex unit, 125m² GFA per side, brick veneer, steel roof, slab on ground",
+        "building_type": "duplex",
+        "sector": "residential",
+        "specifications": {
+          "gfa_m2": 125,
+          "storeys": 1,
+          "bedrooms": 3,
+          "bathrooms": 2,
+          "living_areas": 2,
+          "garage_spaces": 1,
+          "default_construction": "brick_veneer",
+          "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian suburban"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "cladding",
+          "roofing",
+          "flooring",
+          "windows",
+          "kitchen",
+          "bathroom"
+        ],
+        "tags": [
+          "residential",
+          "duplex",
+          "brick_veneer",
+          "new_build",
+          "australia",
+          "3bed"
+        ]
+      },
+      {
+        "template_id": "au-res-4bed-duplex-165",
+        "name": "4-Bedroom Duplex (per side)",
+        "description": "Duplex unit, 165m² GFA per side, brick veneer, steel roof, slab on ground",
+        "building_type": "duplex",
+        "sector": "residential",
+        "specifications": {
+          "gfa_m2": 165,
+          "storeys": 1,
+          "bedrooms": 4,
+          "bathrooms": 2,
+          "living_areas": 2,
+          "garage_spaces": 2,
+          "default_construction": "brick_veneer",
+          "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian suburban"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "cladding",
+          "roofing",
+          "flooring",
+          "windows",
+          "kitchen",
+          "bathroom"
+        ],
+        "tags": [
+          "residential",
+          "duplex",
+          "brick_veneer",
+          "new_build",
+          "australia",
+          "4bed"
+        ]
+      },
+      {
+        "template_id": "au-res-1bed-apartment-55",
+        "name": "1-Bedroom Apartment",
+        "description": "Apartment unit, 55m² GFA, cavity brick with metal stud, flat roof, slab on ground",
+        "building_type": "residential_unit",
+        "sector": "residential",
+        "specifications": {
+          "gfa_m2": 55,
+          "storeys": 1,
+          "bedrooms": 1,
+          "bathrooms": 1,
+          "living_areas": 1,
+          "garage_spaces": 0,
+          "default_construction": "cavity_brick_metal_stud",
+          "construction_notes": "110mm face brick + 90mm cavity + 90mm metal stud + 13mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Metal Deck",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian suburban"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring",
+          "kitchen",
+          "bathroom"
+        ],
+        "tags": [
+          "residential",
+          "apartment",
+          "cavity_brick_metal_stud",
+          "new_build",
+          "australia",
+          "1bed"
+        ]
+      },
+      {
+        "template_id": "au-res-2bed-apartment-75",
+        "name": "2-Bedroom Apartment",
+        "description": "Apartment unit, 75m² GFA, cavity brick with metal stud, flat roof, slab on ground",
+        "building_type": "residential_unit",
+        "sector": "residential",
+        "specifications": {
+          "gfa_m2": 75,
+          "storeys": 1,
+          "bedrooms": 2,
+          "bathrooms": 1,
+          "living_areas": 1,
+          "garage_spaces": 0,
+          "default_construction": "cavity_brick_metal_stud",
+          "construction_notes": "110mm face brick + 90mm cavity + 90mm metal stud + 13mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Metal Deck",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian suburban"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring",
+          "kitchen",
+          "bathroom"
+        ],
+        "tags": [
+          "residential",
+          "apartment",
+          "cavity_brick_metal_stud",
+          "new_build",
+          "australia",
+          "2bed"
+        ]
+      },
+      {
+        "template_id": "au-res-3bed-apartment-105",
+        "name": "3-Bedroom Apartment",
+        "description": "Apartment unit, 105m² GFA, cavity brick with metal stud, flat roof, slab on ground",
+        "building_type": "residential_unit",
+        "sector": "residential",
+        "specifications": {
+          "gfa_m2": 105,
+          "storeys": 1,
+          "bedrooms": 3,
+          "bathrooms": 2,
+          "living_areas": 1,
+          "garage_spaces": 0,
+          "default_construction": "cavity_brick_metal_stud",
+          "construction_notes": "110mm face brick + 90mm cavity + 90mm metal stud + 13mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Metal Deck",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian suburban"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring",
+          "kitchen",
+          "bathroom"
+        ],
+        "tags": [
+          "residential",
+          "apartment",
+          "cavity_brick_metal_stud",
+          "new_build",
+          "australia",
+          "3bed"
+        ]
+      },
+      {
+        "template_id": "au-res-4bed-house-premium-220",
+        "name": "4-Bedroom House Premium",
+        "description": "Single storey detached house, 220m² GFA, brick veneer, steel roof, premium finishes",
+        "building_type": "residential_house",
+        "sector": "residential",
+        "specifications": {
+          "gfa_m2": 220,
+          "storeys": 1,
+          "bedrooms": 4,
+          "bathrooms": 3,
+          "living_areas": 3,
+          "garage_spaces": 2,
+          "default_construction": "brick_veneer",
+          "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Strip Footings",
+          "ceiling_height_m": 2.7,
+          "finish_level": "premium",
+          "project_type": "new_build",
+          "location_context": "Australian suburban"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "cladding",
+          "roofing",
+          "flooring",
+          "windows",
+          "kitchen",
+          "bathroom"
+        ],
+        "tags": [
+          "residential",
+          "brick_veneer",
+          "single_storey",
+          "premium",
+          "new_build",
+          "australia",
+          "4bed"
+        ]
+      },
+      {
+        "template_id": "au-res-5bed-house-premium-320",
+        "name": "5-Bedroom House Premium",
+        "description": "Single storey detached house, 320m² GFA, brick veneer, steel roof, premium finishes",
+        "building_type": "residential_house",
+        "sector": "residential",
+        "specifications": {
+          "gfa_m2": 320,
+          "storeys": 1,
+          "bedrooms": 5,
+          "bathrooms": 3,
+          "living_areas": 3,
+          "garage_spaces": 3,
+          "default_construction": "brick_veneer",
+          "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Strip Footings",
+          "ceiling_height_m": 2.7,
+          "finish_level": "premium",
+          "project_type": "new_build",
+          "location_context": "Australian suburban"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "cladding",
+          "roofing",
+          "flooring",
+          "windows",
+          "kitchen",
+          "bathroom"
+        ],
+        "tags": [
+          "residential",
+          "brick_veneer",
+          "single_storey",
+          "premium",
+          "new_build",
+          "australia",
+          "5bed"
+        ]
+      },
+      {
+        "template_id": "au-res-3bed-house-two-storey-170",
+        "name": "3-Bedroom House Two-Storey",
+        "description": "Two storey detached house, 170m² GFA, brick veneer, steel roof, strip footings",
+        "building_type": "residential_house",
+        "sector": "residential",
+        "specifications": {
+          "gfa_m2": 170,
+          "storeys": 2,
+          "bedrooms": 3,
+          "bathrooms": 2,
+          "living_areas": 2,
+          "garage_spaces": 2,
+          "default_construction": "brick_veneer",
+          "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Strip Footings",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian suburban"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "cladding",
+          "roofing",
+          "flooring",
+          "windows",
+          "kitchen",
+          "bathroom"
+        ],
+        "tags": [
+          "residential",
+          "brick_veneer",
+          "two_storey",
+          "new_build",
+          "australia",
+          "3bed"
+        ]
+      },
+      {
+        "template_id": "au-res-4bed-house-two-storey-230",
+        "name": "4-Bedroom House Two-Storey",
+        "description": "Two storey detached house, 230m² GFA, brick veneer, steel roof, strip footings",
+        "building_type": "residential_house",
+        "sector": "residential",
+        "specifications": {
+          "gfa_m2": 230,
+          "storeys": 2,
+          "bedrooms": 4,
+          "bathrooms": 2,
+          "living_areas": 2,
+          "garage_spaces": 2,
+          "default_construction": "brick_veneer",
+          "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Strip Footings",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian suburban"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "cladding",
+          "roofing",
+          "flooring",
+          "windows",
+          "kitchen",
+          "bathroom"
+        ],
+        "tags": [
+          "residential",
+          "brick_veneer",
+          "two_storey",
+          "new_build",
+          "australia",
+          "4bed"
+        ]
+      },
+      {
+        "template_id": "au-res-5bed-house-two-storey-300",
+        "name": "5-Bedroom House Two-Storey",
+        "description": "Two storey detached house, 300m² GFA, brick veneer, steel roof, strip footings",
+        "building_type": "residential_house",
+        "sector": "residential",
+        "specifications": {
+          "gfa_m2": 300,
+          "storeys": 2,
+          "bedrooms": 5,
+          "bathrooms": 3,
+          "living_areas": 3,
+          "garage_spaces": 2,
+          "default_construction": "brick_veneer",
+          "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Strip Footings",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian suburban"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "cladding",
+          "roofing",
+          "flooring",
+          "windows",
+          "kitchen",
+          "bathroom"
+        ],
+        "tags": [
+          "residential",
+          "brick_veneer",
+          "two_storey",
+          "new_build",
+          "australia",
+          "5bed"
+        ]
+      },
+      {
+        "template_id": "au-res-4bed-rural-250",
+        "name": "4-Bedroom Rural House",
+        "description": "Single storey rural/acreage house, 250m² GFA, brick veneer, steel roof, strip footings",
+        "building_type": "residential_house",
+        "sector": "residential",
+        "specifications": {
+          "gfa_m2": 250,
+          "storeys": 1,
+          "bedrooms": 4,
+          "bathrooms": 2,
+          "living_areas": 2,
+          "garage_spaces": 2,
+          "default_construction": "brick_veneer",
+          "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Strip Footings",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian rural"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "cladding",
+          "roofing",
+          "flooring",
+          "windows",
+          "kitchen",
+          "bathroom"
+        ],
+        "tags": [
+          "residential",
+          "brick_veneer",
+          "rural",
+          "new_build",
+          "australia",
+          "4bed"
+        ]
+      },
+      {
+        "template_id": "au-res-5bed-acreage-350",
+        "name": "5-Bedroom Acreage House",
+        "description": "Single storey acreage house, 350m² GFA, brick veneer, steel roof, strip footings",
+        "building_type": "residential_house",
+        "sector": "residential",
+        "specifications": {
+          "gfa_m2": 350,
+          "storeys": 1,
+          "bedrooms": 5,
+          "bathrooms": 3,
+          "living_areas": 3,
+          "garage_spaces": 3,
+          "default_construction": "brick_veneer",
+          "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Strip Footings",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian acreage"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "cladding",
+          "roofing",
+          "flooring",
+          "windows",
+          "kitchen",
+          "bathroom"
+        ],
+        "tags": [
+          "residential",
+          "brick_veneer",
+          "acreage",
+          "new_build",
+          "australia",
+          "5bed"
+        ]
+      }
+    ],
+    "commercial": [
+      {
+        "template_id": "au-com-office-small-150",
+        "name": "Small Office",
+        "description": "Single storey small office, 150m² GFA, cavity brick with metal stud, flat roof, slab on ground",
+        "building_type": "commercial_office",
+        "sector": "commercial",
+        "specifications": {
+          "gfa_m2": 150,
+          "storeys": 1,
+          "default_construction": "cavity_brick_metal_stud",
+          "construction_notes": "110mm face brick + 90mm cavity + 90mm metal stud + 13mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Metal Deck with membrane",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 3.0,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian business park"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "cladding",
+          "flooring",
+          "windows"
+        ],
+        "tags": [
+          "commercial",
+          "office",
+          "single_storey",
+          "new_build",
+          "australia",
+          "small"
+        ]
+      },
+      {
+        "template_id": "au-com-office-medium-400",
+        "name": "Medium Office",
+        "description": "Two storey medium office, 400m² GFA, cavity brick with metal stud, flat roof with metal deck",
+        "building_type": "commercial_office",
+        "sector": "commercial",
+        "specifications": {
+          "gfa_m2": 400,
+          "storeys": 2,
+          "default_construction": "cavity_brick_metal_stud",
+          "construction_notes": "110mm face brick + 90mm cavity + 90mm metal stud + 13mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Metal Deck with membrane",
+          "foundation_type": "Slab on Ground with piers",
+          "ceiling_height_m": 3.0,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian suburban business park"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "cladding",
+          "flooring",
+          "windows"
+        ],
+        "tags": [
+          "commercial",
+          "office",
+          "two_storey",
+          "new_build",
+          "australia",
+          "medium"
+        ]
+      },
+      {
+        "template_id": "au-com-office-large-1200",
+        "name": "Large Office",
+        "description": "Multi-storey large office, 1200m² GFA, cavity brick with metal stud, flat roof",
+        "building_type": "commercial_office",
+        "sector": "commercial",
+        "specifications": {
+          "gfa_m2": 1200,
+          "storeys": 3,
+          "default_construction": "cavity_brick_metal_stud",
+          "construction_notes": "110mm face brick + 90mm cavity + 90mm metal stud + 13mm plasterboard",
+          "default_roofing": "metal",
+          "roof_type": "Metal Deck with membrane",
+          "foundation_type": "Reinforced concrete slab",
+          "ceiling_height_m": 3.2,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian CBD"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "cladding",
+          "flooring",
+          "windows"
+        ],
+        "tags": [
+          "commercial",
+          "office",
+          "multi_storey",
+          "new_build",
+          "australia",
+          "large"
+        ]
+      },
+      {
+        "template_id": "au-com-retail-small-80",
+        "name": "Small Retail Shop",
+        "description": "Single storey small retail shop, 80m² GFA, rendered masonry, steel roof",
+        "building_type": "retail_shop",
+        "sector": "commercial",
+        "specifications": {
+          "gfa_m2": 80,
+          "storeys": 1,
+          "default_construction": "rendered_masonry",
+          "construction_notes": "200mm concrete block + render both sides",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 3.0,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian shopping centre"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring",
+          "windows"
+        ],
+        "tags": [
+          "commercial",
+          "retail",
+          "single_storey",
+          "new_build",
+          "australia",
+          "small"
+        ]
+      },
+      {
+        "template_id": "au-com-retail-medium-150",
+        "name": "Medium Retail Shop",
+        "description": "Single storey medium retail shop, 150m² GFA, rendered masonry, steel roof",
+        "building_type": "retail_shop",
+        "sector": "commercial",
+        "specifications": {
+          "gfa_m2": 150,
+          "storeys": 1,
+          "default_construction": "rendered_masonry",
+          "construction_notes": "200mm concrete block + render both sides",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 3.0,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian shopping centre"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring",
+          "windows"
+        ],
+        "tags": [
+          "commercial",
+          "retail",
+          "single_storey",
+          "new_build",
+          "australia",
+          "medium"
+        ]
+      },
+      {
+        "template_id": "au-com-retail-large-300",
+        "name": "Large Retail Shop",
+        "description": "Single storey large retail shop, 300m² GFA, rendered masonry, steel roof",
+        "building_type": "retail_shop",
+        "sector": "commercial",
+        "specifications": {
+          "gfa_m2": 300,
+          "storeys": 1,
+          "default_construction": "rendered_masonry",
+          "construction_notes": "200mm concrete block + render both sides",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 3.0,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian shopping centre"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring",
+          "windows"
+        ],
+        "tags": [
+          "commercial",
+          "retail",
+          "single_storey",
+          "new_build",
+          "australia",
+          "large"
+        ]
+      },
+      {
+        "template_id": "au-com-cafe-small-100",
+        "name": "Small Cafe/Restaurant",
+        "description": "Single storey small cafe/restaurant, 100m² GFA, rendered masonry, steel roof",
+        "building_type": "cafe_restaurant",
+        "sector": "commercial",
+        "specifications": {
+          "gfa_m2": 100,
+          "storeys": 1,
+          "default_construction": "rendered_masonry",
+          "construction_notes": "200mm concrete block + render both sides",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 3.0,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian urban"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring"
+        ],
+        "tags": [
+          "commercial",
+          "cafe_restaurant",
+          "single_storey",
+          "new_build",
+          "australia",
+          "small"
+        ]
+      },
+      {
+        "template_id": "au-com-cafe-medium-200",
+        "name": "Medium Cafe/Restaurant",
+        "description": "Single storey medium cafe/restaurant, 200m² GFA, rendered masonry, steel roof",
+        "building_type": "cafe_restaurant",
+        "sector": "commercial",
+        "specifications": {
+          "gfa_m2": 200,
+          "storeys": 1,
+          "default_construction": "rendered_masonry",
+          "construction_notes": "200mm concrete block + render both sides",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 3.0,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian urban"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring"
+        ],
+        "tags": [
+          "commercial",
+          "cafe_restaurant",
+          "single_storey",
+          "new_build",
+          "australia",
+          "medium"
+        ]
+      },
+      {
+        "template_id": "au-com-food-court-500",
+        "name": "Food Court",
+        "description": "Single storey food court, 500m² GFA, rendered masonry, steel roof",
+        "building_type": "food_court",
+        "sector": "commercial",
+        "specifications": {
+          "gfa_m2": 500,
+          "storeys": 1,
+          "default_construction": "rendered_masonry",
+          "construction_notes": "200mm concrete block + render both sides",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 3.5,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian shopping centre"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring"
+        ],
+        "tags": [
+          "commercial",
+          "food_court",
+          "single_storey",
+          "new_build",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-com-bar-pub-250",
+        "name": "Bar/Pub",
+        "description": "Single storey bar/pub, 250m² GFA, rendered masonry, steel roof",
+        "building_type": "bar_pub",
+        "sector": "commercial",
+        "specifications": {
+          "gfa_m2": 250,
+          "storeys": 1,
+          "default_construction": "rendered_masonry",
+          "construction_notes": "200mm concrete block + render both sides",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 3.2,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian urban"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring"
+        ],
+        "tags": [
+          "commercial",
+          "bar_pub",
+          "single_storey",
+          "new_build",
+          "australia"
+        ]
+      }
+    ],
+    "healthcare": [
+      {
+        "template_id": "au-hlth-clinic-small-150",
+        "name": "Small Medical Clinic",
+        "description": "Single storey small medical clinic, 150m² GFA, rendered masonry, metal roof, slab on ground",
+        "building_type": "medical_clinic",
+        "sector": "healthcare",
+        "specifications": {
+          "gfa_m2": 150,
+          "storeys": 1,
+          "default_construction": "rendered_masonry",
+          "construction_notes": "200mm concrete block + render both sides",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian medical precinct"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring"
+        ],
+        "tags": [
+          "healthcare",
+          "medical",
+          "clinic",
+          "single_storey",
+          "new_build",
+          "australia",
+          "small"
+        ]
+      },
+      {
+        "template_id": "au-hlth-clinic-medium-250",
+        "name": "Medium Medical Clinic",
+        "description": "Single storey medium medical clinic, 250m² GFA, rendered masonry, metal roof, slab on ground",
+        "building_type": "medical_clinic",
+        "sector": "healthcare",
+        "specifications": {
+          "gfa_m2": 250,
+          "storeys": 1,
+          "default_construction": "rendered_masonry",
+          "construction_notes": "200mm concrete block + render both sides",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian medical precinct"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring"
+        ],
+        "tags": [
+          "healthcare",
+          "medical",
+          "clinic",
+          "single_storey",
+          "new_build",
+          "australia",
+          "medium"
+        ]
+      },
+      {
+        "template_id": "au-hlth-clinic-large-500",
+        "name": "Large Medical Clinic",
+        "description": "Single storey large medical clinic, 500m² GFA, rendered masonry, metal roof, slab on ground",
+        "building_type": "medical_clinic",
+        "sector": "healthcare",
+        "specifications": {
+          "gfa_m2": 500,
+          "storeys": 1,
+          "default_construction": "rendered_masonry",
+          "construction_notes": "200mm concrete block + render both sides",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian medical precinct"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring"
+        ],
+        "tags": [
+          "healthcare",
+          "medical",
+          "clinic",
+          "single_storey",
+          "new_build",
+          "australia",
+          "large"
+        ]
+      },
+      {
+        "template_id": "au-hlth-dental-small-120",
+        "name": "Small Dental Surgery",
+        "description": "Single storey small dental surgery, 120m² GFA, rendered masonry, metal roof, slab on ground",
+        "building_type": "dental_surgery",
+        "sector": "healthcare",
+        "specifications": {
+          "gfa_m2": 120,
+          "storeys": 1,
+          "default_construction": "rendered_masonry",
+          "construction_notes": "200mm concrete block + render both sides",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian medical precinct"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring"
+        ],
+        "tags": [
+          "healthcare",
+          "dental",
+          "surgery",
+          "single_storey",
+          "new_build",
+          "australia",
+          "small"
+        ]
+      },
+      {
+        "template_id": "au-hlth-dental-medium-200",
+        "name": "Medium Dental Surgery",
+        "description": "Single storey medium dental surgery, 200m² GFA, rendered masonry, metal roof, slab on ground",
+        "building_type": "dental_surgery",
+        "sector": "healthcare",
+        "specifications": {
+          "gfa_m2": 200,
+          "storeys": 1,
+          "default_construction": "rendered_masonry",
+          "construction_notes": "200mm concrete block + render both sides",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian medical precinct"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring"
+        ],
+        "tags": [
+          "healthcare",
+          "dental",
+          "surgery",
+          "single_storey",
+          "new_build",
+          "australia",
+          "medium"
+        ]
+      },
+      {
+        "template_id": "au-hlth-agedcare-small-600",
+        "name": "Small Aged Care Facility",
+        "description": "Multi-storey small aged care facility, 600m² GFA, cavity brick block, metal roof",
+        "building_type": "aged_care",
+        "sector": "healthcare",
+        "specifications": {
+          "gfa_m2": 600,
+          "storeys": 2,
+          "default_construction": "cavity_brick_block",
+          "construction_notes": "110mm face brick + 90mm cavity + 200mm concrete block",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Slab on Ground with piers",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian aged care precinct"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring"
+        ],
+        "tags": [
+          "healthcare",
+          "aged_care",
+          "multi_storey",
+          "new_build",
+          "australia",
+          "small"
+        ]
+      },
+      {
+        "template_id": "au-hlth-agedcare-medium-1200",
+        "name": "Medium Aged Care Facility",
+        "description": "Multi-storey medium aged care facility, 1200m² GFA, cavity brick block, metal roof",
+        "building_type": "aged_care",
+        "sector": "healthcare",
+        "specifications": {
+          "gfa_m2": 1200,
+          "storeys": 3,
+          "default_construction": "cavity_brick_block",
+          "construction_notes": "110mm face brick + 90mm cavity + 200mm concrete block",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Reinforced concrete slab",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian aged care precinct"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring"
+        ],
+        "tags": [
+          "healthcare",
+          "aged_care",
+          "multi_storey",
+          "new_build",
+          "australia",
+          "medium"
+        ]
+      },
+      {
+        "template_id": "au-hlth-pharmacy-120",
+        "name": "Pharmacy",
+        "description": "Single storey pharmacy, 120m² GFA, rendered masonry, metal roof, slab on ground",
+        "building_type": "pharmacy",
+        "sector": "healthcare",
+        "specifications": {
+          "gfa_m2": 120,
+          "storeys": 1,
+          "default_construction": "rendered_masonry",
+          "construction_notes": "200mm concrete block + render both sides",
+          "default_roofing": "metal",
+          "roof_type": "Steel (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian shopping centre"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring"
+        ],
+        "tags": [
+          "healthcare",
+          "pharmacy",
+          "single_storey",
+          "new_build",
+          "australia"
+        ]
+      }
+    ],
+    "industrial": [
+      {
+        "template_id": "au-ind-warehouse-small-400",
+        "name": "Small Warehouse",
+        "description": "Single storey small warehouse, 400m² GFA, metal cladding on steel frame, metal deck roof",
+        "building_type": "warehouse",
+        "sector": "industrial",
+        "specifications": {
+          "gfa_m2": 400,
+          "storeys": 1,
+          "default_construction": "metal_cladding",
+          "construction_notes": "Insulated metal cladding on steel portal frame",
+          "default_roofing": "metal",
+          "roof_type": "Metal Deck (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 6.0,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian industrial estate"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring"
+        ],
+        "tags": [
+          "industrial",
+          "warehouse",
+          "single_storey",
+          "new_build",
+          "australia",
+          "small"
+        ]
+      },
+      {
+        "template_id": "au-ind-warehouse-medium-800",
+        "name": "Medium Warehouse",
+        "description": "Single storey medium warehouse, 800m² GFA, metal cladding on steel frame, metal deck roof",
+        "building_type": "warehouse",
+        "sector": "industrial",
+        "specifications": {
+          "gfa_m2": 800,
+          "storeys": 1,
+          "default_construction": "metal_cladding",
+          "construction_notes": "Insulated metal cladding on steel portal frame",
+          "default_roofing": "metal",
+          "roof_type": "Metal Deck (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 6.0,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian industrial estate"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring"
+        ],
+        "tags": [
+          "industrial",
+          "warehouse",
+          "single_storey",
+          "new_build",
+          "australia",
+          "medium"
+        ]
+      },
+      {
+        "template_id": "au-ind-warehouse-large-2000",
+        "name": "Large Warehouse",
+        "description": "Single storey large warehouse, 2000m² GFA, metal cladding on steel frame, metal deck roof",
+        "building_type": "warehouse",
+        "sector": "industrial",
+        "specifications": {
+          "gfa_m2": 2000,
+          "storeys": 1,
+          "default_construction": "metal_cladding",
+          "construction_notes": "Insulated metal cladding on steel portal frame",
+          "default_roofing": "metal",
+          "roof_type": "Metal Deck (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 7.5,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian industrial estate"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring"
+        ],
+        "tags": [
+          "industrial",
+          "warehouse",
+          "single_storey",
+          "new_build",
+          "australia",
+          "large"
+        ]
+      },
+      {
+        "template_id": "au-ind-workshop-small-200",
+        "name": "Small Workshop",
+        "description": "Single storey small workshop, 200m² GFA, metal cladding on steel frame, metal deck roof",
+        "building_type": "workshop",
+        "sector": "industrial",
+        "specifications": {
+          "gfa_m2": 200,
+          "storeys": 1,
+          "default_construction": "metal_cladding",
+          "construction_notes": "Insulated metal cladding on steel portal frame",
+          "default_roofing": "metal",
+          "roof_type": "Metal Deck (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 5.0,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian industrial estate"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring"
+        ],
+        "tags": [
+          "industrial",
+          "workshop",
+          "single_storey",
+          "new_build",
+          "australia",
+          "small"
+        ]
+      },
+      {
+        "template_id": "au-ind-workshop-medium-500",
+        "name": "Medium Workshop",
+        "description": "Single storey medium workshop, 500m² GFA, metal cladding on steel frame, metal deck roof",
+        "building_type": "workshop",
+        "sector": "industrial",
+        "specifications": {
+          "gfa_m2": 500,
+          "storeys": 1,
+          "default_construction": "metal_cladding",
+          "construction_notes": "Insulated metal cladding on steel portal frame",
+          "default_roofing": "metal",
+          "roof_type": "Metal Deck (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 5.5,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian industrial estate"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring"
+        ],
+        "tags": [
+          "industrial",
+          "workshop",
+          "single_storey",
+          "new_build",
+          "australia",
+          "medium"
+        ]
+      },
+      {
+        "template_id": "au-ind-light-industrial-300",
+        "name": "Light Industrial Unit",
+        "description": "Single storey light industrial unit, 300m² GFA, metal cladding on steel frame, metal deck roof",
+        "building_type": "light_industrial",
+        "sector": "industrial",
+        "specifications": {
+          "gfa_m2": 300,
+          "storeys": 1,
+          "default_construction": "metal_cladding",
+          "construction_notes": "Insulated metal cladding on steel portal frame",
+          "default_roofing": "metal",
+          "roof_type": "Metal Deck (Colorbond)",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 5.0,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian industrial estate"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "flooring"
+        ],
+        "tags": [
+          "industrial",
+          "light_industrial",
+          "single_storey",
+          "new_build",
+          "australia"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "template_id": "au-edu-childcare-400",
+        "name": "Childcare Centre",
+        "description": "Single storey childcare centre, 400m² GFA, brick veneer, tile roof, slab on ground",
+        "building_type": "childcare_centre",
+        "sector": "education",
+        "specifications": {
+          "gfa_m2": 400,
+          "storeys": 1,
+          "default_construction": "brick_veneer",
+          "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+          "default_roofing": "tile",
+          "roof_type": "Concrete Tiles",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian suburban"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "roofing",
+          "flooring"
+        ],
+        "tags": [
+          "education",
+          "childcare",
+          "single_storey",
+          "new_build",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-edu-classroom-600",
+        "name": "Classroom Block",
+        "description": "Single storey classroom block, 600m² GFA, brick veneer, tile roof, slab on ground",
+        "building_type": "classroom_block",
+        "sector": "education",
+        "specifications": {
+          "gfa_m2": 600,
+          "storeys": 1,
+          "default_construction": "brick_veneer",
+          "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+          "default_roofing": "tile",
+          "roof_type": "Concrete Tiles",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 2.7,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian school grounds"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "roofing",
+          "flooring"
+        ],
+        "tags": [
+          "education",
+          "classroom",
+          "single_storey",
+          "new_build",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-edu-stem-lab-350",
+        "name": "STEM Lab",
+        "description": "Single storey STEM lab, 350m² GFA, brick veneer, tile roof, slab on ground",
+        "building_type": "stem_lab",
+        "sector": "education",
+        "specifications": {
+          "gfa_m2": 350,
+          "storeys": 1,
+          "default_construction": "brick_veneer",
+          "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+          "default_roofing": "tile",
+          "roof_type": "Concrete Tiles",
+          "foundation_type": "Slab on Ground",
+          "ceiling_height_m": 2.8,
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian school grounds"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "roofing",
+          "flooring"
+        ],
+        "tags": [
+          "education",
+          "stem_lab",
+          "single_storey",
+          "new_build",
+          "australia"
+        ]
+      }
+    ],
+    "civil": [
+      {
+        "template_id": "au-civ-road-2lane-asphalt-1km",
+        "name": "Two-Lane Sealed Road (Asphalt) - 1km",
+        "description": "Standard two-lane sealed road with asphalt surface, suitable for suburban and rural arterial roads",
+        "building_type": "road",
+        "sector": "civil",
+        "specifications": {
+          "length_m": 1000,
+          "width_m": 7.0,
+          "total_area_m2": 7000,
+          "road_type": "sealed",
+          "surface_type": "asphalt",
+          "lanes": 2,
+          "design_speed_kmh": 80,
+          "traffic_classification": "medium",
+          "pavement_thickness_mm": 490,
+          "default_construction": "asphalt_on_crushed_rock",
+          "construction_notes": "40mm asphalt + 200mm crushed rock base + 250mm selected fill subbase",
+          "foundation_type": "pavement_layers",
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian suburban arterial"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "pavement_surface",
+          "base_material"
+        ],
+        "tags": [
+          "civil",
+          "road",
+          "sealed",
+          "asphalt",
+          "two-lane",
+          "arterial",
+          "new_build",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-road-4lane-concrete-1km",
+        "name": "Four-Lane Divided Road (Concrete) - 1km",
+        "description": "Four-lane divided highway with concrete pavement, median strip, suitable for high-volume urban/peri-urban corridors",
+        "building_type": "road",
+        "sector": "civil",
+        "specifications": {
+          "length_m": 1000,
+          "width_m": 14.0,
+          "total_area_m2": 14000,
+          "road_type": "sealed",
+          "surface_type": "concrete",
+          "lanes": 4,
+          "median_width_m": 2.0,
+          "design_speed_kmh": 100,
+          "traffic_classification": "heavy",
+          "pavement_thickness_mm": 700,
+          "default_construction": "reinforced_concrete",
+          "construction_notes": "250mm reinforced concrete + 150mm lean mix concrete + 300mm selected granular subbase",
+          "foundation_type": "pavement_layers",
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian urban highway"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "pavement_surface",
+          "base_material"
+        ],
+        "tags": [
+          "civil",
+          "road",
+          "sealed",
+          "concrete",
+          "four-lane",
+          "divided",
+          "highway",
+          "new_build",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-road-unsealed-gravel-500m",
+        "name": "Unsealed Gravel Road - 500m",
+        "description": "Single-lane unsealed gravel road suitable for rural access and low-volume traffic",
+        "building_type": "road",
+        "sector": "civil",
+        "specifications": {
+          "length_m": 500,
+          "width_m": 6.0,
+          "total_area_m2": 3000,
+          "road_type": "unsealed",
+          "surface_type": "gravel",
+          "lanes": 1,
+          "design_speed_kmh": 60,
+          "traffic_classification": "light",
+          "pavement_thickness_mm": 350,
+          "default_construction": "gravel_on_compacted_natural",
+          "construction_notes": "150mm gravel + 200mm compacted natural material",
+          "foundation_type": "pavement_layers",
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian rural access"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "base_material"
+        ],
+        "tags": [
+          "civil",
+          "road",
+          "unsealed",
+          "gravel",
+          "single-lane",
+          "rural",
+          "new_build",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-road-resurfacing-asphalt-1km",
+        "name": "Road Resurfacing (Asphalt Overlay) - 1km",
+        "description": "Asphalt overlay resurfacing for existing two-lane road rehabilitation",
+        "building_type": "road",
+        "sector": "civil",
+        "specifications": {
+          "length_m": 1000,
+          "width_m": 7.0,
+          "total_area_m2": 7000,
+          "road_type": "sealed",
+          "surface_type": "asphalt",
+          "lanes": 2,
+          "design_speed_kmh": 80,
+          "traffic_classification": "medium",
+          "pavement_thickness_mm": 50,
+          "default_construction": "asphalt_overlay",
+          "construction_notes": "50mm asphalt overlay with 30mm milling preparation",
+          "foundation_type": "existing_pavement",
+          "finish_level": "standard",
+          "project_type": "resurfacing",
+          "location_context": "Australian suburban arterial"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "pavement_surface"
+        ],
+        "tags": [
+          "civil",
+          "road",
+          "sealed",
+          "asphalt",
+          "resurfacing",
+          "rehabilitation",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-road-widening-2to4lane-500m",
+        "name": "Road Widening (2-Lane to 4-Lane) - 500m",
+        "description": "Widening existing two-lane road to four lanes with asphalt surface",
+        "building_type": "road",
+        "sector": "civil",
+        "specifications": {
+          "length_m": 500,
+          "existing_width_m": 7.0,
+          "new_width_m": 14.0,
+          "total_area_m2": 7000,
+          "widening_area_m2": 3500,
+          "road_type": "sealed",
+          "surface_type": "asphalt",
+          "lanes": 4,
+          "design_speed_kmh": 80,
+          "traffic_classification": "heavy",
+          "pavement_thickness_mm": 490,
+          "default_construction": "asphalt_on_crushed_rock",
+          "construction_notes": "40mm asphalt + 200mm crushed rock base + 250mm selected fill subbase",
+          "foundation_type": "pavement_layers",
+          "finish_level": "standard",
+          "project_type": "widening",
+          "location_context": "Australian urban arterial"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "pavement_surface",
+          "base_material"
+        ],
+        "tags": [
+          "civil",
+          "road",
+          "sealed",
+          "asphalt",
+          "widening",
+          "expansion",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-road-industrial-heavy-500m",
+        "name": "Industrial Heavy-Duty Road - 500m",
+        "description": "Heavy-duty road for industrial areas, designed for frequent heavy vehicle traffic including B-doubles",
+        "building_type": "road",
+        "sector": "civil",
+        "specifications": {
+          "length_m": 500,
+          "width_m": 10.0,
+          "total_area_m2": 5000,
+          "road_type": "sealed",
+          "surface_type": "asphalt",
+          "lanes": 2,
+          "design_speed_kmh": 60,
+          "traffic_classification": "heavy",
+          "load_capacity": "heavy_vehicles_b-double",
+          "pavement_thickness_mm": 610,
+          "default_construction": "heavy_duty_asphalt",
+          "construction_notes": "60mm heavy duty asphalt C320 + 250mm cemented crushed rock + 300mm selected granular subbase",
+          "foundation_type": "pavement_layers",
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian industrial estate"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "pavement_surface",
+          "base_material"
+        ],
+        "tags": [
+          "civil",
+          "road",
+          "sealed",
+          "asphalt",
+          "industrial",
+          "heavy-duty",
+          "new_build",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-road-local-access-500m",
+        "name": "Local Access Road (Residential) - 500m",
+        "description": "Light-duty local access road for residential subdivisions with asphalt surface",
+        "building_type": "road",
+        "sector": "civil",
+        "specifications": {
+          "length_m": 500,
+          "width_m": 5.5,
+          "total_area_m2": 2750,
+          "road_type": "sealed",
+          "surface_type": "asphalt",
+          "lanes": 1,
+          "design_speed_kmh": 50,
+          "traffic_classification": "light",
+          "pavement_thickness_mm": 380,
+          "kerb_and_channel": true,
+          "footpath_included": true,
+          "default_construction": "asphalt_on_crushed_rock",
+          "construction_notes": "30mm asphalt + 150mm crushed rock base + 200mm selected fill subbase",
+          "foundation_type": "pavement_layers",
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian residential subdivision"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "pavement_surface",
+          "base_material",
+          "kerb_type"
+        ],
+        "tags": [
+          "civil",
+          "road",
+          "sealed",
+          "asphalt",
+          "local",
+          "residential",
+          "new_build",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-road-rural-collector-1km",
+        "name": "Rural Collector Road (Asphalt) - 1km",
+        "description": "Two-lane rural collector road with asphalt surface, connecting rural communities",
+        "building_type": "road",
+        "sector": "civil",
+        "specifications": {
+          "length_m": 1000,
+          "width_m": 8.0,
+          "total_area_m2": 8000,
+          "road_type": "sealed",
+          "surface_type": "asphalt",
+          "lanes": 2,
+          "design_speed_kmh": 100,
+          "traffic_classification": "medium",
+          "pavement_thickness_mm": 490,
+          "default_construction": "asphalt_on_crushed_rock",
+          "construction_notes": "40mm asphalt + 200mm crushed rock base + 250mm selected fill subbase",
+          "foundation_type": "pavement_layers",
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian rural collector"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "pavement_surface",
+          "base_material"
+        ],
+        "tags": [
+          "civil",
+          "road",
+          "sealed",
+          "asphalt",
+          "two-lane",
+          "rural",
+          "new_build",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-sewer-150mm-pvc-100m",
+        "name": "Sewer Main - 150mm PVC",
+        "description": "Sewer main, 150mm PVC pipe, 100m base length, 2m average depth, standard bedding",
+        "building_type": "sewer_main",
+        "sector": "civil",
+        "specifications": {
+          "length_m": 100,
+          "pipe_type": "sewer",
+          "pipe_material": "pvc_pipe",
+          "pipe_diameter_mm": 150,
+          "average_depth_m": 2.0,
+          "bedding_type": "class_2_bedding",
+          "soil_type": "mixed",
+          "terrain": "flat",
+          "access": "standard",
+          "default_construction": "pvc_pipe",
+          "construction_notes": "150mm PVC sewer pipe with Class 2 bedding at 2m average depth",
+          "foundation_type": "bedded_trench",
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian urban residential"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "pipe_material"
+        ],
+        "tags": [
+          "civil",
+          "sewer",
+          "pipe",
+          "pvc",
+          "150mm",
+          "new_build",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-sewer-225mm-pvc-100m",
+        "name": "Sewer Main - 225mm PVC",
+        "description": "Sewer main, 225mm PVC pipe, 100m base length, 2.5m average depth, deep excavation",
+        "building_type": "sewer_main",
+        "sector": "civil",
+        "specifications": {
+          "length_m": 100,
+          "pipe_type": "sewer",
+          "pipe_material": "pvc_pipe",
+          "pipe_diameter_mm": 225,
+          "average_depth_m": 2.5,
+          "bedding_type": "class_2_bedding",
+          "soil_type": "mixed",
+          "terrain": "flat",
+          "access": "standard",
+          "default_construction": "pvc_pipe",
+          "construction_notes": "225mm PVC sewer pipe with Class 2 bedding at 2.5m average depth",
+          "foundation_type": "bedded_trench",
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian urban commercial/trunk"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "pipe_material"
+        ],
+        "tags": [
+          "civil",
+          "sewer",
+          "pipe",
+          "pvc",
+          "225mm",
+          "new_build",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-water-100mm-dicl-100m",
+        "name": "Water Main - 100mm DICL",
+        "description": "Water main, 100mm ductile iron cement lined pipe, 100m base length, 1.5m average depth, residential",
+        "building_type": "water_main",
+        "sector": "civil",
+        "specifications": {
+          "length_m": 100,
+          "pipe_type": "water",
+          "pipe_material": "dicl_pipe",
+          "pipe_diameter_mm": 100,
+          "average_depth_m": 1.5,
+          "bedding_type": "sand_bedding",
+          "soil_type": "mixed",
+          "terrain": "flat",
+          "access": "standard",
+          "default_construction": "dicl_pipe",
+          "construction_notes": "100mm ductile iron cement lined pipe with sand bedding at 1.5m average depth",
+          "foundation_type": "bedded_trench",
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian urban residential"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "pipe_material"
+        ],
+        "tags": [
+          "civil",
+          "water",
+          "pipe",
+          "dicl",
+          "100mm",
+          "new_build",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-water-200mm-dicl-100m",
+        "name": "Water Main - 200mm DICL",
+        "description": "Water main, 200mm ductile iron cement lined pipe, 100m base length, 2m average depth, commercial",
+        "building_type": "water_main",
+        "sector": "civil",
+        "specifications": {
+          "length_m": 100,
+          "pipe_type": "water",
+          "pipe_material": "dicl_pipe",
+          "pipe_diameter_mm": 200,
+          "average_depth_m": 2.0,
+          "bedding_type": "sand_bedding",
+          "soil_type": "mixed",
+          "terrain": "flat",
+          "access": "standard",
+          "default_construction": "dicl_pipe",
+          "construction_notes": "200mm ductile iron cement lined pipe with sand bedding at 2m average depth",
+          "foundation_type": "bedded_trench",
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian urban commercial"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "pipe_material"
+        ],
+        "tags": [
+          "civil",
+          "water",
+          "pipe",
+          "dicl",
+          "200mm",
+          "new_build",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-stormwater-375mm-rcp-100m",
+        "name": "Stormwater Drain - 375mm RCP",
+        "description": "Stormwater drain, 375mm reinforced concrete pipe, 100m base length, 2m average depth, gravity system",
+        "building_type": "stormwater_drain",
+        "sector": "civil",
+        "specifications": {
+          "length_m": 100,
+          "pipe_type": "stormwater",
+          "pipe_material": "rcp_pipe",
+          "pipe_diameter_mm": 375,
+          "average_depth_m": 2.0,
+          "bedding_type": "class_2_bedding",
+          "soil_type": "mixed",
+          "terrain": "flat",
+          "access": "standard",
+          "default_construction": "rcp_pipe",
+          "construction_notes": "375mm reinforced concrete pipe with Class 2 bedding at 2m average depth",
+          "foundation_type": "bedded_trench",
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian urban gravity system"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "pipe_material"
+        ],
+        "tags": [
+          "civil",
+          "stormwater",
+          "pipe",
+          "rcp",
+          "375mm",
+          "new_build",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-stormwater-600mm-rcp-100m",
+        "name": "Stormwater Drain - 600mm RCP",
+        "description": "Stormwater drain, 600mm reinforced concrete pipe, 100m base length, 3m average depth, trunk main",
+        "building_type": "stormwater_drain",
+        "sector": "civil",
+        "specifications": {
+          "length_m": 100,
+          "pipe_type": "stormwater",
+          "pipe_material": "rcp_pipe",
+          "pipe_diameter_mm": 600,
+          "average_depth_m": 3.0,
+          "bedding_type": "class_2_bedding",
+          "soil_type": "mixed",
+          "terrain": "flat",
+          "access": "standard",
+          "default_construction": "rcp_pipe",
+          "construction_notes": "600mm reinforced concrete pipe with Class 2 bedding at 3m average depth",
+          "foundation_type": "bedded_trench",
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian urban trunk main"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "pipe_material"
+        ],
+        "tags": [
+          "civil",
+          "stormwater",
+          "pipe",
+          "rcp",
+          "600mm",
+          "new_build",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-earthwork-cut-clay-1000m3",
+        "name": "Bulk Earthwork - Cut (Clay)",
+        "description": "Bulk excavation in clay, 1000m³ base volume, benched batter slopes, off-site disposal",
+        "building_type": "earthwork_cut",
+        "sector": "civil",
+        "specifications": {
+          "volume_m3": 1000,
+          "earthwork_type": "cut",
+          "soil_type": "clay",
+          "bulking_factor": 1.25,
+          "batter_slope": "1:2",
+          "disposal_method": "off_site",
+          "terrain": "rolling",
+          "access": "standard",
+          "default_construction": "bulk_excavation",
+          "construction_notes": "Bulk excavation in clay with 1.25 bulking factor, 1:2 batter slopes",
+          "foundation_type": "earthwork",
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian civil construction"
+        },
+        "is_active": true,
+        "applicable_swaps": [],
+        "tags": [
+          "civil",
+          "earthwork",
+          "excavation",
+          "cut",
+          "clay",
+          "bulk",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-earthwork-fill-select-1000m3",
+        "name": "Bulk Earthwork - Fill (Select)",
+        "description": "Bulk fill placement with select material, 1000m³ base volume, 95% compaction modified, layered placement",
+        "building_type": "earthwork_fill",
+        "sector": "civil",
+        "specifications": {
+          "volume_m3": 1000,
+          "earthwork_type": "fill",
+          "soil_type": "select_fill",
+          "bulking_factor": 0.9,
+          "compaction_requirement": "95_percent_modified",
+          "compaction_standard": "structural",
+          "layer_thickness_mm": 250,
+          "batter_slope": "1:2",
+          "terrain": "rolling",
+          "access": "standard",
+          "default_construction": "select_fill",
+          "construction_notes": "Select fill with 95% compaction modified, 250mm layers, 1:2 batter slopes",
+          "foundation_type": "earthwork",
+          "finish_level": "compacted",
+          "project_type": "new_build",
+          "location_context": "Australian civil construction"
+        },
+        "is_active": true,
+        "applicable_swaps": [],
+        "tags": [
+          "civil",
+          "earthwork",
+          "fill",
+          "select",
+          "compaction",
+          "structural",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-siteprep-small-1ha",
+        "name": "Site Preparation - Small",
+        "description": "Site preparation for 1 hectare, 300mm topsoil strip, stockpile on-site, clearing and grubbing",
+        "building_type": "site_preparation",
+        "sector": "civil",
+        "specifications": {
+          "area_m2": 10000,
+          "volume_m3": 3000,
+          "earthwork_type": "site_prep",
+          "soil_type": "topsoil",
+          "strip_depth_mm": 300,
+          "bulking_factor": 1.15,
+          "disposal_method": "stockpile_onsite",
+          "terrain": "rolling",
+          "access": "standard",
+          "vegetation_density": "moderate",
+          "default_construction": "site_prep",
+          "construction_notes": "300mm topsoil strip, clearing and grubbing, stockpile on-site",
+          "foundation_type": "earthwork",
+          "finish_level": "stripped",
+          "project_type": "new_build",
+          "location_context": "Australian civil construction"
+        },
+        "is_active": true,
+        "applicable_swaps": [],
+        "tags": [
+          "civil",
+          "earthwork",
+          "site_prep",
+          "topsoil",
+          "clearing",
+          "small",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-siteprep-large-5ha",
+        "name": "Site Preparation - Large",
+        "description": "Site preparation for 5 hectares, 300mm topsoil strip, off-site disposal, clearing and grubbing",
+        "building_type": "site_preparation",
+        "sector": "civil",
+        "specifications": {
+          "area_m2": 50000,
+          "volume_m3": 15000,
+          "earthwork_type": "site_prep",
+          "soil_type": "topsoil",
+          "strip_depth_mm": 300,
+          "bulking_factor": 1.15,
+          "disposal_method": "off_site",
+          "terrain": "rolling",
+          "access": "standard",
+          "vegetation_density": "moderate",
+          "default_construction": "site_prep",
+          "construction_notes": "300mm topsoil strip, clearing and grubbing, off-site disposal",
+          "foundation_type": "earthwork",
+          "finish_level": "stripped",
+          "project_type": "new_build",
+          "location_context": "Australian civil construction"
+        },
+        "is_active": true,
+        "applicable_swaps": [],
+        "tags": [
+          "civil",
+          "earthwork",
+          "site_prep",
+          "topsoil",
+          "clearing",
+          "large",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-excavation-rock-500m3",
+        "name": "Excavation - Rock",
+        "description": "Rock excavation 500m³ base volume, rock breaker and controlled blasting methods, off-site disposal",
+        "building_type": "rock_excavation",
+        "sector": "civil",
+        "specifications": {
+          "volume_m3": 500,
+          "earthwork_type": "rock_excavation",
+          "soil_type": "rock",
+          "rock_type": "weathered_granite",
+          "excavation_method": "rock_breaker_blasting",
+          "bulking_factor": 1.6,
+          "batter_slope": "1:1",
+          "disposal_method": "off_site",
+          "terrain": "rocky",
+          "access": "difficult",
+          "default_construction": "rock_excavation",
+          "construction_notes": "Rock excavation with rock breaker and controlled blasting, 1.6 bulking factor",
+          "foundation_type": "earthwork",
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian civil construction"
+        },
+        "is_active": true,
+        "applicable_swaps": [],
+        "tags": [
+          "civil",
+          "earthwork",
+          "excavation",
+          "rock",
+          "blasting",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-drainage-channel-lined-100m",
+        "name": "Open Channel Drainage - Lined",
+        "description": "Open drainage channel, concrete lined, 100m base length, 1.5m width, urban stormwater",
+        "building_type": "drainage_channel",
+        "sector": "civil",
+        "specifications": {
+          "length_m": 100,
+          "width_m": 1.5,
+          "drainage_type": "open_channel",
+          "lining_type": "concrete",
+          "channel_depth_m": 0.8,
+          "side_slopes": "1:2",
+          "flow_capacity_class": "medium",
+          "soil_type": "mixed",
+          "terrain": "flat",
+          "access": "standard",
+          "default_construction": "concrete_lined_channel",
+          "construction_notes": "Concrete lined open channel, 100m length x 1.5m width x 0.8m depth",
+          "foundation_type": "channel",
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian urban stormwater"
+        },
+        "is_active": true,
+        "applicable_swaps": [],
+        "tags": [
+          "civil",
+          "drainage",
+          "channel",
+          "concrete",
+          "lined",
+          "stormwater",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-drainage-channel-grass-100m",
+        "name": "Open Channel Drainage - Grass",
+        "description": "Open drainage channel, grassed swale, 100m base length, 2m width, low flow capacity",
+        "building_type": "drainage_channel",
+        "sector": "civil",
+        "specifications": {
+          "length_m": 100,
+          "width_m": 2.0,
+          "drainage_type": "open_channel",
+          "lining_type": "grass",
+          "channel_depth_m": 0.6,
+          "side_slopes": "1:3",
+          "flow_capacity_class": "low",
+          "soil_type": "mixed",
+          "terrain": "flat",
+          "access": "standard",
+          "default_construction": "grass_swale",
+          "construction_notes": "Grassed swale, 100m length x 2m width x 0.6m depth",
+          "foundation_type": "channel",
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian urban stormwater"
+        },
+        "is_active": true,
+        "applicable_swaps": [],
+        "tags": [
+          "civil",
+          "drainage",
+          "channel",
+          "grass",
+          "swale",
+          "stormwater",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-drainage-basin-small-500m2",
+        "name": "Detention Basin - Small",
+        "description": "Small detention basin, 500m² surface area, 1.5m depth, outlet structure with orifice, 750m³ storage",
+        "building_type": "detention_basin",
+        "sector": "civil",
+        "specifications": {
+          "area_m2": 500,
+          "volume_m3": 750,
+          "drainage_type": "detention_basin",
+          "basin_depth_m": 1.5,
+          "outlet_structure": "pit_and_orifice",
+          "lining_type": "grass",
+          "storage_capacity_m3": 750,
+          "flow_capacity_class": "low",
+          "soil_type": "mixed",
+          "terrain": "flat",
+          "access": "standard",
+          "default_construction": "detention_basin",
+          "construction_notes": "Small detention basin, 500m² x 1.5m depth, 750m³ storage capacity",
+          "foundation_type": "basin",
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian urban stormwater"
+        },
+        "is_active": true,
+        "applicable_swaps": [],
+        "tags": [
+          "civil",
+          "drainage",
+          "basin",
+          "detention",
+          "small",
+          "stormwater",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-drainage-basin-large-2000m2",
+        "name": "Detention Basin - Large",
+        "description": "Large detention basin, 2000m² surface area, 2.5m depth, outlet structure with bypass weir, 5000m³ storage",
+        "building_type": "detention_basin",
+        "sector": "civil",
+        "specifications": {
+          "area_m2": 2000,
+          "volume_m3": 5000,
+          "drainage_type": "detention_basin",
+          "basin_depth_m": 2.5,
+          "outlet_structure": "structure_and_bypass_weir",
+          "lining_type": "grass",
+          "storage_capacity_m3": 5000,
+          "flow_capacity_class": "high",
+          "soil_type": "mixed",
+          "terrain": "flat",
+          "access": "standard",
+          "default_construction": "detention_basin",
+          "construction_notes": "Large detention basin, 2000m² x 2.5m depth, 5000m³ storage capacity",
+          "foundation_type": "basin",
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian urban stormwater"
+        },
+        "is_active": true,
+        "applicable_swaps": [],
+        "tags": [
+          "civil",
+          "drainage",
+          "basin",
+          "detention",
+          "large",
+          "stormwater",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-drainage-kerb-gutter-100m",
+        "name": "Kerb & Gutter",
+        "description": "Standard kerb and gutter, 100m base length, extruded concrete profile, 150mm height, urban street",
+        "building_type": "kerb_gutter",
+        "sector": "civil",
+        "specifications": {
+          "length_m": 100,
+          "drainage_type": "kerb_gutter",
+          "profile_type": "standard_extruded",
+          "kerb_height_mm": 150,
+          "gutter_width_mm": 400,
+          "material": "concrete",
+          "finish_type": "extruded",
+          "flow_capacity_class": "low",
+          "soil_type": "mixed",
+          "terrain": "flat",
+          "access": "standard",
+          "default_construction": "kerb_gutter",
+          "construction_notes": "Standard extruded concrete kerb and gutter, 150mm height, 400mm gutter width",
+          "foundation_type": "kerb",
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian urban street"
+        },
+        "is_active": true,
+        "applicable_swaps": [
+          "kerb_type"
+        ],
+        "tags": [
+          "civil",
+          "drainage",
+          "kerb",
+          "gutter",
+          "concrete",
+          "street",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-retaining-concrete-low-1.5m",
+        "name": "Concrete Retaining Wall - Low (1.5m)",
+        "description": "Low-height concrete retaining wall (1.5m) - L-shaped gravity design, suitable for residential applications",
+        "building_type": "retaining_wall",
+        "sector": "civil",
+        "specifications": {
+          "wall_height_m": 1.5,
+          "wall_length_m": 20,
+          "wall_thickness_mm": 200,
+          "wall_system": "L-shaped gravity retaining wall",
+          "foundation_type": "Reinforced concrete footing (450mm x 300mm)",
+          "foundation_depth_m": 0.3,
+          "concrete_grade": "N32",
+          "reinforcement": "N12 bars @ 300mm centres",
+          "drainage": "100mm agricultural pipe with gravel backfill",
+          "soil_conditions": "Class H (sandy clay) - moderate reactivity",
+          "engineering_required": false,
+          "terrain": "moderate_slope",
+          "access": "standard",
+          "default_construction": "concrete_gravity_wall",
+          "construction_notes": "L-shaped gravity retaining wall, 200mm thick, N32 concrete",
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian residential"
+        },
+        "is_active": true,
+        "applicable_swaps": [],
+        "tags": [
+          "civil",
+          "retaining_wall",
+          "concrete",
+          "low-height",
+          "residential",
+          "gravity-wall",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-retaining-concrete-medium-3m",
+        "name": "Concrete Retaining Wall - Medium (3m)",
+        "description": "Medium-height concrete retaining wall (3m) - Cantilever design with engineered footing",
+        "building_type": "retaining_wall",
+        "sector": "civil",
+        "specifications": {
+          "wall_height_m": 3.0,
+          "wall_length_m": 20,
+          "wall_thickness_mm": 250,
+          "wall_system": "Cantilever retaining wall with reinforced concrete footing",
+          "foundation_type": "Reinforced concrete pad footing (1200mm x 600mm)",
+          "foundation_depth_m": 0.6,
+          "concrete_grade": "N40",
+          "reinforcement": "N16 bars @ 200mm centres vertical, N12 @ 300mm horizontal",
+          "drainage": "150mm slotted drainage pipe with gravel backfill",
+          "soil_conditions": "Class H to M - moderate to high reactivity",
+          "engineering_required": true,
+          "terrain": "moderate_slope",
+          "access": "standard",
+          "default_construction": "cantilever_wall",
+          "construction_notes": "Cantilever retaining wall, 250mm thick, N40 concrete, engineered design",
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian commercial/residential"
+        },
+        "is_active": true,
+        "applicable_swaps": [],
+        "tags": [
+          "civil",
+          "retaining_wall",
+          "concrete",
+          "medium-height",
+          "cantilever",
+          "engineered",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-retaining-concrete-high-6m",
+        "name": "Concrete Retaining Wall - High (6m)",
+        "description": "High-height concrete retaining wall (6m) - Anchored/tieback cantilever system, specialist engineering",
+        "building_type": "retaining_wall",
+        "sector": "civil",
+        "specifications": {
+          "wall_height_m": 6.0,
+          "wall_length_m": 20,
+          "wall_thickness_mm": 350,
+          "wall_system": "Anchored cantilever retaining wall with ground anchors",
+          "foundation_type": "Reinforced concrete spread footing (2000mm x 1000mm)",
+          "foundation_depth_m": 1.0,
+          "concrete_grade": "N50",
+          "reinforcement": "N20 bars @ 200mm centres, heavy mesh, anchor embedment zones",
+          "anchors": "Post-tensioned ground anchors @ 2-3m centres, 150-200kN capacity",
+          "drainage": "200mm slotted drainage pipe with gravel layer, weepholes @ 2m centres",
+          "soil_conditions": "Class M to E - high to extreme reactivity",
+          "engineering_required": true,
+          "terrain": "steep_slope",
+          "access": "specialist",
+          "default_construction": "anchored_wall",
+          "construction_notes": "Anchored cantilever wall, 350mm thick, N50 concrete, specialist engineering",
+          "finish_level": "standard",
+          "project_type": "new_build",
+          "location_context": "Australian commercial/infrastructure"
+        },
+        "is_active": true,
+        "applicable_swaps": [],
+        "tags": [
+          "civil",
+          "retaining_wall",
+          "concrete",
+          "high-height",
+          "anchored",
+          "specialist",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-retaining-masonry-2m",
+        "name": "Masonry Retaining Wall (2m)",
+        "description": "Medium-height masonry retaining wall (2m) - Mortared concrete block construction",
+        "building_type": "retaining_wall",
+        "sector": "civil",
+        "specifications": {
+          "wall_height_m": 2.0,
+          "wall_length_m": 20,
+          "wall_thickness_mm": 200,
+          "wall_system": "Reinforced mortared concrete block retaining wall",
+          "block_type": "200mm concrete masonry units (CMU)",
+          "foundation_type": "Reinforced concrete strip footing (600mm x 400mm)",
+          "foundation_depth_m": 0.4,
+          "concrete_grade": "N32",
+          "reinforcement": "N12 vertical bars @ 400mm centres, N12 horizontal bond beam @ every 4th course",
+          "mortar": "M3 mortar (cement:lime:sand 1:1:6)",
+          "drainage": "100mm agricultural pipe with gravel backfill",
+          "soil_conditions": "Class H to M - moderate to high reactivity",
+          "engineering_required": true,
+          "terrain": "moderate_slope",
+          "access": "standard",
+          "default_construction": "masonry_wall",
+          "construction_notes": "Reinforced masonry retaining wall, 200mm CMU blocks, engineered design",
+          "finish_level": "rendered",
+          "project_type": "new_build",
+          "location_context": "Australian residential"
+        },
+        "is_active": true,
+        "applicable_swaps": [],
+        "tags": [
+          "civil",
+          "retaining_wall",
+          "masonry",
+          "concrete-block",
+          "medium-height",
+          "engineered",
+          "australia"
+        ]
+      },
+      {
+        "template_id": "au-civ-retaining-gabion-2.5m",
+        "name": "Gabion Retaining Wall (2.5m)",
+        "description": "Medium-height gabion retaining wall (2.5m) - Rock-filled wire basket system with natural finish",
+        "building_type": "retaining_wall",
+        "sector": "civil",
+        "specifications": {
+          "wall_height_m": 2.5,
+          "wall_length_m": 20,
+          "wall_thickness_mm": 1000,
+          "wall_system": "Stepped gabion basket retaining wall (500mm stepped batter)",
+          "basket_type": "1000mm x 500mm x 500mm galvanized wire mesh gabion baskets",
+          "foundation_type": "Compacted crushed rock base (300mm depth)",
+          "foundation_depth_m": 0.3,
+          "rock_fill": "150-300mm diameter rock (granite, basalt, or sandstone)",
+          "drainage": "Free-draining through gabion structure",
+          "soil_conditions": "Class H to M",
+          "engineering_required": true,
+          "terrain": "moderate_slope",
+          "access": "standard",
+          "default_construction": "gabion_wall",
+          "construction_notes": "Stepped gabion basket wall, 1000mm wide, rock-filled with natural finish",
+          "finish_level": "natural",
+          "project_type": "new_build",
+          "location_context": "Australian landscape/commercial"
+        },
+        "is_active": true,
+        "applicable_swaps": [],
+        "tags": [
+          "civil",
+          "retaining_wall",
+          "gabion",
+          "rockfill",
+          "medium-height",
+          "natural-finish",
+          "australia"
+        ]
+      }
+    ]
+  },
+  "swap_extensions": {
+    "description": "Swap options for wall systems, roofing, and civil infrastructure that extend the existing system",
+    "cladding": [
+      {
+        "swap_category": "cladding",
+        "option_name": "cavity_brick_block",
+        "display_name": "Cavity Brick + Concrete Block",
+        "description": "110mm face brick + 90mm cavity + 200mm concrete block. Higher thermal and acoustic performance than brick veneer. Recommended for commercial and institutional buildings.",
+        "keywords": [
+          "brick",
+          "block",
+          "cavity",
+          "masonry",
+          "concrete block",
+          "thermal",
+          "acoustic"
+        ],
+        "is_default": false,
+        "building_types": [
+          "commercial",
+          "healthcare",
+          "education"
+        ],
+        "sort_order": 6
+      },
+      {
+        "swap_category": "cladding",
+        "option_name": "cavity_brick_metal_stud",
+        "display_name": "Cavity Brick + Metal Stud",
+        "description": "110mm face brick + 90mm cavity + 90mm metal stud + 13mm plasterboard. Fire-rated construction suitable for commercial and premium residential buildings.",
+        "keywords": [
+          "brick",
+          "metal stud",
+          "cavity",
+          "steel frame",
+          "fire-rated",
+          "commercial"
+        ],
+        "is_default": false,
+        "building_types": [
+          "commercial",
+          "residential"
+        ],
+        "sort_order": 7
+      }
+    ],
+    "roofing": [
+      {
+        "swap_category": "roofing",
+        "option_name": "metal_deck",
+        "display_name": "Metal Deck (Flat Roof)",
+        "description": "Metal deck with membrane waterproofing for commercial flat roofs. Lightweight and durable.",
+        "keywords": [
+          "metal",
+          "deck",
+          "flat",
+          "commercial",
+          "membrane",
+          "lightweight"
+        ],
+        "is_default": false,
+        "building_types": [
+          "commercial",
+          "industrial"
+        ],
+        "sort_order": 4
+      }
+    ],
+    "pavement_surface": [
+      {
+        "swap_category": "pavement_surface",
+        "option_name": "asphalt",
+        "display_name": "Asphalt Pavement",
+        "description": "Standard asphalt concrete pavement suitable for medium to heavy traffic. Cost-effective and quick to construct.",
+        "keywords": [
+          "asphalt",
+          "hotmix",
+          "bitumen",
+          "flexible pavement"
+        ],
+        "is_default": true,
+        "building_types": [
+          "road",
+          "car_park"
+        ],
+        "sort_order": 1
+      },
+      {
+        "swap_category": "pavement_surface",
+        "option_name": "concrete",
+        "display_name": "Concrete Pavement",
+        "description": "Reinforced concrete pavement for heavy-duty applications. Longer lifespan but higher initial cost.",
+        "keywords": [
+          "concrete",
+          "rigid pavement",
+          "reinforced",
+          "heavy duty"
+        ],
+        "is_default": false,
+        "building_types": [
+          "road",
+          "industrial"
+        ],
+        "sort_order": 2
+      },
+      {
+        "swap_category": "pavement_surface",
+        "option_name": "gravel",
+        "display_name": "Gravel Surface",
+        "description": "Unsealed gravel surface for low-traffic rural roads and access tracks.",
+        "keywords": [
+          "gravel",
+          "unsealed",
+          "rural",
+          "low cost"
+        ],
+        "is_default": false,
+        "building_types": [
+          "road"
+        ],
+        "sort_order": 3
+      }
+    ],
+    "pipe_material": [
+      {
+        "swap_category": "pipe_material",
+        "option_name": "pvc_pipe",
+        "display_name": "PVC Pipe",
+        "description": "Polyvinyl chloride (PVC) pipe - lightweight, corrosion-resistant, cost-effective for sewer applications.",
+        "keywords": [
+          "pvc",
+          "plastic",
+          "sewer",
+          "lightweight"
+        ],
+        "is_default": true,
+        "building_types": [
+          "sewer_main",
+          "stormwater_drain"
+        ],
+        "sort_order": 1
+      },
+      {
+        "swap_category": "pipe_material",
+        "option_name": "dicl_pipe",
+        "display_name": "DICL Pipe",
+        "description": "Ductile Iron Cement Lined pipe - high strength, long-lasting, ideal for water mains and high-pressure applications.",
+        "keywords": [
+          "ductile iron",
+          "dicl",
+          "water",
+          "high pressure",
+          "cement lined"
+        ],
+        "is_default": true,
+        "building_types": [
+          "water_main"
+        ],
+        "sort_order": 2
+      },
+      {
+        "swap_category": "pipe_material",
+        "option_name": "rcp_pipe",
+        "display_name": "RCP Pipe",
+        "description": "Reinforced Concrete Pipe - heavy-duty, suitable for large diameter stormwater and gravity systems.",
+        "keywords": [
+          "reinforced concrete",
+          "rcp",
+          "stormwater",
+          "gravity",
+          "heavy duty"
+        ],
+        "is_default": true,
+        "building_types": [
+          "stormwater_drain"
+        ],
+        "sort_order": 3
+      },
+      {
+        "swap_category": "pipe_material",
+        "option_name": "hdpe_pipe",
+        "display_name": "HDPE Pipe",
+        "description": "High-Density Polyethylene pipe - flexible, corrosion-resistant, suitable for water and sewer applications.",
+        "keywords": [
+          "hdpe",
+          "polyethylene",
+          "flexible",
+          "corrosion resistant"
+        ],
+        "is_default": false,
+        "building_types": [
+          "water_main",
+          "sewer_main"
+        ],
+        "sort_order": 4
+      }
+    ],
+    "base_material": [
+      {
+        "swap_category": "base_material",
+        "option_name": "crushed_rock",
+        "display_name": "Crushed Rock Base",
+        "description": "Standard crushed rock base course - cost-effective, widely available, suitable for most pavement applications.",
+        "keywords": [
+          "crushed rock",
+          "base course",
+          "aggregate",
+          "standard"
+        ],
+        "is_default": true,
+        "building_types": [
+          "road",
+          "car_park"
+        ],
+        "sort_order": 1
+      },
+      {
+        "swap_category": "base_material",
+        "option_name": "cemented_crushed_rock",
+        "display_name": "Cemented Crushed Rock",
+        "description": "Cement-stabilized crushed rock - higher strength, reduced deformation, ideal for heavy-duty applications.",
+        "keywords": [
+          "cemented",
+          "stabilized",
+          "heavy duty",
+          "high strength"
+        ],
+        "is_default": false,
+        "building_types": [
+          "road",
+          "industrial"
+        ],
+        "sort_order": 2
+      },
+      {
+        "swap_category": "base_material",
+        "option_name": "selected_granular",
+        "display_name": "Selected Granular Material",
+        "description": "High-quality selected granular material - premium base layer for high-performance pavements.",
+        "keywords": [
+          "granular",
+          "selected",
+          "premium",
+          "high performance"
+        ],
+        "is_default": false,
+        "building_types": [
+          "road"
+        ],
+        "sort_order": 3
+      }
+    ],
+    "kerb_type": [
+      {
+        "swap_category": "kerb_type",
+        "option_name": "standard_extruded",
+        "display_name": "Standard Extruded Kerb",
+        "description": "Machine-extruded concrete kerb and gutter - cost-effective, consistent profile, quick installation.",
+        "keywords": [
+          "extruded",
+          "machine laid",
+          "standard",
+          "kerb and gutter"
+        ],
+        "is_default": true,
+        "building_types": [
+          "kerb_gutter",
+          "road"
+        ],
+        "sort_order": 1
+      },
+      {
+        "swap_category": "kerb_type",
+        "option_name": "formed_kerb",
+        "display_name": "Formed Kerb & Gutter",
+        "description": "Traditionally formed concrete kerb and gutter - allows custom profiles and architectural finishes.",
+        "keywords": [
+          "formed",
+          "traditional",
+          "custom",
+          "architectural"
+        ],
+        "is_default": false,
+        "building_types": [
+          "kerb_gutter",
+          "road"
+        ],
+        "sort_order": 2
+      },
+      {
+        "swap_category": "kerb_type",
+        "option_name": "mountable_kerb",
+        "display_name": "Mountable Kerb",
+        "description": "Low-profile mountable kerb - allows vehicle access, suitable for driveways and crossovers.",
+        "keywords": [
+          "mountable",
+          "low profile",
+          "driveway",
+          "crossover"
+        ],
+        "is_default": false,
+        "building_types": [
+          "kerb_gutter",
+          "road"
+        ],
+        "sort_order": 3
+      }
+    ]
+  }
+}

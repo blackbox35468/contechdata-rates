@@ -1,0 +1,825 @@
+{
+  "meta": {
+    "source": "Composite_Rate_Template.xlsx",
+    "extracted": "2026-01-03",
+    "count": 5
+  },
+  "rates": [
+    {
+      "code": "EXT-WALL-001",
+      "name": "Cavity wall - facing brick/block, 100mm insulation, plasterboard & skim",
+      "description": "External enclosing walls above ground",
+      "unit": "m\u00b2",
+      "nrm2_codes": "WS14.1, WS31.1, WS28.1, WS29.1",
+      "nrm1_code": "2.5.1",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "labour": [
+        {
+          "nrm2_code": "WS14.1",
+          "task_description": "Face brickwork 102.5mm",
+          "gang": "1+1",
+          "output": 1.2,
+          "output_unit": "m\u00b2/hr",
+          "hrs_per_unit": 0.8333333333333334,
+          "rate_per_hour": 95,
+          "cost_per_unit": 79.16666666666667,
+          "source": "Internal"
+        },
+        {
+          "nrm2_code": "WS14.1",
+          "task_description": "Blockwork 100mm",
+          "gang": "1+0.5",
+          "output": 2.5,
+          "output_unit": "m\u00b2/hr",
+          "hrs_per_unit": 0.4,
+          "rate_per_hour": 82.5,
+          "cost_per_unit": 33,
+          "source": "Internal"
+        },
+        {
+          "nrm2_code": "WS31.1",
+          "task_description": "Cavity insulation 100mm",
+          "gang": "1+0",
+          "output": 8,
+          "output_unit": "m\u00b2/hr",
+          "hrs_per_unit": 0.125,
+          "rate_per_hour": 65,
+          "cost_per_unit": 8.125,
+          "source": "Internal"
+        },
+        {
+          "nrm2_code": "WS14.11",
+          "task_description": "Cavity closers",
+          "gang": "1+0",
+          "output": 12,
+          "output_unit": "m/hr",
+          "hrs_per_unit": 0.08333333333333333,
+          "rate_per_hour": 65,
+          "cost_per_unit": 5.416666666666666,
+          "source": "Internal"
+        },
+        {
+          "nrm2_code": "WS14.9",
+          "task_description": "DPC bedding",
+          "gang": "1+0",
+          "output": 15,
+          "output_unit": "m/hr",
+          "hrs_per_unit": 0.06666666666666667,
+          "rate_per_hour": 65,
+          "cost_per_unit": 4.333333333333333,
+          "source": "Internal"
+        },
+        {
+          "nrm2_code": "WS14.12",
+          "task_description": "Lintels - set in position",
+          "gang": "1+1",
+          "output": 4,
+          "output_unit": "nr/hr",
+          "hrs_per_unit": 0.25,
+          "rate_per_hour": 95,
+          "cost_per_unit": 23.75,
+          "source": "Internal"
+        },
+        {
+          "nrm2_code": "WS28.1",
+          "task_description": "Plasterboard fix + skim",
+          "gang": "1+0.5",
+          "output": 4,
+          "output_unit": "m\u00b2/hr",
+          "hrs_per_unit": 0.25,
+          "rate_per_hour": 82.5,
+          "cost_per_unit": 20.625,
+          "source": "Internal"
+        },
+        {
+          "nrm2_code": "WS29.1",
+          "task_description": "Decoration mist + 2 coats",
+          "gang": "1+0",
+          "output": 12,
+          "output_unit": "m\u00b2/hr",
+          "hrs_per_unit": 0.08333333333333333,
+          "rate_per_hour": 65,
+          "cost_per_unit": 5.416666666666666,
+          "source": "Internal"
+        }
+      ],
+      "materials": [
+        {
+          "nrm2_code": "WS14.1",
+          "description": "Facing bricks",
+          "unit": "nr",
+          "quantity": 60,
+          "unit_rate": 0.85,
+          "cost": 51,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS14.1",
+          "description": "Concrete blocks 100mm",
+          "unit": "nr",
+          "quantity": 10,
+          "unit_rate": 3.2,
+          "cost": 32,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS14.1",
+          "description": "Mortar (facework)",
+          "unit": "m\u00b3",
+          "quantity": 0.03,
+          "unit_rate": 185,
+          "cost": 5.55,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS14.1",
+          "description": "Mortar (blockwork)",
+          "unit": "m\u00b3",
+          "quantity": 0.01,
+          "unit_rate": 165,
+          "cost": 1.65,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS14.7",
+          "description": "Wall ties SS",
+          "unit": "nr",
+          "quantity": 4,
+          "unit_rate": 0.45,
+          "cost": 1.8,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS31.1",
+          "description": "Cavity insulation 100mm",
+          "unit": "m\u00b2",
+          "quantity": 1.05,
+          "unit_rate": 18,
+          "cost": 18.9,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS14.11",
+          "description": "Cavity closers",
+          "unit": "m",
+          "quantity": 0.15,
+          "unit_rate": 8.5,
+          "cost": 1.275,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS14.9",
+          "description": "DPC 112.5mm",
+          "unit": "m",
+          "quantity": 0.1,
+          "unit_rate": 4.5,
+          "cost": 0.45,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS14.12",
+          "description": "Steel lintel (allow)",
+          "unit": "m",
+          "quantity": 0.12,
+          "unit_rate": 95,
+          "cost": 11.4,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS28.1",
+          "description": "Plasterboard 12.5mm",
+          "unit": "m\u00b2",
+          "quantity": 1.05,
+          "unit_rate": 8.5,
+          "cost": 8.925,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS28.1",
+          "description": "Skim coat plaster",
+          "unit": "m\u00b2",
+          "quantity": 1,
+          "unit_rate": 3.2,
+          "cost": 3.2,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS29.1",
+          "description": "Paint (mist + 2 coats)",
+          "unit": "m\u00b2",
+          "quantity": 1,
+          "unit_rate": 2.8,
+          "cost": 2.8,
+          "supplier": "TBC"
+        }
+      ],
+      "plant": [
+        {
+          "nrm2_code": "WS14.1",
+          "description": "Scaffold (allow)",
+          "unit": "m\u00b2",
+          "quantity": 1,
+          "unit_rate": 8.5,
+          "cost": 8.5,
+          "notes": null
+        },
+        {
+          "nrm2_code": "WS14.1",
+          "description": "Mixer/small plant",
+          "unit": "hr",
+          "quantity": 0.1,
+          "unit_rate": 12,
+          "cost": 1.2,
+          "notes": null
+        }
+      ],
+      "labour_total": 173.35,
+      "materials_total": 145.91,
+      "plant_total": 9.7,
+      "waste_percent": 5,
+      "nett_total": 336.2555,
+      "ohp_percent": 15,
+      "ohp_total": 50.43832499999999,
+      "total_rate": 386.6938249999999
+    },
+    {
+      "code": "ROOF-TILE-001",
+      "name": "Pitched roof - concrete interlocking tiles on battens, sarking, insulation",
+      "description": "Roof coverings",
+      "unit": "m\u00b2",
+      "nrm2_codes": "WS18.1, WS16.4, WS31.1",
+      "nrm1_code": "2.3.2",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "labour": [
+        {
+          "nrm2_code": "WS16.4",
+          "task_description": "Sarking/underlay",
+          "gang": "1+0.5",
+          "output": 15,
+          "output_unit": "m\u00b2/hr",
+          "hrs_per_unit": 0.06666666666666667,
+          "rate_per_hour": 82.5,
+          "cost_per_unit": 5.5,
+          "source": "Internal"
+        },
+        {
+          "nrm2_code": "WS16.3",
+          "task_description": "Tile battens",
+          "gang": "1+0.5",
+          "output": 12,
+          "output_unit": "m\u00b2/hr",
+          "hrs_per_unit": 0.08333333333333333,
+          "rate_per_hour": 82.5,
+          "cost_per_unit": 6.875,
+          "source": "Internal"
+        },
+        {
+          "nrm2_code": "WS18.1",
+          "task_description": "Concrete interlocking tiles",
+          "gang": "1+1",
+          "output": 4.5,
+          "output_unit": "m\u00b2/hr",
+          "hrs_per_unit": 0.2222222222222222,
+          "rate_per_hour": 95,
+          "cost_per_unit": 21.11111111111111,
+          "source": "Internal"
+        },
+        {
+          "nrm2_code": "WS18.1",
+          "task_description": "Ridge/hip tiles",
+          "gang": "1+0.5",
+          "output": 8,
+          "output_unit": "m/hr",
+          "hrs_per_unit": 0.125,
+          "rate_per_hour": 82.5,
+          "cost_per_unit": 10.3125,
+          "source": "Internal"
+        },
+        {
+          "nrm2_code": "WS31.1",
+          "task_description": "Insulation between joists",
+          "gang": "1+0",
+          "output": 10,
+          "output_unit": "m\u00b2/hr",
+          "hrs_per_unit": 0.1,
+          "rate_per_hour": 65,
+          "cost_per_unit": 6.5,
+          "source": "Internal"
+        }
+      ],
+      "materials": [
+        {
+          "nrm2_code": "WS16.4",
+          "description": "Sarking/underlay",
+          "unit": "m\u00b2",
+          "quantity": 1.1,
+          "unit_rate": 4.5,
+          "cost": 4.95,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS16.3",
+          "description": "Tile battens 50x25",
+          "unit": "m",
+          "quantity": 3.3,
+          "unit_rate": 1.8,
+          "cost": 5.94,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS18.1",
+          "description": "Concrete interlocking tiles",
+          "unit": "nr",
+          "quantity": 10,
+          "unit_rate": 2.85,
+          "cost": 28.5,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS18.1",
+          "description": "Ridge tiles",
+          "unit": "m",
+          "quantity": 0.08,
+          "unit_rate": 28,
+          "cost": 2.24,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS18.1",
+          "description": "Tile clips/fixings",
+          "unit": "nr",
+          "quantity": 10,
+          "unit_rate": 0.15,
+          "cost": 1.5,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS31.1",
+          "description": "Insulation batts 200mm",
+          "unit": "m\u00b2",
+          "quantity": 1.05,
+          "unit_rate": 12.5,
+          "cost": 13.125,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS18.1",
+          "description": "Bedding mortar",
+          "unit": "m\u00b3",
+          "quantity": 0.002,
+          "unit_rate": 165,
+          "cost": 0.33,
+          "supplier": "TBC"
+        }
+      ],
+      "plant": [
+        {
+          "nrm2_code": "WS18.1",
+          "description": "Scaffold (roof)",
+          "unit": "m\u00b2",
+          "quantity": 1,
+          "unit_rate": 10.5,
+          "cost": 10.5,
+          "notes": null
+        },
+        {
+          "nrm2_code": "WS18.1",
+          "description": "Tile cutter",
+          "unit": "hr",
+          "quantity": 0.15,
+          "unit_rate": 8,
+          "cost": 1.2,
+          "notes": null
+        },
+        {
+          "nrm2_code": "WS18.1",
+          "description": "Hoisting/lifting",
+          "unit": "m\u00b2",
+          "quantity": 1,
+          "unit_rate": 0.8,
+          "cost": 0.8,
+          "notes": null
+        }
+      ],
+      "labour_total": 85.5,
+      "materials_total": 78.4,
+      "plant_total": 12.5,
+      "waste_percent": 5,
+      "nett_total": 180.32,
+      "ohp_percent": 15,
+      "ohp_total": 27.048,
+      "total_rate": 207.368
+    },
+    {
+      "code": "FOUND-STRIP-001",
+      "name": "Strip foundation - excavate, concrete 450x250, blockwork to DPC",
+      "description": "Standard foundations",
+      "unit": "m",
+      "nrm2_codes": "WS5.6, WS11.1, WS14.1",
+      "nrm1_code": "1.1.1",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "labour": [
+        {
+          "nrm2_code": "WS5.6",
+          "task_description": "Excavate trench (machine)",
+          "gang": "0+1",
+          "output": 8,
+          "output_unit": "m/hr",
+          "hrs_per_unit": 0.125,
+          "rate_per_hour": 55,
+          "cost_per_unit": 6.875,
+          "source": "Internal"
+        },
+        {
+          "nrm2_code": "WS5.6",
+          "task_description": "Trim & level by hand",
+          "gang": "0+1",
+          "output": 4,
+          "output_unit": "m/hr",
+          "hrs_per_unit": 0.25,
+          "rate_per_hour": 55,
+          "cost_per_unit": 13.75,
+          "source": "Internal"
+        },
+        {
+          "nrm2_code": "WS11.1",
+          "task_description": "Place concrete (pump)",
+          "gang": "0+2",
+          "output": 12,
+          "output_unit": "m/hr",
+          "hrs_per_unit": 0.08333333333333333,
+          "rate_per_hour": 110,
+          "cost_per_unit": 9.166666666666666,
+          "source": "Internal"
+        },
+        {
+          "nrm2_code": "WS14.1",
+          "task_description": "Blockwork to DPC",
+          "gang": "1+0.5",
+          "output": 3.5,
+          "output_unit": "m/hr",
+          "hrs_per_unit": 0.2857142857142857,
+          "rate_per_hour": 82.5,
+          "cost_per_unit": 23.57142857142857,
+          "source": "Internal"
+        },
+        {
+          "nrm2_code": "WS5.6",
+          "task_description": "Backfill & compact",
+          "gang": "0+1",
+          "output": 6,
+          "output_unit": "m/hr",
+          "hrs_per_unit": 0.1666666666666667,
+          "rate_per_hour": 55,
+          "cost_per_unit": 9.166666666666666,
+          "source": "Internal"
+        }
+      ],
+      "materials": [
+        {
+          "nrm2_code": "WS11.1",
+          "description": "Concrete C25 (0.1125m\u00b3/m)",
+          "unit": "m\u00b3",
+          "quantity": 0.1125,
+          "unit_rate": 185,
+          "cost": 20.8125,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS14.1",
+          "description": "Concrete blocks 100mm",
+          "unit": "nr",
+          "quantity": 8,
+          "unit_rate": 3.2,
+          "cost": 25.6,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS14.1",
+          "description": "Mortar",
+          "unit": "m\u00b3",
+          "quantity": 0.008,
+          "unit_rate": 165,
+          "cost": 1.32,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS14.9",
+          "description": "DPC 300mm",
+          "unit": "m",
+          "quantity": 1,
+          "unit_rate": 5.8,
+          "cost": 5.8,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS5.6",
+          "description": "Disposal of excavated (0.35m\u00b3/m)",
+          "unit": "m\u00b3",
+          "quantity": 0.35,
+          "unit_rate": 45,
+          "cost": 15.75,
+          "supplier": "TBC"
+        }
+      ],
+      "plant": [
+        {
+          "nrm2_code": "WS5.6",
+          "description": "Mini excavator 1.5t",
+          "unit": "hr",
+          "quantity": 0.25,
+          "unit_rate": 85,
+          "cost": 21.25,
+          "notes": null
+        },
+        {
+          "nrm2_code": "WS11.1",
+          "description": "Concrete pump (share)",
+          "unit": "m",
+          "quantity": 1,
+          "unit_rate": 8.5,
+          "cost": 8.5,
+          "notes": null
+        },
+        {
+          "nrm2_code": "WS5.6",
+          "description": "Compactor plate",
+          "unit": "hr",
+          "quantity": 0.1,
+          "unit_rate": 35,
+          "cost": 3.5,
+          "notes": null
+        }
+      ],
+      "labour_total": 125.8,
+      "materials_total": 98.5,
+      "plant_total": 35,
+      "waste_percent": 7.5,
+      "nett_total": 266.6875,
+      "ohp_percent": 15,
+      "ohp_total": 40.003125,
+      "total_rate": 306.690625
+    },
+    {
+      "code": "FLOOR-TILE-001",
+      "name": "Floor tiling - porcelain 600x600 on screed bed, grout",
+      "description": "Finishes to floors",
+      "unit": "m\u00b2",
+      "nrm2_codes": "WS28.8, WS28.9",
+      "nrm1_code": "3.2.1",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "labour": [
+        {
+          "nrm2_code": "WS28.8",
+          "task_description": "Prepare substrate",
+          "gang": "1+0",
+          "output": 20,
+          "output_unit": "m\u00b2/hr",
+          "hrs_per_unit": 0.05,
+          "rate_per_hour": 70,
+          "cost_per_unit": 3.5,
+          "source": "Internal"
+        },
+        {
+          "nrm2_code": "WS28.8",
+          "task_description": "Lay porcelain 600x600",
+          "gang": "1+0.5",
+          "output": 3.5,
+          "output_unit": "m\u00b2/hr",
+          "hrs_per_unit": 0.2857142857142857,
+          "rate_per_hour": 92.5,
+          "cost_per_unit": 26.42857142857143,
+          "source": "Internal"
+        },
+        {
+          "nrm2_code": "WS28.9",
+          "task_description": "Grouting",
+          "gang": "1+0",
+          "output": 12,
+          "output_unit": "m\u00b2/hr",
+          "hrs_per_unit": 0.08333333333333333,
+          "rate_per_hour": 70,
+          "cost_per_unit": 5.833333333333333,
+          "source": "Internal"
+        },
+        {
+          "nrm2_code": "WS28.8",
+          "task_description": "Cutting (allow 10%)",
+          "gang": "1+0",
+          "output": 6,
+          "output_unit": "m\u00b2/hr",
+          "hrs_per_unit": 0.1666666666666667,
+          "rate_per_hour": 70,
+          "cost_per_unit": 11.66666666666667,
+          "source": "Internal"
+        }
+      ],
+      "materials": [
+        {
+          "nrm2_code": "WS28.8",
+          "description": "Porcelain tiles 600x600",
+          "unit": "m\u00b2",
+          "quantity": 1.1,
+          "unit_rate": 55,
+          "cost": 60.50000000000001,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS28.8",
+          "description": "Tile adhesive",
+          "unit": "kg",
+          "quantity": 5,
+          "unit_rate": 1.85,
+          "cost": 9.25,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS28.9",
+          "description": "Grout",
+          "unit": "kg",
+          "quantity": 1.5,
+          "unit_rate": 3.5,
+          "cost": 5.25,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS28.8",
+          "description": "Tile spacers",
+          "unit": "nr",
+          "quantity": 20,
+          "unit_rate": 0.02,
+          "cost": 0.4,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS28.8",
+          "description": "Primer/sealer",
+          "unit": "m\u00b2",
+          "quantity": 1,
+          "unit_rate": 2.5,
+          "cost": 2.5,
+          "supplier": "TBC"
+        }
+      ],
+      "plant": [
+        {
+          "nrm2_code": "WS28.8",
+          "description": "Tile cutter (wet)",
+          "unit": "hr",
+          "quantity": 0.2,
+          "unit_rate": 12.5,
+          "cost": 2.5,
+          "notes": null
+        }
+      ],
+      "labour_total": 65,
+      "materials_total": 85.5,
+      "plant_total": 2.5,
+      "waste_percent": 10,
+      "nett_total": 161.55,
+      "ohp_percent": 15,
+      "ohp_total": 24.2325,
+      "total_rate": 185.7825
+    },
+    {
+      "code": "DRAIN-BG-001",
+      "name": "Drainage below ground - 100mm uPVC, bedding, backfill, average 750mm deep",
+      "description": "Surface water and foul water drainage",
+      "unit": "m",
+      "nrm2_codes": "WS34.1, WS34.2, WS5.6",
+      "nrm1_code": "8.6.1",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "labour": [
+        {
+          "nrm2_code": "WS5.6",
+          "task_description": "Excavate trench 750 avg",
+          "gang": "0+1",
+          "output": 4,
+          "output_unit": "m/hr",
+          "hrs_per_unit": 0.25,
+          "rate_per_hour": 55,
+          "cost_per_unit": 13.75,
+          "source": "Internal"
+        },
+        {
+          "nrm2_code": "WS34.1",
+          "task_description": "Lay 100mm uPVC",
+          "gang": "1+1",
+          "output": 8,
+          "output_unit": "m/hr",
+          "hrs_per_unit": 0.125,
+          "rate_per_hour": 95,
+          "cost_per_unit": 11.875,
+          "source": "Internal"
+        },
+        {
+          "nrm2_code": "WS34.2",
+          "task_description": "Granular bed & surround",
+          "gang": "0+1",
+          "output": 6,
+          "output_unit": "m/hr",
+          "hrs_per_unit": 0.1666666666666667,
+          "rate_per_hour": 55,
+          "cost_per_unit": 9.166666666666666,
+          "source": "Internal"
+        },
+        {
+          "nrm2_code": "WS5.6",
+          "task_description": "Backfill & compact",
+          "gang": "0+1",
+          "output": 5,
+          "output_unit": "m/hr",
+          "hrs_per_unit": 0.2,
+          "rate_per_hour": 55,
+          "cost_per_unit": 11,
+          "source": "Internal"
+        }
+      ],
+      "materials": [
+        {
+          "nrm2_code": "WS34.1",
+          "description": "100mm uPVC pipe",
+          "unit": "m",
+          "quantity": 1.05,
+          "unit_rate": 12.5,
+          "cost": 13.125,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS34.1",
+          "description": "Couplers/fittings (allow)",
+          "unit": "nr",
+          "quantity": 0.3,
+          "unit_rate": 8.5,
+          "cost": 2.55,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS34.2",
+          "description": "Granular bed/surround",
+          "unit": "m\u00b3",
+          "quantity": 0.15,
+          "unit_rate": 65,
+          "cost": 9.75,
+          "supplier": "TBC"
+        },
+        {
+          "nrm2_code": "WS5.6",
+          "description": "Disposal of excavated",
+          "unit": "m\u00b3",
+          "quantity": 0.45,
+          "unit_rate": 45,
+          "cost": 20.25,
+          "supplier": "TBC"
+        }
+      ],
+      "plant": [
+        {
+          "nrm2_code": "WS5.6",
+          "description": "Mini excavator 1.5t",
+          "unit": "hr",
+          "quantity": 0.25,
+          "unit_rate": 85,
+          "cost": 21.25,
+          "notes": null
+        },
+        {
+          "nrm2_code": "WS34.1",
+          "description": "Laser level",
+          "unit": "day",
+          "quantity": 0.05,
+          "unit_rate": 65,
+          "cost": 3.25,
+          "notes": null
+        },
+        {
+          "nrm2_code": "WS5.6",
+          "description": "Compactor plate",
+          "unit": "hr",
+          "quantity": 0.1,
+          "unit_rate": 35,
+          "cost": 3.5,
+          "notes": null
+        }
+      ],
+      "labour_total": 45.6,
+      "materials_total": 38.5,
+      "plant_total": 28,
+      "waste_percent": 5,
+      "nett_total": 114.025,
+      "ohp_percent": 15,
+      "ohp_total": 17.10375,
+      "total_rate": 131.12875
+    }
+  ]
+}

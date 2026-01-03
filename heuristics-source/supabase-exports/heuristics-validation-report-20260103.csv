@@ -1,0 +1,9 @@
+Table,Severity,Issue Type,Record Count,Details
+labour_productivity_constants,HIGH,MISSING_REQUIRED_FIELD,1167,Missing required fields: code
+labour_productivity_constants,HIGH,NEGATIVE_HOURS,87,87 records with hours_per_unit <= 0
+plant_productivity_constants,HIGH,INVALID_OUTPUT_RATE,9,9 records with invalid output_rate_typical
+quantity_heuristics,MEDIUM,INVALID_CATEGORY,32,32 rows with invalid categories
+quantity_heuristics,MEDIUM,MISSING_NCC_REFERENCE,1,1 NCC_DTS items missing reference citations
+labour_productivity_constants,LOW,LOW_CONFIDENCE_SCORE,876,876 records with confidence_score < 0.85
+material_coverage_reference,LOW,LOW_CONFIDENCE_SCORE,306,306 records with confidence_score < 0.85
+plant_productivity_constants,LOW,LOW_CONFIDENCE_SCORE,450,450 records with confidence_score < 0.85

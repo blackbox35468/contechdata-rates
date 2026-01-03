@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "source": "Composite_Rate_Template.xlsx",
+    "extracted": "2026-01-03",
+    "sheet": "Ref - Condition Factors",
+    "count": 16
+  },
+  "condition_factors": [
+    {
+      "code": "CF_LOCATION_NORMAL_ACCESS",
+      "category": "location",
+      "name": "Normal access",
+      "factor": 1.0,
+      "applies_to": "All",
+      "description": "Normal access - Factor: 1.0"
+    },
+    {
+      "code": "CF_LOCATION_RESTRICTED_ACCESS",
+      "category": "location",
+      "name": "Restricted access",
+      "factor": 1.1,
+      "applies_to": "All",
+      "description": "Restricted access - Factor: 1.1"
+    },
+    {
+      "code": "CF_LOCATION_DIFFICULT_ACCESS",
+      "category": "location",
+      "name": "Difficult access",
+      "factor": 1.2,
+      "applies_to": "All",
+      "description": "Difficult access - Factor: 1.2"
+    },
+    {
+      "code": "CF_HEIGHT_LEQ_35M_GROUND_LEVEL",
+      "category": "height",
+      "name": "≤3.5m (ground level)",
+      "factor": 1.0,
+      "applies_to": "Labour, Plant",
+      "description": "≤3.5m (ground level) - Factor: 1.0"
+    },
+    {
+      "code": "CF_HEIGHT_35M_70M",
+      "category": "height",
+      "name": "3.5m - 7.0m",
+      "factor": 1.1,
+      "applies_to": "Labour, Plant",
+      "description": "3.5m - 7.0m - Factor: 1.1"
+    },
+    {
+      "code": "CF_HEIGHT_70M_105M",
+      "category": "height",
+      "name": "7.0m - 10.5m",
+      "factor": 1.2,
+      "applies_to": "Labour, Plant",
+      "description": "7.0m - 10.5m - Factor: 1.2"
+    },
+    {
+      "code": "CF_HEIGHT_GT_105M",
+      "category": "height",
+      "name": ">10.5m",
+      "factor": 1.35,
+      "applies_to": "Labour, Plant",
+      "description": ">10.5m - Factor: 1.35"
+    },
+    {
+      "code": "CF_WEATHER_INTERNAL_WORK",
+      "category": "weather",
+      "name": "Internal work",
+      "factor": 1.0,
+      "applies_to": "Labour",
+      "description": "Internal work - Factor: 1.0"
+    },
+    {
+      "code": "CF_WEATHER_EXTERNAL_SHELTERED",
+      "category": "weather",
+      "name": "External - sheltered",
+      "factor": 1.03,
+      "applies_to": "Labour",
+      "description": "External - sheltered - Factor: 1.03"
+    },
+    {
+      "code": "CF_WEATHER_EXTERNAL_EXPOSED",
+      "category": "weather",
+      "name": "External - exposed",
+      "factor": 1.08,
+      "applies_to": "Labour",
+      "description": "External - exposed - Factor: 1.08"
+    },
+    {
+      "code": "CF_COMPLEXITY_STRAIGHTFORWARD",
+      "category": "complexity",
+      "name": "Straightforward",
+      "factor": 1.0,
+      "applies_to": "Labour",
+      "description": "Straightforward - Factor: 1.0"
+    },
+    {
+      "code": "CF_COMPLEXITY_MODERATE_DETAIL",
+      "category": "complexity",
+      "name": "Moderate detail",
+      "factor": 1.1,
+      "applies_to": "Labour",
+      "description": "Moderate detail - Factor: 1.1"
+    },
+    {
+      "code": "CF_COMPLEXITY_COMPLEX/INTRICATE",
+      "category": "complexity",
+      "name": "Complex/intricate",
+      "factor": 1.25,
+      "applies_to": "Labour",
+      "description": "Complex/intricate - Factor: 1.25"
+    },
+    {
+      "code": "CF_QUANTITY_SMALL_QTY_<25%_OF_NORM",
+      "category": "quantity",
+      "name": "Small qty (<25% of norm)",
+      "factor": 1.15,
+      "applies_to": "Labour",
+      "description": "Small qty (<25% of norm) - Factor: 1.15"
+    },
+    {
+      "code": "CF_QUANTITY_NORMAL_QUANTITY",
+      "category": "quantity",
+      "name": "Normal quantity",
+      "factor": 1.0,
+      "applies_to": "Labour",
+      "description": "Normal quantity - Factor: 1.0"
+    },
+    {
+      "code": "CF_QUANTITY_LARGE_QTY_GT_200%_OF_NORM",
+      "category": "quantity",
+      "name": "Large qty (>200% of norm)",
+      "factor": 0.95,
+      "applies_to": "Labour",
+      "description": "Large qty (>200% of norm) - Factor: 0.95"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "export_date": "2026-01-03T13:10:56.626642",
+  "validation_date": "20260103",
+  "total_records": 2078,
+  "tables": {
+    "quantity_heuristics": {
+      "total_rows": 116,
+      "issues": {
+        "HIGH": 0,
+        "MEDIUM": 2,
+        "LOW": 0
+      },
+      "low_confidence": 0
+    },
+    "labour_productivity_constants": {
+      "total_rows": 1167,
+      "issues": {
+        "HIGH": 2,
+        "MEDIUM": 0,
+        "LOW": 1
+      },
+      "low_confidence": 876
+    },
+    "plant_productivity_constants": {
+      "total_rows": 459,
+      "issues": {
+        "HIGH": 1,
+        "MEDIUM": 0,
+        "LOW": 1
+      },
+      "low_confidence": 450
+    },
+    "material_coverage_reference": {
+      "total_rows": 317,
+      "issues": {
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 1
+      },
+      "low_confidence": 306
+    },
+    "productivity_metrics": {
+      "total_rows": 19,
+      "issues": {
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 0
+      },
+      "low_confidence": 0
+    }
+  },
+  "total_issues": 8,
+  "high_severity_count": 3,
+  "medium_severity_count": 2,
+  "low_severity_count": 3,
+  "low_confidence_records": 1632,
+  "confidence_threshold": 0.85,
+  "validation_status": "REVIEW_RECOMMENDED"
+}

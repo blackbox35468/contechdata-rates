@@ -1,0 +1,1846 @@
+{
+  "meta": {
+    "nrm_group": 1,
+    "group_name": "substructure",
+    "count": 34,
+    "generated": "2026-01-03",
+    "source": "Composite_Rate_Descriptions.xlsx",
+    "transformed": "2026-01-03",
+    "resource_linked": true,
+    "enriched_date": "2026-01-03",
+    "crosswalk_version": "NRM1_L4_to_NRM2_Crosswalk.csv"
+  },
+  "rates": [
+    {
+      "code": "GRP1-STRFOU-002",
+      "name": "Strip foundation - 450x250 concrete, block to DPC",
+      "description": "Standard residential, ≤600mm deep",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CONCRETER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.25,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 40.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.07,
+      "labour_total": 23.75,
+      "materials_total": 40.0,
+      "plant_total": 15.0,
+      "waste_percent": 7,
+      "nett_total": 81.55,
+      "ohp_percent": 15,
+      "total_rate": 93.78,
+      "nrm1_l4_code": "1.1.1.1",
+      "nrm1_l3_code": "1.1.1",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Strip foundations: details, including depth of foundation, to be stated.",
+      "nrm2_primary_ws": "5",
+      "nrm2_primary_ws_name": "Excavating and filling",
+      "nrm2_primary_items": "",
+      "nrm2_secondary_ws": "WS7:; WS8:; WS9:; WS11:",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-STRFOU-003",
+      "name": "Strip foundation - 600x300 concrete, block to DPC",
+      "description": "Heavy load, ≤750mm deep",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CONCRETER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.25,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 40.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.07,
+      "labour_total": 23.75,
+      "materials_total": 40.0,
+      "plant_total": 15.0,
+      "waste_percent": 7,
+      "nett_total": 81.55,
+      "ohp_percent": 15,
+      "total_rate": 93.78,
+      "nrm1_l4_code": "1.1.5.9",
+      "nrm1_l3_code": "1.1.5",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Cutting off tops of concrete piles.",
+      "nrm2_primary_ws": "11",
+      "nrm2_primary_ws_name": "In-situ concrete",
+      "nrm2_primary_items": "1, 2, 3, 4, 5, 6",
+      "nrm2_secondary_ws": "WS4:3,4,5; WS7:1,2,3,4,5",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-STRFOU-004",
+      "name": "Strip foundation - 750x375 concrete, block to DPC",
+      "description": "Two storey, ≤900mm deep",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CONCRETER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.25,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 40.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.07,
+      "labour_total": 23.75,
+      "materials_total": 40.0,
+      "plant_total": 15.0,
+      "waste_percent": 7,
+      "nett_total": 81.55,
+      "ohp_percent": 15,
+      "total_rate": 93.78,
+      "nrm1_l4_code": "1.1.1.1",
+      "nrm1_l3_code": "1.1.1",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Strip foundations: details, including depth of foundation, to be stated.",
+      "nrm2_primary_ws": "5",
+      "nrm2_primary_ws_name": "Excavating and filling",
+      "nrm2_primary_items": "",
+      "nrm2_secondary_ws": "WS7:; WS8:; WS9:; WS11:",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-STRFOU-005",
+      "name": "Strip foundation - stepped, 450x250",
+      "description": "Sloping site, average 3 steps/10m",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 27.5,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 70.88,
+      "ohp_percent": 15,
+      "total_rate": 81.51,
+      "nrm1_l4_code": "1.1.1.1",
+      "nrm1_l3_code": "1.1.1",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Strip foundations: details, including depth of foundation, to be stated.",
+      "nrm2_primary_ws": "5",
+      "nrm2_primary_ws_name": "Excavating and filling",
+      "nrm2_primary_items": "",
+      "nrm2_secondary_ws": "WS7:; WS8:; WS9:; WS11:",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-PADFOU-006",
+      "name": "Pad foundation - 1000x1000x500 RC",
+      "description": "Column base, isolated",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 2.0,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 2.0,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 110.0,
+      "materials_total": 20.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 152.25,
+      "ohp_percent": 15,
+      "total_rate": 175.09,
+      "nrm1_l4_code": "1.1.5.14",
+      "nrm1_l3_code": "1.1.5",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Ground anchors: details, including type, to be stated.",
+      "nrm2_primary_ws": "14",
+      "nrm2_primary_ws_name": "Masonry",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-PADFOU-007",
+      "name": "Pad foundation - 1500x1500x600 RC",
+      "description": "Heavy column base",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 2.0,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 2.0,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 110.0,
+      "materials_total": 20.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 152.25,
+      "ohp_percent": 15,
+      "total_rate": 175.09,
+      "nrm1_l4_code": "1.1.1.2",
+      "nrm1_l3_code": "1.1.1",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Isolated pad foundations: details, including size of and reinforcement rate (kg/m3) to pile cap, to be stated.",
+      "nrm2_primary_ws": "7",
+      "nrm2_primary_ws_name": "Piling",
+      "nrm2_primary_items": "1, 2, 3, 4, 5, 8",
+      "nrm2_secondary_ws": "WS11:21,22,23,24,25,26",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-PADFOU-008",
+      "name": "Pad foundation - 2000x2000x750 RC",
+      "description": "Major column base",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 2.0,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 2.0,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 110.0,
+      "materials_total": 20.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 152.25,
+      "ohp_percent": 15,
+      "total_rate": 175.09,
+      "nrm1_l4_code": "1.1.1.2",
+      "nrm1_l3_code": "1.1.1",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Isolated pad foundations: details, including size of and reinforcement rate (kg/m3) to pile cap, to be stated.",
+      "nrm2_primary_ws": "7",
+      "nrm2_primary_ws_name": "Piling",
+      "nrm2_primary_items": "1, 2, 3, 4, 5, 8",
+      "nrm2_secondary_ws": "WS11:21,22,23,24,25,26",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-COMPAD-009",
+      "name": "Combined pad foundation",
+      "description": "Multiple columns",
+      "unit": "m³",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 3.0,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m³",
+            "rate": 125.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m³",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 3.0,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 165.0,
+      "materials_total": 125.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 320.25,
+      "ohp_percent": 15,
+      "total_rate": 368.29,
+      "nrm1_l4_code": "1.1.1.3",
+      "nrm1_l3_code": "1.1.1",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Extra for disposal of contaminated excavated material: details to be stated.",
+      "nrm2_primary_ws": "5",
+      "nrm2_primary_ws_name": "Excavating and filling",
+      "nrm2_primary_items": "6, 9",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-RAFFOU-010",
+      "name": "Raft foundation - 300mm thick, edge beam",
+      "description": "Residential, good ground",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.6,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.6,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 33.0,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 76.65,
+      "ohp_percent": 15,
+      "total_rate": 88.15,
+      "nrm1_l4_code": "1.1.3.2",
+      "nrm1_l3_code": "1.1.3",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Extra over lowest floor construction for forming ramps and the like: details to be stated.",
+      "nrm2_primary_ws": "5",
+      "nrm2_primary_ws_name": "Excavating and filling",
+      "nrm2_primary_items": "",
+      "nrm2_secondary_ws": "WS7:; WS8:; WS9:; WS11:",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-RAFFOU-011",
+      "name": "Raft foundation - 350mm thick, internal beams",
+      "description": "Residential, reactive clay",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.6,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.6,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 33.0,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 76.65,
+      "ohp_percent": 15,
+      "total_rate": 88.15,
+      "nrm1_l4_code": "1.1.3.2",
+      "nrm1_l3_code": "1.1.3",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Extra over lowest floor construction for forming ramps and the like: details to be stated.",
+      "nrm2_primary_ws": "5",
+      "nrm2_primary_ws_name": "Excavating and filling",
+      "nrm2_primary_items": "",
+      "nrm2_secondary_ws": "WS7:; WS8:; WS9:; WS11:",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-RAFFOU-012",
+      "name": "Raft foundation - 450mm thick, waffle pod",
+      "description": "Waffle raft system",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.6,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.6,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 33.0,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 76.65,
+      "ohp_percent": 15,
+      "total_rate": 88.15,
+      "nrm1_l4_code": "1.1.3.2",
+      "nrm1_l3_code": "1.1.3",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Extra over lowest floor construction for forming ramps and the like: details to be stated.",
+      "nrm2_primary_ws": "5",
+      "nrm2_primary_ws_name": "Excavating and filling",
+      "nrm2_primary_items": "",
+      "nrm2_secondary_ws": "WS7:; WS8:; WS9:; WS11:",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-RAFFOU-013",
+      "name": "Raft foundation - 500mm+ thick, RC",
+      "description": "Commercial/heavy loads",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.6,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.6,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 33.0,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 76.65,
+      "ohp_percent": 15,
+      "total_rate": 88.15,
+      "nrm1_l4_code": "1.1.5.20",
+      "nrm1_l3_code": "1.1.5",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Concrete applied by spray or gun: details, including thickness (mm), to be stated.",
+      "nrm2_primary_ws": "11",
+      "nrm2_primary_ws_name": "In-situ concrete",
+      "nrm2_primary_items": "1, 2, 3, 4, 5, 6",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-BORPIL-014",
+      "name": "Bored piles - 450mm dia, ≤10m",
+      "description": "CFA, standard ground",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 27.5,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 70.88,
+      "ohp_percent": 15,
+      "total_rate": 81.51,
+      "nrm1_l4_code": "1.1.3.6",
+      "nrm1_l3_code": "1.1.3",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Designed joints: details, including height (mm), to be stated.",
+      "nrm2_primary_ws": "11",
+      "nrm2_primary_ws_name": "In-situ concrete",
+      "nrm2_primary_items": "28, 29, 30, 31",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-BORPIL-015",
+      "name": "Bored piles - 600mm dia, ≤15m",
+      "description": "CFA, standard ground",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 27.5,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 70.88,
+      "ohp_percent": 15,
+      "total_rate": 81.51,
+      "nrm1_l4_code": "1.1.3.6",
+      "nrm1_l3_code": "1.1.3",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Designed joints: details, including height (mm), to be stated.",
+      "nrm2_primary_ws": "11",
+      "nrm2_primary_ws_name": "In-situ concrete",
+      "nrm2_primary_items": "28, 29, 30, 31",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-BORPIL-016",
+      "name": "Bored piles - 750mm dia, ≤20m",
+      "description": "CFA, standard ground",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 27.5,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 70.88,
+      "ohp_percent": 15,
+      "total_rate": 81.51,
+      "nrm1_l4_code": "1.1.3.6",
+      "nrm1_l3_code": "1.1.3",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Designed joints: details, including height (mm), to be stated.",
+      "nrm2_primary_ws": "11",
+      "nrm2_primary_ws_name": "In-situ concrete",
+      "nrm2_primary_items": "28, 29, 30, 31",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-BORPIL-017",
+      "name": "Bored piles - rock socket allowance",
+      "description": "Into rock",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CONCRETER",
+            "qty": 0.25,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.25,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 21.0,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 64.05,
+      "ohp_percent": 15,
+      "total_rate": 73.66,
+      "nrm1_l4_code": "1.1.5.1",
+      "nrm1_l3_code": "1.1.5",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Basement retaining wall: details to be stated.",
+      "nrm2_primary_ws": "14",
+      "nrm2_primary_ws_name": "Masonry",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-SCRPIL-018",
+      "name": "Screw piles - 75mm shaft, ≤3m",
+      "description": "Light residential",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 2.0,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 2.0,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 110.0,
+      "materials_total": 20.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 152.25,
+      "ohp_percent": 15,
+      "total_rate": 175.09,
+      "nrm1_l4_code": "1.1.3.8",
+      "nrm1_l3_code": "1.1.3",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Gullies, floor outlets and the like: details to be stated.",
+      "nrm2_primary_ws": "5",
+      "nrm2_primary_ws_name": "Excavating and filling",
+      "nrm2_primary_items": "",
+      "nrm2_secondary_ws": "WS7:; WS8:; WS9:; WS11:",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-SCRPIL-019",
+      "name": "Screw piles - 100mm shaft, ≤4m",
+      "description": "Standard residential",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 2.0,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 2.0,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 110.0,
+      "materials_total": 20.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 152.25,
+      "ohp_percent": 15,
+      "total_rate": 175.09,
+      "nrm1_l4_code": "1.1.2.9",
+      "nrm1_l3_code": "1.1.2",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Cutting off tops of concrete piles and preparing pile heads.",
+      "nrm2_primary_ws": "11",
+      "nrm2_primary_ws_name": "In-situ concrete",
+      "nrm2_primary_items": "1, 2, 3, 4, 5, 6",
+      "nrm2_secondary_ws": "WS4:3,4,5; WS7:1,2,3,4,5",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-PILCAP-020",
+      "name": "Pile caps - 2 pile",
+      "description": "Standard RC",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 2.0,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 2.0,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 110.0,
+      "materials_total": 20.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 152.25,
+      "ohp_percent": 15,
+      "total_rate": 175.09,
+      "nrm1_l4_code": "1.1.5.12",
+      "nrm1_l3_code": "1.1.5",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Pile tests: details to be stated.",
+      "nrm2_primary_ws": "7",
+      "nrm2_primary_ws_name": "Piling",
+      "nrm2_primary_items": "1, 2, 3, 4, 5, 6",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-PILCAP-021",
+      "name": "Pile caps - 3 pile",
+      "description": "Standard RC",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 2.0,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 2.0,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 110.0,
+      "materials_total": 20.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 152.25,
+      "ohp_percent": 15,
+      "total_rate": 175.09,
+      "nrm1_l4_code": "1.1.5.12",
+      "nrm1_l3_code": "1.1.5",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Pile tests: details to be stated.",
+      "nrm2_primary_ws": "7",
+      "nrm2_primary_ws_name": "Piling",
+      "nrm2_primary_items": "1, 2, 3, 4, 5, 6",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-PILCAP-022",
+      "name": "Pile caps - 4 pile",
+      "description": "Standard RC",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 2.0,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 2.0,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 110.0,
+      "materials_total": 20.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 152.25,
+      "ohp_percent": 15,
+      "total_rate": 175.09,
+      "nrm1_l4_code": "1.1.5.12",
+      "nrm1_l3_code": "1.1.5",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Pile tests: details to be stated.",
+      "nrm2_primary_ws": "7",
+      "nrm2_primary_ws_name": "Piling",
+      "nrm2_primary_items": "1, 2, 3, 4, 5, 6",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-GROBEA-023",
+      "name": "Ground beams between piles",
+      "description": "Standard RC",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 27.5,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 70.88,
+      "ohp_percent": 15,
+      "total_rate": 81.51,
+      "nrm1_l4_code": "1.1.2.13",
+      "nrm1_l3_code": "1.1.2",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Ground beams: details, including size of and reinforcement rate (kg/m3) to pile cap, to be stated.",
+      "nrm2_primary_ws": "7",
+      "nrm2_primary_ws_name": "Piling",
+      "nrm2_primary_items": "1, 2, 3, 4, 5, 8",
+      "nrm2_secondary_ws": "WS11:21,22,23,24,25,26",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-GROFLO-024",
+      "name": "Ground floor slab - 100mm concrete on poly on sand",
+      "description": "Shed/garage, unreinforced",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.7,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 35.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.7,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 38.5,
+      "materials_total": 35.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 92.92,
+      "ohp_percent": 15,
+      "total_rate": 106.86,
+      "nrm1_l4_code": "1.1.3.2",
+      "nrm1_l3_code": "1.1.3",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Extra over lowest floor construction for forming ramps and the like: details to be stated.",
+      "nrm2_primary_ws": "5",
+      "nrm2_primary_ws_name": "Excavating and filling",
+      "nrm2_primary_items": "",
+      "nrm2_secondary_ws": "WS7:; WS8:; WS9:; WS11:",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-GROFLO-025",
+      "name": "Ground floor slab - 100mm RC on DPM",
+      "description": "Residential, SL82 mesh",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.7,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.7,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 38.5,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 82.42,
+      "ohp_percent": 15,
+      "total_rate": 94.79,
+      "nrm1_l4_code": "1.1.3.2",
+      "nrm1_l3_code": "1.1.3",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Extra over lowest floor construction for forming ramps and the like: details to be stated.",
+      "nrm2_primary_ws": "5",
+      "nrm2_primary_ws_name": "Excavating and filling",
+      "nrm2_primary_items": "",
+      "nrm2_secondary_ws": "WS7:; WS8:; WS9:; WS11:",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-GROFLO-026",
+      "name": "Ground floor slab - 150mm RC on DPM, insulated",
+      "description": "Residential, with edge insulation",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.7,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.7,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 38.5,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 82.42,
+      "ohp_percent": 15,
+      "total_rate": 94.79,
+      "nrm1_l4_code": "1.1.5.15",
+      "nrm1_l3_code": "1.1.5",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Trimming and cleaning faces of piled and diaphragm walls.",
+      "nrm2_primary_ws": "7",
+      "nrm2_primary_ws_name": "Piling",
+      "nrm2_primary_items": "1, 2, 3, 4, 5",
+      "nrm2_secondary_ws": "WS14:1",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-GROFLO-027",
+      "name": "Ground floor slab - 200mm RC, power float",
+      "description": "Commercial/industrial",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CONCRETER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.35,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 29.4,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 72.87,
+      "ohp_percent": 15,
+      "total_rate": 83.8,
+      "nrm1_l4_code": "1.1.3.1",
+      "nrm1_l3_code": "1.1.3",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Lowest floor construction: details to be stated.",
+      "nrm2_primary_ws": "5",
+      "nrm2_primary_ws_name": "Excavating and filling",
+      "nrm2_primary_items": "",
+      "nrm2_secondary_ws": "WS7:; WS8:; WS9:; WS11:",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-GROFLO-028",
+      "name": "Ground floor slab - 250mm RC, heavy duty",
+      "description": "Warehouse, forklift traffic",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.7,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "resource_id": "PLT_AU_CRANE",
+            "qty": 1.0,
+            "unit": "m²"
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.7,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 38.5,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 82.42,
+      "ohp_percent": 15,
+      "total_rate": 94.79,
+      "nrm1_l4_code": "1.1.3.1",
+      "nrm1_l3_code": "1.1.3",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Lowest floor construction: details to be stated.",
+      "nrm2_primary_ws": "5",
+      "nrm2_primary_ws_name": "Excavating and filling",
+      "nrm2_primary_items": "",
+      "nrm2_secondary_ws": "WS7:; WS8:; WS9:; WS11:",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-BASEXC-029",
+      "name": "Basement excavation - ≤3m deep",
+      "description": "Open cut, good ground",
+      "unit": "m³",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 3.0,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m³",
+            "rate": 125.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m³",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 3.0,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 165.0,
+      "materials_total": 125.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 320.25,
+      "ohp_percent": 15,
+      "total_rate": 368.29,
+      "nrm1_l4_code": "1.1.4.1",
+      "nrm1_l3_code": "1.1.4",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Basement excavation: details, including average depth of excavation, to be stated.",
+      "nrm2_primary_ws": "5",
+      "nrm2_primary_ws_name": "Excavating and filling",
+      "nrm2_primary_items": "6",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-BASEXC-030",
+      "name": "Basement excavation - ≤3m deep, shoring",
+      "description": "Sheet piling required",
+      "unit": "m³",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 3.0,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m³",
+            "rate": 125.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m³",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 3.0,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 165.0,
+      "materials_total": 125.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 320.25,
+      "ohp_percent": 15,
+      "total_rate": 368.29,
+      "nrm1_l4_code": "1.1.2.7",
+      "nrm1_l3_code": "1.1.2",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Disposal of excavated material arising from piling.",
+      "nrm2_primary_ws": "7",
+      "nrm2_primary_ws_name": "Piling",
+      "nrm2_primary_items": "1, 2, 3, 4, 5",
+      "nrm2_secondary_ws": "WS5:6,9",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-BASRET-031",
+      "name": "Basement retaining wall - 200mm RC",
+      "description": "Waterproofed",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 1.2,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.2,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 66.0,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 111.3,
+      "ohp_percent": 15,
+      "total_rate": 128.0,
+      "nrm1_l4_code": "1.1.5.19",
+      "nrm1_l3_code": "1.1.5",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Basement retaining wall components: details to be stated.",
+      "nrm2_primary_ws": "14",
+      "nrm2_primary_ws_name": "Masonry",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-BASRET-032",
+      "name": "Basement retaining wall - 300mm RC",
+      "description": "Waterproofed, deeper",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 1.2,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.2,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 66.0,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 111.3,
+      "ohp_percent": 15,
+      "total_rate": 128.0,
+      "nrm1_l4_code": "1.1.5.19",
+      "nrm1_l3_code": "1.1.5",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Basement retaining wall components: details to be stated.",
+      "nrm2_primary_ws": "14",
+      "nrm2_primary_ws_name": "Masonry",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-BASSLA-033",
+      "name": "Basement slab - 250mm RC, waterproofed",
+      "description": "Tanked construction",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CONCRETER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 23.0,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 66.15,
+      "ohp_percent": 15,
+      "total_rate": 76.07,
+      "nrm1_l4_code": "1.1.3.1",
+      "nrm1_l3_code": "1.1.3",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Lowest floor construction: details to be stated.",
+      "nrm2_primary_ws": "5",
+      "nrm2_primary_ws_name": "Excavating and filling",
+      "nrm2_primary_items": "",
+      "nrm2_secondary_ws": "WS7:; WS8:; WS9:; WS11:",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-BASWAT-034",
+      "name": "Basement waterproofing - membrane system",
+      "description": "External application",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CONCRETER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 23.0,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 66.15,
+      "ohp_percent": 15,
+      "total_rate": 76.07,
+      "nrm1_l4_code": "1.1.5.19",
+      "nrm1_l3_code": "1.1.5",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Basement retaining wall components: details to be stated.",
+      "nrm2_primary_ws": "14",
+      "nrm2_primary_ws_name": "Masonry",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP1-BASWAT-035",
+      "name": "Basement waterproofing - cavity drain",
+      "description": "Internal system",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CONCRETER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 23.0,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 66.15,
+      "ohp_percent": 15,
+      "total_rate": 76.07,
+      "nrm1_l4_code": "1.1.5.19",
+      "nrm1_l3_code": "1.1.5",
+      "nrm1_l2_code": "1.1",
+      "nrm1_description": "Basement retaining wall components: details to be stated.",
+      "nrm2_primary_ws": "14",
+      "nrm2_primary_ws_name": "Masonry",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    }
+  ]
+}

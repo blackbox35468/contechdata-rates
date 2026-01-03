@@ -1,0 +1,2230 @@
+{
+  "metadata": {
+    "file_name": "civil-earthworks-drainage-walls-with-assumptions.json",
+    "version": "1.0",
+    "created_date": "2026-01-03",
+    "description": "Comprehensive 15-template civil collection (5 earthworks + 5 drainage + 5 retaining walls) with measurement assumptions, derivation formulas, and Australian industry productivity standards",
+    "standards_reference": ["STANDARDS-REFERENCE.md", "STANDARDS-QUICK-REFERENCE.md"],
+    "nrm_coverage": ["Section 1 (Substructure)", "Section 8 (External Works)"],
+    "total_templates": 15,
+    "template_breakdown": {
+      "earthworks": 5,
+      "drainage": 5,
+      "retaining_walls": 5
+    }
+  },
+  "templates": [
+    {
+      "template_id": "au-civ-earthwork-cut-clay-1000m3",
+      "name": "Bulk Earthwork - Cut (Clay)",
+      "sector": "civil",
+      "asset_category": "earthworks",
+      "nrm_level2_code": "1.2",
+      "nrm_section": "1 (Substructure)",
+      "description": "Bulk excavation in clay, 1000m³ base volume, benched batter slopes, off-site disposal",
+      "measurement_assumptions": {
+        "sizing_method": "Volume-based (length × width × depth in m³)",
+        "baseline_dimensions": {
+          "excavation_length_m": 50,
+          "excavation_width_m": 20,
+          "excavation_depth_m": 1.0,
+          "base_volume_m3": 1000
+        },
+        "soil_conditions": {
+          "primary_soil_type": "Clay",
+          "soil_type_factor": 1.0,
+          "soil_classification": "Moderate to heavy, stable when benched, standard excavation",
+          "bulking_factor": 1.25,
+          "bulking_rationale": "Excavated clay material expands 25% when loose (displacement in truck/spoil heap)"
+        },
+        "excavation_methodology": {
+          "equipment": "20-30 tonne tracked excavator (1.2-1.5 m³ bucket)",
+          "disposal_method": "off-site (2-5 km haul distance typical)",
+          "batter_slope": "1:2 (50% grade, benched for safety)",
+          "disposal_distance_km": 2.5,
+          "spoil_management": "Continuous haul to approved waste facility"
+        }
+      },
+      "quantity_derivations": {
+        "excavation_volume_cut": {
+          "formula": "Length × Width × Depth",
+          "calculation": "50m × 20m × 1.0m = 1,000m³ excavated",
+          "soil_type_note": "Clay factor 1.0 (baseline) - standard excavation rate 15-20 m³/hr",
+          "final_quantity_m3": 1000,
+          "waste_factor": 1.0,
+          "notes": "Cut material excavated in-place; no waste factor applied (measured from site)"
+        },
+        "spoil_disposal_volume": {
+          "formula": "Excavation volume × bulking factor (loose material displacement)",
+          "calculation": "1,000m³ excavated × 1.25 bulking = 1,250m³ loose fill",
+          "bulking_factor_applied": 1.25,
+          "waste_factor": 1.05,
+          "final_quantity_m3_for_disposal": 1312.5,
+          "notes": "Conservative bulking for clay; 5% additional waste for compaction dust loss and operational spillage"
+        }
+      },
+      "productivity_standards": {
+        "excavation": {
+          "rate_m3_per_hour": 15,
+          "rate_m3_per_day_8hr": 120,
+          "gang_composition": "1 excavator operator + 1 truck driver (2-3 trucks rotating)",
+          "equipment_list": [
+            "20-30 tonne tracked excavator (1.2-1.5m³ bucket)",
+            "6-8m³ tipper trucks (2-3 units for continuous haul)",
+            "Wheel loader for site management"
+          ],
+          "soil_type_adjustment": {
+            "clay": "15-20 m³/hour - standard (baseline)",
+            "sand": "20-25 m³/hour - faster excavation",
+            "rock": "5-10 m³/hour - requires breaker/blasting",
+            "mixed": "12-18 m³/hour - conservative estimate"
+          },
+          "notes": "Assumes standard site conditions, truck turnaround time ~30 min each, continuous operation"
+        },
+        "disposal_management": {
+          "truck_capacity_m3": 8,
+          "haul_distance_km": 2.5,
+          "estimated_truck_cycles_per_day": 8,
+          "estimated_material_disposed_per_day": 64,
+          "labor_hours_per_100m3": 3,
+          "notes": "Disposal labour includes spotting trucks, compaction supervision, environmental monitoring"
+        }
+      },
+      "site_condition_modifiers": {
+        "soil_type_factors": {
+          "clay_baseline": 1.0,
+          "sand_easier": 0.8,
+          "rock_hardest": 2.5,
+          "mixed_unknown": 1.3,
+          "notes": "Applied to excavation productivity rate (m³/hour) - example: Rock = 15 m³/hr ÷ 2.5 = 6 m³/hr"
+        },
+        "depth_factors": {
+          "shallow_lt_1_5m": 1.0,
+          "medium_1_5_3m": 1.15,
+          "deep_gt_3m": 1.4,
+          "notes": "Deeper cuts require shoring, slope angle flattening, increased safety protocols. Applied to labour rate."
+        },
+        "access_and_site": {
+          "open_accessible": 1.0,
+          "congested_urban": 0.85,
+          "poor_access": 0.70,
+          "notes": "Affects truck access and equipment mobility"
+        }
+      },
+      "specifications": {
+        "base_length_m": 50,
+        "base_width_m": 20,
+        "base_area_m2": 1000,
+        "base_volume_m3": 1000,
+        "asset_type": "earthwork",
+        "earthwork_type": "cut",
+        "soil_type": "clay",
+        "bulking_factor": 1.25,
+        "compaction_requirement": null,
+        "batter_slope": "1:2",
+        "disposal_method": "off_site",
+        "terrain": "rolling",
+        "access": "standard",
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian civil construction"
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "disposal_method",
+        "soil_type",
+        "batter_slope"
+      ],
+      "tags": [
+        "civil",
+        "earthwork",
+        "excavation",
+        "cut",
+        "clay",
+        "bulk",
+        "australia"
+      ]
+    },
+    {
+      "template_id": "au-civ-earthwork-fill-select-1000m3",
+      "name": "Bulk Earthwork - Fill (Select)",
+      "sector": "civil",
+      "asset_category": "earthworks",
+      "nrm_level2_code": "1.2",
+      "nrm_section": "1 (Substructure)",
+      "description": "Bulk fill placement with select material, 1000m³ base volume, 95% compaction modified, layered placement",
+      "measurement_assumptions": {
+        "sizing_method": "Volume-based (compacted in-place volume, m³)",
+        "baseline_dimensions": {
+          "fill_length_m": 50,
+          "fill_width_m": 20,
+          "fill_depth_m": 1.0,
+          "base_volume_m3_compacted": 1000
+        },
+        "material_properties": {
+          "fill_type": "Select fill (imported clean fill, free of contamination)",
+          "compaction_standard": "95% modified AASHTO (AS 1289.2.1)",
+          "compaction_note": "Tighter than standard earthfill (90%), suitable for structural fills under buildings",
+          "bulking_factor_reverse": 0.9,
+          "interpretation": "1m³ compacted fill requires 0.9m³ of loose source material (10% reduction through compaction)"
+        },
+        "placement_methodology": {
+          "layer_thickness_mm": 250,
+          "layer_thickness_note": "250mm compacted layer depth - tested each layer for density compliance",
+          "equipment": "Vibratory roller (10-15 tonne, 1.5-2.0m width) + bulldozer",
+          "watering": "Pre-wet material for optimal compaction response",
+          "testing_frequency": "Density test every 500m³ via sand cone or nuclear gauge"
+        }
+      },
+      "quantity_derivations": {
+        "fill_volume_compacted": {
+          "formula": "Length × Width × Depth (in-place compacted measurement)",
+          "calculation": "50m × 20m × 1.0m = 1,000m³ compacted fill",
+          "final_quantity_m3": 1000,
+          "waste_factor": 1.0,
+          "notes": "Measurement taken after compaction settlement; no waste applied (specification-driven)"
+        },
+        "source_material_required": {
+          "formula": "Compacted volume ÷ bulking factor (reverse: accounts for shrinkage via compaction)",
+          "calculation": "1,000m³ compacted ÷ 0.9 = 1,111.1m³ loose source material",
+          "bulking_factor_applied": 0.9,
+          "waste_factor": 1.05,
+          "final_quantity_m3_source": 1166.7,
+          "notes": "5% waste covers: stockpile management losses, segregation waste (removing unsuitable material), moisture adjustment overages"
+        }
+      },
+      "productivity_standards": {
+        "compaction": {
+          "rate_m3_per_hour": 30,
+          "rate_m3_per_day_8hr": 240,
+          "gang_composition": "1 roller operator + 1 bulldozer driver + 1 site supervisor + 1 tester",
+          "equipment_list": [
+            "Vibratory roller (10-15 tonne, 1.5-2.0m width)",
+            "Bulldozer (for spreading and material placement)",
+            "Water truck (for pre-wetting)"
+          ],
+          "compaction_methodology": "Layer-by-layer: spread 250mm → pre-wet → roller pass (min 4 passes) → density test",
+          "notes": "Productivity assumes: material delivered on-site, layers properly spread, optimal moisture content"
+        },
+        "testing_and_inspection": {
+          "frequency_per_m3": 1,
+          "frequency_per_500m3": 1,
+          "time_per_test_hours": 0.5,
+          "testing_method": "Sand cone (AS 1289.5.3.1) or nuclear density gauge",
+          "notes": "Testing costs ~AUD $300-500 per test; included in labour allowance"
+        }
+      },
+      "site_condition_modifiers": {
+        "compaction_standard_factor": {
+          "90_percent_standard": 1.0,
+          "95_percent_modified": 1.15,
+          "100_percent_heavy": 1.25,
+          "notes": "Higher standard = more passes, tighter control → slower productivity"
+        },
+        "layer_thickness_factor": {
+          "100mm_thin_layers": 1.25,
+          "250mm_standard": 1.0,
+          "500mm_thicker": 0.85,
+          "notes": "Thinner layers = more number of lifts, more time; thicker = fewer passes but less control"
+        }
+      },
+      "specifications": {
+        "base_length_m": 50,
+        "base_width_m": 20,
+        "base_area_m2": 1000,
+        "base_volume_m3": 1000,
+        "asset_type": "earthwork",
+        "earthwork_type": "fill",
+        "soil_type": "select_fill",
+        "bulking_factor": 0.9,
+        "compaction_requirement": "95_percent_modified",
+        "compaction_standard": "structural",
+        "layer_thickness_mm": 250,
+        "batter_slope": "1:2",
+        "disposal_method": null,
+        "terrain": "rolling",
+        "access": "standard",
+        "finish_level": "compacted",
+        "project_type": "new_build",
+        "location_context": "Australian civil construction"
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "soil_type",
+        "compaction_requirement",
+        "layer_thickness_mm"
+      ],
+      "tags": [
+        "civil",
+        "earthwork",
+        "fill",
+        "select",
+        "compaction",
+        "bulk",
+        "structural",
+        "australia"
+      ]
+    },
+    {
+      "template_id": "au-civ-siteprep-small-1ha",
+      "name": "Site Preparation - Small",
+      "sector": "civil",
+      "asset_category": "earthworks",
+      "nrm_level2_code": "0.1",
+      "nrm_section": "0 (Facilitating Works)",
+      "description": "Site preparation for 1 hectare, 300mm topsoil strip, stockpile on-site, clearing and grubbing",
+      "measurement_assumptions": {
+        "sizing_method": "Area-based with depth (m² × strip depth in m³)",
+        "baseline_dimensions": {
+          "site_area_m2": 10000,
+          "strip_depth_mm": 300,
+          "strip_depth_m": 0.3,
+          "base_volume_m3": 3000
+        },
+        "site_clearance": {
+          "vegetation_density": "moderate",
+          "grubbing_depth_mm": 150,
+          "grubbing_note": "Root removal to 150mm below surface; allows topsoil to be removed cleanly",
+          "demolition_items": "None assumed (new greenfield site)",
+          "asbestos_screening": "Assumed clear (not included in template; specialist scope if required)"
+        },
+        "topsoil_stripping": {
+          "topsoil_quality": "Suitable for landscaping re-use",
+          "stripping_depth_mm": 300,
+          "stripping_method": "Blade scrape with wheel loader or grader",
+          "stockpile_location": "On-site (within 100m of stripping area)",
+          "bulking_factor": 1.15,
+          "interpretation": "Topsoil expands ~15% when stockpiled loose (aeration, moisture loss)"
+        }
+      },
+      "quantity_derivations": {
+        "topsoil_volume_stripped": {
+          "formula": "Site area × strip depth",
+          "calculation": "10,000m² × 0.3m = 3,000m³ topsoil stripped",
+          "final_quantity_m3": 3000,
+          "waste_factor": 1.0,
+          "notes": "In-place volume measurement; no waste applied"
+        },
+        "topsoil_volume_stockpiled": {
+          "formula": "Stripped volume × bulking factor (aeration in stockpile)",
+          "calculation": "3,000m³ stripped × 1.15 bulking = 3,450m³ loose stockpile",
+          "bulking_factor_applied": 1.15,
+          "waste_factor": 1.05,
+          "final_quantity_m3_stockpile": 3622.5,
+          "notes": "5% waste accounts for: contamination screening losses, weather runoff from pile, segregation"
+        },
+        "vegetation_clearing": {
+          "formula": "Site area (as area metric for clearing operations)",
+          "calculation": "10,000m² cleared (grubbing to 150mm depth)",
+          "final_quantity_m2": 10000,
+          "disposal_method": "On-site mulching or off-site waste",
+          "notes": "Clearing productivity typically 2,000-3,000 m²/day for moderate vegetation"
+        }
+      },
+      "productivity_standards": {
+        "topsoil_stripping": {
+          "rate_m3_per_hour": 20,
+          "rate_m3_per_day_8hr": 160,
+          "gang_composition": "1 wheel loader operator + 1 truck driver (1-2 trucks for haul if off-site)",
+          "equipment_list": [
+            "Wheel loader (2.5-3.5 m³ bucket)",
+            "Grader or blade scraper for levelling",
+            "Tipper trucks (if material off-site)"
+          ],
+          "notes": "Assumes continuous operation, suitable topsoil, standard moisture content"
+        },
+        "vegetation_clearing": {
+          "rate_m2_per_hour": 500,
+          "rate_m2_per_day_8hr": 4000,
+          "gang_composition": "1-2 labourers + 1 equipment operator",
+          "equipment_list": [
+            "Chainsaw (for trees)",
+            "Mulcher (for branches, vegetation)"
+          ],
+          "notes": "Productivity varies with vegetation density: light = 600 m²/hr, moderate = 400 m²/hr, heavy = 200 m²/hr"
+        }
+      },
+      "site_condition_modifiers": {
+        "vegetation_density_factor": {
+          "light_sparse": 1.3,
+          "moderate": 1.0,
+          "heavy_dense": 0.6,
+          "notes": "Applied to clearing productivity rate"
+        },
+        "soil_type_factor": {
+          "topsoil_standard": 1.0,
+          "clay_wet": 0.8,
+          "sandy": 1.2,
+          "rocky": 0.5,
+          "notes": "Applied to stripping rate; wet clay slows blade movement"
+        }
+      },
+      "specifications": {
+        "base_length_m": null,
+        "base_width_m": null,
+        "base_area_m2": 10000,
+        "base_volume_m3": 3000,
+        "asset_type": "earthwork",
+        "earthwork_type": "site_prep",
+        "soil_type": "topsoil",
+        "strip_depth_mm": 300,
+        "bulking_factor": 1.15,
+        "compaction_requirement": null,
+        "batter_slope": null,
+        "disposal_method": "stockpile_onsite",
+        "terrain": "rolling",
+        "access": "standard",
+        "vegetation_density": "moderate",
+        "finish_level": "stripped",
+        "project_type": "new_build",
+        "location_context": "Australian civil construction"
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "strip_depth_mm",
+        "disposal_method",
+        "vegetation_density"
+      ],
+      "tags": [
+        "civil",
+        "earthwork",
+        "site_prep",
+        "topsoil",
+        "clearing",
+        "small",
+        "australia"
+      ]
+    },
+    {
+      "template_id": "au-civ-siteprep-large-5ha",
+      "name": "Site Preparation - Large",
+      "sector": "civil",
+      "asset_category": "earthworks",
+      "nrm_level2_code": "0.1",
+      "nrm_section": "0 (Facilitating Works)",
+      "description": "Site preparation for 5 hectares, 300mm topsoil strip, off-site disposal, clearing and grubbing",
+      "measurement_assumptions": {
+        "sizing_method": "Area-based with depth (m² × strip depth in m³)",
+        "baseline_dimensions": {
+          "site_area_m2": 50000,
+          "strip_depth_mm": 300,
+          "strip_depth_m": 0.3,
+          "base_volume_m3": 15000
+        },
+        "site_clearance": {
+          "vegetation_density": "moderate",
+          "grubbing_depth_mm": 150,
+          "demolition_items": "None assumed",
+          "asbestos_screening": "Assumed clear"
+        },
+        "topsoil_stripping": {
+          "topsoil_quality": "Standard",
+          "stripping_depth_mm": 300,
+          "stripping_method": "Blade scrape with large wheel loader or grader",
+          "disposal_method": "Off-site to licensed waste facility or landscaping contractor",
+          "disposal_distance_km": 5.0,
+          "bulking_factor": 1.15,
+          "volume_economy": "Larger projects = higher productivity due to fewer mobilization delays"
+        }
+      },
+      "quantity_derivations": {
+        "topsoil_volume_stripped": {
+          "formula": "Site area × strip depth",
+          "calculation": "50,000m² × 0.3m = 15,000m³ topsoil stripped",
+          "final_quantity_m3": 15000,
+          "waste_factor": 1.0,
+          "notes": "In-place volume measurement"
+        },
+        "topsoil_volume_for_disposal": {
+          "formula": "Stripped volume × bulking factor × waste factor",
+          "calculation": "15,000m³ × 1.15 bulking × 1.05 waste = 18,037.5m³ for disposal",
+          "bulking_factor_applied": 1.15,
+          "waste_factor": 1.05,
+          "final_quantity_m3_disposal": 18037.5,
+          "notes": "Large projects benefit from bulk disposal pricing; calculate based on waste allowance"
+        }
+      },
+      "productivity_standards": {
+        "topsoil_stripping": {
+          "rate_m3_per_hour": 25,
+          "rate_m3_per_day_8hr": 200,
+          "gang_composition": "1 grader/loader operator + 2 truck drivers (3-4 trucks for continuous haul)",
+          "equipment_list": [
+            "Motor grader or large wheel loader (3.5+ m³ bucket)",
+            "Tipper trucks (8-10m³ capacity, 3-4 units for efficiency)",
+            "Loader for stockpile management"
+          ],
+          "economy_of_scale": "Larger volume = better productivity due to longer continuous runs, truck queue management",
+          "notes": "5ha sites typically run 2-3 weeks; continuous equipment operation"
+        },
+        "vegetation_clearing": {
+          "rate_m2_per_hour": 600,
+          "rate_m2_per_day_8hr": 4800,
+          "gang_composition": "2-3 labourers + 1-2 equipment operators",
+          "equipment_list": [
+            "Mulcher (dedicated for large areas)",
+            "Chainsaw team",
+            "Tipper trucks for mulch haul (if off-site)"
+          ],
+          "notes": "Larger scale allows dedicated equipment; faster per-area productivity"
+        }
+      },
+      "site_condition_modifiers": {
+        "project_scale_factor": {
+          "small_1ha": 0.9,
+          "medium_2_3ha": 1.0,
+          "large_5ha": 1.15,
+          "very_large_10ha": 1.25,
+          "notes": "Larger projects allow continuous workflow; reduced mobilization overhead per unit"
+        }
+      },
+      "specifications": {
+        "base_length_m": null,
+        "base_width_m": null,
+        "base_area_m2": 50000,
+        "base_volume_m3": 15000,
+        "asset_type": "earthwork",
+        "earthwork_type": "site_prep",
+        "soil_type": "topsoil",
+        "strip_depth_mm": 300,
+        "bulking_factor": 1.15,
+        "compaction_requirement": null,
+        "batter_slope": null,
+        "disposal_method": "off_site",
+        "terrain": "rolling",
+        "access": "standard",
+        "vegetation_density": "moderate",
+        "finish_level": "stripped",
+        "project_type": "new_build",
+        "location_context": "Australian civil construction"
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "strip_depth_mm",
+        "disposal_method",
+        "vegetation_density"
+      ],
+      "tags": [
+        "civil",
+        "earthwork",
+        "site_prep",
+        "topsoil",
+        "clearing",
+        "large",
+        "australia"
+      ]
+    },
+    {
+      "template_id": "au-civ-excavation-rock-500m3",
+      "name": "Excavation - Rock",
+      "sector": "civil",
+      "asset_category": "earthworks",
+      "nrm_level2_code": "1.2",
+      "nrm_section": "1 (Substructure)",
+      "description": "Rock excavation 500m³ base volume, rock breaker and controlled blasting methods, off-site disposal",
+      "measurement_assumptions": {
+        "sizing_method": "Volume-based (length × width × depth in m³)",
+        "baseline_dimensions": {
+          "excavation_length_m": 25,
+          "excavation_width_m": 20,
+          "excavation_depth_m": 1.0,
+          "base_volume_m3": 500
+        },
+        "rock_conditions": {
+          "rock_type": "Weathered granite (typical Sydney/Melbourne geology)",
+          "excavation_method": "Rock breaker and controlled blasting",
+          "rock_strength_factor": 2.5,
+          "interpretation": "Rock excavation 2.5x harder than clay; requires breaker or blasting vs. bucket",
+          "bulking_factor": 1.6,
+          "bulking_rationale": "Fractured rock expands 60% after blasting (loose fragments have high void ratio)"
+        },
+        "excavation_methodology": {
+          "blasting": "Controlled blasting (licensed blasting contractor) - Austroads 2m buffer minimum",
+          "primary_equipment": "Hydraulic rock breaker (60-90 tonne attachment) mounted on excavator",
+          "backup_method": "If blasting restricted: Rock breaker only (slower, safer in urban sites)",
+          "disposal_method": "Off-site to licensed quarry or aggregate processing facility"
+        }
+      },
+      "quantity_derivations": {
+        "rock_volume_excavated": {
+          "formula": "Length × Width × Depth (solid rock measurement)",
+          "calculation": "25m × 20m × 1.0m = 500m³ rock excavated in-place",
+          "final_quantity_m3": 500,
+          "waste_factor": 1.0,
+          "notes": "In-place solid volume; no waste applied"
+        },
+        "spoil_volume_loose": {
+          "formula": "Excavation volume × bulking factor (fragmentation void space)",
+          "calculation": "500m³ rock × 1.6 bulking = 800m³ loose rock fragments",
+          "bulking_factor_applied": 1.6,
+          "waste_factor": 1.05,
+          "final_quantity_m3_for_disposal": 840,
+          "notes": "5% waste covers: fines generation during blasting/breaking, compaction dust, segregation losses"
+        }
+      },
+      "productivity_standards": {
+        "rock_excavation": {
+          "rate_m3_per_hour": 5,
+          "rate_m3_per_day_8hr": 40,
+          "gang_composition": "1 excavator operator + 1 blasting supervisor (if blasting) + 2 truck drivers (4-5 trucks)",
+          "equipment_list": [
+            "50-70 tonne excavator with 60-90 tonne rock breaker attachment",
+            "Detonator and explosives (if blasting method)",
+            "8-10m³ tipper trucks (4-5 units for haul)"
+          ],
+          "blasting_protocol": "Licensed blasting contractor (additional cost ~AUD $5,000-10,000 per shot), 8am-4pm windows only",
+          "rock_breaker_alternative": "If blasting unavailable (urban, restricted hours), rock breaker only = 3-5 m³/hr"
+        },
+        "disposal_management": {
+          "truck_capacity_m3": 8,
+          "haul_distance_km": 5.0,
+          "estimated_truck_cycles_per_day": 6,
+          "estimated_material_disposed_per_day": 48,
+          "notes": "Rock disposal to quarry ~AUD $30-50/tonne; often recoverable value from aggregate"
+        }
+      },
+      "site_condition_modifiers": {
+        "excavation_method_factor": {
+          "rock_breaker_primary": 1.0,
+          "blasting_faster": 0.8,
+          "manual_pick_hammer": 3.0,
+          "notes": "Blasting is fastest but restricted in urban areas; rock breaker is universal"
+        },
+        "rock_type_factors": {
+          "weathered_granite": 2.5,
+          "sandstone_softer": 2.0,
+          "basalt_hardest": 3.5,
+          "shale_layered": 2.2,
+          "notes": "Adjusted from baseline clay 1.0"
+        },
+        "access_constraints": {
+          "open_quarry": 1.0,
+          "urban_restricted": 1.25,
+          "heritage_sensitive": 1.5,
+          "notes": "Urban sites = reduced blasting hours, more vibration monitoring required"
+        }
+      },
+      "specifications": {
+        "base_length_m": 25,
+        "base_width_m": 20,
+        "base_area_m2": 500,
+        "base_volume_m3": 500,
+        "asset_type": "earthwork",
+        "earthwork_type": "rock_excavation",
+        "soil_type": "rock",
+        "rock_type": "weathered_granite",
+        "excavation_method": "rock_breaker_blasting",
+        "bulking_factor": 1.6,
+        "compaction_requirement": null,
+        "batter_slope": "1:1",
+        "disposal_method": "off_site",
+        "terrain": "rocky",
+        "access": "difficult",
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian civil construction"
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "rock_type",
+        "excavation_method",
+        "disposal_method"
+      ],
+      "tags": [
+        "civil",
+        "earthwork",
+        "excavation",
+        "rock",
+        "blasting",
+        "breaker",
+        "australia"
+      ]
+    },
+    {
+      "template_id": "au-civ-drainage-channel-lined-100m",
+      "name": "Open Channel Drainage - Lined",
+      "sector": "civil",
+      "asset_category": "drainage",
+      "nrm_level2_code": "8.3",
+      "nrm_section": "8 (External Works)",
+      "description": "Open drainage channel, concrete lined, 100m base length, 1.5m width, urban stormwater",
+      "measurement_assumptions": {
+        "sizing_method": "Linear-based with cross-section (length × width × depth for volume; length for linear items)",
+        "baseline_dimensions": {
+          "channel_length_m": 100,
+          "channel_width_m": 1.5,
+          "channel_depth_m": 0.8,
+          "channel_volume_m3": 120
+        },
+        "flow_design": {
+          "design_storm": "1-in-10 year (ARI 10 years, 10% AEP)",
+          "design_flow_capacity": "Medium class (sufficient for residential/light commercial)",
+          "velocity_check": "0.6-2.0 m/s (no erosion, no sediment deposition)"
+        },
+        "channel_lining": {
+          "lining_type": "Concrete rigid (150mm thick minimum, N25 grade)",
+          "side_slopes": "1:2 (stable, allows mowing access)",
+          "lining_rationale": "Concrete prevents erosion, allows higher velocities, reduces maintenance",
+          "bedding_layer": "100mm compacted sand/gravel bed under concrete"
+        }
+      },
+      "quantity_derivations": {
+        "channel_excavation": {
+          "formula": "Length × (Width + side_slope_extension) × Depth",
+          "calculation": "100m × (1.5m + 2×0.8m×2) × 0.8m ≈ 328m³ excavated",
+          "detailed_calc": "Channel trapezoid: 100m length × avg_width 3.1m × 0.8m depth = 248m³ (trapezoidal section)",
+          "final_quantity_m3": 248,
+          "waste_factor": 1.0,
+          "notes": "1:2 side slopes: base 1.5m + (2 × 0.8m slope) = 3.1m average width"
+        },
+        "concrete_lining": {
+          "formula": "Length × (Width + 2 × side_length) × thickness",
+          "calculation": "100m length × (1.5m base + 2×√(0.8²+1.6²)m side) × 0.15m thickness",
+          "detailed_calculation": "Bottom: 100m × 1.5m × 0.15m = 22.5m³; Sides: 2 × (100m × √0.64+2.56 × 0.15m) ≈ 38m³",
+          "total_concrete_m3": 60.5,
+          "waste_factor": 1.05,
+          "final_quantity_m3_concrete": 63.5,
+          "notes": "5% waste for overpour, surface finish irregularities, spillage"
+        },
+        "bedding_material": {
+          "formula": "Channel length × width × bedding depth",
+          "calculation": "100m × 1.5m × 0.1m = 15m³ sand/gravel",
+          "waste_factor": 1.10,
+          "final_quantity_m3_bedding": 16.5,
+          "notes": "10% waste for compaction settlement, over-excavation tolerance"
+        }
+      },
+      "productivity_standards": {
+        "channel_excavation": {
+          "rate_m3_per_hour": 12,
+          "rate_m3_per_day_8hr": 96,
+          "gang_composition": "1 excavator operator + 1 laborer for grading",
+          "equipment_list": [
+            "15-20 tonne excavator (0.9m³ bucket)",
+            "Grader for channel grade setting"
+          ],
+          "notes": "Rate includes grade setup and side slope cutting to 1:2"
+        },
+        "concrete_placement": {
+          "rate_m3_per_hour": 8,
+          "rate_m3_per_day_8hr": 64,
+          "gang_composition": "1 concrete pump operator + 2 labourers + 1 finisher",
+          "equipment_list": [
+            "Concrete pump truck (or hand pour for small sections)",
+            "Vibrator for compaction",
+            "Trowel/screed for finishing"
+          ],
+          "notes": "Concrete truck delivery included; typical slump 120-150mm for channel work"
+        },
+        "drainage_pipe_installation": {
+          "rate_m_per_hour": 20,
+          "rate_m_per_day_8hr": 160,
+          "pipe_sizing": "100mm agricultural or slotted PVC",
+          "pipe_placement": "Under channel base for underdrain (perforated side down)",
+          "notes": "Allows subsurface drainage if channel constructed in permeable soil"
+        }
+      },
+      "site_condition_modifiers": {
+        "gradient_factor": {
+          "flat_0_to_2_percent": 1.0,
+          "moderate_2_to_5_percent": 1.05,
+          "steep_5_to_10_percent": 1.15,
+          "notes": "Steeper gradients require stabilization (check dams, energy dissipation)"
+        },
+        "soil_type_factor": {
+          "clay_stable": 1.0,
+          "sandy_difficult": 1.2,
+          "rocky": 1.4,
+          "notes": "Affects excavation stability and bedding preparation"
+        },
+        "access_factor": {
+          "open_linear_site": 1.0,
+          "congested_urban": 0.85,
+          "restricted_utility_conflict": 0.70,
+          "notes": "Urban sites often have utilities along corridors; additional locating/protection needed"
+        }
+      },
+      "specifications": {
+        "base_length_m": 100,
+        "base_width_m": 1.5,
+        "base_area_m2": 150,
+        "base_volume_m3": 120,
+        "asset_type": "drainage",
+        "drainage_type": "open_channel",
+        "lining_type": "concrete",
+        "channel_depth_m": 0.8,
+        "side_slopes": "1:2",
+        "flow_capacity_class": "medium",
+        "soil_type": "mixed",
+        "terrain": "flat",
+        "access": "standard",
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian urban stormwater"
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "lining_type"
+      ],
+      "tags": [
+        "civil",
+        "drainage",
+        "channel",
+        "concrete",
+        "lined",
+        "stormwater",
+        "australia"
+      ]
+    },
+    {
+      "template_id": "au-civ-drainage-channel-grass-100m",
+      "name": "Open Channel Drainage - Grass",
+      "sector": "civil",
+      "asset_category": "drainage",
+      "nrm_level2_code": "8.3",
+      "nrm_section": "8 (External Works)",
+      "description": "Open drainage channel, grassed swale, 100m base length, 2m width, low flow capacity",
+      "measurement_assumptions": {
+        "sizing_method": "Linear-based with cross-section (length × width × depth for volume)",
+        "baseline_dimensions": {
+          "channel_length_m": 100,
+          "channel_width_m": 2.0,
+          "channel_depth_m": 0.6,
+          "channel_volume_m3": 120
+        },
+        "flow_design": {
+          "design_storm": "1-in-5 year (ARI 5 years, 20% AEP) - lower capacity",
+          "design_flow_capacity": "Low class",
+          "velocity_check": "0.3-0.6 m/s (grass maintains stability, prevents scouring)",
+          "maintenance_requirement": "Regular mowing and sediment removal (annual)"
+        },
+        "channel_surface": {
+          "surface_type": "Turf grass",
+          "grass_establishment": "Kikuyu or similar native Australian pasture",
+          "soil_preparation": "400mm topsoil minimum for grass root establishment",
+          "maintenance_access": "Side slopes 1:3 (allows mowing equipment to traverse)",
+          "turf_source": "Laid turf (instant), not seeded (faster establishment)"
+        }
+      },
+      "quantity_derivations": {
+        "channel_excavation": {
+          "formula": "Length × (Width + side_slope_extension) × Depth",
+          "calculation": "100m × (2.0m + 2×0.6m×3) × 0.6m = 100m × 5.6m × 0.6m",
+          "detailed_calc": "Trapezoid: 100m × avg_width 3.8m × 0.6m = 228m³",
+          "final_quantity_m3": 228,
+          "waste_factor": 1.0,
+          "notes": "1:3 side slopes (gentler for grass safety): base 2.0m + (2 × 0.6m × 3) = 5.6m top"
+        },
+        "topsoil_placement": {
+          "formula": "Channel length × width × topsoil depth",
+          "calculation": "100m × avg_width 3.8m × 0.4m = 152m³ topsoil",
+          "topsoil_depth_m": 0.4,
+          "waste_factor": 1.10,
+          "final_quantity_m3_topsoil": 167.2,
+          "notes": "10% waste for compaction, settling, and segregation"
+        },
+        "turf_coverage": {
+          "formula": "Channel perimeter (trapezoidal) × length",
+          "calculation": "Bottom 2.0m + 2 × side_length√(0.6²+1.8²) ≈ 2.0m + 2×1.9m = 5.8m wide × 100m = 580m²",
+          "final_quantity_m2": 580,
+          "turf_waste": 1.10,
+          "final_quantity_m2_turf": 638,
+          "notes": "10% waste for seaming, edge trim, establishment losses"
+        }
+      },
+      "productivity_standards": {
+        "channel_excavation": {
+          "rate_m3_per_hour": 10,
+          "rate_m3_per_day_8hr": 80,
+          "gang_composition": "1 excavator operator + 1 laborer",
+          "equipment_list": [
+            "12-15 tonne excavator (0.8m³ bucket)",
+            "Grader for fine grading to design cross-section"
+          ],
+          "notes": "Gentler 1:3 slopes = slower edge cutting than 1:2; more precision needed for grass stability"
+        },
+        "topsoil_spreading": {
+          "rate_m3_per_hour": 15,
+          "rate_m3_per_day_8hr": 120,
+          "gang_composition": "1 wheel loader operator + 1 laborer for raking",
+          "equipment_list": [
+            "Wheel loader (2.5-3.0m³ bucket)"
+          ],
+          "notes": "Topsoil dumped, spread, and lightly compacted"
+        },
+        "turf_laying": {
+          "rate_m2_per_hour": 30,
+          "rate_m2_per_day_8hr": 240,
+          "gang_composition": "2-3 turf layers + 1 supervisor",
+          "equipment_list": [
+            "Turf rolls (0.5m × 2.0m standard)",
+            "Hand tools (tamper, roller)"
+          ],
+          "notes": "Turf laid, pressed down, light watering; productivity assumes pre-prepared bed"
+        }
+      },
+      "site_condition_modifiers": {
+        "gradient_factor": {
+          "flat_0_to_2_percent": 1.0,
+          "moderate_2_to_5_percent": 1.10,
+          "steep_5_percent_plus": 1.25,
+          "notes": "Steeper gradients difficult for grass stability; may require reinforcement or conversion to lined channel"
+        },
+        "soil_quality_factor": {
+          "good_topsoil": 1.0,
+          "poor_requiring_amendment": 1.15,
+          "rocky_difficult": 1.4,
+          "notes": "Poor soils require compost amendment for grass establishment"
+        }
+      },
+      "specifications": {
+        "base_length_m": 100,
+        "base_width_m": 2.0,
+        "base_area_m2": 200,
+        "base_volume_m3": 120,
+        "asset_type": "drainage",
+        "drainage_type": "open_channel",
+        "lining_type": "grass",
+        "channel_depth_m": 0.6,
+        "side_slopes": "1:3",
+        "flow_capacity_class": "low",
+        "soil_type": "mixed",
+        "terrain": "flat",
+        "access": "standard",
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian urban stormwater"
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "lining_type"
+      ],
+      "tags": [
+        "civil",
+        "drainage",
+        "channel",
+        "grass",
+        "swale",
+        "stormwater",
+        "australia"
+      ]
+    },
+    {
+      "template_id": "au-civ-drainage-basin-small-500m2",
+      "name": "Detention Basin - Small",
+      "sector": "civil",
+      "asset_category": "drainage",
+      "nrm_level2_code": "8.3",
+      "nrm_section": "8 (External Works)",
+      "description": "Small detention basin, 500m² surface area, 1.5m depth, outlet structure with orifice, 750m³ storage",
+      "measurement_assumptions": {
+        "sizing_method": "Area-based with depth for storage volume calculation",
+        "baseline_dimensions": {
+          "basin_surface_area_m2": 500,
+          "basin_depth_m": 1.5,
+          "basin_volume_m3": 750,
+          "basin_shape": "Irregular polygon (assume trapezoidal average)"
+        },
+        "storage_design": {
+          "design_storm": "1-in-10 year (ARI 10 years)",
+          "storage_volume": "750m³ (typical suburban detention for 3-5 hectare catchment)",
+          "storage_purpose": "Peak flow attenuation (reduces downstream flooding)"
+        },
+        "outlet_structure": {
+          "outlet_type": "Pit and orifice (gravity outlet, no pump)",
+          "orifice_diameter_mm": 150,
+          "design_outflow_rate": "10-15 L/s (controlled to pre-development peak)",
+          "emergency_bypass": "Spillway rated for 1-in-100 year storm"
+        },
+        "basin_lining": {
+          "surface_type": "Grass with compacted clay subgrade",
+          "permeability": "Low (clay base prevents infiltration)",
+          "maintenance": "Annual mowing, sediment removal every 5 years"
+        }
+      },
+      "quantity_derivations": {
+        "basin_excavation": {
+          "formula": "Surface area × average depth × shape_factor",
+          "calculation": "500m² × 1.5m × 1.0 (assuming rectangular) = 750m³",
+          "shape_adjustment": "Irregular basins: use 0.85-0.95 factor (average 0.90)",
+          "adjusted_volume": "500m² × 1.5m × 0.90 = 675m³",
+          "final_quantity_m3": 675,
+          "waste_factor": 1.0,
+          "notes": "Irregular basins have smaller volume than rectangular; factor accounts for sloped edges"
+        },
+        "clay_liner_placement": {
+          "formula": "Basin surface area (base) + sloped side area × clay depth",
+          "calculation": "Base 500m² + sides ~200m² (estimated) = 700m² × 0.3m clay = 210m³",
+          "clay_depth_m": 0.3,
+          "waste_factor": 1.10,
+          "final_quantity_m3_clay": 231,
+          "notes": "10% waste for compaction and over-excavation tolerance"
+        },
+        "topsoil_and_turf": {
+          "formula": "Internal surface area × topsoil depth",
+          "calculation": "700m² × 0.3m topsoil = 210m³; plus 770m² turf (10% waste = 847m²)",
+          "turf_area_m2": 770,
+          "topsoil_m3": 210,
+          "waste_factor_turf": 1.10,
+          "waste_factor_topsoil": 1.10,
+          "final_turf_m2": 847,
+          "final_topsoil_m3": 231,
+          "notes": "Turf and topsoil together ensure grass establishment and erosion control"
+        }
+      },
+      "productivity_standards": {
+        "basin_excavation": {
+          "rate_m3_per_hour": 10,
+          "rate_m3_per_day_8hr": 80,
+          "gang_composition": "1 excavator operator + 1 site laborer",
+          "equipment_list": [
+            "15-20 tonne excavator (0.9-1.0m³ bucket)",
+            "Grader for basin shaping"
+          ],
+          "notes": "Basin profiling requires precision to avoid sediment dead zones"
+        },
+        "clay_compaction": {
+          "rate_m3_per_hour": 15,
+          "rate_m3_per_day_8hr": 120,
+          "gang_composition": "1 compaction operator + 1 water truck driver",
+          "equipment_list": [
+            "Vibratory roller (10-15 tonne)",
+            "Water truck (for pre-wetting)",
+            "Excavator with bucket for placing clay layers"
+          ],
+          "compaction_standard": "95% modified AASHTO (same as structural fill)",
+          "notes": "Clay liner compacted in 250mm lifts for proper impermeability"
+        },
+        "outlet_structure_installation": {
+          "rate_hours_per_structure": 4,
+          "gang_composition": "1 plumber + 1 laborer",
+          "equipment_list": [
+            "Concrete pour truck (for pit structure)",
+            "Hand tools for installation"
+          ],
+          "notes": "Pre-fabricated pit and orifice assembly; quick installation"
+        }
+      },
+      "site_condition_modifiers": {
+        "soil_type_factor": {
+          "clay_suitable": 1.0,
+          "sandy_requires_amendment": 1.3,
+          "rocky_very_difficult": 2.0,
+          "notes": "Clay basins naturally suited; sand requires imported clay liner (costly)"
+        },
+        "groundwater_factor": {
+          "dry_site": 1.0,
+          "shallow_gw_lt_2m": 1.5,
+          "high_gw_complex": 2.5,
+          "notes": "High groundwater complicates construction and may require dewatering"
+        }
+      },
+      "specifications": {
+        "base_length_m": null,
+        "base_width_m": null,
+        "base_area_m2": 500,
+        "base_volume_m3": 750,
+        "asset_type": "drainage",
+        "drainage_type": "detention_basin",
+        "basin_depth_m": 1.5,
+        "outlet_structure": "pit_and_orifice",
+        "lining_type": "grass",
+        "storage_capacity_m3": 750,
+        "flow_capacity_class": "low",
+        "soil_type": "mixed",
+        "terrain": "flat",
+        "access": "standard",
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian urban stormwater"
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "lining_type",
+        "outlet_structure"
+      ],
+      "tags": [
+        "civil",
+        "drainage",
+        "basin",
+        "detention",
+        "small",
+        "stormwater",
+        "australia"
+      ]
+    },
+    {
+      "template_id": "au-civ-drainage-basin-large-2000m2",
+      "name": "Detention Basin - Large",
+      "sector": "civil",
+      "asset_category": "drainage",
+      "nrm_level2_code": "8.3",
+      "nrm_section": "8 (External Works)",
+      "description": "Large detention basin, 2000m² surface area, 2.5m depth, outlet structure with bypass weir, 5000m³ storage",
+      "measurement_assumptions": {
+        "sizing_method": "Area-based with depth for storage volume calculation",
+        "baseline_dimensions": {
+          "basin_surface_area_m2": 2000,
+          "basin_depth_m": 2.5,
+          "basin_volume_m3": 5000,
+          "basin_shape": "Polygon (campus/commercial scale)"
+        },
+        "storage_design": {
+          "design_storm": "1-in-20 year + 1-in-100 year emergency spillway",
+          "storage_volume": "5000m³ (large commercial/industrial catchment, 20-50 hectare typical)",
+          "peak_flow_attenuation": "Significant (reduces downstream flooding risk)"
+        },
+        "outlet_structure": {
+          "outlet_type": "Pit, orifice plate, and emergency bypass weir",
+          "orifice_diameter_mm": 300,
+          "design_outflow_rate": "50-75 L/s (controlled release)",
+          "bypass_weir": "Secondary spillway for 1-in-100 storm (prevents overtopping)"
+        },
+        "basin_construction": {
+          "excavation_method": "Large equipment excavation + grading",
+          "subgrade_preparation": "Compacted clay or geotextile liner (if permeable soil)",
+          "embankment_construction": "Earthen bund with crest width 2-3m for maintenance access"
+        }
+      },
+      "quantity_derivations": {
+        "basin_excavation": {
+          "formula": "Surface area × average depth × shape_factor",
+          "calculation": "2,000m² × 2.5m × 0.90 (shape factor for irregular polygon) = 4,500m³",
+          "final_quantity_m3": 4500,
+          "waste_factor": 1.0,
+          "notes": "Larger basins benefit from better shape optimization (fewer side slopes relative to volume)"
+        },
+        "embankment_construction": {
+          "formula": "Perimeter × embankment_height × width × density_factor",
+          "calculation": "Perimeter ~225m (approx. √(2000×4)) × 2.5m height × 2.5m width avg = 1,400m³ fill",
+          "perimeter_estimate": 225,
+          "embankment_width_m": 2.5,
+          "final_quantity_m3_embankment": 1400,
+          "waste_factor": 1.05,
+          "final_quantity_with_waste": 1470,
+          "notes": "5% waste for compaction settlement and over-fill to grade"
+        },
+        "clay_liner_or_geotextile": {
+          "formula": "Basin internal surface area × liner thickness",
+          "calculation": "Base 2,000m² + sides ~450m² = 2,450m² × 0.3m clay = 735m³",
+          "lining_option_1": "Clay liner: 735m³ compacted clay (if low-permeability soil on-site)",
+          "lining_option_2": "Geotextile: 2,450m² woven geofabric (if sand/gravel subgrade)",
+          "final_quantity_clay_or_geotextile": "735m³ clay OR 2,450m² geofabric",
+          "notes": "Design-dependent; clay preferred if available, geofabric if sandy site"
+        }
+      },
+      "productivity_standards": {
+        "basin_excavation": {
+          "rate_m3_per_hour": 20,
+          "rate_m3_per_day_8hr": 160,
+          "gang_composition": "1-2 excavator operators + 1 grader operator + 1 supervisor",
+          "equipment_list": [
+            "25-30 tonne excavator (1.2-1.5m³ bucket)",
+            "Motor grader (for profiling and crest preparation)",
+            "Vibratory compactor (for embankment)"
+          ],
+          "economy_of_scale": "Larger basins achieve higher m³/day due to continuous equipment operation",
+          "notes": "4,500m³ = 28 days nominal (with weather/testing allowance)"
+        },
+        "embankment_compaction": {
+          "rate_m3_per_hour": 25,
+          "rate_m3_per_day_8hr": 200,
+          "gang_composition": "1 compaction operator + 1 water truck + 1 tester",
+          "equipment_list": [
+            "Vibratory roller (15-20 tonne)",
+            "Bulldozer (for material spreading)",
+            "Water truck (for pre-wetting before compaction)"
+          ],
+          "compaction_standard": "95% modified AASHTO",
+          "notes": "Embankment layers 300-500mm; 4-6 passes per layer"
+        },
+        "outlet_structure_installation": {
+          "rate_hours_per_structure": 8,
+          "gang_composition": "1 experienced plumber + 1-2 labourers + concrete crew",
+          "equipment_list": [
+            "Concrete pump truck (for pit pour)",
+            "Steel reinforcement (for pit cage)",
+            "Weir plate assembly (pre-fabricated steel)"
+          ],
+          "notes": "Large basin: more complex pit and weir assembly, longer concrete pour"
+        }
+      },
+      "site_condition_modifiers": {
+        "project_scale_economy": {
+          "small_basin_500m2": 0.9,
+          "medium_basin_1000m2": 1.0,
+          "large_basin_2000m2": 1.15,
+          "very_large_5000m2": 1.30,
+          "notes": "Larger basins achieve higher equipment utilization and faster m³/day"
+        }
+      },
+      "specifications": {
+        "base_length_m": null,
+        "base_width_m": null,
+        "base_area_m2": 2000,
+        "base_volume_m3": 5000,
+        "asset_type": "drainage",
+        "drainage_type": "detention_basin",
+        "basin_depth_m": 2.5,
+        "outlet_structure": "structure_and_bypass_weir",
+        "lining_type": "grass",
+        "storage_capacity_m3": 5000,
+        "flow_capacity_class": "high",
+        "soil_type": "mixed",
+        "terrain": "flat",
+        "access": "standard",
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian urban stormwater"
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "lining_type",
+        "outlet_structure"
+      ],
+      "tags": [
+        "civil",
+        "drainage",
+        "basin",
+        "detention",
+        "large",
+        "stormwater",
+        "australia"
+      ]
+    },
+    {
+      "template_id": "au-civ-drainage-kerb-gutter-100m",
+      "name": "Kerb & Gutter",
+      "sector": "civil",
+      "asset_category": "drainage",
+      "nrm_level2_code": "8.1",
+      "nrm_section": "8 (External Works)",
+      "description": "Standard kerb and gutter, 100m base length, extruded concrete profile, 150mm height, urban street",
+      "measurement_assumptions": {
+        "sizing_method": "Linear-based (length measurement, m; volume derived for concrete)",
+        "baseline_dimensions": {
+          "kerb_length_m": 100,
+          "kerb_height_mm": 150,
+          "gutter_width_mm": 400,
+          "profile_type": "standard extruded"
+        },
+        "drainage_function": {
+          "primary_function": "Runoff capture and conveyance to stormwater inlet",
+          "flow_capacity": "Low class (acceptable for residential/local streets)",
+          "design_frequency": "1-in-5 year (ARI 5 years)",
+          "maintenance": "Regular sweeping/cleaning (sediment management)"
+        },
+        "installation_methodology": {
+          "base_preparation": "100mm compacted sand bed (grade adjustment)",
+          "kerb_profile": "Extruded precast concrete (straight runs) or custom cast (curves)",
+          "jointing": "Concrete or rubber joint sealant every 4-5m",
+          "setting_time": "24 hours minimum before traffic"
+        }
+      },
+      "quantity_derivations": {
+        "kerb_linear_meters": {
+          "formula": "Direct linear measurement",
+          "calculation": "100m kerb length (as specified)",
+          "final_quantity_m": 100,
+          "waste_factor": 1.03,
+          "final_quantity_with_waste": 103,
+          "notes": "3% waste for joint cuts, breakage during handling/placement"
+        },
+        "concrete_volume_kerb": {
+          "formula": "Length × cross_section_area (profile constant)",
+          "calculation": "100m × (estimated 0.05m² per linear m) = 5m³ precast kerb concrete",
+          "final_quantity_m3": 5,
+          "waste_factor": 1.0,
+          "notes": "Precast product; no waste applied (measured delivered)"
+        },
+        "sand_bed_material": {
+          "formula": "Length × gutter_width × bed_depth",
+          "calculation": "100m × 0.4m × 0.1m = 4m³ compacted sand",
+          "waste_factor": 1.10,
+          "final_quantity_m3_sand": 4.4,
+          "notes": "10% waste for over-excavation, compaction settlement, segregation"
+        },
+        "joint_sealant": {
+          "formula": "Number_of_joints × joint_length × joint_width × sealant_depth",
+          "calculation": "20 joints (100m ÷ 5m spacing) × 0.4m width × 0.02m² cross_section ≈ 0.16m³",
+          "final_quantity_m3_sealant": 0.16,
+          "waste_factor": 1.15,
+          "final_quantity_with_waste": 0.18,
+          "notes": "15% waste for neatening joints, over-application"
+        }
+      },
+      "productivity_standards": {
+        "kerb_installation": {
+          "rate_m_per_hour": 8,
+          "rate_m_per_day_8hr": 64,
+          "gang_composition": "1 kerb layer + 1 concrete finisher + 1 labourer",
+          "equipment_list": [
+            "Mini excavator or hand tools (for sand bed prep)",
+            "Laser level (for grade setting)",
+            "Rubber mallet and spacers (for alignment)"
+          ],
+          "quality_control": "Level check every 5m; grade tolerance ±5mm",
+          "notes": "Assumes precast straight sections; custom curves slower (6 m/day)"
+        },
+        "sand_bed_preparation": {
+          "rate_m3_per_hour": 6,
+          "rate_m3_per_day_8hr": 48,
+          "gang_composition": "1 operator + 1 labourer",
+          "equipment_list": [
+            "Mini excavator or grader",
+            "Hand rake and tamper"
+          ],
+          "notes": "Sand bed must be compacted to 95% SD (standard) before kerb laying"
+        },
+        "joint_sealing": {
+          "rate_m_per_hour": 4,
+          "rate_m_per_day_8hr": 32,
+          "gang_composition": "1 sealant specialist",
+          "equipment_list": [
+            "Caulking gun or pump",
+            "Masking tape (for clean joint edges)"
+          ],
+          "notes": "Done after kerb cure (24hr); elastomeric sealant preferred (movement tolerance)"
+        }
+      },
+      "site_condition_modifiers": {
+        "ground_condition_factor": {
+          "good_stable_subgrade": 1.0,
+          "poor_soft_soils": 1.2,
+          "rocky_excavation": 1.3,
+          "notes": "Poor ground requires extra sand bed thickness or ground stabilization"
+        },
+        "traffic_management_factor": {
+          "low_volume_residential": 1.0,
+          "moderate_traffic": 1.15,
+          "high_traffic_busy_street": 1.4,
+          "notes": "Busy streets require traffic control and work windows (night/weekend premium)"
+        }
+      },
+      "specifications": {
+        "base_length_m": 100,
+        "base_width_m": null,
+        "base_area_m2": null,
+        "base_volume_m3": null,
+        "asset_type": "drainage",
+        "drainage_type": "kerb_gutter",
+        "profile_type": "standard_extruded",
+        "kerb_height_mm": 150,
+        "gutter_width_mm": 400,
+        "material": "concrete",
+        "finish_type": "extruded",
+        "flow_capacity_class": "low",
+        "soil_type": "mixed",
+        "terrain": "flat",
+        "access": "standard",
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian urban street"
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "profile_type",
+        "finish_type"
+      ],
+      "tags": [
+        "civil",
+        "drainage",
+        "kerb",
+        "gutter",
+        "concrete",
+        "street",
+        "urban",
+        "australia"
+      ]
+    },
+    {
+      "template_id": "concrete-retaining-low",
+      "name": "Concrete Retaining Wall - Low",
+      "sector": "civil",
+      "asset_category": "retaining_walls",
+      "nrm_level2_code": "1.4",
+      "nrm_section": "1 (Substructure)",
+      "description": "Low-height concrete retaining wall (1.5m) - L-shaped gravity design, suitable for residential applications, no engineering certification required",
+      "measurement_assumptions": {
+        "sizing_method": "Height-based linear geometry (height × length, with volume derived for materials)",
+        "baseline_dimensions": {
+          "wall_height_m": 1.5,
+          "wall_length_m": 20,
+          "wall_thickness_mm": 200,
+          "wall_volume_m3": 6.0
+        },
+        "structural_classification": {
+          "height_class": "Low (<1.5m)",
+          "design_methodology": "L-shaped gravity wall (no engineering required in most Australian states)",
+          "soil_assumptions": "Class H (sandy clay) - moderate reactivity, passive pressure ~40 kN/m²",
+          "load_assumptions": "No surcharge; level backfill only"
+        },
+        "wall_design": {
+          "foundation_depth_m": 0.3,
+          "foundation_width_mm": 450,
+          "foundation_length": "Continuous under wall length",
+          "footing_type": "Reinforced concrete pad",
+          "concrete_grade": "N32 (32 MPa)",
+          "reinforcement": "N12 bars @ 300mm c/c (vertical and horizontal)"
+        }
+      },
+      "quantity_derivations": {
+        "concrete_wall_volume": {
+          "formula": "Height × Length × Thickness",
+          "calculation": "1.5m height × 20m length × 0.2m thickness = 6.0m³",
+          "final_quantity_m3": 6.0,
+          "waste_factor": 1.05,
+          "final_quantity_m3_with_waste": 6.3,
+          "notes": "5% waste for spillage, over-pour, formwork overflow"
+        },
+        "concrete_footing_volume": {
+          "formula": "Foundation_width × Foundation_depth × Wall_length",
+          "calculation": "0.45m × 0.3m × 20m = 2.7m³ footing concrete",
+          "final_quantity_m3_footing": 2.7,
+          "waste_factor": 1.05,
+          "final_quantity_with_waste_footing": 2.835,
+          "notes": "Combined wall + footing: 6.3 + 2.835 = 9.135m³ total concrete required"
+        },
+        "reinforcement_steel": {
+          "formula": "Bar_count × bar_length × bar_weight",
+          "calculation": "Vertical: 67 bars (1 per 300mm) × 1.8m = 120.6m; Horizontal: 40 bars × 20m = 800m",
+          "total_rebar_m": 920.6,
+          "bar_size": "N12 (12mm dia) = 0.89 kg/m",
+          "steel_weight_kg": 819,
+          "waste_factor": 1.08,
+          "final_steel_kg": 884,
+          "notes": "8% waste for cut-offs, overlaps, site damage"
+        },
+        "excavation_footing": {
+          "formula": "Wall_length × Foundation_width × Foundation_depth",
+          "calculation": "20m × 0.45m × 0.3m = 2.7m³ excavated",
+          "final_quantity_m3": 2.7,
+          "waste_factor": 1.05,
+          "final_quantity_with_waste": 2.835,
+          "notes": "5% for over-excavation tolerance"
+        }
+      },
+      "productivity_standards": {
+        "formwork_assembly": {
+          "rate_m2_per_hour": 3,
+          "rate_m2_per_day_8hr": 24,
+          "total_form_area": "2 × (1.5m height × 20m length) = 60m²",
+          "gang_composition": "1 form carpenter + 1 labourer",
+          "equipment_list": [
+            "Timber formwork (rough sawn, reusable)",
+            "Bracing and props",
+            "Level and straightedge"
+          ],
+          "notes": "Straight wall = fast formwork; estimated 2.5 days setup"
+        },
+        "reinforcement_placement": {
+          "rate_m_per_hour": 50,
+          "rate_m_per_day_8hr": 400,
+          "gang_composition": "1 reinforcer + 1 assistant",
+          "equipment_list": [
+            "Rebar cutter/bender",
+            "Tie wire and pliers",
+            "Spacers (chairs)"
+          ],
+          "notes": "920m rebar = 2.3 days; straight runs (no complex cages) = efficient"
+        },
+        "concrete_placement": {
+          "rate_m3_per_hour": 5,
+          "rate_m3_per_day_8hr": 40,
+          "total_concrete": 9.135,
+          "estimated_days": 0.25,
+          "gang_composition": "1 concrete pump operator + 2 finishing labourers + 1 supervisor",
+          "equipment_list": [
+            "Concrete truck (pump truck or direct chute)",
+            "Vibrator (internal needle, for compaction)",
+            "Trowel and screed (for finish)"
+          ],
+          "notes": "Small wall: can be poured in single day (morning); 24hr cure before backfill"
+        },
+        "formwork_removal": {
+          "removal_timing": "48-72 hours after pour (concrete strength ~20 MPa)",
+          "rate_m2_per_hour": 5,
+          "rate_m2_per_day_8hr": 40,
+          "gang_composition": "1 carpenter + 1 labourer",
+          "notes": "Careful removal to avoid damage to fresh concrete"
+        }
+      },
+      "site_condition_modifiers": {
+        "foundation_depth_factor": {
+          "shallow_300mm": 1.0,
+          "medium_500mm": 1.1,
+          "deep_800mm": 1.3,
+          "notes": "Deeper foundations = more concrete, longer excavation"
+        },
+        "soil_bearing_factor": {
+          "good_class_h": 1.0,
+          "poor_requires_excavation": 1.2,
+          "very_soft_deep_footing": 1.5,
+          "notes": "Poor soils require larger footing or deeper embedment"
+        },
+        "access_and_site": {
+          "open_residential": 1.0,
+          "constrained_access": 1.2,
+          "steep_slope": 1.3,
+          "notes": "Steep sites increase formwork complexity"
+        }
+      },
+      "specifications": {
+        "specifications": {
+          "wall_height_m": 1.5,
+          "wall_length_m": 20,
+          "wall_thickness_mm": 200,
+          "wall_system": "L-shaped gravity retaining wall",
+          "foundation_type": "Reinforced concrete footing (450mm x 300mm)",
+          "foundation_depth_m": 0.3,
+          "concrete_grade": "N32 (32 MPa)",
+          "reinforcement": "N12 bars @ 300mm centres vertical and horizontal",
+          "drainage": "100mm agricultural pipe with gravel backfill",
+          "soil_conditions": "Class H (sandy clay) - moderate reactivity",
+          "engineering_required": "No certification required (<1.5m height)",
+          "finish": "Exposed aggregate or off-form concrete"
+        },
+        "project_context": {
+          "typical_use": "Residential garden terracing, driveway level changes",
+          "site_conditions": "Level to moderate slope, good drainage",
+          "access": "Standard residential access for concrete truck and excavator"
+        },
+        "assumptions": [
+          "Wall height does not exceed 1.5m (no engineering certification required in most Australian states)",
+          "Level backfill (no surcharge loads)",
+          "Standard residential soil conditions (Class H)",
+          "No groundwater issues",
+          "Concrete truck access available within 30m",
+          "Standard 28-day concrete cure time",
+          "No special architectural finish required"
+        ],
+        "exclusions": [
+          "Site survey and engineering design",
+          "Soil testing and classification",
+          "Council permits and approvals",
+          "Demolition of existing structures",
+          "Tree removal or protection",
+          "Service location and protection",
+          "Temporary shoring or support",
+          "Special finishes or cladding",
+          "Landscaping and topsoiling"
+        ]
+      },
+      "is_active": true,
+      "applicable_swaps": [],
+      "tags": [
+        "concrete",
+        "residential",
+        "low-height",
+        "gravity-wall"
+      ]
+    },
+    {
+      "template_id": "concrete-retaining-medium",
+      "name": "Concrete Retaining Wall - Medium",
+      "sector": "civil",
+      "asset_category": "retaining_walls",
+      "nrm_level2_code": "1.4",
+      "nrm_section": "1 (Substructure)",
+      "description": "Medium-height concrete retaining wall (3m) - Cantilever design with engineered footing, requires standard engineering certification",
+      "measurement_assumptions": {
+        "sizing_method": "Height-based linear geometry with cantilever analysis (height × length, volume derived)",
+        "baseline_dimensions": {
+          "wall_height_m": 3.0,
+          "wall_length_m": 20,
+          "wall_thickness_mm": 250,
+          "wall_volume_m3": 15.0
+        },
+        "structural_classification": {
+          "height_class": "Medium (1.5-3.0m)",
+          "design_methodology": "Cantilever retaining wall (requires structural engineer certification)",
+          "soil_assumptions": "Class H to M (sandy clay to clay) - moderate to high reactivity, passive pressure ~80 kN/m²",
+          "load_assumptions": "Level backfill; no vehicle surcharge at crest"
+        },
+        "wall_design": {
+          "foundation_depth_m": 0.6,
+          "foundation_width_mm": 1200,
+          "foundation_length": "Continuous pad footing (longer than low wall to resist overturning)",
+          "footing_type": "Reinforced concrete pad",
+          "concrete_grade": "N40 (40 MPa)",
+          "reinforcement": "N16 vertical @ 200mm, N12 horizontal @ 300mm (heavier than low wall)"
+        }
+      },
+      "quantity_derivations": {
+        "concrete_wall_volume": {
+          "formula": "Height × Length × Thickness",
+          "calculation": "3.0m height × 20m length × 0.25m thickness = 15.0m³",
+          "final_quantity_m3": 15.0,
+          "waste_factor": 1.05,
+          "final_quantity_m3_with_waste": 15.75,
+          "notes": "5% waste for spillage and over-pour"
+        },
+        "concrete_footing_volume": {
+          "formula": "Foundation_width × Foundation_depth × Wall_length",
+          "calculation": "1.2m × 0.6m × 20m = 14.4m³ footing concrete",
+          "final_quantity_m3_footing": 14.4,
+          "waste_factor": 1.05,
+          "final_quantity_with_waste_footing": 15.12,
+          "notes": "Much larger footing than low wall (resists 3m height overturning moment)"
+        },
+        "reinforcement_steel": {
+          "formula": "Vertical_bars + Horizontal_bars",
+          "vertical_calc": "Vertical: 101 bars (1 per 200mm) × 3.2m = 323m of N16 = 2.42 kg/m × 323m = 782 kg",
+          "horizontal_calc": "Horizontal: 40 bars × 20m = 800m of N12 = 0.89 kg/m × 800m = 712 kg",
+          "total_steel_kg": 1494,
+          "waste_factor": 1.08,
+          "final_steel_kg": 1613,
+          "notes": "Significant increase from low wall due to cantilever bending stresses"
+        },
+        "excavation_footing": {
+          "formula": "Wall_length × Foundation_width × Foundation_depth",
+          "calculation": "20m × 1.2m × 0.6m = 14.4m³ excavated",
+          "final_quantity_m3": 14.4,
+          "waste_factor": 1.05,
+          "final_quantity_with_waste": 15.12,
+          "notes": "Deeper and wider excavation than low wall"
+        }
+      },
+      "productivity_standards": {
+        "formwork_assembly": {
+          "rate_m2_per_hour": 2.5,
+          "rate_m2_per_day_8hr": 20,
+          "total_form_area": "Wall: 2 × (3.0m × 20m) = 120m²; Footing: 2 × (1.2m × 20m) = 48m²; Total: 168m²",
+          "estimated_days": 8.4,
+          "gang_composition": "2 form carpenters + 2 labourers",
+          "equipment_list": [
+            "Timber formwork (or steel formwork for reuse)",
+            "Heavy bracing for 3m height stability",
+            "Laser level and string line"
+          ],
+          "notes": "Taller wall requires heavier bracing; 1.5x complexity of low wall"
+        },
+        "reinforcement_placement": {
+          "rate_m_per_hour": 40,
+          "rate_m_per_day_8hr": 320,
+          "total_rebar": 1123,
+          "estimated_days": 3.5,
+          "gang_composition": "1 senior reinforcer + 2 assistants",
+          "equipment_list": [
+            "Rebar cutter/bender",
+            "Tie wire and pliers",
+            "Spacers and chairs (heavier duty)"
+          ],
+          "notes": "More complex lap joints and cage assembly than low wall"
+        },
+        "concrete_placement": {
+          "rate_m3_per_hour": 4,
+          "rate_m3_per_day_8hr": 32,
+          "total_concrete": 30.87,
+          "estimated_days": 1.0,
+          "gang_composition": "1 pump operator + 3 finishing labourers + 1 supervisor",
+          "equipment_list": [
+            "Concrete pump truck (longer reach for 3m height)",
+            "Multiple vibrators (for full consolidation)",
+            "Trowel and screed team"
+          ],
+          "notes": "Larger pour; may split into 2 shifts to maintain quality control"
+        }
+      },
+      "site_condition_modifiers": {
+        "height_factor": {
+          "low_1_5m": 0.8,
+          "medium_3_0m": 1.0,
+          "high_6_0m": 2.0,
+          "notes": "Height drives footing size, reinforcement qty, and engineering complexity"
+        },
+        "soil_class_factor": {
+          "sand_class_g": 1.2,
+          "sandy_clay_class_h": 1.0,
+          "clay_class_m": 1.0,
+          "highly_reactive_class_e": 1.4,
+          "notes": "Soil class affects footing depth and passive pressure calculations"
+        }
+      },
+      "specifications": {
+        "specifications": {
+          "wall_height_m": 3.0,
+          "wall_length_m": 20,
+          "wall_thickness_mm": 250,
+          "wall_system": "Cantilever retaining wall with reinforced concrete footing",
+          "foundation_type": "Reinforced concrete pad footing (1200mm x 600mm)",
+          "foundation_depth_m": 0.6,
+          "concrete_grade": "N40 (40 MPa)",
+          "reinforcement": "N16 bars @ 200mm centres vertical, N12 @ 300mm horizontal, starter bars L-bent",
+          "drainage": "150mm slotted drainage pipe with gravel backfill and geotextile wrap",
+          "soil_conditions": "Class H to M (sandy clay to clay) - moderate to high reactivity",
+          "engineering_required": "Standard structural engineering certification required (1.5-3.5m height range)",
+          "finish": "Form-finished concrete with chamfered edges"
+        },
+        "project_context": {
+          "typical_use": "Commercial property boundaries, multi-level residential terracing, basement walls",
+          "site_conditions": "Moderate slope, controlled drainage required",
+          "access": "Good vehicular access for concrete trucks, excavators, and crane"
+        },
+        "assumptions": [
+          "Wall height between 1.5m and 3.5m (standard engineering certification required)",
+          "Level backfill with no surcharge loads (vehicles/structures)",
+          "Standard soil conditions (Class H or M)",
+          "No groundwater within 1m of wall base",
+          "Concrete truck and crane access available",
+          "Engineering design provided (not included in rate)",
+          "Standard 28-day concrete cure time",
+          "Weather delays allowed in program"
+        ],
+        "exclusions": [
+          "Site survey and geotechnical investigation",
+          "Structural and civil engineering design fees",
+          "Council permits, DA approvals, and certification",
+          "Demolition of existing structures",
+          "Service relocation or protection",
+          "Temporary shoring, propping, or underpinning",
+          "Dewatering or groundwater control",
+          "Special architectural finishes or cladding systems",
+          "Landscaping, turfing, and topsoiling",
+          "Traffic management or road closures"
+        ]
+      },
+      "is_active": true,
+      "applicable_swaps": [],
+      "tags": [
+        "concrete",
+        "residential",
+        "commercial",
+        "medium-height",
+        "cantilever",
+        "engineered"
+      ]
+    },
+    {
+      "template_id": "concrete-retaining-high",
+      "name": "Concrete Retaining Wall - High",
+      "sector": "civil",
+      "asset_category": "retaining_walls",
+      "nrm_level2_code": "1.4",
+      "nrm_section": "1 (Substructure)",
+      "description": "High-height concrete retaining wall (6m) - Anchored/tieback cantilever system, requires specialist engineering and construction methodology",
+      "measurement_assumptions": {
+        "sizing_method": "Height-based with complex geometry (height × length, volume for materials derived)",
+        "baseline_dimensions": {
+          "wall_height_m": 6.0,
+          "wall_length_m": 20,
+          "wall_thickness_mm": 350,
+          "wall_volume_m3": 42.0
+        },
+        "structural_classification": {
+          "height_class": "High (>3.5m)",
+          "design_methodology": "Anchored/tieback cantilever wall (specialist geotechnical + structural engineer required)",
+          "soil_assumptions": "Class M to E (clay to highly reactive) - high to extreme reactivity, passive pressure ~160+ kN/m²",
+          "load_assumptions": "Level backfill; no surcharge; anchors provide major portion of restraint"
+        },
+        "wall_design": {
+          "foundation_depth_m": 1.0,
+          "foundation_width_mm": 2000,
+          "anchor_system": "Post-tensioned ground anchors",
+          "anchor_spacing_m": 2.5,
+          "anchor_length_m": 15,
+          "anchor_capacity_kn": 150,
+          "footing_type": "Reinforced concrete spread footing or piled foundation",
+          "concrete_grade": "N50 wall, N40 footing",
+          "reinforcement": "N20 bars @ 200mm c/c (vertical + horizontal), heavy mesh top/bottom"
+        }
+      },
+      "quantity_derivations": {
+        "concrete_wall_volume": {
+          "formula": "Height × Length × Thickness",
+          "calculation": "6.0m height × 20m length × 0.35m thickness = 42.0m³",
+          "final_quantity_m3": 42.0,
+          "waste_factor": 1.05,
+          "final_quantity_m3_with_waste": 44.1,
+          "notes": "5% waste for spillage and over-pour"
+        },
+        "concrete_footing_volume": {
+          "formula": "Foundation_width × Foundation_depth × Wall_length",
+          "calculation": "2.0m × 1.0m × 20m = 40.0m³ footing concrete",
+          "final_quantity_m3_footing": 40.0,
+          "waste_factor": 1.05,
+          "final_quantity_with_waste_footing": 42.0,
+          "notes": "Very large footing; may be piled in poor soil conditions"
+        },
+        "reinforcement_steel": {
+          "formula": "Wall + Footing + Anchor embedment",
+          "wall_calc": "Vertical: 151 bars (1 per 200mm) × 6.5m = 981m of N20 = 2.47 kg/m × 981m = 2,422 kg",
+          "footing_calc": "Footing: 80m of N20 + 400m of N16 = 80×2.47 + 400×1.98 = 988 kg",
+          "anchor_embedment": "Starter bar embedment: 8 anchors × 3m = 24m of N25 = 3.86 kg/m × 24m = 93 kg",
+          "total_steel_kg": 3503,
+          "waste_factor": 1.08,
+          "final_steel_kg": 3783,
+          "notes": "Massive increase from medium wall due to 6m height and anchor forces"
+        },
+        "ground_anchors": {
+          "anchor_quantity": 8,
+          "anchors_per_20m_length": 8,
+          "anchor_spacing_m": 2.5,
+          "anchor_length_m": 15,
+          "anchor_capacity_kn": 150,
+          "total_anchor_cost_estimate": "AUD $15,000-25,000 (not in concrete volume)",
+          "notes": "Post-tensioned anchors: material + installation + testing ~AUD $2,000-3,000 per anchor"
+        }
+      },
+      "productivity_standards": {
+        "formwork_assembly": {
+          "rate_m2_per_hour": 2,
+          "rate_m2_per_day_8hr": 16,
+          "total_form_area": "Wall: 2 × (6.0m × 20m) = 240m²; Footing: 2 × (2.0m × 20m) = 80m²; Total: 320m²",
+          "estimated_days": 20,
+          "gang_composition": "3 form carpenters + 3 labourers + 1 supervisor",
+          "equipment_list": [
+            "Heavy-duty steel formwork (reusable, for 6m height stability)",
+            "Extensive bracing and lateral supports",
+            "Laser level and stringline"
+          ],
+          "notes": "Complex formwork; 2x complexity of medium wall. Precision critical for anchor embedment."
+        },
+        "anchor_installation": {
+          "rate_per_anchor_hours": 16,
+          "gang_composition": "1 licensed drill rig operator + 1 geotechnical supervisor + 2 assistants",
+          "equipment_list": [
+            "Rock drill rig (for anchor holes)",
+            "Pump for grout injection",
+            "Tensioning equipment and load cells"
+          ],
+          "estimated_days_total": 5,
+          "testing_protocol": "Load testing to 150% design load (ACI standard); pre-testing also",
+          "notes": "Anchor work done after wall pour; critical path item"
+        },
+        "concrete_placement": {
+          "rate_m3_per_hour": 3,
+          "rate_m3_per_day_8hr": 24,
+          "total_concrete": 86.1,
+          "estimated_days": 3.5,
+          "gang_composition": "2 pump operators + 4-5 finishing labourers + 1 supervisor",
+          "equipment_list": [
+            "Large concrete pump truck (or boom pump for height reach)",
+            "Multiple vibrators (for full consolidation in thick wall)",
+            "Experienced concrete finisher (specialist)"
+          ],
+          "notes": "Large pour; may split across multiple days to manage concrete set and quality"
+        }
+      },
+      "site_condition_modifiers": {
+        "height_and_complexity_factor": {
+          "medium_3m": 1.0,
+          "high_6m": 2.5,
+          "very_high_10m": 4.5,
+          "notes": "Cost and time scale exponentially with height due to anchor system and engineering"
+        },
+        "anchor_feasibility_factor": {
+          "suitable_strata_available": 1.0,
+          "marginal_rock": 1.3,
+          "difficult_poor_strata": 1.8,
+          "notes": "Anchor feasibility assessed by geotechnical engineer; poor strata = more anchors or deeper"
+        }
+      },
+      "specifications": {
+        "specifications": {
+          "wall_height_m": 6.0,
+          "wall_length_m": 20,
+          "wall_thickness_mm": 350,
+          "wall_system": "Anchored cantilever retaining wall with ground anchors or tiebacks",
+          "foundation_type": "Reinforced concrete spread footing (2000mm x 1000mm) or piled foundation",
+          "foundation_depth_m": 1.0,
+          "concrete_grade": "N50 (50 MPa) for wall, N40 for footing",
+          "reinforcement": "N20 bars @ 200mm centres vertical and horizontal, heavy mesh top/bottom, anchor embedment zones",
+          "anchors": "Post-tensioned ground anchors @ 2-3m centres, 10-15m length, 150-200kN capacity",
+          "drainage": "200mm slotted drainage pipe with gravel drainage layer, weepholes @ 2m centres",
+          "soil_conditions": "Engineered design for site-specific soil (Class M to E) - high to extreme reactivity",
+          "engineering_required": "Specialist structural and geotechnical engineering certification (>3.5m height)",
+          "finish": "Form-finished concrete with architectural treatment or cladding system"
+        },
+        "project_context": {
+          "typical_use": "Major infrastructure, commercial developments, basement excavations, hillside developments",
+          "site_conditions": "Steep slopes, complex site constraints, may include surcharge loads",
+          "access": "Specialist equipment access required - piling rig, drilling rig, large crane, concrete pumps"
+        },
+        "assumptions": [
+          "Wall height exceeds 3.5m (specialist engineering and certification required)",
+          "Ground anchor installation feasible (suitable founding strata available)",
+          "Site-specific geotechnical investigation completed",
+          "Specialist engineering design provided (not included)",
+          "No adjacent structures within zone of influence (or temporary support designed)",
+          "Anchor drilling and testing program included in methodology",
+          "Load testing of anchors to 150% design load",
+          "Extended construction program (12-16 weeks typical)",
+          "Quality assurance inspections by structural engineer",
+          "Concrete pump access available (restricted truck access)"
+        ],
+        "exclusions": [
+          "Site survey, geotechnical investigation, and soil testing",
+          "Structural, civil, and geotechnical engineering design fees",
+          "Council permits, DA approvals, CC certifications, and BCA compliance",
+          "Demolition, excavation support, and underpinning of adjacent structures",
+          "Temporary shoring, sheet piling, or soldier pile walls",
+          "Dewatering systems, groundwater monitoring, and environmental controls",
+          "Service relocation, protection, or underpinning",
+          "Piling works if required for foundation support",
+          "Architectural cladding systems or facade treatments",
+          "Traffic management, road closures, and pedestrian controls",
+          "Environmental monitoring and reporting",
+          "Landscaping and site reinstatement"
+        ]
+      },
+      "is_active": true,
+      "applicable_swaps": [],
+      "tags": [
+        "concrete",
+        "commercial",
+        "high-height",
+        "anchored",
+        "specialist",
+        "tieback"
+      ]
+    },
+    {
+      "template_id": "masonry-retaining-medium",
+      "name": "Masonry Retaining Wall",
+      "sector": "civil",
+      "asset_category": "retaining_walls",
+      "nrm_level2_code": "1.4",
+      "nrm_section": "1 (Substructure)",
+      "description": "Medium-height masonry retaining wall (2m) - Mortared concrete block construction with reinforced concrete footing, standard engineering required",
+      "measurement_assumptions": {
+        "sizing_method": "Height-based linear geometry with block count derived (height × length, block volume)",
+        "baseline_dimensions": {
+          "wall_height_m": 2.0,
+          "wall_length_m": 20,
+          "wall_thickness_mm": 200,
+          "block_count_total": 400
+        },
+        "structural_classification": {
+          "height_class": "Medium (1.5-3.0m)",
+          "design_methodology": "Reinforced mortared concrete block wall (requires structural engineer)",
+          "soil_assumptions": "Class H to M (sandy clay to clay) - moderate to high reactivity, passive pressure ~60 kN/m²",
+          "load_assumptions": "Level backfill; no surcharge"
+        },
+        "wall_design": {
+          "block_type": "200mm concrete masonry units (CMU) - nominal 190mm",
+          "block_dimensions": "190mm(h) × 190mm(d) × 390mm(l)",
+          "mortar_type": "M3 mortar (1:1:6 cement:lime:sand) for blockwork",
+          "vertical_reinforcement": "N12 bars @ 400mm centres, grouted into cores",
+          "horizontal_reinforcement": "N12 bond beam every 4th course (~800mm vertical spacing)"
+        }
+      },
+      "quantity_derivations": {
+        "block_quantity": {
+          "formula": "Height_courses × Length_blocks_per_course",
+          "calculation": "2.0m ÷ 0.19m height = 10.5 courses (approx.); 20m ÷ 0.39m length = 51.3 blocks/course",
+          "total_blocks": 540,
+          "waste_factor": 1.07,
+          "final_block_qty": 577.8,
+          "notes": "7% waste for breakage, cut-in around pipes, delivery damage"
+        },
+        "mortar_requirement": {
+          "formula": "Block_qty × mortar_per_block (approx. 0.04 m³ per block)",
+          "calculation": "540 blocks × 0.038 m³/block = 20.5m³ mortar",
+          "waste_factor": 1.15,
+          "final_mortar_m3": 23.6,
+          "notes": "15% waste for joint variations, over-fill, spillage"
+        },
+        "reinforcement_steel": {
+          "vertical_bars": "53 positions (1 @ 400mm) × 2.2m = 116.6m of N12 = 0.89 kg/m × 116.6m = 104 kg",
+          "bond_beam_bars": "5 courses × (20m length) = 100m of N12 = 0.89 × 100 = 89 kg",
+          "total_steel_kg": 193,
+          "waste_factor": 1.08,
+          "final_steel_kg": 208,
+          "notes": "Much less steel than concrete wall (masonry provides some rigidity)"
+        },
+        "concrete_footing_volume": {
+          "formula": "Foundation_width × Foundation_depth × Wall_length",
+          "calculation": "0.6m × 0.4m × 20m = 4.8m³ footing concrete",
+          "final_quantity_m3_footing": 4.8,
+          "waste_factor": 1.05,
+          "final_quantity_with_waste_footing": 5.04,
+          "notes": "Smaller footing than concrete wall (masonry lighter, blocks act as distributed load)"
+        }
+      },
+      "productivity_standards": {
+        "block_laying": {
+          "rate_m2_per_hour": 2.5,
+          "rate_m2_per_day_8hr": 20,
+          "total_wall_area": "2.0m height × 20m length = 40m²",
+          "estimated_days": 2.0,
+          "gang_composition": "1 bricklayer/mason + 1 assistant (block handler)",
+          "equipment_list": [
+            "Trowel and level",
+            "Scaffold or mobile elevated work platform",
+            "Vibrating table (for mortar mixing)"
+          ],
+          "notes": "Australian productivity: 5.78-7.44 m²/day per person (Masonry Contractors Australia); 2 person = ~20 m²/day"
+        },
+        "grout_placement_in_cores": {
+          "rate_m_per_hour": 8,
+          "rate_m_per_day_8hr": 64,
+          "total_reinforcement_m": 216.6,
+          "estimated_days": 0.5,
+          "gang_composition": "1 grouter + 1 assistant",
+          "equipment_list": [
+            "Grout pump (small)",
+            "Spacers for rebar placement"
+          ],
+          "notes": "Grouting done after block cure (24-48hr); critical for reinforcement bond"
+        },
+        "mortar_jointing": {
+          "rate_m2_per_hour": 4,
+          "rate_m2_per_day_8hr": 32,
+          "total_wall_area": 40,
+          "estimated_days": 1.25,
+          "gang_composition": "1 jointer + 1 assistant",
+          "equipment_list": [
+            "Jointing tool and brush"
+          ],
+          "notes": "Jointing (recess) for weathering; allows paint/render finish"
+        }
+      },
+      "site_condition_modifiers": {
+        "block_size_factor": {
+          "small_100mm": 1.3,
+          "standard_200mm": 1.0,
+          "large_300mm": 0.8,
+          "notes": "Larger blocks = faster laying, fewer joints"
+        },
+        "bond_pattern_factor": {
+          "stretcher_simple": 1.0,
+          "flemish_complex": 1.15,
+          "decorative_pattern": 1.4,
+          "notes": "Complex patterns slow productivity"
+        }
+      },
+      "specifications": {
+        "specifications": {
+          "wall_height_m": 2.0,
+          "wall_length_m": 20,
+          "wall_thickness_mm": 200,
+          "wall_system": "Reinforced mortared concrete block retaining wall",
+          "block_type": "200mm concrete masonry units (CMU) - nominal 190mm",
+          "foundation_type": "Reinforced concrete strip footing (600mm x 400mm)",
+          "foundation_depth_m": 0.4,
+          "concrete_grade": "N32 (32 MPa) for footing",
+          "reinforcement": "N12 vertical bars @ 400mm centres grouted into cores, N12 horizontal bond beam @ every 4th course",
+          "mortar": "M3 mortar (cement:lime:sand 1:1:6) for general blockwork, M4 for bond beams",
+          "drainage": "100mm agricultural pipe with gravel backfill, weepholes @ 2m centres",
+          "soil_conditions": "Class H to M (sandy clay to clay) - moderate to high reactivity",
+          "engineering_required": "Standard structural engineering certification required (1.5-3.5m height range)",
+          "finish": "Rendered and painted, or face block exposed finish"
+        },
+        "project_context": {
+          "typical_use": "Residential boundary walls, garden terracing, pool surrounds",
+          "site_conditions": "Moderate slope, good drainage, stable founding layer",
+          "access": "Standard residential access for concrete truck, block delivery, and excavator"
+        },
+        "assumptions": [
+          "Wall height between 1.5m and 3.5m (standard engineering certification required)",
+          "Level backfill with no surcharge loads",
+          "Standard soil conditions (Class H or M)",
+          "No groundwater issues",
+          "Concrete truck access for footing pour",
+          "Block delivery and storage area available on site",
+          "Engineering design provided (not included in rate)",
+          "Weather protection during construction (mortar cure time)",
+          "Standard render finish (allowance included)"
+        ],
+        "exclusions": [
+          "Site survey and geotechnical investigation",
+          "Structural engineering design fees",
+          "Council permits and approvals",
+          "Demolition of existing structures",
+          "Service location and protection",
+          "Temporary shoring or support works",
+          "Premium face block finishes or stone cladding",
+          "Special render systems or waterproofing membranes",
+          "Coping stones or capping systems (unless specified)",
+          "Landscaping and topsoiling"
+        ]
+      },
+      "is_active": true,
+      "applicable_swaps": [],
+      "tags": [
+        "masonry",
+        "concrete-block",
+        "residential",
+        "medium-height",
+        "engineered"
+      ]
+    },
+    {
+      "template_id": "gabion-retaining-medium",
+      "name": "Gabion Retaining Wall",
+      "sector": "civil",
+      "asset_category": "retaining_walls",
+      "nrm_level2_code": "1.4",
+      "nrm_section": "1 (Substructure)",
+      "description": "Medium-height gabion retaining wall (2.5m) - Rock-filled wire basket system with natural finish, standard engineering required",
+      "measurement_assumptions": {
+        "sizing_method": "Height-based linear geometry with stepped design (height × length, basket volumes derived)",
+        "baseline_dimensions": {
+          "wall_height_m": 2.5,
+          "wall_length_m": 20,
+          "wall_thickness_mm": 1000,
+          "step_height_m": 0.5,
+          "total_basket_count": 20
+        },
+        "design_methodology": {
+          "design_system": "Stepped gabion baskets (500mm height per step)",
+          "batter": "100mm stepped batter per 500mm height (natural slope)",
+          "foundation": "Compacted crushed rock base or shallow concrete footing",
+          "rock_fill": "150-300mm diameter granite, basalt, or sandstone"
+        },
+        "basket_specifications": {
+          "basket_type": "1000mm(w) × 500mm(h) × 500mm(d) galvanized wire mesh",
+          "wire_gauge": "4mm galvanized steel",
+          "mesh_opening": "80mm × 100mm (hexagonal/rectangular)",
+          "basket_material": "Hot-dip galvanized (15+ year design life)",
+          "per_linear_meter": "2 baskets per meter (500mm height) × 5 levels = 10 baskets/linear meter"
+        }
+      },
+      "quantity_derivations": {
+        "basket_quantity": {
+          "formula": "Wall_length × baskets_per_linear_meter × wall_height_in_levels",
+          "calculation": "20m × 2 baskets/m × 5 levels = 200 baskets (1000×500×500mm each)",
+          "total_baskets": 200,
+          "volume_per_basket": 0.25,
+          "total_volume_m3": 50,
+          "waste_factor": 1.05,
+          "final_basket_qty": 210,
+          "notes": "5% waste for damaged baskets in transit/installation"
+        },
+        "rock_fill_material": {
+          "formula": "Basket_count × basket_volume × rock_density_factor",
+          "calculation": "200 baskets × 0.25m³ × 0.85 (accounting for voids in rock) = 42.5m³ rock",
+          "void_factor": 0.85,
+          "final_rock_volume_m3": 42.5,
+          "waste_factor": 1.10,
+          "final_rock_with_waste": 46.75,
+          "rock_weight_kg": 117000,
+          "notes": "10% waste for oversizing, segregation, and spillage"
+        },
+        "foundation_preparation": {
+          "formula": "Wall_length × foundation_width × foundation_depth",
+          "calculation": "20m × 1.0m × 0.3m = 6.0m³ compacted rock base (or 4.8m³ concrete)",
+          "option_1_rock_base": 6.0,
+          "option_2_concrete_footing": 4.8,
+          "waste_factor": 1.10,
+          "final_foundation": "6.6m³ rock OR 5.04m³ concrete",
+          "notes": "Rock base cheaper; concrete if poor soil conditions"
+        },
+        "geotextile_backing": {
+          "formula": "Wall_area (back face) × geotextile_width_overlap",
+          "calculation": "20m × 2.5m × 1.15 (overlap for seaming) = 57.5m² geotextile",
+          "final_geotextile_m2": 57.5,
+          "waste_factor": 1.08,
+          "final_with_waste": 62,
+          "notes": "Geotextile separates gabion from backfill soil (prevents piping)"
+        }
+      },
+      "productivity_standards": {
+        "basket_assembly": {
+          "rate_baskets_per_hour": 6,
+          "rate_baskets_per_day_8hr": 48,
+          "gang_composition": "2 gabion assemblers + 1 assistant",
+          "equipment_list": [
+            "Wire ties and pliers",
+            "Assembly jig (for straightness)"
+          ],
+          "estimated_days": 4.2,
+          "notes": "Baskets pre-assembled off-site if available; on-site assembly slower"
+        },
+        "basket_placement_and_filling": {
+          "rate_baskets_per_hour": 4,
+          "rate_baskets_per_day_8hr": 32,
+          "gang_composition": "1 excavator operator + 2 rock handlers + 1 supervisor",
+          "equipment_list": [
+            "Mini excavator or wheel loader (for rock placement)",
+            "Hand tools for compaction within basket"
+          ],
+          "estimated_days": 6.25,
+          "notes": "Baskets must be fully filled and tied before moving to next row (stability critical)"
+        },
+        "geotextile_installation": {
+          "rate_m2_per_hour": 15,
+          "rate_m2_per_day_8hr": 120,
+          "gang_composition": "1-2 labourers",
+          "equipment_list": [
+            "Staple gun or pins",
+            "Scissors"
+          ],
+          "estimated_days": 0.5,
+          "notes": "Installed after wall complete; provides backfill separation"
+        }
+      },
+      "site_condition_modifiers": {
+        "rock_availability_factor": {
+          "local_quarry_nearby": 1.0,
+          "moderate_haul_20km": 1.15,
+          "distant_haul_50km": 1.4,
+          "notes": "Rock cost scales with haul distance (transport dominate)"
+        },
+        "slope_stability_factor": {
+          "level_ground": 1.0,
+          "moderate_slope": 1.15,
+          "steep_hillside": 1.4,
+          "notes": "Steep sites require extra levelling and compaction"
+        }
+      },
+      "specifications": {
+        "specifications": {
+          "wall_height_m": 2.5,
+          "wall_length_m": 20,
+          "wall_thickness_mm": 1000,
+          "wall_system": "Stepped gabion basket retaining wall (500mm stepped batter)",
+          "basket_type": "1000mm x 500mm x 500mm galvanized wire mesh gabion baskets (4mm wire, 80x100mm mesh)",
+          "foundation_type": "Compacted crushed rock base (300mm depth) or shallow concrete footing",
+          "foundation_depth_m": 0.3,
+          "rock_fill": "150-300mm diameter rock (granite, basalt, or sandstone) - min 2.5 T/m³ density",
+          "drainage": "Free-draining through gabion structure, 100mm slotted pipe behind wall with gravel",
+          "soil_conditions": "Class H to M - suitable for moderate slopes and erosion control",
+          "engineering_required": "Standard structural engineering certification required (1.5-3.5m height range)",
+          "finish": "Natural rock face, no additional finish required"
+        },
+        "project_context": {
+          "typical_use": "Landscape features, creek bank stabilization, erosion control, commercial landscaping",
+          "site_conditions": "Moderate slopes, areas requiring natural aesthetics and drainage",
+          "access": "Truck access for rock delivery, excavator for placement"
+        },
+        "assumptions": [
+          "Wall height between 1.5m and 3.5m (standard engineering certification required)",
+          "Stepped batter design (100mm step per 500mm basket height)",
+          "Level to moderate slope conditions",
+          "Rock fill material available locally (60km max haul distance)",
+          "Free-draining backfill (no fines or clay)",
+          "Basket assembly and rock filling by hand or excavator",
+          "Engineering design provided (not included in rate)",
+          "No special rock color or type specified (standard local rock)",
+          "Standard galvanized baskets (25+ year design life)"
+        ],
+        "exclusions": [
+          "Site survey and geotechnical investigation",
+          "Structural and civil engineering design fees",
+          "Council permits and environmental approvals",
+          "Vegetation clearing and disposal",
+          "Erosion and sediment control during construction",
+          "Service location and protection",
+          "Premium rock types (colored, imported, or specialty stone)",
+          "PVC-coated or stainless steel baskets",
+          "Geotextile separation layers (unless specified)",
+          "Planting pockets or vegetated gabion systems",
+          "Landscaping, mulching, and planting",
+          "Long-term maintenance or basket inspection"
+        ]
+      },
+      "is_active": true,
+      "applicable_swaps": [],
+      "tags": [
+        "gabion",
+        "rockfill",
+        "residential",
+        "commercial",
+        "medium-height",
+        "natural-finish"
+      ]
+    }
+  ]
+}

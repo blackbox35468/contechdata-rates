@@ -1,0 +1,97 @@
+=== SAMPLE FIXED ITEMS ===
+
+GROUP 0 (FACILITATING) - Sample fixes:
+
+Code: GRP0-ASBREM-001
+Name: Asbestos removal - bonded sheeting
+L2 Code: 0.1 | L4 Code: 0.1.1.1
+Description: Toxic or hazardous material removal: details to be stated....
+Confidence: Manual
+
+Code: GRP0-ASBREM-002
+Name: Asbestos removal - friable
+L2 Code: 0.1 | L4 Code: 0.1.1.1
+Description: Toxic or hazardous material removal: details to be stated....
+Confidence: Manual
+
+Code: GRP0-LEAPAI-003
+Name: Lead paint removal
+L2 Code: 0.1 | L4 Code: 0.1.1.1
+Description: Toxic or hazardous material removal: details to be stated....
+Confidence: Manual
+
+Code: GRP0-DEM-004
+Name: Demolition - single storey residential
+L2 Code: 0.2 | L4 Code: 0.2.1.1
+Description: Demolition of entire buildings: details to be stated....
+Confidence: Manual
+
+Code: GRP0-DEM-005
+Name: Demolition - two storey residential
+L2 Code: 0.2 | L4 Code: 0.2.1.1
+Description: Demolition of entire buildings: details to be stated....
+Confidence: Manual
+
+
+GROUP 5 (SERVICES) - Sample fixes:
+
+Code: GRP5-HOTWAT-039
+Name: Hot water system - electric storage 50L
+L2 Code: 5.4 | L4 Code: 5.4.1.1
+Description: Mains water supply: details, including the number of draw-off points (...
+Confidence: Manual
+
+Code: GRP5-HOTWAT-040
+Name: Hot water system - electric storage 125L
+L2 Code: 5.4 | L4 Code: 5.4.1.1
+Description: Mains water supply: details, including the number of draw-off points (...
+Confidence: Manual
+
+Code: GRP5-HOTWAT-041
+Name: Hot water system - electric storage 250L
+L2 Code: 5.4 | L4 Code: 5.4.1.1
+Description: Mains water supply: details, including the number of draw-off points (...
+Confidence: Manual
+
+Code: GRP5-HOTWAT-042
+Name: Hot water system - gas instantaneous 26L
+L2 Code: 5.4 | L4 Code: 5.4.1.1
+Description: Mains water supply: details, including the number of draw-off points (...
+Confidence: Manual
+
+Code: GRP5-HOTWAT-043
+Name: Hot water system - gas storage 135L
+L2 Code: 5.4 | L4 Code: 5.4.1.1
+Description: Mains water supply: details, including the number of draw-off points (...
+Confidence: Manual
+
+Code: GRP5-HOTWAT-044
+Name: Hot water system - heat pump 270L
+L2 Code: 5.4 | L4 Code: 5.4.1.1
+Description: Mains water supply: details, including the number of draw-off points (...
+Confidence: Manual
+
+Code: GRP5-HOTWAT-045
+Name: Hot water system - solar, electric boost
+L2 Code: 5.4 | L4 Code: 5.4.1.1
+Description: Mains water supply: details, including the number of draw-off points (...
+Confidence: Manual
+
+Code: GRP5-HOTWAT-046
+Name: Hot water circulation pump
+L2 Code: 5.4 | L4 Code: 5.4.1.1
+Description: Mains water supply: details, including the number of draw-off points (...
+Confidence: Manual
+
+Code: GRP5-WATPIP-047
+Name: Water pipe - copper 15mm
+L2 Code: 5.4 | L4 Code: 5.4.1.1
+Description: Mains water supply: details, including the number of draw-off points (...
+Confidence: Manual
+
+Code: GRP5-WATPIP-048
+Name: Water pipe - copper 20mm
+L2 Code: 5.4 | L4 Code: 5.4.1.1
+Description: Mains water supply: details, including the number of draw-off points (...
+Confidence: Manual
+

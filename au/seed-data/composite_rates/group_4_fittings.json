@@ -1,0 +1,3777 @@
+{
+  "meta": {
+    "nrm_group": 4,
+    "group_name": "fittings",
+    "count": 65,
+    "generated": "2026-01-03",
+    "source": "Composite_Rate_Descriptions.xlsx",
+    "transformed": "2026-01-03",
+    "resource_linked": true,
+    "enriched_date": "2026-01-03",
+    "crosswalk_version": "NRM1_L4_to_NRM2_Crosswalk.csv"
+  },
+  "rates": [
+    {
+      "code": "GRP4-KIT-002",
+      "name": "Kitchen - budget complete",
+      "description": "Laminate, <3m run",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.2.1",
+      "nrm1_l3_code": "4.1.2",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Kitchen units: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-KIT-003",
+      "name": "Kitchen - standard complete",
+      "description": "2-pac, 3-4m run",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.2.1",
+      "nrm1_l3_code": "4.1.2",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Kitchen units: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-KIT-004",
+      "name": "Kitchen - premium complete",
+      "description": "Stone tops, 4m+ run",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 120.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 120.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 215.78,
+      "ohp_percent": 15,
+      "total_rate": 248.14,
+      "nrm1_l4_code": "4.1.2.2",
+      "nrm1_l3_code": "4.1.2",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Kitchen appliances: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-KIT-005",
+      "name": "Kitchen - joinery only, per linear metre",
+      "description": "Cabinets and benchtop",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "resource_id": "PLT_AU_SKIP_BIN",
+            "qty": 1.0,
+            "unit": "m"
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 20.62,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 51.06,
+      "ohp_percent": 15,
+      "total_rate": 58.71,
+      "nrm1_l4_code": "4.1.7.1",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Plant and shrub beds: details to be stated.",
+      "nrm2_primary_ws": "37",
+      "nrm2_primary_ws_name": "Soft landscaping",
+      "nrm2_primary_items": "5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Low"
+    },
+    {
+      "code": "GRP4-KITBEN-006",
+      "name": "Kitchen benchtop - laminate",
+      "description": "Post-formed",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 20.62,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 51.06,
+      "ohp_percent": 15,
+      "total_rate": 58.71,
+      "nrm1_l4_code": "4.1.7.1",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Plant and shrub beds: details to be stated.",
+      "nrm2_primary_ws": "37",
+      "nrm2_primary_ws_name": "Soft landscaping",
+      "nrm2_primary_items": "5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-KITBEN-007",
+      "name": "Kitchen benchtop - stone composite",
+      "description": "Caesarstone/Essastone",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 150.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 20.62,
+      "materials_total": 150.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 182.31,
+      "ohp_percent": 15,
+      "total_rate": 209.65,
+      "nrm1_l4_code": "4.1.7.1",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Plant and shrub beds: details to be stated.",
+      "nrm2_primary_ws": "37",
+      "nrm2_primary_ws_name": "Soft landscaping",
+      "nrm2_primary_items": "5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-KITBEN-008",
+      "name": "Kitchen benchtop - natural stone",
+      "description": "Granite/marble",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 150.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 20.62,
+      "materials_total": 150.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 182.31,
+      "ohp_percent": 15,
+      "total_rate": 209.65,
+      "nrm1_l4_code": "4.1.7.1",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Plant and shrub beds: details to be stated.",
+      "nrm2_primary_ws": "37",
+      "nrm2_primary_ws_name": "Soft landscaping",
+      "nrm2_primary_items": "5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-KITBEN-009",
+      "name": "Kitchen benchtop - stainless steel",
+      "description": "Commercial",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 60.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 20.62,
+      "materials_total": 60.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 87.81,
+      "ohp_percent": 15,
+      "total_rate": 100.98,
+      "nrm1_l4_code": "4.1.7.1",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Plant and shrub beds: details to be stated.",
+      "nrm2_primary_ws": "37",
+      "nrm2_primary_ws_name": "Soft landscaping",
+      "nrm2_primary_items": "5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-KITISL-010",
+      "name": "Kitchen island bench",
+      "description": "With storage",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.2.1",
+      "nrm1_l3_code": "4.1.2",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Kitchen units: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-PAN-011",
+      "name": "Butler's pantry",
+      "description": "Secondary kitchen",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.7.2",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Plant containers: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "WS37:4,5",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-VAN-012",
+      "name": "Vanity - budget 600mm",
+      "description": "Laminate cabinet",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "resource_id": "PLT_AU_SKIP_BIN",
+            "qty": 1.0,
+            "unit": "nr"
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.7.1",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Plant and shrub beds: details to be stated.",
+      "nrm2_primary_ws": "37",
+      "nrm2_primary_ws_name": "Soft landscaping",
+      "nrm2_primary_items": "5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-VAN-013",
+      "name": "Vanity - standard 900mm",
+      "description": "2-pac cabinet",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "resource_id": "PLT_AU_SKIP_BIN",
+            "qty": 1.0,
+            "unit": "nr"
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.7.3",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Trees: details to be stated.",
+      "nrm2_primary_ws": "37",
+      "nrm2_primary_ws_name": "Soft landscaping",
+      "nrm2_primary_items": "4",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-VAN-014",
+      "name": "Vanity - premium double",
+      "description": "Stone top, 1500mm",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 120.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 120.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 215.78,
+      "ohp_percent": 15,
+      "total_rate": 248.14,
+      "nrm1_l4_code": "4.1.7.1",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Plant and shrub beds: details to be stated.",
+      "nrm2_primary_ws": "37",
+      "nrm2_primary_ws_name": "Soft landscaping",
+      "nrm2_primary_items": "5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-VAN-015",
+      "name": "Vanity - wall hung",
+      "description": "Modern",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.1.2",
+      "nrm1_l3_code": "4.1.1",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Furnishings: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-MIRCAB-016",
+      "name": "Mirror cabinet",
+      "description": "With lighting",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_ELECTRICIAN",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.8.1",
+      "nrm1_l3_code": "4.1.8",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Wires, nets, traps and the like: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-SHOSCR-017",
+      "name": "Shower screen - semi-frameless",
+      "description": "Standard",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.5.2",
+      "nrm1_l3_code": "4.1.5",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Decorative features and panels: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-SHOSCR-018",
+      "name": "Shower screen - frameless",
+      "description": "Premium",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.5.1",
+      "nrm1_l3_code": "4.1.5",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Objects d'art and other ornamental features: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-SHOSCR-019",
+      "name": "Shower screen - bath screen",
+      "description": "Over bath",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.2.3",
+      "nrm1_l3_code": "4.1.2",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Waste bins, towel rails, storage racks and other accessories: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-SHOBAS-020",
+      "name": "Shower base - acrylic",
+      "description": "Standard",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.7.1",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Plant and shrub beds: details to be stated.",
+      "nrm2_primary_ws": "37",
+      "nrm2_primary_ws_name": "Soft landscaping",
+      "nrm2_primary_items": "5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-SHOBAS-021",
+      "name": "Shower base - tiled",
+      "description": "Built up",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 55.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.7,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.1,
+      "labour_total": 33.25,
+      "materials_total": 55.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 96.75,
+      "ohp_percent": 15,
+      "total_rate": 111.26,
+      "nrm1_l4_code": "4.1.8.3",
+      "nrm1_l3_code": "4.1.8",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Bird repellent coatings: details to be stated.",
+      "nrm2_primary_ws": "29",
+      "nrm2_primary_ws_name": "Decoration",
+      "nrm2_primary_items": "6",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Low"
+    },
+    {
+      "code": "GRP4-SHONIC-022",
+      "name": "Shower niche",
+      "description": "Recessed",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.6.2",
+      "nrm1_l3_code": "4.1.6",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Removable ladders and the like: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "WS38:1,2,3; WS39:1,2,3",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-TOWRAI-023",
+      "name": "Towel rail - single",
+      "description": "Chrome/SS",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.2.3",
+      "nrm1_l3_code": "4.1.2",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Waste bins, towel rails, storage racks and other accessories: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-TOWRAI-024",
+      "name": "Towel rail - heated",
+      "description": "Electric",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_ELECTRICIAN",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.7.3",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Trees: details to be stated.",
+      "nrm2_primary_ws": "37",
+      "nrm2_primary_ws_name": "Soft landscaping",
+      "nrm2_primary_items": "4",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-BAT-025",
+      "name": "Bath - acrylic freestanding",
+      "description": "Standard",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.2.2",
+      "nrm1_l3_code": "4.1.2",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Kitchen appliances: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-BAT-026",
+      "name": "Bath - cast iron freestanding",
+      "description": "Premium",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.7.2",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Plant containers: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "WS37:4,5",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-BAT-027",
+      "name": "Bath - built in acrylic",
+      "description": "With tiling",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.1,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 107.5,
+      "ohp_percent": 15,
+      "total_rate": 123.62,
+      "nrm1_l4_code": "4.1.2.2",
+      "nrm1_l3_code": "4.1.2",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Kitchen appliances: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-TOIROL-028",
+      "name": "Toilet roll holder",
+      "description": "Chrome",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 92.0,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 120.75,
+      "ohp_percent": 15,
+      "total_rate": 138.86,
+      "nrm1_l4_code": "4.1.6.2",
+      "nrm1_l3_code": "4.1.6",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Removable ladders and the like: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "WS38:1,2,3; WS39:1,2,3",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-ROBHOO-029",
+      "name": "Robe hook",
+      "description": "Chrome",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.7.3",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Trees: details to be stated.",
+      "nrm2_primary_ws": "37",
+      "nrm2_primary_ws_name": "Soft landscaping",
+      "nrm2_primary_items": "4",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-LAUTUB-030",
+      "name": "Laundry tub - 45L with cabinet",
+      "description": "Standard",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.7.2",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Plant containers: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "WS37:4,5",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-LAUBEN-031",
+      "name": "Laundry benchtop",
+      "description": "Laminate",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 20.62,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 51.06,
+      "ohp_percent": 15,
+      "total_rate": 58.71,
+      "nrm1_l4_code": "4.1.7.1",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Plant and shrub beds: details to be stated.",
+      "nrm2_primary_ws": "37",
+      "nrm2_primary_ws_name": "Soft landscaping",
+      "nrm2_primary_items": "5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-LAUJOI-032",
+      "name": "Laundry joinery",
+      "description": "Overhead and base",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 20.62,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 51.06,
+      "ohp_percent": 15,
+      "total_rate": 58.71,
+      "nrm1_l4_code": "4.1.7.1",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Plant and shrub beds: details to be stated.",
+      "nrm2_primary_ws": "37",
+      "nrm2_primary_ws_name": "Soft landscaping",
+      "nrm2_primary_items": "5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-WAR-033",
+      "name": "Wardrobe - reach in, per linear metre",
+      "description": "Shelves and rail",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 20.62,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 51.06,
+      "ohp_percent": 15,
+      "total_rate": 58.71,
+      "nrm1_l4_code": "4.1.7.1",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Plant and shrub beds: details to be stated.",
+      "nrm2_primary_ws": "37",
+      "nrm2_primary_ws_name": "Soft landscaping",
+      "nrm2_primary_items": "5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Low"
+    },
+    {
+      "code": "GRP4-WAR-034",
+      "name": "Wardrobe - walk in shelving",
+      "description": "Per wall",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 20.62,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 51.06,
+      "ohp_percent": 15,
+      "total_rate": 58.71,
+      "nrm1_l4_code": "4.1.7.1",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Plant and shrub beds: details to be stated.",
+      "nrm2_primary_ws": "37",
+      "nrm2_primary_ws_name": "Soft landscaping",
+      "nrm2_primary_items": "5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Low"
+    },
+    {
+      "code": "GRP4-WAR-035",
+      "name": "Wardrobe - sliding doors",
+      "description": "Mirror or panel",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_GLAZIER",
+            "qty": 0.3,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.15,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.44999999999999996,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 24.75,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 55.39,
+      "ohp_percent": 15,
+      "total_rate": 63.7,
+      "nrm1_l4_code": "4.1.8.3",
+      "nrm1_l3_code": "4.1.8",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Bird repellent coatings: details to be stated.",
+      "nrm2_primary_ws": "29",
+      "nrm2_primary_ws_name": "Decoration",
+      "nrm2_primary_items": "6",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Low"
+    },
+    {
+      "code": "GRP4-LINCUP-036",
+      "name": "Linen cupboard",
+      "description": "With shelving",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.2.1",
+      "nrm1_l3_code": "4.1.2",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Kitchen units: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-BROCUP-037",
+      "name": "Broom cupboard",
+      "description": "Utility storage",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.7.4",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Tree planters: details to be stated.",
+      "nrm2_primary_ws": "37",
+      "nrm2_primary_ws_name": "Soft landscaping",
+      "nrm2_primary_items": "4",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-STUDES-038",
+      "name": "Study desk built in",
+      "description": "With drawers",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 20.62,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 51.06,
+      "ohp_percent": 15,
+      "total_rate": 58.71,
+      "nrm1_l4_code": "4.1.7.1",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Plant and shrub beds: details to be stated.",
+      "nrm2_primary_ws": "37",
+      "nrm2_primary_ws_name": "Soft landscaping",
+      "nrm2_primary_items": "5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-WINSEA-039",
+      "name": "Window seat with storage",
+      "description": "Built in",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 20.62,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 51.06,
+      "ohp_percent": 15,
+      "total_rate": 58.71,
+      "nrm1_l4_code": "4.1.7.1",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Plant and shrub beds: details to be stated.",
+      "nrm2_primary_ws": "37",
+      "nrm2_primary_ws_name": "Soft landscaping",
+      "nrm2_primary_items": "5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-TVUNI-040",
+      "name": "TV unit built in",
+      "description": "Wall hung",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.2.1",
+      "nrm1_l3_code": "4.1.2",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Kitchen units: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-BOOBUI-041",
+      "name": "Bookshelf built in",
+      "description": "Per face",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.3,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.15,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.44999999999999996,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 24.75,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 55.39,
+      "ohp_percent": 15,
+      "total_rate": 63.7,
+      "nrm1_l4_code": "4.1.8.3",
+      "nrm1_l3_code": "4.1.8",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Bird repellent coatings: details to be stated.",
+      "nrm2_primary_ws": "29",
+      "nrm2_primary_ws_name": "Decoration",
+      "nrm2_primary_items": "6",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Low"
+    },
+    {
+      "code": "GRP4-CAB-042",
+      "name": "Bar/drinks cabinet",
+      "description": "With sink",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.7.2",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Plant containers: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "WS37:4,5",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-LET-043",
+      "name": "Letterbox - wall mounted",
+      "description": "Front fence",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_FENCER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.7.3",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Trees: details to be stated.",
+      "nrm2_primary_ws": "37",
+      "nrm2_primary_ws_name": "Soft landscaping",
+      "nrm2_primary_items": "4",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-LET-044",
+      "name": "Letterbox - bank of units",
+      "description": "Apartments",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.2.1",
+      "nrm1_l3_code": "4.1.2",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Kitchen units: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-SIG-045",
+      "name": "Signage - building identification",
+      "description": "External",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.1.1",
+      "nrm1_l3_code": "4.1.1",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Fittings: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-SIG-046",
+      "name": "Signage - wayfinding internal",
+      "description": "Per sign",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.7.4",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Tree planters: details to be stated.",
+      "nrm2_primary_ws": "37",
+      "nrm2_primary_ws_name": "Soft landscaping",
+      "nrm2_primary_items": "4",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-SIG-047",
+      "name": "Signage - room identification",
+      "description": "Per door",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.1.2",
+      "nrm1_l3_code": "4.1.1",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Furnishings: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-NOTBOA-048",
+      "name": "Notice board",
+      "description": "Pinboard",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.5.2",
+      "nrm1_l3_code": "4.1.5",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Decorative features and panels: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-WHI-049",
+      "name": "Whiteboard",
+      "description": "Magnetic",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.2.2",
+      "nrm1_l3_code": "4.1.2",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Kitchen appliances: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-PROSCR-050",
+      "name": "Projection screen - manual",
+      "description": "Pull down",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.5.1",
+      "nrm1_l3_code": "4.1.5",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Objects d'art and other ornamental features: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-PROSCR-051",
+      "name": "Projection screen - electric",
+      "description": "Motorised",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.0,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 84.0,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 112.35,
+      "ohp_percent": 15,
+      "total_rate": 129.2,
+      "nrm1_l4_code": "4.1.2.1",
+      "nrm1_l3_code": "4.1.2",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Kitchen units: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-BLI-052",
+      "name": "Blinds - roller",
+      "description": "Standard fabric",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.3,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.15,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.44999999999999996,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 24.75,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 55.39,
+      "ohp_percent": 15,
+      "total_rate": 63.7,
+      "nrm1_l4_code": "4.1.8.3",
+      "nrm1_l3_code": "4.1.8",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Bird repellent coatings: details to be stated.",
+      "nrm2_primary_ws": "29",
+      "nrm2_primary_ws_name": "Decoration",
+      "nrm2_primary_items": "6",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-BLI-053",
+      "name": "Blinds - roller, blockout",
+      "description": "Blockout fabric",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_BRICKLAYER",
+            "qty": 0.6,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.6,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 40.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.2,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.05,
+      "labour_total": 57.0,
+      "materials_total": 40.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 105.0,
+      "ohp_percent": 15,
+      "total_rate": 120.75,
+      "nrm1_l4_code": "4.1.8.3",
+      "nrm1_l3_code": "4.1.8",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Bird repellent coatings: details to be stated.",
+      "nrm2_primary_ws": "29",
+      "nrm2_primary_ws_name": "Decoration",
+      "nrm2_primary_items": "6",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-BLI-054",
+      "name": "Blinds - venetian aluminium",
+      "description": "25mm slat",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.3,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.15,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.44999999999999996,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 24.75,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 55.39,
+      "ohp_percent": 15,
+      "total_rate": 63.7,
+      "nrm1_l4_code": "4.1.8.3",
+      "nrm1_l3_code": "4.1.8",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Bird repellent coatings: details to be stated.",
+      "nrm2_primary_ws": "29",
+      "nrm2_primary_ws_name": "Decoration",
+      "nrm2_primary_items": "6",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-BLI-055",
+      "name": "Blinds - venetian timber",
+      "description": "50mm slat",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.3,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.15,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 80.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.44999999999999996,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.1,
+      "labour_total": 24.75,
+      "materials_total": 80.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 115.75,
+      "ohp_percent": 15,
+      "total_rate": 133.11,
+      "nrm1_l4_code": "4.1.8.3",
+      "nrm1_l3_code": "4.1.8",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Bird repellent coatings: details to be stated.",
+      "nrm2_primary_ws": "29",
+      "nrm2_primary_ws_name": "Decoration",
+      "nrm2_primary_items": "6",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-BLI-056",
+      "name": "Blinds - vertical",
+      "description": "89mm blade",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.3,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.15,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.44999999999999996,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 24.75,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 55.39,
+      "ohp_percent": 15,
+      "total_rate": 63.7,
+      "nrm1_l4_code": "4.1.8.3",
+      "nrm1_l3_code": "4.1.8",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Bird repellent coatings: details to be stated.",
+      "nrm2_primary_ws": "29",
+      "nrm2_primary_ws_name": "Decoration",
+      "nrm2_primary_items": "6",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-CUR-057",
+      "name": "Curtains - sheer",
+      "description": "Track and fabric",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.3,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.15,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.44999999999999996,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 24.75,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 55.39,
+      "ohp_percent": 15,
+      "total_rate": 63.7,
+      "nrm1_l4_code": "4.1.8.3",
+      "nrm1_l3_code": "4.1.8",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Bird repellent coatings: details to be stated.",
+      "nrm2_primary_ws": "29",
+      "nrm2_primary_ws_name": "Decoration",
+      "nrm2_primary_items": "6",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-CUR-058",
+      "name": "Curtains - blockout",
+      "description": "Track and fabric",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.6,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.6,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 40.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.2,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.05,
+      "labour_total": 57.0,
+      "materials_total": 40.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 105.0,
+      "ohp_percent": 15,
+      "total_rate": 120.75,
+      "nrm1_l4_code": "4.1.8.3",
+      "nrm1_l3_code": "4.1.8",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Bird repellent coatings: details to be stated.",
+      "nrm2_primary_ws": "29",
+      "nrm2_primary_ws_name": "Decoration",
+      "nrm2_primary_items": "6",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-AWN-059",
+      "name": "Awning - folding arm",
+      "description": "External",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.3,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.15,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.44999999999999996,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 24.75,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 55.39,
+      "ohp_percent": 15,
+      "total_rate": 63.7,
+      "nrm1_l4_code": "4.1.8.3",
+      "nrm1_l3_code": "4.1.8",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Bird repellent coatings: details to be stated.",
+      "nrm2_primary_ws": "29",
+      "nrm2_primary_ws_name": "Decoration",
+      "nrm2_primary_items": "6",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-AWN-060",
+      "name": "Awning - fixed",
+      "description": "Canvas or metal",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.3,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.15,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.44999999999999996,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 24.75,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 55.39,
+      "ohp_percent": 15,
+      "total_rate": 63.7,
+      "nrm1_l4_code": "4.1.8.3",
+      "nrm1_l3_code": "4.1.8",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Bird repellent coatings: details to be stated.",
+      "nrm2_primary_ws": "29",
+      "nrm2_primary_ws_name": "Decoration",
+      "nrm2_primary_items": "6",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-RECDES-061",
+      "name": "Reception desk",
+      "description": "Feature",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.7.4",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Tree planters: details to be stated.",
+      "nrm2_primary_ws": "37",
+      "nrm2_primary_ws_name": "Soft landscaping",
+      "nrm2_primary_items": "4",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-COMKIT-062",
+      "name": "Commercial kitchen fit-out",
+      "description": "Stainless steel",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PAINTER",
+            "qty": 0.3,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.15,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.44999999999999996,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 24.75,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 55.39,
+      "ohp_percent": 15,
+      "total_rate": 63.7,
+      "nrm1_l4_code": "4.1.8.3",
+      "nrm1_l3_code": "4.1.8",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Bird repellent coatings: details to be stated.",
+      "nrm2_primary_ws": "29",
+      "nrm2_primary_ws_name": "Decoration",
+      "nrm2_primary_items": "6",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-LABBEN-063",
+      "name": "Lab benching",
+      "description": "Chemical resistant",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 20.62,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 51.06,
+      "ohp_percent": 15,
+      "total_rate": 58.71,
+      "nrm1_l4_code": "4.1.7.1",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Plant and shrub beds: details to be stated.",
+      "nrm2_primary_ws": "37",
+      "nrm2_primary_ws_name": "Soft landscaping",
+      "nrm2_primary_items": "5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-LOC-064",
+      "name": "Lockers - single tier",
+      "description": "Steel",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_STEEL_FIXER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.1.2",
+      "nrm1_l3_code": "4.1.1",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Furnishings: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-LOC-065",
+      "name": "Lockers - double tier",
+      "description": "Steel",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_STEEL_FIXER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.7.2",
+      "nrm1_l3_code": "4.1.7",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Plant containers: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "WS37:4,5",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP4-BIKRAC-066",
+      "name": "Bike rack",
+      "description": "Per bike",
+      "unit": "nr",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "nr",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 82.5,
+      "materials_total": 20.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 110.78,
+      "ohp_percent": 15,
+      "total_rate": 127.39,
+      "nrm1_l4_code": "4.1.5.2",
+      "nrm1_l3_code": "4.1.5",
+      "nrm1_l2_code": "4.1",
+      "nrm1_description": "Decorative features and panels: details to be stated.",
+      "nrm2_primary_ws": "32",
+      "nrm2_primary_ws_name": "Furniture, fittings",
+      "nrm2_primary_items": "3, 4, 5",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    }
+  ]
+}

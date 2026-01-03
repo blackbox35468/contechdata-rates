@@ -1,0 +1,2028 @@
+{
+  "sector": "healthcare",
+  "description": "Healthcare building templates - medical clinics, dental surgeries, aged care facilities, and pharmacies with comprehensive measurement assumptions and productivity standards",
+  "total_templates": 8,
+  "templates": [
+    {
+      "template_id": "au-hlth-clinic-small-150",
+      "name": "Small Medical Clinic",
+      "description": "Single storey small medical clinic, 150m² GFA, rendered masonry, metal roof, slab on ground",
+      "building_type": "medical_clinic",
+      "sector": "healthcare",
+      "specifications": {
+        "gfa_m2": 150,
+        "storeys": 1,
+        "default_construction": "rendered_masonry",
+        "construction_notes": "200mm concrete block + render both sides",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian medical precinct"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Healthcare GFA measured from internal faces of external walls. Includes consulting rooms, waiting area, reception, toilets, cleaners room, and utility. Excludes external plant rooms. Measured per NCC Class 9a requirements.",
+        "typical_layout": {
+          "consulting_room_1": "10.5m² (3.5m × 3.0m)",
+          "consulting_room_2": "10.5m² (3.5m × 3.0m)",
+          "waiting_area": "35m² (7.0m × 5.0m)",
+          "reception_admin": "18m² (4.5m × 4.0m)",
+          "staff_room": "12m² (3.0m × 4.0m)",
+          "toilets": "20m² (2 patient + 1 accessible + 1 staff, total 4 WC + 4 basins)",
+          "cleaners_room": "4m² (2.0m × 2.0m)",
+          "storage_medical": "8m² (2.0m × 4.0m)",
+          "corridor_circulation": "32m²"
+        },
+        "derivation_notes": "Small medical clinic supports 2-3 GPs with 2 consulting rooms. NCC Class 9a healthcare facility requirements: minimum 2.7m ceiling height in patient rooms (NCC Part F5). Toilet provision = 1 WC per 30m² healthcare area (5 fixtures minimum including 1 accessible). Medical-grade vinyl flooring throughout clinical areas. Consulting rooms sized for examination couch (2.0m × 0.6m) + desk + sink. Waiting area allows 1.5m² per person (capacity ~23 persons).",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Consulting rooms",
+              "scaling_rule": "2 consulting rooms for 150m² clinic (supports 2-3 GPs). Not linearly scalable - depends on practice size.",
+              "derivation": "2 rooms × 10.5m² each = 21m² clinical space"
+            },
+            {
+              "item": "Toilet facilities",
+              "scaling_rule": "1 WC per 30m² healthcare standard (commercial). 150m² ÷ 30 = 5 fixtures minimum. Includes 1 accessible WC.",
+              "derivation": "150m² ÷ 30m² = 5 WC + 5 basins (2 patient + 1 accessible + 1 staff + 1 unisex)"
+            },
+            {
+              "item": "Hand basin stations (clinical)",
+              "scaling_rule": "1 hand basin per consulting room (infection control requirement) + waiting area station.",
+              "derivation": "2 consulting rooms × 1 basin + 1 waiting area = 3 clinical basins (separate from toilet basins)"
+            },
+            {
+              "item": "Emergency power outlets",
+              "scaling_rule": "2-3 emergency power circuits per consulting room + 1 waiting area circuit.",
+              "derivation": "2 consulting rooms × 3 outlets + waiting area = 7 emergency circuits minimum"
+            },
+            {
+              "item": "Medical waste facilities",
+              "scaling_rule": "1 sharps container per consulting room + 1 clinical waste bin per room.",
+              "derivation": "2 consulting rooms = 2 sharps + 2 clinical waste stations"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(GFA × 4) × 1.2 (Healthcare building shape factor)",
+          "calculation": "√(150 × 4) × 1.2 = √600 × 1.2 = 24.49 × 1.2 = 29.4m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height",
+          "calculation": "29.4m × 2.7m = 79.38m²",
+          "waste_applied": "Masonry 1.07 (7% waste) = 84.9m² for material takeoff",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.15 (low-slope roof factor)",
+          "calculation": "150m² × 1.15 = 172.5m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 181.1m² installed",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "internal_wall_framing": {
+          "formula": "Internal Walls = √(GFA × 4) × 0.6 (partition factor) × Ceiling Height × 2 faces",
+          "calculation": "√(150 × 4) × 0.6 = 14.7m linear, × 2.7m × 2 = 79.4m² stud area",
+          "waste_applied": "Timber framing 1.10 (10% waste) = 87.3m² framing labour",
+          "nrm_reference": "2.4 Internal Partitions"
+        },
+        "flooring": {
+          "formula": "Floor Finish Area = GFA (all areas receive medical-grade vinyl)",
+          "calculation": "150m² medical-grade vinyl flooring",
+          "waste_applied": "Vinyl 1.15 (15% waste, includes seam allowance) = 172.5m²",
+          "notes": "Medical-grade vinyl required for infection control (AS 3740 compliant). Sealed edges to 100mm cove base.",
+          "nrm_reference": "3.2 Floor Finishes"
+        },
+        "ceiling": {
+          "formula": "Ceiling Area = GFA × 1.05 (minor bulkhead allowance)",
+          "calculation": "150m² × 1.05 = 157.5m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 173.25m²",
+          "notes": "NCC requires 2.7m minimum ceiling height for patient rooms. Acoustic plasterboard for consulting rooms.",
+          "nrm_reference": "3.3 Ceiling Finishes"
+        },
+        "power_points": {
+          "formula": "Power Points = (GFA ÷ 4m²) × 1.3 (healthcare higher density)",
+          "calculation": "150m² ÷ 4 × 1.3 = 48.75 → 49 power points",
+          "notes": "Healthcare requires higher power density: consulting rooms (6 outlets per room), waiting area (12 outlets), staff areas (10 outlets), reception (15 outlets). Includes emergency power circuits.",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = (GFA ÷ 6m²) + Emergency Lighting",
+          "calculation": "150m² ÷ 6 = 25 light points + 8 emergency lights = 33 total",
+          "notes": "Emergency lighting required for egress paths, toilets, consulting rooms (NCC Part E4.2). Examination lights in consulting rooms (2 adjustable task lights).",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = (GFA ÷ 30m²) + Clinical Basins",
+          "calculation": "150m² ÷ 30 = 5 WC fixtures + 5 basins (toilets) + 3 clinical hand basins = 13 total fixtures",
+          "waste_applied": "Plumbing pipe 1.05 (5% waste) for rough-in routing",
+          "notes": "BCA requires 1 accessible WC per healthcare facility. Clinical hand basins separate from toilet basins for infection control.",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        },
+        "hot_water_system": {
+          "formula": "Capacity = 50L per consulting room + 25L per staff area",
+          "calculation": "2 consulting rooms × 50L + 25L staff = 125L minimum instantaneous system",
+          "notes": "Medical facilities require instant hot water for hand washing. Tempering valve required (50°C maximum delivery).",
+          "nrm_reference": "5.3 Hot Water Supply"
+        },
+        "data_comms_points": {
+          "formula": "Data Points = Reception/Admin stations + Consulting rooms",
+          "calculation": "Reception 4 points + 2 consulting rooms × 2 = 8 data points minimum",
+          "notes": "Medical software requires networked systems. Cat6A minimum for telehealth capability.",
+          "nrm_reference": "5.7 Communications & Security"
+        }
+      },
+      "productivity_standards": {
+        "masonry_rendered": {
+          "trade": "Bricklaying + Rendering",
+          "rate": "7.44 m²/person/day (concrete block) + 15-25 m²/day render",
+          "gang_size": "2 bricklayers + 1 labourer (3-person), 1 renderer + 1 assistant",
+          "multiplier": "0.95 (medical site access restrictions)",
+          "derivation": "External walls 84.9m² ÷ 7.44 m²/day = 11.4 person-days brickwork, ÷ 2 = 5.7 days (3-person gang). Rendering: 84.9m² × 2 faces = 169.8m² ÷ 20 m²/day = 8.5 days (2-person gang).",
+          "adjustment_factors": "Access restrictions for operating medical precinct: -5% productivity. Dust control measures required."
+        },
+        "internal_wall_framing": {
+          "trade": "Carpentry (Timber Stud)",
+          "rate": "2-3 m²/day (stud wall complete)",
+          "gang_size": "2 carpenters + 1 labourer (3-person)",
+          "multiplier": "1.00 (standard)",
+          "derivation": "Internal walls 87.3m² ÷ 2.5 m²/day = 34.9 days (1 carpenter) or 17.5 days (2-person team)",
+          "adjustment_factors": "None (standard site conditions)"
+        },
+        "roofing_metal": {
+          "trade": "Roofing",
+          "rate": "50-70 m²/2-person team/day",
+          "gang_size": "2 roofers + 1 labourer (3-person)",
+          "multiplier": "1.00 (single storey, accessible)",
+          "derivation": "Roof 181.1m² ÷ 60 m²/day = 3.0 days (2-person team)",
+          "adjustment_factors": "None (standard single storey access)"
+        },
+        "flooring_medical_vinyl": {
+          "trade": "Floor Tiling/Vinyl Specialist",
+          "rate": "25-30 m²/day (medical-grade vinyl with cove base)",
+          "gang_size": "1 specialist + 1 assistant (2-person)",
+          "multiplier": "0.90 (cove base detailing)",
+          "derivation": "Flooring 172.5m² ÷ 27.5 m²/day × 0.90 = 7.0 days (specialist team)",
+          "adjustment_factors": "Cove base installation (100mm height) reduces productivity by 10%. Infection control sealing required."
+        },
+        "painting_interior": {
+          "trade": "Painting",
+          "rate": "2.5 m²/hour (interior wall + ceiling)",
+          "gang_size": "2 painters (pair for efficiency)",
+          "multiplier": "0.95 (medical-grade paint requires extra coats)",
+          "derivation": "Wall area ~200m² + ceiling 157.5m² = 357.5m² ÷ 2.5 m²/hr = 143 hours × 0.95 = 136 hours = 17 days (1 painter) or 8.5 days (2 painters)",
+          "adjustment_factors": "Medical-grade low-VOC paint requires 3 coats (vs 2 standard): -5% productivity"
+        },
+        "electrical_installation": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours per visit",
+          "first_fix_roughin": "49 power points × 0.4 hrs = 19.6 hrs; 33 light points × 0.7 hrs = 23.1 hrs; 8 data points × 0.5 hrs = 4 hrs; emergency circuits 6 hrs; total ~53 hours",
+          "second_fix_final": "49 outlets × 0.3 hrs = 14.7 hrs; switches/testing 12 hrs; total ~27 hours",
+          "gang_size": "1 electrician + 1 apprentice (2-person)",
+          "multiplier": "1.10 (medical compliance testing)",
+          "derivation": "80 hours × 1.10 = 88 hours labour ÷ 8 hrs/day = 11 days (1 electrician + apprentice)",
+          "adjustment_factors": "Medical electrical compliance testing adds 10%. Emergency lighting testing required."
+        },
+        "plumbing_installation": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours per visit",
+          "fixture_labour": "5 WC suites × 2.5 hrs = 12.5 hrs; 8 basins (toilets + clinical) × 1.8 hrs = 14.4 hrs; hot water system 4 hrs; total fixtures ~31 hours",
+          "rough_in_drainage": "80m pipe rough-in, 80m ÷ 10m per 4 hrs = 32 hours",
+          "gang_size": "1 plumber + 1 apprentice (2-person)",
+          "multiplier": "1.15 (medical-grade fixtures and compliance)",
+          "derivation": "63 hours × 1.15 = 72.5 hours ÷ 8 hrs/day = 9.1 days (plumber + apprentice)",
+          "adjustment_factors": "Medical-grade tapware with temperature control adds 15%. Clinical hand basins require separate rough-in."
+        },
+        "hvac_mechanical": {
+          "trade": "HVAC Specialist",
+          "system_type": "2-3 zone split system with filtration (medical-grade)",
+          "minimum_callout": "4 hours per visit",
+          "installation_time": "24-30 hours (medical air filtration + temperature control)",
+          "gang_size": "1 HVAC tech + 1 assistant (2-person)",
+          "multiplier": "1.20 (medical-grade filtration and zoning)",
+          "derivation": "27 hours × 1.20 = 32.4 hours ÷ 8 hrs/day = 4.1 days",
+          "adjustment_factors": "Medical facilities require HEPA filtration and zone isolation (consulting rooms separate zones): +20% complexity"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.10,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.10,
+        "floor_wall_tiles": 1.10,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": ["flooring"],
+      "tags": ["healthcare", "medical", "clinic", "single_storey", "new_build", "australia", "small"]
+    },
+    {
+      "template_id": "au-hlth-clinic-medium-250",
+      "name": "Medium Medical Clinic",
+      "description": "Single storey medium medical clinic, 250m² GFA, rendered masonry, metal roof, slab on ground",
+      "building_type": "medical_clinic",
+      "sector": "healthcare",
+      "specifications": {
+        "gfa_m2": 250,
+        "storeys": 1,
+        "default_construction": "rendered_masonry",
+        "construction_notes": "200mm concrete block + render both sides",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian medical precinct"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Healthcare GFA measured from internal faces of external walls. Includes 4 consulting rooms, waiting area, reception, treatment room, staff facilities, toilets, and storage. NCC Class 9a healthcare facility.",
+        "typical_layout": {
+          "consulting_room_1": "10.5m² (3.5m × 3.0m)",
+          "consulting_room_2": "10.5m² (3.5m × 3.0m)",
+          "consulting_room_3": "10.5m² (3.5m × 3.0m)",
+          "consulting_room_4": "10.5m² (3.5m × 3.0m)",
+          "treatment_procedure_room": "15m² (3.75m × 4.0m)",
+          "waiting_area": "55m² (11.0m × 5.0m)",
+          "reception_admin": "25m² (5.0m × 5.0m)",
+          "staff_room": "18m² (4.5m × 4.0m)",
+          "manager_office": "12m² (3.0m × 4.0m)",
+          "toilets": "28m² (3 patient + 2 accessible + 1 staff, total 6 WC + 7 basins)",
+          "cleaners_room": "5m² (2.5m × 2.0m)",
+          "storage_medical": "12m² (3.0m × 4.0m)",
+          "corridor_circulation": "48m²"
+        },
+        "derivation_notes": "Medium medical clinic supports 4-6 GPs with 4 consulting rooms + treatment room for minor procedures. NCC Class 9a requirements: 2.7m ceiling height minimum in patient areas. Toilet provision = 1 WC per 30m² (250m² ÷ 30 = 8.3, provided 9 fixtures including 2 accessible). Treatment room sized for procedure bed + equipment trolley + 1.2m circulation. Waiting area 1.5m² per person (capacity ~37 persons).",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Consulting rooms",
+              "scaling_rule": "4 consulting rooms for 250m² clinic (supports 4-6 GPs). Procedure room adds specialized capability.",
+              "derivation": "4 rooms × 10.5m² + 1 treatment room 15m² = 57m² clinical space"
+            },
+            {
+              "item": "Toilet facilities",
+              "scaling_rule": "1 WC per 30m² healthcare standard. 250m² ÷ 30 = 8.3, provided 9 fixtures (includes 2 accessible).",
+              "derivation": "250m² ÷ 30m² = 9 WC + 9 basins (3 patient + 2 accessible + 1 staff + 3 unisex)"
+            },
+            {
+              "item": "Hand basin stations (clinical)",
+              "scaling_rule": "1 hand basin per consulting room + treatment room + waiting area.",
+              "derivation": "4 consulting + 1 treatment + 1 waiting = 6 clinical basins (separate from toilet basins)"
+            },
+            {
+              "item": "Sterilization facilities",
+              "scaling_rule": "1 autoclave station in treatment room for instrument sterilization.",
+              "derivation": "Treatment room requires medical autoclave + benching for sterile instruments"
+            },
+            {
+              "item": "Emergency equipment",
+              "scaling_rule": "1 emergency trolley, 1 defibrillator, oxygen supply to treatment room.",
+              "derivation": "Treatment room capability requires emergency response equipment"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(GFA × 4) × 1.2",
+          "calculation": "√(250 × 4) × 1.2 = √1000 × 1.2 = 31.62 × 1.2 = 37.95m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height",
+          "calculation": "37.95m × 2.7m = 102.47m²",
+          "waste_applied": "Masonry 1.07 (7% waste) = 109.6m² for material takeoff",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.15",
+          "calculation": "250m² × 1.15 = 287.5m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 301.9m² installed",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "internal_wall_framing": {
+          "formula": "Internal Walls = √(GFA × 4) × 0.65 (partition factor) × Ceiling Height × 2 faces",
+          "calculation": "√(250 × 4) × 0.65 = 20.6m linear, × 2.7m × 2 = 111.2m² stud area",
+          "waste_applied": "Timber framing 1.10 (10% waste) = 122.3m² framing labour",
+          "nrm_reference": "2.4 Internal Partitions"
+        },
+        "flooring": {
+          "formula": "Floor Finish Area = GFA (medical-grade vinyl throughout)",
+          "calculation": "250m² medical-grade vinyl flooring",
+          "waste_applied": "Vinyl 1.15 (15% waste) = 287.5m²",
+          "notes": "Medical-grade vinyl with 100mm cove base for infection control. AS 3740 compliant.",
+          "nrm_reference": "3.2 Floor Finishes"
+        },
+        "ceiling": {
+          "formula": "Ceiling Area = GFA × 1.05",
+          "calculation": "250m² × 1.05 = 262.5m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 288.75m²",
+          "notes": "Acoustic plasterboard in consulting rooms and treatment room. 2.7m minimum height per NCC.",
+          "nrm_reference": "3.3 Ceiling Finishes"
+        },
+        "power_points": {
+          "formula": "Power Points = (GFA ÷ 4m²) × 1.35 (healthcare higher density)",
+          "calculation": "250m² ÷ 4 × 1.35 = 84.4 → 85 power points",
+          "notes": "Treatment room requires 10 power outlets (equipment), consulting rooms 6-8 outlets each, waiting area 15 outlets.",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = (GFA ÷ 6m²) + Emergency Lighting",
+          "calculation": "250m² ÷ 6 = 41.7 → 42 light points + 12 emergency lights = 54 total",
+          "notes": "Treatment room requires examination light (surgical-grade). Emergency lighting for all egress and clinical areas.",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = (GFA ÷ 30m²) + Clinical Basins",
+          "calculation": "250m² ÷ 30 = 8.3 → 9 WC fixtures + 9 basins (toilets) + 6 clinical basins = 24 total fixtures",
+          "waste_applied": "Plumbing pipe 1.05 (5% waste)",
+          "notes": "Treatment room includes instrument wash-down sink. Clinical basins have hands-free operation.",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        },
+        "hot_water_system": {
+          "formula": "Capacity = 50L per consulting room + 75L treatment room + 35L staff",
+          "calculation": "4 × 50L + 75L + 35L = 310L minimum instantaneous system",
+          "notes": "Treatment room requires higher capacity for instrument cleaning. Tempering valve 50°C maximum.",
+          "nrm_reference": "5.3 Hot Water Supply"
+        },
+        "medical_gas_outlets": {
+          "formula": "Oxygen outlets in treatment room only (not full medical gas system)",
+          "calculation": "1 oxygen outlet in treatment room",
+          "notes": "Minor procedure capability. Full medical gas reticulation not required for clinic (AS 2896).",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        },
+        "data_comms_points": {
+          "formula": "Data Points = Reception stations + Consulting rooms + Treatment room",
+          "calculation": "Reception 5 points + 4 consulting × 2 + treatment 3 = 16 data points",
+          "notes": "Practice management software, telehealth, digital imaging require networked infrastructure.",
+          "nrm_reference": "5.7 Communications & Security"
+        }
+      },
+      "productivity_standards": {
+        "masonry_rendered": {
+          "trade": "Bricklaying + Rendering",
+          "rate": "7.44 m²/person/day (block) + 15-25 m²/day render",
+          "gang_size": "2 bricklayers + 1 labourer, 1 renderer + 1 assistant",
+          "multiplier": "0.95 (medical site access)",
+          "derivation": "External walls 109.6m² ÷ 7.44 = 14.7 person-days, ÷ 2 = 7.4 days (3-person gang). Rendering: 109.6m² × 2 = 219.2m² ÷ 20 = 11.0 days (2-person gang).",
+          "adjustment_factors": "Operating medical precinct access restrictions: -5%"
+        },
+        "internal_wall_framing": {
+          "trade": "Carpentry",
+          "rate": "2-3 m²/day",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "Internal walls 122.3m² ÷ 2.5 = 48.9 days (1 carpenter) or 24.5 days (2-person team)",
+          "adjustment_factors": "None"
+        },
+        "roofing_metal": {
+          "trade": "Roofing",
+          "rate": "50-70 m²/2-person team/day",
+          "gang_size": "2 roofers + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "Roof 301.9m² ÷ 60 = 5.0 days",
+          "adjustment_factors": "None"
+        },
+        "flooring_medical_vinyl": {
+          "trade": "Vinyl Specialist",
+          "rate": "25-30 m²/day (medical-grade + cove base)",
+          "gang_size": "1 specialist + 1 assistant",
+          "multiplier": "0.90 (detailing)",
+          "derivation": "Flooring 287.5m² ÷ 27.5 × 0.90 = 11.8 days",
+          "adjustment_factors": "Cove base installation: -10%"
+        },
+        "painting_interior": {
+          "trade": "Painting",
+          "rate": "2.5 m²/hour",
+          "gang_size": "2 painters",
+          "multiplier": "0.95 (medical-grade paint)",
+          "derivation": "Wall ~340m² + ceiling 262.5m² = 602.5m² ÷ 2.5 = 241 hours × 0.95 = 229 hours = 14.3 days (2 painters)",
+          "adjustment_factors": "Low-VOC paint, 3 coats: -5%"
+        },
+        "electrical_installation": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "first_fix_roughin": "85 power × 0.4 hrs + 54 lights × 0.7 hrs + 16 data × 0.5 hrs + emergency 10 hrs = 90 hours",
+          "second_fix_final": "85 outlets × 0.3 hrs + testing 18 hrs = 43.5 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": "1.10 (medical compliance)",
+          "derivation": "133.5 hours × 1.10 = 147 hours ÷ 8 = 18.4 days",
+          "adjustment_factors": "Medical compliance testing: +10%"
+        },
+        "plumbing_installation": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "fixture_labour": "9 WC × 2.5 hrs + 15 basins × 1.8 hrs + hot water 5 hrs = 54.5 hours",
+          "rough_in_drainage": "120m pipe ÷ 10m per 4 hrs = 48 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": "1.15 (medical-grade)",
+          "derivation": "102.5 hours × 1.15 = 118 hours ÷ 8 = 14.8 days",
+          "adjustment_factors": "Medical-grade fixtures: +15%"
+        },
+        "hvac_mechanical": {
+          "trade": "HVAC Specialist",
+          "system_type": "3-4 zone split system with medical filtration",
+          "minimum_callout": "4 hours",
+          "installation_time": "36-44 hours",
+          "gang_size": "1 HVAC tech + 1 assistant",
+          "multiplier": "1.20 (medical filtration)",
+          "derivation": "40 hours × 1.20 = 48 hours ÷ 8 = 6.0 days",
+          "adjustment_factors": "HEPA filtration + zone isolation: +20%"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.10,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.10,
+        "floor_wall_tiles": 1.10,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": ["flooring"],
+      "tags": ["healthcare", "medical", "clinic", "single_storey", "new_build", "australia", "medium"]
+    },
+    {
+      "template_id": "au-hlth-clinic-large-500",
+      "name": "Large Medical Clinic",
+      "description": "Single storey large medical clinic, 500m² GFA, rendered masonry, metal roof, slab on ground",
+      "building_type": "medical_clinic",
+      "sector": "healthcare",
+      "specifications": {
+        "gfa_m2": 500,
+        "storeys": 1,
+        "default_construction": "rendered_masonry",
+        "construction_notes": "200mm concrete block + render both sides",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian medical precinct"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Healthcare GFA measured from internal faces. Comprehensive medical facility with 8 consulting rooms, pathology collection, imaging room, procedure room, staff facilities, and support areas. NCC Class 9a.",
+        "typical_layout": {
+          "consulting_rooms_1_to_8": "84m² (8 × 10.5m² each)",
+          "procedure_room": "20m² (4.0m × 5.0m)",
+          "pathology_collection": "12m² (3.0m × 4.0m)",
+          "imaging_room": "18m² (3.6m × 5.0m)",
+          "waiting_area": "90m² (15.0m × 6.0m)",
+          "reception_admin": "40m² (8.0m × 5.0m)",
+          "staff_room": "30m² (6.0m × 5.0m)",
+          "manager_office": "15m² (3.75m × 4.0m)",
+          "nurse_station": "12m² (3.0m × 4.0m)",
+          "toilets": "45m² (5 patient + 3 accessible + 2 staff, total 10 WC + 12 basins)",
+          "cleaners_room": "6m² (2.0m × 3.0m)",
+          "storage_medical": "20m² (4.0m × 5.0m)",
+          "storage_general": "12m² (3.0m × 4.0m)",
+          "corridor_circulation": "96m²"
+        },
+        "derivation_notes": "Large medical clinic supports 8-12 GPs with 8 consulting rooms, pathology collection, and imaging capability. NCC Class 9a: 2.7m ceiling height in patient areas. Toilet provision = 1 WC per 30m² (500m² ÷ 30 = 16.7, provided 17 fixtures including 3 accessible). Procedure room sized for minor surgery/biopsy. Imaging room has lead-lined walls (X-ray protection). Waiting area 1.5m² per person (capacity ~60 persons).",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Consulting rooms",
+              "scaling_rule": "8 consulting rooms for 500m² clinic (supports 8-12 GPs rotating schedule).",
+              "derivation": "8 rooms × 10.5m² = 84m² clinical consulting space"
+            },
+            {
+              "item": "Toilet facilities",
+              "scaling_rule": "1 WC per 30m² healthcare standard. 500m² ÷ 30 = 16.7, provided 17 fixtures (includes 3 accessible).",
+              "derivation": "500m² ÷ 30m² = 17 WC + 17 basins total"
+            },
+            {
+              "item": "Hand basin stations (clinical)",
+              "scaling_rule": "1 per consulting room + procedure + pathology + imaging + nurse station.",
+              "derivation": "8 consulting + 1 procedure + 1 pathology + 1 imaging + 1 nurse = 12 clinical basins"
+            },
+            {
+              "item": "Imaging room (X-ray)",
+              "scaling_rule": "Lead-lined walls (2mm lead equivalent) for radiation protection. Not scalable with GFA.",
+              "derivation": "1 imaging room 18m² × 2.7m height = 48.6m² wall area requiring lead lining"
+            },
+            {
+              "item": "Pathology cold storage",
+              "scaling_rule": "1 medical-grade refrigerator for specimen storage (4°C).",
+              "derivation": "Pathology collection requires dedicated refrigeration unit"
+            },
+            {
+              "item": "Emergency equipment",
+              "scaling_rule": "2 emergency trolleys, 2 defibrillators, oxygen supply to procedure room + imaging room.",
+              "derivation": "Large facility requires multiple emergency response stations"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(GFA × 4) × 1.2",
+          "calculation": "√(500 × 4) × 1.2 = √2000 × 1.2 = 44.72 × 1.2 = 53.67m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height",
+          "calculation": "53.67m × 2.7m = 144.91m²",
+          "waste_applied": "Masonry 1.07 (7% waste) = 155.1m² for material takeoff",
+          "notes": "Imaging room walls require additional lead lining (2mm lead sheet) = 48.6m² × lead cost.",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.15",
+          "calculation": "500m² × 1.15 = 575m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 603.8m² installed",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "internal_wall_framing": {
+          "formula": "Internal Walls = √(GFA × 4) × 0.7 (partition factor) × Ceiling Height × 2 faces",
+          "calculation": "√(500 × 4) × 0.7 = 31.3m linear, × 2.7m × 2 = 169.0m² stud area",
+          "waste_applied": "Timber framing 1.10 (10% waste) = 185.9m² framing labour",
+          "notes": "Imaging room walls: additional 2mm lead sheet attached to studs (48.6m² lead installation).",
+          "nrm_reference": "2.4 Internal Partitions"
+        },
+        "flooring": {
+          "formula": "Floor Finish Area = GFA (medical-grade vinyl throughout)",
+          "calculation": "500m² medical-grade vinyl flooring",
+          "waste_applied": "Vinyl 1.15 (15% waste) = 575m²",
+          "notes": "Medical-grade vinyl with 100mm cove base. Pathology area requires anti-slip grade.",
+          "nrm_reference": "3.2 Floor Finishes"
+        },
+        "ceiling": {
+          "formula": "Ceiling Area = GFA × 1.05",
+          "calculation": "500m² × 1.05 = 525m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 577.5m²",
+          "notes": "Acoustic plasterboard in all consulting rooms, procedure room, and imaging room. 2.7m height per NCC.",
+          "nrm_reference": "3.3 Ceiling Finishes"
+        },
+        "power_points": {
+          "formula": "Power Points = (GFA ÷ 4m²) × 1.4 (healthcare higher density)",
+          "calculation": "500m² ÷ 4 × 1.4 = 175 power points",
+          "notes": "Procedure room 12 outlets, imaging room 15 outlets (equipment), consulting rooms 8 each, pathology 8 outlets.",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = (GFA ÷ 6m²) + Emergency Lighting",
+          "calculation": "500m² ÷ 6 = 83.3 → 84 light points + 20 emergency lights = 104 total",
+          "notes": "Procedure room and imaging room require specialized examination lighting (surgical-grade). Emergency lighting throughout.",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = (GFA ÷ 30m²) + Clinical Basins",
+          "calculation": "500m² ÷ 30 = 16.7 → 17 WC fixtures + 17 basins (toilets) + 12 clinical basins = 46 total fixtures",
+          "waste_applied": "Plumbing pipe 1.05 (5% waste)",
+          "notes": "Procedure room includes scrub sink. Pathology has specimen wash-down sink. Clinical basins hands-free.",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        },
+        "hot_water_system": {
+          "formula": "Capacity = 50L per consulting room + 75L procedure + 50L pathology + 40L staff",
+          "calculation": "8 × 50L + 75L + 50L + 40L = 565L minimum instantaneous system",
+          "notes": "Large capacity instantaneous system with recirculation loop. Tempering valve 50°C.",
+          "nrm_reference": "5.3 Hot Water Supply"
+        },
+        "medical_gas_outlets": {
+          "formula": "Oxygen outlets in procedure room + imaging room",
+          "calculation": "2 oxygen outlets (1 procedure + 1 imaging)",
+          "notes": "Minor procedure capability. Not full medical gas reticulation (AS 2896).",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        },
+        "data_comms_points": {
+          "formula": "Data Points = Reception + Consulting + Procedure + Imaging + Pathology + Nurse station",
+          "calculation": "Reception 8 points + 8 consulting × 2 + procedure 4 + imaging 6 + pathology 4 + nurse 3 = 41 data points",
+          "notes": "Imaging room requires dedicated network for PACS (Picture Archiving). Telehealth capability.",
+          "nrm_reference": "5.7 Communications & Security"
+        },
+        "lead_radiation_shielding": {
+          "formula": "Lead Sheet Area = Imaging Room Wall Area",
+          "calculation": "Imaging room 18m² × perimeter ~17m × 2.7m = 45.9m² wall area requiring 2mm lead lining",
+          "notes": "X-ray protection per AS/NZS 4543.1 Radiation Protection in Diagnostic and Interventional Radiology.",
+          "nrm_reference": "2.4 Internal Partitions (specialist finish)"
+        }
+      },
+      "productivity_standards": {
+        "masonry_rendered": {
+          "trade": "Bricklaying + Rendering",
+          "rate": "7.44 m²/person/day (block) + 15-25 m²/day render",
+          "gang_size": "2 bricklayers + 1 labourer, 1 renderer + 1 assistant",
+          "multiplier": "0.95 (medical site access)",
+          "derivation": "External walls 155.1m² ÷ 7.44 = 20.8 person-days, ÷ 2 = 10.4 days (3-person gang). Rendering: 155.1m² × 2 = 310.2m² ÷ 20 = 15.5 days (2-person gang).",
+          "adjustment_factors": "Operating medical precinct: -5%"
+        },
+        "internal_wall_framing": {
+          "trade": "Carpentry",
+          "rate": "2-3 m²/day",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "Internal walls 185.9m² ÷ 2.5 = 74.4 days (1 carpenter) or 37.2 days (2-person team)",
+          "adjustment_factors": "None"
+        },
+        "lead_lining_installation": {
+          "trade": "Lead Specialist",
+          "rate": "8-12 m²/day (2mm lead sheet installation)",
+          "gang_size": "2 specialists (lead is heavy, requires 2-person lift)",
+          "multiplier": "1.00",
+          "derivation": "Lead lining 45.9m² ÷ 10 m²/day = 4.6 days (2-person specialist team)",
+          "adjustment_factors": "Lead sheet installation requires certification and specialist labour (not standard carpentry)"
+        },
+        "roofing_metal": {
+          "trade": "Roofing",
+          "rate": "50-70 m²/2-person team/day",
+          "gang_size": "2 roofers + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "Roof 603.8m² ÷ 60 = 10.1 days",
+          "adjustment_factors": "None"
+        },
+        "flooring_medical_vinyl": {
+          "trade": "Vinyl Specialist",
+          "rate": "25-30 m²/day (medical-grade + cove base)",
+          "gang_size": "2 specialists + 1 assistant (large area efficiency)",
+          "multiplier": "0.90 (detailing)",
+          "derivation": "Flooring 575m² ÷ 27.5 × 0.90 = 23.7 days (2-specialist team) or 11.9 days effective",
+          "adjustment_factors": "Cove base installation: -10%"
+        },
+        "painting_interior": {
+          "trade": "Painting",
+          "rate": "2.5 m²/hour",
+          "gang_size": "3 painters (large area)",
+          "multiplier": "0.95 (medical-grade paint)",
+          "derivation": "Wall ~680m² + ceiling 525m² = 1205m² ÷ 2.5 = 482 hours × 0.95 = 458 hours = 19.1 days (3 painters)",
+          "adjustment_factors": "Low-VOC paint, 3 coats: -5%"
+        },
+        "electrical_installation": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "first_fix_roughin": "175 power × 0.4 hrs + 104 lights × 0.7 hrs + 41 data × 0.5 hrs + emergency 20 hrs = 163.3 hours",
+          "second_fix_final": "175 outlets × 0.3 hrs + testing 30 hrs = 82.5 hours",
+          "gang_size": "2 electricians + 1 apprentice (large project)",
+          "multiplier": "1.15 (medical compliance + imaging room)",
+          "derivation": "245.8 hours × 1.15 = 282.7 hours ÷ 8 = 35.3 days (2 electricians + apprentice) = 17.7 days effective",
+          "adjustment_factors": "Medical compliance + imaging room electrical isolation: +15%"
+        },
+        "plumbing_installation": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "fixture_labour": "17 WC × 2.5 hrs + 29 basins × 1.8 hrs + hot water 8 hrs = 102.7 hours",
+          "rough_in_drainage": "220m pipe ÷ 10m per 4 hrs = 88 hours",
+          "gang_size": "2 plumbers + 1 apprentice",
+          "multiplier": "1.15 (medical-grade)",
+          "derivation": "190.7 hours × 1.15 = 219.3 hours ÷ 8 = 27.4 days (2 plumbers + apprentice) = 13.7 days effective",
+          "adjustment_factors": "Medical-grade fixtures + recirculation loop: +15%"
+        },
+        "hvac_mechanical": {
+          "trade": "HVAC Specialist",
+          "system_type": "6-8 zone split system with medical filtration + imaging room dedicated unit",
+          "minimum_callout": "4 hours",
+          "installation_time": "72-88 hours",
+          "gang_size": "2 HVAC techs + 1 assistant",
+          "multiplier": "1.25 (medical filtration + imaging isolation)",
+          "derivation": "80 hours × 1.25 = 100 hours ÷ 8 = 12.5 days (2 techs + assistant) = 6.3 days effective",
+          "adjustment_factors": "HEPA filtration + imaging room separate system (positive pressure): +25%"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.10,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.10,
+        "floor_wall_tiles": 1.10,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": ["flooring"],
+      "tags": ["healthcare", "medical", "clinic", "single_storey", "new_build", "australia", "large"]
+    },
+    {
+      "template_id": "au-hlth-dental-small-120",
+      "name": "Small Dental Surgery",
+      "description": "Single storey small dental surgery, 120m² GFA, rendered masonry, metal roof, slab on ground",
+      "building_type": "dental_surgery",
+      "sector": "healthcare",
+      "specifications": {
+        "gfa_m2": 120,
+        "storeys": 1,
+        "default_construction": "rendered_masonry",
+        "construction_notes": "200mm concrete block + render both sides",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian medical precinct"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Healthcare GFA measured from internal faces. Dental surgery with 2 treatment rooms, sterilization area, waiting room, and support facilities. NCC Class 9a healthcare.",
+        "typical_layout": {
+          "treatment_room_1": "12m² (3.0m × 4.0m)",
+          "treatment_room_2": "12m² (3.0m × 4.0m)",
+          "sterilization_room": "8m² (2.0m × 4.0m)",
+          "waiting_area": "20m² (5.0m × 4.0m)",
+          "reception": "12m² (3.0m × 4.0m)",
+          "dentist_office": "10m² (2.5m × 4.0m)",
+          "toilets": "15m² (2 patient + 1 staff, total 3 WC + 3 basins)",
+          "storage": "8m² (2.0m × 4.0m)",
+          "corridor_circulation": "23m²"
+        },
+        "derivation_notes": "Small dental surgery supports 2 dentists with 2 treatment rooms. NCC Class 9a: 2.7m ceiling height in patient areas. Dental surgeries require specialized vacuum systems, compressed air, and water supply to each chair. Sterilization room critical for instrument processing (autoclave + ultrasonic cleaner). Toilet provision = 1 WC per 30m² (120m² ÷ 30 = 4, provided 4 fixtures including staff). Treatment rooms sized for dental chair (1.8m × 1.6m) + assistant zone + equipment.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Dental treatment rooms",
+              "scaling_rule": "2 treatment rooms for 120m² surgery (supports 2 dentists).",
+              "derivation": "2 rooms × 12m² = 24m² clinical space"
+            },
+            {
+              "item": "Dental vacuum system",
+              "scaling_rule": "1 central vacuum pump serving 2 chairs. Not scalable - fixed installation.",
+              "derivation": "1 vacuum system with 2 outlet points (1 per chair)"
+            },
+            {
+              "item": "Compressed air system",
+              "scaling_rule": "1 compressor serving 2 chairs for dental tools.",
+              "derivation": "1 air compressor with 2 outlet points"
+            },
+            {
+              "item": "Sterilization equipment",
+              "scaling_rule": "1 autoclave (Class B) + 1 ultrasonic cleaner in sterilization room.",
+              "derivation": "Standard small practice sterilization setup"
+            },
+            {
+              "item": "Dental imaging (OPG)",
+              "scaling_rule": "1 panoramic X-ray unit if included (lead-lined room). Optional for small practice.",
+              "derivation": "Not included in base template (specialist fitout)"
+            },
+            {
+              "item": "Waste amalgam separator",
+              "scaling_rule": "1 amalgam separator required by environmental regulations (mercury waste).",
+              "derivation": "Mandatory for dental practices using amalgam fillings"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(GFA × 4) × 1.2",
+          "calculation": "√(120 × 4) × 1.2 = √480 × 1.2 = 21.91 × 1.2 = 26.29m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height",
+          "calculation": "26.29m × 2.7m = 70.98m²",
+          "waste_applied": "Masonry 1.07 (7% waste) = 76.0m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.15",
+          "calculation": "120m² × 1.15 = 138m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 144.9m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "internal_wall_framing": {
+          "formula": "Internal Walls = √(GFA × 4) × 0.55 × Ceiling Height × 2 faces",
+          "calculation": "√(120 × 4) × 0.55 = 12.0m linear, × 2.7m × 2 = 64.8m² stud area",
+          "waste_applied": "Timber framing 1.10 (10% waste) = 71.3m²",
+          "nrm_reference": "2.4 Internal Partitions"
+        },
+        "flooring": {
+          "formula": "Floor Finish Area = GFA (medical-grade vinyl throughout)",
+          "calculation": "120m² medical-grade vinyl flooring",
+          "waste_applied": "Vinyl 1.15 (15% waste) = 138m²",
+          "notes": "Medical-grade vinyl with 100mm cove base. Anti-slip grade in sterilization room.",
+          "nrm_reference": "3.2 Floor Finishes"
+        },
+        "ceiling": {
+          "formula": "Ceiling Area = GFA × 1.05",
+          "calculation": "120m² × 1.05 = 126m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 138.6m²",
+          "notes": "Acoustic plasterboard in treatment rooms. 2.7m height per NCC Class 9a.",
+          "nrm_reference": "3.3 Ceiling Finishes"
+        },
+        "power_points": {
+          "formula": "Power Points = (GFA ÷ 4m²) × 1.5 (dental higher density for equipment)",
+          "calculation": "120m² ÷ 4 × 1.5 = 45 power points",
+          "notes": "Treatment rooms require 12 outlets each (dental chair, lights, equipment). Sterilization room 8 outlets.",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = (GFA ÷ 6m²) + Emergency Lighting",
+          "calculation": "120m² ÷ 6 = 20 light points + 6 emergency lights = 26 total",
+          "notes": "Dental operating lights (2 adjustable lights per treatment room, separate from fixed ceiling lights). Emergency lighting for egress.",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = (GFA ÷ 30m²) + Clinical Basins + Dental Spittoons",
+          "calculation": "120m² ÷ 30 = 4 WC + 4 basins (toilets) + 2 clinical basins + 2 dental spittoons = 12 total fixtures",
+          "waste_applied": "Plumbing pipe 1.05 (5% waste)",
+          "notes": "Dental spittoons (cuspidor bowls) integrated into chairs. Clinical basins for hand washing.",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        },
+        "hot_water_system": {
+          "formula": "Capacity = 40L per treatment room + 30L sterilization + 20L staff",
+          "calculation": "2 × 40L + 30L + 20L = 130L minimum instantaneous system",
+          "notes": "Sterilization room requires high-temperature water. Tempering valve 50°C for hand basins.",
+          "nrm_reference": "5.3 Hot Water Supply"
+        },
+        "dental_vacuum_system": {
+          "formula": "1 central vacuum pump serving 2 chairs",
+          "calculation": "1 vacuum pump unit + 2 outlet points (pipework)",
+          "notes": "Dry vacuum system preferred (lower maintenance). Noise-isolated plant room or external location.",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        },
+        "compressed_air_system": {
+          "formula": "1 compressor serving 2 chairs (dental tools)",
+          "calculation": "1 compressor unit + 2 outlet points (pipework)",
+          "notes": "Oil-free compressor required for dental use. Pressure regulator at each chair (80-100 psi).",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        },
+        "data_comms_points": {
+          "formula": "Data Points = Reception + Treatment rooms + Dentist office",
+          "calculation": "Reception 4 points + 2 treatment × 2 + dentist 2 = 10 data points",
+          "notes": "Practice management software, digital X-ray integration, intraoral cameras.",
+          "nrm_reference": "5.7 Communications & Security"
+        }
+      },
+      "productivity_standards": {
+        "masonry_rendered": {
+          "trade": "Bricklaying + Rendering",
+          "rate": "7.44 m²/person/day (block) + 15-25 m²/day render",
+          "gang_size": "2 bricklayers + 1 labourer, 1 renderer + 1 assistant",
+          "multiplier": "0.95",
+          "derivation": "External walls 76.0m² ÷ 7.44 = 10.2 person-days, ÷ 2 = 5.1 days (3-person gang). Rendering: 76.0m² × 2 = 152m² ÷ 20 = 7.6 days.",
+          "adjustment_factors": "Medical precinct access: -5%"
+        },
+        "internal_wall_framing": {
+          "trade": "Carpentry",
+          "rate": "2-3 m²/day",
+          "gang_size": "1 carpenter + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "Internal walls 71.3m² ÷ 2.5 = 28.5 days (1 carpenter) or 14.3 days (2-person team)",
+          "adjustment_factors": "None"
+        },
+        "roofing_metal": {
+          "trade": "Roofing",
+          "rate": "50-70 m²/2-person team/day",
+          "gang_size": "2 roofers + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "Roof 144.9m² ÷ 60 = 2.4 days",
+          "adjustment_factors": "None"
+        },
+        "flooring_medical_vinyl": {
+          "trade": "Vinyl Specialist",
+          "rate": "25-30 m²/day (medical-grade + cove base)",
+          "gang_size": "1 specialist + 1 assistant",
+          "multiplier": "0.90",
+          "derivation": "Flooring 138m² ÷ 27.5 × 0.90 = 5.7 days",
+          "adjustment_factors": "Cove base: -10%"
+        },
+        "painting_interior": {
+          "trade": "Painting",
+          "rate": "2.5 m²/hour",
+          "gang_size": "2 painters",
+          "multiplier": "0.95",
+          "derivation": "Wall ~280m² + ceiling 126m² = 406m² ÷ 2.5 = 162 hours × 0.95 = 154 hours = 9.6 days (2 painters)",
+          "adjustment_factors": "Medical-grade paint: -5%"
+        },
+        "electrical_installation": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "first_fix_roughin": "45 power × 0.4 hrs + 26 lights × 0.7 hrs + 10 data × 0.5 hrs + emergency 6 hrs = 49.2 hours",
+          "second_fix_final": "45 outlets × 0.3 hrs + testing 8 hrs = 21.5 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": "1.10",
+          "derivation": "70.7 hours × 1.10 = 77.8 hours ÷ 8 = 9.7 days",
+          "adjustment_factors": "Medical compliance: +10%"
+        },
+        "plumbing_installation": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "fixture_labour": "4 WC × 2.5 hrs + 8 basins/spittoons × 1.8 hrs + hot water 4 hrs + vacuum/air systems 12 hrs = 38.4 hours",
+          "rough_in_drainage": "70m pipe ÷ 10m per 4 hrs = 28 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": "1.20 (dental specialist systems)",
+          "derivation": "66.4 hours × 1.20 = 79.7 hours ÷ 8 = 10.0 days",
+          "adjustment_factors": "Dental vacuum and compressed air systems: +20%"
+        },
+        "hvac_mechanical": {
+          "trade": "HVAC Specialist",
+          "system_type": "2 zone split system with filtration",
+          "minimum_callout": "4 hours",
+          "installation_time": "20-24 hours",
+          "gang_size": "1 HVAC tech + 1 assistant",
+          "multiplier": "1.15",
+          "derivation": "22 hours × 1.15 = 25.3 hours ÷ 8 = 3.2 days",
+          "adjustment_factors": "Medical filtration: +15%"
+        },
+        "dental_equipment_installation": {
+          "trade": "Dental Equipment Specialist",
+          "installation_time": "2 dental chairs × 8 hrs + sterilization setup 6 hrs + vacuum/air connection 4 hrs = 26 hours",
+          "gang_size": "2 specialists (manufacturer technicians)",
+          "multiplier": "1.00",
+          "derivation": "26 hours ÷ 8 = 3.25 days (2-person specialist team)",
+          "adjustment_factors": "Specialist manufacturer installation (not standard trade)"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.10,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.10,
+        "floor_wall_tiles": 1.10,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": ["flooring"],
+      "tags": ["healthcare", "dental", "surgery", "single_storey", "new_build", "australia", "small"]
+    },
+    {
+      "template_id": "au-hlth-dental-medium-200",
+      "name": "Medium Dental Surgery",
+      "description": "Single storey medium dental surgery, 200m² GFA, rendered masonry, metal roof, slab on ground",
+      "building_type": "dental_surgery",
+      "sector": "healthcare",
+      "specifications": {
+        "gfa_m2": 200,
+        "storeys": 1,
+        "default_construction": "rendered_masonry",
+        "construction_notes": "200mm concrete block + render both sides",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian medical precinct"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Healthcare GFA measured from internal faces. Medium dental surgery with 4 treatment rooms, OPG imaging room, sterilization area, waiting room, and comprehensive support facilities. NCC Class 9a.",
+        "typical_layout": {
+          "treatment_room_1": "12m² (3.0m × 4.0m)",
+          "treatment_room_2": "12m² (3.0m × 4.0m)",
+          "treatment_room_3": "12m² (3.0m × 4.0m)",
+          "treatment_room_4": "12m² (3.0m × 4.0m)",
+          "opg_imaging_room": "10m² (2.5m × 4.0m)",
+          "sterilization_room": "12m² (3.0m × 4.0m)",
+          "waiting_area": "35m² (7.0m × 5.0m)",
+          "reception": "18m² (4.5m × 4.0m)",
+          "dentist_office": "12m² (3.0m × 4.0m)",
+          "staff_room": "10m² (2.5m × 4.0m)",
+          "toilets": "22m² (3 patient + 1 accessible + 1 staff, total 5 WC + 5 basins)",
+          "storage": "12m² (3.0m × 4.0m)",
+          "corridor_circulation": "33m²"
+        },
+        "derivation_notes": "Medium dental surgery supports 4 dentists with 4 treatment rooms + OPG panoramic X-ray. NCC Class 9a: 2.7m ceiling height. OPG room requires lead-lined walls (1.5mm lead equivalent for panoramic X-ray). Dental vacuum system (1 central pump serving 4 chairs), compressed air system (1 compressor), and water supply to each chair. Sterilization room sized for Class B autoclave + ultrasonic cleaner + washer-disinfector. Toilet provision = 1 WC per 30m² (200m² ÷ 30 = 6.7, provided 7 fixtures including 1 accessible).",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Dental treatment rooms",
+              "scaling_rule": "4 treatment rooms for 200m² surgery (supports 4 dentists).",
+              "derivation": "4 rooms × 12m² = 48m² clinical space"
+            },
+            {
+              "item": "OPG imaging room",
+              "scaling_rule": "1 panoramic X-ray unit (OPG) with lead-lined walls. Medium practice includes imaging capability.",
+              "derivation": "1 OPG room 10m² with 1.5mm lead lining on walls"
+            },
+            {
+              "item": "Dental vacuum system",
+              "scaling_rule": "1 central vacuum pump serving 4 chairs. Fixed installation (not scalable).",
+              "derivation": "1 vacuum system with 4 outlet points"
+            },
+            {
+              "item": "Compressed air system",
+              "scaling_rule": "1 compressor serving 4 chairs.",
+              "derivation": "1 air compressor with 4 outlet points"
+            },
+            {
+              "item": "Sterilization equipment",
+              "scaling_rule": "1 Class B autoclave + 1 ultrasonic cleaner + 1 washer-disinfector.",
+              "derivation": "Medium practice sterilization suite for 4 dentists"
+            },
+            {
+              "item": "Waste amalgam separator",
+              "scaling_rule": "1 amalgam separator (environmental requirement).",
+              "derivation": "Mandatory for practices using amalgam"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(GFA × 4) × 1.2",
+          "calculation": "√(200 × 4) × 1.2 = √800 × 1.2 = 28.28 × 1.2 = 33.94m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height",
+          "calculation": "33.94m × 2.7m = 91.64m²",
+          "waste_applied": "Masonry 1.07 (7% waste) = 98.1m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.15",
+          "calculation": "200m² × 1.15 = 230m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 241.5m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "internal_wall_framing": {
+          "formula": "Internal Walls = √(GFA × 4) × 0.6 × Ceiling Height × 2 faces",
+          "calculation": "√(200 × 4) × 0.6 = 17.0m linear, × 2.7m × 2 = 91.8m² stud area",
+          "waste_applied": "Timber framing 1.10 (10% waste) = 101.0m²",
+          "notes": "OPG room walls require 1.5mm lead sheet lining (perimeter ~12m × 2.7m = 32.4m² lead area).",
+          "nrm_reference": "2.4 Internal Partitions"
+        },
+        "flooring": {
+          "formula": "Floor Finish Area = GFA (medical-grade vinyl)",
+          "calculation": "200m² medical-grade vinyl flooring",
+          "waste_applied": "Vinyl 1.15 (15% waste) = 230m²",
+          "notes": "Anti-slip grade in sterilization room. Medical-grade with 100mm cove base.",
+          "nrm_reference": "3.2 Floor Finishes"
+        },
+        "ceiling": {
+          "formula": "Ceiling Area = GFA × 1.05",
+          "calculation": "200m² × 1.05 = 210m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 231m²",
+          "notes": "Acoustic plasterboard in treatment rooms and OPG room. 2.7m height per NCC.",
+          "nrm_reference": "3.3 Ceiling Finishes"
+        },
+        "power_points": {
+          "formula": "Power Points = (GFA ÷ 4m²) × 1.5 (dental equipment)",
+          "calculation": "200m² ÷ 4 × 1.5 = 75 power points",
+          "notes": "Treatment rooms 12 outlets each (48 total), OPG room 8 outlets, sterilization 10 outlets.",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = (GFA ÷ 6m²) + Emergency Lighting",
+          "calculation": "200m² ÷ 6 = 33.3 → 34 light points + 8 emergency lights = 42 total",
+          "notes": "Dental operating lights (4 adjustable lights, 2 per treatment room). Emergency lighting for egress.",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = (GFA ÷ 30m²) + Clinical Basins + Dental Spittoons",
+          "calculation": "200m² ÷ 30 = 6.7 → 7 WC + 7 basins (toilets) + 4 clinical basins + 4 spittoons = 22 total fixtures",
+          "waste_applied": "Plumbing pipe 1.05 (5% waste)",
+          "notes": "Dental spittoons integrated into chairs. Sterilization room has dedicated wash-down sink.",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        },
+        "hot_water_system": {
+          "formula": "Capacity = 40L per treatment room + 50L sterilization + 25L staff",
+          "calculation": "4 × 40L + 50L + 25L = 235L minimum instantaneous system",
+          "notes": "Sterilization requires high-temperature water. Tempering valve 50°C for hand basins.",
+          "nrm_reference": "5.3 Hot Water Supply"
+        },
+        "dental_vacuum_system": {
+          "formula": "1 central vacuum pump serving 4 chairs",
+          "calculation": "1 vacuum pump unit + 4 outlet points (pipework)",
+          "notes": "Dry vacuum system. External or plant room location (noise isolation).",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        },
+        "compressed_air_system": {
+          "formula": "1 compressor serving 4 chairs",
+          "calculation": "1 compressor unit + 4 outlet points (pipework)",
+          "notes": "Oil-free compressor. 80-100 psi regulated delivery.",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        },
+        "data_comms_points": {
+          "formula": "Data Points = Reception + Treatment rooms + OPG + Dentist office",
+          "calculation": "Reception 5 points + 4 treatment × 2 + OPG 3 + dentist 2 = 18 data points",
+          "notes": "Digital X-ray (OPG) requires network integration. Practice management software.",
+          "nrm_reference": "5.7 Communications & Security"
+        },
+        "lead_radiation_shielding": {
+          "formula": "Lead Sheet Area = OPG Room Wall Area",
+          "calculation": "OPG room perimeter ~13m × 2.7m = 35.1m² requiring 1.5mm lead lining",
+          "notes": "Panoramic X-ray protection per AS/NZS 4543.1. 1.5mm lead equivalent for OPG.",
+          "nrm_reference": "2.4 Internal Partitions (specialist finish)"
+        }
+      },
+      "productivity_standards": {
+        "masonry_rendered": {
+          "trade": "Bricklaying + Rendering",
+          "rate": "7.44 m²/person/day (block) + 15-25 m²/day render",
+          "gang_size": "2 bricklayers + 1 labourer, 1 renderer + 1 assistant",
+          "multiplier": "0.95",
+          "derivation": "External walls 98.1m² ÷ 7.44 = 13.2 person-days, ÷ 2 = 6.6 days. Rendering: 98.1m² × 2 = 196.2m² ÷ 20 = 9.8 days.",
+          "adjustment_factors": "Medical precinct: -5%"
+        },
+        "internal_wall_framing": {
+          "trade": "Carpentry",
+          "rate": "2-3 m²/day",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "Internal walls 101.0m² ÷ 2.5 = 40.4 days (1 carpenter) or 20.2 days (2-person team)",
+          "adjustment_factors": "None"
+        },
+        "lead_lining_installation": {
+          "trade": "Lead Specialist",
+          "rate": "10-14 m²/day (1.5mm lead sheet)",
+          "gang_size": "2 specialists",
+          "multiplier": "1.00",
+          "derivation": "Lead lining 35.1m² ÷ 12 m²/day = 2.9 days (2-person team)",
+          "adjustment_factors": "OPG room lead lining requires specialist certification"
+        },
+        "roofing_metal": {
+          "trade": "Roofing",
+          "rate": "50-70 m²/2-person team/day",
+          "gang_size": "2 roofers + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "Roof 241.5m² ÷ 60 = 4.0 days",
+          "adjustment_factors": "None"
+        },
+        "flooring_medical_vinyl": {
+          "trade": "Vinyl Specialist",
+          "rate": "25-30 m²/day",
+          "gang_size": "1 specialist + 1 assistant",
+          "multiplier": "0.90",
+          "derivation": "Flooring 230m² ÷ 27.5 × 0.90 = 9.5 days",
+          "adjustment_factors": "Cove base: -10%"
+        },
+        "painting_interior": {
+          "trade": "Painting",
+          "rate": "2.5 m²/hour",
+          "gang_size": "2 painters",
+          "multiplier": "0.95",
+          "derivation": "Wall ~460m² + ceiling 210m² = 670m² ÷ 2.5 = 268 hours × 0.95 = 255 hours = 16.0 days (2 painters)",
+          "adjustment_factors": "Medical-grade paint: -5%"
+        },
+        "electrical_installation": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "first_fix_roughin": "75 power × 0.4 hrs + 42 lights × 0.7 hrs + 18 data × 0.5 hrs + emergency 8 hrs = 76.4 hours",
+          "second_fix_final": "75 outlets × 0.3 hrs + testing 12 hrs = 34.5 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": "1.15 (OPG room isolation)",
+          "derivation": "110.9 hours × 1.15 = 127.5 hours ÷ 8 = 15.9 days",
+          "adjustment_factors": "OPG room electrical isolation + medical compliance: +15%"
+        },
+        "plumbing_installation": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "fixture_labour": "7 WC × 2.5 hrs + 15 basins/spittoons × 1.8 hrs + hot water 5 hrs + vacuum/air systems 16 hrs = 65.5 hours",
+          "rough_in_drainage": "110m pipe ÷ 10m per 4 hrs = 44 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": "1.20",
+          "derivation": "109.5 hours × 1.20 = 131.4 hours ÷ 8 = 16.4 days",
+          "adjustment_factors": "Dental vacuum/air systems: +20%"
+        },
+        "hvac_mechanical": {
+          "trade": "HVAC Specialist",
+          "system_type": "3-4 zone split system with filtration",
+          "minimum_callout": "4 hours",
+          "installation_time": "32-40 hours",
+          "gang_size": "1 HVAC tech + 1 assistant",
+          "multiplier": "1.15",
+          "derivation": "36 hours × 1.15 = 41.4 hours ÷ 8 = 5.2 days",
+          "adjustment_factors": "Medical filtration: +15%"
+        },
+        "dental_equipment_installation": {
+          "trade": "Dental Equipment Specialist",
+          "installation_time": "4 chairs × 8 hrs + OPG unit 12 hrs + sterilization 8 hrs + vacuum/air 6 hrs = 58 hours",
+          "gang_size": "2 specialists",
+          "multiplier": "1.00",
+          "derivation": "58 hours ÷ 8 = 7.25 days (2-person team)",
+          "adjustment_factors": "OPG installation requires specialist calibration"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.10,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.10,
+        "floor_wall_tiles": 1.10,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": ["flooring"],
+      "tags": ["healthcare", "dental", "surgery", "single_storey", "new_build", "australia", "medium"]
+    },
+    {
+      "template_id": "au-hlth-agedcare-small-600",
+      "name": "Small Aged Care Facility",
+      "description": "Multi-storey small aged care facility, 600m² GFA, cavity brick block, metal roof",
+      "building_type": "aged_care",
+      "sector": "healthcare",
+      "specifications": {
+        "gfa_m2": 600,
+        "storeys": 2,
+        "default_construction": "cavity_brick_block",
+        "construction_notes": "110mm face brick + 90mm cavity + 200mm concrete block",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Slab on Ground with piers",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian aged care precinct"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Healthcare GFA measured from internal faces. Aged care facility (Class 9c) with resident rooms, common areas, staff facilities, and support services. GFA includes all storeys. NCC Class 9c requirements apply.",
+        "typical_layout": {
+          "ground_floor": {
+            "resident_rooms": "120m² (8 rooms × 15m² each)",
+            "common_lounge": "50m² (10.0m × 5.0m)",
+            "dining_area": "40m² (8.0m × 5.0m)",
+            "kitchen_servery": "25m² (5.0m × 5.0m)",
+            "staff_office": "15m² (3.75m × 4.0m)",
+            "nurse_station": "12m² (3.0m × 4.0m)",
+            "toilets_bathrooms": "30m² (4 accessible bathrooms + 2 WC)",
+            "cleaners_laundry": "15m² (3.75m × 4.0m)",
+            "storage": "12m² (3.0m × 4.0m)",
+            "circulation_stairs": "51m²"
+          },
+          "first_floor": {
+            "resident_rooms": "120m² (8 rooms × 15m² each)",
+            "common_lounge": "35m² (7.0m × 5.0m)",
+            "activity_room": "25m² (5.0m × 5.0m)",
+            "nurse_station": "12m² (3.0m × 4.0m)",
+            "toilets_bathrooms": "25m² (3 accessible bathrooms + 1 WC)",
+            "storage": "10m² (2.5m × 4.0m)",
+            "circulation_stairs": "43m²"
+          }
+        },
+        "derivation_notes": "Small aged care facility for 16 residents (8 per floor). NCC Class 9c: 2.7m ceiling height minimum in resident rooms. Each resident room 15m² includes bed area, wardrobe, ensuite capability or shared bathroom (4m² each). Accessible bathrooms have ceiling hoists. Common areas sized for social activities. Kitchen for meal preparation (not commercial kitchen). Nurse station on each floor for 24-hour care. Circulation includes wide corridors (2.0m minimum) for wheelchair access and emergency egress. Toilet provision = 1 accessible bathroom per 4 residents.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Resident rooms",
+              "scaling_rule": "16 resident rooms (8 per floor). Each room 15m² minimum per aged care standards.",
+              "derivation": "16 rooms × 15m² = 240m² residential space"
+            },
+            {
+              "item": "Accessible bathrooms",
+              "scaling_rule": "1 accessible bathroom per 4 residents (7 total: 4 ground floor + 3 first floor).",
+              "derivation": "16 residents ÷ 4 = 4 bathrooms per floor minimum"
+            },
+            {
+              "item": "Nurse stations",
+              "scaling_rule": "1 nurse station per floor (24-hour staffing).",
+              "derivation": "2 storeys = 2 nurse stations"
+            },
+            {
+              "item": "Emergency call system",
+              "scaling_rule": "Call buttons in every resident room + bathrooms. Central monitoring at nurse stations.",
+              "derivation": "16 room call points + 7 bathroom call points = 23 call buttons"
+            },
+            {
+              "item": "Ceiling hoists",
+              "scaling_rule": "1 ceiling hoist per 2 accessible bathrooms (mobility assistance).",
+              "derivation": "7 bathrooms ÷ 2 = 4 ceiling hoists"
+            },
+            {
+              "item": "Lift/Elevator",
+              "scaling_rule": "1 lift required for 2 storeys (NCC accessibility requirement for Class 9c).",
+              "derivation": "1 passenger lift (8-person minimum capacity)"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(GFA_per_storey × 4) × 1.2",
+          "calculation": "√(300 × 4) × 1.2 = √1200 × 1.2 = 34.64 × 1.2 = 41.57m per storey",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height × Storeys",
+          "calculation": "41.57m × 2.7m × 2 = 224.5m²",
+          "waste_applied": "Cavity brick 1.07 (7% waste) = 240.2m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA_per_storey × 1.15",
+          "calculation": "300m² × 1.15 = 345m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 362.3m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "floor_structure_upper": {
+          "formula": "Upper Floor = GFA_per_storey × 1.08 (structural depth)",
+          "calculation": "300m² × 1.08 = 324m²",
+          "waste_applied": "Concrete 1.05 (5% waste) = 340.2m²",
+          "nrm_reference": "2.2 Upper Floors"
+        },
+        "internal_wall_framing": {
+          "formula": "Internal Walls = √(GFA × 4) × 0.65 × Ceiling Height × 2 faces",
+          "calculation": "√(600 × 4) × 0.65 = 31.9m linear, × 2.7m × 2 = 172.3m² stud area",
+          "waste_applied": "Timber framing 1.10 (10% waste) = 189.5m²",
+          "nrm_reference": "2.4 Internal Partitions"
+        },
+        "flooring": {
+          "formula": "Floor Finish Area = GFA (medical-grade vinyl + carpet in resident rooms)",
+          "calculation": "600m² total: 240m² vinyl (clinical areas) + 360m² carpet (resident rooms, common areas)",
+          "waste_applied": "Vinyl 1.15 (15% waste) = 276m²; Carpet 1.15 (15% waste) = 414m²",
+          "notes": "Medical-grade vinyl in bathrooms, corridors, nurse stations. Carpet in resident rooms and lounges (comfort and noise reduction).",
+          "nrm_reference": "3.2 Floor Finishes"
+        },
+        "ceiling": {
+          "formula": "Ceiling Area = GFA × 1.05",
+          "calculation": "600m² × 1.05 = 630m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 693m²",
+          "notes": "Acoustic plasterboard in resident rooms. 2.7m height per NCC Class 9c.",
+          "nrm_reference": "3.3 Ceiling Finishes"
+        },
+        "power_points": {
+          "formula": "Power Points = (GFA ÷ 4m²) × 1.2 (aged care requirements)",
+          "calculation": "600m² ÷ 4 × 1.2 = 180 power points",
+          "notes": "Resident rooms 8 outlets each (128 total), common areas 30 outlets, nurse stations 15 outlets, kitchen 20 outlets.",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = (GFA ÷ 6m²) + Emergency Lighting",
+          "calculation": "600m² ÷ 6 = 100 light points + 25 emergency lights = 125 total",
+          "notes": "Emergency lighting for all egress paths, resident rooms, common areas (NCC Part E4.2). Night lights in corridors.",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = Accessible Bathrooms + Staff Toilets + Kitchen",
+          "calculation": "7 accessible bathrooms × 3 fixtures each (WC + basin + shower) + 3 staff WC + 3 staff basins + kitchen sink = 30 total fixtures",
+          "waste_applied": "Plumbing pipe 1.05 (5% waste)",
+          "notes": "Accessible bathrooms require grab rails, slip-resistant flooring, and emergency call buttons.",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        },
+        "hot_water_system": {
+          "formula": "Capacity = 80L per resident + 50L per staff area + 100L kitchen",
+          "calculation": "16 residents × 80L + 50L + 100L = 1430L minimum storage system",
+          "notes": "Large capacity required for bathing schedule. Solar hot water system typical. Tempering valve 50°C for safety (scald prevention).",
+          "nrm_reference": "5.3 Hot Water Supply"
+        },
+        "emergency_call_system": {
+          "formula": "Call Points = Resident Rooms + Bathrooms",
+          "calculation": "16 resident rooms + 7 bathrooms = 23 call points with central monitoring at 2 nurse stations",
+          "notes": "Nurse call system required by aged care regulations. Audible and visual alerts.",
+          "nrm_reference": "5.7 Communications & Security"
+        },
+        "data_comms_points": {
+          "formula": "Data Points = Staff office + Nurse stations + Kitchen + Activity room",
+          "calculation": "Office 4 points + 2 nurse stations × 3 + kitchen 2 + activity 2 = 14 data points",
+          "notes": "Electronic medication management system requires network infrastructure.",
+          "nrm_reference": "5.7 Communications & Security"
+        },
+        "lift_installation": {
+          "formula": "1 passenger lift (8-person capacity minimum)",
+          "calculation": "1 lift × 2 stops (ground + first floor)",
+          "notes": "NCC requires lift for Class 9c aged care facilities over 1 storey. Stretcher-capable preferred.",
+          "nrm_reference": "6.1 Lifts & Elevators"
+        }
+      },
+      "productivity_standards": {
+        "cavity_brickwork": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day (face brick) + 7.44 m²/person/day (block)",
+          "gang_size": "2 bricklayers + 1 labourer",
+          "multiplier": "0.90 (multi-storey access)",
+          "derivation": "External walls 240.2m² ÷ 6.5 m²/day (average) = 37.0 person-days × 0.90 = 33.3 person-days, ÷ 2 = 16.7 days (3-person gang)",
+          "adjustment_factors": "Multi-storey scaffolding and access: -10%"
+        },
+        "internal_wall_framing": {
+          "trade": "Carpentry",
+          "rate": "2-3 m²/day",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "Internal walls 189.5m² ÷ 2.5 = 75.8 days (1 carpenter) or 37.9 days (2-person team)",
+          "adjustment_factors": "None"
+        },
+        "floor_structure": {
+          "trade": "Concrete + Formwork",
+          "placing_rate": "10-20 m³/day",
+          "formwork_rate": "20-40 m²/day",
+          "gang_size": "1 pump operator + 3 labourers (placing), 2 carpenters (formwork)",
+          "multiplier": "0.95 (upper floor complexity)",
+          "derivation": "Upper floor 340.2m² × 0.15m depth = 51.0m³ ÷ 15 m³/day = 3.4 days placing",
+          "adjustment_factors": "Upper floor formwork and propping: -5%"
+        },
+        "roofing_metal": {
+          "trade": "Roofing",
+          "rate": "50-70 m²/2-person team/day",
+          "gang_size": "2 roofers + 1 labourer",
+          "multiplier": "0.95 (two storey height)",
+          "derivation": "Roof 362.3m² ÷ 60 × 0.95 = 6.4 days",
+          "adjustment_factors": "Two storey height access: -5%"
+        },
+        "flooring_vinyl_and_carpet": {
+          "trade": "Flooring Specialist",
+          "vinyl_rate": "25-30 m²/day",
+          "carpet_rate": "30-40 m²/day",
+          "gang_size": "2 specialists + 1 assistant",
+          "multiplier": "0.90 (multi-storey)",
+          "derivation": "Vinyl 276m² ÷ 27.5 × 0.90 = 10.7 days; Carpet 414m² ÷ 35 = 11.8 days",
+          "adjustment_factors": "Multi-storey material transport: -10%"
+        },
+        "painting_interior": {
+          "trade": "Painting",
+          "rate": "2.5 m²/hour",
+          "gang_size": "3 painters",
+          "multiplier": "0.95 (medical-grade paint)",
+          "derivation": "Wall ~1300m² + ceiling 630m² = 1930m² ÷ 2.5 = 772 hours × 0.95 = 733 hours = 30.5 days (3 painters)",
+          "adjustment_factors": "Low-VOC paint: -5%"
+        },
+        "electrical_installation": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "first_fix_roughin": "180 power × 0.4 hrs + 125 lights × 0.7 hrs + 14 data × 0.5 hrs + emergency call 30 hrs + lift 12 hrs = 206.5 hours",
+          "second_fix_final": "180 outlets × 0.3 hrs + testing 25 hrs = 79 hours",
+          "gang_size": "2 electricians + 1 apprentice",
+          "multiplier": "1.15 (aged care compliance + emergency call)",
+          "derivation": "285.5 hours × 1.15 = 328.3 hours ÷ 8 = 41.0 days (2 electricians + apprentice) = 20.5 days effective",
+          "adjustment_factors": "Nurse call system installation + aged care compliance: +15%"
+        },
+        "plumbing_installation": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "fixture_labour": "7 accessible bathrooms × 8 hrs (shower + WC + basin + grab rails) + 3 staff WC × 2.5 hrs + kitchen 6 hrs + hot water system 10 hrs = 88.5 hours",
+          "rough_in_drainage": "280m pipe ÷ 10m per 4 hrs = 112 hours",
+          "gang_size": "2 plumbers + 1 apprentice",
+          "multiplier": "1.20 (accessible bathroom fittings)",
+          "derivation": "200.5 hours × 1.20 = 240.6 hours ÷ 8 = 30.1 days (2 plumbers + apprentice) = 15.0 days effective",
+          "adjustment_factors": "Accessible bathrooms with grab rails and emergency call integration: +20%"
+        },
+        "hvac_mechanical": {
+          "trade": "HVAC Specialist",
+          "system_type": "8-10 zone split system (resident rooms + common areas)",
+          "minimum_callout": "4 hours",
+          "installation_time": "80-100 hours",
+          "gang_size": "2 HVAC techs + 1 assistant",
+          "multiplier": "1.10 (multi-storey + aged care)",
+          "derivation": "90 hours × 1.10 = 99 hours ÷ 8 = 12.4 days (2 techs + assistant) = 6.2 days effective",
+          "adjustment_factors": "Multi-storey ductwork + individual room temperature control: +10%"
+        },
+        "lift_installation": {
+          "trade": "Lift Specialist",
+          "installation_time": "80-120 hours (8-person lift, 2 stops)",
+          "gang_size": "3 specialists (manufacturer team)",
+          "multiplier": "1.00",
+          "derivation": "100 hours ÷ 8 = 12.5 days (3-person specialist team) = 4.2 days effective",
+          "adjustment_factors": "Specialist manufacturer installation and commissioning"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.10,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.10,
+        "floor_wall_tiles": 1.10,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": ["flooring"],
+      "tags": ["healthcare", "aged_care", "multi_storey", "new_build", "australia", "small"]
+    },
+    {
+      "template_id": "au-hlth-agedcare-medium-1200",
+      "name": "Medium Aged Care Facility",
+      "description": "Multi-storey medium aged care facility, 1200m² GFA, cavity brick block, metal roof",
+      "building_type": "aged_care",
+      "sector": "healthcare",
+      "specifications": {
+        "gfa_m2": 1200,
+        "storeys": 3,
+        "default_construction": "cavity_brick_block",
+        "construction_notes": "110mm face brick + 90mm cavity + 200mm concrete block",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Reinforced concrete slab",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian aged care precinct"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Healthcare GFA measured from internal faces. Medium aged care facility (Class 9c) with 32 resident rooms across 3 storeys, common areas, commercial kitchen, therapy rooms, and staff facilities. GFA includes all storeys.",
+        "typical_layout": {
+          "ground_floor": {
+            "resident_rooms": "120m² (8 rooms × 15m² each)",
+            "common_lounge": "60m² (12.0m × 5.0m)",
+            "dining_area": "70m² (14.0m × 5.0m)",
+            "commercial_kitchen": "40m² (8.0m × 5.0m)",
+            "activity_therapy_room": "30m² (6.0m × 5.0m)",
+            "staff_office": "20m² (5.0m × 4.0m)",
+            "nurse_station": "15m² (3.75m × 4.0m)",
+            "toilets_bathrooms": "35m² (5 accessible bathrooms + 2 staff WC)",
+            "laundry_cleaners": "25m² (5.0m × 5.0m)",
+            "storage": "15m² (3.75m × 4.0m)",
+            "circulation_lift_stairs": "70m²"
+          },
+          "first_floor": {
+            "resident_rooms": "150m² (10 rooms × 15m² each)",
+            "common_lounge": "50m² (10.0m × 5.0m)",
+            "quiet_room": "20m² (5.0m × 4.0m)",
+            "nurse_station": "15m² (3.75m × 4.0m)",
+            "toilets_bathrooms": "40m² (6 accessible bathrooms + 1 staff WC)",
+            "storage": "12m² (3.0m × 4.0m)",
+            "circulation_lift_stairs": "63m²"
+          },
+          "second_floor": {
+            "resident_rooms": "210m² (14 rooms × 15m² each)",
+            "common_lounge": "50m² (10.0m × 5.0m)",
+            "activity_room": "25m² (5.0m × 5.0m)",
+            "nurse_station": "15m² (3.75m × 4.0m)",
+            "toilets_bathrooms": "45m² (7 accessible bathrooms + 1 staff WC)",
+            "storage": "12m² (3.0m × 4.0m)",
+            "circulation_lift_stairs": "63m²"
+          }
+        },
+        "derivation_notes": "Medium aged care facility for 32 residents (8 ground + 10 first + 14 second floor). NCC Class 9c: 2.7m ceiling height in resident rooms. Each resident room 15m² includes bed area, wardrobe, ensuite or shared accessible bathroom. Ground floor has commercial kitchen for meal preparation and dining for all residents. Activity and therapy rooms support physical and cognitive programs. Nurse station on each floor for 24-hour care. Lift required (NCC). Wide corridors (2.0m minimum) for wheelchair and equipment access. Toilet provision = 1 accessible bathroom per 4-5 residents.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Resident rooms",
+              "scaling_rule": "32 resident rooms (8 + 10 + 14 distributed across 3 floors).",
+              "derivation": "32 rooms × 15m² = 480m² residential space"
+            },
+            {
+              "item": "Accessible bathrooms",
+              "scaling_rule": "1 accessible bathroom per 4-5 residents (18 total: 5 ground + 6 first + 7 second floor).",
+              "derivation": "32 residents ÷ 4.5 ≈ 7 bathrooms per level (average)"
+            },
+            {
+              "item": "Commercial kitchen",
+              "scaling_rule": "1 commercial kitchen serving 32 residents (3 meals daily). Not scalable - fixed installation.",
+              "derivation": "40m² kitchen with commercial equipment (ovens, bain-maries, dishwasher)"
+            },
+            {
+              "item": "Nurse stations",
+              "scaling_rule": "1 nurse station per floor (3 total).",
+              "derivation": "3 storeys = 3 nurse stations with medication storage"
+            },
+            {
+              "item": "Emergency call system",
+              "scaling_rule": "Call buttons in every resident room + bathrooms.",
+              "derivation": "32 room call points + 18 bathroom call points = 50 call buttons"
+            },
+            {
+              "item": "Ceiling hoists",
+              "scaling_rule": "1 ceiling hoist per 2 accessible bathrooms.",
+              "derivation": "18 bathrooms ÷ 2 = 9 ceiling hoists"
+            },
+            {
+              "item": "Lift/Elevator",
+              "scaling_rule": "1 passenger lift (10-person capacity) serving 3 floors.",
+              "derivation": "1 lift × 3 stops (ground + first + second)"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(GFA_per_storey × 4) × 1.2",
+          "calculation": "√(400 × 4) × 1.2 = √1600 × 1.2 = 40.0 × 1.2 = 48.0m per storey",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height × Storeys",
+          "calculation": "48.0m × 2.7m × 3 = 388.8m²",
+          "waste_applied": "Cavity brick 1.07 (7% waste) = 416.0m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA_per_storey × 1.15",
+          "calculation": "400m² × 1.15 = 460m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 483.0m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "floor_structure_upper": {
+          "formula": "Upper Floors = GFA_per_storey × Number_of_upper_floors × 1.08",
+          "calculation": "400m² × 2 floors × 1.08 = 864m²",
+          "waste_applied": "Concrete 1.05 (5% waste) = 907.2m²",
+          "nrm_reference": "2.2 Upper Floors"
+        },
+        "internal_wall_framing": {
+          "formula": "Internal Walls = √(GFA × 4) × 0.7 × Ceiling Height × 2 faces",
+          "calculation": "√(1200 × 4) × 0.7 = 48.5m linear, × 2.7m × 2 = 261.9m² stud area",
+          "waste_applied": "Timber framing 1.10 (10% waste) = 288.1m²",
+          "nrm_reference": "2.4 Internal Partitions"
+        },
+        "flooring": {
+          "formula": "Floor Finish Area = GFA (vinyl + carpet mix)",
+          "calculation": "1200m² total: 480m² vinyl (clinical, kitchen) + 720m² carpet (resident rooms, common areas)",
+          "waste_applied": "Vinyl 1.15 (15%) = 552m²; Carpet 1.15 (15%) = 828m²",
+          "notes": "Commercial kitchen requires slip-resistant tiles (40m²). Medical-grade vinyl in bathrooms and corridors. Carpet in resident areas.",
+          "nrm_reference": "3.2 Floor Finishes"
+        },
+        "ceiling": {
+          "formula": "Ceiling Area = GFA × 1.05",
+          "calculation": "1200m² × 1.05 = 1260m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 1386m²",
+          "notes": "Acoustic plasterboard in resident rooms. Commercial kitchen requires cleanable ceiling (vinyl-faced plasterboard).",
+          "nrm_reference": "3.3 Ceiling Finishes"
+        },
+        "power_points": {
+          "formula": "Power Points = (GFA ÷ 4m²) × 1.25",
+          "calculation": "1200m² ÷ 4 × 1.25 = 375 power points",
+          "notes": "Resident rooms 8 outlets each (256), common areas 60, nurse stations 30, kitchen 50 (commercial appliances).",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = (GFA ÷ 6m²) + Emergency Lighting",
+          "calculation": "1200m² ÷ 6 = 200 light points + 50 emergency lights = 250 total",
+          "notes": "Emergency lighting for all egress paths. Night lights in corridors. Kitchen requires commercial lighting.",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = Accessible Bathrooms + Staff Toilets + Kitchen",
+          "calculation": "18 bathrooms × 3 fixtures (WC + basin + shower) + 4 staff WC + 4 basins + kitchen 3-bay sink + dishwasher = 65 total fixtures",
+          "waste_applied": "Plumbing pipe 1.05 (5% waste)",
+          "notes": "Commercial kitchen requires grease trap. Accessible bathrooms have grab rails.",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        },
+        "hot_water_system": {
+          "formula": "Capacity = 80L per resident + 100L kitchen + 60L staff",
+          "calculation": "32 residents × 80L + 100L + 60L = 2720L storage system",
+          "notes": "Large solar hot water system with gas booster. Tempering valve 50°C. Recirculation loop for instant delivery.",
+          "nrm_reference": "5.3 Hot Water Supply"
+        },
+        "emergency_call_system": {
+          "formula": "Call Points = Resident Rooms + Bathrooms",
+          "calculation": "32 rooms + 18 bathrooms = 50 call points with monitoring at 3 nurse stations",
+          "notes": "Nurse call system with mobile staff paging. Audible and visual alerts.",
+          "nrm_reference": "5.7 Communications & Security"
+        },
+        "data_comms_points": {
+          "formula": "Data Points = Office + Nurse stations + Kitchen + Activity rooms",
+          "calculation": "Office 5 points + 3 nurse stations × 3 + kitchen 3 + activity 4 = 21 data points",
+          "notes": "Electronic medication management and resident care software.",
+          "nrm_reference": "5.7 Communications & Security"
+        },
+        "lift_installation": {
+          "formula": "1 passenger lift (10-person capacity, stretcher-capable)",
+          "calculation": "1 lift × 3 stops (ground + first + second)",
+          "notes": "Stretcher-capable lift required for emergency evacuation (NCC Class 9c).",
+          "nrm_reference": "6.1 Lifts & Elevators"
+        }
+      },
+      "productivity_standards": {
+        "cavity_brickwork": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day (face brick) + 7.44 m²/person/day (block)",
+          "gang_size": "3 bricklayers + 2 labourers (larger project)",
+          "multiplier": "0.85 (three storey height)",
+          "derivation": "External walls 416.0m² ÷ 6.5 m²/day × 0.85 = 54.5 person-days, ÷ 3 = 18.2 days (5-person gang)",
+          "adjustment_factors": "Three storey scaffolding and material hoisting: -15%"
+        },
+        "internal_wall_framing": {
+          "trade": "Carpentry",
+          "rate": "2-3 m²/day",
+          "gang_size": "3 carpenters + 1 labourer (larger project)",
+          "multiplier": "0.95 (multi-storey)",
+          "derivation": "Internal walls 288.1m² ÷ 2.5 × 0.95 = 109.5 days (1 carpenter) or 36.5 days (3-person team)",
+          "adjustment_factors": "Multi-storey material transport: -5%"
+        },
+        "floor_structure": {
+          "trade": "Concrete + Formwork",
+          "placing_rate": "10-20 m³/day",
+          "formwork_rate": "20-40 m²/day",
+          "gang_size": "1 pump operator + 4 labourers (placing), 3 carpenters (formwork)",
+          "multiplier": "0.90 (multi-level complexity)",
+          "derivation": "Upper floors 907.2m² × 0.15m = 136.1m³ ÷ 15 m³/day × 0.90 = 10.2 days placing",
+          "adjustment_factors": "Multi-level formwork, propping, and access: -10%"
+        },
+        "roofing_metal": {
+          "trade": "Roofing",
+          "rate": "50-70 m²/2-person team/day",
+          "gang_size": "2 roofers + 1 labourer",
+          "multiplier": "0.90 (three storey height)",
+          "derivation": "Roof 483.0m² ÷ 60 × 0.90 = 8.1 days",
+          "adjustment_factors": "Three storey height and safety: -10%"
+        },
+        "flooring_vinyl_carpet_tiles": {
+          "trade": "Flooring Specialist",
+          "vinyl_rate": "25-30 m²/day",
+          "carpet_rate": "30-40 m²/day",
+          "tile_rate": "20 m²/day (commercial kitchen)",
+          "gang_size": "3 specialists + 1 assistant",
+          "multiplier": "0.90 (multi-storey)",
+          "derivation": "Vinyl 552m² ÷ 27.5 × 0.90 = 22.7 days; Carpet 828m² ÷ 35 = 23.7 days; Tiles 40m² ÷ 20 = 2.0 days",
+          "adjustment_factors": "Three storey material transport and access: -10%"
+        },
+        "painting_interior": {
+          "trade": "Painting",
+          "rate": "2.5 m²/hour",
+          "gang_size": "4 painters (large project)",
+          "multiplier": "0.95 (medical-grade)",
+          "derivation": "Wall ~2600m² + ceiling 1260m² = 3860m² ÷ 2.5 = 1544 hours × 0.95 = 1467 hours = 45.8 days (4 painters)",
+          "adjustment_factors": "Low-VOC paint: -5%"
+        },
+        "electrical_installation": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "first_fix_roughin": "375 power × 0.4 hrs + 250 lights × 0.7 hrs + 21 data × 0.5 hrs + emergency call 60 hrs + lift 18 hrs = 413.5 hours",
+          "second_fix_final": "375 outlets × 0.3 hrs + testing 45 hrs = 157.5 hours",
+          "gang_size": "3 electricians + 2 apprentices (large project)",
+          "multiplier": "1.15 (aged care compliance)",
+          "derivation": "571 hours × 1.15 = 656.7 hours ÷ 8 = 82.1 days (3 elec + 2 appr) = 27.4 days effective",
+          "adjustment_factors": "Nurse call system + aged care compliance: +15%"
+        },
+        "plumbing_installation": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "fixture_labour": "18 bathrooms × 8 hrs + 4 staff WC × 2.5 hrs + kitchen 20 hrs (commercial) + hot water 15 hrs + grease trap 6 hrs = 205 hours",
+          "rough_in_drainage": "550m pipe ÷ 10m per 4 hrs = 220 hours",
+          "gang_size": "3 plumbers + 2 apprentices",
+          "multiplier": "1.20 (accessible fittings + commercial kitchen)",
+          "derivation": "425 hours × 1.20 = 510 hours ÷ 8 = 63.8 days (3 plumbers + 2 appr) = 21.3 days effective",
+          "adjustment_factors": "Accessible bathrooms + commercial kitchen + grease trap: +20%"
+        },
+        "hvac_mechanical": {
+          "trade": "HVAC Specialist",
+          "system_type": "16-20 zone VRV system (resident rooms + common areas + kitchen)",
+          "minimum_callout": "4 hours",
+          "installation_time": "160-200 hours",
+          "gang_size": "3 HVAC techs + 2 assistants",
+          "multiplier": "1.15 (multi-storey + commercial kitchen)",
+          "derivation": "180 hours × 1.15 = 207 hours ÷ 8 = 25.9 days (3 techs + 2 asst) = 8.6 days effective",
+          "adjustment_factors": "Multi-storey ductwork + commercial kitchen exhaust: +15%"
+        },
+        "lift_installation": {
+          "trade": "Lift Specialist",
+          "installation_time": "120-160 hours (10-person lift, 3 stops)",
+          "gang_size": "3 specialists",
+          "multiplier": "1.00",
+          "derivation": "140 hours ÷ 8 = 17.5 days (3-person team) = 5.8 days effective",
+          "adjustment_factors": "Stretcher-capable lift with emergency evacuation capability"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.10,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.10,
+        "floor_wall_tiles": 1.10,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": ["flooring"],
+      "tags": ["healthcare", "aged_care", "multi_storey", "new_build", "australia", "medium"]
+    },
+    {
+      "template_id": "au-hlth-pharmacy-120",
+      "name": "Pharmacy",
+      "description": "Single storey pharmacy, 120m² GFA, rendered masonry, metal roof, slab on ground",
+      "building_type": "pharmacy",
+      "sector": "healthcare",
+      "specifications": {
+        "gfa_m2": 120,
+        "storeys": 1,
+        "default_construction": "rendered_masonry",
+        "construction_notes": "200mm concrete block + render both sides",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian shopping centre"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Retail GFA measured from internal faces. Pharmacy includes retail area, dispensary, consultation room, and storage. Typically located in shopping centre or medical precinct. NCC Class 6 (retail) with Class 9a elements (consultation room).",
+        "typical_layout": {
+          "retail_sales_area": "45m² (9.0m × 5.0m)",
+          "dispensary_pharmacy": "25m² (5.0m × 5.0m)",
+          "consultation_room": "10m² (2.5m × 4.0m)",
+          "storage_warehouse": "20m² (5.0m × 4.0m)",
+          "staff_room": "8m² (2.0m × 4.0m)",
+          "toilet": "5m² (2.5m × 2.0m)",
+          "circulation": "7m²"
+        },
+        "derivation_notes": "Pharmacy 120m² includes retail sales area (over-the-counter products), secure dispensary area (prescription medications), private consultation room (medication reviews, vaccinations), and storage (excess stock, refrigerated medications). NCC Class 6 retail with healthcare elements: 2.7m ceiling height for professional appearance. Dispensary requires security barriers and controlled access (TGA requirements). Consultation room provides patient privacy (similar to medical clinic consulting room). Refrigeration required for temperature-sensitive medications (2-8°C storage). Toilet provision = 1 WC minimum (staff + customer).",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Dispensary area",
+              "scaling_rule": "Fixed dispensary size (25m²) regardless of total GFA. Security and workflow requirements dictate layout.",
+              "derivation": "1 dispensary 25m² with secure medication storage and dispensing workbenches"
+            },
+            {
+              "item": "Consultation room",
+              "scaling_rule": "1 consultation room for patient privacy (medication reviews, vaccinations, health checks).",
+              "derivation": "1 consultation room 10m² (similar to medical consulting room)"
+            },
+            {
+              "item": "Medication refrigerator",
+              "scaling_rule": "1 medical-grade refrigerator (2-8°C) for temperature-sensitive medications (vaccines, insulin, biologics).",
+              "derivation": "1 refrigerator (lockable, temperature-monitored) in dispensary"
+            },
+            {
+              "item": "Security safe",
+              "scaling_rule": "1 narcotic safe for Schedule 8 controlled drugs (TGA requirement).",
+              "derivation": "1 safe (Class 3 security rating) in dispensary"
+            },
+            {
+              "item": "Dispensary security barrier",
+              "scaling_rule": "Security screens/barriers between dispensary and retail area (TGA requirement).",
+              "derivation": "Approximately 6m of security screening (countertop height 1.1m)"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(GFA × 4) × 1.2",
+          "calculation": "√(120 × 4) × 1.2 = √480 × 1.2 = 21.91 × 1.2 = 26.29m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height",
+          "calculation": "26.29m × 2.7m = 70.98m²",
+          "waste_applied": "Masonry 1.07 (7% waste) = 76.0m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.15",
+          "calculation": "120m² × 1.15 = 138m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 144.9m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "internal_wall_framing": {
+          "formula": "Internal Walls = √(GFA × 4) × 0.5 × Ceiling Height × 2 faces",
+          "calculation": "√(120 × 4) × 0.5 = 10.95m linear, × 2.7m × 2 = 59.1m² stud area",
+          "waste_applied": "Timber framing 1.10 (10% waste) = 65.0m²",
+          "notes": "Dispensary partition walls include security barrier integration (additional cost not in framing).",
+          "nrm_reference": "2.4 Internal Partitions"
+        },
+        "flooring": {
+          "formula": "Floor Finish Area = GFA (commercial vinyl in dispensary + carpet tiles in retail)",
+          "calculation": "120m² total: 45m² vinyl (dispensary, consultation, staff) + 75m² carpet tiles (retail sales area)",
+          "waste_applied": "Vinyl 1.15 (15% waste) = 51.75m²; Carpet 1.15 (15% waste) = 86.25m²",
+          "notes": "Dispensary requires easy-clean vinyl flooring. Retail area carpet tiles for comfort and noise reduction.",
+          "nrm_reference": "3.2 Floor Finishes"
+        },
+        "ceiling": {
+          "formula": "Ceiling Area = GFA × 1.05",
+          "calculation": "120m² × 1.05 = 126m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 138.6m²",
+          "notes": "Suspended ceiling in retail area (lighting integration). 2.7m height for professional appearance.",
+          "nrm_reference": "3.3 Ceiling Finishes"
+        },
+        "power_points": {
+          "formula": "Power Points = (GFA ÷ 4m²) × 1.3 (retail + medical equipment)",
+          "calculation": "120m² ÷ 4 × 1.3 = 39 power points",
+          "notes": "Dispensary requires 15 outlets (computers, refrigerator, equipment). Retail area 12 outlets. Consultation room 6 outlets.",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = (GFA ÷ 6m²) + Emergency Lighting",
+          "calculation": "120m² ÷ 6 = 20 light points + 4 emergency lights = 24 total",
+          "notes": "Retail area requires good lighting (product visibility). Dispensary task lighting for prescription reading. Emergency lighting for egress.",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = Staff Toilet + Dispensary Hand Basin",
+          "calculation": "1 WC + 1 basin (toilet) + 1 hand basin (dispensary) = 3 total fixtures",
+          "waste_applied": "Plumbing pipe 1.05 (5% waste)",
+          "notes": "Dispensary hand basin for hand hygiene (medication handling). Staff toilet accessible from back-of-house.",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        },
+        "hot_water_system": {
+          "formula": "Capacity = 25L (dispensary + staff toilet)",
+          "calculation": "25L instantaneous or small storage system",
+          "notes": "Small capacity for hand washing only. Tempering valve 50°C.",
+          "nrm_reference": "5.3 Hot Water Supply"
+        },
+        "data_comms_points": {
+          "formula": "Data Points = Dispensary workstations + POS + Consultation room",
+          "calculation": "Dispensary 5 points (computers, printers) + retail POS 3 points + consultation 1 point = 9 data points",
+          "notes": "Pharmacy dispensing software requires networked computers. Electronic prescription integration (eRx).",
+          "nrm_reference": "5.7 Communications & Security"
+        },
+        "security_alarm_system": {
+          "formula": "Security system with motion sensors + door/window contacts",
+          "calculation": "1 alarm panel + 4 motion sensors + 6 door/window contacts",
+          "notes": "TGA requires security systems for pharmacies (Schedule 4 and 8 drug storage). CCTV recommended.",
+          "nrm_reference": "5.7 Communications & Security"
+        },
+        "dispensary_fitout": {
+          "formula": "Dispensary benching + security barrier + medication storage",
+          "calculation": "6m dispensing benchtop + 6m security barrier + shelving/cabinets",
+          "notes": "Specialist pharmacy fitout (not standard construction). Security barrier between dispensary and retail.",
+          "nrm_reference": "4.3 Fittings & Fixtures"
+        }
+      },
+      "productivity_standards": {
+        "masonry_rendered": {
+          "trade": "Bricklaying + Rendering",
+          "rate": "7.44 m²/person/day (block) + 15-25 m²/day render",
+          "gang_size": "2 bricklayers + 1 labourer, 1 renderer + 1 assistant",
+          "multiplier": "1.00",
+          "derivation": "External walls 76.0m² ÷ 7.44 = 10.2 person-days, ÷ 2 = 5.1 days. Rendering: 76.0m² × 2 = 152m² ÷ 20 = 7.6 days.",
+          "adjustment_factors": "None (standard site access)"
+        },
+        "internal_wall_framing": {
+          "trade": "Carpentry",
+          "rate": "2-3 m²/day",
+          "gang_size": "1 carpenter + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "Internal walls 65.0m² ÷ 2.5 = 26.0 days (1 carpenter) or 13.0 days (2-person team)",
+          "adjustment_factors": "None"
+        },
+        "roofing_metal": {
+          "trade": "Roofing",
+          "rate": "50-70 m²/2-person team/day",
+          "gang_size": "2 roofers + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "Roof 144.9m² ÷ 60 = 2.4 days",
+          "adjustment_factors": "None"
+        },
+        "flooring_vinyl_and_carpet": {
+          "trade": "Flooring Specialist",
+          "vinyl_rate": "25-30 m²/day",
+          "carpet_rate": "30-40 m²/day (commercial carpet tiles)",
+          "gang_size": "1 specialist + 1 assistant",
+          "multiplier": "1.00",
+          "derivation": "Vinyl 51.75m² ÷ 27.5 = 1.9 days; Carpet tiles 86.25m² ÷ 35 = 2.5 days",
+          "adjustment_factors": "None"
+        },
+        "painting_interior": {
+          "trade": "Painting",
+          "rate": "2.5 m²/hour",
+          "gang_size": "2 painters",
+          "multiplier": "1.00",
+          "derivation": "Wall ~280m² + ceiling 126m² = 406m² ÷ 2.5 = 162 hours = 20.3 hours per painter = 10.1 days (2 painters)",
+          "adjustment_factors": "None (standard commercial paint)"
+        },
+        "electrical_installation": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "first_fix_roughin": "39 power × 0.4 hrs + 24 lights × 0.7 hrs + 9 data × 0.5 hrs + security alarm 8 hrs = 40.9 hours",
+          "second_fix_final": "39 outlets × 0.3 hrs + testing 6 hrs = 17.7 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": "1.05 (dedicated refrigerator circuit)",
+          "derivation": "58.6 hours × 1.05 = 61.5 hours ÷ 8 = 7.7 days",
+          "adjustment_factors": "Dedicated circuit for medication refrigerator + alarm system: +5%"
+        },
+        "plumbing_installation": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "fixture_labour": "1 WC × 2.5 hrs + 2 basins × 1.8 hrs + hot water 3 hrs = 9.1 hours",
+          "rough_in_drainage": "40m pipe ÷ 10m per 4 hrs = 16 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": "1.00",
+          "derivation": "25.1 hours ÷ 8 = 3.1 days",
+          "adjustment_factors": "None"
+        },
+        "hvac_mechanical": {
+          "trade": "HVAC Specialist",
+          "system_type": "2 zone split system (retail + dispensary/consultation)",
+          "minimum_callout": "4 hours",
+          "installation_time": "16-20 hours",
+          "gang_size": "1 HVAC tech + 1 assistant",
+          "multiplier": "1.00",
+          "derivation": "18 hours ÷ 8 = 2.25 days",
+          "adjustment_factors": "None (standard commercial system)"
+        },
+        "dispensary_fitout": {
+          "trade": "Pharmacy Fitout Specialist",
+          "installation_time": "40-50 hours (benching, shelving, security barrier, safe installation)",
+          "gang_size": "2 specialists",
+          "multiplier": "1.00",
+          "derivation": "45 hours ÷ 8 = 5.6 days (2-person specialist team)",
+          "adjustment_factors": "Specialist pharmacy fitout (joinery + security integration) separate from standard construction"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.10,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.10,
+        "floor_wall_tiles": 1.10,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": ["flooring"],
+      "tags": ["healthcare", "pharmacy", "single_storey", "new_build", "australia"]
+    }
+  ]
+}

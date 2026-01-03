@@ -1,0 +1,2286 @@
+{
+  "meta": {
+    "source": "NRM2_Schedule_Fixed.xlsx",
+    "extracted": "2026-01-03",
+    "count": {
+      "work_sections": 40,
+      "items": 352
+    }
+  },
+  "work_sections": [
+    {
+      "number": 2,
+      "name": "Off-site manufactured materials, components or buildings"
+    },
+    {
+      "number": 3,
+      "name": "Demolitions"
+    },
+    {
+      "number": 4,
+      "name": "Alterations, repairs and conservation"
+    },
+    {
+      "number": 5,
+      "name": "Excavating and filling"
+    },
+    {
+      "number": 6,
+      "name": "Ground remediation"
+    },
+    {
+      "number": 7,
+      "name": "Piling"
+    },
+    {
+      "number": 8,
+      "name": "Underpinning"
+    },
+    {
+      "number": 9,
+      "name": "Diaphragm walls and embedded retaining walls"
+    },
+    {
+      "number": 10,
+      "name": "Crib walls, gabions and reinforced earth"
+    },
+    {
+      "number": 11,
+      "name": "In-situ concrete works"
+    },
+    {
+      "number": 12,
+      "name": "Precast/composite"
+    },
+    {
+      "number": 13,
+      "name": "Precast concrete"
+    },
+    {
+      "number": 14,
+      "name": "Masonry"
+    },
+    {
+      "number": 15,
+      "name": "Structural metalwork"
+    },
+    {
+      "number": 16,
+      "name": "Carpentry"
+    },
+    {
+      "number": 17,
+      "name": "Sheet roof coverings"
+    },
+    {
+      "number": 18,
+      "name": "Tile and slate roof and wall coverings"
+    },
+    {
+      "number": 19,
+      "name": "Waterproofing"
+    },
+    {
+      "number": 20,
+      "name": "Proprietary walls,"
+    },
+    {
+      "number": 21,
+      "name": "Cladding and covering"
+    },
+    {
+      "number": 22,
+      "name": "General joinery"
+    },
+    {
+      "number": 23,
+      "name": "Windows, screens and lights"
+    },
+    {
+      "number": 24,
+      "name": "Doors, shutters and hatches"
+    },
+    {
+      "number": 25,
+      "name": "Stairs, walkways"
+    },
+    {
+      "number": 26,
+      "name": "Metalwork"
+    },
+    {
+      "number": 27,
+      "name": "Glazing"
+    },
+    {
+      "number": 28,
+      "name": "Floor, wall, ceiling and roof finishings"
+    },
+    {
+      "number": 29,
+      "name": "Decoration"
+    },
+    {
+      "number": 30,
+      "name": "Suspended ceilings"
+    },
+    {
+      "number": 31,
+      "name": "Insulation, fire stopping and fire protection"
+    },
+    {
+      "number": 32,
+      "name": "Furniture, fittings and equipment"
+    },
+    {
+      "number": 33,
+      "name": "Drainage above"
+    },
+    {
+      "number": 34,
+      "name": "Drainage below"
+    },
+    {
+      "number": 35,
+      "name": "Site works"
+    },
+    {
+      "number": 36,
+      "name": "Fencing"
+    },
+    {
+      "number": 37,
+      "name": "Soft landscaping"
+    },
+    {
+      "number": 38,
+      "name": "Mechanical services"
+    },
+    {
+      "number": 39,
+      "name": "Electrical services"
+    },
+    {
+      "number": 40,
+      "name": "Transportation systems"
+    },
+    {
+      "number": 41,
+      "name": "Builder's work in connection with mechanical, electrical and transportation installations"
+    }
+  ],
+  "items": [
+    {
+      "code": "WS2.1",
+      "work_section": 2,
+      "description": "Component.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS2.2",
+      "work_section": 2,
+      "description": "Prefabricated structures.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS2.3",
+      "work_section": 2,
+      "description": "Prefabricated building units.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS2.4",
+      "work_section": 2,
+      "description": "Prefabricated buildings.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS3.1",
+      "work_section": 3,
+      "description": "Demolitions.",
+      "unit": "item"
+    },
+    {
+      "code": "WS3.2",
+      "work_section": 3,
+      "description": "Temporary support of structures, roads, etc.",
+      "unit": "item"
+    },
+    {
+      "code": "WS3.3",
+      "work_section": 3,
+      "description": "Temporary works.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS3.4",
+      "work_section": 3,
+      "description": "Decontamination.",
+      "unit": "item"
+    },
+    {
+      "code": "WS3.5",
+      "work_section": 3,
+      "description": "Recycling.",
+      "unit": "item"
+    },
+    {
+      "code": "WS4.1",
+      "work_section": 4,
+      "description": "Works of",
+      "unit": "item"
+    },
+    {
+      "code": "WS4.2",
+      "work_section": 4,
+      "description": "Removing.",
+      "unit": "item/ m2/m/ nr"
+    },
+    {
+      "code": "WS4.3",
+      "work_section": 4,
+      "description": "Cutting or forming openings.",
+      "unit": "item/ m2/m/ nr"
+    },
+    {
+      "code": "WS4.8",
+      "work_section": 4,
+      "description": "Removing existing and replacing.",
+      "unit": "item/ m2/m/ nr"
+    },
+    {
+      "code": "WS4.9",
+      "work_section": 4,
+      "description": "Preparing existing structures for connection or attachment of",
+      "unit": "nr"
+    },
+    {
+      "code": "WS4.10",
+      "work_section": 4,
+      "description": "Repairing.",
+      "unit": "item/ m2/m/ nr"
+    },
+    {
+      "code": "WS4.11",
+      "work_section": 4,
+      "description": "Repointing joints.",
+      "unit": "m"
+    },
+    {
+      "code": "WS4.12",
+      "work_section": 4,
+      "description": "Repointing.",
+      "unit": "m2/m/ nr"
+    },
+    {
+      "code": "WS4.13",
+      "work_section": 4,
+      "description": "Resin or cement impregnation/ injection.",
+      "unit": "item/ m2/m/ nr"
+    },
+    {
+      "code": "WS4.14",
+      "work_section": 4,
+      "description": "Inserting new walls ties.",
+      "unit": "m2/nr"
+    },
+    {
+      "code": "WS4.15",
+      "work_section": 4,
+      "description": "Re-dressing existing flashings, etc.",
+      "unit": "m/nr"
+    },
+    {
+      "code": "WS4.16",
+      "work_section": 4,
+      "description": "Damp-proof",
+      "unit": "m"
+    },
+    {
+      "code": "WS4.18",
+      "work_section": 4,
+      "description": "Cleaning surfaces.",
+      "unit": "item/ m2/m/ nr"
+    },
+    {
+      "code": "WS4.21",
+      "work_section": 4,
+      "description": "Renovating.",
+      "unit": "item/ m2/m/ nr"
+    },
+    {
+      "code": "WS4.22",
+      "work_section": 4,
+      "description": "Conserving.",
+      "unit": "item/ m2/m/ nr"
+    },
+    {
+      "code": "WS4.23",
+      "work_section": 4,
+      "description": "Decontamination.",
+      "unit": "item"
+    },
+    {
+      "code": "WS4.24",
+      "work_section": 4,
+      "description": "Temporary works.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS4.25",
+      "work_section": 4,
+      "description": "Recycling.",
+      "unit": "item"
+    },
+    {
+      "code": "WS5.1",
+      "work_section": 5,
+      "description": "Preliminary sitework.",
+      "unit": "item/ nr"
+    },
+    {
+      "code": "WS5.2",
+      "work_section": 5,
+      "description": "Removing trees.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS5.4",
+      "work_section": 5,
+      "description": "Site clearance.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS5.5",
+      "work_section": 5,
+      "description": "Site preparation.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS5.6",
+      "work_section": 5,
+      "description": "Excavation,",
+      "unit": "m3"
+    },
+    {
+      "code": "WS5.7",
+      "work_section": 5,
+      "description": "Extra over all types of excavation irrespective of depth.",
+      "unit": "m3"
+    },
+    {
+      "code": "WS5.8",
+      "work_section": 5,
+      "description": "Support to face(s) of excavation.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS5.9",
+      "work_section": 5,
+      "description": "Disposal.",
+      "unit": "item"
+    },
+    {
+      "code": "WS5.10",
+      "work_section": 5,
+      "description": "Retaining excavated material on site.",
+      "unit": "m3"
+    },
+    {
+      "code": "WS5.11",
+      "work_section": 5,
+      "description": "Filling obtained from excavated material.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS5.12",
+      "work_section": 5,
+      "description": "Imported filling.",
+      "unit": "m3"
+    },
+    {
+      "code": "WS5.13",
+      "work_section": 5,
+      "description": "Geotextile fabric.",
+      "unit": "m"
+    },
+    {
+      "code": "WS5.20",
+      "work_section": 5,
+      "description": "Cutting off tops of piles, irrespective of length.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS6.1",
+      "work_section": 6,
+      "description": "Site dewatering.",
+      "unit": "item"
+    },
+    {
+      "code": "WS6.2",
+      "work_section": 6,
+      "description": "Sterilisation.",
+      "unit": "m3"
+    },
+    {
+      "code": "WS6.3",
+      "work_section": 6,
+      "description": "Chemical neutralising.",
+      "unit": "m3"
+    },
+    {
+      "code": "WS6.4",
+      "work_section": 6,
+      "description": "Freezing.",
+      "unit": "m3"
+    },
+    {
+      "code": "WS6.5",
+      "work_section": 6,
+      "description": "Ground gas venting.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS6.6",
+      "work_section": 6,
+      "description": "Soil nailing.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS6.7",
+      "work_section": 6,
+      "description": "Ground anchors.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS6.8",
+      "work_section": 6,
+      "description": "Pressure grouting/ ground permeation.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS6.9",
+      "work_section": 6,
+      "description": "Compacting.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS6.10",
+      "work_section": 6,
+      "description": "Stabilising soil in situ by incorporating cement with a rotavator.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS7.1",
+      "work_section": 7,
+      "description": "Interlocking sheet piles.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS7.2",
+      "work_section": 7,
+      "description": "Bored piles.",
+      "unit": "m"
+    },
+    {
+      "code": "WS7.5",
+      "work_section": 7,
+      "description": "Vibro-compacted",
+      "unit": "m"
+    },
+    {
+      "code": "WS7.6",
+      "work_section": 7,
+      "description": "Vibro-compacted trench fill.",
+      "unit": "m"
+    },
+    {
+      "code": "WS7.7",
+      "work_section": 7,
+      "description": "Extra over piling.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS7.8",
+      "work_section": 7,
+      "description": "Reinforcement to",
+      "unit": "t"
+    },
+    {
+      "code": "WS7.9",
+      "work_section": 7,
+      "description": "Breaking through",
+      "unit": "hr"
+    },
+    {
+      "code": "WS7.10",
+      "work_section": 7,
+      "description": "Disposal of excavated materials.",
+      "unit": "m3"
+    },
+    {
+      "code": "WS7.11",
+      "work_section": 7,
+      "description": "Delays.",
+      "unit": "hr"
+    },
+    {
+      "code": "WS7.12",
+      "work_section": 7,
+      "description": "Tests.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS11.1",
+      "work_section": 11,
+      "description": "Mass concrete.",
+      "unit": "m3"
+    },
+    {
+      "code": "WS11.2",
+      "work_section": 11,
+      "description": "Horizontal work.",
+      "unit": "m3"
+    },
+    {
+      "code": "WS11.3",
+      "work_section": 11,
+      "description": "Sloping work < 150.",
+      "unit": "m3"
+    },
+    {
+      "code": "WS11.5",
+      "work_section": 11,
+      "description": "Vertical work.",
+      "unit": "m3"
+    },
+    {
+      "code": "WS11.6",
+      "work_section": 11,
+      "description": "Sundry in-situ",
+      "unit": "m/m3"
+    },
+    {
+      "code": "WS11.7",
+      "work_section": 11,
+      "description": "Sprayed in-situ",
+      "unit": "m2"
+    },
+    {
+      "code": "WS11.8",
+      "work_section": 11,
+      "description": "Trowelling.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS11.14",
+      "work_section": 11,
+      "description": "Sides of foundations and bases.",
+      "unit": "m/m2"
+    },
+    {
+      "code": "WS11.16",
+      "work_section": 11,
+      "description": "Soffits of",
+      "unit": "m2"
+    },
+    {
+      "code": "WS11.19",
+      "work_section": 11,
+      "description": "Sides and soffits",
+      "unit": "m2"
+    },
+    {
+      "code": "WS11.23",
+      "work_section": 11,
+      "description": "Faces of walls and other vertical work.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS11.24",
+      "work_section": 11,
+      "description": "Extra over.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS11.25",
+      "work_section": 11,
+      "description": "Wall ends, soffits",
+      "unit": "m/m2"
+    },
+    {
+      "code": "WS11.26",
+      "work_section": 11,
+      "description": "Staircase strings, etc.",
+      "unit": "m"
+    },
+    {
+      "code": "WS11.27",
+      "work_section": 11,
+      "description": "Staircase risers, etc.",
+      "unit": "m"
+    },
+    {
+      "code": "WS11.28",
+      "work_section": 11,
+      "description": "Sloping top surfaces.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS11.29",
+      "work_section": 11,
+      "description": "Steps in top surfaces.",
+      "unit": "m/m2"
+    },
+    {
+      "code": "WS11.31",
+      "work_section": 11,
+      "description": "Complex shapes.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS11.32",
+      "work_section": 11,
+      "description": "Wall kickers.",
+      "unit": "m"
+    },
+    {
+      "code": "WS11.33",
+      "work_section": 11,
+      "description": "Mild steel bars.",
+      "unit": "t"
+    },
+    {
+      "code": "WS11.35",
+      "work_section": 11,
+      "description": "Accessories not at the discretion of the contractor.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS11.36",
+      "work_section": 11,
+      "description": "Pre/post-",
+      "unit": "nr"
+    },
+    {
+      "code": "WS11.37",
+      "work_section": 11,
+      "description": "Mesh.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS11.38",
+      "work_section": 11,
+      "description": "Plain.",
+      "unit": "m"
+    },
+    {
+      "code": "WS11.41",
+      "work_section": 11,
+      "description": "Type or proprietary reference stated.",
+      "unit": "m2/m/ nr"
+    },
+    {
+      "code": "WS11.42",
+      "work_section": 11,
+      "description": "Grouting.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS11.43",
+      "work_section": 11,
+      "description": "Filling mortices or holes.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS11.44",
+      "work_section": 11,
+      "description": "Filling chases.",
+      "unit": "m"
+    },
+    {
+      "code": "WS15.1",
+      "work_section": 15,
+      "description": "Framed members, framing and fabrication.",
+      "unit": "t"
+    },
+    {
+      "code": "WS15.3",
+      "work_section": 15,
+      "description": "Isolated structural members, fabrication.",
+      "unit": "t"
+    },
+    {
+      "code": "WS15.4",
+      "work_section": 15,
+      "description": "Isolated structural members, permanent erection on site.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS15.5",
+      "work_section": 15,
+      "description": "Allowance",
+      "unit": "t"
+    },
+    {
+      "code": "WS15.6",
+      "work_section": 15,
+      "description": "Cold rolled purlins, cladding rails, etc.",
+      "unit": "m"
+    },
+    {
+      "code": "WS15.7",
+      "work_section": 15,
+      "description": "Extra over steel member for:",
+      "unit": "nr"
+    },
+    {
+      "code": "WS15.8",
+      "work_section": 15,
+      "description": "Profiled metal decking, type and/or profile stated.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS15.9",
+      "work_section": 15,
+      "description": "Extra over for:",
+      "unit": "m"
+    },
+    {
+      "code": "WS15.10",
+      "work_section": 15,
+      "description": "Holding down bolts or assemblies.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS15.11",
+      "work_section": 15,
+      "description": "Special bolts.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS15.12",
+      "work_section": 15,
+      "description": "Connections to existing steel and other members or structures.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS15.13",
+      "work_section": 15,
+      "description": "Trial erection.",
+      "unit": "t"
+    },
+    {
+      "code": "WS15.14",
+      "work_section": 15,
+      "description": "Filling hollow sections.",
+      "unit": "item"
+    },
+    {
+      "code": "WS15.15",
+      "work_section": 15,
+      "description": "Surface treatments.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS15.16",
+      "work_section": 15,
+      "description": "Isolated protective coatings.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS15.17",
+      "work_section": 15,
+      "description": "Testing.",
+      "unit": "item"
+    },
+    {
+      "code": "WS16.1",
+      "work_section": 16,
+      "description": "Primary or",
+      "unit": "m"
+    },
+    {
+      "code": "WS16.2",
+      "work_section": 16,
+      "description": "Engineered or prefabricated members/items.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS16.3",
+      "work_section": 16,
+      "description": "Backing and other first fix timbers.",
+      "unit": "m"
+    },
+    {
+      "code": "WS16.4",
+      "work_section": 16,
+      "description": "Boarding, flooring, sheeting, decking, casings, linings, sarking, fascias, bargeboards, soffits, etc.",
+      "unit": "m/m2"
+    },
+    {
+      "code": "WS16.5",
+      "work_section": 16,
+      "description": "Ornamental ends of timber members.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS16.6",
+      "work_section": 16,
+      "description": "Metal fixings, fastenings and fittings.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS17.1",
+      "work_section": 17,
+      "description": "Coverings >",
+      "unit": "m2"
+    },
+    {
+      "code": "WS17.2",
+      "work_section": 17,
+      "description": "Coverings ≤ 500mm wide.",
+      "unit": "m"
+    },
+    {
+      "code": "WS17.3",
+      "work_section": 17,
+      "description": "Extra over for forming.",
+      "unit": "m"
+    },
+    {
+      "code": "WS17.4",
+      "work_section": 17,
+      "description": "Boundary work, location and method of forming described.",
+      "unit": "m"
+    },
+    {
+      "code": "WS17.5",
+      "work_section": 17,
+      "description": "Flashings.",
+      "unit": "m"
+    },
+    {
+      "code": "WS17.6",
+      "work_section": 17,
+      "description": "Gutters.",
+      "unit": "m"
+    },
+    {
+      "code": "WS17.8",
+      "work_section": 17,
+      "description": "Spot items.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS17.9",
+      "work_section": 17,
+      "description": "Fittings.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS19.1",
+      "work_section": 19,
+      "description": "Coverings >",
+      "unit": "m2"
+    },
+    {
+      "code": "WS19.2",
+      "work_section": 19,
+      "description": "Coverings ≤ 500mm wide.",
+      "unit": "m"
+    },
+    {
+      "code": "WS19.3",
+      "work_section": 19,
+      "description": "Skirtings.",
+      "unit": "m"
+    },
+    {
+      "code": "WS19.7",
+      "work_section": 19,
+      "description": "Gutters.",
+      "unit": "m"
+    },
+    {
+      "code": "WS19.11",
+      "work_section": 19,
+      "description": "Internal angle",
+      "unit": "m"
+    },
+    {
+      "code": "WS19.12",
+      "work_section": 19,
+      "description": "Spot items.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS19.13",
+      "work_section": 19,
+      "description": "Fittings.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS19.14",
+      "work_section": 19,
+      "description": "Edge trim.",
+      "unit": "m"
+    },
+    {
+      "code": "WS20.1",
+      "work_section": 20,
+      "description": "Proprietary metal framed system to form walls.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS20.3",
+      "work_section": 20,
+      "description": "Proprietary metal framed system to form ceilings.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS20.4",
+      "work_section": 20,
+      "description": "Extra over for",
+      "unit": "m2"
+    },
+    {
+      "code": "WS20.5",
+      "work_section": 20,
+      "description": "Extra over for forming openings.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS20.6",
+      "work_section": 20,
+      "description": "Extra over for non-standard perimeter details.",
+      "unit": "m"
+    },
+    {
+      "code": "WS20.7",
+      "work_section": 20,
+      "description": "Extra over for angles.",
+      "unit": "m"
+    },
+    {
+      "code": "WS20.8",
+      "work_section": 20,
+      "description": "Extra over for junctions.",
+      "unit": "m"
+    },
+    {
+      "code": "WS20.9",
+      "work_section": 20,
+      "description": "Extra over for access panels.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS20.10",
+      "work_section": 20,
+      "description": "Fair ends to partitions.",
+      "unit": "m"
+    },
+    {
+      "code": "WS20.11",
+      "work_section": 20,
+      "description": "Proprietary linings to walls.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS20.12",
+      "work_section": 20,
+      "description": "SFS accessories.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS20.13",
+      "work_section": 20,
+      "description": "Proprietary linings to ceilings.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS20.14",
+      "work_section": 20,
+      "description": "Proprietary linings to columns.",
+      "unit": "m"
+    },
+    {
+      "code": "WS20.15",
+      "work_section": 20,
+      "description": "Proprietary linings to beams.",
+      "unit": "m"
+    },
+    {
+      "code": "WS20.16",
+      "work_section": 20,
+      "description": "Proprietary linings to bulkheads.",
+      "unit": "m"
+    },
+    {
+      "code": "WS20.17",
+      "work_section": 20,
+      "description": "Extra over for forming openings.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS20.18",
+      "work_section": 20,
+      "description": "Extra over for non-standard perimeter details.",
+      "unit": "m"
+    },
+    {
+      "code": "WS20.19",
+      "work_section": 20,
+      "description": "Extra over for angles.",
+      "unit": "m"
+    },
+    {
+      "code": "WS20.20",
+      "work_section": 20,
+      "description": "Extra over for junctions.",
+      "unit": "m"
+    },
+    {
+      "code": "WS20.21",
+      "work_section": 20,
+      "description": "Extra over for access panels.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS20.22",
+      "work_section": 20,
+      "description": "Beads, function",
+      "unit": "m"
+    },
+    {
+      "code": "WS21.1",
+      "work_section": 21,
+      "description": "Walls.",
+      "unit": "m"
+    },
+    {
+      "code": "WS21.3",
+      "work_section": 21,
+      "description": "Ceilings.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS21.8",
+      "work_section": 21,
+      "description": "Items extra over the work",
+      "unit": "nr"
+    },
+    {
+      "code": "WS21.9",
+      "work_section": 21,
+      "description": "Boundary work.",
+      "unit": "m"
+    },
+    {
+      "code": "WS21.10",
+      "work_section": 21,
+      "description": "Opening perimeters.",
+      "unit": "m"
+    },
+    {
+      "code": "WS21.11",
+      "work_section": 21,
+      "description": "Angles.",
+      "unit": "m"
+    },
+    {
+      "code": "WS21.12",
+      "work_section": 21,
+      "description": "Closers.",
+      "unit": "m"
+    },
+    {
+      "code": "WS22.1",
+      "work_section": 22,
+      "description": "Skirtings, picture rails.",
+      "unit": "m"
+    },
+    {
+      "code": "WS22.7",
+      "work_section": 22,
+      "description": "Duct covers.",
+      "unit": "m"
+    },
+    {
+      "code": "WS22.10",
+      "work_section": 22,
+      "description": "Pinboards, backboards, plinth blocks, etc.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS22.12",
+      "work_section": 22,
+      "description": "Boarding, sheeting, panelling over 600mm wide.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS22.13",
+      "work_section": 22,
+      "description": "Boarding, sheeting, panelling not exceeding 600mm wide.",
+      "unit": "m"
+    },
+    {
+      "code": "WS22.15",
+      "work_section": 22,
+      "description": "Partitions.",
+      "unit": "m"
+    },
+    {
+      "code": "WS22.16",
+      "work_section": 22,
+      "description": "Items extra over the partition they occur in.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS22.17",
+      "work_section": 22,
+      "description": "Duct panels, sanitaryware back panels, etc.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS22.18",
+      "work_section": 22,
+      "description": "Cubicle partition sets.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS22.19",
+      "work_section": 22,
+      "description": "Items extra over the partition they occur in.",
+      "unit": "m"
+    },
+    {
+      "code": "WS22.20",
+      "work_section": 22,
+      "description": "Infill panels and",
+      "unit": "m2"
+    },
+    {
+      "code": "WS22.21",
+      "work_section": 22,
+      "description": "Joints, contact surfaces stated.",
+      "unit": "m"
+    },
+    {
+      "code": "WS22.22",
+      "work_section": 22,
+      "description": "Pointing, contact surfaces stated.",
+      "unit": "m"
+    },
+    {
+      "code": "WS22.23",
+      "work_section": 22,
+      "description": "Raking out existing joints.",
+      "unit": "m"
+    },
+    {
+      "code": "WS22.24",
+      "work_section": 22,
+      "description": "Type of item, unit or set stated.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS23.1",
+      "work_section": 23,
+      "description": "Windows and window frames.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS23.12",
+      "work_section": 23,
+      "description": "Type of item, unit or set stated.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS24.1",
+      "work_section": 24,
+      "description": "Door sets.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS24.2",
+      "work_section": 24,
+      "description": "Doors.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS24.9",
+      "work_section": 24,
+      "description": "Door frames.",
+      "unit": "m"
+    },
+    {
+      "code": "WS24.14",
+      "work_section": 24,
+      "description": "Glass, type stated.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS24.16",
+      "work_section": 24,
+      "description": "Type of item, unit or set stated.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS26.1",
+      "work_section": 26,
+      "description": "Isolated metal members.",
+      "unit": "m"
+    },
+    {
+      "code": "WS26.2",
+      "work_section": 26,
+      "description": "General metalwork members.",
+      "unit": "m/nr"
+    },
+    {
+      "code": "WS26.3",
+      "work_section": 26,
+      "description": "Sheet metal.",
+      "unit": "m2/nr"
+    },
+    {
+      "code": "WS26.4",
+      "work_section": 26,
+      "description": "Wire mesh.",
+      "unit": "m2/nr"
+    },
+    {
+      "code": "WS26.5",
+      "work_section": 26,
+      "description": "Composite items.",
+      "unit": "m/nr"
+    },
+    {
+      "code": "WS26.6",
+      "work_section": 26,
+      "description": "Filling hollow sections.",
+      "unit": "item"
+    },
+    {
+      "code": "WS26.7",
+      "work_section": 26,
+      "description": "Surface treatments.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS26.8",
+      "work_section": 26,
+      "description": "Isolated protective coatings.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS27.1",
+      "work_section": 27,
+      "description": "Glass, type stated.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS27.4",
+      "work_section": 27,
+      "description": "Extra over for:",
+      "unit": "nr"
+    },
+    {
+      "code": "WS27.5",
+      "work_section": 27,
+      "description": "Lead light glazing, type of glass stated.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS27.6",
+      "work_section": 27,
+      "description": "Saddle bars.",
+      "unit": "m"
+    },
+    {
+      "code": "WS27.7",
+      "work_section": 27,
+      "description": "Mirrors.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS27.8",
+      "work_section": 27,
+      "description": "Removing existing glass and preparing frame or surround to receive new glass.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS28.1",
+      "work_section": 28,
+      "description": "Screeds, beds and toppings, thickness and number of coats stated.",
+      "unit": "m/m2"
+    },
+    {
+      "code": "WS28.2",
+      "work_section": 28,
+      "description": "Finish to floors, type of finish and overall thickness stated.",
+      "unit": "m/m2"
+    },
+    {
+      "code": "WS28.4",
+      "work_section": 28,
+      "description": "Ramps to raised",
+      "unit": "nr"
+    },
+    {
+      "code": "WS28.5",
+      "work_section": 28,
+      "description": "Fire barriers in void below raised floor.",
+      "unit": "m2/m"
+    },
+    {
+      "code": "WS28.6",
+      "work_section": 28,
+      "description": "Finish to roofs, type",
+      "unit": "m/m2"
+    },
+    {
+      "code": "WS28.7",
+      "work_section": 28,
+      "description": "Finish to walls, type",
+      "unit": "m/m2"
+    },
+    {
+      "code": "WS28.9",
+      "work_section": 28,
+      "description": "Finish to ceilings, type of finish and overall thickness",
+      "unit": "m/m2"
+    },
+    {
+      "code": "WS28.10",
+      "work_section": 28,
+      "description": "Finish to isolated beams, type of finish and overall thickness stated.",
+      "unit": "m/m2"
+    },
+    {
+      "code": "WS28.11",
+      "work_section": 28,
+      "description": "Finish to treads.",
+      "unit": "m"
+    },
+    {
+      "code": "WS28.12",
+      "work_section": 28,
+      "description": "Finish to risers.",
+      "unit": "m"
+    },
+    {
+      "code": "WS28.13",
+      "work_section": 28,
+      "description": "Finish to strings and aprons.",
+      "unit": "m"
+    },
+    {
+      "code": "WS28.14",
+      "work_section": 28,
+      "description": "Skirtings, net height stated.",
+      "unit": "m"
+    },
+    {
+      "code": "WS28.15",
+      "work_section": 28,
+      "description": "Linings to channels.",
+      "unit": "m"
+    },
+    {
+      "code": "WS28.16",
+      "work_section": 28,
+      "description": "Kerbs and cappings.",
+      "unit": "m"
+    },
+    {
+      "code": "WS28.17",
+      "work_section": 28,
+      "description": "Coves.",
+      "unit": "m"
+    },
+    {
+      "code": "WS28.23",
+      "work_section": 28,
+      "description": "Special tiles, slabs or blocks",
+      "unit": "nr"
+    },
+    {
+      "code": "WS28.24",
+      "work_section": 28,
+      "description": "Surface dressings, sealers or polishes.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS28.25",
+      "work_section": 28,
+      "description": "Movement joints.",
+      "unit": "m"
+    },
+    {
+      "code": "WS28.30",
+      "work_section": 28,
+      "description": "Reinforcement, details stated.",
+      "unit": "m/m2"
+    },
+    {
+      "code": "WS28.35",
+      "work_section": 28,
+      "description": "Accessories.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS28.36",
+      "work_section": 28,
+      "description": "Precast plaster components.",
+      "unit": "m"
+    },
+    {
+      "code": "WS29.1",
+      "work_section": 29,
+      "description": "Painting general surfaces.",
+      "unit": "m/m2/ nr"
+    },
+    {
+      "code": "WS29.8",
+      "work_section": 29,
+      "description": "Painting railings, fences and gates.",
+      "unit": "m/m2/ nr"
+    },
+    {
+      "code": "WS29.9",
+      "work_section": 29,
+      "description": "Walls and columns.",
+      "unit": "nr/m2"
+    },
+    {
+      "code": "WS29.12",
+      "work_section": 29,
+      "description": "Motifs.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS30.1",
+      "work_section": 30,
+      "description": "Ceilings.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS30.5",
+      "work_section": 30,
+      "description": "Isolated strips.",
+      "unit": "m"
+    },
+    {
+      "code": "WS30.6",
+      "work_section": 30,
+      "description": "Upstands.",
+      "unit": "m"
+    },
+    {
+      "code": "WS30.7",
+      "work_section": 30,
+      "description": "Access panels.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS30.8",
+      "work_section": 30,
+      "description": "Edge trims.",
+      "unit": "m"
+    },
+    {
+      "code": "WS30.10",
+      "work_section": 30,
+      "description": "Fire barriers.",
+      "unit": "m/m2"
+    },
+    {
+      "code": "WS30.11",
+      "work_section": 30,
+      "description": "Collars for services passing through fire barriers.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS30.12",
+      "work_section": 30,
+      "description": "Fittings.",
+      "unit": "m/nr"
+    },
+    {
+      "code": "WS30.13",
+      "work_section": 30,
+      "description": "Shadow gap battens.",
+      "unit": "m"
+    },
+    {
+      "code": "WS31.1",
+      "work_section": 31,
+      "description": "Boards.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS31.5",
+      "work_section": 31,
+      "description": "Sprayed.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS31.6",
+      "work_section": 31,
+      "description": "Filling cavities.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS31.7",
+      "work_section": 31,
+      "description": "Fire stops, type stated.",
+      "unit": "m"
+    },
+    {
+      "code": "WS31.8",
+      "work_section": 31,
+      "description": "Fire sleeves, collars, etc.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS33.1",
+      "work_section": 33,
+      "description": "Pipework.",
+      "unit": "m"
+    },
+    {
+      "code": "WS33.2",
+      "work_section": 33,
+      "description": "Pipework ancillaries.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS33.3",
+      "work_section": 33,
+      "description": "Items extra over the pipe",
+      "unit": "nr"
+    },
+    {
+      "code": "WS33.4",
+      "work_section": 33,
+      "description": "Pipe sleeves through walls, floors and ceilings.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS33.5",
+      "work_section": 33,
+      "description": "Gutters.",
+      "unit": "m"
+    },
+    {
+      "code": "WS33.6",
+      "work_section": 33,
+      "description": "Gutter ancillaries.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS33.7",
+      "work_section": 33,
+      "description": "Items extra over the gutter in which they occur.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS33.8",
+      "work_section": 33,
+      "description": "Marking, position of and leaving or forming all holes, mortices, chases, etc. required in the structure.",
+      "unit": "item"
+    },
+    {
+      "code": "WS33.9",
+      "work_section": 33,
+      "description": "Identification.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS33.10",
+      "work_section": 33,
+      "description": "Testing and commissioning.",
+      "unit": "item"
+    },
+    {
+      "code": "WS33.11",
+      "work_section": 33,
+      "description": "Preparing drawings.",
+      "unit": "item"
+    },
+    {
+      "code": "WS33.12",
+      "work_section": 33,
+      "description": "Operating manuals and instructions.",
+      "unit": "item"
+    },
+    {
+      "code": "WS34.1",
+      "work_section": 34,
+      "description": "Drain runs.",
+      "unit": "m"
+    },
+    {
+      "code": "WS34.2",
+      "work_section": 34,
+      "description": "Items extra over drain runs irrespective of",
+      "unit": "m2"
+    },
+    {
+      "code": "WS34.3",
+      "work_section": 34,
+      "description": "Pipe fittings.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS34.4",
+      "work_section": 34,
+      "description": "Accessories.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS34.5",
+      "work_section": 34,
+      "description": "Pumps.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS34.6",
+      "work_section": 34,
+      "description": "Manholes.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS34.12",
+      "work_section": 34,
+      "description": "Extra over the excavation for:",
+      "unit": "m2"
+    },
+    {
+      "code": "WS34.13",
+      "work_section": 34,
+      "description": "Sundries.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS34.14",
+      "work_section": 34,
+      "description": "Covers and frames.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS34.15",
+      "work_section": 34,
+      "description": "Marker posts.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS34.16",
+      "work_section": 34,
+      "description": "Connections.",
+      "unit": "item"
+    },
+    {
+      "code": "WS34.17",
+      "work_section": 34,
+      "description": "Testing and commissioning.",
+      "unit": "item"
+    },
+    {
+      "code": "WS35.1",
+      "work_section": 35,
+      "description": "Kerbs.",
+      "unit": "m"
+    },
+    {
+      "code": "WS35.5",
+      "work_section": 35,
+      "description": "Extra over for:",
+      "unit": "nr"
+    },
+    {
+      "code": "WS35.12",
+      "work_section": 35,
+      "description": "Coated macadam and asphalt.",
+      "unit": "m2/m"
+    },
+    {
+      "code": "WS35.13",
+      "work_section": 35,
+      "description": "Gravel, hoggin and woodchip.",
+      "unit": "m2/m"
+    },
+    {
+      "code": "WS35.14",
+      "work_section": 35,
+      "description": "Interlocking brick and blocks, slabs, bricks, blocks, setts and cobbles.",
+      "unit": "m2/m"
+    },
+    {
+      "code": "WS36.1",
+      "work_section": 36,
+      "description": "Fencing, type stated.",
+      "unit": "m"
+    },
+    {
+      "code": "WS36.2",
+      "work_section": 36,
+      "description": "Extra over for special supports.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS36.3",
+      "work_section": 36,
+      "description": "Independent gate posts.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS36.4",
+      "work_section": 36,
+      "description": "Items extra over fencing, supports and special supports and independent gate posts irrespective of type.",
+      "unit": "m3"
+    },
+    {
+      "code": "WS36.5",
+      "work_section": 36,
+      "description": "Gates.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS36.6",
+      "work_section": 36,
+      "description": "Ironmongery.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS37.1",
+      "work_section": 37,
+      "description": "Cultivating.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS37.2",
+      "work_section": 37,
+      "description": "Surface applications.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS37.3",
+      "work_section": 37,
+      "description": "Seeding.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS37.4",
+      "work_section": 37,
+      "description": "Turfing.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS37.5",
+      "work_section": 37,
+      "description": "Trees.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS37.6",
+      "work_section": 37,
+      "description": "Young nursery stock trees.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS37.7",
+      "work_section": 37,
+      "description": "Shrubs.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS37.8",
+      "work_section": 37,
+      "description": "Hedge plants.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS37.9",
+      "work_section": 37,
+      "description": "Plants.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS37.10",
+      "work_section": 37,
+      "description": "Bulbs, corms and",
+      "unit": "nr"
+    },
+    {
+      "code": "WS37.11",
+      "work_section": 37,
+      "description": "Plant containers.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS37.12",
+      "work_section": 37,
+      "description": "Protection.",
+      "unit": "m"
+    },
+    {
+      "code": "WS37.13",
+      "work_section": 37,
+      "description": "Maintenance.",
+      "unit": "item"
+    },
+    {
+      "code": "WS38.1",
+      "work_section": 38,
+      "description": "Primary equipment.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS38.2",
+      "work_section": 38,
+      "description": "Terminal equipment and fittings.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS38.3",
+      "work_section": 38,
+      "description": "Pipework.",
+      "unit": "m"
+    },
+    {
+      "code": "WS38.4",
+      "work_section": 38,
+      "description": "Alternative – pipe",
+      "unit": "nr"
+    },
+    {
+      "code": "WS38.5",
+      "work_section": 38,
+      "description": "Pipe ancillaries.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS38.7",
+      "work_section": 38,
+      "description": "Alternative – duct",
+      "unit": "nr"
+    },
+    {
+      "code": "WS38.8",
+      "work_section": 38,
+      "description": "Duct ancillaries.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS38.9",
+      "work_section": 38,
+      "description": "Insulation and fire",
+      "unit": "nr"
+    },
+    {
+      "code": "WS38.10",
+      "work_section": 38,
+      "description": "Alternative – insulation and fire protection to pipe fittings.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS38.11",
+      "work_section": 38,
+      "description": "Insulation and fire protection to pipe ancillaries.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS38.12",
+      "work_section": 38,
+      "description": "Insulation and fire protection to ventilation ducts.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS38.14",
+      "work_section": 38,
+      "description": "Insulation and fire protection to equipment.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS38.15",
+      "work_section": 38,
+      "description": "Fire stopping.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS38.16",
+      "work_section": 38,
+      "description": "Identification.",
+      "unit": "item"
+    },
+    {
+      "code": "WS38.17",
+      "work_section": 38,
+      "description": "Testing.",
+      "unit": "item"
+    },
+    {
+      "code": "WS38.18",
+      "work_section": 38,
+      "description": "Commissioning.",
+      "unit": "item"
+    },
+    {
+      "code": "WS38.19",
+      "work_section": 38,
+      "description": "System validation.",
+      "unit": "item"
+    },
+    {
+      "code": "WS38.20",
+      "work_section": 38,
+      "description": "Operation and maintenance manuals.",
+      "unit": "item"
+    },
+    {
+      "code": "WS38.21",
+      "work_section": 38,
+      "description": "Drawing preparation.",
+      "unit": "item"
+    },
+    {
+      "code": "WS38.22",
+      "work_section": 38,
+      "description": "Training.",
+      "unit": "item"
+    },
+    {
+      "code": "WS38.23",
+      "work_section": 38,
+      "description": "Loose ancillaries.",
+      "unit": "item"
+    },
+    {
+      "code": "WS38.24",
+      "work_section": 38,
+      "description": "Post-completion",
+      "unit": "item"
+    },
+    {
+      "code": "WS39.1",
+      "work_section": 39,
+      "description": "Primary equipment.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS39.2",
+      "work_section": 39,
+      "description": "Terminal equipment and fittings.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS39.3",
+      "work_section": 39,
+      "description": "Cable containment.",
+      "unit": "m"
+    },
+    {
+      "code": "WS39.4",
+      "work_section": 39,
+      "description": "Alternative – cable",
+      "unit": "nr"
+    },
+    {
+      "code": "WS39.5",
+      "work_section": 39,
+      "description": "Cables.",
+      "unit": "m"
+    },
+    {
+      "code": "WS39.6",
+      "work_section": 39,
+      "description": "Cable terminations and joints.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS39.7",
+      "work_section": 39,
+      "description": "Final circuits.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS39.8",
+      "work_section": 39,
+      "description": "Modular wiring systems.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS39.9",
+      "work_section": 39,
+      "description": "Busbar.",
+      "unit": "m"
+    },
+    {
+      "code": "WS39.10",
+      "work_section": 39,
+      "description": "Alternative –",
+      "unit": "nr"
+    },
+    {
+      "code": "WS39.11",
+      "work_section": 39,
+      "description": "Tapes.",
+      "unit": "m"
+    },
+    {
+      "code": "WS39.12",
+      "work_section": 39,
+      "description": "Electrodes, earth rods, air terminations, termination bars.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS39.13",
+      "work_section": 39,
+      "description": "Fire stopping and other associated fire protection work.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS39.14",
+      "work_section": 39,
+      "description": "Identification.",
+      "unit": "item"
+    },
+    {
+      "code": "WS39.15",
+      "work_section": 39,
+      "description": "Testing.",
+      "unit": "item"
+    },
+    {
+      "code": "WS39.16",
+      "work_section": 39,
+      "description": "Commissioning.",
+      "unit": "item"
+    },
+    {
+      "code": "WS39.17",
+      "work_section": 39,
+      "description": "System validation.",
+      "unit": "item"
+    },
+    {
+      "code": "WS39.18",
+      "work_section": 39,
+      "description": "Operation and maintenance manuals.",
+      "unit": "item"
+    },
+    {
+      "code": "WS39.19",
+      "work_section": 39,
+      "description": "Drawing preparation.",
+      "unit": "item"
+    },
+    {
+      "code": "WS39.20",
+      "work_section": 39,
+      "description": "Training.",
+      "unit": "item"
+    },
+    {
+      "code": "WS39.21",
+      "work_section": 39,
+      "description": "Loose ancillaries.",
+      "unit": "item"
+    },
+    {
+      "code": "WS39.22",
+      "work_section": 39,
+      "description": "Post-practical",
+      "unit": "item"
+    },
+    {
+      "code": "WS40.1",
+      "work_section": 40,
+      "description": "System.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS40.2",
+      "work_section": 40,
+      "description": "Fire stopping and other associated",
+      "unit": "nr"
+    },
+    {
+      "code": "WS40.3",
+      "work_section": 40,
+      "description": "Identification.",
+      "unit": "item"
+    },
+    {
+      "code": "WS40.4",
+      "work_section": 40,
+      "description": "Testing and commissioning.",
+      "unit": "item"
+    },
+    {
+      "code": "WS40.5",
+      "work_section": 40,
+      "description": "System validation.",
+      "unit": "item"
+    },
+    {
+      "code": "WS40.6",
+      "work_section": 40,
+      "description": "Operation and maintenance manuals.",
+      "unit": "item"
+    },
+    {
+      "code": "WS40.7",
+      "work_section": 40,
+      "description": "Drawing preparation.",
+      "unit": "item"
+    },
+    {
+      "code": "WS40.8",
+      "work_section": 40,
+      "description": "Training.",
+      "unit": "item"
+    },
+    {
+      "code": "WS40.9",
+      "work_section": 40,
+      "description": "Loose ancillaries.",
+      "unit": "item"
+    },
+    {
+      "code": "WS40.10",
+      "work_section": 40,
+      "description": "Post-practical",
+      "unit": "item"
+    },
+    {
+      "code": "WS41.1",
+      "work_section": 41,
+      "description": "General builder's work in connection with (the relevant",
+      "unit": "item"
+    },
+    {
+      "code": "WS41.2",
+      "work_section": 41,
+      "description": "Marking position of holes, mortices and chases in the structure.",
+      "unit": "item"
+    },
+    {
+      "code": "WS41.3",
+      "work_section": 41,
+      "description": "Pipe and duct sleeves.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS41.4",
+      "work_section": 41,
+      "description": "Bases, plinths, etc.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS41.5",
+      "work_section": 41,
+      "description": "Duct covers and frames.",
+      "unit": "m/nr"
+    },
+    {
+      "code": "WS41.6",
+      "work_section": 41,
+      "description": "Supports for services not provided by services contractor.",
+      "unit": "m/nr"
+    },
+    {
+      "code": "WS41.7",
+      "work_section": 41,
+      "description": "Catenary cables.",
+      "unit": "m"
+    },
+    {
+      "code": "WS41.8",
+      "work_section": 41,
+      "description": "Cutting holes through existing structures.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS41.9",
+      "work_section": 41,
+      "description": "Cutting mortices and sinkings in existing structure.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS41.10",
+      "work_section": 41,
+      "description": "Cutting chases through existing structures.",
+      "unit": "m"
+    },
+    {
+      "code": "WS41.11",
+      "work_section": 41,
+      "description": "Lifting  and replacing floorboards.",
+      "unit": "m"
+    },
+    {
+      "code": "WS41.12",
+      "work_section": 41,
+      "description": "Lifting and replacing duct covers or chequer plates.",
+      "unit": "m"
+    },
+    {
+      "code": "WS41.13",
+      "work_section": 41,
+      "description": "Underground service runs.",
+      "unit": "m"
+    },
+    {
+      "code": "WS41.14",
+      "work_section": 41,
+      "description": "Items extra over service runs irrespective of depth or pipe size.",
+      "unit": "m2"
+    },
+    {
+      "code": "WS41.15",
+      "work_section": 41,
+      "description": "Pipe duct fittings.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS41.16",
+      "work_section": 41,
+      "description": "Accessories.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS41.17",
+      "work_section": 41,
+      "description": "Manholes.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS41.23",
+      "work_section": 41,
+      "description": "Extra over the excavation for:",
+      "unit": "m2"
+    },
+    {
+      "code": "WS41.24",
+      "work_section": 41,
+      "description": "Marker posts.",
+      "unit": "nr"
+    },
+    {
+      "code": "WS41.26",
+      "work_section": 41,
+      "description": "Connections.",
+      "unit": "item"
+    },
+    {
+      "code": "WS41.27",
+      "work_section": 41,
+      "description": "Testing and commissioning.",
+      "unit": "item"
+    }
+  ]
+}

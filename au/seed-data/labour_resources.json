@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "source": "Composite_Rate_Template.xlsx",
+    "extracted": "2026-01-03",
+    "sheet": "Ref - Labour Resources",
+    "count": 10
+  },
+  "labour_resources": [
+    {
+      "code": "LAB_AU_BRICK",
+      "trade": "Bricklayer",
+      "base_rate": 65.0,
+      "oncost_percent": 20,
+      "total_rate": 78.0,
+      "unit": "hr"
+    },
+    {
+      "code": "LAB_AU_CARP",
+      "trade": "Carpenter",
+      "base_rate": 62.0,
+      "oncost_percent": 20,
+      "total_rate": 74.4,
+      "unit": "hr"
+    },
+    {
+      "code": "LAB_AU_PLAST",
+      "trade": "Plasterer",
+      "base_rate": 60.0,
+      "oncost_percent": 20,
+      "total_rate": 72.0,
+      "unit": "hr"
+    },
+    {
+      "code": "LAB_AU_TILER",
+      "trade": "Tiler",
+      "base_rate": 58.0,
+      "oncost_percent": 20,
+      "total_rate": 69.6,
+      "unit": "hr"
+    },
+    {
+      "code": "LAB_AU_PLUMB",
+      "trade": "Plumber/Drainlayer",
+      "base_rate": 68.0,
+      "oncost_percent": 20,
+      "total_rate": 81.6,
+      "unit": "hr"
+    },
+    {
+      "code": "LAB_AU_ELECT",
+      "trade": "Electrician",
+      "base_rate": 70.0,
+      "oncost_percent": 20,
+      "total_rate": 84.0,
+      "unit": "hr"
+    },
+    {
+      "code": "LAB_AU_PAINT",
+      "trade": "Painter",
+      "base_rate": 55.0,
+      "oncost_percent": 20,
+      "total_rate": 66.0,
+      "unit": "hr"
+    },
+    {
+      "code": "LAB_AU_ROOF",
+      "trade": "Roofer",
+      "base_rate": 60.0,
+      "oncost_percent": 20,
+      "total_rate": 72.0,
+      "unit": "hr"
+    },
+    {
+      "code": "LAB_AU_LAB",
+      "trade": "Labourer",
+      "base_rate": 45.0,
+      "oncost_percent": 20,
+      "total_rate": 54.0,
+      "unit": "hr"
+    },
+    {
+      "code": "LAB_AU_SEMI",
+      "trade": "Semi-skilled",
+      "base_rate": 50.0,
+      "oncost_percent": 20,
+      "total_rate": 60.0,
+      "unit": "hr"
+    }
+  ]
+}

@@ -1,0 +1,1156 @@
+{
+  "total_composites": 777,
+  "total_updated": 140,
+  "by_material": {
+    "default": {
+      "count": 504,
+      "waste_factor": 1.05
+    },
+    "steel": {
+      "count": 71,
+      "waste_factor": 1.05
+    },
+    "brickwork": {
+      "count": 21,
+      "waste_factor": 1.07
+    },
+    "concrete": {
+      "count": 62,
+      "waste_factor": 1.05
+    },
+    "timber": {
+      "count": 70,
+      "waste_factor": 1.1
+    },
+    "tiles": {
+      "count": 35,
+      "waste_factor": 1.1
+    },
+    "plasterboard": {
+      "count": 14,
+      "waste_factor": 1.1
+    }
+  },
+  "all_details": [
+    {
+      "code": "GRP0-DEM-007",
+      "name": "Demolition - masonry building",
+      "material_type": "brickwork",
+      "old_waste": 1.05,
+      "new_waste": 1.07,
+      "evidence": "Identified from: Demolition - masonry building..."
+    },
+    {
+      "code": "GRP1-STRFOU-002",
+      "name": "Strip foundation - 450x250 concrete, block to DPC",
+      "material_type": "brickwork",
+      "old_waste": 1.05,
+      "new_waste": 1.07,
+      "evidence": "Identified from: Strip foundation - 450x250 concrete, block to DPC..."
+    },
+    {
+      "code": "GRP1-STRFOU-003",
+      "name": "Strip foundation - 600x300 concrete, block to DPC",
+      "material_type": "brickwork",
+      "old_waste": 1.05,
+      "new_waste": 1.07,
+      "evidence": "Identified from: Strip foundation - 600x300 concrete, block to DPC..."
+    },
+    {
+      "code": "GRP1-STRFOU-004",
+      "name": "Strip foundation - 750x375 concrete, block to DPC",
+      "material_type": "brickwork",
+      "old_waste": 1.05,
+      "new_waste": 1.07,
+      "evidence": "Identified from: Strip foundation - 750x375 concrete, block to DPC..."
+    },
+    {
+      "code": "GRP2-TIMFRA-014",
+      "name": "Timber frame - wall, 90x45 studs",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Timber frame - wall, 90x45 studs..."
+    },
+    {
+      "code": "GRP2-TIMFRA-015",
+      "name": "Timber frame - wall, 140x45 studs",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Timber frame - wall, 140x45 studs..."
+    },
+    {
+      "code": "GRP2-TIMFRA-016",
+      "name": "Timber frame - roof, prefab trusses ≤10m span",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Timber frame - roof, prefab trusses ≤10m span..."
+    },
+    {
+      "code": "GRP2-TIMFRA-017",
+      "name": "Timber frame - roof, prefab trusses ≤12m span",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Timber frame - roof, prefab trusses ≤12m span..."
+    },
+    {
+      "code": "GRP2-GLUBEA-020",
+      "name": "Glulam beams",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Glulam beams..."
+    },
+    {
+      "code": "GRP2-CLTPAN-021",
+      "name": "CLT panels - walls",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: CLT panels - walls..."
+    },
+    {
+      "code": "GRP2-CLTPAN-022",
+      "name": "CLT panels - floors",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: CLT panels - floors..."
+    },
+    {
+      "code": "GRP2-SUSTIM-023",
+      "name": "Suspended timber floor - joists on bearers",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Suspended timber floor - joists on bearers..."
+    },
+    {
+      "code": "GRP2-SUSTIM-024",
+      "name": "Suspended timber floor - I-joists",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Suspended timber floor - I-joists..."
+    },
+    {
+      "code": "GRP2-SUSTIM-025",
+      "name": "Suspended timber floor - cassette system",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Suspended timber floor - cassette system..."
+    },
+    {
+      "code": "GRP2-BALTIL-038",
+      "name": "Balcony tiling",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Balcony tiling..."
+    },
+    {
+      "code": "GRP2-ROOSTR-041",
+      "name": "Roof structure - timber trusses, pitched",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Roof structure - timber trusses, pitched..."
+    },
+    {
+      "code": "GRP2-ROOSTR-042",
+      "name": "Roof structure - timber rafters, cut roof",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Roof structure - timber rafters, cut roof..."
+    },
+    {
+      "code": "GRP2-ROOTIL-045",
+      "name": "Roof tiles - concrete interlocking",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Roof tiles - concrete interlocking..."
+    },
+    {
+      "code": "GRP2-ROOTIL-046",
+      "name": "Roof tiles - terracotta",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Roof tiles - terracotta..."
+    },
+    {
+      "code": "GRP2-ROOTIL-047",
+      "name": "Roof tiles - slate",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Roof tiles - slate..."
+    },
+    {
+      "code": "GRP2-ROOTIL-048",
+      "name": "Roof tiles - flat profile concrete",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Roof tiles - flat profile concrete..."
+    },
+    {
+      "code": "GRP2-RIDCAP-066",
+      "name": "Ridge capping - tiles",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Ridge capping - tiles..."
+    },
+    {
+      "code": "GRP2-HIPCAP-068",
+      "name": "Hip capping - tiles",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Hip capping - tiles..."
+    },
+    {
+      "code": "GRP2-FAS-076",
+      "name": "Fascia - timber",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Fascia - timber..."
+    },
+    {
+      "code": "GRP2-SOF-080",
+      "name": "Soffit - timber lining",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Soffit - timber lining..."
+    },
+    {
+      "code": "GRP2-BARBOA-082",
+      "name": "Barge boards",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Barge boards..."
+    },
+    {
+      "code": "GRP2-STA-088",
+      "name": "Stair - timber, straight flight",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Stair - timber, straight flight..."
+    },
+    {
+      "code": "GRP2-STA-089",
+      "name": "Stair - timber, 2 flights with landing",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Stair - timber, 2 flights with landing..."
+    },
+    {
+      "code": "GRP2-STA-090",
+      "name": "Stair - timber, winder",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Stair - timber, winder..."
+    },
+    {
+      "code": "GRP2-STA-095",
+      "name": "Stair - feature timber and glass",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Stair - feature timber and glass..."
+    },
+    {
+      "code": "GRP2-STABAL-096",
+      "name": "Stair balustrade - timber",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Stair balustrade - timber..."
+    },
+    {
+      "code": "GRP2-STAHAN-099",
+      "name": "Stair handrail - timber",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Stair handrail - timber..."
+    },
+    {
+      "code": "GRP2-EXTWAL-104",
+      "name": "External wall - cavity brick/block, insulated, plaster",
+      "material_type": "plasterboard",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: External wall - cavity brick/block, insulated, pla..."
+    },
+    {
+      "code": "GRP2-EXTWAL-105",
+      "name": "External wall - cavity brick/brick, insulated, plaster",
+      "material_type": "plasterboard",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: External wall - cavity brick/brick, insulated, pla..."
+    },
+    {
+      "code": "GRP2-EXTWAL-106",
+      "name": "External wall - brick veneer, insulated, plaster",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: External wall - brick veneer, insulated, plaster..."
+    },
+    {
+      "code": "GRP2-EXTWAL-107",
+      "name": "External wall - reverse brick veneer",
+      "material_type": "brickwork",
+      "old_waste": 1.05,
+      "new_waste": 1.07,
+      "evidence": "Identified from: External wall - reverse brick veneer..."
+    },
+    {
+      "code": "GRP2-EXTWAL-108",
+      "name": "External wall - rendered block, insulated, plaster",
+      "material_type": "plasterboard",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: External wall - rendered block, insulated, plaster..."
+    },
+    {
+      "code": "GRP2-EXTWAL-109",
+      "name": "External wall - rendered block, insulated, fair face",
+      "material_type": "brickwork",
+      "old_waste": 1.05,
+      "new_waste": 1.07,
+      "evidence": "Identified from: External wall - rendered block, insulated, fair fa..."
+    },
+    {
+      "code": "GRP2-EXTWAL-110",
+      "name": "External wall - concrete block, painted both sides",
+      "material_type": "brickwork",
+      "old_waste": 1.05,
+      "new_waste": 1.07,
+      "evidence": "Identified from: External wall - concrete block, painted both sides..."
+    },
+    {
+      "code": "GRP2-EXTWAL-111",
+      "name": "External wall - stone veneer on block",
+      "material_type": "brickwork",
+      "old_waste": 1.05,
+      "new_waste": 1.07,
+      "evidence": "Identified from: External wall - stone veneer on block..."
+    },
+    {
+      "code": "GRP2-EXTWAL-112",
+      "name": "External wall - timber frame, weatherboard, plaster",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: External wall - timber frame, weatherboard, plaste..."
+    },
+    {
+      "code": "GRP2-EXTWAL-113",
+      "name": "External wall - timber frame, fibre cement, plaster",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: External wall - timber frame, fibre cement, plaste..."
+    },
+    {
+      "code": "GRP2-EXTWAL-114",
+      "name": "External wall - timber frame, metal clad, plaster",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: External wall - timber frame, metal clad, plaster..."
+    },
+    {
+      "code": "GRP2-EXTWAL-115",
+      "name": "External wall - LGS frame, fibre cement, plaster",
+      "material_type": "plasterboard",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: External wall - LGS frame, fibre cement, plaster..."
+    },
+    {
+      "code": "GRP2-EXTWAL-118",
+      "name": "External wall - aluminium composite panel",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: External wall - aluminium composite panel..."
+    },
+    {
+      "code": "GRP2-WIN-132",
+      "name": "Window - timber double hung, double glazed",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Window - timber double hung, double glazed..."
+    },
+    {
+      "code": "GRP2-WIN-133",
+      "name": "Window - timber casement, double glazed",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Window - timber casement, double glazed..."
+    },
+    {
+      "code": "GRP2-EXTDOO-139",
+      "name": "External door - solid core timber, single",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: External door - solid core timber, single..."
+    },
+    {
+      "code": "GRP2-EXTDOO-140",
+      "name": "External door - solid core timber, pair",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: External door - solid core timber, pair..."
+    },
+    {
+      "code": "GRP2-EXTDOO-141",
+      "name": "External door - glazed timber",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: External door - glazed timber..."
+    },
+    {
+      "code": "GRP2-INTWAL-159",
+      "name": "Internal wall - 90mm blockwork, plastered both sides",
+      "material_type": "brickwork",
+      "old_waste": 1.05,
+      "new_waste": 1.07,
+      "evidence": "Identified from: Internal wall - 90mm blockwork, plastered both sid..."
+    },
+    {
+      "code": "GRP2-INTWAL-160",
+      "name": "Internal wall - 140mm blockwork, plastered both sides",
+      "material_type": "brickwork",
+      "old_waste": 1.05,
+      "new_waste": 1.07,
+      "evidence": "Identified from: Internal wall - 140mm blockwork, plastered both si..."
+    },
+    {
+      "code": "GRP2-INTWAL-161",
+      "name": "Internal wall - 190mm blockwork, plastered both sides",
+      "material_type": "brickwork",
+      "old_waste": 1.05,
+      "new_waste": 1.07,
+      "evidence": "Identified from: Internal wall - 190mm blockwork, plastered both si..."
+    },
+    {
+      "code": "GRP2-INTWAL-162",
+      "name": "Internal wall - 90mm block, fair face both sides",
+      "material_type": "brickwork",
+      "old_waste": 1.05,
+      "new_waste": 1.07,
+      "evidence": "Identified from: Internal wall - 90mm block, fair face both sides..."
+    },
+    {
+      "code": "GRP2-INTWAL-163",
+      "name": "Internal wall - timber stud, single plasterboard",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Internal wall - timber stud, single plasterboard..."
+    },
+    {
+      "code": "GRP2-INTWAL-164",
+      "name": "Internal wall - timber stud, double plasterboard",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Internal wall - timber stud, double plasterboard..."
+    },
+    {
+      "code": "GRP2-INTWAL-165",
+      "name": "Internal wall - timber stud, wet area board",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Internal wall - timber stud, wet area board..."
+    },
+    {
+      "code": "GRP2-INTWAL-166",
+      "name": "Internal wall - steel stud 64mm, single plasterboard",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Internal wall - steel stud 64mm, single plasterboa..."
+    },
+    {
+      "code": "GRP2-INTWAL-167",
+      "name": "Internal wall - steel stud 64mm, double plasterboard",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Internal wall - steel stud 64mm, double plasterboa..."
+    },
+    {
+      "code": "GRP2-INTWAL-168",
+      "name": "Internal wall - steel stud 92mm, acoustic rated",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Internal wall - steel stud 92mm, acoustic rated..."
+    },
+    {
+      "code": "GRP2-INTWAL-169",
+      "name": "Internal wall - steel stud, fire rated 60min",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Internal wall - steel stud, fire rated 60min..."
+    },
+    {
+      "code": "GRP2-INTWAL-170",
+      "name": "Internal wall - steel stud, fire rated 90min",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Internal wall - steel stud, fire rated 90min..."
+    },
+    {
+      "code": "GRP2-INTWAL-171",
+      "name": "Internal wall - steel stud, fire + acoustic",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Internal wall - steel stud, fire + acoustic..."
+    },
+    {
+      "code": "GRP2-INTDOO-184",
+      "name": "Internal door - solid core timber veneer",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Internal door - solid core timber veneer..."
+    },
+    {
+      "code": "GRP2-DOOFRA-194",
+      "name": "Door frame - timber, std",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Door frame - timber, std..."
+    },
+    {
+      "code": "GRP3-WALFIN-002",
+      "name": "Wall finish - plasterboard, set, paint",
+      "material_type": "plasterboard",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Wall finish - plasterboard, set, paint..."
+    },
+    {
+      "code": "GRP3-WALFIN-003",
+      "name": "Wall finish - plasterboard, set, wallpaper",
+      "material_type": "plasterboard",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Wall finish - plasterboard, set, wallpaper..."
+    },
+    {
+      "code": "GRP3-WALFIN-004",
+      "name": "Wall finish - render coat, paint",
+      "material_type": "brickwork",
+      "old_waste": 1.05,
+      "new_waste": 1.07,
+      "evidence": "Identified from: Wall finish - render coat, paint..."
+    },
+    {
+      "code": "GRP3-WALFIN-005",
+      "name": "Wall finish - ceramic tiles 300x300",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Wall finish - ceramic tiles 300x300..."
+    },
+    {
+      "code": "GRP3-WALFIN-006",
+      "name": "Wall finish - ceramic tiles 600x300",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Wall finish - ceramic tiles 600x300..."
+    },
+    {
+      "code": "GRP3-WALFIN-007",
+      "name": "Wall finish - porcelain tiles 600x600",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Wall finish - porcelain tiles 600x600..."
+    },
+    {
+      "code": "GRP3-WALFIN-008",
+      "name": "Wall finish - mosaic tiles",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Wall finish - mosaic tiles..."
+    },
+    {
+      "code": "GRP3-WALFIN-009",
+      "name": "Wall finish - splashback tiles, kitchen",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Wall finish - splashback tiles, kitchen..."
+    },
+    {
+      "code": "GRP3-WALFIN-011",
+      "name": "Wall finish - timber lining/panelling",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Wall finish - timber lining/panelling..."
+    },
+    {
+      "code": "GRP3-SKI-017",
+      "name": "Skirting - timber 90mm",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Skirting - timber 90mm..."
+    },
+    {
+      "code": "GRP3-SKI-019",
+      "name": "Skirting - tile",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Skirting - tile..."
+    },
+    {
+      "code": "GRP3-DADRAI-020",
+      "name": "Dado rail",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Dado rail..."
+    },
+    {
+      "code": "GRP3-PICRAI-021",
+      "name": "Picture rail",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Picture rail..."
+    },
+    {
+      "code": "GRP3-FLOFIN-029",
+      "name": "Floor finish - ceramic tile 300x300",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Floor finish - ceramic tile 300x300..."
+    },
+    {
+      "code": "GRP3-FLOFIN-030",
+      "name": "Floor finish - ceramic tile 600x300",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Floor finish - ceramic tile 600x300..."
+    },
+    {
+      "code": "GRP3-FLOFIN-031",
+      "name": "Floor finish - porcelain tile 600x600",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Floor finish - porcelain tile 600x600..."
+    },
+    {
+      "code": "GRP3-FLOFIN-032",
+      "name": "Floor finish - porcelain tile 900x450",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Floor finish - porcelain tile 900x450..."
+    },
+    {
+      "code": "GRP3-FLOFIN-033",
+      "name": "Floor finish - porcelain tile 1200x600",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Floor finish - porcelain tile 1200x600..."
+    },
+    {
+      "code": "GRP3-FLOFIN-035",
+      "name": "Floor finish - terrazzo tile",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Floor finish - terrazzo tile..."
+    },
+    {
+      "code": "GRP3-FLOFIN-040",
+      "name": "Floor finish - timber strip 80mm",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Floor finish - timber strip 80mm..."
+    },
+    {
+      "code": "GRP3-FLOFIN-041",
+      "name": "Floor finish - timber strip 130mm",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Floor finish - timber strip 130mm..."
+    },
+    {
+      "code": "GRP3-FLOFIN-042",
+      "name": "Floor finish - engineered timber",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Floor finish - engineered timber..."
+    },
+    {
+      "code": "GRP3-FLOFIN-043",
+      "name": "Floor finish - timber parquetry",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Floor finish - timber parquetry..."
+    },
+    {
+      "code": "GRP3-FLOFIN-045",
+      "name": "Floor finish - cork tiles",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Floor finish - cork tiles..."
+    },
+    {
+      "code": "GRP3-FLOFIN-048",
+      "name": "Floor finish - vinyl tiles, standard",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Floor finish - vinyl tiles, standard..."
+    },
+    {
+      "code": "GRP3-FLOFIN-049",
+      "name": "Floor finish - vinyl tiles, premium",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Floor finish - vinyl tiles, premium..."
+    },
+    {
+      "code": "GRP3-FLOFIN-050",
+      "name": "Floor finish - vinyl plank",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Floor finish - vinyl plank..."
+    },
+    {
+      "code": "GRP3-FLOFIN-052",
+      "name": "Floor finish - rubber tiles",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Floor finish - rubber tiles..."
+    },
+    {
+      "code": "GRP3-FLOFIN-055",
+      "name": "Floor finish - carpet tile, standard",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Floor finish - carpet tile, standard..."
+    },
+    {
+      "code": "GRP3-FLOFIN-056",
+      "name": "Floor finish - carpet tile, premium",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Floor finish - carpet tile, premium..."
+    },
+    {
+      "code": "GRP3-FLOFIN-062",
+      "name": "Floor finish - sports flooring",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Floor finish - sports flooring..."
+    },
+    {
+      "code": "GRP3-CEIFIN-067",
+      "name": "Ceiling finish - plasterboard, set, paint",
+      "material_type": "plasterboard",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Ceiling finish - plasterboard, set, paint..."
+    },
+    {
+      "code": "GRP3-CEIFIN-068",
+      "name": "Ceiling finish - plasterboard, battened, set, paint",
+      "material_type": "plasterboard",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Ceiling finish - plasterboard, battened, set, pain..."
+    },
+    {
+      "code": "GRP3-CEIFIN-069",
+      "name": "Ceiling finish - plasterboard, bulkhead",
+      "material_type": "plasterboard",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Ceiling finish - plasterboard, bulkhead..."
+    },
+    {
+      "code": "GRP3-CEIFIN-070",
+      "name": "Ceiling finish - suspended tile 600x600",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Ceiling finish - suspended tile 600x600..."
+    },
+    {
+      "code": "GRP3-CEIFIN-071",
+      "name": "Ceiling finish - suspended tile 600x1200",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Ceiling finish - suspended tile 600x1200..."
+    },
+    {
+      "code": "GRP3-CEIFIN-072",
+      "name": "Ceiling finish - suspended metal tile 600x600",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Ceiling finish - suspended metal tile 600x600..."
+    },
+    {
+      "code": "GRP3-CEIFIN-074",
+      "name": "Ceiling finish - suspended plasterboard",
+      "material_type": "plasterboard",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Ceiling finish - suspended plasterboard..."
+    },
+    {
+      "code": "GRP3-CEIFIN-075",
+      "name": "Ceiling finish - timber lining",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Ceiling finish - timber lining..."
+    },
+    {
+      "code": "GRP3-CEIFIN-078",
+      "name": "Ceiling finish - fire rated 60min",
+      "material_type": "plasterboard",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Ceiling finish - fire rated 60min..."
+    },
+    {
+      "code": "GRP3-COR-079",
+      "name": "Cornice - plaster cove 75mm",
+      "material_type": "plasterboard",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Cornice - plaster cove 75mm..."
+    },
+    {
+      "code": "GRP3-COR-080",
+      "name": "Cornice - plaster cove 100mm",
+      "material_type": "plasterboard",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Cornice - plaster cove 100mm..."
+    },
+    {
+      "code": "GRP3-COR-081",
+      "name": "Cornice - plaster decorative",
+      "material_type": "plasterboard",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Cornice - plaster decorative..."
+    },
+    {
+      "code": "GRP4-SHOBAS-021",
+      "name": "Shower base - tiled",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Shower base - tiled..."
+    },
+    {
+      "code": "GRP4-BAT-027",
+      "name": "Bath - built in acrylic",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Bath - built in acrylic..."
+    },
+    {
+      "code": "GRP4-BLI-055",
+      "name": "Blinds - venetian timber",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Blinds - venetian timber..."
+    },
+    {
+      "code": "GRP5-URI-008",
+      "name": "Urinal - wall hung",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Urinal - wall hung..."
+    },
+    {
+      "code": "GRP5-BAS-010",
+      "name": "Basin - pedestal",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Basin - pedestal..."
+    },
+    {
+      "code": "GRP5-BAS-011",
+      "name": "Basin - wall hung",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Basin - wall hung..."
+    },
+    {
+      "code": "GRP5-FIR-097",
+      "name": "Fireplace - wood, zero clearance",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Fireplace - wood, zero clearance..."
+    },
+    {
+      "code": "GRP5-CORHOL-209",
+      "name": "Core hole - masonry",
+      "material_type": "brickwork",
+      "old_waste": 1.05,
+      "new_waste": 1.07,
+      "evidence": "Identified from: Core hole - masonry..."
+    },
+    {
+      "code": "GRP8-RETWAL-011",
+      "name": "Retaining wall - timber sleepers ≤1m",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Retaining wall - timber sleepers ≤1m..."
+    },
+    {
+      "code": "GRP8-RETWAL-012",
+      "name": "Retaining wall - concrete block ≤1.5m",
+      "material_type": "brickwork",
+      "old_waste": 1.05,
+      "new_waste": 1.07,
+      "evidence": "Identified from: Retaining wall - concrete block ≤1.5m..."
+    },
+    {
+      "code": "GRP8-RETWAL-014",
+      "name": "Retaining wall - crib wall",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Retaining wall - crib wall..."
+    },
+    {
+      "code": "GRP8-DRI-021",
+      "name": "Driveway - brick paving",
+      "material_type": "brickwork",
+      "old_waste": 1.05,
+      "new_waste": 1.07,
+      "evidence": "Identified from: Driveway - brick paving..."
+    },
+    {
+      "code": "GRP8-PAT-030",
+      "name": "Path - brick paving",
+      "material_type": "brickwork",
+      "old_waste": 1.05,
+      "new_waste": 1.07,
+      "evidence": "Identified from: Path - brick paving..."
+    },
+    {
+      "code": "GRP8-PAT-034",
+      "name": "Path - timber decking",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Path - timber decking..."
+    },
+    {
+      "code": "GRP8-PAT-035",
+      "name": "Path - composite decking",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Path - composite decking..."
+    },
+    {
+      "code": "GRP8-EDGRES-052",
+      "name": "Edge restraint - timber",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Edge restraint - timber..."
+    },
+    {
+      "code": "GRP8-FEN-077",
+      "name": "Fence - timber paling 1.8m",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Fence - timber paling 1.8m..."
+    },
+    {
+      "code": "GRP8-FEN-078",
+      "name": "Fence - timber slat 1.8m",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Fence - timber slat 1.8m..."
+    },
+    {
+      "code": "GRP8-BOUWAL-092",
+      "name": "Boundary wall - rendered block 1.8m",
+      "material_type": "brickwork",
+      "old_waste": 1.05,
+      "new_waste": 1.07,
+      "evidence": "Identified from: Boundary wall - rendered block 1.8m..."
+    },
+    {
+      "code": "GRP8-BOUWAL-093",
+      "name": "Boundary wall - face brick 1.8m",
+      "material_type": "brickwork",
+      "old_waste": 1.05,
+      "new_waste": 1.07,
+      "evidence": "Identified from: Boundary wall - face brick 1.8m..."
+    },
+    {
+      "code": "GRP8-LET-095",
+      "name": "Letterbox - masonry",
+      "material_type": "brickwork",
+      "old_waste": 1.05,
+      "new_waste": 1.07,
+      "evidence": "Identified from: Letterbox - masonry..."
+    },
+    {
+      "code": "GRP8-OUTTAB-097",
+      "name": "Outdoor table setting - timber",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Outdoor table setting - timber..."
+    },
+    {
+      "code": "GRP8-BENSEA-098",
+      "name": "Bench seat - timber",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Bench seat - timber..."
+    },
+    {
+      "code": "GRP8-BINENC-099",
+      "name": "Bin enclosure - timber",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Bin enclosure - timber..."
+    },
+    {
+      "code": "GRP8-PER-104",
+      "name": "Pergola - timber",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Pergola - timber..."
+    },
+    {
+      "code": "GRP8-VER-108",
+      "name": "Verandah - timber, roofed",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Verandah - timber, roofed..."
+    },
+    {
+      "code": "GRP8-DEC-109",
+      "name": "Deck - timber, treated pine",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Deck - timber, treated pine..."
+    },
+    {
+      "code": "GRP8-DEC-110",
+      "name": "Deck - timber, hardwood",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Deck - timber, hardwood..."
+    },
+    {
+      "code": "GRP8-BAL-112",
+      "name": "Balustrade - timber deck",
+      "material_type": "timber",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Balustrade - timber deck..."
+    },
+    {
+      "code": "GRP8-BBQARE-115",
+      "name": "BBQ area - built-in",
+      "material_type": "brickwork",
+      "old_waste": 1.05,
+      "new_waste": 1.07,
+      "evidence": "Identified from: BBQ area - built-in..."
+    },
+    {
+      "code": "GRP8-SWIPOO-160",
+      "name": "Swimming pool - concrete 10x5m",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Swimming pool - concrete 10x5m..."
+    },
+    {
+      "code": "GRP8-SPA-165",
+      "name": "Spa - in ground",
+      "material_type": "tiles",
+      "old_waste": 1.05,
+      "new_waste": 1.1,
+      "evidence": "Identified from: Spa - in ground..."
+    }
+  ]
+}

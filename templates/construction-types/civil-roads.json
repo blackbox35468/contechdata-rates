@@ -1,0 +1,637 @@
+{
+  "sector": "civil",
+  "asset_category": "roads",
+  "description": "Australian civil road construction templates covering sealed, unsealed, and specialized road types with realistic pavement specifications",
+  "total_templates": 8,
+  "templates": [
+    {
+      "template_id": "au-civ-road-2lane-asphalt-1km",
+      "name": "Two-Lane Sealed Road (Asphalt) - 1km",
+      "description": "Standard two-lane sealed road with asphalt surface, suitable for suburban and rural arterial roads",
+      "building_type": "civil_road",
+      "sector": "civil",
+      "specifications": {
+        "projectType": "new_build",
+        "roadType": "sealed",
+        "surfaceType": "asphalt",
+        "specifications": {
+          "length": {
+            "value": 1000,
+            "unit": "m"
+          },
+          "width": {
+            "value": 7.0,
+            "unit": "m",
+            "breakdown": {
+              "lanes": 2,
+              "laneWidth": 3.5
+            }
+          },
+          "totalArea": {
+            "value": 7000,
+            "unit": "m2"
+          },
+          "pavementLayers": {
+            "surface": {
+              "material": "asphalt",
+              "thickness": 40,
+              "unit": "mm"
+            },
+            "base": {
+              "material": "crushed_rock",
+              "thickness": 200,
+              "unit": "mm"
+            },
+            "subbase": {
+              "material": "selected_fill",
+              "thickness": 250,
+              "unit": "mm"
+            },
+            "totalThickness": 490
+          },
+          "designSpeed": {
+            "value": 80,
+            "unit": "km/h"
+          },
+          "trafficClassification": "medium",
+          "drainageIncluded": true,
+          "shoulderWidth": {
+            "value": 1.0,
+            "unit": "m",
+            "side": "both"
+          }
+        },
+        "location": {
+          "region": "australia",
+          "context": "suburban_arterial"
+        },
+        "estimatedDuration": {
+          "value": 12,
+          "unit": "weeks"
+        }
+      },
+      "is_active": true,
+      "applicable_swaps": [],
+      "tags": [
+        "sealed",
+        "asphalt",
+        "two-lane",
+        "arterial",
+        "suburban",
+        "new-construction"
+      ]
+    },
+    {
+      "template_id": "au-civ-road-4lane-concrete-1km",
+      "name": "Four-Lane Divided Road (Concrete) - 1km",
+      "description": "Four-lane divided highway with concrete pavement, median strip, suitable for high-volume urban/peri-urban corridors",
+      "building_type": "civil_road",
+      "sector": "civil",
+      "specifications": {
+        "projectType": "new_build",
+        "roadType": "sealed",
+        "surfaceType": "concrete",
+        "specifications": {
+          "length": {
+            "value": 1000,
+            "unit": "m"
+          },
+          "width": {
+            "value": 14.0,
+            "unit": "m",
+            "breakdown": {
+              "lanes": 4,
+              "laneWidth": 3.5
+            }
+          },
+          "medianWidth": {
+            "value": 2.0,
+            "unit": "m"
+          },
+          "totalArea": {
+            "value": 14000,
+            "unit": "m2"
+          },
+          "pavementLayers": {
+            "surface": {
+              "material": "reinforced_concrete",
+              "thickness": 250,
+              "unit": "mm",
+              "reinforcement": "mesh"
+            },
+            "base": {
+              "material": "lean_mix_concrete",
+              "thickness": 150,
+              "unit": "mm"
+            },
+            "subbase": {
+              "material": "selected_granular",
+              "thickness": 300,
+              "unit": "mm"
+            },
+            "totalThickness": 700
+          },
+          "designSpeed": {
+            "value": 100,
+            "unit": "km/h"
+          },
+          "trafficClassification": "heavy",
+          "drainageIncluded": true,
+          "shoulderWidth": {
+            "value": 2.5,
+            "unit": "m",
+            "side": "both"
+          }
+        },
+        "location": {
+          "region": "australia",
+          "context": "urban_highway"
+        },
+        "estimatedDuration": {
+          "value": 24,
+          "unit": "weeks"
+        }
+      },
+      "is_active": true,
+      "applicable_swaps": [],
+      "tags": [
+        "sealed",
+        "concrete",
+        "four-lane",
+        "divided",
+        "highway",
+        "urban",
+        "new-construction"
+      ]
+    },
+    {
+      "template_id": "au-civ-road-unsealed-gravel-500m",
+      "name": "Unsealed Gravel Road - 500m",
+      "description": "Single-lane unsealed gravel road suitable for rural access and low-volume traffic",
+      "building_type": "civil_road",
+      "sector": "civil",
+      "specifications": {
+        "projectType": "new_build",
+        "roadType": "unsealed",
+        "surfaceType": "gravel",
+        "specifications": {
+          "length": {
+            "value": 500,
+            "unit": "m"
+          },
+          "width": {
+            "value": 6.0,
+            "unit": "m",
+            "breakdown": {
+              "lanes": 1,
+              "laneWidth": 6.0,
+              "note": "Single lane with passing bays"
+            }
+          },
+          "totalArea": {
+            "value": 3000,
+            "unit": "m2"
+          },
+          "pavementLayers": {
+            "surface": {
+              "material": "gravel",
+              "thickness": 150,
+              "unit": "mm",
+              "grading": "road_base_gravel"
+            },
+            "subbase": {
+              "material": "compacted_natural_material",
+              "thickness": 200,
+              "unit": "mm"
+            },
+            "totalThickness": 350
+          },
+          "designSpeed": {
+            "value": 60,
+            "unit": "km/h"
+          },
+          "trafficClassification": "light",
+          "drainageIncluded": true,
+          "shoulderWidth": {
+            "value": 0.5,
+            "unit": "m",
+            "side": "both"
+          }
+        },
+        "location": {
+          "region": "australia",
+          "context": "rural_access"
+        },
+        "estimatedDuration": {
+          "value": 4,
+          "unit": "weeks"
+        }
+      },
+      "is_active": true,
+      "applicable_swaps": [],
+      "tags": [
+        "unsealed",
+        "gravel",
+        "single-lane",
+        "rural",
+        "access-road",
+        "new-construction"
+      ]
+    },
+    {
+      "template_id": "au-civ-road-resurfacing-asphalt-1km",
+      "name": "Road Resurfacing (Asphalt Overlay) - 1km",
+      "description": "Asphalt overlay resurfacing for existing two-lane road rehabilitation",
+      "building_type": "civil_road",
+      "sector": "civil",
+      "specifications": {
+        "projectType": "resurfacing",
+        "roadType": "sealed",
+        "surfaceType": "asphalt",
+        "specifications": {
+          "length": {
+            "value": 1000,
+            "unit": "m"
+          },
+          "width": {
+            "value": 7.0,
+            "unit": "m",
+            "breakdown": {
+              "lanes": 2,
+              "laneWidth": 3.5
+            }
+          },
+          "totalArea": {
+            "value": 7000,
+            "unit": "m2"
+          },
+          "pavementLayers": {
+            "surface": {
+              "material": "asphalt_overlay",
+              "thickness": 50,
+              "unit": "mm",
+              "note": "Applied over existing pavement"
+            },
+            "preparation": {
+              "milling": true,
+              "millingDepth": 30,
+              "unit": "mm"
+            }
+          },
+          "designSpeed": {
+            "value": 80,
+            "unit": "km/h"
+          },
+          "trafficClassification": "medium",
+          "existingPavementCondition": "fair_to_poor",
+          "drainageUpgrade": false
+        },
+        "location": {
+          "region": "australia",
+          "context": "suburban_arterial"
+        },
+        "estimatedDuration": {
+          "value": 6,
+          "unit": "weeks"
+        }
+      },
+      "is_active": true,
+      "applicable_swaps": [],
+      "tags": [
+        "sealed",
+        "asphalt",
+        "resurfacing",
+        "overlay",
+        "rehabilitation",
+        "two-lane"
+      ]
+    },
+    {
+      "template_id": "au-civ-road-widening-2to4lane-500m",
+      "name": "Road Widening (2-Lane to 4-Lane) - 500m",
+      "description": "Widening existing two-lane road to four lanes with asphalt surface",
+      "building_type": "civil_road",
+      "sector": "civil",
+      "specifications": {
+        "projectType": "widening",
+        "roadType": "sealed",
+        "surfaceType": "asphalt",
+        "specifications": {
+          "length": {
+            "value": 500,
+            "unit": "m"
+          },
+          "existingWidth": {
+            "value": 7.0,
+            "unit": "m"
+          },
+          "newWidth": {
+            "value": 14.0,
+            "unit": "m",
+            "breakdown": {
+              "lanes": 4,
+              "laneWidth": 3.5
+            }
+          },
+          "wideningArea": {
+            "value": 3500,
+            "unit": "m2",
+            "note": "Additional pavement area"
+          },
+          "totalArea": {
+            "value": 7000,
+            "unit": "m2"
+          },
+          "pavementLayers": {
+            "surface": {
+              "material": "asphalt",
+              "thickness": 40,
+              "unit": "mm"
+            },
+            "base": {
+              "material": "crushed_rock",
+              "thickness": 200,
+              "unit": "mm"
+            },
+            "subbase": {
+              "material": "selected_fill",
+              "thickness": 250,
+              "unit": "mm"
+            },
+            "totalThickness": 490
+          },
+          "designSpeed": {
+            "value": 80,
+            "unit": "km/h"
+          },
+          "trafficClassification": "heavy",
+          "drainageIncluded": true,
+          "shoulderWidth": {
+            "value": 1.5,
+            "unit": "m",
+            "side": "both"
+          },
+          "tieInWork": true
+        },
+        "location": {
+          "region": "australia",
+          "context": "urban_arterial"
+        },
+        "estimatedDuration": {
+          "value": 16,
+          "unit": "weeks"
+        }
+      },
+      "is_active": true,
+      "applicable_swaps": [],
+      "tags": [
+        "sealed",
+        "asphalt",
+        "widening",
+        "expansion",
+        "four-lane",
+        "urban"
+      ]
+    },
+    {
+      "template_id": "au-civ-road-industrial-heavy-500m",
+      "name": "Industrial Heavy-Duty Road - 500m",
+      "description": "Heavy-duty road for industrial areas, designed for frequent heavy vehicle traffic including B-doubles",
+      "building_type": "civil_road",
+      "sector": "civil",
+      "specifications": {
+        "projectType": "new_build",
+        "roadType": "sealed",
+        "surfaceType": "asphalt",
+        "specifications": {
+          "length": {
+            "value": 500,
+            "unit": "m"
+          },
+          "width": {
+            "value": 10.0,
+            "unit": "m",
+            "breakdown": {
+              "lanes": 2,
+              "laneWidth": 5.0,
+              "note": "Wider lanes for heavy vehicles"
+            }
+          },
+          "totalArea": {
+            "value": 5000,
+            "unit": "m2"
+          },
+          "pavementLayers": {
+            "surface": {
+              "material": "heavy_duty_asphalt",
+              "thickness": 60,
+              "unit": "mm",
+              "grade": "C320"
+            },
+            "base": {
+              "material": "cemented_crushed_rock",
+              "thickness": 250,
+              "unit": "mm"
+            },
+            "subbase": {
+              "material": "selected_granular",
+              "thickness": 300,
+              "unit": "mm"
+            },
+            "totalThickness": 610
+          },
+          "designSpeed": {
+            "value": 60,
+            "unit": "km/h"
+          },
+          "trafficClassification": "heavy",
+          "loadCapacity": "heavy_vehicles_b-double",
+          "drainageIncluded": true,
+          "shoulderWidth": {
+            "value": 1.5,
+            "unit": "m",
+            "side": "both"
+          }
+        },
+        "location": {
+          "region": "australia",
+          "context": "industrial_estate"
+        },
+        "estimatedDuration": {
+          "value": 10,
+          "unit": "weeks"
+        }
+      },
+      "is_active": true,
+      "applicable_swaps": [],
+      "tags": [
+        "sealed",
+        "asphalt",
+        "industrial",
+        "heavy-duty",
+        "two-lane",
+        "new-construction"
+      ]
+    },
+    {
+      "template_id": "au-civ-road-local-access-500m",
+      "name": "Local Access Road (Residential) - 500m",
+      "description": "Light-duty local access road for residential subdivisions with asphalt surface",
+      "building_type": "civil_road",
+      "sector": "civil",
+      "specifications": {
+        "projectType": "new_build",
+        "roadType": "sealed",
+        "surfaceType": "asphalt",
+        "specifications": {
+          "length": {
+            "value": 500,
+            "unit": "m"
+          },
+          "width": {
+            "value": 5.5,
+            "unit": "m",
+            "breakdown": {
+              "lanes": 1,
+              "laneWidth": 5.5,
+              "note": "Single lane with on-street parking"
+            }
+          },
+          "totalArea": {
+            "value": 2750,
+            "unit": "m2"
+          },
+          "pavementLayers": {
+            "surface": {
+              "material": "asphalt",
+              "thickness": 30,
+              "unit": "mm"
+            },
+            "base": {
+              "material": "crushed_rock",
+              "thickness": 150,
+              "unit": "mm"
+            },
+            "subbase": {
+              "material": "selected_fill",
+              "thickness": 200,
+              "unit": "mm"
+            },
+            "totalThickness": 380
+          },
+          "designSpeed": {
+            "value": 50,
+            "unit": "km/h"
+          },
+          "trafficClassification": "light",
+          "drainageIncluded": true,
+          "kerbAndChannel": true,
+          "footpath": {
+            "included": true,
+            "width": 1.5,
+            "unit": "m",
+            "side": "both"
+          }
+        },
+        "location": {
+          "region": "australia",
+          "context": "residential_subdivision"
+        },
+        "estimatedDuration": {
+          "value": 8,
+          "unit": "weeks"
+        }
+      },
+      "is_active": true,
+      "applicable_swaps": [],
+      "tags": [
+        "sealed",
+        "asphalt",
+        "local",
+        "residential",
+        "access-road",
+        "new-construction"
+      ]
+    },
+    {
+      "template_id": "au-civ-road-rural-collector-1km",
+      "name": "Rural Collector Road (Asphalt) - 1km",
+      "description": "Two-lane rural collector road with asphalt surface, connecting rural communities",
+      "building_type": "civil_road",
+      "sector": "civil",
+      "specifications": {
+        "projectType": "new_build",
+        "roadType": "sealed",
+        "surfaceType": "asphalt",
+        "specifications": {
+          "length": {
+            "value": 1000,
+            "unit": "m"
+          },
+          "width": {
+            "value": 8.0,
+            "unit": "m",
+            "breakdown": {
+              "lanes": 2,
+              "laneWidth": 4.0,
+              "note": "Wider lanes for mixed traffic including agricultural vehicles"
+            }
+          },
+          "totalArea": {
+            "value": 8000,
+            "unit": "m2"
+          },
+          "pavementLayers": {
+            "surface": {
+              "material": "asphalt",
+              "thickness": 40,
+              "unit": "mm"
+            },
+            "base": {
+              "material": "crushed_rock",
+              "thickness": 200,
+              "unit": "mm"
+            },
+            "subbase": {
+              "material": "selected_fill",
+              "thickness": 250,
+              "unit": "mm"
+            },
+            "totalThickness": 490
+          },
+          "designSpeed": {
+            "value": 100,
+            "unit": "km/h"
+          },
+          "trafficClassification": "medium",
+          "drainageIncluded": true,
+          "shoulderWidth": {
+            "value": 1.5,
+            "unit": "m",
+            "side": "both",
+            "material": "sealed"
+          },
+          "overtakingLanes": false
+        },
+        "location": {
+          "region": "australia",
+          "context": "rural_collector"
+        },
+        "estimatedDuration": {
+          "value": 14,
+          "unit": "weeks"
+        }
+      },
+      "is_active": true,
+      "applicable_swaps": [],
+      "tags": [
+        "sealed",
+        "asphalt",
+        "two-lane",
+        "rural",
+        "collector",
+        "new-construction"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4584 @@
+{
+  "meta": {
+    "nrm_group": 3,
+    "group_name": "finishes",
+    "count": 81,
+    "generated": "2026-01-03",
+    "source": "Composite_Rate_Descriptions.xlsx",
+    "transformed": "2026-01-03",
+    "resource_linked": true,
+    "enriched_date": "2026-01-03",
+    "crosswalk_version": "NRM1_L4_to_NRM2_Crosswalk.csv"
+  },
+  "rates": [
+    {
+      "code": "GRP3-WALFIN-002",
+      "name": "Wall finish - plasterboard, set, paint",
+      "description": "Standard residential",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.6,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.3,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.8999999999999999,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.1,
+      "labour_total": 49.5,
+      "materials_total": 15.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 69.0,
+      "ohp_percent": 15,
+      "total_rate": 79.35,
+      "nrm1_l4_code": "3.1.1.1",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Finishes to walls and columns: details to be stated.",
+      "nrm2_primary_ws": "14",
+      "nrm2_primary_ws_name": "Masonry",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-WALFIN-003",
+      "name": "Wall finish - plasterboard, set, wallpaper",
+      "description": "Feature",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.6,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.3,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.8999999999999999,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.1,
+      "labour_total": 49.5,
+      "materials_total": 15.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 69.0,
+      "ohp_percent": 15,
+      "total_rate": 79.35,
+      "nrm1_l4_code": "3.1.1.1",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Finishes to walls and columns: details to be stated.",
+      "nrm2_primary_ws": "14",
+      "nrm2_primary_ws_name": "Masonry",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-WALFIN-004",
+      "name": "Wall finish - render coat, paint",
+      "description": "On masonry",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_BRICKLAYER",
+            "qty": 0.6,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.6,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.2,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.07,
+      "labour_total": 57.0,
+      "materials_total": 15.0,
+      "plant_total": 3.0,
+      "waste_percent": 7,
+      "nett_total": 76.05,
+      "ohp_percent": 15,
+      "total_rate": 87.46,
+      "nrm1_l4_code": "3.1.1.1",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Finishes to walls and columns: details to be stated.",
+      "nrm2_primary_ws": "14",
+      "nrm2_primary_ws_name": "Masonry",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-WALFIN-005",
+      "name": "Wall finish - ceramic tiles 300x300",
+      "description": "Standard wet area",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.6,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.6,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 55.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.2,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.1,
+      "labour_total": 57.0,
+      "materials_total": 55.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 120.5,
+      "ohp_percent": 15,
+      "total_rate": 138.57,
+      "nrm1_l4_code": "3.1.1.1",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Finishes to walls and columns: details to be stated.",
+      "nrm2_primary_ws": "14",
+      "nrm2_primary_ws_name": "Masonry",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-WALFIN-006",
+      "name": "Wall finish - ceramic tiles 600x300",
+      "description": "Modern wet area",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.6,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.6,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 55.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.2,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.1,
+      "labour_total": 57.0,
+      "materials_total": 55.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 120.5,
+      "ohp_percent": 15,
+      "total_rate": 138.57,
+      "nrm1_l4_code": "3.1.1.1",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Finishes to walls and columns: details to be stated.",
+      "nrm2_primary_ws": "14",
+      "nrm2_primary_ws_name": "Masonry",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-WALFIN-007",
+      "name": "Wall finish - porcelain tiles 600x600",
+      "description": "Premium wet area",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.6,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.6,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 55.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.2,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.1,
+      "labour_total": 57.0,
+      "materials_total": 55.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 120.5,
+      "ohp_percent": 15,
+      "total_rate": 138.57,
+      "nrm1_l4_code": "3.1.1.1",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Finishes to walls and columns: details to be stated.",
+      "nrm2_primary_ws": "14",
+      "nrm2_primary_ws_name": "Masonry",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-WALFIN-008",
+      "name": "Wall finish - mosaic tiles",
+      "description": "Feature/shower niche",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.6,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.6,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 55.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.2,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.1,
+      "labour_total": 57.0,
+      "materials_total": 55.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 120.5,
+      "ohp_percent": 15,
+      "total_rate": 138.57,
+      "nrm1_l4_code": "3.1.1.1",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Finishes to walls and columns: details to be stated.",
+      "nrm2_primary_ws": "14",
+      "nrm2_primary_ws_name": "Masonry",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-WALFIN-009",
+      "name": "Wall finish - splashback tiles, kitchen",
+      "description": "Above benchtop",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_JOINER",
+            "qty": 0.6,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.6,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 55.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.2,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.1,
+      "labour_total": 57.0,
+      "materials_total": 55.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 120.5,
+      "ohp_percent": 15,
+      "total_rate": 138.57,
+      "nrm1_l4_code": "3.1.1.1",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Finishes to walls and columns: details to be stated.",
+      "nrm2_primary_ws": "14",
+      "nrm2_primary_ws_name": "Masonry",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-WALFIN-010",
+      "name": "Wall finish - splashback glass",
+      "description": "Toughened",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.6,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.6,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 39.6,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 70.98,
+      "ohp_percent": 15,
+      "total_rate": 81.63,
+      "nrm1_l4_code": "3.1.1.1",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Finishes to walls and columns: details to be stated.",
+      "nrm2_primary_ws": "14",
+      "nrm2_primary_ws_name": "Masonry",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-WALFIN-011",
+      "name": "Wall finish - timber lining/panelling",
+      "description": "Stained or clear",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PAINTER",
+            "qty": 0.6,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.3,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 80.0
+          }
+        ],
+        "plant": [
+          {
+            "resource_id": "PLT_AU_SKID_STEER",
+            "qty": 1.0,
+            "unit": "m²"
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.8999999999999999,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.1,
+      "labour_total": 49.5,
+      "materials_total": 80.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 140.5,
+      "ohp_percent": 15,
+      "total_rate": 161.57,
+      "nrm1_l4_code": "3.1.1.1",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Finishes to walls and columns: details to be stated.",
+      "nrm2_primary_ws": "14",
+      "nrm2_primary_ws_name": "Masonry",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-WALFIN-012",
+      "name": "Wall finish - acoustic panel",
+      "description": "Fabric wrapped",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_INSULATOR",
+            "qty": 0.6,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.6,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 39.6,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 70.98,
+      "ohp_percent": 15,
+      "total_rate": 81.63,
+      "nrm1_l4_code": "3.1.1.1",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Finishes to walls and columns: details to be stated.",
+      "nrm2_primary_ws": "14",
+      "nrm2_primary_ws_name": "Masonry",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-WALFIN-013",
+      "name": "Wall finish - vinyl wallcovering",
+      "description": "Commercial",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.6,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.6,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 39.6,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 70.98,
+      "ohp_percent": 15,
+      "total_rate": 81.63,
+      "nrm1_l4_code": "3.1.1.1",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Finishes to walls and columns: details to be stated.",
+      "nrm2_primary_ws": "14",
+      "nrm2_primary_ws_name": "Masonry",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-WALFIN-014",
+      "name": "Wall finish - stone cladding",
+      "description": "Feature wall",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.6,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 150.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.6,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 39.6,
+      "materials_total": 150.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 202.23,
+      "ohp_percent": 15,
+      "total_rate": 232.56,
+      "nrm1_l4_code": "3.1.1.1",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Finishes to walls and columns: details to be stated.",
+      "nrm2_primary_ws": "14",
+      "nrm2_primary_ws_name": "Masonry",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-WALFIN-015",
+      "name": "Wall finish - mirror",
+      "description": "Float glass",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_GLAZIER",
+            "qty": 0.6,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.6,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 39.6,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 70.98,
+      "ohp_percent": 15,
+      "total_rate": 81.63,
+      "nrm1_l4_code": "3.1.1.1",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Finishes to walls and columns: details to be stated.",
+      "nrm2_primary_ws": "14",
+      "nrm2_primary_ws_name": "Masonry",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-WALFIN-016",
+      "name": "Wall finish - epoxy paint",
+      "description": "Commercial kitchen",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.6,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.6,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 39.6,
+      "materials_total": 15.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 60.48,
+      "ohp_percent": 15,
+      "total_rate": 69.55,
+      "nrm1_l4_code": "3.1.1.1",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Finishes to walls and columns: details to be stated.",
+      "nrm2_primary_ws": "14",
+      "nrm2_primary_ws_name": "Masonry",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-SKI-017",
+      "name": "Skirting - timber 90mm",
+      "description": "Painted or stained",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PAINTER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 80.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.1,
+      "labour_total": 20.62,
+      "materials_total": 80.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 111.62,
+      "ohp_percent": 15,
+      "total_rate": 128.36,
+      "nrm1_l4_code": "3.1.1.3",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Proprietary impact and bumper guards, protection strips, corner protectors and the like: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "7, 8, 9",
+      "nrm2_secondary_ws": "WS14:1",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-SKI-018",
+      "name": "Skirting - MDF 90mm",
+      "description": "Painted",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PAINTER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 20.62,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 51.06,
+      "ohp_percent": 15,
+      "total_rate": 58.71,
+      "nrm1_l4_code": "3.1.1.2",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Picture rails, dado rails and the like: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "7, 8, 9",
+      "nrm2_secondary_ws": "WS14:1",
+      "mapping_confidence": "Low"
+    },
+    {
+      "code": "GRP3-SKI-019",
+      "name": "Skirting - tile",
+      "description": "Matching floor",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.25,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 55.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.1,
+      "labour_total": 23.75,
+      "materials_total": 55.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 87.25,
+      "ohp_percent": 15,
+      "total_rate": 100.34,
+      "nrm1_l4_code": "3.1.1.2",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Picture rails, dado rails and the like: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "7, 8, 9",
+      "nrm2_secondary_ws": "WS14:1",
+      "mapping_confidence": "Low"
+    },
+    {
+      "code": "GRP3-DADRAI-020",
+      "name": "Dado rail",
+      "description": "Timber",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CARPENTER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.1,
+      "labour_total": 20.62,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 51.12,
+      "ohp_percent": 15,
+      "total_rate": 58.79,
+      "nrm1_l4_code": "3.1.1.2",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Picture rails, dado rails and the like: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "7, 8, 9",
+      "nrm2_secondary_ws": "WS14:1",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-PICRAI-021",
+      "name": "Picture rail",
+      "description": "Timber",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CARPENTER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.1,
+      "labour_total": 20.62,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 51.12,
+      "ohp_percent": 15,
+      "total_rate": 58.79,
+      "nrm1_l4_code": "3.1.1.2",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Picture rails, dado rails and the like: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "7, 8, 9",
+      "nrm2_secondary_ws": "WS14:1",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-CORPRO-022",
+      "name": "Corner protector - stainless steel",
+      "description": "Commercial",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 60.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 20.62,
+      "materials_total": 60.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 87.81,
+      "ohp_percent": 15,
+      "total_rate": 100.98,
+      "nrm1_l4_code": "3.1.1.3",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Proprietary impact and bumper guards, protection strips, corner protectors and the like: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "7, 8, 9",
+      "nrm2_secondary_ws": "WS14:1",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-WALPRO-023",
+      "name": "Wall protection - vinyl sheet",
+      "description": "Impact zones",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.6,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.3,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.8999999999999999,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 49.5,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 81.38,
+      "ohp_percent": 15,
+      "total_rate": 93.58,
+      "nrm1_l4_code": "3.1.1.1",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Finishes to walls and columns: details to be stated.",
+      "nrm2_primary_ws": "14",
+      "nrm2_primary_ws_name": "Masonry",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-HAN-024",
+      "name": "Handrail - wall mounted",
+      "description": "Stainless steel",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PAINTER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 20.62,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 51.06,
+      "ohp_percent": 15,
+      "total_rate": 58.71,
+      "nrm1_l4_code": "3.1.1.2",
+      "nrm1_l3_code": "3.1.1",
+      "nrm1_l2_code": "3.1",
+      "nrm1_description": "Picture rails, dado rails and the like: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "7, 8, 9",
+      "nrm2_secondary_ws": "WS14:1",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOSCR-025",
+      "name": "Floor screed - sand/cement 50mm",
+      "description": "Traditional",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.175,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5249999999999999,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 28.87,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 59.72,
+      "ohp_percent": 15,
+      "total_rate": 68.68,
+      "nrm1_l4_code": "3.2.1.2",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Specialist flooring systems: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Low"
+    },
+    {
+      "code": "GRP3-FLOSCR-026",
+      "name": "Floor screed - self-levelling 10mm",
+      "description": "Smoothing compound",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.175,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5249999999999999,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 28.87,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 59.72,
+      "ohp_percent": 15,
+      "total_rate": 68.68,
+      "nrm1_l4_code": "3.2.1.2",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Specialist flooring systems: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOSCR-027",
+      "name": "Floor screed - self-levelling 25mm",
+      "description": "Smoothing compound",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.175,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5249999999999999,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 28.87,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 59.72,
+      "ohp_percent": 15,
+      "total_rate": 68.68,
+      "nrm1_l4_code": "3.2.1.2",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Specialist flooring systems: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOSCR-028",
+      "name": "Floor screed - underfloor heating screed",
+      "description": "Over UFH",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.7,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.05,
+      "labour_total": 33.25,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 64.31,
+      "ohp_percent": 15,
+      "total_rate": 73.96,
+      "nrm1_l4_code": "3.2.1.2",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Specialist flooring systems: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-029",
+      "name": "Floor finish - ceramic tile 300x300",
+      "description": "Standard",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 55.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.7,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.1,
+      "labour_total": 33.25,
+      "materials_total": 55.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 96.75,
+      "ohp_percent": 15,
+      "total_rate": 111.26,
+      "nrm1_l4_code": "3.2.1.1",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to floors: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-030",
+      "name": "Floor finish - ceramic tile 600x300",
+      "description": "Rectified",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 55.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.7,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.1,
+      "labour_total": 33.25,
+      "materials_total": 55.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 96.75,
+      "ohp_percent": 15,
+      "total_rate": 111.26,
+      "nrm1_l4_code": "3.2.1.1",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to floors: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-031",
+      "name": "Floor finish - porcelain tile 600x600",
+      "description": "Standard",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 55.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.7,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.1,
+      "labour_total": 33.25,
+      "materials_total": 55.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 96.75,
+      "ohp_percent": 15,
+      "total_rate": 111.26,
+      "nrm1_l4_code": "3.2.1.1",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to floors: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-032",
+      "name": "Floor finish - porcelain tile 900x450",
+      "description": "Large format",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 55.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.7,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.1,
+      "labour_total": 33.25,
+      "materials_total": 55.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 96.75,
+      "ohp_percent": 15,
+      "total_rate": 111.26,
+      "nrm1_l4_code": "3.2.1.1",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to floors: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-033",
+      "name": "Floor finish - porcelain tile 1200x600",
+      "description": "Large format",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 55.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.7,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.1,
+      "labour_total": 33.25,
+      "materials_total": 55.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 96.75,
+      "ohp_percent": 15,
+      "total_rate": 111.26,
+      "nrm1_l4_code": "3.2.1.1",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to floors: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-034",
+      "name": "Floor finish - natural stone 600x400",
+      "description": "Marble/granite/travertine",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 150.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.35,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 23.1,
+      "materials_total": 150.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 184.91,
+      "ohp_percent": 15,
+      "total_rate": 212.64,
+      "nrm1_l4_code": "3.2.1.1",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to floors: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-035",
+      "name": "Floor finish - terrazzo tile",
+      "description": "Precast",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 55.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.7,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.1,
+      "labour_total": 33.25,
+      "materials_total": 55.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 96.75,
+      "ohp_percent": 15,
+      "total_rate": 111.26,
+      "nrm1_l4_code": "3.2.1.1",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to floors: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-036",
+      "name": "Floor finish - terrazzo in-situ",
+      "description": "Poured and polished",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CONCRETER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "resource_id": "PLT_AU_VIBRATOR",
+            "qty": 1.0,
+            "unit": "m²"
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.35,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 23.1,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 53.65,
+      "ohp_percent": 15,
+      "total_rate": 61.7,
+      "nrm1_l4_code": "3.2.1.1",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to floors: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-037",
+      "name": "Floor finish - polished concrete",
+      "description": "Grind and seal",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 35.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 20.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.35,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 23.1,
+      "materials_total": 35.0,
+      "plant_total": 20.0,
+      "waste_percent": 5,
+      "nett_total": 82.0,
+      "ohp_percent": 15,
+      "total_rate": 94.31,
+      "nrm1_l4_code": "3.2.1.1",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to floors: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-038",
+      "name": "Floor finish - epoxy coating",
+      "description": "Commercial/industrial",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.35,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 23.1,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 53.65,
+      "ohp_percent": 15,
+      "total_rate": 61.7,
+      "nrm1_l4_code": "3.2.1.1",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to floors: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-039",
+      "name": "Floor finish - polyurethane coating",
+      "description": "Commercial/industrial",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.35,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 23.1,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 53.65,
+      "ohp_percent": 15,
+      "total_rate": 61.7,
+      "nrm1_l4_code": "3.2.1.1",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to floors: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-040",
+      "name": "Floor finish - timber strip 80mm",
+      "description": "Solid hardwood",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.175,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 80.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5249999999999999,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.1,
+      "labour_total": 28.87,
+      "materials_total": 80.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 119.87,
+      "ohp_percent": 15,
+      "total_rate": 137.85,
+      "nrm1_l4_code": "3.2.1.2",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Specialist flooring systems: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-041",
+      "name": "Floor finish - timber strip 130mm",
+      "description": "Solid hardwood wide",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.175,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 80.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5249999999999999,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.1,
+      "labour_total": 28.87,
+      "materials_total": 80.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 119.87,
+      "ohp_percent": 15,
+      "total_rate": 137.85,
+      "nrm1_l4_code": "3.2.1.2",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Specialist flooring systems: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-042",
+      "name": "Floor finish - engineered timber",
+      "description": "Click system",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.175,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 80.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5249999999999999,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.1,
+      "labour_total": 28.87,
+      "materials_total": 80.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 119.87,
+      "ohp_percent": 15,
+      "total_rate": 137.85,
+      "nrm1_l4_code": "3.2.1.2",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Specialist flooring systems: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-043",
+      "name": "Floor finish - timber parquetry",
+      "description": "Pattern laid",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.175,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 80.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5249999999999999,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.1,
+      "labour_total": 28.87,
+      "materials_total": 80.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 119.87,
+      "ohp_percent": 15,
+      "total_rate": 137.85,
+      "nrm1_l4_code": "3.2.1.2",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Specialist flooring systems: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-044",
+      "name": "Floor finish - bamboo",
+      "description": "Strand woven",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.35,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 23.1,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 53.65,
+      "ohp_percent": 15,
+      "total_rate": 61.7,
+      "nrm1_l4_code": "3.2.1.2",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Specialist flooring systems: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-045",
+      "name": "Floor finish - cork tiles",
+      "description": "Sealed",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 55.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.7,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.1,
+      "labour_total": 33.25,
+      "materials_total": 55.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 96.75,
+      "ohp_percent": 15,
+      "total_rate": 111.26,
+      "nrm1_l4_code": "3.2.1.2",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Specialist flooring systems: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-046",
+      "name": "Floor finish - vinyl sheet, standard",
+      "description": "2mm homogeneous",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.35,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 23.1,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 53.65,
+      "ohp_percent": 15,
+      "total_rate": 61.7,
+      "nrm1_l4_code": "3.2.1.1",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to floors: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-047",
+      "name": "Floor finish - vinyl sheet, premium",
+      "description": "2.5mm heterogeneous",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 150.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.35,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 23.1,
+      "materials_total": 150.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 184.91,
+      "ohp_percent": 15,
+      "total_rate": 212.64,
+      "nrm1_l4_code": "3.2.1.2",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Specialist flooring systems: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-048",
+      "name": "Floor finish - vinyl tiles, standard",
+      "description": "LVT 2.5mm",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 55.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.7,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.1,
+      "labour_total": 33.25,
+      "materials_total": 55.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 96.75,
+      "ohp_percent": 15,
+      "total_rate": 111.26,
+      "nrm1_l4_code": "3.2.1.1",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to floors: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-049",
+      "name": "Floor finish - vinyl tiles, premium",
+      "description": "LVT 4.5mm",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 150.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.7,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.1,
+      "labour_total": 33.25,
+      "materials_total": 150.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 201.25,
+      "ohp_percent": 15,
+      "total_rate": 231.44,
+      "nrm1_l4_code": "3.2.1.5",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to swimming pool tanks, including tank linings: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-050",
+      "name": "Floor finish - vinyl plank",
+      "description": "LVP timber look",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CARPENTER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.35,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.1,
+      "labour_total": 23.1,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 53.6,
+      "ohp_percent": 15,
+      "total_rate": 61.64,
+      "nrm1_l4_code": "3.2.1.5",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to swimming pool tanks, including tank linings: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-051",
+      "name": "Floor finish - rubber sheet",
+      "description": "Studded or smooth",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.35,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 23.1,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 53.65,
+      "ohp_percent": 15,
+      "total_rate": 61.7,
+      "nrm1_l4_code": "3.2.1.2",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Specialist flooring systems: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-052",
+      "name": "Floor finish - rubber tiles",
+      "description": "Studded or smooth",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 55.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.7,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.1,
+      "labour_total": 33.25,
+      "materials_total": 55.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 96.75,
+      "ohp_percent": 15,
+      "total_rate": 111.26,
+      "nrm1_l4_code": "3.2.1.2",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Specialist flooring systems: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-053",
+      "name": "Floor finish - linoleum",
+      "description": "Natural",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.35,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 23.1,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 53.65,
+      "ohp_percent": 15,
+      "total_rate": 61.7,
+      "nrm1_l4_code": "3.2.1.1",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to floors: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-054",
+      "name": "Floor finish - safety vinyl",
+      "description": "Wet area",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.35,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 23.1,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 53.65,
+      "ohp_percent": 15,
+      "total_rate": 61.7,
+      "nrm1_l4_code": "3.2.1.2",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Specialist flooring systems: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-055",
+      "name": "Floor finish - carpet tile, standard",
+      "description": "Commercial",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 55.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.7,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.1,
+      "labour_total": 33.25,
+      "materials_total": 55.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 96.75,
+      "ohp_percent": 15,
+      "total_rate": 111.26,
+      "nrm1_l4_code": "3.2.1.1",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to floors: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-056",
+      "name": "Floor finish - carpet tile, premium",
+      "description": "Commercial",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 150.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.7,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.1,
+      "labour_total": 33.25,
+      "materials_total": 150.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 201.25,
+      "ohp_percent": 15,
+      "total_rate": 231.44,
+      "nrm1_l4_code": "3.2.1.1",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to floors: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-057",
+      "name": "Floor finish - carpet broadloom, standard",
+      "description": "Residential",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.35,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 23.1,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 53.65,
+      "ohp_percent": 15,
+      "total_rate": 61.7,
+      "nrm1_l4_code": "3.2.1.2",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Specialist flooring systems: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-058",
+      "name": "Floor finish - carpet broadloom, premium",
+      "description": "Wool blend",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 150.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.35,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 23.1,
+      "materials_total": 150.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 184.91,
+      "ohp_percent": 15,
+      "total_rate": 212.64,
+      "nrm1_l4_code": "3.2.1.1",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to floors: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-059",
+      "name": "Floor finish - carpet broadloom, budget",
+      "description": "Polypropylene",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.35,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 23.1,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 53.65,
+      "ohp_percent": 15,
+      "total_rate": 61.7,
+      "nrm1_l4_code": "3.2.1.1",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to floors: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-060",
+      "name": "Floor finish - entrance matting",
+      "description": "Recessed mat well",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.35,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 23.1,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 53.65,
+      "ohp_percent": 15,
+      "total_rate": 61.7,
+      "nrm1_l4_code": "3.2.1.1",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to floors: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-061",
+      "name": "Floor finish - anti-static",
+      "description": "ESD vinyl",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.35,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 23.1,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 53.65,
+      "ohp_percent": 15,
+      "total_rate": 61.7,
+      "nrm1_l4_code": "3.2.1.1",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to floors: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-062",
+      "name": "Floor finish - sports flooring",
+      "description": "Sprung timber",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CARPENTER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.35,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.1,
+      "labour_total": 23.1,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 53.6,
+      "ohp_percent": 15,
+      "total_rate": 61.64,
+      "nrm1_l4_code": "3.2.1.2",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Specialist flooring systems: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-FLOFIN-063",
+      "name": "Floor finish - wet area vinyl coved",
+      "description": "Welded seams, coved",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_STEEL_FIXER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.35,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 23.1,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 53.65,
+      "ohp_percent": 15,
+      "total_rate": 61.7,
+      "nrm1_l4_code": "3.2.1.5",
+      "nrm1_l3_code": "3.2.1",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Finishes to swimming pool tanks, including tank linings: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-RAIACC-064",
+      "name": "Raised access floor - 150mm void",
+      "description": "Standard office",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.175,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5249999999999999,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 28.87,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 59.72,
+      "ohp_percent": 15,
+      "total_rate": 68.68,
+      "nrm1_l4_code": "3.2.2.1",
+      "nrm1_l3_code": "3.2.2",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Raised access floor systems: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-RAIACC-065",
+      "name": "Raised access floor - 300mm void",
+      "description": "Data centre",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.175,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5249999999999999,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 28.87,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 59.72,
+      "ohp_percent": 15,
+      "total_rate": 68.68,
+      "nrm1_l4_code": "3.2.2.1",
+      "nrm1_l3_code": "3.2.2",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Raised access floor systems: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-RAIACC-066",
+      "name": "Raised access floor - 600mm void",
+      "description": "Major comms room",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.175,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5249999999999999,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 28.87,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 59.72,
+      "ohp_percent": 15,
+      "total_rate": 68.68,
+      "nrm1_l4_code": "3.2.2.1",
+      "nrm1_l3_code": "3.2.2",
+      "nrm1_l2_code": "3.2",
+      "nrm1_description": "Raised access floor systems: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-CEIFIN-067",
+      "name": "Ceiling finish - plasterboard, set, paint",
+      "description": "Standard residential",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.175,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5249999999999999,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.1,
+      "labour_total": 28.87,
+      "materials_total": 15.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 48.37,
+      "ohp_percent": 15,
+      "total_rate": 55.63,
+      "nrm1_l4_code": "3.3.2.1",
+      "nrm1_l3_code": "3.3.2",
+      "nrm1_l2_code": "3.3",
+      "nrm1_description": "False ceilings: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "13, 14",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-CEIFIN-068",
+      "name": "Ceiling finish - plasterboard, battened, set, paint",
+      "description": "On structure",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.175,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5249999999999999,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.1,
+      "labour_total": 28.87,
+      "materials_total": 15.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 48.37,
+      "ohp_percent": 15,
+      "total_rate": 55.63,
+      "nrm1_l4_code": "3.3.2.1",
+      "nrm1_l3_code": "3.3.2",
+      "nrm1_l2_code": "3.3",
+      "nrm1_description": "False ceilings: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "13, 14",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-CEIFIN-069",
+      "name": "Ceiling finish - plasterboard, bulkhead",
+      "description": "Perimeter or feature",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 15.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.1,
+      "labour_total": 20.62,
+      "materials_total": 15.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 40.12,
+      "ohp_percent": 15,
+      "total_rate": 46.14,
+      "nrm1_l4_code": "3.3.1.2",
+      "nrm1_l3_code": "3.3.1",
+      "nrm1_l2_code": "3.3",
+      "nrm1_description": "Cornices, covings and the like: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "13, 14",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-CEIFIN-070",
+      "name": "Ceiling finish - suspended tile 600x600",
+      "description": "Mineral fibre",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 55.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.7,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.1,
+      "labour_total": 33.25,
+      "materials_total": 55.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 96.75,
+      "ohp_percent": 15,
+      "total_rate": 111.26,
+      "nrm1_l4_code": "3.3.3.1",
+      "nrm1_l3_code": "3.3.3",
+      "nrm1_l2_code": "3.3",
+      "nrm1_description": "Demountable suspended ceilings: details to be stated.",
+      "nrm2_primary_ws": "30",
+      "nrm2_primary_ws_name": "Suspended ceilings",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-CEIFIN-071",
+      "name": "Ceiling finish - suspended tile 600x1200",
+      "description": "Mineral fibre",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 55.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.7,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.1,
+      "labour_total": 33.25,
+      "materials_total": 55.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 96.75,
+      "ohp_percent": 15,
+      "total_rate": 111.26,
+      "nrm1_l4_code": "3.3.3.1",
+      "nrm1_l3_code": "3.3.3",
+      "nrm1_l2_code": "3.3",
+      "nrm1_description": "Demountable suspended ceilings: details to be stated.",
+      "nrm2_primary_ws": "30",
+      "nrm2_primary_ws_name": "Suspended ceilings",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-CEIFIN-072",
+      "name": "Ceiling finish - suspended metal tile 600x600",
+      "description": "Aluminium",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.35,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 60.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.7,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.1,
+      "labour_total": 33.25,
+      "materials_total": 60.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 102.25,
+      "ohp_percent": 15,
+      "total_rate": 117.59,
+      "nrm1_l4_code": "3.3.3.1",
+      "nrm1_l3_code": "3.3.3",
+      "nrm1_l2_code": "3.3",
+      "nrm1_description": "Demountable suspended ceilings: details to be stated.",
+      "nrm2_primary_ws": "30",
+      "nrm2_primary_ws_name": "Suspended ceilings",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-CEIFIN-073",
+      "name": "Ceiling finish - suspended metal linear",
+      "description": "Baffle or strip",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.175,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 60.0
+          }
+        ],
+        "plant": [
+          {
+            "resource_id": "PLT_AU_SKID_STEER",
+            "qty": 1.0,
+            "unit": "m²"
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5249999999999999,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 28.87,
+      "materials_total": 60.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 96.47,
+      "ohp_percent": 15,
+      "total_rate": 110.94,
+      "nrm1_l4_code": "3.3.3.1",
+      "nrm1_l3_code": "3.3.3",
+      "nrm1_l2_code": "3.3",
+      "nrm1_description": "Demountable suspended ceilings: details to be stated.",
+      "nrm2_primary_ws": "30",
+      "nrm2_primary_ws_name": "Suspended ceilings",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-CEIFIN-074",
+      "name": "Ceiling finish - suspended plasterboard",
+      "description": "Seamless",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.175,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5249999999999999,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.1,
+      "labour_total": 28.87,
+      "materials_total": 15.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 48.37,
+      "ohp_percent": 15,
+      "total_rate": 55.63,
+      "nrm1_l4_code": "3.3.3.1",
+      "nrm1_l3_code": "3.3.3",
+      "nrm1_l2_code": "3.3",
+      "nrm1_description": "Demountable suspended ceilings: details to be stated.",
+      "nrm2_primary_ws": "30",
+      "nrm2_primary_ws_name": "Suspended ceilings",
+      "nrm2_primary_items": "1, 2, 3",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-CEIFIN-075",
+      "name": "Ceiling finish - timber lining",
+      "description": "Stained or clear",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PAINTER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.175,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 80.0
+          }
+        ],
+        "plant": [
+          {
+            "resource_id": "PLT_AU_SKID_STEER",
+            "qty": 1.0,
+            "unit": "m²"
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5249999999999999,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.1,
+      "labour_total": 28.87,
+      "materials_total": 80.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 119.87,
+      "ohp_percent": 15,
+      "total_rate": 137.85,
+      "nrm1_l4_code": "3.3.2.1",
+      "nrm1_l3_code": "3.3.2",
+      "nrm1_l2_code": "3.3",
+      "nrm1_description": "False ceilings: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "13, 14",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-CEIFIN-076",
+      "name": "Ceiling finish - acoustic panel",
+      "description": "Fabric wrapped",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_INSULATOR",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.175,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5249999999999999,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 28.87,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 59.72,
+      "ohp_percent": 15,
+      "total_rate": 68.68,
+      "nrm1_l4_code": "3.3.2.1",
+      "nrm1_l3_code": "3.3.2",
+      "nrm1_l2_code": "3.3",
+      "nrm1_description": "False ceilings: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "13, 14",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-CEIFIN-077",
+      "name": "Ceiling finish - exposed structure, paint",
+      "description": "Industrial aesthetic",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.175,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5249999999999999,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 28.87,
+      "materials_total": 15.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 49.22,
+      "ohp_percent": 15,
+      "total_rate": 56.6,
+      "nrm1_l4_code": "3.3.2.1",
+      "nrm1_l3_code": "3.3.2",
+      "nrm1_l2_code": "3.3",
+      "nrm1_description": "False ceilings: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "13, 14",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-CEIFIN-078",
+      "name": "Ceiling finish - fire rated 60min",
+      "description": "2 layers plasterboard",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.35,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.175,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.5249999999999999,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.1,
+      "labour_total": 28.87,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 59.37,
+      "ohp_percent": 15,
+      "total_rate": 68.28,
+      "nrm1_l4_code": "3.3.2.1",
+      "nrm1_l3_code": "3.3.2",
+      "nrm1_l2_code": "3.3",
+      "nrm1_description": "False ceilings: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "13, 14",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-COR-079",
+      "name": "Cornice - plaster cove 75mm",
+      "description": "Standard",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 15.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.1,
+      "labour_total": 20.62,
+      "materials_total": 15.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 40.12,
+      "ohp_percent": 15,
+      "total_rate": 46.14,
+      "nrm1_l4_code": "3.3.1.2",
+      "nrm1_l3_code": "3.3.1",
+      "nrm1_l2_code": "3.3",
+      "nrm1_description": "Cornices, covings and the like: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "13, 14",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-COR-080",
+      "name": "Cornice - plaster cove 100mm",
+      "description": "Larger",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 15.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.1,
+      "labour_total": 20.62,
+      "materials_total": 15.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 40.12,
+      "ohp_percent": 15,
+      "total_rate": 46.14,
+      "nrm1_l4_code": "3.3.1.2",
+      "nrm1_l3_code": "3.3.1",
+      "nrm1_l2_code": "3.3",
+      "nrm1_description": "Cornices, covings and the like: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "13, 14",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-COR-081",
+      "name": "Cornice - plaster decorative",
+      "description": "Ornate",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 15.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.1,
+      "labour_total": 20.62,
+      "materials_total": 15.0,
+      "plant_total": 3.0,
+      "waste_percent": 10,
+      "nett_total": 40.12,
+      "ohp_percent": 15,
+      "total_rate": 46.14,
+      "nrm1_l4_code": "3.3.1.2",
+      "nrm1_l3_code": "3.3.1",
+      "nrm1_l2_code": "3.3",
+      "nrm1_description": "Cornices, covings and the like: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "13, 14",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    },
+    {
+      "code": "GRP3-COR-082",
+      "name": "Cornice - shadow line",
+      "description": "Recessed detail",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_PLASTERER",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 3.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 20.62,
+      "materials_total": 25.0,
+      "plant_total": 3.0,
+      "waste_percent": 5,
+      "nett_total": 51.06,
+      "ohp_percent": 15,
+      "total_rate": 58.71,
+      "nrm1_l4_code": "3.3.1.2",
+      "nrm1_l3_code": "3.3.1",
+      "nrm1_l2_code": "3.3",
+      "nrm1_description": "Cornices, covings and the like: details to be stated.",
+      "nrm2_primary_ws": "28",
+      "nrm2_primary_ws_name": "Floor/wall/ceiling finishes",
+      "nrm2_primary_items": "13, 14",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Medium"
+    }
+  ]
+}

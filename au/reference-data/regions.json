@@ -1,0 +1,21 @@
+{
+  "meta": { "created": "2026-01-03", "market": "AU", "count": 16 },
+  "regions": [
+    { "code": "SYD_METRO", "name": "Sydney Metro", "state": "NSW", "factor": 1.00, "is_baseline": true },
+    { "code": "SYD_OUTER", "name": "Sydney Outer", "state": "NSW", "factor": 1.05 },
+    { "code": "NSW_REGIONAL", "name": "Regional NSW", "state": "NSW", "factor": 1.10 },
+    { "code": "MEL_METRO", "name": "Melbourne Metro", "state": "VIC", "factor": 0.95 },
+    { "code": "MEL_OUTER", "name": "Melbourne Outer", "state": "VIC", "factor": 1.00 },
+    { "code": "VIC_REGIONAL", "name": "Regional Victoria", "state": "VIC", "factor": 1.08 },
+    { "code": "BNE_METRO", "name": "Brisbane Metro", "state": "QLD", "factor": 0.92 },
+    { "code": "QLD_REGIONAL", "name": "Regional Queensland", "state": "QLD", "factor": 1.12 },
+    { "code": "PER_METRO", "name": "Perth Metro", "state": "WA", "factor": 1.15 },
+    { "code": "WA_REGIONAL", "name": "Regional WA", "state": "WA", "factor": 1.25 },
+    { "code": "ADL_METRO", "name": "Adelaide Metro", "state": "SA", "factor": 0.90 },
+    { "code": "SA_REGIONAL", "name": "Regional SA", "state": "SA", "factor": 1.05 },
+    { "code": "HOB_METRO", "name": "Hobart Metro", "state": "TAS", "factor": 1.08 },
+    { "code": "TAS_REGIONAL", "name": "Regional Tasmania", "state": "TAS", "factor": 1.15 },
+    { "code": "ACT", "name": "Australian Capital Territory", "state": "ACT", "factor": 1.02 },
+    { "code": "NT", "name": "Northern Territory", "state": "NT", "factor": 1.30 }
+  ]
+}

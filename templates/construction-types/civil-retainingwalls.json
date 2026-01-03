@@ -1,0 +1,314 @@
+{
+  "sector": "civil",
+  "asset_category": "retaining_walls",
+  "description": "Retaining wall templates for civil and residential projects in Australia",
+  "total_templates": 5,
+  "templates": [
+    {
+      "template_id": "concrete-retaining-low",
+      "name": "Concrete Retaining Wall - Low",
+      "description": "Low-height concrete retaining wall (1.5m) - L-shaped gravity design, suitable for residential applications, no engineering certification required",
+      "building_type": "civil_retaining_wall",
+      "sector": "civil",
+      "specifications": {
+        "specifications": {
+          "wall_height_m": 1.5,
+          "wall_length_m": 20,
+          "wall_thickness_mm": 200,
+          "wall_system": "L-shaped gravity retaining wall",
+          "foundation_type": "Reinforced concrete footing (450mm x 300mm)",
+          "foundation_depth_m": 0.3,
+          "concrete_grade": "N32 (32 MPa)",
+          "reinforcement": "N12 bars @ 300mm centres vertical and horizontal",
+          "drainage": "100mm agricultural pipe with gravel backfill",
+          "soil_conditions": "Class H (sandy clay) - moderate reactivity",
+          "engineering_required": "No certification required (<1.5m height)",
+          "finish": "Exposed aggregate or off-form concrete"
+        },
+        "project_context": {
+          "typical_use": "Residential garden terracing, driveway level changes",
+          "site_conditions": "Level to moderate slope, good drainage",
+          "access": "Standard residential access for concrete truck and excavator"
+        },
+        "assumptions": [
+          "Wall height does not exceed 1.5m (no engineering certification required in most Australian states)",
+          "Level backfill (no surcharge loads)",
+          "Standard residential soil conditions (Class H)",
+          "No groundwater issues",
+          "Concrete truck access available within 30m",
+          "Standard 28-day concrete cure time",
+          "No special architectural finish required"
+        ],
+        "exclusions": [
+          "Site survey and engineering design",
+          "Soil testing and classification",
+          "Council permits and approvals",
+          "Demolition of existing structures",
+          "Tree removal or protection",
+          "Service location and protection",
+          "Temporary shoring or support",
+          "Special finishes or cladding",
+          "Landscaping and topsoiling"
+        ]
+      },
+      "is_active": true,
+      "applicable_swaps": [],
+      "tags": [
+        "concrete",
+        "residential",
+        "low-height",
+        "gravity-wall"
+      ]
+    },
+    {
+      "template_id": "concrete-retaining-medium",
+      "name": "Concrete Retaining Wall - Medium",
+      "description": "Medium-height concrete retaining wall (3m) - Cantilever design with engineered footing, requires standard engineering certification",
+      "building_type": "civil_retaining_wall",
+      "sector": "civil",
+      "specifications": {
+        "specifications": {
+          "wall_height_m": 3.0,
+          "wall_length_m": 20,
+          "wall_thickness_mm": 250,
+          "wall_system": "Cantilever retaining wall with reinforced concrete footing",
+          "foundation_type": "Reinforced concrete pad footing (1200mm x 600mm)",
+          "foundation_depth_m": 0.6,
+          "concrete_grade": "N40 (40 MPa)",
+          "reinforcement": "N16 bars @ 200mm centres vertical, N12 @ 300mm horizontal, starter bars L-bent",
+          "drainage": "150mm slotted drainage pipe with gravel backfill and geotextile wrap",
+          "soil_conditions": "Class H to M (sandy clay to clay) - moderate to high reactivity",
+          "engineering_required": "Standard structural engineering certification required (1.5-3.5m height range)",
+          "finish": "Form-finished concrete with chamfered edges"
+        },
+        "project_context": {
+          "typical_use": "Commercial property boundaries, multi-level residential terracing, basement walls",
+          "site_conditions": "Moderate slope, controlled drainage required",
+          "access": "Good vehicular access for concrete trucks, excavators, and crane"
+        },
+        "assumptions": [
+          "Wall height between 1.5m and 3.5m (standard engineering certification required)",
+          "Level backfill with no surcharge loads (vehicles/structures)",
+          "Standard soil conditions (Class H or M)",
+          "No groundwater within 1m of wall base",
+          "Concrete truck and crane access available",
+          "Engineering design provided (not included in rate)",
+          "Standard 28-day concrete cure time",
+          "Weather delays allowed in program"
+        ],
+        "exclusions": [
+          "Site survey and geotechnical investigation",
+          "Structural and civil engineering design fees",
+          "Council permits, DA approvals, and certification",
+          "Demolition of existing structures",
+          "Service relocation or protection",
+          "Temporary shoring, propping, or underpinning",
+          "Dewatering or groundwater control",
+          "Special architectural finishes or cladding systems",
+          "Landscaping, turfing, and topsoiling",
+          "Traffic management or road closures"
+        ]
+      },
+      "is_active": true,
+      "applicable_swaps": [],
+      "tags": [
+        "concrete",
+        "residential",
+        "commercial",
+        "medium-height",
+        "cantilever",
+        "engineered"
+      ]
+    },
+    {
+      "template_id": "concrete-retaining-high",
+      "name": "Concrete Retaining Wall - High",
+      "description": "High-height concrete retaining wall (6m) - Anchored/tieback cantilever system, requires specialist engineering and construction methodology",
+      "building_type": "civil_retaining_wall",
+      "sector": "civil",
+      "specifications": {
+        "specifications": {
+          "wall_height_m": 6.0,
+          "wall_length_m": 20,
+          "wall_thickness_mm": 350,
+          "wall_system": "Anchored cantilever retaining wall with ground anchors or tiebacks",
+          "foundation_type": "Reinforced concrete spread footing (2000mm x 1000mm) or piled foundation",
+          "foundation_depth_m": 1.0,
+          "concrete_grade": "N50 (50 MPa) for wall, N40 for footing",
+          "reinforcement": "N20 bars @ 200mm centres vertical and horizontal, heavy mesh top/bottom, anchor embedment zones",
+          "anchors": "Post-tensioned ground anchors @ 2-3m centres, 10-15m length, 150-200kN capacity",
+          "drainage": "200mm slotted drainage pipe with gravel drainage layer, weepholes @ 2m centres",
+          "soil_conditions": "Engineered design for site-specific soil (Class M to E) - high to extreme reactivity",
+          "engineering_required": "Specialist structural and geotechnical engineering certification (>3.5m height)",
+          "finish": "Form-finished concrete with architectural treatment or cladding system"
+        },
+        "project_context": {
+          "typical_use": "Major infrastructure, commercial developments, basement excavations, hillside developments",
+          "site_conditions": "Steep slopes, complex site constraints, may include surcharge loads",
+          "access": "Specialist equipment access required - piling rig, drilling rig, large crane, concrete pumps"
+        },
+        "assumptions": [
+          "Wall height exceeds 3.5m (specialist engineering and certification required)",
+          "Ground anchor installation feasible (suitable founding strata available)",
+          "Site-specific geotechnical investigation completed",
+          "Specialist engineering design provided (not included)",
+          "No adjacent structures within zone of influence (or temporary support designed)",
+          "Anchor drilling and testing program included in methodology",
+          "Load testing of anchors to 150% design load",
+          "Extended construction program (12-16 weeks typical)",
+          "Quality assurance inspections by structural engineer",
+          "Concrete pump access available (restricted truck access)"
+        ],
+        "exclusions": [
+          "Site survey, geotechnical investigation, and soil testing",
+          "Structural, civil, and geotechnical engineering design fees",
+          "Council permits, DA approvals, CC certifications, and BCA compliance",
+          "Demolition, excavation support, and underpinning of adjacent structures",
+          "Temporary shoring, sheet piling, or soldier pile walls",
+          "Dewatering systems, groundwater monitoring, and environmental controls",
+          "Service relocation, protection, or underpinning",
+          "Piling works if required for foundation support",
+          "Architectural cladding systems or facade treatments",
+          "Traffic management, road closures, and pedestrian controls",
+          "Environmental monitoring and reporting",
+          "Landscaping and site reinstatement"
+        ]
+      },
+      "is_active": true,
+      "applicable_swaps": [],
+      "tags": [
+        "concrete",
+        "commercial",
+        "high-height",
+        "anchored",
+        "specialist",
+        "tieback"
+      ]
+    },
+    {
+      "template_id": "masonry-retaining-medium",
+      "name": "Masonry Retaining Wall",
+      "description": "Medium-height masonry retaining wall (2m) - Mortared concrete block construction with reinforced concrete footing, standard engineering required",
+      "building_type": "civil_retaining_wall",
+      "sector": "civil",
+      "specifications": {
+        "specifications": {
+          "wall_height_m": 2.0,
+          "wall_length_m": 20,
+          "wall_thickness_mm": 200,
+          "wall_system": "Reinforced mortared concrete block retaining wall",
+          "block_type": "200mm concrete masonry units (CMU) - nominal 190mm",
+          "foundation_type": "Reinforced concrete strip footing (600mm x 400mm)",
+          "foundation_depth_m": 0.4,
+          "concrete_grade": "N32 (32 MPa) for footing",
+          "reinforcement": "N12 vertical bars @ 400mm centres grouted into cores, N12 horizontal bond beam @ every 4th course",
+          "mortar": "M3 mortar (cement:lime:sand 1:1:6) for general blockwork, M4 for bond beams",
+          "drainage": "100mm agricultural pipe with gravel backfill, weepholes @ 2m centres",
+          "soil_conditions": "Class H to M (sandy clay to clay) - moderate to high reactivity",
+          "engineering_required": "Standard structural engineering certification required (1.5-3.5m height range)",
+          "finish": "Rendered and painted, or face block exposed finish"
+        },
+        "project_context": {
+          "typical_use": "Residential boundary walls, garden terracing, pool surrounds",
+          "site_conditions": "Moderate slope, good drainage, stable founding layer",
+          "access": "Standard residential access for concrete truck, block delivery, and excavator"
+        },
+        "assumptions": [
+          "Wall height between 1.5m and 3.5m (standard engineering certification required)",
+          "Level backfill with no surcharge loads",
+          "Standard soil conditions (Class H or M)",
+          "No groundwater issues",
+          "Concrete truck access for footing pour",
+          "Block delivery and storage area available on site",
+          "Engineering design provided (not included in rate)",
+          "Weather protection during construction (mortar cure time)",
+          "Standard render finish (allowance included)"
+        ],
+        "exclusions": [
+          "Site survey and geotechnical investigation",
+          "Structural engineering design fees",
+          "Council permits and approvals",
+          "Demolition of existing structures",
+          "Service location and protection",
+          "Temporary shoring or support works",
+          "Premium face block finishes or stone cladding",
+          "Special render systems or waterproofing membranes",
+          "Coping stones or capping systems (unless specified)",
+          "Landscaping and topsoiling"
+        ]
+      },
+      "is_active": true,
+      "applicable_swaps": [],
+      "tags": [
+        "masonry",
+        "concrete-block",
+        "residential",
+        "medium-height",
+        "engineered"
+      ]
+    },
+    {
+      "template_id": "gabion-retaining-medium",
+      "name": "Gabion Retaining Wall",
+      "description": "Medium-height gabion retaining wall (2.5m) - Rock-filled wire basket system with natural finish, standard engineering required",
+      "building_type": "civil_retaining_wall",
+      "sector": "civil",
+      "specifications": {
+        "specifications": {
+          "wall_height_m": 2.5,
+          "wall_length_m": 20,
+          "wall_thickness_mm": 1000,
+          "wall_system": "Stepped gabion basket retaining wall (500mm stepped batter)",
+          "basket_type": "1000mm x 500mm x 500mm galvanized wire mesh gabion baskets (4mm wire, 80x100mm mesh)",
+          "foundation_type": "Compacted crushed rock base (300mm depth) or shallow concrete footing",
+          "foundation_depth_m": 0.3,
+          "rock_fill": "150-300mm diameter rock (granite, basalt, or sandstone) - min 2.5 T/m³ density",
+          "drainage": "Free-draining through gabion structure, 100mm slotted pipe behind wall with gravel",
+          "soil_conditions": "Class H to M - suitable for moderate slopes and erosion control",
+          "engineering_required": "Standard structural engineering certification required (1.5-3.5m height range)",
+          "finish": "Natural rock face, no additional finish required"
+        },
+        "project_context": {
+          "typical_use": "Landscape features, creek bank stabilization, erosion control, commercial landscaping",
+          "site_conditions": "Moderate slopes, areas requiring natural aesthetics and drainage",
+          "access": "Truck access for rock delivery, excavator for placement"
+        },
+        "assumptions": [
+          "Wall height between 1.5m and 3.5m (standard engineering certification required)",
+          "Stepped batter design (100mm step per 500mm basket height)",
+          "Level to moderate slope conditions",
+          "Rock fill material available locally (60km max haul distance)",
+          "Free-draining backfill (no fines or clay)",
+          "Basket assembly and rock filling by hand or excavator",
+          "Engineering design provided (not included in rate)",
+          "No special rock color or type specified (standard local rock)",
+          "Standard galvanized baskets (25+ year design life)"
+        ],
+        "exclusions": [
+          "Site survey and geotechnical investigation",
+          "Structural and civil engineering design fees",
+          "Council permits and environmental approvals",
+          "Vegetation clearing and disposal",
+          "Erosion and sediment control during construction",
+          "Service location and protection",
+          "Premium rock types (colored, imported, or specialty stone)",
+          "PVC-coated or stainless steel baskets",
+          "Geotextile separation layers (unless specified)",
+          "Planting pockets or vegetated gabion systems",
+          "Landscaping, mulching, and planting",
+          "Long-term maintenance or basket inspection"
+        ]
+      },
+      "is_active": true,
+      "applicable_swaps": [],
+      "tags": [
+        "gabion",
+        "rockfill",
+        "residential",
+        "commercial",
+        "medium-height",
+        "natural-finish"
+      ]
+    }
+  ]
+}

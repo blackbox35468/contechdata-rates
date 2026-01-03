@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "source": "Composite_Rate_Template.xlsx",
+    "extracted": "2026-01-03",
+    "sheet": "Ref - Gangs",
+    "count": 6
+  },
+  "gangs": [
+    {
+      "code": "GANG_AU_GENERAL_1_0",
+      "name": "1 Tradesman only",
+      "composition": {
+        "tradesperson": 1,
+        "labourer": 0
+      },
+      "combined_rate": 65.0,
+      "unit": "hr"
+    },
+    {
+      "code": "GANG_AU_GENERAL_1_0.5",
+      "name": "1 Tradesman + half labourer",
+      "composition": {
+        "tradesperson": 1,
+        "labourer": 0.5
+      },
+      "combined_rate": 82.5,
+      "unit": "hr"
+    },
+    {
+      "code": "GANG_AU_GENERAL_1_1",
+      "name": "1 Tradesman + 1 labourer",
+      "composition": {
+        "tradesperson": 1,
+        "labourer": 1
+      },
+      "combined_rate": 95.0,
+      "unit": "hr"
+    },
+    {
+      "code": "GANG_AU_GENERAL_2_1",
+      "name": "2 Tradesmen + 1 labourer",
+      "composition": {
+        "tradesperson": 2,
+        "labourer": 1
+      },
+      "combined_rate": 165.0,
+      "unit": "hr"
+    },
+    {
+      "code": "GANG_AU_GENERAL_0_1",
+      "name": "1 Labourer only",
+      "composition": {
+        "tradesperson": 0,
+        "labourer": 1
+      },
+      "combined_rate": 55.0,
+      "unit": "hr"
+    },
+    {
+      "code": "GANG_AU_GENERAL_0_2",
+      "name": "2 Labourers",
+      "composition": {
+        "tradesperson": 0,
+        "labourer": 2
+      },
+      "combined_rate": 110.0,
+      "unit": "hr"
+    }
+  ]
+}

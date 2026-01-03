@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "created": "2026-01-03",
+    "count": 16
+  },
+  "building_types": [
+    {
+      "code": "RES_HOUSE",
+      "name": "Detached House",
+      "category": "residential",
+      "complexity": "standard"
+    },
+    {
+      "code": "RES_TOWNHOUSE",
+      "name": "Townhouse",
+      "category": "residential",
+      "complexity": "standard"
+    },
+    {
+      "code": "RES_APARTMENT_LOW",
+      "name": "Low-rise Apartment (1-3 storeys)",
+      "category": "residential",
+      "complexity": "medium"
+    },
+    {
+      "code": "RES_APARTMENT_MID",
+      "name": "Mid-rise Apartment (4-8 storeys)",
+      "category": "residential",
+      "complexity": "high"
+    },
+    {
+      "code": "RES_APARTMENT_HIGH",
+      "name": "High-rise Apartment (9+ storeys)",
+      "category": "residential",
+      "complexity": "very_high"
+    },
+    {
+      "code": "COM_OFFICE_LOW",
+      "name": "Low-rise Office",
+      "category": "commercial",
+      "complexity": "medium"
+    },
+    {
+      "code": "COM_OFFICE_HIGH",
+      "name": "High-rise Office",
+      "category": "commercial",
+      "complexity": "very_high"
+    },
+    {
+      "code": "COM_RETAIL",
+      "name": "Retail/Shopping",
+      "category": "commercial",
+      "complexity": "medium"
+    },
+    {
+      "code": "COM_HOTEL",
+      "name": "Hotel",
+      "category": "commercial",
+      "complexity": "high"
+    },
+    {
+      "code": "IND_WAREHOUSE",
+      "name": "Warehouse",
+      "category": "industrial",
+      "complexity": "low"
+    },
+    {
+      "code": "IND_FACTORY",
+      "name": "Factory/Manufacturing",
+      "category": "industrial",
+      "complexity": "medium"
+    },
+    {
+      "code": "EDU_SCHOOL",
+      "name": "School",
+      "category": "institutional",
+      "complexity": "medium"
+    },
+    {
+      "code": "EDU_UNIVERSITY",
+      "name": "University/TAFE",
+      "category": "institutional",
+      "complexity": "high"
+    },
+    {
+      "code": "HEALTH_CLINIC",
+      "name": "Medical Clinic",
+      "category": "health",
+      "complexity": "medium"
+    },
+    {
+      "code": "HEALTH_HOSPITAL",
+      "name": "Hospital",
+      "category": "health",
+      "complexity": "very_high"
+    },
+    {
+      "code": "CIVIC_COMMUNITY",
+      "name": "Community Centre",
+      "category": "civic",
+      "complexity": "medium"
+    }
+  ]
+}

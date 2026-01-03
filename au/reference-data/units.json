@@ -1,0 +1,274 @@
+{
+  "meta": {
+    "created": "2026-01-03",
+    "count": 38
+  },
+  "units": [
+    {
+      "code": "m",
+      "name": "Linear metre",
+      "symbol": "m",
+      "category": "length",
+      "description": "Unit of length used for linear measurements"
+    },
+    {
+      "code": "m2",
+      "name": "Square metre",
+      "symbol": "m²",
+      "category": "area",
+      "description": "Unit of area used for flooring, walls, roofing, and surface coverage"
+    },
+    {
+      "code": "m3",
+      "name": "Cubic metre",
+      "symbol": "m³",
+      "category": "volume",
+      "description": "Unit of volume used for concrete, excavation, and material quantities"
+    },
+    {
+      "code": "mm",
+      "name": "Millimetre",
+      "symbol": "mm",
+      "category": "length",
+      "description": "Sub-unit of length for precise measurements"
+    },
+    {
+      "code": "cm",
+      "name": "Centimetre",
+      "symbol": "cm",
+      "category": "length",
+      "description": "Sub-unit of length"
+    },
+    {
+      "code": "km",
+      "name": "Kilometre",
+      "symbol": "km",
+      "category": "length",
+      "description": "Unit of length for longer distances"
+    },
+    {
+      "code": "ha",
+      "name": "Hectare",
+      "symbol": "ha",
+      "category": "area",
+      "description": "Unit of area for land measurement (10,000 m²)"
+    },
+    {
+      "code": "nr",
+      "name": "Number",
+      "symbol": "nr",
+      "category": "count",
+      "description": "Unit count for discrete items or components"
+    },
+    {
+      "code": "item",
+      "name": "Item",
+      "symbol": "item",
+      "category": "count",
+      "description": "Single item or unit count"
+    },
+    {
+      "code": "each",
+      "name": "Each",
+      "symbol": "ea",
+      "category": "count",
+      "description": "Per each item"
+    },
+    {
+      "code": "pair",
+      "name": "Pair",
+      "symbol": "pr",
+      "category": "count",
+      "description": "Two items together"
+    },
+    {
+      "code": "set",
+      "name": "Set",
+      "symbol": "set",
+      "category": "count",
+      "description": "Collection of items"
+    },
+    {
+      "code": "t",
+      "name": "Tonne",
+      "symbol": "t",
+      "category": "weight",
+      "description": "Metric ton (1000 kg) for material quantities"
+    },
+    {
+      "code": "kg",
+      "name": "Kilogram",
+      "symbol": "kg",
+      "category": "weight",
+      "description": "Unit of mass or weight"
+    },
+    {
+      "code": "g",
+      "name": "Gram",
+      "symbol": "g",
+      "category": "weight",
+      "description": "Sub-unit of weight"
+    },
+    {
+      "code": "l",
+      "name": "Litre",
+      "symbol": "L",
+      "category": "volume",
+      "description": "Unit of liquid or fluid volume"
+    },
+    {
+      "code": "ml",
+      "name": "Millilitre",
+      "symbol": "mL",
+      "category": "volume",
+      "description": "Sub-unit of liquid volume"
+    },
+    {
+      "code": "hr",
+      "name": "Hour",
+      "symbol": "hr",
+      "category": "time",
+      "description": "Unit of time for labour and equipment rental"
+    },
+    {
+      "code": "day",
+      "name": "Day",
+      "symbol": "day",
+      "category": "time",
+      "description": "Unit of time (8 hours or 24 hours depending on context)"
+    },
+    {
+      "code": "wk",
+      "name": "Week",
+      "symbol": "wk",
+      "category": "time",
+      "description": "Unit of time (7 days)"
+    },
+    {
+      "code": "mth",
+      "name": "Month",
+      "symbol": "mth",
+      "category": "time",
+      "description": "Unit of time (approximately 30 days)"
+    },
+    {
+      "code": "yr",
+      "name": "Year",
+      "symbol": "yr",
+      "category": "time",
+      "description": "Unit of time (12 months)"
+    },
+    {
+      "code": "ls",
+      "name": "Lump sum",
+      "symbol": "LS",
+      "category": "provisional",
+      "description": "Fixed price for complete work item or component"
+    },
+    {
+      "code": "prov",
+      "name": "Provisional sum",
+      "symbol": "PS",
+      "category": "provisional",
+      "description": "Allowance for work where final quantity is uncertain"
+    },
+    {
+      "code": "cont",
+      "name": "Contingency",
+      "symbol": "CONT",
+      "category": "provisional",
+      "description": "Allowance for unforeseen costs or variations"
+    },
+    {
+      "code": "pc",
+      "name": "Prime cost",
+      "symbol": "PC",
+      "category": "provisional",
+      "description": "Allowance for materials to be selected later"
+    },
+    {
+      "code": "sqft",
+      "name": "Square foot",
+      "symbol": "ft²",
+      "category": "area",
+      "description": "Imperial unit of area (sometimes used in Australia for legacy estimates)"
+    },
+    {
+      "code": "lft",
+      "name": "Linear foot",
+      "symbol": "ft",
+      "category": "length",
+      "description": "Imperial unit of length (sometimes used in Australia for legacy estimates)"
+    },
+    {
+      "code": "cbft",
+      "name": "Cubic foot",
+      "symbol": "ft³",
+      "category": "volume",
+      "description": "Imperial unit of volume"
+    },
+    {
+      "code": "tonne",
+      "name": "Tonne (alternate)",
+      "symbol": "tonne",
+      "category": "weight",
+      "description": "Metric ton expressed as full word"
+    },
+    {
+      "code": "run",
+      "name": "Running metre",
+      "symbol": "rm",
+      "category": "length",
+      "description": "Linear metre, typically for materials sold by the metre"
+    },
+    {
+      "code": "lin",
+      "name": "Linear",
+      "symbol": "lin",
+      "category": "length",
+      "description": "Linear measurement unit"
+    },
+    {
+      "code": "sqm",
+      "name": "Square metre (alternate)",
+      "symbol": "sqm",
+      "category": "area",
+      "description": "Square metre expressed as combined notation"
+    },
+    {
+      "code": "cum",
+      "name": "Cubic metre (alternate)",
+      "symbol": "cum",
+      "category": "volume",
+      "description": "Cubic metre expressed as combined notation"
+    },
+    {
+      "code": "hr-labour",
+      "name": "Labour hour",
+      "symbol": "hr",
+      "category": "time",
+      "description": "Hour of labour work"
+    },
+    {
+      "code": "hr-equipment",
+      "name": "Equipment hour",
+      "symbol": "hr",
+      "category": "time",
+      "description": "Hour of equipment hire or operation"
+    },
+    {
+      "code": "allowance",
+      "name": "Allowance",
+      "symbol": "ALW",
+      "category": "provisional",
+      "description": "General allowance for undefined work"
+    },
+    {
+      "code": "fixed",
+      "name": "Fixed rate",
+      "symbol": "FIX",
+      "category": "provisional",
+      "description": "Fixed rate regardless of quantity"
+    }
+  ]
+}

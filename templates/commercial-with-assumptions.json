@@ -1,0 +1,1756 @@
+{
+  "sector": "commercial",
+  "description": "Commercial building templates - offices, retail shops, cafes/restaurants, and food courts with comprehensive measurement assumptions and productivity standards",
+  "total_templates": 10,
+  "templates": [
+    {
+      "template_id": "au-com-office-small-150",
+      "name": "Small Office",
+      "description": "Single storey small office, 150m² GFA, cavity brick with metal stud, flat roof, slab on ground",
+      "building_type": "commercial_office",
+      "sector": "commercial",
+      "specifications": {
+        "gfa_m2": 150,
+        "storeys": 1,
+        "default_construction": "cavity_brick_metal_stud",
+        "construction_notes": "110mm face brick + 90mm cavity + 90mm metal stud + 13mm plasterboard",
+        "default_roofing": "metal",
+        "roof_type": "Metal Deck with membrane",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 3.0,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian business park"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Commercial GFA measured from internal faces of external walls at 1.4m height. Includes office, reception, meeting rooms, toilets, kitchenette. Excludes carpark, external plant.",
+        "typical_layout": {
+          "open_office_area": "80m²",
+          "private_offices": "30m² (2x 3.5m × 4.2m)",
+          "reception": "12m² (3.5m × 3.4m)",
+          "meeting_room": "12m² (3.5m × 3.4m)",
+          "toilets": "8m² (2 cubicles + 2 basins)",
+          "kitchenette_and_storage": "8m²"
+        },
+        "derivation_notes": "Small office suitable for 12-15 staff. Open plan maximum 80m² with 3.0m ceiling allows natural ventilation and daylighting. Private offices sized for executive/manager roles. Bathroom provision = 1 WC per 8m² office area (approximately 2 toilets for 150m²).",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Toilet blocks",
+              "scaling_rule": "1 cubicle per 75m² GFA (150m² = 2 cubicles minimum). Each toilet requires 1 basin. Not linear with GFA.",
+              "derivation": "150m² ÷ 75m² per toilet = 2 cubicles"
+            },
+            {
+              "item": "Kitchenette fittings",
+              "scaling_rule": "1 kitchenette per 75m² GFA. Includes sink, cooktop, fridge space, benchtop.",
+              "derivation": "150m² ÷ 75m² = 1 kitchenette"
+            },
+            {
+              "item": "HVAC zones",
+              "scaling_rule": "1-2 zones per storey for open plan. Meeting rooms separate zone.",
+              "derivation": "150m² single storey = 1 main zone + 1 secondary zone"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(GFA × 4) × 1.2 (Commercial shape adjustment factor)",
+          "calculation": "√(150 × 4) × 1.2 = √600 × 1.2 = 24.49 × 1.2 = 29.4m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height",
+          "calculation": "29.4m × 3.0m = 88.2m²",
+          "waste_applied": "Cavity brick 1.07 (7% waste) = 94.4m² for material takeoff",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.15 (pitch factor for flat/low-slope roof)",
+          "calculation": "150m² × 1.15 = 172.5m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 181.1m² installed",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "internal_wall_framing": {
+          "formula": "Internal Walls = (GFA × 0.25 wall_factor) / ceiling_height × 2 (upper + lower)",
+          "calculation": "150m² × 0.25 = 37.5m, × 2 faces × 3.0m = 225m linear, ÷ 4 width = 56.25m² stud area",
+          "waste_applied": "Timber framing 1.10 (10% waste) = 61.9m² framing labour",
+          "nrm_reference": "2.4 (Interior partitions)"
+        },
+        "flooring": {
+          "formula": "Floor Finish Area = GFA (all areas receive finish)",
+          "calculation": "150m² polished concrete screed",
+          "waste_applied": "Concrete 1.05 (5% waste) for screed = 157.5m²",
+          "nrm_reference": "3.2 Floor Finishes"
+        },
+        "ceiling": {
+          "formula": "Ceiling Area = GFA × 1.05 (suspended ceiling allowance)",
+          "calculation": "150m² × 1.05 = 157.5m² (partial drop ceiling over corridor/meeting areas)",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 173.25m²",
+          "nrm_reference": "3.5 Suspended Ceilings"
+        },
+        "power_points": {
+          "formula": "Power Points = GFA ÷ 4m² (commercial standard)",
+          "calculation": "150m² ÷ 4 = 37.5 → 38 power points",
+          "notes": "Standard office workstation (6-8m²) requires 2-3 power points. 38 points includes desk circuits, floor boxes.",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 6m² (commercial standard)",
+          "calculation": "150m² ÷ 6 = 25 light points",
+          "notes": "Includes ceiling penetrations, emergency lighting, task lighting.",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = 1 per 30m² commercial area",
+          "calculation": "150m² ÷ 30 = 5 fixtures (2 WC + 3 basins typical)",
+          "waste_applied": "Plumbing pipe 1.05 (5% waste) for rough-in routing",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        }
+      },
+      "productivity_standards": {
+        "cavity_brickwork": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "2 bricklayers + 1 labourer (3-person)",
+          "multiplier": "1.00 (standard crew)",
+          "derivation": "External walls 94.4m² ÷ 5.78 m²/day = 16.3 person-days, ÷ 2 = 8.2 days (3-person gang)",
+          "adjustment_factors": "None (baseline site conditions assumed)"
+        },
+        "metal_stud_and_plasterboard": {
+          "trade": "Carpentry + Plasterboard Fixing",
+          "frame_rate": "2-3 m²/day (metal stud framing)",
+          "plasterboard_rate": "40-60 m²/day (fixing)",
+          "jointing_rate": "30-50 m²/day (taping & jointing)",
+          "gang_size": "1 carpenter + 1 labourer (framing); 2-3 fixers (plasterboard)",
+          "multiplier": "1.00 (standard)",
+          "internal_wall_derivation": "56.25m² stud area ÷ 2.5 m²/day = 22.5 days (1 carpenter)"
+        },
+        "metal_roof_installation": {
+          "trade": "Roofing",
+          "rate": "50-70 m² per 2-person team per day",
+          "gang_size": "2 roofers + 1 labourer",
+          "multiplier": "0.95 (roof height factor at 3.0m)",
+          "derivation": "181.1m² roof ÷ 60 m²/day = 3.0 days"
+        },
+        "painting_interior": {
+          "trade": "Painting",
+          "rate": "2.5 m²/hour (interior wall + ceiling)",
+          "gang_size": "1-2 painters (solo or pair)",
+          "multiplier": "1.00 (interior, standard height)",
+          "wall_area_derivation": "150m² × 4 walls ÷ 3.0m ceiling = 200 m² wall area, 200m² ÷ 2.5 m²/hr = 80 hours = 10 days (1 painter)",
+          "surface_prep_addition": "+30% for surface prep (9mm blockboard backing, joint finishing)"
+        },
+        "electrical_installation": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours per visit (industry standard)",
+          "first_fix_roughin": "38 power points × 0.4 hrs = 15.2 hours; 25 light points × 0.7 hrs = 17.5 hours; total first-fix ~34 hours",
+          "second_fix_final": "38 power outlets × 0.3 hrs = 11.4 hours; switches/testing ~8 hours; total ~20 hours",
+          "gang_size": "1 electrician + 1 apprentice (2-person)",
+          "multiplier": "1.00 (standard office fit-out)",
+          "derivation": "54 hours labour ÷ 8 hrs/day = 6.75 days (1.5 person team)"
+        },
+        "plumbing_installation": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours per site visit",
+          "fixture_labour": "2 WC suites × 2.5 hrs = 5 hrs; 3 basins × 2.0 hrs = 6 hrs; total fixtures ~11 hours",
+          "rough_in_drainage": "Approximate 60m pipe rough-in, 60m ÷ 10m per 4 hrs = 24 hours rough-in",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": "1.00 (baseline)",
+          "derivation": "35 hours labour ÷ 8 hrs/day = 4.4 days (specialist crew)"
+        },
+        "hvac_mechanical": {
+          "trade": "HVAC Specialist",
+          "system_type": "1-2 zone split system for 150m² office",
+          "minimum_callout": "4 hours per visit",
+          "installation_time": "16-20 hours for indoor + outdoor units + ductwork",
+          "gang_size": "1 HVAC tech + 1 assistant",
+          "multiplier": "1.05 (commercial system complexity)",
+          "derivation": "18 hours ÷ 8 hrs/day = 2.25 days"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.10,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.10,
+        "floor_wall_tiles": 1.10,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": ["cladding", "flooring", "windows"],
+      "tags": ["commercial", "office", "single_storey", "new_build", "australia", "small"]
+    },
+    {
+      "template_id": "au-com-office-medium-400",
+      "name": "Medium Office",
+      "description": "Two storey medium office, 400m² GFA, cavity brick with metal stud, flat roof with metal deck",
+      "building_type": "commercial_office",
+      "sector": "commercial",
+      "specifications": {
+        "gfa_m2": 400,
+        "storeys": 2,
+        "default_construction": "cavity_brick_metal_stud",
+        "construction_notes": "110mm face brick + 90mm cavity + 90mm metal stud + 13mm plasterboard",
+        "default_roofing": "metal",
+        "roof_type": "Metal Deck with membrane",
+        "foundation_type": "Slab on Ground with piers",
+        "ceiling_height_m": 3.0,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian suburban business park"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Commercial GFA measured from internal faces at 1.4m height. Ground floor: reception, open plan, meeting rooms, toilets, kitchenette. First floor: open plan office, manager offices, meeting room, toilets.",
+        "typical_layout": {
+          "ground_floor": {
+            "reception_foyer": "15m² (4.2m × 3.5m)",
+            "meeting_room": "20m² (5.0m × 4.0m)",
+            "open_office": "100m²",
+            "toilets": "15m² (3 cubicles + 4 basins, ADA-compliant)",
+            "kitchenette_storage": "20m²",
+            "circulation": "30m²"
+          },
+          "first_floor": {
+            "open_office": "130m²",
+            "manager_offices": "50m² (5x 3.5m × 3.0m)",
+            "meeting_room": "24m² (6.0m × 4.0m)",
+            "toilets": "15m² (3 cubicles + 4 basins)",
+            "storage": "10m²",
+            "circulation": "31m²"
+          }
+        },
+        "derivation_notes": "Medium office supports 30-40 staff across two storeys. GFA 400m² = 200m² per storey. Stairwell ~12m² per floor (not double-counted in GFA per NCC). Toilet provision = 1 WC per 50m² (400m² = 8 WC minimum, provided as 6 cubicles + 8 basins). Ceiling height 3.0m supports mechanical services above suspended ceiling.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Staircase",
+              "scaling_rule": "Single central stairwell serves 2 storeys. Width 1.2m (code minimum), landing 2.0m × 2.0m. Approximately 18-20 treads.",
+              "derivation": "1 stairwell × 22 steps × 2 flights = 1 stair run per template (not scaled with GFA)"
+            },
+            {
+              "item": "Toilet blocks",
+              "scaling_rule": "1 cubicle per 50m² (commercial minimum). Ground + First = 400m² ÷ 50 = 8 cubicles (split into 4 per floor + adjacent basins).",
+              "derivation": "400m² ÷ 50m² = 8 WC cubicles + 8 basins = non-linear count"
+            },
+            {
+              "item": "HVAC zones",
+              "scaling_rule": "Typically 2-3 zones per storey (north + south exposure). 2 storeys = 4-6 zones minimum.",
+              "derivation": "Ground floor (perimeter exposure) = 2 zones; First floor = 2 zones"
+            },
+            {
+              "item": "Lifts/Elevators",
+              "scaling_rule": "Not required for 2 storeys under NCC. Accessible ramp required if public access.",
+              "derivation": "Small building exemption (≤2000m² and ≤2 storeys allows stairs only)"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(GFA_per_storey × 4) × 1.2",
+          "calculation": "Per storey: √(200 × 4) × 1.2 = √800 × 1.2 = 28.28 × 1.2 = 33.9m",
+          "note": "Each storey has independent perimeter; total building perimeter multiplied by 2 for external wall calculation"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height × Number of Storeys",
+          "calculation": "33.9m × 3.0m × 2 = 203.4m² (excluding parapet, soffit)",
+          "waste_applied": "Cavity brick 1.07 (7% waste) = 217.6m² gross",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = Floor_area_per_storey × 1.15 (flat roof factor)",
+          "calculation": "200m² × 1.15 = 230m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 241.5m² installed",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "floor_structure": {
+          "formula": "Upper floor = GFA storey area + beams/joists, typically +5-8% for structural depth",
+          "calculation": "200m² × 1.08 = 216m² (includes structural beam zones in GFA measurement)",
+          "waste_applied": "Concrete 1.05 (5% waste) for screed = 226.8m²",
+          "nrm_reference": "2.2 Upper Floors"
+        },
+        "internal_wall_framing": {
+          "formula": "Wall Length = √(GFA × 4) × 0.8 (internal partition factor)",
+          "calculation": "√(400 × 4) × 0.8 = 40 × 0.8 = 32m linear of partitions per storey × 2 = 64m",
+          "wall_area": "64m × 3.0m height = 192m² partition area × 2 faces = 384m² stud framing",
+          "waste_applied": "Timber 1.10 (10% waste) = 422.4m² labour",
+          "nrm_reference": "2.4 Internal Partitions"
+        },
+        "flooring_finish": {
+          "formula": "Floor Finish = GFA (all areas finished)",
+          "calculation": "400m² polished concrete screed + carpet tiles (60% of area)",
+          "waste_applied": "Concrete base 1.05 (5%); Carpet 1.15 (15% waste) = 230m² screed + 276m² carpet tiles",
+          "nrm_reference": "3.2 Floor Finishes"
+        },
+        "ceiling_finish": {
+          "formula": "Ceiling = GFA × 1.08 (suspended ceiling with minor void)",
+          "calculation": "400m² × 1.08 = 432m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 475.2m²",
+          "nrm_reference": "3.5 Suspended Ceilings"
+        },
+        "power_points_commercial": {
+          "formula": "Power Points = GFA ÷ 4m² (commercial standard)",
+          "calculation": "400m² ÷ 4 = 100 power points",
+          "distribution": "60 at desks (open plan), 30 at manager offices, 10 at meeting/service areas"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 6m²",
+          "calculation": "400m² ÷ 6 = 66 light points",
+          "distribution": "LED recessed downlights over office areas, task lighting in meeting rooms"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = 1 per 30m² for commercial buildings",
+          "calculation": "400m² ÷ 30 = 13.3 → 14 fixtures minimum (8 WC cubicles + 8 basins + 2 service sinks)"
+        }
+      },
+      "productivity_standards": {
+        "cavity_brickwork": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "2 bricklayers + 1 labourer (3-person standard gang)",
+          "multiplier": "1.00 (baseline, level access)",
+          "derivation": "External walls 217.6m² ÷ 5.78 m²/day = 37.6 person-days, ÷ 2 bricklayers = 18.8 days (3-person gang at ~25 m²/day team rate)"
+        },
+        "metal_stud_and_plasterboard": {
+          "trade": "Carpentry + Plasterboard",
+          "frame_rate": "2.0-2.5 m²/day (metal stud on 2 floors)",
+          "plasterboard_fixing_rate": "40-60 m²/day (two storeys, overhead work penalty)",
+          "jointing_taping_rate": "30-50 m²/day (2-person tapers)",
+          "gang_size": "2 carpenters + 1 labourer (framing); 3-4 fixers (plasterboard on 2 floors)",
+          "multiplier": "0.95 (multi-storey coordination overhead)",
+          "derivation": "422.4m² stud ÷ 2.25 m²/day (adjusted) = 187.7 labour-hours"
+        },
+        "flooring_installation": {
+          "trade": "Flooring Specialist",
+          "concrete_screed": "30-50 m²/day (smooth trowel finish)",
+          "carpet_tiles": "20-30 m²/day (modular installation)",
+          "gang_size": "2 floor layers + 1 laborer",
+          "multiplier": "1.00 (standard, ground + elevated)",
+          "derivation": "230m² screed ÷ 40 m²/day = 5.75 days; 276m² carpet ÷ 25 m²/day = 11 days"
+        },
+        "metal_roof": {
+          "trade": "Roofing",
+          "rate": "50-70 m²/2-person/day",
+          "gang_size": "2 roofers + 1 labourer",
+          "multiplier": "1.00 (flat roof, safe working platform at 3.0m)",
+          "derivation": "241.5m² ÷ 60 m²/day = 4.0 days"
+        },
+        "painting_interior_walls_ceilings": {
+          "trade": "Painting",
+          "wall_rate": "2.5 m²/hour interior",
+          "ceiling_rate": "1.5 m²/hour (overhead work penalty)",
+          "gang_size": "1-2 painters (solo baseline)",
+          "multiplier": "0.95 (multi-level coordination, stairwell complexity)",
+          "wall_area": "203.4m perimeter × 3.0m × 2 = 1,220m² internal walls + 432m² ceiling = 1,652m² total",
+          "derivation": "1,220m² walls ÷ 2.5 m²/hr = 488 hours; 432m² ceiling ÷ 1.5 m²/hr = 288 hours; total ~776 hours ÷ 8 hrs/day = 97 days (1 painter, or 48 days with 2-person team)"
+        },
+        "electrical_two_storey": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours per visit",
+          "first_fix_roughin": "100 power points × 0.4 hrs = 40 hrs; 66 light points × 0.7 hrs = 46 hrs; stairwell circuits = 8 hrs; total ~94 hours first-fix",
+          "second_fix_final": "100 power × 0.3 = 30 hrs; 66 lights × 0.2 = 13 hrs; switchboards, testing = 15 hrs; total ~58 hours",
+          "gang_size": "1 electrician + 1 apprentice (2-person); may split to 2 teams for parallel work",
+          "multiplier": "1.05 (2-storey coordination, longer cable runs)",
+          "derivation": "152 hours ÷ 8 hrs/day ÷ 2 person-team = 9.5 days (or 19 days single electrician)"
+        },
+        "plumbing_two_storey": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "first_fix_roughin": "8 WC suites × 2.5 hrs = 20 hrs; 8 basins × 2.0 hrs = 16 hrs; 2 service sinks × 2.5 hrs = 5 hrs; rough-in ~80m pipe = ~40 hours; total ~81 hours",
+          "second_fix_final": "Fixture connections, testing, sealing = ~25 hours",
+          "gang_size": "1 plumber + 1 apprentice (can split to 2 teams)",
+          "multiplier": "1.08 (2-storey rises, pressure testing, multiple bathrooms)",
+          "derivation": "106 hours ÷ 8 hrs/day ÷ 2 person = 6.6 days (or 13 days single plumber)"
+        },
+        "hvac_systems": {
+          "trade": "HVAC Specialist",
+          "system_type": "2-3 zone mini-split or central system with multiple floor risers",
+          "installation_time": "24-32 hours for 400m² (ductwork, indoor + outdoor units, thermostats, testing)",
+          "gang_size": "1 HVAC technician + 1 assistant",
+          "multiplier": "1.10 (2-storey, multiple zones, inter-floor ductwork)",
+          "derivation": "28 hours ÷ 8 hrs/day = 3.5 days"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.10,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.10,
+        "floor_wall_tiles": 1.10,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": ["cladding", "flooring", "windows"],
+      "tags": ["commercial", "office", "two_storey", "new_build", "australia", "medium"]
+    },
+    {
+      "template_id": "au-com-office-large-1200",
+      "name": "Large Office",
+      "description": "Multi-storey large office, 1200m² GFA, cavity brick with metal stud, flat roof",
+      "building_type": "commercial_office",
+      "sector": "commercial",
+      "specifications": {
+        "gfa_m2": 1200,
+        "storeys": 3,
+        "default_construction": "cavity_brick_metal_stud",
+        "construction_notes": "110mm face brick + 90mm cavity + 90mm metal stud + 13mm plasterboard",
+        "default_roofing": "metal",
+        "roof_type": "Metal Deck with membrane",
+        "foundation_type": "Reinforced concrete slab",
+        "ceiling_height_m": 3.2,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian CBD"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Commercial GFA 1200m² across 3 storeys = 400m² per level. Measured from internal faces at 1.4m. Each floor: open office, meeting rooms, management suites, toilets, circulation. Excludes below-ground car parking per NCC definition.",
+        "typical_layout": {
+          "ground_floor": {
+            "public_reception": "40m²",
+            "open_office_area": "200m²",
+            "meeting_conference": "50m²",
+            "toilets_public": "30m²",
+            "kitchenette": "25m²",
+            "mechanical_electrical_plant": "20m²",
+            "circulation": "35m²"
+          },
+          "levels_1_and_2": {
+            "open_office": "250m² per level",
+            "executive_suites": "60m²",
+            "meeting_rooms": "35m²",
+            "toilets": "25m²",
+            "circulation": "30m²"
+          }
+        },
+        "derivation_notes": "Large office CBD building supports 80-120 staff across 3 storeys. Ceiling height 3.2m (0.2m increase over small office for larger span) accommodates major HVAC runs and provides airy feel. Requires external lift access. Toilet provision = 1 WC per 40m² commercial area (1200m² = 30 WC, provided as 24 cubicles + 30 basins). Emergency egress via stairwells + lifts.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Stairwells & Lifts",
+              "scaling_rule": "2 stairwells (egress code minimum) + 2 passenger lifts for 3-storey, 1200m². Each stairwell ~20m² per floor = 60m² (not doubled in GFA). Each lift shaft ~15m² × 3 floors = internal void.",
+              "derivation": "2 stairwells + 2 lifts = building servicing infrastructure (counted in circulation area only)"
+            },
+            {
+              "item": "Toilet blocks",
+              "scaling_rule": "1 WC per 40m² (commercial CBD standard = higher density). 1200m² ÷ 40 = 30 WC cubicles + 30 basins distributed: 6 cubicles + 6 basins per toilet block × 2 blocks per floor × 3 floors",
+              "derivation": "30 WC fixtures × 2.5 hrs = 75 hours plumbing installation"
+            },
+            {
+              "item": "HVAC zones",
+              "scaling_rule": "Typically 4-6 zones per storey (perimeter + core zones). 3 storeys × 5 zones average = 15 zones minimum for CBD building with full air-conditioning.",
+              "derivation": "15 HVAC zones with main plant room on ground floor + rooftop unit"
+            },
+            {
+              "item": "Elevators",
+              "scaling_rule": "2 passenger lifts minimum for 1200m² / 3 storeys per NCC accessibility. Each lift = ~15m² shaft footprint + 12m rope height per 3.2m storey.",
+              "derivation": "2 lifts × 18-22 hours installation each = 40-44 hours (specialist lift installer)"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(GFA_per_storey × 4) × 1.2",
+          "calculation": "√(400 × 4) × 1.2 = √1600 × 1.2 = 40 × 1.2 = 48m",
+          "note": "Each of 3 storeys has ~48m perimeter (all footprints equal)"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height × Number of Storeys + Parapet",
+          "calculation": "48m × 3.2m × 3 = 460.8m² + ~30m² parapet detail = 490.8m²",
+          "waste_applied": "Cavity brick 1.07 (7% waste) = 525.2m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA_top_storey × 1.15",
+          "calculation": "400m² × 1.15 = 460m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 483m² installed (includes plant room roof, lift overruns)"
+        },
+        "floor_structures": {
+          "formula": "Upper Floors = GFA per storey + structural allowance",
+          "calculation": "400m² × 3 = 1200m² + 5% structural zones = 1260m² (includes stairwell, lift void intrusions)",
+          "waste_applied": "Concrete screed 1.05 (5% waste) = 1323m²"
+        },
+        "internal_partitions": {
+          "formula": "Linear Wall = √(GFA × 4) × 0.9 (office density high)",
+          "calculation": "√(1200 × 4) × 0.9 = √4800 × 0.9 = 69.3 × 0.9 = 62.4m per storey × 3 = 187.2m total",
+          "wall_area": "187.2m × 3.2m × 2 faces = 1197.1m² partition framing",
+          "waste_applied": "Timber 1.10 (10% waste) = 1316.8m²",
+          "nrm_reference": "2.4 Partitions"
+        },
+        "ceiling_finishes": {
+          "formula": "Suspended Ceiling = GFA × 1.06 (minor voids for services)",
+          "calculation": "1200m² × 1.06 = 1272m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 1399.2m²"
+        },
+        "power_points": {
+          "formula": "Power Points = GFA ÷ 4m² (commercial standard)",
+          "calculation": "1200m² ÷ 4 = 300 power points",
+          "distribution": "Open office 200m² = 50 pts; exec suites 60m² = 25 pts; meeting 35m² = 15 pts; per level; 3 levels"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 6m²",
+          "calculation": "1200m² ÷ 6 = 200 light points (LED recessed, emergency lighting, task)"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = 1 per 40m² (high-density CBD office)",
+          "calculation": "1200m² ÷ 40 = 30 fixtures (24 WC cubicles + 30 basins + 4 service sinks)"
+        }
+      },
+      "productivity_standards": {
+        "cavity_brickwork": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "3 bricklayers + 2 labourers (5-person gang, large project)",
+          "multiplier": "1.10 (5+ person team efficiency gain, large repetitive task)",
+          "derivation": "525.2m² ÷ 5.78 m²/day = 90.8 person-days ÷ 3 bricklayers = 30.3 days; large gang effect = 30.3 ÷ 1.10 = 27.5 days"
+        },
+        "metal_stud_and_plasterboard": {
+          "trade": "Carpentry + Plasterboard",
+          "frame_rate": "1.8-2.0 m²/day (multi-storey, coordination overhead)",
+          "plasterboard_rate": "40-50 m²/day (3 floors, logistics)",
+          "gang_size": "3 carpenters + 2 labourers (framing); 4-6 fixers rotating across floors (plasterboard)",
+          "multiplier": "0.95 (multi-storey logistics, lift coordination)",
+          "derivation": "1316.8m² partition ÷ 1.9 m²/day (adjusted) = 693.1 labour-hours"
+        },
+        "flooring_installation": {
+          "trade": "Flooring",
+          "screed_rate": "30-40 m²/day (concrete finish on 3 levels)",
+          "carpet_rate": "20-25 m²/day (modular tiles, 3 levels logistics)",
+          "gang_size": "2 floor layers + 1 labourer (can rotate between floors)",
+          "multiplier": "0.95 (vertical transportation, sequencing)",
+          "derivation": "1260m² screed ÷ 35 m²/day = 36 days; carpet varies per floor"
+        },
+        "metal_roof": {
+          "trade": "Roofing",
+          "rate": "50-60 m²/2-person/day (working at height, 3.2m + pitch)",
+          "gang_size": "2 roofers + 1 labourer",
+          "multiplier": "0.95 (work-at-height safety protocols)",
+          "derivation": "483m² ÷ 55 m²/day = 8.8 days"
+        },
+        "painting": {
+          "trade": "Painting",
+          "wall_rate": "2.5 m²/hour interior",
+          "ceiling_rate": "1.5 m²/hour overhead",
+          "gang_size": "2-3 painters (large project)",
+          "multiplier": "0.90 (3-level coordination, inter-floor access)",
+          "total_area": "Internal wall area (floor area × 4 / height) × 3 floors ≈ 2800m² + 1200m² ceiling = 4000m² paint",
+          "derivation": "4000m² ÷ (2.5 m²/hr average) = 1600 hours ÷ 8 hrs/day = 200 days (1 painter); with 3-person team = 67 days"
+        },
+        "electrical_large_building": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "first_fix": "300 power × 0.4 hrs = 120 hrs; 200 lights × 0.7 = 140 hrs; main switchboard + subboards = 20 hrs; emergency systems = 15 hrs; total ~295 hours first-fix",
+          "second_fix": "Power terminations = 60 hrs; light connections = 40 hrs; testing + commissioning = 30 hrs; total ~130 hours",
+          "gang_size": "2 electricians + 2 apprentices (4-person, can split to 2 teams on different floors)",
+          "multiplier": "1.08 (large CBD building, Building Code compliance, emergency egress lighting)",
+          "derivation": "425 hours ÷ 8 hrs/day ÷ 4 person = 13.3 days (or 53 days single electrician)"
+        },
+        "plumbing_large_building": {
+          "trade": "Plumbing",
+          "first_fix": "24 WC × 2.5 hrs = 60 hrs; 30 basins × 2.0 = 60 hrs; 4 service sinks = 10 hrs; rough-in 180m pipe = 90 hrs; total ~220 hours",
+          "second_fix": "Fixture connections, testing, sealing, pressure test = ~60 hours",
+          "gang_size": "2 plumbers + 2 apprentices (can work simultaneously on different floors)",
+          "multiplier": "1.10 (3-storey vertical rises, pressure testing, public building code compliance)",
+          "derivation": "280 hours ÷ 8 hrs/day ÷ 2 person = 17.5 days (or 35 days single plumber)"
+        },
+        "hvac_systems": {
+          "trade": "HVAC Specialist",
+          "system_type": "Central plant + zone controllers, 15 zones across 3 floors",
+          "installation_time": "80-100 hours (main plant room setup, ductwork runs to all floors, thermostats, controls programming, commissioning)",
+          "gang_size": "2 HVAC technicians + 1 apprentice (may coordinate with mechanical engineer on-site)",
+          "multiplier": "1.15 (complex zoning, inter-floor ductwork, building automation controls)",
+          "derivation": "90 hours × 1.15 = 103.5 labour-hours ÷ 8 hrs/day ÷ 3 person = 4.3 days"
+        },
+        "lifts_and_vertical_transport": {
+          "trade": "Specialist Lift Installer",
+          "item": "2 passenger lifts, 3 stops, 3.2m per storey",
+          "installation_time": "20-24 hours per lift (factory-only work, shaft inspection, rope rigging, brake testing, code compliance)",
+          "gang_size": "1 qualified lift mechanic + 1 electrician + 1 assistant (3-person specialist team)",
+          "multiplier": "1.00 (specialized skill, fixed methodology)",
+          "derivation": "22 hours × 2 lifts = 44 hours ÷ 8 hrs/day = 5.5 days"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.10,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.10,
+        "floor_wall_tiles": 1.10,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": ["cladding", "flooring", "windows"],
+      "tags": ["commercial", "office", "multi_storey", "new_build", "australia", "large"]
+    },
+    {
+      "template_id": "au-com-retail-small-80",
+      "name": "Small Retail Shop",
+      "description": "Single storey small retail shop, 80m² GFA, rendered masonry, steel roof",
+      "building_type": "retail_shop",
+      "sector": "commercial",
+      "specifications": {
+        "gfa_m2": 80,
+        "storeys": 1,
+        "default_construction": "rendered_masonry",
+        "construction_notes": "200mm concrete block + render both sides",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 3.0,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian shopping centre"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Retail GFA includes shop floor (display + sales), stockroom, fitting rooms, cashier, toilets. Measured from internal faces at 1.4m height. Excludes external plant, loading dock exterior.",
+        "typical_layout": {
+          "shop_floor": "50m² (display shelving, customer circulation, cashier counter)",
+          "stockroom": "18m² (3.5m × 5.0m high shelves)",
+          "fitting_rooms": "6m² (2 × 3m² cubicles with bench + mirror)",
+          "toilet": "3m² (WC + basin)",
+          "entry_foyer": "3m² (entry door, security gate)"
+        },
+        "derivation_notes": "Small retail (80m²) typical for shopping centre tenancy. Assumes leased space, not standalone. Display fit-out includes wall shelving, floor fixtures for clothing/shoes. Stockroom uses high racking (assume 2.4m usable height, ceiling 3.0m). Ceiling height 3.0m is standard for retail (allows visibility of stock + merchandise display). Toilet provision: 1 WC per 50m² retail = 1.6 → 2 WC typical (provided as 1 cubicle + 1 public WC). Customer-facing counter 4m long × 0.9m deep.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Retail display shelving",
+              "scaling_rule": "Perimeter shelving = Perimeter × 1.8m height (typical retail), plus island fixtures. Non-linear with GFA.",
+              "derivation": "80m² → perimeter ~35m; shelving runs ~30m (not all walls) × 1.8m = 54m²"
+            },
+            {
+              "item": "Fitting rooms",
+              "scaling_rule": "Typically 1 fitting room per 30-50m² retail floor. 80m² = 2 fitting rooms (small retail provision).",
+              "derivation": "Not scaled linearly; fixed at 2 rooms per small retail unit"
+            },
+            {
+              "item": "Toilet provision",
+              "scaling_rule": "1 WC per 50m² retail floor area (80m² = 1.6 WC); provide 2 (1 staff, 1 public minimum)",
+              "derivation": "80m² ÷ 50 = 1.6 WC → 2 cubicles"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(GFA × 4) × 1.2",
+          "calculation": "√(80 × 4) × 1.2 = √320 × 1.2 = 17.9 × 1.2 = 21.4m"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height",
+          "calculation": "21.4m × 3.0m = 64.2m² (includes shop front glass area, ~30% of wall)",
+          "waste_applied": "Rendered block 1.07 (7% waste) = 68.7m² masonry only (subtract window frames)"
+        },
+        "roof_area": {
+          "formula": "Roof = GFA × 1.15",
+          "calculation": "80m² × 1.15 = 92m²",
+          "waste_applied": "Metal roof 1.05 (5% waste) = 96.6m² installed"
+        },
+        "shop_fit_out_cabinetry": {
+          "formula": "Display Shelving = Perimeter × 1.8m display height + island fixtures",
+          "calculation": "21.4m × 1.8m ≈ 38.5m² (back wall, left, right walls) + 8m² island = 46.5m² of fitted cabinetry surfaces",
+          "notes": "Fitted shelving requires custom carpentry/joinery; installation labour-intensive"
+        },
+        "flooring": {
+          "formula": "Flooring = GFA (all retail floor finished)",
+          "calculation": "80m² polished concrete or vinyl sheet",
+          "waste_applied": "Vinyl 1.15 (15% waste) = 92m²"
+        },
+        "ceiling": {
+          "formula": "Ceiling = GFA × 1.05 (minimal void allowance)",
+          "calculation": "80m² × 1.05 = 84m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 92.4m²"
+        },
+        "power_points_retail": {
+          "formula": "Power = GFA ÷ 3m² (retail higher density than office, for EFT terminals, fridges, lighting)",
+          "calculation": "80m² ÷ 3 = 26.7 → 27 power points",
+          "distribution": "Checkout counter (6 pts), perimeter shelving (12 pts), fitting rooms (3 pts), stockroom (6 pts)"
+        },
+        "light_points": {
+          "formula": "Lights = GFA ÷ 4m² (retail requires higher illumination)",
+          "calculation": "80m² ÷ 4 = 20 light points",
+          "notes": "Include display lighting, accent lighting over key merchandise zones"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = 1 per 50m² retail",
+          "calculation": "80m² ÷ 50 = 1.6 → 2 fixtures (typically 2 WC + 2 basins)"
+        }
+      },
+      "productivity_standards": {
+        "rendered_masonry": {
+          "trade": "Bricklaying / Masonry",
+          "rate": "7.44 m²/person/day (concrete block)",
+          "gang_size": "1 mason + 1 labourer (2-person)",
+          "multiplier": "0.95 (small project, setup overhead)",
+          "derivation": "68.7m² masonry ÷ 7.44 m²/day × 0.95 = 9.8 labour-days"
+        },
+        "shop_front_framing": {
+          "trade": "Carpentry / Glazing",
+          "item": "Shop front ~12m wide × 3.0m tall (standard retail), includes glazing frame, door frame, security shutter track",
+          "installation_time": "2-3 days (frame assembly, glazing installation, security hardware)",
+          "gang_size": "1 glazier + 1 carpenter + 1 labourer",
+          "multiplier": "1.00 (standard shopfront)"
+        },
+        "display_shelving_custom_joinery": {
+          "trade": "Joinery / Cabinet Making",
+          "area": "46.5m² fitted shelving surfaces",
+          "labour_rate": "0.3-0.5 labour-hours per m² (custom cabinetry, assembly on-site)",
+          "gang_size": "1 joiner + 1 labourer",
+          "derivation": "46.5m² × 0.4 hrs/m² = 18.6 hours = 2.3 labour-days"
+        },
+        "metal_roof": {
+          "trade": "Roofing",
+          "rate": "50-70 m²/2-person/day",
+          "gang_size": "2 roofers",
+          "multiplier": "1.00 (low-pitch, safe access at 3.0m)",
+          "derivation": "96.6m² ÷ 60 m²/day = 1.6 days"
+        },
+        "flooring_vinyl": {
+          "trade": "Flooring",
+          "rate": "20-30 m²/day (vinyl sheet installation)",
+          "gang_size": "1-2 flooring specialists",
+          "multiplier": "1.00 (standard)"
+        },
+        "painting": {
+          "trade": "Painting",
+          "rate": "2.5 m²/hour interior",
+          "wall_area": "64.2m² perimeter × 3.0m = 192.6m² walls (less 30% shop front) = ~135m² + 84m² ceiling = 219m² total",
+          "gang_size": "1 painter",
+          "multiplier": "1.00 (standard interior)"
+        },
+        "electrical_retail": {
+          "trade": "Electrical",
+          "power_points": "27 points × 0.4 hrs = 10.8 hours",
+          "lights": "20 points × 0.7 hrs = 14 hours",
+          "shop_front_lighting": "Display lighting ~6 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "minimum_callout": "4 hours",
+          "derivation": "30.8 hours labour ÷ 8 hrs/day = 3.85 → 4 hours minimum call-out applies"
+        },
+        "plumbing_retail": {
+          "trade": "Plumbing",
+          "fixtures": "2 WC × 2.5 hrs = 5 hrs; 2 basins × 2.0 hrs = 4 hrs; rough-in ~20m = 8 hrs; total ~17 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "minimum_callout": "4 hours",
+          "derivation": "17 hours labour (applies typical rates, no minimum call-out penalty)"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.10,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.10,
+        "floor_wall_tiles": 1.10,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": ["flooring", "windows"],
+      "tags": ["commercial", "retail", "single_storey", "new_build", "australia", "small"]
+    },
+    {
+      "template_id": "au-com-retail-medium-150",
+      "name": "Medium Retail Shop",
+      "description": "Single storey medium retail shop, 150m² GFA, rendered masonry, steel roof",
+      "building_type": "retail_shop",
+      "sector": "commercial",
+      "specifications": {
+        "gfa_m2": 150,
+        "storeys": 1,
+        "default_construction": "rendered_masonry",
+        "construction_notes": "200mm concrete block + render both sides",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 3.0,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian shopping centre"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Retail GFA measured from internal faces. Includes: sales floor with island + perimeter fixtures, fitting rooms, stockroom, checkouts, toilets, preparation room.",
+        "typical_layout": {
+          "sales_floor": "90m² (perimeter + island display fixtures)",
+          "fitting_rooms": "12m² (4 × 3m² cubicles)",
+          "stockroom": "30m² (5.0m × 6.0m, high racking)",
+          "preparation_alterations": "8m² (fitting/tailoring room)",
+          "toilets": "5m² (2 cubicles + 2 basins)",
+          "circulation_checkout": "5m²"
+        },
+        "derivation_notes": "Medium retail (150m²) serves ~15-20 customers comfortably. Typical for specialty clothing, homewares, or department store tenancy. Stockroom 30m² (20% of GFA) typical for retail. Ceiling 3.0m supports high shelf racking (2.4m usable, 0.6m to ceiling). Fitting rooms: 1 per 30m² sales floor = 3-4 rooms. Toilet: 1 WC per 50m² = 3 WC (provided as 2-3 cubicles + 3 basins). Island fixtures non-linear; typical for medium retail = 1 main island.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Island fixture displays",
+              "scaling_rule": "Typically 1 main island per 100m² retail, plus perimeter shelving. Medium (150m²) = 1 island + perimeter runs.",
+              "derivation": "Island 3m × 1.5m × 1.8m high (approx 27m² perimeter footprint)"
+            },
+            {
+              "item": "Fitting rooms",
+              "scaling_rule": "1 fitting room per 30m² sales floor. 90m² sales = 3 fitting rooms (not 150m² total).",
+              "derivation": "150m² ÷ 50 = 3 fitting rooms"
+            },
+            {
+              "item": "Stockroom shelving",
+              "scaling_rule": "Stockroom area 20-25% of GFA. 150m² × 0.20 = 30m² stockroom; shelving height 2.4m usable.",
+              "derivation": "Non-linear; fixed at 30m² for medium retail"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(GFA × 4) × 1.2",
+          "calculation": "√(150 × 4) × 1.2 = √600 × 1.2 = 24.49 × 1.2 = 29.4m"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height",
+          "calculation": "29.4m × 3.0m = 88.2m² (shop front ~40% glass = ~35m² net masonry)",
+          "waste_applied": "Rendered block 1.07 (7% waste) = 94.4m²"
+        },
+        "roof_area": {
+          "formula": "Roof = GFA × 1.15",
+          "calculation": "150m² × 1.15 = 172.5m²",
+          "waste_applied": "Metal roof 1.05 (5% waste) = 181.1m²"
+        },
+        "display_shelving": {
+          "formula": "Perimeter Shelving + Island = √(GFA×4) × 1.8m height + island fixture area",
+          "calculation": "29.4m × 1.8m = 52.9m² perimeter + 10m² island = 62.9m² fitted surfaces"
+        },
+        "flooring": {
+          "formula": "Flooring = GFA",
+          "calculation": "150m² polished concrete or vinyl",
+          "waste_applied": "Vinyl 1.15 (15% waste) = 172.5m²"
+        },
+        "ceiling": {
+          "formula": "Ceiling = GFA × 1.05",
+          "calculation": "150m² × 1.05 = 157.5m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 173.25m²"
+        },
+        "power_points_retail": {
+          "formula": "Power = GFA ÷ 3m²",
+          "calculation": "150m² ÷ 3 = 50 power points"
+        },
+        "light_points": {
+          "formula": "Lights = GFA ÷ 4m²",
+          "calculation": "150m² ÷ 4 = 37.5 → 38 light points"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = 1 per 50m²",
+          "calculation": "150m² ÷ 50 = 3 WC + 3 basins"
+        }
+      },
+      "productivity_standards": {
+        "rendered_masonry": {
+          "trade": "Bricklaying",
+          "rate": "7.44 m²/person/day",
+          "gang_size": "1 mason + 1 labourer",
+          "multiplier": "0.95 (small project overhead)",
+          "derivation": "94.4m² ÷ 7.44 m²/day × 0.95 = 13.4 labour-days"
+        },
+        "display_shelving_joinery": {
+          "trade": "Joinery",
+          "area": "62.9m² fitted surfaces",
+          "labour_rate": "0.4 hrs/m²",
+          "derivation": "62.9m² × 0.4 = 25.2 labour-hours = 3.2 days"
+        },
+        "metal_roof": {
+          "trade": "Roofing",
+          "rate": "60 m²/day (2-person team)",
+          "derivation": "181.1m² ÷ 60 = 3.0 days"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "points": "50 power + 38 lights ≈ 50 hours labour",
+          "minimum_callout": "4 hours",
+          "derivation": "50 hours labour (no minimum call-out penalty)"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "fixtures": "3 WC × 2.5 + 3 basins × 2.0 + rough-in ~30m ≈ 27 hours labour",
+          "minimum_callout": "4 hours",
+          "derivation": "27 hours labour"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.10,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.10,
+        "floor_wall_tiles": 1.10,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": ["flooring", "windows"],
+      "tags": ["commercial", "retail", "single_storey", "new_build", "australia", "medium"]
+    },
+    {
+      "template_id": "au-com-retail-large-300",
+      "name": "Large Retail Shop",
+      "description": "Single storey large retail shop, 300m² GFA, rendered masonry, steel roof",
+      "building_type": "retail_shop",
+      "sector": "commercial",
+      "specifications": {
+        "gfa_m2": 300,
+        "storeys": 1,
+        "default_construction": "rendered_masonry",
+        "construction_notes": "200mm concrete block + render both sides",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 3.0,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian shopping centre"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Large retail GFA 300m² includes expansive sales floor, multiple fitting rooms, large stockroom, preparation area, checkouts, staff room, toilets.",
+        "typical_layout": {
+          "main_sales_floor": "180m² (perimeter + multiple island fixtures)",
+          "fitting_rooms": "24m² (8 × 3m² cubicles)",
+          "stockroom": "60m² (approx 20% of GFA, high racking)",
+          "preparation_alterations": "15m² (fitting/tailoring)",
+          "staff_room": "10m²",
+          "toilets": "8m² (3 cubicles + 4 basins)",
+          "checkouts_circulation": "3m²"
+        },
+        "derivation_notes": "Large retail (300m²) major department store or specialty chain tenancy. Stockroom 60m² (20% GFA) substantial for high-volume retail. Ceiling 3.0m for visibility. Multiple island fixtures support high-traffic display. Fitting room provision: 1 per 25m² sales floor = 7-8 rooms (provide 8). Toilet: 1 per 50m² retail = 6 WC (provide as 3-4 cubicles + 4 basins). Staff facilities included (meeting NCC accessibility).",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Island fixture displays",
+              "scaling_rule": "1 island per 75m² retail (300m² = 4 islands typical)",
+              "derivation": "4 islands × 3m × 1.5m = 18m² floor footprint, 27m² perimeter per island"
+            },
+            {
+              "item": "Fitting rooms",
+              "scaling_rule": "1 per 25m² sales floor. 180m² ÷ 25 = 7.2 → 8 rooms",
+              "derivation": "8 rooms, not linear with total GFA"
+            },
+            {
+              "item": "Service counters",
+              "scaling_rule": "1 service counter per 100m² retail (300m² = 2-3 alteration/service points)",
+              "derivation": "2 service stations for tailoring, customer service"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(GFA × 4) × 1.2",
+          "calculation": "√(300 × 4) × 1.2 = √1200 × 1.2 = 34.64 × 1.2 = 41.6m"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height",
+          "calculation": "41.6m × 3.0m = 124.8m² (shop front ~50% = ~62m² glass, ~63m² masonry)",
+          "waste_applied": "Rendered block 1.07 (7% waste) = 133.4m²"
+        },
+        "roof_area": {
+          "formula": "Roof = GFA × 1.15",
+          "calculation": "300m² × 1.15 = 345m²",
+          "waste_applied": "Metal roof 1.05 (5% waste) = 362.25m²"
+        },
+        "display_shelving": {
+          "formula": "Perimeter Shelving + Islands = Perimeter × 1.8m + (4 islands × 27m² perimeter per island)",
+          "calculation": "41.6m × 1.8m = 74.9m² + 108m² islands = 182.9m² fitted surfaces"
+        },
+        "flooring": {
+          "formula": "Flooring = GFA",
+          "calculation": "300m² polished concrete",
+          "waste_applied": "Concrete 1.05 (5% waste) = 315m²"
+        },
+        "ceiling": {
+          "formula": "Ceiling = GFA × 1.05",
+          "calculation": "300m² × 1.05 = 315m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 346.5m²"
+        },
+        "power_points": {
+          "formula": "Power = GFA ÷ 3m²",
+          "calculation": "300m² ÷ 3 = 100 power points"
+        },
+        "light_points": {
+          "formula": "Lights = GFA ÷ 4m²",
+          "calculation": "300m² ÷ 4 = 75 light points"
+        },
+        "plumbing": {
+          "formula": "Fixtures = 1 per 50m²",
+          "calculation": "300m² ÷ 50 = 6 WC + 6-8 basins"
+        }
+      },
+      "productivity_standards": {
+        "rendered_masonry": {
+          "trade": "Bricklaying",
+          "rate": "7.44 m²/person/day",
+          "gang_size": "2 masons + 1 labourer",
+          "multiplier": "0.95 (repetitive, good gang efficiency)",
+          "derivation": "133.4m² ÷ 7.44 m²/day ÷ 2 masons × 0.95 = 9.5 days"
+        },
+        "display_shelving": {
+          "trade": "Joinery / Cabinet Making",
+          "area": "182.9m² fitted surfaces + island fixtures",
+          "labour_rate": "0.35-0.4 hrs/m² (assembly-line efficiency for multiple identical islands)",
+          "gang_size": "2 joiners + 1 labourer",
+          "derivation": "182.9m² × 0.38 hrs/m² = 69.5 labour-hours = 4.3 days (3-person team)"
+        },
+        "metal_roof": {
+          "trade": "Roofing",
+          "rate": "60 m²/day (2-person team)",
+          "gang_size": "2 roofers + 1 labourer",
+          "derivation": "362.25m² ÷ 60 = 6.0 days"
+        },
+        "painting": {
+          "trade": "Painting",
+          "wall_area": "124.8m² + ceiling 315m² = 439.8m² total",
+          "rate": "2.5 m²/hour interior",
+          "gang_size": "2 painters",
+          "derivation": "439.8m² ÷ 2.5 m²/hr = 175.9 hours ÷ 8 hrs/day ÷ 2 painters = 11 days"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "power_points": "100 × 0.4 hrs = 40 hours",
+          "lights": "75 × 0.7 hrs = 52.5 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "derivation": "92.5 hours ÷ 8 hrs/day = 11.6 days"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "fixtures": "6 WC × 2.5 + 6 basins × 2.0 + rough-in ~50m = 48 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "derivation": "48 hours ÷ 8 hrs/day = 6 days"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.10,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.10,
+        "floor_wall_tiles": 1.10,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": ["flooring", "windows"],
+      "tags": ["commercial", "retail", "single_storey", "new_build", "australia", "large"]
+    },
+    {
+      "template_id": "au-com-cafe-small-100",
+      "name": "Small Cafe/Restaurant",
+      "description": "Single storey small cafe/restaurant, 100m² GFA, rendered masonry, steel roof",
+      "building_type": "cafe_restaurant",
+      "sector": "commercial",
+      "specifications": {
+        "gfa_m2": 100,
+        "storeys": 1,
+        "default_construction": "rendered_masonry",
+        "construction_notes": "200mm concrete block + render both sides",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 3.0,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian urban"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Cafe GFA includes dining/seating area, commercial kitchen (food prep + cooking), serving counter, toilets, storage.",
+        "typical_layout": {
+          "dining_seating": "50m² (approximately 20-25 covers at 2.0m² per diner)",
+          "kitchen_prep": "30m² (commercial food prep, cooking, plating)",
+          "serving_counter": "8m² (POS, service area, espresso machine)",
+          "toilets": "6m² (2 cubicles + 2 basins, public toilets)",
+          "storage_bin": "6m²"
+        },
+        "derivation_notes": "Small cafe (100m²) seats 20-25 customers comfortably. Seating area per NCC = min 1.5m²/diner for tables + circulation. Kitchen 30% of GFA typical for food service (100m² × 0.30 = 30m² kitchen per hospitality standards). Ceiling height 3.0m supports commercial extraction hoods + services. Toilet provision: 1 WC per 50m² café = 2 cubicles (separate staff WC may be required under Food Safety Code). Grease trap and commercial drainage required (not shown in GFA but critical for fitout).",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Commercial kitchen equipment",
+              "scaling_rule": "Oven, cooktop, range hood, prep benches, sinks (3-compartment wash sink required). 30m² kitchen space = typically 4-6 major pieces + benches.",
+              "derivation": "Not scaled; fixed to kitchen area 30m²"
+            },
+            {
+              "item": "Seating covers",
+              "scaling_rule": "50m² dining ÷ 2.0m² per diner = 25 covers (table + chair footprint)",
+              "derivation": "25 covers × 2m² = 50m² (including circulation, POS)"
+            },
+            {
+              "item": "Grease trap & commercial drainage",
+              "scaling_rule": "1 grease trap required for any food service (non-linear). Typically 50-75 litre capacity for 100m² cafe.",
+              "derivation": "Single grease trap installation, ~1 day labour"
+            },
+            {
+              "item": "Toilet provision",
+              "scaling_rule": "1 cubicle per 50m² dining/kitchen = 2 cubicles minimum. Staff access separate WC recommended.",
+              "derivation": "2 cubicles + 2 basins minimum"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(GFA × 4) × 1.2",
+          "calculation": "√(100 × 4) × 1.2 = √400 × 1.2 = 20 × 1.2 = 24m"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height",
+          "calculation": "24m × 3.0m = 72m² (cafe typically has large window/glazing frontage, ~40% = ~29m² glass, ~43m² masonry)",
+          "waste_applied": "Rendered block 1.07 (7% waste) = 77.0m²"
+        },
+        "roof_area": {
+          "formula": "Roof = GFA × 1.15",
+          "calculation": "100m² × 1.15 = 115m²",
+          "waste_applied": "Metal roof 1.05 (5% waste) = 120.75m²"
+        },
+        "flooring": {
+          "formula": "Flooring = GFA",
+          "calculation": "100m² (typically non-slip vinyl or concrete tiles for food safety)",
+          "waste_applied": "Vinyl 1.15 (15% waste) = 115m²"
+        },
+        "kitchen_flooring_special": {
+          "formula": "Kitchen floor = kitchen_area (food-grade epoxy or tiles with grout, slip-resistant)",
+          "calculation": "30m² kitchen (included in above GFA 100m²)",
+          "waste_applied": "Tiles 1.10 (10% waste) applied to 30m² = 33m²"
+        },
+        "ceiling": {
+          "formula": "Ceiling = GFA × 1.05",
+          "calculation": "100m² × 1.05 = 105m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 115.5m²"
+        },
+        "kitchen_extraction": {
+          "formula": "Extraction ducting = Kitchen perimeter × 1.5 (hood ductwork to roof) ≈ ~25m ducting",
+          "notes": "Commercial extraction hood required for food prep area (NCC F5, health code)"
+        },
+        "power_points_cafe": {
+          "formula": "Power = GFA ÷ 3m² (cafe has high electrical load for kitchen equipment)",
+          "calculation": "100m² ÷ 3 = 33.3 → 34 power points",
+          "distribution": "Kitchen equipment (12 pts: cooktop, oven, extraction, fridges); Serving counter (6 pts: espresso, POS, fridge); Dining area (8 pts: table outlets, lighting); Toilets (2 pts)"
+        },
+        "light_points": {
+          "formula": "Lights = GFA ÷ 4m² + extraction hood lighting",
+          "calculation": "100m² ÷ 4 = 25 light points + 2 over-counter task lights = 27 points"
+        },
+        "plumbing_fixtures_cafe": {
+          "formula": "Fixtures = 1 per 50m² + food prep sinks",
+          "calculation": "100m² ÷ 50 = 2 WC cubicles + 3-compartment food wash sink + hand wash basin (food handler requirement) + beverage dispenser (espresso) water = ~6 water points"
+        },
+        "gas_supply_cafe": {
+          "formula": "Gas line = Kitchen to meter, ~10-15m typical for small cafe",
+          "notes": "Commercial gas supply for cooktop/oven; propane or natural gas"
+        }
+      },
+      "productivity_standards": {
+        "rendered_masonry": {
+          "trade": "Bricklaying",
+          "rate": "7.44 m²/person/day",
+          "gang_size": "1 mason + 1 labourer",
+          "multiplier": "0.95",
+          "derivation": "77.0m² ÷ 7.44 m²/day × 0.95 = 11.0 labour-days"
+        },
+        "metal_roof": {
+          "trade": "Roofing",
+          "rate": "50-70 m²/day (2-person)",
+          "derivation": "120.75m² ÷ 60 m²/day = 2.0 days"
+        },
+        "kitchen_fitout": {
+          "trade": "Joinery / Kitchen Installer",
+          "item": "Commercial kitchen benches, sink runs, equipment connections",
+          "labour_hours": "40-50 hours (assembly, connections, testing)",
+          "gang_size": "1 kitchen installer + 1 labourer",
+          "derivation": "45 hours ÷ 8 hrs/day = 5.6 days"
+        },
+        "flooring": {
+          "trade": "Flooring",
+          "rate": "20-30 m²/day vinyl/tiles",
+          "gang_size": "1-2 specialists",
+          "derivation": "115m² ÷ 25 m²/day = 4.6 days"
+        },
+        "electrical_cafe": {
+          "trade": "Electrical",
+          "power_and_lights": "34 power + 27 lights ≈ 50 hours labour",
+          "kitchen_circuits": "Heavy circuits for cooktop/oven + 3-phase capability = +10 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "derivation": "60 hours ÷ 8 hrs/day = 7.5 days"
+        },
+        "plumbing_cafe": {
+          "trade": "Plumbing",
+          "fixtures_and_rough_in": "2 WC × 2.5 + 3-compartment sink × 3 + hand wash × 2 + rough-in ~30m = 40 hours labour",
+          "gas_connection": "Gas line to cooktop/oven = 4-6 hours (certified fitter)",
+          "gang_size": "1 plumber + 1 apprentice; separate gas fitter for gas work",
+          "derivation": "40 hours plumbing ÷ 8 hrs/day = 5 days; gas ~6 hours = 0.75 days"
+        },
+        "kitchen_extraction": {
+          "trade": "Mechanical / Sheet Metal",
+          "item": "Commercial extraction hood + ducting to roof, grease trap installation",
+          "labour_hours": "16-20 hours (hood installation, ducting, grease trap connection, testing)",
+          "gang_size": "1 sheet metal worker + 1 labourer",
+          "derivation": "18 hours ÷ 8 hrs/day = 2.25 days"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.10,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.10,
+        "floor_wall_tiles": 1.10,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": ["flooring"],
+      "tags": ["commercial", "cafe_restaurant", "single_storey", "new_build", "australia", "small"]
+    },
+    {
+      "template_id": "au-com-cafe-medium-200",
+      "name": "Medium Cafe/Restaurant",
+      "description": "Single storey medium cafe/restaurant, 200m² GFA, rendered masonry, steel roof",
+      "building_type": "cafe_restaurant",
+      "sector": "commercial",
+      "specifications": {
+        "gfa_m2": 200,
+        "storeys": 1,
+        "default_construction": "rendered_masonry",
+        "construction_notes": "200mm concrete block + render both sides",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 3.0,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian urban"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Medium cafe GFA 200m² includes larger dining area, extended kitchen with preparation and storage, bar/counter service, separate toilets, manager office, stock areas.",
+        "typical_layout": {
+          "dining_seating": "100m² (50-60 covers at 2.0m² per seat)",
+          "kitchen_prep_cooking": "50m² (main cooking, food prep, plating, walk-in fridge space)",
+          "bar_serving_counter": "15m² (espresso, beverages, POS, service area)",
+          "back_of_house": "20m² (staff room, manager office, food storage)",
+          "toilets": "10m² (3 cubicles + 4 basins, public + staff)",
+          "circulation": "5m²"
+        },
+        "derivation_notes": "Medium cafe (200m²) serves 50-60 covers, 2-3 shifts typical. Kitchen 50m² (25% of GFA) provides space for multi-station cooking (grill, pasta, beverages). Ceiling 3.0m with extra clearance for larger extraction hood (two units may be required). Toilet provision: 1 per 50m² = 4 cubicles (public + staff separate). Separate staff facilities + manager office (not typical in small cafe). Multiple water/gas/electrical zones for kitchen equipment.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Kitchen equipment zones",
+              "scaling_rule": "Typically: 1 cooking zone (grill/cooktop) per 25m² kitchen area + prep/plating + beverage bar. 50m² kitchen = 2-3 cooking zones.",
+              "derivation": "2 cooking zones + prep zone + beverage bar"
+            },
+            {
+              "item": "Extraction hoods",
+              "scaling_rule": "1 hood per 25m² kitchen area (or per 2-3 cooking stations). 50m² kitchen = 2 hoods minimum.",
+              "derivation": "2 extraction hoods + ducting"
+            },
+            {
+              "item": "Walk-in fridge",
+              "scaling_rule": "1 per 100-150m² total GFA for food-service buildings. 200m² = 1 walk-in fridge (5m × 2m × 2.1m high = ~10m³).",
+              "derivation": "Not scaled; fixed at 1 per building"
+            },
+            {
+              "item": "Grease trap",
+              "scaling_rule": "1 trap per building, capacity scales: 75-100L for 50-75 seat cafe; 150L for 100+ seats. 200m² = 100-150L grease trap.",
+              "derivation": "Single trap, larger capacity (150L typical)"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(GFA × 4) × 1.2",
+          "calculation": "√(200 × 4) × 1.2 = √800 × 1.2 = 28.28 × 1.2 = 33.9m"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height",
+          "calculation": "33.9m × 3.0m = 101.7m² (cafe frontage ~50% glass = ~51m² glass, ~51m² masonry)",
+          "waste_applied": "Rendered block 1.07 (7% waste) = 108.8m²"
+        },
+        "roof_area": {
+          "formula": "Roof = GFA × 1.15",
+          "calculation": "200m² × 1.15 = 230m²",
+          "waste_applied": "Metal roof 1.05 (5% waste) = 241.5m²"
+        },
+        "flooring": {
+          "formula": "Flooring = GFA (food-service slip-resistant)",
+          "calculation": "200m² vinyl sheet or commercial tiles",
+          "waste_applied": "Tiles 1.10 (10% waste) = 220m²"
+        },
+        "ceiling": {
+          "formula": "Ceiling = GFA × 1.05",
+          "calculation": "200m² × 1.05 = 210m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 231m²"
+        },
+        "kitchen_extraction": {
+          "formula": "Ducting = Kitchen perimeter × 1.5 + run to roof, 2 hoods",
+          "calculation": "~2 × 15m = 30m ducting for dual-hood installation"
+        },
+        "power_points_cafe": {
+          "formula": "Power = GFA ÷ 3m² + kitchen equipment circuits",
+          "calculation": "200m² ÷ 3 = 67 power points",
+          "distribution": "Kitchen (20 pts: cooktop, oven, extraction ×2, fridges, prep); Bar counter (8 pts); Dining (15 pts); Back-of-house (10 pts); Circulation (14 pts)"
+        },
+        "light_points": {
+          "formula": "Lights = GFA ÷ 4m² + feature/bar lighting",
+          "calculation": "200m² ÷ 4 = 50 lights + 4 feature lights = 54 points"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = 1 per 50m² + food prep sinks",
+          "calculation": "200m² ÷ 50 = 4 WC + 2 × 3-compartment food wash sinks + beverage dispenser + hand basins = ~8 water points"
+        }
+      },
+      "productivity_standards": {
+        "rendered_masonry": {
+          "trade": "Bricklaying",
+          "rate": "7.44 m²/person/day",
+          "gang_size": "2 masons + 1 labourer",
+          "multiplier": "0.95",
+          "derivation": "108.8m² ÷ 7.44 m²/day ÷ 2 masons × 0.95 = 7.7 days"
+        },
+        "metal_roof": {
+          "trade": "Roofing",
+          "rate": "60 m²/day (2-person team)",
+          "derivation": "241.5m² ÷ 60 = 4.0 days"
+        },
+        "kitchen_fitout": {
+          "trade": "Kitchen Installer",
+          "item": "Benches, sinks, equipment connections, walk-in fridge installation",
+          "labour_hours": "60-75 hours (larger kitchen, more equipment, more connections)",
+          "gang_size": "2 kitchen installers + 1 labourer",
+          "derivation": "70 hours ÷ 8 hrs/day ÷ 2 = 4.4 days"
+        },
+        "flooring": {
+          "trade": "Flooring",
+          "rate": "20-25 m²/day (commercial slip-resistant tiles)",
+          "gang_size": "2 specialists",
+          "derivation": "220m² ÷ 22.5 m²/day = 9.8 days"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "power_and_lights": "67 power + 54 lights = ~70 hours labour",
+          "kitchen_heavy_circuits": "Dual extraction + 3-phase + cooktop/oven = +15 hours",
+          "gang_size": "1 electrician + 1 apprentice (may require 2 teams for parallel work)",
+          "derivation": "85 hours ÷ 8 hrs/day ÷ 2 = 5.3 days"
+        },
+        "plumbing": {
+          "trade": "Plumbing + Gas Fitter",
+          "plumbing_labour": "4 WC × 2.5 + 2 × 3-comp sinks × 3 + hand basins × 4 + rough-in ~50m = 60 hours",
+          "gas_labour": "Gas to 2 cooktop zones + oven = 8 hours (certified)",
+          "gang_size": "1 plumber + 1 apprentice; 1 gas fitter for gas work",
+          "derivation": "60 hours plumbing ÷ 8 hrs/day = 7.5 days; 8 hours gas = 1 day"
+        },
+        "extraction_grease_trap": {
+          "trade": "Sheet Metal + Plumbing Specialist",
+          "item": "2 extraction hoods + 30m ducting + 150L grease trap installation",
+          "labour_hours": "24-28 hours (more complex installation than small cafe)",
+          "gang_size": "1 sheet metal worker + 1 plumber + 1 labourer",
+          "derivation": "26 hours ÷ 8 hrs/day = 3.25 days"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.10,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.10,
+        "floor_wall_tiles": 1.10,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": ["flooring"],
+      "tags": ["commercial", "cafe_restaurant", "single_storey", "new_build", "australia", "medium"]
+    },
+    {
+      "template_id": "au-com-food-court-500",
+      "name": "Food Court",
+      "description": "Single storey food court, 500m² GFA, rendered masonry, steel roof",
+      "building_type": "food_court",
+      "sector": "commercial",
+      "specifications": {
+        "gfa_m2": 500,
+        "storeys": 1,
+        "default_construction": "rendered_masonry",
+        "construction_notes": "200mm concrete block + render both sides",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 3.5,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian shopping centre"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Food court GFA includes 4-6 individual food outlets, large communal seating area, common food prep zones, shared services, toilets, storage.",
+        "typical_layout": {
+          "seating_area": "250m² (approximately 120-150 covers at 2.0m² per seat, with circulation)",
+          "food_outlets": "150m² (4-6 small kitchen zones, 25-30m² each, shared equipment)",
+          "common_prep_areas": "40m² (central dish washing, food receiving, storage prep)",
+          "shared_services": "30m² (trash/recycling, cleaning area, utility)",
+          "toilets": "20m² (4 cubicles + 4 basins, public; separate staff access)",
+          "circulation_support": "10m²"
+        },
+        "derivation_notes": "Food court (500m²) is high-capacity shared food service facility, typical for shopping centres. Multiple independent food vendors (4-6) share seating, common services. Ceiling height 3.5m (0.5m taller than cafe) accommodates large extraction system serving multiple outlets + ventilation for high-volume dining. Central dish wash area (not per-outlet kitchens). Toilet provision: 1 WC per 50m² = 10 cubicles (provide 4-6 cubicles + public basins). Multiple gas/electrical meters, separate utility feeds for each vendor.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Food outlet kitchen zones",
+              "scaling_rule": "Typically 4-6 independent outlets. 150m² kitchen ÷ 5 outlets = 30m² per outlet average. Each requires: cooktop/oven, prep bench, 1-2 sinks, fridge.",
+              "derivation": "5 outlets × 30m² = 150m² kitchen area (non-linear; depends on outlet mix)"
+            },
+            {
+              "item": "Central extraction system",
+              "scaling_rule": "1 large central hood with plenum (500mm × 1.5m × 0.3m) serving entire food court. Ducting to roof ~25-30m with multiple branch takeoffs.",
+              "derivation": "Single large system, 60-80 hours installation"
+            },
+            {
+              "item": "Grease trap capacity",
+              "scaling_rule": "Multiple outlets = larger grease trap. 500m² food court = 300-400L grease trap (vs. 75-150L for cafe).",
+              "derivation": "Single large grease trap (non-linear scaling)"
+            },
+            {
+              "item": "Central dish washing",
+              "scaling_rule": "1 commercial 3-door dishwasher or conveyor dishwasher for multi-outlet facility. Not per-outlet.",
+              "derivation": "1 shared dishwasher + hand-wash sinks in common area"
+            },
+            {
+              "item": "Seating configuration",
+              "scaling_rule": "250m² seating ÷ 2.0m² per diner = 125 covers (open floor plan, flexible furniture)",
+              "derivation": "Modular seating, ~125 covers"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(GFA × 4) × 1.2",
+          "calculation": "√(500 × 4) × 1.2 = √2000 × 1.2 = 44.72 × 1.2 = 53.7m"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height",
+          "calculation": "53.7m × 3.5m = 188.0m² (food court typically has moderate glazing, ~30% = ~56m² glass, ~132m² masonry)",
+          "waste_applied": "Rendered block 1.07 (7% waste) = 141.2m²"
+        },
+        "roof_area": {
+          "formula": "Roof = GFA × 1.15",
+          "calculation": "500m² × 1.15 = 575m²",
+          "waste_applied": "Metal roof 1.05 (5% waste) = 603.75m²"
+        },
+        "flooring": {
+          "formula": "Flooring = GFA (slip-resistant, high-traffic)",
+          "calculation": "500m² commercial vinyl/tiles",
+          "waste_applied": "Tiles 1.10 (10% waste) = 550m²"
+        },
+        "ceiling": {
+          "formula": "Ceiling = GFA × 1.08 (exposed plenum for extraction ducting)",
+          "calculation": "500m² × 1.08 = 540m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 594m²"
+        },
+        "central_extraction": {
+          "formula": "Ducting = Plenum box + branch lines to roof + main line, ~30-40m total",
+          "calculation": "4 outlets × 5m branch = 20m + main run ~15m = 35m approximate ducting"
+        },
+        "power_points": {
+          "formula": "Power = GFA ÷ 2.5m² (food service high electrical density)",
+          "calculation": "500m² ÷ 2.5 = 200 power points",
+          "distribution": "Outlets (15 pts each × 5 = 75 pts); Seating (40 pts: charging); Shared services (50 pts: dishwasher, freezers, prep); Circulation/emergency (35 pts)"
+        },
+        "light_points": {
+          "formula": "Lights = GFA ÷ 3.5m² (food court well-lit for food service)",
+          "calculation": "500m² ÷ 3.5 = 142.9 → 145 light points"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = 1 per 50m² + shared food service sinks",
+          "calculation": "500m² ÷ 50 = 10 WC + 5 × 3-compartment food wash sinks + hand basins + hot water service = ~20 water connection points"
+        }
+      },
+      "productivity_standards": {
+        "rendered_masonry": {
+          "trade": "Bricklaying",
+          "rate": "7.44 m²/person/day",
+          "gang_size": "3 masons + 2 labourers (large project)",
+          "multiplier": "1.05 (repetitive, efficient gang)",
+          "derivation": "141.2m² ÷ 7.44 m²/day ÷ 3 masons × 1.05 = 6.7 days"
+        },
+        "metal_roof": {
+          "trade": "Roofing",
+          "rate": "60 m²/day (2-person team); large area = higher efficiency",
+          "gang_size": "2 roofers + 1 labourer",
+          "multiplier": "1.00 (standard, safe large flat surface)",
+          "derivation": "603.75m² ÷ 60 = 10.1 days"
+        },
+        "food_outlet_kitchen_fitout": {
+          "trade": "Kitchen Installer",
+          "item": "5 independent kitchen zones (benches, equipment, plumbing connections per outlet)",
+          "labour_per_outlet": "30-35 hours each outlet = 150-175 hours total",
+          "gang_size": "2 kitchen installers + 2 labourers (can work on multiple outlets in parallel)",
+          "derivation": "165 hours ÷ 8 hrs/day ÷ 2 = 10.3 days"
+        },
+        "central_dish_washing": {
+          "trade": "Equipment Installation",
+          "item": "Commercial 3-door dishwasher + plumbing/electrical connections + chemical dispensing",
+          "labour_hours": "12-15 hours",
+          "gang_size": "1 technician + 1 labourer",
+          "derivation": "13 hours ÷ 8 hrs/day = 1.6 days"
+        },
+        "flooring": {
+          "trade": "Flooring",
+          "rate": "18-25 m²/day (large area, high-traffic spec tiles)",
+          "gang_size": "3 flooring specialists (large project)",
+          "derivation": "550m² ÷ 22 m²/day ÷ 3 = 8.3 days"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "power_and_lights": "200 power + 145 lights ≈ 160 hours labour",
+          "kitchen_circuits": "5 outlets × 10-hour setup each = +50 hours",
+          "gang_size": "2 electricians + 2 apprentices (parallel work on multiple outlets)",
+          "multiplier": "1.05 (complex multi-zone coordination)",
+          "derivation": "210 hours × 1.05 ÷ 8 hrs/day ÷ 4 person = 6.9 days"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "fixtures_and_rough_in": "10 WC × 2.5 + 5 × 3-comp sinks × 3 + hand basins + rough-in ~80m = 100 hours labour",
+          "gang_size": "2 plumbers + 2 apprentices",
+          "derivation": "100 hours ÷ 8 hrs/day ÷ 2 = 6.25 days"
+        },
+        "central_extraction_system": {
+          "trade": "Sheet Metal / HVAC",
+          "item": "Central extraction plenum + 35m ducting + grease trap (300-400L) + roof penetrations",
+          "labour_hours": "60-75 hours (large, complex installation)",
+          "gang_size": "2 sheet metal workers + 1 labourer + 1 plumber (for grease trap)",
+          "derivation": "70 hours ÷ 8 hrs/day ÷ 2.5 avg crew = 3.5 days"
+        },
+        "hvac_seating_area": {
+          "trade": "HVAC Specialist",
+          "item": "Supply + return air handling for 250m² seating, 3-zone control (3 separate zones for 5 outlets + seating)",
+          "labour_hours": "40-50 hours (ductwork, diffusers, thermostats, commissioning)",
+          "gang_size": "1 HVAC tech + 1 assistant",
+          "multiplier": "1.08 (complex seating area ventilation, high occupancy)",
+          "derivation": "45 hours × 1.08 ÷ 8 hrs/day = 6.1 days"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.10,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.10,
+        "floor_wall_tiles": 1.10,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": ["flooring"],
+      "tags": ["commercial", "food_court", "single_storey", "new_build", "australia"]
+    },
+    {
+      "template_id": "au-com-bar-pub-250",
+      "name": "Bar/Pub",
+      "description": "Single storey bar/pub, 250m² GFA, rendered masonry, steel roof",
+      "building_type": "bar_pub",
+      "sector": "commercial",
+      "specifications": {
+        "gfa_m2": 250,
+        "storeys": 1,
+        "default_construction": "rendered_masonry",
+        "construction_notes": "200mm concrete block + render both sides",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 3.2,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian urban"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Bar/pub GFA includes patron seating/standing area, bar counter service, back-bar spirits/beer storage, kitchen (snacks/food prep), toilets, storage/cellar.",
+        "typical_layout": {
+          "patron_seating_standing": "130m² (bar seating + lounge seating, ~80-100 patrons at 1.5-2.0m² per person with circulation)",
+          "bar_counter_and_back_bar": "30m² (service counter ~8m × 1.2m + back-bar 3 walls × 2.5m high, spirit bottles, beer tap system)",
+          "kitchen_food_prep": "25m² (grill, warmer, fryer, prep benches, 3-compartment sink)",
+          "cool_rooms_storage": "40m² (beer kegs, spirits storage, food cold storage, dry goods)",
+          "toilets": "15m² (3 cubicles + 3 basins, plus accessible WC if >100 covers)",
+          "entry_foyer": "5m²",
+          "back_of_house": "5m² (cleaning, mop storage)"
+        },
+        "derivation_notes": "Bar/pub (250m²) accommodates 80-100 patrons for evening drinks + casual food service. Ceiling height 3.2m (0.2m higher than cafe) supports sports TV screens + sound system. Back-bar cabinetry non-linear (fixed per venue design). Cool room 40m² for keg storage, spirits, beer stock (non-linear; bulk beverage inventory requirement). Food prep minimal (snacks, pies, burgers) vs. full restaurant. Toilet provision: 1 WC per 50-75m² bar = 3-5 cubicles (provide 3 + accessible). Grease trap required for cooking (smaller than food court, ~75-100L). Noise considerations (sound systems, live entertainment) affect fit-out finish quality.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Bar counter and back-bar",
+              "scaling_rule": "Typically 8-12m bar counter + 3-wall back-bar cabinetry. Not scaled linearly; determined by seating capacity (100 covers = ~10m bar counter).",
+              "derivation": "250m² bar = 80-100 covers = 8-10m counter typical"
+            },
+            {
+              "item": "Cool rooms (keg + spirit storage)",
+              "scaling_rule": "1 beer keg cool room (~3m × 2.5m = 7.5m²) + 1 spirit storage cool room (~3m × 2m = 6m²) per venue. 40m² total cool space allocated.",
+              "derivation": "Multiple cool rooms non-linear; bulk storage requirement for drinks service"
+            },
+            {
+              "item": "Tap system (beer lines)",
+              "scaling_rule": "Typical bar serves 10-15 beer lines (draught taps). Each tap requires CO₂ line, beer line (6-8mm), drain line from fonts.",
+              "derivation": "10-15 taps × 5m average line = 50-75m CO₂/beer lines per bar"
+            },
+            {
+              "item": "Toilet provision",
+              "scaling_rule": "1 WC per 75m² bar seating (250m² ÷ 75 = 3.3 → 4 cubicles minimum). Public + staff separate required.",
+              "derivation": "4 cubicles + 4 basins (includes accessible WC for >100 covers)"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(GFA × 4) × 1.2",
+          "calculation": "√(250 × 4) × 1.2 = √1000 × 1.2 = 31.62 × 1.2 = 37.9m"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height",
+          "calculation": "37.9m × 3.2m = 121.3m² (bar has moderate glazing/signage frontage, ~25% = ~30m² glass, ~91m² masonry)",
+          "waste_applied": "Rendered block 1.07 (7% waste) = 129.8m²"
+        },
+        "roof_area": {
+          "formula": "Roof = GFA × 1.15",
+          "calculation": "250m² × 1.15 = 287.5m²",
+          "waste_applied": "Metal roof 1.05 (5% waste) = 301.9m²"
+        },
+        "flooring": {
+          "formula": "Flooring = GFA (heavy-duty slip-resistant, high-traffic, alcohol spills)",
+          "calculation": "250m² epoxy-sealed concrete or commercial tiles",
+          "waste_applied": "Tiles 1.10 (10% waste) = 275m²"
+        },
+        "ceiling": {
+          "formula": "Ceiling = GFA × 1.06 (exposed in seating area, dropped in bar/kitchen)",
+          "calculation": "250m² × 1.06 = 265m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 291.5m²"
+        },
+        "back_bar_cabinetry": {
+          "formula": "Back-bar = 3 walls × 2.5m high × 3m × 1.2m (shelving depth) = 27m² shelf surface area",
+          "calculation": "~27m² custom back-bar cabinetry (spirits, glassware display)",
+          "notes": "Non-linear; custom joinery for premium bar fit-out"
+        },
+        "bar_counter": {
+          "formula": "Counter = 10m × 1.2m (depth) × 1.1m (height to top) = 13.2m linear counter",
+          "calculation": "~13.2m linear bar counter (stainless top, kick rail, taps, POS)"
+        },
+        "power_points": {
+          "formula": "Power = GFA ÷ 2.5m² (bar has high electrical load for lighting, sound, kitchen)",
+          "calculation": "250m² ÷ 2.5 = 100 power points",
+          "distribution": "Seating area (30 pts: lighting, music); Bar counter (20 pts: taps, fridges, POS, ice machine, lights); Kitchen (25 pts: cooking equipment); Back-bar (15 pts: lights, fridges, coolers); Toilets (4 pts); Circulation (6 pts)"
+        },
+        "light_points": {
+          "formula": "Lights = GFA ÷ 3m² (bar ambient + task lighting)",
+          "calculation": "250m² ÷ 3 = 83.3 → 85 light points",
+          "notes": "Include dimmer circuits for atmosphere control"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = 1 per 50m² + bar service lines",
+          "calculation": "250m² ÷ 50 = 5 WC + 3-compartment food sink + hand basins + beer line drains + ice machine water = ~12 water connection points"
+        },
+        "beer_tap_lines": {
+          "formula": "CO₂ + Beer lines = 10-15 taps × 5m average line length = 50-75m total",
+          "calculation": "~60m of beverage service lines (including returns to keg room)"
+        }
+      },
+      "productivity_standards": {
+        "rendered_masonry": {
+          "trade": "Bricklaying",
+          "rate": "7.44 m²/person/day",
+          "gang_size": "2 masons + 1 labourer",
+          "multiplier": "0.95",
+          "derivation": "129.8m² ÷ 7.44 m²/day ÷ 2 masons × 0.95 = 9.3 days"
+        },
+        "metal_roof": {
+          "trade": "Roofing",
+          "rate": "60 m²/day (2-person team)",
+          "derivation": "301.9m² ÷ 60 = 5.0 days"
+        },
+        "back_bar_cabinetry": {
+          "trade": "Joinery / Bar Fitter",
+          "item": "Custom back-bar (27m²) + counter (13.2m linear) + shelving installation",
+          "labour_hours": "50-65 hours (custom cabinetry, assembly, shelving installation, finishing)",
+          "gang_size": "1 joiner + 1 labourer",
+          "multiplier": "1.05 (premium fit-out quality)",
+          "derivation": "60 hours × 1.05 ÷ 8 hrs/day = 7.9 days"
+        },
+        "flooring": {
+          "trade": "Flooring",
+          "rate": "20-25 m²/day (epoxy/tiles, high-traffic spec)",
+          "gang_size": "2 flooring specialists",
+          "derivation": "275m² ÷ 22.5 m²/day ÷ 2 = 6.1 days"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "power_and_lights": "100 power + 85 lights ≈ 90 hours labour",
+          "sound_system_infrastructure": "Sound system rough-in, speaker wiring = +15 hours",
+          "gang_size": "1 electrician + 1 apprentice (may split to 2 teams)",
+          "derivation": "105 hours ÷ 8 hrs/day = 13.1 days"
+        },
+        "plumbing_bar_service": {
+          "trade": "Plumbing + Beverage Equipment Installer",
+          "plumbing_fixtures": "5 WC × 2.5 + 3-comp sink × 3 + hand basins × 4 + rough-in ~40m = 45 hours plumbing labour",
+          "beverage_lines": "10-15 tap line installation + CO₂ system + ice machine connection = 15-20 hours specialist labour",
+          "gang_size": "1 plumber + 1 apprentice; 1 beverage equipment technician",
+          "derivation": "45 hours plumbing ÷ 8 hrs/day = 5.6 days; 18 hours beverage = 2.25 days"
+        },
+        "kitchen_food_prep": {
+          "trade": "Kitchen Installer",
+          "item": "Grill, warmer, fryer, prep benches, 3-comp sink",
+          "labour_hours": "25-30 hours",
+          "gang_size": "1 kitchen installer + 1 labourer",
+          "derivation": "28 hours ÷ 8 hrs/day = 3.5 days"
+        },
+        "cool_room_installation": {
+          "trade": "Refrigeration Specialist",
+          "item": "2 cool rooms (beer + spirit/food storage), ~7.5m² + 6m² = 13.5m² total internal",
+          "labour_hours": "20-25 hours (assembly, sealing, electrical, temperature control setup)",
+          "gang_size": "1 refrigeration tech + 1 labourer",
+          "derivation": "22 hours ÷ 8 hrs/day = 2.75 days"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.10,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.10,
+        "floor_wall_tiles": 1.10,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": ["flooring"],
+      "tags": ["commercial", "bar_pub", "single_storey", "new_build", "australia"]
+    }
+  ]
+}

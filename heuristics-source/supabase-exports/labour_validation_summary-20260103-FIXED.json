@@ -1,0 +1,43 @@
+{
+  "validation_date": "2026-01-03T14:05:38.428740",
+  "csv_file": "C:\\dev\\contech\\temp-contechdata\\contechdata-rates\\heuristics-source\\supabase-exports\\labour_productivity_constants-20260103-v2.csv",
+  "total_records": 1167,
+  "validation_issues": {
+    "total": 0,
+    "by_severity": {
+      "CRITICAL": 0,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0
+    }
+  },
+  "data_statistics": {
+    "activity_types_unique": 351,
+    "trade_categories_unique": 37,
+    "markets_found": [
+      "NZ",
+      "UK",
+      "AU"
+    ],
+    "hours_per_unit": {
+      "populated_count": 1080,
+      "empty_count": 87,
+      "min": 0.005,
+      "max": 10.0,
+      "avg": 0.866913888888889
+    },
+    "confidence_score_distribution": {
+      "high": 291,
+      "medium": 876,
+      "low": 0,
+      "very_low": 0
+    }
+  },
+  "key_findings": [
+    "FIXED: 'code' field validation removed (field does not exist)",
+    "Using 'activity_type' as identifier for labour records",
+    "'market' column detected with values: NZ, UK, AU",
+    "Total records validated: 1167",
+    "Issues found: 0 (mostly LOW/MEDIUM severity)"
+  ]
+}

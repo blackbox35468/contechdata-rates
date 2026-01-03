@@ -1,0 +1,104 @@
+Change Type,Table,Record ID,Key/Name,Field,Before,After,Status
+Category Remap,quantity_heuristics,055fcadb-6164-4909-ace8-32cfe18200bf,ARCHETYPE_9BR_STANDARD,category,ARCHETYPE,INPUTS,VERIFIED
+Category Remap,quantity_heuristics,10c9b23f-6633-4819-a72c-272ff095b33c,ARCHETYPE_8BR_PREMIUM,category,ARCHETYPE,INPUTS,VERIFIED
+Category Remap,quantity_heuristics,1b21087f-26a4-4d33-83be-ec5930061871,EXTRA_OVER_UNSTABLE,category,EXCAVATION,SUBSTRUCTURE,VERIFIED
+Category Remap,quantity_heuristics,1d29992b-c950-43b8-b947-553ddd07e867,ARCHETYPE_8BR_STANDARD,category,ARCHETYPE,INPUTS,VERIFIED
+Category Remap,quantity_heuristics,2e4e9e8e-87f5-44f1-b341-27059d9858da,ARCHETYPE_5BR_PREMIUM,category,ARCHETYPE,INPUTS,VERIFIED
+Category Remap,quantity_heuristics,361b067a-75fc-45d5-98d0-94b5a22b9020,ARCHETYPE_4BR_STANDARD,category,ARCHETYPE,INPUTS,VERIFIED
+Category Remap,quantity_heuristics,3e26af0a-d2f5-4a52-8350-2f3f1388ad1f,ARCHETYPE_10BR_STANDARD,category,ARCHETYPE,INPUTS,VERIFIED
+Category Remap,quantity_heuristics,490a1b9b-6ccb-4377-9229-b5bf9e4bdbc7,ARCHETYPE_6BR_PREMIUM,category,ARCHETYPE,INPUTS,VERIFIED
+Category Remap,quantity_heuristics,49747c60-bba2-4e11-98e2-306954f0b607,ARCHETYPE_7BR_STANDARD,category,ARCHETYPE,INPUTS,VERIFIED
+Category Remap,quantity_heuristics,4b32e2dd-f939-44de-8770-577bade30098,ARCHETYPE_5BR_STANDARD,category,ARCHETYPE,INPUTS,VERIFIED
+Category Remap,quantity_heuristics,4fbdbf74-b882-430b-ab2a-ffcbc47f2adc,EXCAVATION_DEPTH_VERY_DEEP,category,EXCAVATION,SUBSTRUCTURE,VERIFIED
+Category Remap,quantity_heuristics,53481fcd-a89f-4eae-99f4-214bddb86365,ARCHETYPE_3BR_PREMIUM,category,ARCHETYPE,INPUTS,VERIFIED
+Category Remap,quantity_heuristics,5e23d0dc-8d31-49bc-80aa-0e99b4ededc7,VOID_DEDUCTION_FORMWORK,category,VOIDS,GEOMETRY,VERIFIED
+Category Remap,quantity_heuristics,68b693d5-e5a3-45f0-adcf-efcd9867bb78,EXCAVATION_DEPTH_SHALLOW,category,EXCAVATION,SUBSTRUCTURE,VERIFIED
+Category Remap,quantity_heuristics,6b165081-df8e-4642-875b-5d440c2c3f47,EXCAVATION_DEPTH_DEEP,category,EXCAVATION,SUBSTRUCTURE,VERIFIED
+Category Remap,quantity_heuristics,75777162-3c65-4db5-a60c-7b7ca67e71d1,ARCHETYPE_6BR_STANDARD,category,ARCHETYPE,INPUTS,VERIFIED
+Category Remap,quantity_heuristics,8946f7ea-027f-4e3b-82fc-ead3be0b6cd7,DRAINAGE_DEPTH_CLASSIFICATION,category,EXCAVATION,SUBSTRUCTURE,VERIFIED
+Category Remap,quantity_heuristics,8cf1af5a-19c3-4c71-b49f-4c1367b6f4c5,EXTRA_OVER_GROUNDWATER,category,EXCAVATION,SUBSTRUCTURE,VERIFIED
+Category Remap,quantity_heuristics,90327547-bf30-4421-8c80-b90f04a608cc,ARCHETYPE_1BR_PREMIUM,category,ARCHETYPE,INPUTS,VERIFIED
+Category Remap,quantity_heuristics,9be3291e-ebc9-463b-9b0c-d2ec7b6c10c2,ARCHETYPE_4BR_PREMIUM,category,ARCHETYPE,INPUTS,VERIFIED
+Category Remap,quantity_heuristics,ab8c2939-542a-43d4-92ec-6092a7043adc,VOID_DEDUCTION_FINISHES,category,VOIDS,GEOMETRY,VERIFIED
+Category Remap,quantity_heuristics,adb3b6ca-c1a3-4d52-80fc-c2246b477034,ARCHETYPE_1BR_STANDARD,category,ARCHETYPE,INPUTS,VERIFIED
+Category Remap,quantity_heuristics,b38345db-050a-4b37-9f56-b6f3c7d16e77,EXTRA_OVER_ROCK,category,EXCAVATION,SUBSTRUCTURE,VERIFIED
+Category Remap,quantity_heuristics,b70b01e6-3cd7-471c-822b-b125749d5452,VOID_DEDUCTION_CONCRETE,category,VOIDS,GEOMETRY,VERIFIED
+Category Remap,quantity_heuristics,c7271f44-7c87-4352-9a16-01d5f404a47b,VOID_DEDUCTION_MASONRY,category,VOIDS,GEOMETRY,VERIFIED
+Category Remap,quantity_heuristics,c8b03e60-7c75-4464-86bb-a600ea323d16,ARCHETYPE_2BR_STANDARD,category,ARCHETYPE,INPUTS,VERIFIED
+Category Remap,quantity_heuristics,d86da761-e1c8-4554-bfd9-6d7fc6f9111a,ARCHETYPE_7BR_PREMIUM,category,ARCHETYPE,INPUTS,VERIFIED
+Category Remap,quantity_heuristics,df4cc73d-e5bc-459c-8fde-1e070bb5b993,ARCHETYPE_2BR_PREMIUM,category,ARCHETYPE,INPUTS,VERIFIED
+Category Remap,quantity_heuristics,e69cb21f-d728-4bb8-81b0-2ba6827ba878,ARCHETYPE_10BR_PREMIUM,category,ARCHETYPE,INPUTS,VERIFIED
+Category Remap,quantity_heuristics,ec51fafd-8f36-4f79-8876-fd2ee6c3ab03,EXCAVATION_DEPTH_MEDIUM,category,EXCAVATION,SUBSTRUCTURE,VERIFIED
+Category Remap,quantity_heuristics,fa1537d7-7198-40b1-805e-69ebc4c4a708,ARCHETYPE_9BR_PREMIUM,category,ARCHETYPE,INPUTS,VERIFIED
+Category Remap,quantity_heuristics,fd907bb4-343a-4366-8010-b4fe77381fc0,ARCHETYPE_3BR_STANDARD,category,ARCHETYPE,INPUTS,VERIFIED
+Record Deletion,labour_productivity_constants,004e4337-bd7b-47f8-aa55-009606802578,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,02c9473a-18df-42ce-a5d2-f5a4cccc7f85,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,07c8a4c7-78bb-446a-b548-763b90185377,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,0b2c8ace-a141-4b65-b0c4-67ba185b054e,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,0b82185f-839d-409c-9a99-5418465203de,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,0c2d49d8-90dc-4afa-9e3c-08254202b0da,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,0e8b4bc4-a35f-475b-a44b-23eefd9cf9bf,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,1415d8da-c246-4a55-af92-ef88057c783a,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,18a55da1-1395-4fd3-831b-9de9cd3faa94,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,19c0e300-14b6-426b-b71a-07cf2eb8f0c9,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,23a8408d-cbf1-4046-baa5-2eee0bf48a96,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,25825d81-d9bb-4ad6-91fc-f11dd144c844,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,269073fb-2da8-4e91-984a-408fa99f0c08,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,2b71d406-4a84-4c9a-98bf-94e10e1613d7,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,2b990bca-037f-4778-bd96-26123087ff44,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,2bac74fa-b191-4fe1-b7a8-0831e1792175,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,4342eb58-d3c6-44f9-9f63-82fe854afa4b,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,45230af7-e0ed-4d6f-acb7-41918705b8d8,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,45e4ae67-63e2-4e59-9b82-8ad2942d2250,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,52d5ecd4-def1-4139-8acb-91af4b5276ab,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,54fb8b02-0b5e-4069-8a73-907a09a92bce,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,62b343a9-8ca3-43fc-9215-fda184af5232,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,6774ae4b-7efa-469f-ba6f-ae8bca8f53f5,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,67bfce06-212c-4a71-acd4-c0cc4f66860a,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,75f96278-eb8b-4652-93fc-057df052ea8e,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,7956aef5-6be8-435c-96e3-33bd6fe58e9a,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,80ada181-5ead-403c-8467-914ac2657155,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,87e6206f-6428-432a-8b31-2d7417518a76,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,8a7af1df-3a0e-4354-a096-1696fa567f9a,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,90626927-2b6c-42a5-8ab7-bfe67401468e,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,932603b8-1909-4781-9b38-a436172d2f2e,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,951c2508-2395-43a9-bacc-5c86d403335a,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,9a101098-8338-418c-a069-1cb5f2b042cd,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,9a3b2c20-4654-4903-bd49-cc80a7287a0e,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,9d8aa9c8-a42b-408d-bb88-c8d929cbbfa6,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,a417a29f-a4c1-4c42-9dd5-cc8334315062,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,a6754f23-52d4-4e66-9b40-1c96fcffd40f,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,a93447a9-59de-4704-ba68-caa8bb665ded,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,a9cd52f9-d071-4e7b-b745-69f43fe75a60,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,ac59d7f7-2947-4c0f-8f19-0d5ce03495ba,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,adb77e36-fc2a-435e-a870-89290cf7ef07,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,b6f9c198-4f62-4e28-a74c-57a4c2087d59,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,b952acc8-22cd-4411-8dcf-6b637ad9dcf2,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,c35c1840-8d06-46fd-867a-a7d7c054fc1a,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,c50ee957-3586-4033-84e8-9c659c10a98c,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,c93fea49-3323-4c5d-b4ce-83fe64cc3738,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,d3cb1af0-adac-4b05-aa9e-62398e69b512,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,d5488859-82ce-4c56-9235-05d1eb471464,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,d5f143f2-2dd0-47ff-be9c-193906500e22,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,dd46df85-5c28-4474-a424-6863eac56802,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,e2f5a360-6139-4102-983d-83ace104047e,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,e661e2d9-67d8-4f6c-be16-ba41d130283c,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,e6e9c0b2-5f55-46ea-8f09-1c41161b883d,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,efe8d2e5-2cda-4409-b51b-c61e9c827eb4,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,f0395589-f36e-4d33-8633-50b4972493e5,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Record Deletion,labour_productivity_constants,f72156a9-b61a-445e-a248-87a61800b107,N/A (activity: default),entire_record,EXISTS,DELETED,VERIFIED
+Equipment Reclassify,plant_productivity_constants,0b5a6f8e-762e-4461-943d-8e07e5c95dee,Concrete Mixer - Transit Mixer 6mÂ³,equipment_category,CONCRETE EQUIPMENT,TRANSPORT/LOGISTICS,VERIFIED
+Equipment Reclassify,plant_productivity_constants,51e9ae9a-e854-4978-9de7-c880e908f985,Concrete Mixer - Transit Mixer 8mÂ³,equipment_category,CONCRETE EQUIPMENT,TRANSPORT/LOGISTICS,VERIFIED
+Equipment Reclassify,plant_productivity_constants,60adf98d-5437-4fe8-b8a6-9286162a599c,CONCRETE_AGITATOR_6M3,equipment_category,TRUCKS_HAULAGE,TRANSPORT/LOGISTICS,VERIFIED
+Equipment Reclassify,plant_productivity_constants,60adf98d-5437-4fe8-b8a6-9286162a599c,CONCRETE_AGITATOR_6M3,output_rate_typical,15.00,(null),VERIFIED
+Equipment Reclassify,plant_productivity_constants,6827990e-ae95-481b-aacf-45ee9448d348,Concrete Mixer - Transit Mixer 8mÂ³,equipment_category,CONCRETE EQUIPMENT,TRANSPORT/LOGISTICS,VERIFIED
+Equipment Reclassify,plant_productivity_constants,6f2f84fd-e70a-4aa1-af30-bcc333bec9fd,CONCRETE_AGITATOR_6M3,equipment_category,TRUCKS_HAULAGE,TRANSPORT/LOGISTICS,VERIFIED
+Equipment Reclassify,plant_productivity_constants,6f2f84fd-e70a-4aa1-af30-bcc333bec9fd,CONCRETE_AGITATOR_6M3,output_rate_typical,15.00,(null),VERIFIED
+Equipment Reclassify,plant_productivity_constants,71c6815f-78a6-4c97-bced-b8b84a1ea334,Concrete Mixer - Transit Mixer 8mÂ³,equipment_category,CONCRETE EQUIPMENT,TRANSPORT/LOGISTICS,VERIFIED
+Equipment Reclassify,plant_productivity_constants,7dd2fc0a-5716-4f9f-b599-f8a2659b2c3c,Concrete Agitator Truck - 4mÂ³,equipment_category,CONCRETE EQUIPMENT,TRANSPORT/LOGISTICS,VERIFIED
+Equipment Reclassify,plant_productivity_constants,80e0f8a4-2fb3-4a43-987e-d9d90a07b944,Concrete Agitator Truck - 4mÂ³,equipment_category,CONCRETE EQUIPMENT,TRANSPORT/LOGISTICS,VERIFIED
+Equipment Reclassify,plant_productivity_constants,a2de881a-1d7a-4c06-b3a1-2ad9e76a091c,Concrete Mixer - Transit Mixer 6mÂ³,equipment_category,CONCRETE EQUIPMENT,TRANSPORT/LOGISTICS,VERIFIED
+Equipment Reclassify,plant_productivity_constants,af002ed2-98e3-44e4-b79b-e1e81b52a15f,Concrete Agitator Truck - 4mÂ³,equipment_category,CONCRETE EQUIPMENT,TRANSPORT/LOGISTICS,VERIFIED
+Equipment Reclassify,plant_productivity_constants,cd0df091-9c43-4e2c-97c4-6d9eb7522f75,CONCRETE_AGITATOR_6M3,equipment_category,TRUCKS_HAULAGE,TRANSPORT/LOGISTICS,VERIFIED
+Equipment Reclassify,plant_productivity_constants,cd0df091-9c43-4e2c-97c4-6d9eb7522f75,CONCRETE_AGITATOR_6M3,output_rate_typical,15.00,(null),VERIFIED
+Equipment Reclassify,plant_productivity_constants,ce417b07-f8b2-41f0-841d-e9a3c49274b1,Concrete Mixer - Transit Mixer 6mÂ³,equipment_category,CONCRETE EQUIPMENT,TRANSPORT/LOGISTICS,VERIFIED

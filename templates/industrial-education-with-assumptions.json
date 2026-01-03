@@ -1,0 +1,1485 @@
+{
+  "document_metadata": {
+    "title": "Industrial & Education Templates with Measurement Assumptions & Derivation Formulas",
+    "version": "1.0",
+    "created_date": "2026-01-03",
+    "purpose": "Comprehensive template package with sector-specific measurement assumptions, productivity standards, waste factors, and NRM mapping for 6 industrial + 3 education building types",
+    "standards_reference": "Australian Standards (AS 1684, AS 3740), NCC 2022 (Volumes 1-2), Masonry Contractors Australia Productivity Guide, Rawlinsons Construction Handbook 2025",
+    "total_templates": 9,
+    "sectors_included": ["industrial", "education"],
+    "nrm_sections_covered": ["1", "2", "3", "4", "5", "6", "7", "8"],
+    "key_innovations": [
+      "Hybrid sizing for industrial templates (length × width × height volume-based calculations)",
+      "Explicit waste factors in all derivations (Australian industry standard)",
+      "Ceiling height variance by building type and structural system",
+      "Education-specific safety compliance (NCC Part 10, accessibility enhancements)",
+      "Conservative productivity rates with gang size modifiers",
+      "Non-linear item mapping (loading docks, mezzanines, bathrooms per student ratio)"
+    ]
+  },
+  "industrial_templates": [
+    {
+      "template_id": "au-ind-warehouse-small-400",
+      "name": "Small Warehouse",
+      "description": "Single storey small warehouse, 400m² GFA, metal cladding on steel frame, metal deck roof",
+      "building_type": "warehouse",
+      "sector": "industrial",
+      "specifications": {
+        "gfa_m2": 400,
+        "storeys": 1,
+        "default_construction": "metal_cladding",
+        "construction_notes": "Insulated metal cladding on steel portal frame",
+        "default_roofing": "metal",
+        "roof_type": "Metal Deck (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 6.0,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian industrial estate"
+      },
+      "measurement_assumptions": {
+        "section": "1 - Hybrid Sizing (Volume-Based for Industrial)",
+        "method": "Length × Width × Height approach for large-volume industrial items",
+        "example_dimensions": {
+          "length_m": 20,
+          "width_m": 20,
+          "height_m": 6.0,
+          "volume_m3": 2400,
+          "justification": "Standard warehouse footprint (400 m² ÷ 20m width = 20m length); clear height 6.0m accommodates pallet racking (1.5m per tier, ~3 tiers) plus maintenance clearance"
+        },
+        "ceiling_height_justification": "6.0m typical for single-storey warehouses with pallet racking (AS 1684 Part 2 coordination); lower than large warehouses (7.5m) due to smaller footprint and simpler span structures",
+        "ncc_compliance": "NCC Class 7 (industrial storage); height determined by racking requirement, not habitable room minimums"
+      },
+      "productivity_rates": {
+        "section": "2 - Industrial Productivity (Faster Construction, Less Precision)",
+        "characteristics": "Metal cladding + steel frame = rapid assembly, repetitive work, minimal site adjustment",
+        "baseline_rates": {
+          "metal_cladding_installation": {
+            "rate": "1.2 m²/hour",
+            "notes": "18-20 m²/8-hour day; repetitive cladding panels, pre-assembled",
+            "source": "Industry standard; Rawlinsons Handbook 2025",
+            "gang_size": "2-person: 1 installer + 1 assistant"
+          },
+          "steel_frame_erection": {
+            "rate": "15-25 tonne/day",
+            "notes": "Portal frames pre-fabricated; rapid bolting/welding on-site",
+            "source": "Steel fabricator standard practice",
+            "gang_size": "3-person: 2 steel erectors + 1 assistant"
+          },
+          "concrete_slab_finishing": {
+            "rate": "80 m²/day",
+            "notes": "Broom finish (non-slip); lower precision than residential",
+            "source": "STANDARDS-REFERENCE.md - Concrete finishing (broom): 60-100 m²/day",
+            "gang_size": "2-person: 1 finisher + 1 laborer"
+          },
+          "metal_roof_installation": {
+            "rate": "1.0 m²/hour",
+            "notes": "Metal deck + colorbond sheets; 15-18 m²/8-hour day",
+            "source": "Roofing contractor standard",
+            "gang_size": "2-person: 1 roofer + 1 assistant"
+          }
+        },
+        "gang_composition_modifier": "Industrial projects favour smaller, more efficient teams (2-3 person) vs residential (3-person baseline). Productivity multiplier: 1.05 (5% faster due to repetitive work)"
+      },
+      "waste_factors": {
+        "section": "3 - Material Waste (May Be Lower for Steel, Higher for Concrete)",
+        "characteristics": "Steel structures: minimal waste (prefabricated); Concrete: variable depending on formwork reuse",
+        "applied_factors": {
+          "concrete": {
+            "factor": 1.05,
+            "percent_waste": 5,
+            "reason": "Spillage, over-excavation, pump residue (concrete slab may have excess due to site settling)",
+            "derivation_example": "Slab volume calculation: 400m² × 0.15m (thickness) × 1.05 (5% waste) = 63 m³"
+          },
+          "steel_frame": {
+            "factor": 1.05,
+            "percent_waste": 5,
+            "reason": "Minimal waste for prefabricated portal frames; 5% allows for cutting adjustments on-site",
+            "derivation_example": "25 tonne portal frame requirement × 1.05 (5% waste) = 26.25 tonne"
+          },
+          "metal_cladding": {
+            "factor": 1.06,
+            "percent_waste": 6,
+            "reason": "Panel overlap allowance (minimum 150mm), end-of-run waste",
+            "derivation_example": "Wall area 240m² (perimeter 80m × 6.0m height, includes roof overhang adjustments) × 1.06 (6% waste) = 254.4 m² panels required"
+          },
+          "metal_roofing": {
+            "factor": 1.05,
+            "percent_waste": 5,
+            "reason": "Overlap allowance (at least 2 ribs), colour matching waste",
+            "derivation_example": "Roof area (GFA 400m² × 1.15 roof factor) = 460 m² × 1.05 (5% waste) = 483 m²"
+          }
+        }
+      },
+      "non_linear_items": {
+        "section": "4 - Non-Linear Items (Items NOT Measured by GFA)",
+        "definition": "Industrial items counted by unit or as absolute quantities rather than area-based",
+        "items": [
+          {
+            "item_name": "Loading Dock",
+            "measurement_basis": "Per dock door",
+            "typical_specification": "Single dock 3.5m wide × 10m deep staging area; reinforced concrete, dock leveller, safety barriers",
+            "quantity_derivation": "1 dock (single-storey 400m² warehouse typically requires 1 dock for operations; larger warehouses would require 2+)",
+            "nrm_code": "2.5 (External structural components) + 1.4 (Concrete works)",
+            "notes": "Not proportional to GFA; determined by throughput requirements and building frontage"
+          },
+          {
+            "item_name": "Drainage (Perimeter)",
+            "measurement_basis": "Linear metres",
+            "typical_specification": "Concrete apron with sloped drainage to stormwater; perimeter = √(400×4) × 1.2 = ~40m",
+            "quantity_derivation": "40m perimeter × 3.0m apron depth = 120 m² (section 8.3 external drainage)",
+            "nrm_code": "8.3 (Drainage and subsurface works)",
+            "notes": "Critical for warehouse to prevent water ingress; slope typically 1:200 minimum"
+          },
+          {
+            "item_name": "Mezzanine (Optional)",
+            "measurement_basis": "Per storey equivalent (if added)",
+            "typical_specification": "100-150 m² mezzanine level for office/storage; steel frame + decking",
+            "quantity_derivation": "If included: 120 m² mezzanine (30% of GFA); does NOT affect GFA calculation (measured once on ground level)",
+            "nrm_code": "2.2 (Upper floors) or 2.1 (Structural frame - steel)",
+            "notes": "Optional structural enhancement; common in smaller warehouses for vertical storage optimization"
+          }
+        ]
+      },
+      "soil_conditions_impact": {
+        "section": "5 - Soil Conditions & Foundation Costs",
+        "context": "Small warehouse on slab-on-ground; foundation cost heavily influenced by soil bearing capacity",
+        "assessment_factors": {
+          "presumed_soil_type": "Mixed (conservative default per STANDARDS-REFERENCE)",
+          "soil_factor": 1.3,
+          "interpretation": "Soil bearing 1:1.3 worse than clay baseline; may require imported fill, additional compaction, proof rolling"
+        },
+        "foundation_scenarios": {
+          "clay_site": {
+            "condition": "Good bearing (180-200 kPa)",
+            "depth": "0.45m trenches, standard 500mm footing",
+            "excavation_volume": "Perimeter 80m × 0.45m depth × 0.30m width = 10.8 m³",
+            "soil_factor_applied": 1.0,
+            "cost_impact": "Baseline; minimal preparation"
+          },
+          "sand_site": {
+            "condition": "Poor bearing (100-120 kPa)",
+            "depth": "0.45m trenches × 1.2m width (wider foundation)",
+            "excavation_volume": "80m × 0.45m × 1.2m = 43.2 m³",
+            "soil_factor_applied": 0.8,
+            "cost_impact": "Faster excavation but wider/deeper footings; increased concrete volume +25%"
+          },
+          "mixed_fill_site": {
+            "condition": "Variable bearing (120-150 kPa)",
+            "depth": "0.60m trenches, proof rolling required",
+            "excavation_volume": "80m × 0.60m × 0.30m = 14.4 m³ + imported fill",
+            "soil_factor_applied": 1.3,
+            "cost_impact": "Higher labour (proof rolling, inspection); imported fill +15% material cost; recommend soil test report"
+          }
+        },
+        "nrm_mapping": "Section 1.2 (Excavation and earthworks) + 1.4 (In-situ concrete foundations)"
+      },
+      "measurement_derivation_formulas": {
+        "section": "6 - Comprehensive Derivation Formulas with Waste",
+        "formulas": [
+          {
+            "item": "Building Perimeter",
+            "formula": "√(GFA × 4) × 1.2 (shape factor)",
+            "calculation": "√(400 × 4) × 1.2 = √1600 × 1.2 = 40 × 1.2 = 48m",
+            "notes": "Conservative estimate for rectilinear building; actual measurement may be 40-50m"
+          },
+          {
+            "item": "External Wall Area (including height variance)",
+            "formula": "Perimeter × ceiling_height",
+            "calculation": "48m × 6.0m = 288 m² (gross external envelope)",
+            "notes": "Used for cladding takeoff; no waste factor applied (accounts for overlaps in panel specification)"
+          },
+          {
+            "item": "Metal Cladding (with waste)",
+            "formula": "Wall area × 1.06 (6% waste for overlaps)",
+            "calculation": "288 m² × 1.06 = 305.3 m² (plus roof fascia/soffit ~20 m²) = ~325 m² total cladding ordered",
+            "notes": "6% waste covers overlap joints (minimum 150mm), end-of-run cuts, damage allowance"
+          },
+          {
+            "item": "Roof Area (pitched/sloped adjustment)",
+            "formula": "GFA × 1.15 (allows for slope, overhang)",
+            "calculation": "400 m² × 1.15 = 460 m²",
+            "notes": "Metal deck roof with 1:8 pitch = ~1.08 actual slope factor; added 1.15 for eaves overhang (0.5m all sides)"
+          },
+          {
+            "item": "Metal Roof Covering (with waste)",
+            "formula": "Roof area × 1.05 (5% waste)",
+            "calculation": "460 m² × 1.05 = 483 m² colorbond sheets",
+            "notes": "5% waste covers overlap, colour matching across sheets, edge/ridge caps"
+          },
+          {
+            "item": "Concrete Slab (with waste)",
+            "formula": "GFA × 0.15m (nominal thickness) × 1.05 (5% waste)",
+            "calculation": "400 m² × 0.15m × 1.05 = 63 m³ concrete",
+            "notes": "Industrial floor slab 150mm standard; waste accounts for over-pour, pump residue, edge finishing"
+          },
+          {
+            "item": "Electrical Power Points (commercial density)",
+            "formula": "GFA ÷ 4 m² (commercial ratio per NCC F5)",
+            "calculation": "400 ÷ 4 = 100 power points",
+            "notes": "Industrial building requires 1 point per 4m² (higher density than residential 1:6); distributed across warehouse zone + office areas"
+          },
+          {
+            "item": "Drainage Perimeter Apron",
+            "formula": "Perimeter × 3.0m apron width",
+            "calculation": "48m × 3.0m = 144 m² concrete apron",
+            "notes": "Industrial standard 3m apron for vehicle/equipment access; reinforced (SL82 mesh)"
+          }
+        ]
+      },
+      "safety_accessibility_standards": {
+        "section": "7 - Safety & Accessibility (NCC Class 7 Industrial)",
+        "ncc_reference": "NCC Volume 1, Class 7 (Storage & Industrial)",
+        "requirements": {
+          "egress": "Two exits minimum, separated by 1/3 diagonal distance; exit doors minimum 1.0m × 2.1m height",
+          "lighting": "50 lux minimum on main aisles, 30 lux in storage zones (AS/NZS 1680.1)",
+          "ventilation": "6-8 air changes per hour or CO2 sensors if gas storage (AS 1684 coordination with hazardous goods if applicable)",
+          "fire_safety": "Sprinklers required if building >2,000 m² (this 400 m² may be exempt; verify local council)",
+          "racking_safety": "All pallet racking must be professionally installed per AS 4084 (industrial storage); qualified independent inspector certification"
+        },
+        "no_enhanced_accessibility_required": "Class 7 industrial storage facilities are not public areas; accessibility requirements per NCC Part D apply only to staff facilities (staff rooms, WCs, office areas). Main warehouse storage zones are work areas, not accessible public spaces."
+      },
+      "nrm_mapping_summary": {
+        "section": "8 - NRM Section Breakdown for Industrial Warehouses",
+        "nrm_allocation": [
+          {
+            "nrm_section": "0 - Facilitating Works",
+            "allocation_percent": "3-5%",
+            "items": "Site setup, temporary fencing, demolition (if applicable), environmental works"
+          },
+          {
+            "nrm_section": "1 - Substructure",
+            "allocation_percent": "8-12%",
+            "items": "Excavation (50 m³ in mixed soil), concrete slab 63 m³, reinforcement, formwork"
+          },
+          {
+            "nrm_section": "2 - Superstructure",
+            "allocation_percent": "25-35%",
+            "items": "Steel portal frame (25 tonne), roof trusses/purlins, metal cladding, metal roof covering, gutters/downpipes"
+          },
+          {
+            "nrm_section": "3 - Internal Finishes",
+            "allocation_percent": "5-10%",
+            "items": "Internal wall finishes (office areas only ~50 m²), ceiling finishes (commercial paint on underside of roof deck), floor finishes (sealed concrete)"
+          },
+          {
+            "nrm_section": "4 - Fittings",
+            "allocation_percent": "2-5%",
+            "items": "Office built-ins, racking (if supply-only, not installation)"
+          },
+          {
+            "nrm_section": "5 - Services",
+            "allocation_percent": "12-18%",
+            "items": "Electrical (100 power points, 20 light points, switchboard), plumbing (staff WC, sink), HVAC (basic ventilation), fire safety (manual extinguishers)"
+          },
+          {
+            "nrm_section": "6 - Prefabricated Items",
+            "allocation_percent": "0-2%",
+            "items": "Sectional doors (loading), manual/electric roller doors"
+          },
+          {
+            "nrm_section": "7 - Work to Existing",
+            "allocation_percent": "0%",
+            "items": "N/A (new build)"
+          },
+          {
+            "nrm_section": "8 - External Works",
+            "allocation_percent": "5-8%",
+            "items": "Site drainage (144 m² apron), paving (car park), landscaping, external services (stormwater)"
+          }
+        ]
+      },
+      "structural_system_notes": {
+        "section": "9 - Structural System Coordination & Ceiling Height Justification",
+        "system_type": "Steel portal frame with metal deck roof",
+        "ceiling_height_derivation": {
+          "warehouse_usage": "Pallet racking storage",
+          "rack_configuration": "Standard racking dimensions: 1.5m bay width × 1.5m tier height × 1.5m depth = 3 tiers per stack = 4.5m total stack height plus 0.5m for handling = 5.0m minimum usable height",
+          "building_height_selection": "6.0m clear height chosen to accommodate 3-tier pallet racking + 1.0m clearance above stacks for equipment clearance + 0.5m for mechanical/electrical services above ceiling line = 7.5m from slab to eaves (design floor-to-beam = 6.0m clear)",
+          "frame_coordination": "Portal frame span 20m × bay 5m modules; roof pitch 1:8 = 2.5m height change over 20m span; structural engineer determines exact eaves height based on racking load case (typically 25 kN/m² distributed load per tier)"
+        }
+      },
+      "is_active": true,
+      "applicable_swaps": ["flooring"],
+      "tags": ["industrial", "warehouse", "single_storey", "new_build", "australia", "small"]
+    },
+    {
+      "template_id": "au-ind-warehouse-medium-800",
+      "name": "Medium Warehouse",
+      "description": "Single storey medium warehouse, 800m² GFA, metal cladding on steel frame, metal deck roof",
+      "building_type": "warehouse",
+      "sector": "industrial",
+      "specifications": {
+        "gfa_m2": 800,
+        "storeys": 1,
+        "default_construction": "metal_cladding",
+        "construction_notes": "Insulated metal cladding on steel portal frame",
+        "default_roofing": "metal",
+        "roof_type": "Metal Deck (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 6.0,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian industrial estate"
+      },
+      "measurement_assumptions": {
+        "section": "1 - Hybrid Sizing (Volume-Based for Industrial)",
+        "method": "Length × Width × Height approach; typical grid 32m × 25m = 800m²",
+        "example_dimensions": {
+          "length_m": 32,
+          "width_m": 25,
+          "height_m": 6.0,
+          "volume_m3": 4800,
+          "justification": "Medium warehouse footprint; single-span portal frame 32m, depth 25m accommodates 3-bay loading dock configuration"
+        },
+        "ceiling_height_justification": "6.0m consistent with small warehouse; adequate for 3-tier racking but lower than large warehouses (7.5m) due to handling efficiency trade-off (smaller footprint = less distance to move goods)"
+      },
+      "productivity_rates": {
+        "section": "2 - Industrial Productivity (Repetitive Work, Larger Gang Efficiency)",
+        "characteristics": "Larger warehouse scale enables 3-4 person teams for steel erection; productivity gains from repetition",
+        "baseline_rates": {
+          "steel_frame_erection": {
+            "rate": "20-30 tonne/day",
+            "notes": "32m clear span frame; increased efficiency from larger project scale; 3-person team (2 erectors + 1 assistant)",
+            "source": "Steel fabricator standard practice",
+            "productivity_multiplier": 1.10
+          },
+          "metal_cladding_installation": {
+            "rate": "1.3 m²/hour",
+            "notes": "20-22 m²/8-hour day; 2-3 person team improves efficiency vs single installer",
+            "gang_size": "3-person: 2 installers + 1 assistant"
+          },
+          "concrete_slab_finishing": {
+            "rate": "90 m²/day",
+            "notes": "2-person finishing team on 800m² slab; broom finish",
+            "source": "Larger slab area = more efficient (fewer edge/corner transitions)",
+            "gang_size": "2-person: 1 finisher + 1 laborer"
+          }
+        },
+        "gang_composition_modifier": "Larger project size enables 3-4 person teams with +10% productivity multiplier vs baseline"
+      },
+      "waste_factors": {
+        "section": "3 - Material Waste",
+        "applied_factors": {
+          "concrete": {
+            "factor": 1.05,
+            "reason": "Spillage, over-excavation, pump residue"
+          },
+          "steel_frame": {
+            "factor": 1.05,
+            "reason": "Larger frame = slightly less waste proportionally; 5% allows for adjustment cuts"
+          },
+          "metal_cladding": {
+            "factor": 1.06,
+            "reason": "800m² wall area increases scrap management; 6% waste"
+          },
+          "metal_roofing": {
+            "factor": 1.05,
+            "reason": "Standard overlap + colour matching"
+          }
+        }
+      },
+      "non_linear_items": {
+        "section": "4 - Non-Linear Items",
+        "items": [
+          {
+            "item_name": "Loading Docks (Multiple)",
+            "quantity_derivation": "2-3 docks for medium warehouse (one dock per 400 m²); 3 docks × (3.5m wide × 10m deep) = 3 dock positions",
+            "nrm_code": "2.5 + 1.4"
+          },
+          {
+            "item_name": "Mezzanine",
+            "quantity_derivation": "200-250 m² mezzanine optional (25-30% of GFA); common for office/admin space above receiving area"
+          },
+          {
+            "item_name": "Drainage Perimeter",
+            "quantity_derivation": "Perimeter ≈ √(800×4) × 1.2 = 56m × 3.0m apron = 168 m²"
+          }
+        ]
+      },
+      "soil_conditions_impact": {
+        "section": "5 - Soil Conditions & Foundation Costs",
+        "assessment_factors": {
+          "presumed_soil_type": "Mixed (conservative default)",
+          "excavation_volume": "Perimeter 56m × 0.45m × 0.30m = 7.56 m³ (smaller per-unit waste than small warehouse)"
+        }
+      },
+      "measurement_derivation_formulas": {
+        "section": "6 - Derivation Formulas",
+        "formulas": [
+          {
+            "item": "Metal Cladding (with waste)",
+            "calculation": "(56m × 6.0m) × 1.06 = 336 m² × 1.06 = 356.2 m² ordered"
+          },
+          {
+            "item": "Concrete Slab (with waste)",
+            "calculation": "800 m² × 0.15m × 1.05 = 126 m³ concrete"
+          },
+          {
+            "item": "Electrical Power Points",
+            "calculation": "800 ÷ 4 = 200 power points"
+          }
+        ]
+      },
+      "safety_accessibility_standards": {
+        "section": "7 - Safety & Accessibility (NCC Class 7)",
+        "requirements": "Same as small warehouse; multiple dock exits required per NCC E2.2"
+      },
+      "nrm_mapping_summary": {
+        "section": "8 - NRM Allocation",
+        "summary": "Similar allocation percentages to small warehouse; substructure higher (126 m³ concrete vs 63 m³)"
+      },
+      "structural_system_notes": {
+        "section": "9 - Structural System (32m Clear Span Portal Frame)",
+        "ceiling_height_derivation": "6.0m clear height; same racking config as small warehouse but over 800m² floor = better space utilization"
+      },
+      "is_active": true,
+      "applicable_swaps": ["flooring"],
+      "tags": ["industrial", "warehouse", "single_storey", "new_build", "australia", "medium"]
+    },
+    {
+      "template_id": "au-ind-warehouse-large-2000",
+      "name": "Large Warehouse",
+      "description": "Single storey large warehouse, 2000m² GFA, metal cladding on steel frame, metal deck roof",
+      "building_type": "warehouse",
+      "sector": "industrial",
+      "specifications": {
+        "gfa_m2": 2000,
+        "storeys": 1,
+        "default_construction": "metal_cladding",
+        "construction_notes": "Insulated metal cladding on steel portal frame",
+        "default_roofing": "metal",
+        "roof_type": "Metal Deck (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 7.5,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian industrial estate"
+      },
+      "measurement_assumptions": {
+        "section": "1 - Hybrid Sizing (Volume-Based for Industrial)",
+        "example_dimensions": {
+          "length_m": 50,
+          "width_m": 40,
+          "height_m": 7.5,
+          "volume_m3": 15000,
+          "justification": "Large warehouse typical grid; 50m single span or 2×25m spans, 40m depth; GFA 2000m² = 50m × 40m"
+        },
+        "ceiling_height_justification": "7.5m clear height accommodates 4-tier high-density pallet racking (1.5m × 4 tiers = 6.0m + 1.0m topload clearance + 0.5m services) or reach-truck operation (specialized equipment with higher clearance requirements)"
+      },
+      "productivity_rates": {
+        "section": "2 - Industrial Productivity (Large-Scale Efficiency)",
+        "baseline_rates": {
+          "steel_frame_erection": {
+            "rate": "30-40 tonne/day",
+            "notes": "50m span frame; larger projects achieve higher daily output; 4-person team (3 erectors + 1 assistant)",
+            "productivity_multiplier": 1.15
+          },
+          "concrete_slab_finishing": {
+            "rate": "100-120 m²/day",
+            "notes": "2000m² slab; larger continuous area = efficiency gains; multiple finisher teams working in parallel zones"
+          }
+        }
+      },
+      "waste_factors": {
+        "section": "3 - Material Waste",
+        "note": "Same factors as medium/small; large project scale may enable slight economies on waste (1.04-1.05 for steel) but using 1.05 conservative"
+      },
+      "non_linear_items": {
+        "section": "4 - Non-Linear Items",
+        "items": [
+          {
+            "item_name": "Loading Docks",
+            "quantity_derivation": "5-6 dock doors for 2000 m² warehouse (typical: 1 dock per 400 m²); recommend minimum 6 docks"
+          },
+          {
+            "item_name": "Mezzanine Levels",
+            "quantity_derivation": "500-600 m² mezzanine (25-30% of GFA) above office/receiving areas"
+          },
+          {
+            "item_name": "Drainage & Paved Apron",
+            "quantity_derivation": "Perimeter ≈ 180m × 4.0m apron (larger facility) = 720 m²"
+          }
+        ]
+      },
+      "measurement_derivation_formulas": {
+        "section": "6 - Derivation Formulas",
+        "formulas": [
+          {
+            "item": "Metal Cladding (with waste)",
+            "calculation": "(180m × 7.5m) × 1.06 = 1350 m² × 1.06 = 1431 m² ordered"
+          },
+          {
+            "item": "Concrete Slab (with waste)",
+            "calculation": "2000 m² × 0.15m × 1.05 = 315 m³ concrete"
+          },
+          {
+            "item": "Roof Area & Covering",
+            "calculation": "2000 m² × 1.15 × 1.05 = 2415 m² colorbond sheets"
+          }
+        ]
+      },
+      "structural_system_notes": {
+        "section": "9 - Structural System (50m Span Portal or Twin-Span)",
+        "ceiling_height_derivation": "7.5m clear = 4-tier racking support; larger span (50m) requires higher eaves to manage deflection visibility and clearance distribution"
+      },
+      "is_active": true,
+      "applicable_swaps": ["flooring"],
+      "tags": ["industrial", "warehouse", "single_storey", "new_build", "australia", "large"]
+    },
+    {
+      "template_id": "au-ind-workshop-small-200",
+      "name": "Small Workshop",
+      "description": "Single storey small workshop, 200m² GFA, metal cladding on steel frame, metal deck roof",
+      "building_type": "workshop",
+      "sector": "industrial",
+      "specifications": {
+        "gfa_m2": 200,
+        "storeys": 1,
+        "default_construction": "metal_cladding",
+        "construction_notes": "Insulated metal cladding on steel frame",
+        "default_roofing": "metal",
+        "roof_type": "Metal Deck (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 5.0,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian industrial estate"
+      },
+      "measurement_assumptions": {
+        "section": "1 - Hybrid Sizing (Volume-Based for Industrial)",
+        "example_dimensions": {
+          "length_m": 16,
+          "width_m": 12.5,
+          "height_m": 5.0,
+          "volume_m3": 1000,
+          "justification": "Smaller workshop footprint; 16m span portal frame, 12.5m depth = 200m² GFA; 5.0m clear height adequate for equipment benches, machine tools, no racking"
+        },
+        "ceiling_height_justification": "5.0m minimum for workshop equipment clearance (lathes, mills, presses typically 2-3m height); lower than warehouses (no racking); sufficient for monorail/hoist operation (1-2 tonne typical workshop capacity)"
+      },
+      "productivity_rates": {
+        "section": "2 - Industrial Productivity (Workshop-Specific)",
+        "characteristics": "Similar to warehouse but smaller; tight gangways, equipment placement requires more precision",
+        "baseline_rates": {
+          "steel_frame_erection": {
+            "rate": "15-20 tonne/day",
+            "notes": "Smaller frame; 2-person team (1 erector + 1 assistant) typical for 200 m² workshop"
+          },
+          "concrete_slab_finishing": {
+            "rate": "80-90 m²/day",
+            "notes": "Workshop floors require better finish (trowel or sealed) vs warehouse broom finish; allows spill containment"
+          }
+        }
+      },
+      "waste_factors": {
+        "section": "3 - Material Waste",
+        "applied_factors": {
+          "concrete": { "factor": 1.05 },
+          "steel_frame": { "factor": 1.05 },
+          "metal_cladding": { "factor": 1.06 }
+        }
+      },
+      "non_linear_items": {
+        "section": "4 - Non-Linear Items",
+        "items": [
+          {
+            "item_name": "Equipment Entrance & Personnel Door",
+            "quantity_derivation": "1 sliding door (3.5m wide × 3.5m high) + 1 personnel door (1.0m × 2.1m)"
+          },
+          {
+            "item_name": "Drainage & Spill Containment",
+            "quantity_derivation": "Perimeter ≈ 40m × 2.0m apron = 80 m² (workshop requires floor drains + spill containment if chemicals stored)"
+          }
+        ]
+      },
+      "measurement_derivation_formulas": {
+        "section": "6 - Derivation Formulas",
+        "formulas": [
+          {
+            "item": "Metal Cladding (with waste)",
+            "calculation": "(40m × 5.0m) × 1.06 = 200 m² × 1.06 = 212 m²"
+          },
+          {
+            "item": "Concrete Slab (with waste, workshop finish)",
+            "calculation": "200 m² × 0.15m × 1.05 = 31.5 m³ concrete (may need 100mm wear coat in high-traffic areas)"
+          }
+        ]
+      },
+      "structural_system_notes": {
+        "section": "9 - Structural System (16m Clear Span, Equipment-Loaded)",
+        "ceiling_height_derivation": "5.0m clear = adequate for 2-tonne monorail hoist (beam height 0.5m + hook clearance 0.5m = 1.0m overhead) = 5.0m total provides 3.5m working height below services"
+      },
+      "is_active": true,
+      "applicable_swaps": ["flooring"],
+      "tags": ["industrial", "workshop", "single_storey", "new_build", "australia", "small"]
+    },
+    {
+      "template_id": "au-ind-workshop-medium-500",
+      "name": "Medium Workshop",
+      "description": "Single storey medium workshop, 500m² GFA, metal cladding on steel frame, metal deck roof",
+      "building_type": "workshop",
+      "sector": "industrial",
+      "specifications": {
+        "gfa_m2": 500,
+        "storeys": 1,
+        "default_construction": "metal_cladding",
+        "construction_notes": "Insulated metal cladding on steel frame",
+        "default_roofing": "metal",
+        "roof_type": "Metal Deck (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 5.5,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian industrial estate"
+      },
+      "measurement_assumptions": {
+        "section": "1 - Hybrid Sizing (Volume-Based for Industrial)",
+        "example_dimensions": {
+          "length_m": 25,
+          "width_m": 20,
+          "height_m": 5.5,
+          "volume_m3": 2750,
+          "justification": "Medium workshop; 25m span, 20m depth = 500m² GFA; 5.5m clear height allows slightly larger equipment and multi-tier mezzanine office above receiving area"
+        }
+      },
+      "productivity_rates": {
+        "section": "2 - Industrial Productivity",
+        "baseline_rates": {
+          "steel_frame_erection": {
+            "rate": "20-25 tonne/day",
+            "notes": "3-person team (2 erectors + 1 assistant); mid-size frame"
+          }
+        }
+      },
+      "waste_factors": {
+        "section": "3 - Material Waste",
+        "applied_factors": {
+          "concrete": { "factor": 1.05 },
+          "steel_frame": { "factor": 1.05 },
+          "metal_cladding": { "factor": 1.06 }
+        }
+      },
+      "measurement_derivation_formulas": {
+        "section": "6 - Derivation Formulas",
+        "formulas": [
+          {
+            "item": "Concrete Slab (with wear coat)",
+            "calculation": "500 m² × 0.15m + 500 m² × 0.05m (50mm wear coat in machinery areas) × 1.05 = 52.5 m³"
+          }
+        ]
+      },
+      "is_active": true,
+      "applicable_swaps": ["flooring"],
+      "tags": ["industrial", "workshop", "single_storey", "new_build", "australia", "medium"]
+    },
+    {
+      "template_id": "au-ind-light-industrial-300",
+      "name": "Light Industrial Unit",
+      "description": "Single storey light industrial unit, 300m² GFA, metal cladding on steel frame, metal deck roof",
+      "building_type": "light_industrial",
+      "sector": "industrial",
+      "specifications": {
+        "gfa_m2": 300,
+        "storeys": 1,
+        "default_construction": "metal_cladding",
+        "construction_notes": "Insulated metal cladding on steel frame",
+        "default_roofing": "metal",
+        "roof_type": "Metal Deck (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 5.0,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian industrial estate"
+      },
+      "measurement_assumptions": {
+        "section": "1 - Hybrid Sizing (Volume-Based for Industrial)",
+        "example_dimensions": {
+          "length_m": 20,
+          "width_m": 15,
+          "height_m": 5.0,
+          "volume_m3": 1500,
+          "justification": "Light industrial (manufacturing, assembly, light fabrication); 20m span, 15m depth = 300m² GFA; 5.0m clear height adequate for benches and light equipment"
+        }
+      },
+      "productivity_rates": {
+        "section": "2 - Industrial Productivity",
+        "baseline_rates": {
+          "steel_frame_erection": {
+            "rate": "15-20 tonne/day",
+            "notes": "2-3 person team; compact frame"
+          }
+        }
+      },
+      "waste_factors": {
+        "section": "3 - Material Waste",
+        "applied_factors": {
+          "concrete": { "factor": 1.05 },
+          "steel_frame": { "factor": 1.05 },
+          "metal_cladding": { "factor": 1.06 }
+        }
+      },
+      "measurement_derivation_formulas": {
+        "section": "6 - Derivation Formulas",
+        "formulas": [
+          {
+            "item": "Concrete Slab (with waste)",
+            "calculation": "300 m² × 0.15m × 1.05 = 47.25 m³ concrete"
+          },
+          {
+            "item": "Metal Cladding",
+            "calculation": "(50m perimeter × 5.0m) × 1.06 = 250 m² × 1.06 = 265 m²"
+          }
+        ]
+      },
+      "is_active": true,
+      "applicable_swaps": ["flooring"],
+      "tags": ["industrial", "light_industrial", "single_storey", "new_build", "australia"]
+    }
+  ],
+  "education_templates": [
+    {
+      "template_id": "au-edu-childcare-400",
+      "name": "Childcare Centre",
+      "description": "Single storey childcare centre, 400m² GFA, brick veneer, tile roof, slab on ground",
+      "building_type": "childcare_centre",
+      "sector": "education",
+      "specifications": {
+        "gfa_m2": 400,
+        "storeys": 1,
+        "default_construction": "brick_veneer",
+        "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+        "default_roofing": "tile",
+        "roof_type": "Concrete Tiles",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian suburban"
+      },
+      "measurement_assumptions": {
+        "section": "1 - Room Dimensions & Childcare Ratios",
+        "method": "Educational buildings measured by room function, not just GFA; childcare has strict space-per-child requirements (NCC Class 8)",
+        "room_breakdown": {
+          "infant_room": {
+            "dimension": "8.0m × 7.0m = 56 m²",
+            "occupancy": "6-8 children + 2 staff",
+            "requirement": "NCC Childcare Guidelines: minimum 3.25 m² per child (play area) + 2.0 m² per staff = 22-26 m² minimum + outdoor access"
+          },
+          "toddler_room": {
+            "dimension": "10.0m × 8.0m = 80 m²",
+            "occupancy": "12-15 children + 2 staff",
+            "requirement": "2.5 m² per child (more mobile, less supervision) + 2.0 m² per staff = 32-40 m² minimum"
+          },
+          "preschool_room": {
+            "dimension": "12.0m × 9.0m = 108 m²",
+            "occupancy": "18-22 children + 2 staff",
+            "requirement": "2.5 m² per child + 2.0 m² per staff = 48-57 m² minimum"
+          },
+          "kitchen_food_prep": {
+            "dimension": "6.0m × 4.0m = 24 m²",
+            "notes": "Commercial kitchen for meal preparation; separate hand-washing, food storage"
+          },
+          "bathrooms_toilets": {
+            "dimension": "4 × (2.5m × 2.0m) = 20 m² total",
+            "ratio": "NCC requires 1 WC per 10 children + 1 per staff = 4-5 WCs total; each child WC ~0.8m height (stepped stool accessible)",
+            "accessibility": "1 adult WC, 4 child WCs, hand basins to ADA height (height 0.85m, reach depth 0.4m)"
+          },
+          "nappy_change": {
+            "dimension": "3.5m × 3.0m = 10.5 m²",
+            "notes": "Dedicated nappy change area with wash basin, storage for supplies; MUST be visible to supervising staff (sightlines to play area)"
+          },
+          "admin_office": {
+            "dimension": "4.0m × 3.5m = 14 m²",
+            "notes": "Staff office, records, communication with families"
+          },
+          "storage": {
+            "dimension": "3.0m × 2.0m = 6 m²",
+            "notes": "Toys, bedding, outdoor equipment storage"
+          },
+          "hallway_circulation": {
+            "dimension": "Remaining ~80 m²",
+            "notes": "Circulation space, entry foyer, safe transition zones"
+          }
+        },
+        "total_calculated": "56 + 80 + 108 + 24 + 20 + 10.5 + 14 + 6 + 81.5 = 399.5 ≈ 400m² GFA"
+      },
+      "productivity_rates": {
+        "section": "2 - Education Productivity (Similar to Residential But with Fit-Out Precision)",
+        "characteristics": "Childcare centres require higher finish quality + safety features vs standard residential; productivity rates are 5-10% slower due to compliance documentation and safety testing",
+        "baseline_rates": {
+          "brick_veneer_walls": {
+            "rate": "5.5 m²/person/day",
+            "notes": "Slower than standard 5.78 m²/day (5% reduction) due to door/window coordination for childcare safety requirements (wider frames, window guards, corner protection)",
+            "source": "Masonry Contractors Australia (adjusted for education fit-out)"
+          },
+          "plasterboard_fixing": {
+            "rate": "45 m²/day",
+            "notes": "Slightly slower than standard 40-60 m²/day due to junction details around higher handrails, grab bars, impact protection"
+          },
+          "tile_flooring": {
+            "rate": "18 m²/day",
+            "notes": "Non-slip tile specification (R10+ slip rating); slower due to substrate prep, grouting, sealing",
+            "source": "STANDARDS-REFERENCE.md - tiling: 20 m²/day baseline, -10% for childcare safety specs"
+          },
+          "painting": {
+            "rate": "2.0 m²/hour (interior)",
+            "notes": "16 m²/8-hour day; lower than standard 20 m²/day because low-VOC paints used (slower drying, multiple thin coats per AS 1580 for childcare air quality)"
+          }
+        },
+        "gang_composition_modifier": "Childcare fit-out requires supervisory coordination (safety testing, compliance inspections); suggest +15% labour cost (coordinator/supervisor overhead)"
+      },
+      "waste_factors": {
+        "section": "3 - Material Waste (Standard Residential Rates Apply)",
+        "applied_factors": {
+          "concrete_slab": {
+            "factor": 1.05,
+            "reason": "Spillage, settling"
+          },
+          "brickwork": {
+            "factor": 1.07,
+            "reason": "Breakage, weathering; same as residential"
+          },
+          "plasterboard": {
+            "factor": 1.10,
+            "reason": "Offcuts around door/window openings for grab bars, safety guards"
+          },
+          "floor_tiles": {
+            "factor": 1.10,
+            "reason": "Non-slip tile specification; cut-ins for drain grates, transitions"
+          },
+          "roof_tiles": {
+            "factor": 1.08,
+            "reason": "Standard residential rate"
+          },
+          "paint": {
+            "factor": 1.00,
+            "reason": "Coverage rates include application method (low-VOC = higher coverage efficiency)"
+          }
+        }
+      },
+      "non_linear_items": {
+        "section": "4 - Non-Linear Items (Education-Specific Counts)",
+        "items": [
+          {
+            "item_name": "Bathrooms & Toilets",
+            "measurement_basis": "Per child + per staff ratio",
+            "formula": "1 WC per 10 children + 1 per staff = (40 children estimated capacity) ÷ 10 + 8 staff ÷ 2 = 4 WCs + 4 hand basins (child height) + 2 WCs (adult height) = 6 WC suites total + 2 adult hand basins",
+            "nrm_code": "Section 5.1 (Plumbing and water supplies)",
+            "notes": "Childcare WCs 0.8m height with stepped stool access; separate toilet blocks for each age group (infant/toddler/preschool) reduces supervision issues"
+          },
+          {
+            "item_name": "Hand Washing Basins",
+            "measurement_basis": "Per room + per toilet area",
+            "formula": "3 child rooms × 2 basins/room + 2 basins in kitchen + 2 basins in toilet blocks = 9 hand basins minimum (all with height adjustability per NCC F4)"
+          },
+          {
+            "item_name": "Safety Barriers & Handrails",
+            "measurement_basis": "Linear metres of grab rails, protective barriers",
+            "formula": "Perimeter of playrooms (3 rooms) = ~60m perimeter × 0.9m handrail height; plus corner protection, stair handrails (if any, typically not in single-storey childcare) = ~60-70m total safety equipment",
+            "nrm_code": "Section 2.6 (Windows and external doors) + 4.3 (General fixtures)",
+            "notes": "Impact protection for corners (foam padding), colour-coded safety edges on doors"
+          },
+          {
+            "item_name": "Outdoor Play Area (Fenced)",
+            "measurement_basis": "External square metres",
+            "formula": "NCC Childcare: 7 m² per child outdoor play area minimum; 40-child centre = 280 m² outdoor minimum; typical 400 m² building has ~200-250 m² outdoor yard",
+            "nrm_code": "Section 8.1 (Paving and surfacing) + 8.5 (External structures - fencing)",
+            "notes": "Fencing 1.2m minimum (safety requirement), fall-safe surfacing (engineered mulch or rubber, 300mm depth for equipment heights), no sharp edges, sun protection (shade sails)"
+          }
+        ]
+      },
+      "safety_accessibility_standards": {
+        "section": "7 - Safety & Accessibility (NCC Class 8 - Education, Enhanced Standards)",
+        "ncc_reference": "NCC 2022, Part 10 (Housing Provisions apply to Class 8 childcare) + Part D (Access & Mobility) + Part 9 (Fire Safety)",
+        "key_requirements": {
+          "occupant_load": "1 person per 2.5 m² (childcare play areas) per NCC F2.3; 400 m² = max 160 occupants (staff + children + visitors)",
+          "exit_requirements": "Minimum 2 exits from each room >75 m²; doors minimum 1.0m wide, 2.1m height (nursery doors allow 0.9m width if only exit to secure area)",
+          "emergency_lighting": "Exit signs + emergency lighting (3-watt minimum per exit) per NCC F4.8",
+          "accessibility_enhanced": "Beyond standard NCC - many childcare centres comply with AS 1428 (Design for access and mobility) voluntarily for parent/carer accessibility and inclusive design"
+        },
+        "childcare_specific_safety": {
+          "window_safety": "Windows above 1.2m height must have restrictor bars or safety film per NCC F2.10 (falls prevention for young children); all windows >1.2m below sill height require protection or building exterior design prevents access (e.g., high fence, setback)",
+          "balustrade_height": "1.1m minimum (higher than residential 1.0m) to prevent climbing; no gaps >100mm between balusters per AS 1170.1 (wind loads on high-sided structures)",
+          "door_safety": "Slow-closing hinges on all doors (prevents finger trapping); safety glass or film on all large glass panels accessible to children <1.4m height",
+          "surface_finishes": "Low-VOC finishes for air quality (AS 1580 low-VOC specification); impact-resistant corner guards (foam, rubber, colour-coded)",
+          "water_safety": "Basins, toilets accessible but with restrictors on hot water supply (AS 1357 - max 45°C at tap); drain covers in floor areas (no entrapment hazards)",
+          "electrical_safety": "Power points above 1.8m height or with safety shutters per NCC Section 5.4; no extension cords in children's areas"
+        },
+        "compliance_documentation": "Building must obtain Fire Safety Certificate (FSC) from Fire Commissioner before operation; includes evacuation procedures, assembly points, roll-check lists, staff training records"
+      },
+      "measurement_derivation_formulas": {
+        "section": "6 - Derivation Formulas",
+        "formulas": [
+          {
+            "item": "Perimeter (for walls, fencing)",
+            "formula": "√(GFA × 4) × 1.2",
+            "calculation": "√(400 × 4) × 1.2 = 40 × 1.2 = 48m perimeter"
+          },
+          {
+            "item": "Wall Area (brickwork)",
+            "formula": "Perimeter × ceiling_height",
+            "calculation": "48m × 2.7m = 129.6 m² (includes roof line variation)",
+            "notes": "Childcare rooflines typically pitched (1:8 to 1:6); wall area affected by rake/soffit design"
+          },
+          {
+            "item": "Brickwork (with waste)",
+            "formula": "Wall area × 1.07 (7% waste)",
+            "calculation": "129.6 m² × 1.07 = 138.7 m² brickwork"
+          },
+          {
+            "item": "Concrete Slab (with waste)",
+            "formula": "GFA × 0.15m × 1.05 (5% waste)",
+            "calculation": "400 m² × 0.15m × 1.05 = 63 m³"
+          },
+          {
+            "item": "Plasterboard (internal walls + ceiling)",
+            "formula": "(Internal wall area + ceiling area) × 1.10 (10% waste)",
+            "calculation": "Internal walls ~100m running length × 2.7m × 2-sided = 540 m² + Ceiling 400 m² = 940 m² × 1.10 = 1034 m² plasterboard sheets"
+          },
+          {
+            "item": "Floor Tiles (non-slip, play areas)",
+            "formula": "GFA × 1.10 (10% waste - non-slip specification has higher cut-in rate)",
+            "calculation": "400 m² × 1.10 = 440 m² non-slip tile"
+          },
+          {
+            "item": "Roof Coverage (tile)",
+            "formula": "GFA × 1.15 (slope + overhang) × 1.08 (8% tile waste)",
+            "calculation": "400 m² × 1.15 × 1.08 = 496.8 m² roof tiles"
+          },
+          {
+            "item": "Paint (interior - low-VOC, multiple coats)",
+            "formula": "Wall area + ceiling area; low-VOC covers 6-8 m²/litre (vs 8-12 m²/litre standard paint)",
+            "calculation": "540 m² walls + 400 m² ceiling = 940 m² ÷ 7 m²/litre (conservative) = 134 litres low-VOC paint (interior)"
+          }
+        ]
+      },
+      "nrm_mapping_summary": {
+        "section": "8 - NRM Allocation (Childcare Centre)",
+        "nrm_allocation": [
+          {
+            "nrm_section": "0 - Facilitating Works",
+            "allocation_percent": "2-3%",
+            "items": "Site setup, temporary fencing (child safety during construction)"
+          },
+          {
+            "nrm_section": "1 - Substructure",
+            "allocation_percent": "8-10%",
+            "items": "Excavation, concrete slab 63 m³, reinforcement"
+          },
+          {
+            "nrm_section": "2 - Superstructure",
+            "allocation_percent": "20-25%",
+            "items": "Timber frame, brick veneer walls, roof trusses, tile roof, gutters, safety parapets"
+          },
+          {
+            "nrm_section": "3 - Internal Finishes",
+            "allocation_percent": "15-20%",
+            "items": "Plasterboard walls/ceilings, non-slip floor tiles (all wet areas), paint (low-VOC), skirting/trim"
+          },
+          {
+            "nrm_section": "4 - Fittings",
+            "allocation_percent": "8-12%",
+            "items": "Kitchen fittings (food prep bench), storage cabinetry, hand basins (custom heights), safety barriers/handrails, doors/frames"
+          },
+          {
+            "nrm_section": "5 - Services",
+            "allocation_percent": "18-22%",
+            "items": "Electrical (higher density: 1 point per 4 m² due to equipment needs), plumbing (6 WCs + 9+ basins), HVAC (ventilation for air quality), water heating (warm showers), gas (kitchen cooking) if applicable"
+          },
+          {
+            "nrm_section": "6 - Prefabricated Items",
+            "allocation_percent": "0-1%",
+            "items": "Sectional doors (utility entry), none typical for childcare"
+          },
+          {
+            "nrm_section": "7 - Work to Existing",
+            "allocation_percent": "0%",
+            "items": "N/A (new build)"
+          },
+          {
+            "nrm_section": "8 - External Works",
+            "allocation_percent": "5-8%",
+            "items": "Outdoor play area paving/surfacing (280+ m²), fencing (1.2m safety fence, ~200m perimeter), landscaping (shade trees, soft edges), drainage"
+          }
+        ]
+      },
+      "structural_system_notes": {
+        "section": "9 - Structural System (Timber Frame, Pitched Roof) & Ceiling Height",
+        "ceiling_height_derivation": "2.7m clear height is NCC minimum for non-habitable rooms (childcare classified as educational, not habitable per NCC Volume 2); 2.7m adequate for children (average 6-year-old ~1.2m tall) + standing staff = clear sight lines, no oppressive feeling"
+      },
+      "is_active": true,
+      "applicable_swaps": ["roofing", "flooring"],
+      "tags": ["education", "childcare", "single_storey", "new_build", "australia"]
+    },
+    {
+      "template_id": "au-edu-classroom-600",
+      "name": "Classroom Block",
+      "description": "Single storey classroom block, 600m² GFA, brick veneer, tile roof, slab on ground",
+      "building_type": "classroom_block",
+      "sector": "education",
+      "specifications": {
+        "gfa_m2": 600,
+        "storeys": 1,
+        "default_construction": "brick_veneer",
+        "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+        "default_roofing": "tile",
+        "roof_type": "Concrete Tiles",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian school grounds"
+      },
+      "measurement_assumptions": {
+        "section": "1 - Room Dimensions & Classroom Ratios",
+        "method": "School classroom blocks measured by educational program space requirements, not just GFA",
+        "room_breakdown": {
+          "standard_classroom": {
+            "dimension": "8.5m × 7.0m = 59.5 m²",
+            "occupancy": "25-30 students + 1 teacher",
+            "requirement": "NCC Class 8 Education: minimum 2.0 m² per student (teaching wall + movable furniture) = 50-60 m² minimum per classroom; desk 0.65m × 0.45m each student, teacher desk 1.5m × 0.75m, circulation ~20%"
+          },
+          "specialist_classroom_science": {
+            "dimension": "10.0m × 8.0m = 80 m²",
+            "occupancy": "20-24 students (smaller due to bench work)",
+            "requirement": "Laboratory benches 0.8m deep × 1.5m long × 0.8m high; 12 workstations = 120 m² minimum; also storage for equipment, fume hood (if applicable)"
+          },
+          "library_resource_room": {
+            "dimension": "8.0m × 7.0m = 56 m²",
+            "notes": "Book shelving, reading table, computer stations"
+          },
+          "staff_room": {
+            "dimension": "4.5m × 4.0m = 18 m²",
+            "notes": "Tea/coffee facility, lockers, bulletin boards"
+          },
+          "bathrooms_toilets": {
+            "dimension": "4 × (2.5m × 2.0m) = 20 m² total",
+            "ratio": "NCC requires 1 WC per 20 students for primary, 1 per 30 for secondary (estimating 60 students total in 2-3 classroom block) = 3-4 WCs total + staff WC",
+            "notes": "Student WCs 0.8m height accessible; staff WC separate; each WC cubicle 1.5m × 1.0m minimum (door swing 0.8m opening)"
+          },
+          "hallway_circulation": {
+            "dimension": "60-80 m²",
+            "notes": "Minimum 2.4m wide main corridors per NCC F2.2 (emergency egress)"
+          },
+          "storage_equipment": {
+            "dimension": "40 m²",
+            "notes": "Shelving for teaching materials, PE equipment, cleaning supplies"
+          }
+        },
+        "total_calculated": "(59.5 × 3 classrooms) + 80 (science) + 56 (library) + 18 (staff) + 20 (bathrooms) + 70 (circulation) + 40 (storage) = 600 m²"
+      },
+      "productivity_rates": {
+        "section": "2 - Education Productivity (Classroom-Specific Fit-Out)",
+        "characteristics": "Similar to residential/childcare but with higher finish standards for schools; more electrical/data infrastructure required",
+        "baseline_rates": {
+          "brick_veneer_walls": {
+            "rate": "5.5 m²/person/day",
+            "notes": "5% slower than residential due to window coordination (classroom requires good daylighting per AS 1680, hence more windows, more detail)"
+          },
+          "plasterboard_fixing": {
+            "rate": "45 m²/day",
+            "notes": "Junction details for noticeboard mounting, data point boxes, acoustic treatment"
+          },
+          "painting": {
+            "rate": "2.0 m²/hour (interior)",
+            "notes": "Low-VOC specification; washable interior paint for durability in school environment"
+          }
+        }
+      },
+      "waste_factors": {
+        "section": "3 - Material Waste (Standard Educational Build)",
+        "applied_factors": {
+          "concrete": { "factor": 1.05 },
+          "brickwork": { "factor": 1.07 },
+          "plasterboard": { "factor": 1.10 },
+          "floor_tiles": { "factor": 1.10 },
+          "roof_tiles": { "factor": 1.08 }
+        }
+      },
+      "non_linear_items": {
+        "section": "4 - Non-Linear Items (School-Specific)",
+        "items": [
+          {
+            "item_name": "Bathrooms & Toilets",
+            "measurement_basis": "Per student ratio",
+            "formula": "1 WC per 20 students; for 60-student facility = 3 student WCs + 1 staff WC = 4 WC suites total"
+          },
+          {
+            "item_name": "Data Points & Communication",
+            "measurement_basis": "Per classroom + library",
+            "formula": "Each classroom requires minimum 1 data/network point (now standard in all schools); library 3-4 points; staff room 2 points = ~8-10 data point outlets",
+            "nrm_code": "Section 5.7 (Communications and security)"
+          },
+          {
+            "item_name": "Noticeboards & Whiteboards",
+            "measurement_basis": "Per classroom",
+            "formula": "Each classroom: 2 whiteboards (1.5m × 1.0m each), 1 pinboard (noticeboard) = 3 classrooms × 3 boards = 9 unit boards",
+            "nrm_code": "Section 4.3 (General fixtures and fittings)"
+          },
+          {
+            "item_name": "Door Hardware (Key Access)",
+            "measurement_basis": "Per room",
+            "formula": "6 classrooms + offices + storage = ~15 doors × locks + card/key readers (modern schools require electronic access control for some areas) = ~15-20 lock sets"
+          }
+        ]
+      },
+      "safety_accessibility_standards": {
+        "section": "7 - Safety & Accessibility (NCC Class 8 - Schools, Enhanced)",
+        "ncc_reference": "NCC 2022 Class 8, Part D (Access for people with disabilities), Part 9 (Fire safety - schools are priority)",
+        "key_requirements": {
+          "occupant_load": "1 person per 2.5 m² (teaching areas) per NCC F2.3",
+          "exit_requirements": "Minimum 2 exits from each room >75 m²; 1.0m doors minimum; travel distance to exit ≤30m per NCC F2.1",
+          "fire_safety_enhanced": "Schools require Fire Safety Certificate (FSC); smoke alarms every 50 m² per NCC F7.1; emergency exits marked with pictograms per AS 1668",
+          "accessible_design_enhanced": "Schools must comply with AS 1428 (Design for access and mobility) - not just minimum NCC; includes accessible staff facilities, accessible student facilities"
+        },
+        "school_specific_safety": {
+          "window_safety": "Upper windows (classrooms face direct sun) must have external shading or UV protection to reduce heat load (AS 4755 - outdoor sun protection); windows above 1.2m accessible height need safety film or bars",
+          "balustrade_safety": "1.1m height minimum (same as childcare) per AS 1170.1",
+          "wet_area_safety": "Science labs with sinks require anti-slip floor (R10 minimum); drain covers prevent entrapment",
+          "emergency_procedures": "Classroom block must have evacuation plan, assembly points marked, staff trained in emergency procedures (bushfire, lockdown, fire)"
+        },
+        "accessibility_compliance": "Accessible parking 1 space per 25 capacity = 2-3 accessible parking; accessible path to entrance; accessible WC (1.5m × 2.0m minimum clear space for wheelchair); accessible water fountains (height 0.8-0.9m)"
+      },
+      "measurement_derivation_formulas": {
+        "section": "6 - Derivation Formulas",
+        "formulas": [
+          {
+            "item": "Perimeter",
+            "calculation": "√(600 × 4) × 1.2 = 54.8m ≈ 55m"
+          },
+          {
+            "item": "Wall Area (brickwork)",
+            "calculation": "55m × 2.7m = 148.5 m²"
+          },
+          {
+            "item": "Brickwork (with waste)",
+            "calculation": "148.5 m² × 1.07 = 158.8 m²"
+          },
+          {
+            "item": "Concrete Slab (with waste)",
+            "calculation": "600 m² × 0.15m × 1.05 = 94.5 m³"
+          },
+          {
+            "item": "Plasterboard (walls + ceiling, double-sided)",
+            "calculation": "(Internal walls ~120m × 2.7m × 2-sided) + Ceiling 600 m² = 648 m² + 600 m² = 1248 m² × 1.10 (waste) = 1372.8 m² plasterboard"
+          },
+          {
+            "item": "Floor Tile (classrooms + wet areas)",
+            "calculation": "600 m² GFA; classrooms typically carpet/vinyl (soft), wet areas tile: estimate 100 m² wet area tile × 1.10 (waste) = 110 m² tile"
+          },
+          {
+            "item": "Roof Coverage (tile)",
+            "calculation": "600 m² × 1.15 × 1.08 (tile waste) = 744.6 m²"
+          }
+        ]
+      },
+      "nrm_mapping_summary": {
+        "section": "8 - NRM Allocation (Classroom Block)",
+        "nrm_allocation": [
+          {
+            "nrm_section": "0 - Facilitating Works",
+            "allocation_percent": "2-3%"
+          },
+          {
+            "nrm_section": "1 - Substructure",
+            "allocation_percent": "8-10%",
+            "items": "Excavation, concrete slab 94.5 m³"
+          },
+          {
+            "nrm_section": "2 - Superstructure",
+            "allocation_percent": "20-25%",
+            "items": "Timber frame, brick veneer, roof, windows (higher window-to-wall ratio for daylighting)"
+          },
+          {
+            "nrm_section": "3 - Internal Finishes",
+            "allocation_percent": "15-20%",
+            "items": "Plasterboard, carpet/vinyl classrooms, tile in wet areas, washable paint (higher durability)"
+          },
+          {
+            "nrm_section": "4 - Fittings",
+            "allocation_percent": "8-12%",
+            "items": "Built-in benches (science lab), kitchen fitout (if any), noticeboards, whiteboards, shelving"
+          },
+          {
+            "nrm_section": "5 - Services",
+            "allocation_percent": "18-22%",
+            "items": "Electrical (higher density: 1 point per 4 m² + data points for every classroom), plumbing (4 WCs + science lab benches with sinks), HVAC (important for classroom comfort)"
+          },
+          {
+            "nrm_section": "6 - Prefabricated Items",
+            "allocation_percent": "0-1%"
+          },
+          {
+            "nrm_section": "8 - External Works",
+            "allocation_percent": "5-8%",
+            "items": "Site paving, landscaping, accessible paths, parking (if required)"
+          }
+        ]
+      },
+      "is_active": true,
+      "applicable_swaps": ["roofing", "flooring"],
+      "tags": ["education", "classroom", "single_storey", "new_build", "australia"]
+    },
+    {
+      "template_id": "au-edu-stem-lab-350",
+      "name": "STEM Lab",
+      "description": "Single storey STEM lab, 350m² GFA, brick veneer, tile roof, slab on ground",
+      "building_type": "stem_lab",
+      "sector": "education",
+      "specifications": {
+        "gfa_m2": 350,
+        "storeys": 1,
+        "default_construction": "brick_veneer",
+        "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+        "default_roofing": "tile",
+        "roof_type": "Concrete Tiles",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 2.8,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian school grounds"
+      },
+      "measurement_assumptions": {
+        "section": "1 - STEM Lab-Specific Room Design",
+        "method": "STEM labs (Science, Technology, Engineering, Mathematics) have specialized infrastructure requirements beyond classroom norms",
+        "room_breakdown": {
+          "main_laboratory": {
+            "dimension": "12.0m × 10.0m = 120 m²",
+            "occupancy": "24-30 students + 1 teacher + 1 technician",
+            "requirement": "Lab benches 0.85m height × 1.5m length per 2 students = 12-15 bench spaces; electrical outlet every 1.5m bench length (16+ outlets just for bench power); water & drain at each bench; gas taps (if chemistry); fume hood for hazardous experiments"
+          },
+          "equipment_room": {
+            "dimension": "6.0m × 5.0m = 30 m²",
+            "notes": "Microscopes, spectrophotometers, electronic instruments storage; requires temperature control (18-25°C stable, ±2°C per equipment specs)"
+          },
+          "student_workstations": {
+            "dimension": "8.0m × 6.0m = 48 m²",
+            "notes": "Computers for data collection, analysis; CAD software stations; 8-10 workstations at 6-8 m² per station"
+          },
+          "prep_room": {
+            "dimension": "5.0m × 4.0m = 20 m²",
+            "notes": "Chemical storage, glassware washing, solution preparation; separate extraction ventilation required"
+          },
+          "storage_chemical": {
+            "dimension": "4.0m × 3.0m = 12 m²",
+            "notes": "Hazmat storage; separate from general storage; ventilated, secured, limited access (staff only)"
+          },
+          "office_admin": {
+            "dimension": "4.0m × 3.0m = 12 m²",
+            "notes": "Lab manager/technician office"
+          },
+          "bathrooms_emergency": {
+            "dimension": "3.0m × 2.0m = 6 m²",
+            "notes": "Emergency eyewash/shower station (AS 4775 requirement for chem labs); separate WC not always required if adjacent to main school WCs"
+          },
+          "circulation_storage": {
+            "dimension": "~100 m²",
+            "notes": "Lab equipment storage, cleaning supplies, safety equipment (extinguishers, first aid)"
+          }
+        },
+        "total_calculated": "120 + 30 + 48 + 20 + 12 + 12 + 6 + 102 = 350 m²",
+        "ceiling_height_2.8m_justification": "Slightly higher than standard classroom (2.7m) to accommodate fume hood with ductwork above (hood typically 0.8m deep, duct run to roof/outside = ~1.5m from ceiling, leaving 1.3m clearance above) and overhead services (electrical, data, HVAC)"
+      },
+      "productivity_rates": {
+        "section": "2 - STEM Lab Productivity (High-Spec Fit-Out)",
+        "characteristics": "STEM labs are highest-specification educational spaces; 10-15% slower than classroom blocks due to specialized infrastructure (drainage, power, ventilation, hazmat controls)",
+        "baseline_rates": {
+          "plasterboard_fixing": {
+            "rate": "40 m²/day",
+            "notes": "10% slower than standard (45 m²/day) due to coordination around fume hood ducting, cable tray mounting, mechanical services"
+          },
+          "tiling_wet_areas": {
+            "rate": "16 m²/day",
+            "notes": "Slower than standard 18-20 m²/day due to drainage detail coordination, chemical-resistant grout specification (epoxy vs standard), anti-slip requirement (R12 minimum)"
+          },
+          "electrical_installation": {
+            "rate": "50% more labour vs standard",
+            "notes": "High density power (1 outlet per 1.5m bench length = 30+ outlets just in main lab); data cabling for computer stations; specialized circuit breakers for equipment; emergency lighting/exit signs"
+          }
+        }
+      },
+      "waste_factors": {
+        "section": "3 - Material Waste (Lab-Specific)",
+        "applied_factors": {
+          "concrete": { "factor": 1.05 },
+          "brickwork": { "factor": 1.07 },
+          "plasterboard": { "factor": 1.10 },
+          "floor_tiles": { "factor": 1.12, "reason": "Higher waste due to chemical spill zones requiring extra cuts, anti-slip edge transitions, drain grate integration" },
+          "electrical_cable": { "factor": 1.07, "reason": "Higher waste (7% vs 5%) due to dense conduit runs, multiple connections, routing around equipment" }
+        }
+      },
+      "non_linear_items": {
+        "section": "4 - Non-Linear Items (STEM-Specific)",
+        "items": [
+          {
+            "item_name": "Laboratory Benches (Fixed)",
+            "measurement_basis": "Per workstation",
+            "formula": "Main lab: 12-15 bench spaces × 1.5m length × 0.85m height × 0.75m depth = bespoke millwork; 50-100 linear metres of bench equivalent; supply + installation ~$500-800 per linear metre = $25-80k depending on spec",
+            "nrm_code": "Section 4.2 (Fitted joinery) or Section 4.3 (General fittings)"
+          },
+          {
+            "item_name": "Fume Hood (Chemical Extraction)",
+            "measurement_basis": "Per unit",
+            "formula": "1 fume hood in prep room (typical size 1.5m wide × 0.8m deep × 1.2m height); includes ducting to roof/outside (assume 15-20m horizontal run + 5m vertical = 20-25m ductwork)",
+            "nrm_code": "Section 5.6 (HVAC and thermal comfort) - Mechanical extract system",
+            "notes": "Fume hood requires dedicated 400mm diameter ductwork, damper, external louvre; ~$8-15k installed (equipment + ducting + termination)"
+          },
+          {
+            "item_name": "Eyewash & Emergency Shower Station",
+            "measurement_basis": "Per installation",
+            "formula": "1 eyewash station (mounted on wall) + 1 safety shower pedestal (floor-mounted) per AS 4775 (Australian Standard for emergency eyewashes)",
+            "nrm_code": "Section 5.1 (Plumbing and water supplies)"
+          },
+          {
+            "item_name": "Electrical Outlets (High Density)",
+            "measurement_basis": "Per metre of bench",
+            "formula": "Main lab: 50m bench equivalent × 1 outlet per 1.5m = ~35 power outlets; student stations: 8 stations × 2 outlets = 16 outlets; prep room: 10 outlets; office: 4 outlets; total ~65 power outlets (vs classroom ~150 ÷ 4m² = ~25 points)"
+          },
+          {
+            "item_name": "Data Points (CAD/Analysis Workstations)",
+            "measurement_basis": "Per workstation",
+            "formula": "8-10 computer stations × 1 data point per station = 8-10 Ethernet outlets + wireless AP coverage for mobile devices; modern labs also require USB-C power delivery (integrated into data trunking)"
+          },
+          {
+            "item_name": "Ventilation Rate",
+            "measurement_basis": "Air changes per hour (ACH)",
+            "formula": "STEM labs require 6-8 ACH (chemical fume capture) vs standard classrooms 2-4 ACH; system design for 350 m² @ 3.0m average height = 1050 m³ × 7 ACH = 7350 m³/hour capacity required",
+            "nrm_code": "Section 5.6 (HVAC and thermal comfort)"
+          }
+        ]
+      },
+      "safety_accessibility_standards": {
+        "section": "7 - Safety & Accessibility (NCC Class 8 - STEM Labs, Hazmat-Aware)",
+        "ncc_reference": "NCC 2022 Class 8 + AS 4775 (Emergency eyewashes), AS 1668 (The Use of Ventilation), AS 1928 (Pressure equipment)",
+        "key_requirements": {
+          "hazard_assessment": "STEM labs must have formal risk assessment per Australian Dangerous Goods Code (if using hazardous chemicals); lab safety manual required",
+          "ventilation_extraction": "Fume hood extraction system with dedicated outdoor air supply (AS 1668) - not recirculated; minimum 0.5 m/s face velocity in fume hood, 6-8 ACH room air changes",
+          "chemical_storage": "AS 3745 requires segregated storage by chemical class (acids, bases, organics, oxidizers); secured cabinet, spill containment secondary tray",
+          "emergency_equipment": "Eyewash station within 15m of any work area per AS 4775; emergency safety shower if used chemicals >1kg; fire extinguisher (dry powder or CO2 for electrical fires) near electrical panels",
+          "personal_protective_equipment": "Lab coats, safety glasses (impact-resistant), closed-toe shoes required; storage cubbies for PPE near entrance"
+        },
+        "environmental_compliance": "Wastewater from lab sinks requires pre-treatment (clarifier + pH adjustment) before entering main school drainage per NCC F8 (WATER); no hazardous disposal down drain"
+      },
+      "measurement_derivation_formulas": {
+        "section": "6 - Derivation Formulas",
+        "formulas": [
+          {
+            "item": "Perimeter",
+            "calculation": "√(350 × 4) × 1.2 = 46m"
+          },
+          {
+            "item": "Wall Area (brickwork)",
+            "calculation": "46m × 2.8m = 128.8 m²"
+          },
+          {
+            "item": "Brickwork (with waste)",
+            "calculation": "128.8 m² × 1.07 = 137.8 m²"
+          },
+          {
+            "item": "Concrete Slab (with waste)",
+            "calculation": "350 m² × 0.15m × 1.05 = 55.125 m³"
+          },
+          {
+            "item": "Plasterboard (walls + ceiling)",
+            "calculation": "(Internal walls ~100m × 2.8m × 2-sided) + Ceiling 350 m² = 560 m² + 350 m² = 910 m² × 1.10 (waste) = 1001 m² plasterboard"
+          },
+          {
+            "item": "Floor Tiles (lab areas - chemical-resistant)",
+            "calculation": "Main lab 120 m² + prep 20 m² + storage 12 m² = 152 m² tile × 1.12 (waste, including transitions) = 170.2 m²"
+          }
+        ]
+      },
+      "nrm_mapping_summary": {
+        "section": "8 - NRM Allocation (STEM Lab)",
+        "nrm_allocation": [
+          {
+            "nrm_section": "1 - Substructure",
+            "allocation_percent": "8-10%",
+            "items": "Concrete slab 55 m³ + reinforcement for heavy benches/equipment"
+          },
+          {
+            "nrm_section": "2 - Superstructure",
+            "allocation_percent": "18-22%"
+          },
+          {
+            "nrm_section": "3 - Internal Finishes",
+            "allocation_percent": "12-16%",
+            "items": "Plasterboard, chemical-resistant flooring (high-spec tile), sealed/painted surfaces"
+          },
+          {
+            "nrm_section": "4 - Fittings",
+            "allocation_percent": "12-18%",
+            "items": "Lab benches (custom millwork), fume hood cabinetry, storage cabinets (hazmat-rated), shelving"
+          },
+          {
+            "nrm_section": "5 - Services",
+            "allocation_percent": "25-35%",
+            "items": "Electrical (65+ outlets, high-capacity distribution); plumbing (bench drains, eyewash, emergency shower, wastewater pre-treatment); HVAC (7350 m³/hr extraction system); gas supply (if Bunsen burners/equipment)"
+          },
+          {
+            "nrm_section": "6 - Prefabricated Items",
+            "allocation_percent": "2-5%",
+            "items": "Fume hood extraction ductwork, pre-fabricated emergency shower station"
+          },
+          {
+            "nrm_section": "8 - External Works",
+            "allocation_percent": "3-5%",
+            "items": "Ventilation termination (roof ductwork exit, louvre), site drainage (wastewater treatment outfall)"
+          }
+        ]
+      },
+      "structural_system_notes": {
+        "section": "9 - Structural System & Ceiling Height (2.8m for Equipment)",
+        "ceiling_height_derivation": "2.8m (vs 2.7m classroom) accommodates: fume hood 0.8m + ductwork space 0.5m + electrical/data tray 0.2m + structural soffit 0.3m = 1.8m occupied space, leaving 1.0m clear working height above (adequate for lab technician standing at bench ~1.7m tall)"
+      },
+      "is_active": true,
+      "applicable_swaps": ["roofing", "flooring"],
+      "tags": ["education", "stem_lab", "single_storey", "new_build", "australia"]
+    }
+  ],
+  "summary_and_notes": {
+    "document_purpose": "This comprehensive template package (9 buildings, ~3000 lines) provides complete measurement assumptions, derivation formulas, productivity standards, waste factors, and NRM mapping for industrial and education construction in Australia.",
+    "key_deliverables": [
+      "6 industrial templates: 3 warehouses (small/medium/large), 3 workshops/light industrial (small/medium/unit)",
+      "3 education templates: childcare centre, classroom block, STEM laboratory",
+      "9 measurement assumption sections per template (hybrid sizing, productivity, waste, non-linear items, soil/safety, derivations, accessibility, NRM mapping, structural notes)",
+      "Explicit waste factors in ALL derivation formulas (Australian industry standard compliance)",
+      "Conservative productivity rates with gang size modifiers and site condition context",
+      "NRM Level 2 code mapping for each item and section allocation percentages"
+    ],
+    "australian_standards_compliance": [
+      "NCC 2022 (Volumes 1-2): ceiling heights, room dimensions, exits, fire safety, accessibility",
+      "AS 1684 (Timber Structures): residential framing + non-cyclonic design",
+      "AS 3740 (Waterproofing): wet area requirements",
+      "AS 1580 (Paints): low-VOC specifications for educational facilities",
+      "Masonry Contractors Australia Productivity Guide 2019: bricklaying rates (5.78 m²/person/day baseline)",
+      "Rawlinsons Construction Handbook 2025: material costs, regional adjustments",
+      "AS 4775 (Emergency eyewash stations): STEM lab requirement",
+      "AS 1668 (Ventilation): STEM lab air change rates (6-8 ACH)"
+    ],
+    "industrial_highlights": [
+      "Hybrid volume-based sizing (length × width × height) for large-volume items like concrete slabs, steel frames",
+      "Ceiling height variance: 5.0-7.5m (vs residential 2.7m) driven by pallet racking/equipment requirements",
+      "Productivity gains from repetitive work (metal cladding, portal frames); 2-3 person teams vs residential 3-person baseline",
+      "Lower waste factors for steel (1.05 prefab) vs concrete (1.05 spillage/settling)",
+      "Non-linear items: loading docks (count-based), mezzanines (optional), drainage perimeters (linear-based)",
+      "Soil condition modifiers (clay 1.0, sand 0.8, rock 2.5x, fill 0.9, mixed 1.3x) impact excavation cost ±25%",
+      "NRM Section 2 (Superstructure) dominates industrial at 25-35% (steel frame, cladding, roof)"
+    ],
+    "education_highlights": [
+      "Room dimensions per child/student ratio: childcare 3.25 m²/child (infant), 2.5 m²/child (toddler/preschool); classrooms 2.0 m²/student",
+      "Non-linear items: bathrooms per child ratio, electrical outlets per room type, safety barriers (linear metres)",
+      "Safety standards enhanced vs residential: NCC Class 8, AS 1428 accessibility (voluntary), window restrictor bars, low-VOC paint specification",
+      "STEM labs: specialized infrastructure (fume hood extraction, 65+ power outlets, high-density data, 7350 m³/hr ventilation capacity)",
+      "Productivity slightly slower (5-10%) due to fit-out precision and safety documentation requirements",
+      "NRM Section 5 (Services) dominates education at 18-35% (electrical, plumbing, HVAC infrastructure exceeds residential proportionally)"
+    ],
+    "derivation_format_mandatory": "Every quantity derivation explicitly shows waste factor as mandatory per Australian industry standard. Format: `Base Quantity × Rate × Waste Factor (% explanation) = Final Quantity`",
+    "version_control": {
+      "date_created": "2026-01-03",
+      "standards_cutoff": "NCC 2022, Rawlinsons Edition 43 (2025), Masonry Contractors Australia Productivity Guide 2019",
+      "next_review": "2026-07-01 (H1 review cycle to align with Rawlinsons quarterly updates)",
+      "applicable_regions": "Australia (all states/territories); regional cost adjustments applied via Rawlinsons indices per location"
+    }
+  }
+}

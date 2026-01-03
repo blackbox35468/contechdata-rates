@@ -1,0 +1,3330 @@
+{
+  "sector": "residential",
+  "description": "Residential building templates - houses, townhouses, duplexes, and apartments with comprehensive measurement assumptions, derivation formulas, and productivity standards based on Australian construction industry data",
+  "total_templates": 20,
+  "templates": [
+    {
+      "template_id": "au-res-2bed-house-100",
+      "name": "2-Bedroom House",
+      "description": "Single storey detached house, 100m² GFA, brick veneer, steel roof, strip footings",
+      "building_type": "residential_house",
+      "sector": "residential",
+      "specifications": {
+        "gfa_m2": 100,
+        "storeys": 1,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "living_areas": 1,
+        "garage_spaces": 1,
+        "default_construction": "brick_veneer",
+        "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Strip Footings",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian suburban"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Residential GFA measured from internal faces of external walls per NCC Volume 2. Includes all habitable and non-habitable rooms (bedrooms, living, kitchen, bathroom, hallway, garage). Excludes external verandahs, carports, and external plant.",
+        "typical_layout": {
+          "master_bedroom": "3.5m × 3.2m = 11.2m²",
+          "bedroom_2": "3.0m × 2.7m = 8.1m²",
+          "living_dining_kitchen": "6.0m × 4.5m = 27.0m²",
+          "bathroom": "2.5m × 2.2m = 5.5m²",
+          "laundry": "2.0m × 1.8m = 3.6m²",
+          "hallway_circulation": "8.0m × 1.2m = 9.6m²",
+          "single_garage": "6.0m × 3.0m = 18.0m²",
+          "total_enclosed": "83.0m² (balance to 100m² = wall thickness, storage)"
+        },
+        "derivation_notes": "Compact 2-bedroom starter home suitable for couples or small families. Ceiling height 2.7m exceeds NCC minimum 2.4m for habitable rooms. Open-plan living/dining/kitchen maximizes perceived space. Single garage integrated into main building envelope. Foundation strip footings on 600mm depth (standard clay soil assumption). Brick veneer external walls provide thermal mass and Australian suburban aesthetic.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Kitchen fitout",
+              "scaling_rule": "1 kitchen per dwelling regardless of GFA. Standard fitout includes 3.5m linear benchtop, overhead cabinets, sink, cooktop space.",
+              "derivation": "1 kitchen × $8,000-12,000 standard fitout (not scaled with GFA)"
+            },
+            {
+              "item": "Bathroom suite",
+              "scaling_rule": "1 bathroom for 2-bedroom house. Includes shower, basin, toilet, tiling.",
+              "derivation": "1 bathroom × 5.5m² tiled area = fixed count"
+            },
+            {
+              "item": "Hot water system",
+              "scaling_rule": "1 hot water unit per dwelling. 135L-170L capacity for 2-3 occupants.",
+              "derivation": "1 × HWS unit (electric or gas) regardless of GFA"
+            },
+            {
+              "item": "HVAC zones",
+              "scaling_rule": "Single storey 100m² = 1-2 zones maximum. Living area + bedrooms zone.",
+              "derivation": "2 zones: 1 split system living + 1 bedroom zone (optional)"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(GFA × 4) × 1.2 (shape adjustment factor)",
+          "calculation": "√(100 × 4) × 1.2 = √400 × 1.2 = 20.0 × 1.2 = 24.0m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height",
+          "calculation": "24.0m × 2.7m = 64.8m²",
+          "waste_applied": "Brick veneer 1.07 (7% waste) = 69.3m² gross for material takeoff",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.20 (pitched roof factor 22.5° standard)",
+          "calculation": "100m² × 1.20 = 120m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 126m² installed",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "internal_wall_framing": {
+          "formula": "Internal Walls = √(GFA × 4) × 0.6 × ceiling_height",
+          "calculation": "√(100 × 4) × 0.6 = 20 × 0.6 = 12m linear partitions × 2.7m height × 2 faces = 64.8m² stud area",
+          "waste_applied": "Timber framing 1.10 (10% waste) = 71.3m² framing labour",
+          "nrm_reference": "2.4 Internal Partitions"
+        },
+        "flooring": {
+          "formula": "Floor Finish Area = GFA (all areas receive finish)",
+          "calculation": "100m² (concrete slab base + carpet/vinyl finishes)",
+          "waste_applied": "Concrete slab 1.05 (5% waste) = 105m³; Carpet 1.15 (15% waste) = 115m²",
+          "nrm_reference": "3.2 Floor Finishes"
+        },
+        "ceiling": {
+          "formula": "Ceiling Area = GFA × 1.02 (minor bulkhead allowance)",
+          "calculation": "100m² × 1.02 = 102m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 112.2m²",
+          "nrm_reference": "3.5 Ceiling Finishes"
+        },
+        "power_points": {
+          "formula": "Power Points = GFA ÷ 6m² (residential standard per NCC)",
+          "calculation": "100m² ÷ 6 = 16.7 → 17 power points",
+          "notes": "Minimum NCC requirement. Includes living, bedrooms, kitchen circuits, garage.",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 10m² (residential standard)",
+          "calculation": "100m² ÷ 10 = 10 light points",
+          "notes": "Ceiling penetrations for downlights, pendants. Includes internal + garage.",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = 1 per 50m² residential area",
+          "calculation": "100m² ÷ 50 = 2 fixtures (1 bathroom suite: 1 shower/basin/WC combo + 1 laundry tub)",
+          "waste_applied": "Plumbing pipe 1.05 (5% waste) for rough-in routing",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        }
+      },
+      "productivity_standards": {
+        "bricklaying": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "1 bricklayer + 1 labourer (2-person minimum)",
+          "multiplier": "1.00 (standard residential ground floor)",
+          "derivation": "External walls 69.3m² ÷ 5.78 m²/day = 12.0 person-days ÷ 1 = 12 days (2-person gang)",
+          "adjustment_factors": "None (baseline suburban site conditions)"
+        },
+        "carpentry_framing": {
+          "trade": "Carpentry",
+          "frame_rate": "2.0 m²/day (wall framing complete)",
+          "roof_rate": "15-25 m²/day (roof framing + battens)",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": "1.00 (single storey standard)",
+          "derivation": "Wall framing 71.3m² ÷ 2.0 m²/day = 35.7 days (1 carpenter); Roof framing 126m² ÷ 20 m²/day = 6.3 days"
+        },
+        "roofing": {
+          "trade": "Roofing",
+          "rate": "50-70 m²/2-person/day (metal roof installation)",
+          "gang_size": "2 roofers + 1 labourer",
+          "multiplier": "1.00 (standard pitch 22.5°)",
+          "derivation": "Roof area 126m² ÷ 60 m²/day = 2.1 days (2-person team)"
+        },
+        "painting": {
+          "trade": "Painting",
+          "interior_rate": "2.5 m²/hour (walls + ceiling)",
+          "exterior_rate": "1.5-2.0 m²/hour (brick sealing optional)",
+          "gang_size": "1-2 painters",
+          "multiplier": "1.00 (single storey interior)",
+          "derivation": "Interior walls 64.8m² + ceiling 102m² = 166.8m² ÷ 2.5 m²/hr = 66.7 hours = 8.3 days (1 painter)"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours per visit",
+          "first_fix": "17 power points × 0.4 hrs = 6.8 hrs; 10 light points × 0.7 hrs = 7.0 hrs; total ~14 hours",
+          "second_fix": "17 power × 0.3 = 5.1 hrs; 10 lights × 0.2 = 2.0 hrs; switchboard = 4 hrs; total ~11 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": "1.00 (standard residential)",
+          "derivation": "25 hours total ÷ 8 hrs/day = 3.1 days (1 electrician + apprentice)"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours per visit",
+          "rough_in": "Bathroom 1 × 8 hrs + laundry 1 × 4 hrs + drainage ~12 hrs = 24 hours",
+          "second_fix": "Fixtures 2 × 2.5 hrs = 5 hrs; HWS connection 3 hrs; testing 2 hrs = 10 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": "1.00 (standard residential)",
+          "derivation": "34 hours ÷ 8 hrs/day = 4.25 days (1 plumber team)"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.1,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.1,
+        "floor_wall_tiles": 1.1,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "cladding",
+        "roofing",
+        "flooring",
+        "windows",
+        "kitchen",
+        "bathroom"
+      ],
+      "tags": [
+        "residential",
+        "brick_veneer",
+        "single_storey",
+        "new_build",
+        "australia",
+        "2bed"
+      ]
+    },
+    {
+      "template_id": "au-res-3bed-house-150",
+      "name": "3-Bedroom House",
+      "description": "Single storey detached house, 150m² GFA, brick veneer, steel roof, strip footings",
+      "building_type": "residential_house",
+      "sector": "residential",
+      "specifications": {
+        "gfa_m2": 150,
+        "storeys": 1,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "living_areas": 2,
+        "garage_spaces": 2,
+        "default_construction": "brick_veneer",
+        "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Strip Footings",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian suburban"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Residential GFA measured from internal faces of external walls per NCC Volume 2. Includes all habitable and non-habitable rooms (3 bedrooms, living, dining, kitchen, 2 bathrooms, hallway, double garage). Excludes external verandahs and carports.",
+        "typical_layout": {
+          "master_bedroom": "4.2m × 3.9m = 16.4m²",
+          "bedroom_2": "3.2m × 3.0m = 9.6m²",
+          "bedroom_3": "3.0m × 2.7m = 8.1m²",
+          "living_room": "5.0m × 4.5m = 22.5m²",
+          "dining_kitchen": "5.5m × 3.5m = 19.3m²",
+          "main_bathroom": "3.2m × 2.5m = 8.0m²",
+          "ensuite": "2.5m × 2.0m = 5.0m²",
+          "laundry": "2.0m × 2.0m = 4.0m²",
+          "hallway_circulation": "12.0m × 1.2m = 14.4m²",
+          "double_garage": "6.0m × 6.0m = 36.0m²",
+          "total_enclosed": "143.3m² (balance to 150m² = wall thickness)"
+        },
+        "derivation_notes": "Standard 3-bedroom family home. Master bedroom includes ensuite bathroom. Separate living and dining areas. Double garage integrated into main roof line. Ceiling height 2.7m standard for all habitable rooms per NCC. Main bathroom serves bedrooms 2 and 3. Foundation strip footings 600mm depth on clay soil. Brick veneer provides thermal performance and durability.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Kitchen fitout",
+              "scaling_rule": "1 kitchen per dwelling. Standard includes 4.5m linear benchtop, overhead cabinets, pantry, island bench.",
+              "derivation": "1 kitchen × $12,000-18,000 standard fitout"
+            },
+            {
+              "item": "Bathroom suites",
+              "scaling_rule": "2 bathrooms (1 main + 1 ensuite). Main = bath/shower, basin, WC. Ensuite = shower, basin, WC.",
+              "derivation": "2 bathrooms × 13m² total tiled area"
+            },
+            {
+              "item": "Hot water system",
+              "scaling_rule": "1 hot water unit per dwelling. 250L-315L capacity for 4-5 occupants.",
+              "derivation": "1 × HWS unit (larger capacity for 3-bed home)"
+            },
+            {
+              "item": "HVAC zones",
+              "scaling_rule": "Single storey 150m² = 2 zones. Living/dining zone + bedroom wing zone.",
+              "derivation": "2 zones: 1 living area split system + 1 bedroom ducted or splits"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(GFA × 4) × 1.2",
+          "calculation": "√(150 × 4) × 1.2 = √600 × 1.2 = 24.49 × 1.2 = 29.4m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height",
+          "calculation": "29.4m × 2.7m = 79.4m²",
+          "waste_applied": "Brick veneer 1.07 (7% waste) = 84.9m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.20 (pitched roof 22.5°)",
+          "calculation": "150m² × 1.20 = 180m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 189m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "internal_wall_framing": {
+          "formula": "Internal Walls = √(GFA × 4) × 0.65 × ceiling_height",
+          "calculation": "√(150 × 4) × 0.65 = 24.49 × 0.65 = 15.9m linear × 2.7m × 2 faces = 85.9m²",
+          "waste_applied": "Timber framing 1.10 (10% waste) = 94.5m²",
+          "nrm_reference": "2.4 Internal Partitions"
+        },
+        "flooring": {
+          "formula": "Floor Finish Area = GFA",
+          "calculation": "150m² (slab + carpet 60%, tiles 20%, vinyl 20%)",
+          "waste_applied": "Concrete 1.05 = 157.5m²; Carpet 1.15 = 103.5m²; Tiles 1.10 = 33m²",
+          "nrm_reference": "3.2 Floor Finishes"
+        },
+        "ceiling": {
+          "formula": "Ceiling Area = GFA × 1.02",
+          "calculation": "150m² × 1.02 = 153m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 168.3m²",
+          "nrm_reference": "3.5 Ceiling Finishes"
+        },
+        "power_points": {
+          "formula": "Power Points = GFA ÷ 6m²",
+          "calculation": "150m² ÷ 6 = 25 power points",
+          "notes": "Distribution: bedrooms 3×2=6, living 4, dining 2, kitchen 6, bathrooms 2×1=2, garage 2, laundry 1 = 23 minimum",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 10m²",
+          "calculation": "150m² ÷ 10 = 15 light points",
+          "notes": "Bedrooms 3×1=3, living 2, dining 1, kitchen 2, bathrooms 2×1=2, hallway 3, garage 2 = 15 points",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = 1 per 50m²",
+          "calculation": "150m² ÷ 50 = 3 fixtures (2 bathroom suites + 1 laundry)",
+          "waste_applied": "Plumbing pipe 1.05 (5% waste)",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        }
+      },
+      "productivity_standards": {
+        "bricklaying": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "2 bricklayers + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "84.9m² ÷ 5.78 = 14.7 person-days ÷ 2 = 7.4 days (3-person gang)",
+          "adjustment_factors": "None"
+        },
+        "carpentry_framing": {
+          "trade": "Carpentry",
+          "frame_rate": "2.0 m²/day (walls)",
+          "roof_rate": "20 m²/day (roof framing)",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "Walls 94.5m² ÷ 2.0 = 47.3 days (1 carp); Roof 189m² ÷ 20 = 9.5 days"
+        },
+        "roofing": {
+          "trade": "Roofing",
+          "rate": "60 m²/2-person/day",
+          "gang_size": "2 roofers + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "189m² ÷ 60 = 3.2 days"
+        },
+        "painting": {
+          "trade": "Painting",
+          "interior_rate": "2.5 m²/hour",
+          "gang_size": "1-2 painters",
+          "multiplier": "1.00",
+          "derivation": "Walls 85.9m² + ceiling 153m² = 238.9m² ÷ 2.5/hr = 95.6 hrs = 12 days (1 painter)"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "first_fix": "25 power × 0.4 = 10 hrs; 15 lights × 0.7 = 10.5 hrs; total ~21 hours",
+          "second_fix": "25 power × 0.3 = 7.5 hrs; 15 lights × 0.2 = 3 hrs; board 4 hrs = 14.5 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": "1.00",
+          "derivation": "35.5 hours ÷ 8 hrs/day = 4.4 days"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "rough_in": "2 bathrooms × 8 hrs + laundry 4 hrs + drainage 15 hrs = 35 hours",
+          "second_fix": "2 bathroom suites × 3.5 hrs + laundry + HWS = 12 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": "1.00",
+          "derivation": "47 hours ÷ 8 hrs/day = 5.9 days"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.1,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.1,
+        "floor_wall_tiles": 1.1,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "cladding",
+        "roofing",
+        "flooring",
+        "windows",
+        "kitchen",
+        "bathroom"
+      ],
+      "tags": [
+        "residential",
+        "brick_veneer",
+        "single_storey",
+        "new_build",
+        "australia",
+        "3bed"
+      ]
+    },
+    {
+      "template_id": "au-res-4bed-house-200",
+      "name": "4-Bedroom House",
+      "description": "Single storey detached house, 200m² GFA, brick veneer, steel roof, strip footings",
+      "building_type": "residential_house",
+      "sector": "residential",
+      "specifications": {
+        "gfa_m2": 200,
+        "storeys": 1,
+        "bedrooms": 4,
+        "bathrooms": 2,
+        "living_areas": 2,
+        "garage_spaces": 2,
+        "default_construction": "brick_veneer",
+        "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Strip Footings",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian suburban"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Residential GFA measured from internal faces per NCC Volume 2. Includes 4 bedrooms, living, dining, kitchen, 2 bathrooms, hallway, double garage. Excludes alfresco, carport.",
+        "typical_layout": {
+          "master_bedroom": "4.5m × 4.0m = 18.0m²",
+          "bedroom_2": "3.5m × 3.2m = 11.2m²",
+          "bedroom_3": "3.2m × 3.0m = 9.6m²",
+          "bedroom_4": "3.0m × 2.8m = 8.4m²",
+          "living_room": "5.5m × 5.0m = 27.5m²",
+          "dining_room": "4.0m × 3.5m = 14.0m²",
+          "kitchen": "4.5m × 3.0m = 13.5m²",
+          "main_bathroom": "3.5m × 2.5m = 8.75m²",
+          "ensuite": "2.8m × 2.2m = 6.16m²",
+          "laundry": "2.5m × 2.0m = 5.0m²",
+          "hallway_circulation": "18.0m × 1.2m = 21.6m²",
+          "double_garage": "6.5m × 6.0m = 39.0m²",
+          "study_nook": "2.0m × 1.5m = 3.0m²",
+          "total_enclosed": "185.8m² (balance to 200m² = wall thickness, storage)"
+        },
+        "derivation_notes": "Large family home with 4 bedrooms. Master bedroom with walk-in robe and ensuite. Separate living and dining. Study nook for home office. Double garage with internal access. Ceiling height 2.7m throughout. Main bathroom serves bedrooms 2, 3, 4. Strip footings 600-750mm depth depending on soil classification.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Kitchen fitout",
+              "scaling_rule": "1 kitchen per dwelling. Larger 13.5m² includes island bench, walk-in pantry, 6m linear benchtop.",
+              "derivation": "1 kitchen × $18,000-25,000"
+            },
+            {
+              "item": "Bathroom suites",
+              "scaling_rule": "2 bathrooms. Main bathroom (bath + shower) 8.75m², ensuite (shower) 6.16m².",
+              "derivation": "2 bathrooms × 14.9m² total tiled"
+            },
+            {
+              "item": "Hot water system",
+              "scaling_rule": "1 × 315L capacity for 5-6 occupants (4-bedroom house).",
+              "derivation": "1 × HWS 315L unit"
+            },
+            {
+              "item": "HVAC zones",
+              "scaling_rule": "200m² single storey = 2-3 zones. Living/dining + bedroom wing + master bedroom.",
+              "derivation": "3 zones: ducted system or 3 split systems"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(GFA × 4) × 1.2",
+          "calculation": "√(200 × 4) × 1.2 = √800 × 1.2 = 28.28 × 1.2 = 33.9m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height",
+          "calculation": "33.9m × 2.7m = 91.5m²",
+          "waste_applied": "Brick veneer 1.07 (7% waste) = 97.9m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.20 (pitched roof)",
+          "calculation": "200m² × 1.20 = 240m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 252m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "internal_wall_framing": {
+          "formula": "Internal Walls = √(GFA × 4) × 0.70 × ceiling_height",
+          "calculation": "√(200 × 4) × 0.70 = 28.28 × 0.70 = 19.8m linear × 2.7m × 2 = 106.9m²",
+          "waste_applied": "Timber framing 1.10 (10% waste) = 117.6m²",
+          "nrm_reference": "2.4 Internal Partitions"
+        },
+        "flooring": {
+          "formula": "Floor Finish Area = GFA",
+          "calculation": "200m² (slab + finishes: carpet 55%, tiles 25%, vinyl 20%)",
+          "waste_applied": "Concrete 1.05 = 210m²; Carpet 1.15 = 126.5m²; Tiles 1.10 = 55m²",
+          "nrm_reference": "3.2 Floor Finishes"
+        },
+        "ceiling": {
+          "formula": "Ceiling Area = GFA × 1.02",
+          "calculation": "200m² × 1.02 = 204m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 224.4m²",
+          "nrm_reference": "3.5 Ceiling Finishes"
+        },
+        "power_points": {
+          "formula": "Power Points = GFA ÷ 6m²",
+          "calculation": "200m² ÷ 6 = 33.3 → 34 power points",
+          "notes": "4 bedrooms 4×2=8, living 5, dining 3, kitchen 7, bathrooms 2, garage 3, laundry 2, study 2 = 32 minimum",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 10m²",
+          "calculation": "200m² ÷ 10 = 20 light points",
+          "notes": "Bedrooms 4×1=4, living 3, dining 2, kitchen 3, bathrooms 2, hallway 4, garage 2 = 20 points",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = 1 per 50m²",
+          "calculation": "200m² ÷ 50 = 4 fixtures (2 bathroom suites + 1 laundry + 1 kitchen)",
+          "waste_applied": "Plumbing pipe 1.05 (5% waste)",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        }
+      },
+      "productivity_standards": {
+        "bricklaying": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "2 bricklayers + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "97.9m² ÷ 5.78 = 16.9 person-days ÷ 2 = 8.5 days (3-person gang)",
+          "adjustment_factors": "None"
+        },
+        "carpentry_framing": {
+          "trade": "Carpentry",
+          "frame_rate": "2.0 m²/day",
+          "roof_rate": "20 m²/day",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "Walls 117.6m² ÷ 2.0 = 58.8 days (1 carp); Roof 252m² ÷ 20 = 12.6 days"
+        },
+        "roofing": {
+          "trade": "Roofing",
+          "rate": "60 m²/2-person/day",
+          "gang_size": "2 roofers + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "252m² ÷ 60 = 4.2 days"
+        },
+        "painting": {
+          "trade": "Painting",
+          "interior_rate": "2.5 m²/hour",
+          "gang_size": "1-2 painters",
+          "multiplier": "1.00",
+          "derivation": "Walls 106.9m² + ceiling 204m² = 310.9m² ÷ 2.5/hr = 124.4 hrs = 15.5 days (1 painter)"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "first_fix": "34 power × 0.4 = 13.6 hrs; 20 lights × 0.7 = 14 hrs; total ~28 hours",
+          "second_fix": "34 power × 0.3 = 10.2 hrs; 20 lights × 0.2 = 4 hrs; board 5 hrs = 19.2 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": "1.00",
+          "derivation": "47.2 hours ÷ 8 hrs/day = 5.9 days"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "rough_in": "2 bathrooms × 8 hrs + laundry 4 hrs + kitchen 3 hrs + drainage 18 hrs = 41 hours",
+          "second_fix": "2 bathroom suites × 3.5 hrs + laundry + kitchen + HWS = 15 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": "1.00",
+          "derivation": "56 hours ÷ 8 hrs/day = 7.0 days"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.1,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.1,
+        "floor_wall_tiles": 1.1,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "cladding",
+        "roofing",
+        "flooring",
+        "windows",
+        "kitchen",
+        "bathroom"
+      ],
+      "tags": [
+        "residential",
+        "brick_veneer",
+        "single_storey",
+        "new_build",
+        "australia",
+        "4bed"
+      ]
+    },
+    {
+      "template_id": "au-res-5bed-house-280",
+      "name": "5-Bedroom House",
+      "description": "Single storey detached house, 280m² GFA, brick veneer, steel roof, strip footings",
+      "building_type": "residential_house",
+      "sector": "residential",
+      "specifications": {
+        "gfa_m2": 280,
+        "storeys": 1,
+        "bedrooms": 5,
+        "bathrooms": 3,
+        "living_areas": 3,
+        "garage_spaces": 2,
+        "default_construction": "brick_veneer",
+        "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Strip Footings",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian suburban"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Residential GFA measured from internal faces per NCC Volume 2. Includes 5 bedrooms, multiple living areas, 3 bathrooms, large kitchen/dining, hallway, double garage. Excludes alfresco and outdoor areas.",
+        "typical_layout": {
+          "master_bedroom": "5.0m × 4.5m = 22.5m²",
+          "bedroom_2": "4.0m × 3.5m = 14.0m²",
+          "bedroom_3": "3.8m × 3.2m = 12.2m²",
+          "bedroom_4": "3.5m × 3.0m = 10.5m²",
+          "bedroom_5": "3.2m × 3.0m = 9.6m²",
+          "main_living": "6.5m × 5.5m = 35.8m²",
+          "family_room": "5.0m × 4.5m = 22.5m²",
+          "dining": "5.0m × 4.0m = 20.0m²",
+          "kitchen": "5.5m × 3.5m = 19.3m²",
+          "main_bathroom": "4.0m × 2.8m = 11.2m²",
+          "ensuite": "3.0m × 2.5m = 7.5m²",
+          "bathroom_3": "2.5m × 2.2m = 5.5m²",
+          "laundry": "3.0m × 2.5m = 7.5m²",
+          "study": "3.5m × 3.0m = 10.5m²",
+          "hallway_circulation": "28.0m × 1.3m = 36.4m²",
+          "double_garage": "7.0m × 6.5m = 45.5m²",
+          "total_enclosed": "270.5m² (balance to 280m² = wall thickness, WIR, storage)"
+        },
+        "derivation_notes": "Executive 5-bedroom family home. Master bedroom with walk-in robe and ensuite. Two additional living areas (media room or rumpus). Study/home office. Main bathroom serves bedrooms 2-3, third bathroom serves bedrooms 4-5. Large kitchen with butler's pantry. Double garage with workshop space. Ceiling height 2.7m standard. Strip footings 750mm depth on mixed soil.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Kitchen fitout",
+              "scaling_rule": "1 large kitchen 19.3m² with island bench, butler's pantry, 8m linear benchtop.",
+              "derivation": "1 kitchen × $25,000-35,000"
+            },
+            {
+              "item": "Bathroom suites",
+              "scaling_rule": "3 bathrooms. Main (bath+shower) 11.2m², ensuite (shower+spa) 7.5m², bathroom 3 (shower) 5.5m².",
+              "derivation": "3 bathrooms × 24.2m² total tiled"
+            },
+            {
+              "item": "Hot water system",
+              "scaling_rule": "1 × 400L capacity for 6-8 occupants, or 2 × 250L units zoned.",
+              "derivation": "1 × HWS 400L unit"
+            },
+            {
+              "item": "HVAC zones",
+              "scaling_rule": "280m² single storey = 3-4 zones. Living/dining, family room, master bedroom wing, children's bedroom wing.",
+              "derivation": "4 zones: ducted system with zone dampers"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(GFA × 4) × 1.2",
+          "calculation": "√(280 × 4) × 1.2 = √1120 × 1.2 = 33.47 × 1.2 = 40.2m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height",
+          "calculation": "40.2m × 2.7m = 108.5m²",
+          "waste_applied": "Brick veneer 1.07 (7% waste) = 116.1m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.20",
+          "calculation": "280m² × 1.20 = 336m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 352.8m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "internal_wall_framing": {
+          "formula": "Internal Walls = √(GFA × 4) × 0.75 × ceiling_height",
+          "calculation": "√(280 × 4) × 0.75 = 33.47 × 0.75 = 25.1m linear × 2.7m × 2 = 135.5m²",
+          "waste_applied": "Timber framing 1.10 (10% waste) = 149.1m²",
+          "nrm_reference": "2.4 Internal Partitions"
+        },
+        "flooring": {
+          "formula": "Floor Finish Area = GFA",
+          "calculation": "280m² (slab + carpet 50%, tiles 30%, timber 20%)",
+          "waste_applied": "Concrete 1.05 = 294m²; Carpet 1.15 = 161m²; Tiles 1.10 = 92.4m²",
+          "nrm_reference": "3.2 Floor Finishes"
+        },
+        "ceiling": {
+          "formula": "Ceiling Area = GFA × 1.02",
+          "calculation": "280m² × 1.02 = 285.6m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 314.2m²",
+          "nrm_reference": "3.5 Ceiling Finishes"
+        },
+        "power_points": {
+          "formula": "Power Points = GFA ÷ 6m²",
+          "calculation": "280m² ÷ 6 = 46.7 → 47 power points",
+          "notes": "5 bedrooms 5×2=10, living areas 3×4=12, dining 4, kitchen 8, study 3, bathrooms 3, garage 3, laundry 2 = 45 minimum",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 10m²",
+          "calculation": "280m² ÷ 10 = 28 light points",
+          "notes": "Bedrooms 5×1=5, living areas 3×2=6, dining 2, kitchen 4, study 2, bathrooms 3, hallway 4, garage 2 = 28 points",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = 1 per 50m²",
+          "calculation": "280m² ÷ 50 = 5.6 → 6 fixtures (3 bathroom suites + 1 laundry + 1 kitchen + 1 wet bar)",
+          "waste_applied": "Plumbing pipe 1.05 (5% waste)",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        }
+      },
+      "productivity_standards": {
+        "bricklaying": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "2 bricklayers + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "116.1m² ÷ 5.78 = 20.1 person-days ÷ 2 = 10.1 days (3-person gang)",
+          "adjustment_factors": "None"
+        },
+        "carpentry_framing": {
+          "trade": "Carpentry",
+          "frame_rate": "2.0 m²/day",
+          "roof_rate": "20 m²/day",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "Walls 149.1m² ÷ 2.0 = 74.6 days (1 carp); Roof 352.8m² ÷ 20 = 17.6 days"
+        },
+        "roofing": {
+          "trade": "Roofing",
+          "rate": "60 m²/2-person/day",
+          "gang_size": "2 roofers + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "352.8m² ÷ 60 = 5.9 days"
+        },
+        "painting": {
+          "trade": "Painting",
+          "interior_rate": "2.5 m²/hour",
+          "gang_size": "2 painters (large home)",
+          "multiplier": "1.00",
+          "derivation": "Walls 135.5m² + ceiling 285.6m² = 421.1m² ÷ 2.5/hr = 168.4 hrs = 10.5 days (2 painters)"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "first_fix": "47 power × 0.4 = 18.8 hrs; 28 lights × 0.7 = 19.6 hrs; total ~39 hours",
+          "second_fix": "47 power × 0.3 = 14.1 hrs; 28 lights × 0.2 = 5.6 hrs; board 6 hrs = 25.7 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": "1.00",
+          "derivation": "64.7 hours ÷ 8 hrs/day = 8.1 days"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "rough_in": "3 bathrooms × 8 hrs + laundry 4 hrs + kitchen 3 hrs + drainage 24 hrs = 55 hours",
+          "second_fix": "3 bathroom suites × 3.5 hrs + laundry + kitchen + HWS = 18 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": "1.00",
+          "derivation": "73 hours ÷ 8 hrs/day = 9.1 days"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.1,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.1,
+        "floor_wall_tiles": 1.1,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "cladding",
+        "roofing",
+        "flooring",
+        "windows",
+        "kitchen",
+        "bathroom"
+      ],
+      "tags": [
+        "residential",
+        "brick_veneer",
+        "single_storey",
+        "new_build",
+        "australia",
+        "5bed"
+      ]
+    },
+    {
+      "template_id": "au-res-2bed-townhouse-90",
+      "name": "2-Bedroom Townhouse",
+      "description": "Townhouse, 90m² GFA, brick veneer, steel roof, slab on ground",
+      "building_type": "townhouse",
+      "sector": "residential",
+      "specifications": {
+        "gfa_m2": 90,
+        "storeys": 2,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "living_areas": 1,
+        "garage_spaces": 1,
+        "default_construction": "brick_veneer",
+        "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian suburban"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Townhouse GFA measured from internal faces per NCC Volume 2. Two-storey narrow footprint (5-6m width typical). Includes ground floor (living, kitchen, garage, laundry, WC) + first floor (2 bedrooms, bathroom). Excludes courtyard, balcony.",
+        "typical_layout": {
+          "ground_floor": {
+            "living_dining_kitchen": "5.5m × 4.0m = 22.0m²",
+            "laundry_wc": "2.5m × 2.0m = 5.0m²",
+            "hallway_stairs": "3.5m × 1.2m = 4.2m²",
+            "single_garage": "5.5m × 3.0m = 16.5m²",
+            "subtotal_ground": "47.7m²"
+          },
+          "first_floor": {
+            "master_bedroom": "3.8m × 3.5m = 13.3m²",
+            "bedroom_2": "3.2m × 2.8m = 9.0m²",
+            "bathroom": "2.8m × 2.2m = 6.2m²",
+            "landing_hallway": "4.0m × 1.2m = 4.8m²",
+            "balcony_void": "3.0m² (external, not counted in GFA)",
+            "subtotal_first": "33.3m²"
+          },
+          "total_gfa": "81.0m² (balance to 90m² = wall thickness, stair void)"
+        },
+        "derivation_notes": "Compact 2-storey townhouse on narrow lot (typical 5.5m frontage). Efficient layout with garage at ground, bedrooms upstairs. Single bathroom serves all bedrooms. Staircase ~3m² footprint (counted once in GFA per NCC). Slab on ground foundation. Brick veneer ground floor, potential timber cladding upper level. Ceiling height 2.7m on both levels.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Staircase",
+              "scaling_rule": "1 stairwell internal. 13-14 treads, 1.0m width minimum. Landing 1.2m × 1.0m.",
+              "derivation": "1 staircase × 14 treads = fixed element (not scaled with GFA)"
+            },
+            {
+              "item": "Kitchen fitout",
+              "scaling_rule": "1 kitchen per townhouse. Compact 3.0m linear benchtop, galley layout.",
+              "derivation": "1 kitchen × $8,000-12,000"
+            },
+            {
+              "item": "Bathroom suite",
+              "scaling_rule": "1 bathroom upstairs. Shower, basin, WC. Ground floor WC separate.",
+              "derivation": "1 bathroom + 1 WC = 2 plumbing zones"
+            },
+            {
+              "item": "Hot water system",
+              "scaling_rule": "1 × 135L capacity for 2-3 occupants.",
+              "derivation": "1 × HWS unit"
+            },
+            {
+              "item": "HVAC zones",
+              "scaling_rule": "90m² townhouse = 1-2 zones. Ground floor living + upstairs bedrooms.",
+              "derivation": "2 zones: 1 split living + 1 upstairs split"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(Footprint × 4) × 1.15 (narrow townhouse factor)",
+          "calculation": "Footprint ~45m² per level, √(45 × 4) × 1.15 = √180 × 1.15 = 13.42 × 1.15 = 15.4m per level",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height × Storeys",
+          "calculation": "15.4m × 2.7m × 2 = 83.2m²",
+          "waste_applied": "Brick veneer 1.07 (7% waste) = 89.0m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = Footprint × 1.18 (low pitch townhouse)",
+          "calculation": "45m² × 1.18 = 53.1m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 55.8m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "internal_wall_framing": {
+          "formula": "Internal Walls = √(GFA × 4) × 0.55 × ceiling_height",
+          "calculation": "√(90 × 4) × 0.55 = 18.97 × 0.55 = 10.4m linear × 2.7m × 2 = 56.2m²",
+          "waste_applied": "Timber framing 1.10 (10% waste) = 61.8m²",
+          "nrm_reference": "2.4 Internal Partitions"
+        },
+        "flooring": {
+          "formula": "Floor Finish Area = GFA",
+          "calculation": "90m² (ground slab + first floor timber/concrete + finishes)",
+          "waste_applied": "Concrete 1.05 = 94.5m²; Carpet 1.15 = 52m² (bedrooms only)",
+          "nrm_reference": "3.2 Floor Finishes"
+        },
+        "ceiling": {
+          "formula": "Ceiling Area = GFA × 1.02",
+          "calculation": "90m² × 1.02 = 91.8m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 101.0m²",
+          "nrm_reference": "3.5 Ceiling Finishes"
+        },
+        "power_points": {
+          "formula": "Power Points = GFA ÷ 6m²",
+          "calculation": "90m² ÷ 6 = 15 power points",
+          "notes": "Living 4, kitchen 5, bedrooms 2×2=4, bathroom 1, garage 1 = 15 points",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 10m²",
+          "calculation": "90m² ÷ 10 = 9 light points",
+          "notes": "Living 2, kitchen 1, bedrooms 2×1=2, bathroom 1, stairs 1, garage 1, hallway 1 = 9 points",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = 1 per 50m²",
+          "calculation": "90m² ÷ 50 = 1.8 → 2 fixtures (1 bathroom suite + 1 ground floor WC)",
+          "waste_applied": "Plumbing pipe 1.05 (5% waste)",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        }
+      },
+      "productivity_standards": {
+        "bricklaying": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "1 bricklayer + 1 labourer",
+          "multiplier": "0.95 (narrow townhouse site access)",
+          "derivation": "89.0m² ÷ 5.78 ÷ 0.95 = 16.3 person-days ÷ 1 = 16.3 days",
+          "adjustment_factors": "Urban congested 0.95 factor"
+        },
+        "carpentry_framing": {
+          "trade": "Carpentry",
+          "frame_rate": "2.0 m²/day",
+          "roof_rate": "18 m²/day (smaller roof)",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": "0.90 (two-storey coordination)",
+          "derivation": "Walls 61.8m² ÷ 2.0 ÷ 0.90 = 34.3 days (1 carp); Roof 55.8m² ÷ 18 = 3.1 days"
+        },
+        "roofing": {
+          "trade": "Roofing",
+          "rate": "55 m²/2-person/day (smaller roof, 2-storey height)",
+          "gang_size": "2 roofers + 1 labourer",
+          "multiplier": "0.95 (elevated work)",
+          "derivation": "55.8m² ÷ 55 ÷ 0.95 = 1.1 days"
+        },
+        "painting": {
+          "trade": "Painting",
+          "interior_rate": "2.5 m²/hour",
+          "gang_size": "1 painter",
+          "multiplier": "0.95 (two-storey, stairwell)",
+          "derivation": "Walls 56.2m² + ceiling 91.8m² = 148m² ÷ 2.5/hr ÷ 0.95 = 62.3 hrs = 7.8 days"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "first_fix": "15 power × 0.4 = 6 hrs; 9 lights × 0.7 = 6.3 hrs; total ~13 hours",
+          "second_fix": "15 power × 0.3 = 4.5 hrs; 9 lights × 0.2 = 1.8 hrs; board 3 hrs = 9.3 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": "1.05 (two-storey cable runs)",
+          "derivation": "22.3 hours × 1.05 ÷ 8 hrs/day = 2.9 days"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "rough_in": "1 bathroom × 8 hrs + ground WC 3 hrs + drainage 10 hrs = 21 hours",
+          "second_fix": "1 bathroom × 3 hrs + WC 1.5 hrs + HWS 3 hrs = 7.5 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": "1.08 (two-storey rise)",
+          "derivation": "28.5 hours × 1.08 ÷ 8 hrs/day = 3.8 days"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.1,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.1,
+        "floor_wall_tiles": 1.1,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "cladding",
+        "roofing",
+        "flooring",
+        "windows",
+        "kitchen",
+        "bathroom"
+      ],
+      "tags": [
+        "residential",
+        "townhouse",
+        "brick_veneer",
+        "new_build",
+        "australia",
+        "2bed"
+      ]
+    },
+    {
+      "template_id": "au-res-3bed-townhouse-130",
+      "name": "3-Bedroom Townhouse",
+      "description": "Townhouse, 130m² GFA, brick veneer, steel roof, slab on ground",
+      "building_type": "townhouse",
+      "sector": "residential",
+      "specifications": {
+        "gfa_m2": 130,
+        "storeys": 2,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "living_areas": 2,
+        "garage_spaces": 1,
+        "default_construction": "brick_veneer",
+        "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian suburban"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Townhouse GFA measured from internal faces. Two-storey design, typical 6m frontage. Ground floor: living, dining, kitchen, powder room, laundry, garage. First floor: 3 bedrooms, 2 bathrooms (main + ensuite).",
+        "typical_layout": {
+          "ground_floor": {
+            "living_room": "5.0m × 4.5m = 22.5m²",
+            "dining_kitchen": "5.5m × 4.0m = 22.0m²",
+            "powder_room": "2.0m × 1.5m = 3.0m²",
+            "laundry": "2.5m × 2.0m = 5.0m²",
+            "hallway_stairs": "4.5m × 1.2m = 5.4m²",
+            "single_garage": "5.5m × 3.0m = 16.5m²",
+            "subtotal_ground": "74.4m²"
+          },
+          "first_floor": {
+            "master_bedroom": "4.0m × 3.5m = 14.0m²",
+            "bedroom_2": "3.5m × 3.0m = 10.5m²",
+            "bedroom_3": "3.0m × 2.8m = 8.4m²",
+            "main_bathroom": "3.0m × 2.5m = 7.5m²",
+            "ensuite": "2.5m × 2.0m = 5.0m²",
+            "landing_hallway": "5.0m × 1.2m = 6.0m²",
+            "subtotal_first": "51.4m²"
+          },
+          "total_gfa": "125.8m² (balance to 130m² = wall thickness)"
+        },
+        "derivation_notes": "Family-sized 3-bedroom townhouse. Master with ensuite, main bathroom serves bedrooms 2-3. Separate living and dining areas. Powder room on ground floor for guests. Staircase ~3.5m² counted once in GFA. Slab on ground with first floor timber or concrete. Ceiling height 2.7m both levels.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Staircase",
+              "scaling_rule": "1 internal stairwell. 13-14 treads, 1.0m width.",
+              "derivation": "1 staircase fixed cost"
+            },
+            {
+              "item": "Kitchen fitout",
+              "scaling_rule": "1 kitchen per townhouse. 4.0m linear benchtop with island or peninsula.",
+              "derivation": "1 kitchen × $12,000-18,000"
+            },
+            {
+              "item": "Bathroom suites",
+              "scaling_rule": "2 bathrooms upstairs + 1 powder room ground floor.",
+              "derivation": "2 bathrooms + 1 WC = 3 plumbing zones"
+            },
+            {
+              "item": "Hot water system",
+              "scaling_rule": "1 × 170L-250L capacity for 4-5 occupants.",
+              "derivation": "1 × HWS unit"
+            },
+            {
+              "item": "HVAC zones",
+              "scaling_rule": "130m² = 2 zones. Ground living/dining + upstairs bedrooms.",
+              "derivation": "2 zones: ducted or 2 split systems"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(Footprint × 4) × 1.15",
+          "calculation": "Footprint ~65m² per level, √(65 × 4) × 1.15 = √260 × 1.15 = 16.12 × 1.15 = 18.5m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height × Storeys",
+          "calculation": "18.5m × 2.7m × 2 = 99.9m²",
+          "waste_applied": "Brick veneer 1.07 (7% waste) = 106.9m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = Footprint × 1.18",
+          "calculation": "65m² × 1.18 = 76.7m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 80.5m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "internal_wall_framing": {
+          "formula": "Internal Walls = √(GFA × 4) × 0.60 × ceiling_height",
+          "calculation": "√(130 × 4) × 0.60 = 22.8 × 0.60 = 13.7m × 2.7m × 2 = 74.0m²",
+          "waste_applied": "Timber framing 1.10 (10% waste) = 81.4m²",
+          "nrm_reference": "2.4 Internal Partitions"
+        },
+        "flooring": {
+          "formula": "Floor Finish Area = GFA",
+          "calculation": "130m² (ground slab + first floor + finishes)",
+          "waste_applied": "Concrete 1.05 = 136.5m²; Carpet 1.15 = 75m²",
+          "nrm_reference": "3.2 Floor Finishes"
+        },
+        "ceiling": {
+          "formula": "Ceiling Area = GFA × 1.02",
+          "calculation": "130m² × 1.02 = 132.6m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 145.9m²",
+          "nrm_reference": "3.5 Ceiling Finishes"
+        },
+        "power_points": {
+          "formula": "Power Points = GFA ÷ 6m²",
+          "calculation": "130m² ÷ 6 = 21.7 → 22 power points",
+          "notes": "Living 4, dining 2, kitchen 6, bedrooms 3×2=6, bathrooms 2, garage 1, laundry 1 = 22 points",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 10m²",
+          "calculation": "130m² ÷ 10 = 13 light points",
+          "notes": "Living 2, dining 1, kitchen 2, bedrooms 3×1=3, bathrooms 2, stairs 1, garage 1, hallway 1 = 13 points",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = 1 per 50m²",
+          "calculation": "130m² ÷ 50 = 2.6 → 3 fixtures (2 bathrooms + 1 powder room)",
+          "waste_applied": "Plumbing pipe 1.05 (5% waste)",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        }
+      },
+      "productivity_standards": {
+        "bricklaying": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "1 bricklayer + 1 labourer",
+          "multiplier": "0.95 (townhouse site access)",
+          "derivation": "106.9m² ÷ 5.78 ÷ 0.95 = 19.5 person-days",
+          "adjustment_factors": "Urban 0.95"
+        },
+        "carpentry_framing": {
+          "trade": "Carpentry",
+          "frame_rate": "2.0 m²/day",
+          "roof_rate": "18 m²/day",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": "0.90 (two-storey)",
+          "derivation": "Walls 81.4m² ÷ 2.0 ÷ 0.90 = 45.2 days (1 carp); Roof 80.5m² ÷ 18 = 4.5 days"
+        },
+        "roofing": {
+          "trade": "Roofing",
+          "rate": "55 m²/2-person/day",
+          "gang_size": "2 roofers + 1 labourer",
+          "multiplier": "0.95",
+          "derivation": "80.5m² ÷ 55 ÷ 0.95 = 1.5 days"
+        },
+        "painting": {
+          "trade": "Painting",
+          "interior_rate": "2.5 m²/hour",
+          "gang_size": "1 painter",
+          "multiplier": "0.95",
+          "derivation": "Walls 74m² + ceiling 132.6m² = 206.6m² ÷ 2.5/hr ÷ 0.95 = 87.0 hrs = 10.9 days"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "first_fix": "22 power × 0.4 = 8.8 hrs; 13 lights × 0.7 = 9.1 hrs; total ~18 hours",
+          "second_fix": "22 power × 0.3 = 6.6 hrs; 13 lights × 0.2 = 2.6 hrs; board 4 hrs = 13.2 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": "1.05",
+          "derivation": "31.2 hours × 1.05 ÷ 8 = 4.1 days"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "rough_in": "2 bathrooms × 8 hrs + powder room 3 hrs + drainage 14 hrs = 33 hours",
+          "second_fix": "2 bathrooms × 3 hrs + WC 1.5 hrs + HWS 3 hrs = 10.5 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": "1.08",
+          "derivation": "43.5 hours × 1.08 ÷ 8 = 5.9 days"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.1,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.1,
+        "floor_wall_tiles": 1.1,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "cladding",
+        "roofing",
+        "flooring",
+        "windows",
+        "kitchen",
+        "bathroom"
+      ],
+      "tags": [
+        "residential",
+        "townhouse",
+        "brick_veneer",
+        "new_build",
+        "australia",
+        "3bed"
+      ]
+    },
+    {
+      "template_id": "au-res-4bed-townhouse-170",
+      "name": "4-Bedroom Townhouse",
+      "description": "Townhouse, 170m² GFA, brick veneer, steel roof, slab on ground",
+      "building_type": "townhouse",
+      "sector": "residential",
+      "specifications": {
+        "gfa_m2": 170,
+        "storeys": 2,
+        "bedrooms": 4,
+        "bathrooms": 2,
+        "living_areas": 2,
+        "garage_spaces": 2,
+        "default_construction": "brick_veneer",
+        "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian suburban"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Townhouse GFA measured from internal faces. Two-storey, wider 7-8m frontage. Ground floor: living, dining, kitchen, family room, powder room, laundry, double garage. First floor: 4 bedrooms, 2 bathrooms.",
+        "typical_layout": {
+          "ground_floor": {
+            "living_room": "5.5m × 4.5m = 24.8m²",
+            "dining_kitchen": "6.0m × 4.5m = 27.0m²",
+            "family_room": "4.0m × 3.5m = 14.0m²",
+            "powder_room": "2.0m × 1.5m = 3.0m²",
+            "laundry": "2.5m × 2.0m = 5.0m²",
+            "hallway_stairs": "5.0m × 1.3m = 6.5m²",
+            "double_garage": "6.0m × 6.0m = 36.0m²",
+            "subtotal_ground": "116.3m²"
+          },
+          "first_floor": {
+            "master_bedroom": "4.2m × 3.8m = 16.0m²",
+            "bedroom_2": "3.5m × 3.2m = 11.2m²",
+            "bedroom_3": "3.2m × 3.0m = 9.6m²",
+            "bedroom_4": "3.0m × 2.8m = 8.4m²",
+            "main_bathroom": "3.2m × 2.5m = 8.0m²",
+            "ensuite": "2.5m × 2.0m = 5.0m²",
+            "landing_hallway": "6.0m × 1.2m = 7.2m²",
+            "subtotal_first": "65.4m²"
+          },
+          "total_gfa": "161.7m² (balance to 170m² = wall thickness, storage)"
+        },
+        "derivation_notes": "Spacious 4-bedroom townhouse for family. Master with ensuite. Main bathroom serves bedrooms 2-4. Separate living, dining, and family room. Double garage with internal access. Powder room on ground floor. Staircase ~4m² footprint. Slab on ground with first floor timber/concrete. Ceiling height 2.7m both levels.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Staircase",
+              "scaling_rule": "1 internal stairwell. 13-14 treads, 1.2m width for double garage access.",
+              "derivation": "1 staircase fixed"
+            },
+            {
+              "item": "Kitchen fitout",
+              "scaling_rule": "1 large kitchen 27m². Island bench, walk-in pantry, 5.5m linear benchtop.",
+              "derivation": "1 kitchen × $18,000-25,000"
+            },
+            {
+              "item": "Bathroom suites",
+              "scaling_rule": "2 bathrooms upstairs + 1 powder room ground.",
+              "derivation": "2 bathrooms + 1 WC"
+            },
+            {
+              "item": "Hot water system",
+              "scaling_rule": "1 × 250L-315L capacity for 5-6 occupants.",
+              "derivation": "1 × HWS unit"
+            },
+            {
+              "item": "HVAC zones",
+              "scaling_rule": "170m² = 2-3 zones. Ground living + upstairs + master bedroom.",
+              "derivation": "3 zones: ducted or splits"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = √(Footprint × 4) × 1.15",
+          "calculation": "Footprint ~85m² per level, √(85 × 4) × 1.15 = √340 × 1.15 = 18.44 × 1.15 = 21.2m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Ceiling Height × Storeys",
+          "calculation": "21.2m × 2.7m × 2 = 114.5m²",
+          "waste_applied": "Brick veneer 1.07 (7% waste) = 122.5m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = Footprint × 1.18",
+          "calculation": "85m² × 1.18 = 100.3m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 105.3m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "internal_wall_framing": {
+          "formula": "Internal Walls = √(GFA × 4) × 0.65 × ceiling_height",
+          "calculation": "√(170 × 4) × 0.65 = 26.08 × 0.65 = 16.95m × 2.7m × 2 = 91.5m²",
+          "waste_applied": "Timber framing 1.10 (10% waste) = 100.7m²",
+          "nrm_reference": "2.4 Internal Partitions"
+        },
+        "flooring": {
+          "formula": "Floor Finish Area = GFA",
+          "calculation": "170m² (ground slab + first floor + finishes)",
+          "waste_applied": "Concrete 1.05 = 178.5m²; Carpet 1.15 = 98m²",
+          "nrm_reference": "3.2 Floor Finishes"
+        },
+        "ceiling": {
+          "formula": "Ceiling Area = GFA × 1.02",
+          "calculation": "170m² × 1.02 = 173.4m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 190.7m²",
+          "nrm_reference": "3.5 Ceiling Finishes"
+        },
+        "power_points": {
+          "formula": "Power Points = GFA ÷ 6m²",
+          "calculation": "170m² ÷ 6 = 28.3 → 29 power points",
+          "notes": "Living 5, dining 2, kitchen 7, family 3, bedrooms 4×2=8, bathrooms 2, garage 2 = 29 points",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 10m²",
+          "calculation": "170m² ÷ 10 = 17 light points",
+          "notes": "Living 2, dining 2, kitchen 2, family 1, bedrooms 4×1=4, bathrooms 2, stairs 1, garage 2, hallway 1 = 17 points",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = 1 per 50m²",
+          "calculation": "170m² ÷ 50 = 3.4 → 4 fixtures (2 bathrooms + 1 powder room + 1 laundry)",
+          "waste_applied": "Plumbing pipe 1.05 (5% waste)",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        }
+      },
+      "productivity_standards": {
+        "bricklaying": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "2 bricklayers + 1 labourer",
+          "multiplier": "0.95",
+          "derivation": "122.5m² ÷ 5.78 ÷ 0.95 = 22.3 person-days ÷ 2 = 11.2 days",
+          "adjustment_factors": "Urban 0.95"
+        },
+        "carpentry_framing": {
+          "trade": "Carpentry",
+          "frame_rate": "2.0 m²/day",
+          "roof_rate": "20 m²/day",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": "0.90",
+          "derivation": "Walls 100.7m² ÷ 2.0 ÷ 0.90 = 55.9 days (1 carp); Roof 105.3m² ÷ 20 = 5.3 days"
+        },
+        "roofing": {
+          "trade": "Roofing",
+          "rate": "60 m²/2-person/day",
+          "gang_size": "2 roofers + 1 labourer",
+          "multiplier": "0.95",
+          "derivation": "105.3m² ÷ 60 ÷ 0.95 = 1.8 days"
+        },
+        "painting": {
+          "trade": "Painting",
+          "interior_rate": "2.5 m²/hour",
+          "gang_size": "1-2 painters",
+          "multiplier": "0.95",
+          "derivation": "Walls 91.5m² + ceiling 173.4m² = 264.9m² ÷ 2.5/hr ÷ 0.95 = 111.5 hrs = 14 days (1 painter)"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "first_fix": "29 power × 0.4 = 11.6 hrs; 17 lights × 0.7 = 11.9 hrs; total ~24 hours",
+          "second_fix": "29 power × 0.3 = 8.7 hrs; 17 lights × 0.2 = 3.4 hrs; board 5 hrs = 17.1 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": "1.05",
+          "derivation": "41.1 hours × 1.05 ÷ 8 = 5.4 days"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "rough_in": "2 bathrooms × 8 hrs + powder room 3 hrs + laundry 4 hrs + drainage 16 hrs = 39 hours",
+          "second_fix": "2 bathrooms × 3 hrs + WC 1.5 hrs + laundry 2 hrs + HWS 3 hrs = 12.5 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": "1.08",
+          "derivation": "51.5 hours × 1.08 ÷ 8 = 7.0 days"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.1,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.1,
+        "floor_wall_tiles": 1.1,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "cladding",
+        "roofing",
+        "flooring",
+        "windows",
+        "kitchen",
+        "bathroom"
+      ],
+      "tags": [
+        "residential",
+        "townhouse",
+        "brick_veneer",
+        "new_build",
+        "australia",
+        "4bed"
+      ]
+    },
+    {
+      "template_id": "au-res-2bed-duplex-85",
+      "name": "2-Bedroom Duplex (per side)",
+      "description": "Duplex unit, 85m² GFA per side, brick veneer, steel roof, slab on ground",
+      "building_type": "duplex",
+      "sector": "residential",
+      "specifications": {
+        "gfa_m2": 85,
+        "storeys": 1,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "living_areas": 1,
+        "garage_spaces": 1,
+        "default_construction": "brick_veneer",
+        "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard. Shared dividing wall 200mm double stud with acoustic insulation.",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian suburban"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Duplex GFA measured per side (85m² each = 170m² total). NCC Volume 2 internal faces. Party wall to center line. Includes bedrooms, living, kitchen, bathroom, garage. Excludes courtyard.",
+        "typical_layout": {
+          "master_bedroom": "3.5m × 3.2m = 11.2m²",
+          "bedroom_2": "3.0m × 2.7m = 8.1m²",
+          "living_dining_kitchen": "6.0m × 4.0m = 24.0m²",
+          "bathroom": "2.5m × 2.2m = 5.5m²",
+          "laundry": "2.0m × 1.8m = 3.6m²",
+          "hallway": "6.0m × 1.2m = 7.2m²",
+          "single_garage": "5.5m × 3.0m = 16.5m²",
+          "total": "76.1m² (balance to 85m² = wall thickness)"
+        },
+        "derivation_notes": "Single storey duplex. Mirror image units. Party wall 200mm double stud with acoustic insulation per NCC F5. Brick veneer three sides. Slab on ground. Separate title per side.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Party wall",
+              "scaling_rule": "1 shared dividing wall 200mm double stud. ~12m length for 85m² footprint.",
+              "derivation": "1 party wall × 12m × 2.7m = 32.4m² per side"
+            },
+            {
+              "item": "Kitchen fitout",
+              "scaling_rule": "1 kitchen per side. 3.5m linear benchtop.",
+              "derivation": "1 kitchen × $8,000-12,000"
+            },
+            {
+              "item": "Bathroom suite",
+              "scaling_rule": "1 bathroom per side.",
+              "derivation": "1 bathroom"
+            },
+            {
+              "item": "Hot water system",
+              "scaling_rule": "1 × HWS per side. 135L-170L.",
+              "derivation": "1 × HWS per side"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = (√(GFA × 4) × 1.2) - party_wall",
+          "calculation": "(√(85 × 4) × 1.2) - 12m = 22.1 - 12 = 10.1m external",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = External Perimeter × Height",
+          "calculation": "10.1m × 2.7m = 27.3m²",
+          "waste_applied": "Brick veneer 1.07 (7% waste) = 29.2m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "party_wall_area": {
+          "formula": "Party Wall = Length × Height",
+          "calculation": "12m × 2.7m = 32.4m² (double stud)",
+          "waste_applied": "Timber 1.10 (10% waste) × 2 = 71.3m²",
+          "nrm_reference": "2.4 Partitions"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.15",
+          "calculation": "85m² × 1.15 = 97.8m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 102.7m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "internal_wall_framing": {
+          "formula": "Internal Walls = √(GFA × 4) × 0.55 × height",
+          "calculation": "√(85 × 4) × 0.55 = 10.1m × 2.7m × 2 = 54.5m²",
+          "waste_applied": "Timber 1.10 (10% waste) = 60.0m²",
+          "nrm_reference": "2.4 Partitions"
+        },
+        "flooring": {
+          "formula": "Floor Finish Area = GFA",
+          "calculation": "85m² (slab + carpet/vinyl)",
+          "waste_applied": "Concrete 1.05 = 89.3m²; Carpet 1.15 = 98m²",
+          "nrm_reference": "3.2 Floor Finishes"
+        },
+        "ceiling": {
+          "formula": "Ceiling Area = GFA × 1.02",
+          "calculation": "85m² × 1.02 = 86.7m²",
+          "waste_applied": "Plasterboard 1.10 (10% waste) = 95.4m²",
+          "nrm_reference": "3.5 Ceiling Finishes"
+        },
+        "power_points": {
+          "formula": "Power Points = GFA ÷ 6m²",
+          "calculation": "85m² ÷ 6 = 15 power points",
+          "notes": "Bedrooms 4, living 4, kitchen 5, bathroom 1, garage 1",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 10m²",
+          "calculation": "85m² ÷ 10 = 9 light points",
+          "notes": "Bedrooms 2, living 2, kitchen 1, bathroom 1, hallway 2, garage 1",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "plumbing_fixtures": {
+          "formula": "Fixtures = 1 per 50m²",
+          "calculation": "85m² ÷ 50 = 2 fixtures (bathroom + laundry)",
+          "waste_applied": "Plumbing pipe 1.05 (5% waste)",
+          "nrm_reference": "5.1 Plumbing & Water Supplies"
+        }
+      },
+      "productivity_standards": {
+        "bricklaying": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "1 bricklayer + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "29.2m² ÷ 5.78 = 5.1 person-days per side",
+          "adjustment_factors": "None"
+        },
+        "carpentry_framing": {
+          "trade": "Carpentry",
+          "frame_rate": "2.0 m²/day",
+          "roof_rate": "20 m²/day",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "Walls 131.3m² ÷ 2.0 = 65.7 days (1 carp); Roof 102.7m² ÷ 20 = 5.1 days"
+        },
+        "roofing": {
+          "trade": "Roofing",
+          "rate": "60 m²/2-person/day",
+          "gang_size": "2 roofers + 1 labourer",
+          "multiplier": "1.00",
+          "derivation": "102.7m² ÷ 60 = 1.7 days per side"
+        },
+        "painting": {
+          "trade": "Painting",
+          "interior_rate": "2.5 m²/hour",
+          "gang_size": "1 painter",
+          "multiplier": "1.00",
+          "derivation": "141.2m² ÷ 2.5/hr = 56.5 hrs = 7.1 days per side"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "first_fix": "15 power × 0.4 = 6 hrs; 9 lights × 0.7 = 6.3 hrs; ~13 hours",
+          "second_fix": "15 power × 0.3 = 4.5 hrs; 9 lights × 0.2 = 1.8 hrs; board 3 hrs = 9.3 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": "1.00",
+          "derivation": "22.3 hours ÷ 8 hrs/day = 2.8 days per side"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "rough_in": "1 bathroom × 8 hrs + laundry 4 hrs + drainage 10 hrs = 22 hours",
+          "second_fix": "1 bathroom × 3 hrs + laundry 2 hrs + HWS 3 hrs = 8 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": "1.00",
+          "derivation": "30 hours ÷ 8 hrs/day = 3.8 days per side"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.1,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.1,
+        "floor_wall_tiles": 1.1,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "cladding",
+        "roofing",
+        "flooring",
+        "windows",
+        "kitchen",
+        "bathroom"
+      ],
+      "tags": [
+        "residential",
+        "duplex",
+        "brick_veneer",
+        "new_build",
+        "australia",
+        "2bed"
+      ]
+    },
+    {
+      "template_id": "au-res-3bed-duplex-125",
+      "name": "3-Bedroom Duplex (per side)",
+      "description": "Duplex, 125m² GFA, brick veneer, standard finishes",
+      "building_type": "duplex",
+      "sector": "residential",
+      "specifications": {
+        "gfa_m2": 125,
+        "storeys": 1,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "living_areas": 2,
+        "garage_spaces": 1,
+        "default_construction": "brick_veneer",
+        "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian suburban"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Residential GFA measured from internal faces per NCC Volume 2. 1 storey, 125m² total. Includes all habitable and non-habitable rooms.",
+        "typical_layout": {
+          "total_gfa": "125m²",
+          "note": "3 bedrooms, 2 bathrooms, 1 storey"
+        },
+        "derivation_notes": "3-bedroom duplex design. Ceiling height 2.7m per NCC. Standard Australian residential construction.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Kitchen fitout",
+              "scaling_rule": "1 kitchen per dwelling",
+              "derivation": "1 kitchen fixed cost"
+            },
+            {
+              "item": "Bathrooms",
+              "scaling_rule": "2 bathroom(s) per dwelling",
+              "derivation": "2 bathroom(s)"
+            },
+            {
+              "item": "Hot water system",
+              "scaling_rule": "1 HWS per dwelling",
+              "derivation": "1 HWS unit"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = sqrt(GFA × 4) × 1.2",
+          "calculation": "sqrt(125 × 4) × 1.2 = 26.8m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Height × Storeys",
+          "calculation": "26.8m × 2.7m × 1 = 72.4m²",
+          "waste_applied": "Brick veneer 1.07 (7% waste) = 77.5m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.20",
+          "calculation": "125m² × 1.20 = 150.0m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 157.5m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "power_points": {
+          "formula": "Power Points = GFA ÷ 6m²",
+          "calculation": "125m² ÷ 6 = 21 power points",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 10m²",
+          "calculation": "125m² ÷ 10 = 12 light points",
+          "nrm_reference": "5.4 Electrical Installation"
+        }
+      },
+      "productivity_standards": {
+        "bricklaying": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "2 bricklayers + 1 labourer",
+          "multiplier": 1.0,
+          "derivation": "77.5m² ÷ 5.78 = 13.4 person-days",
+          "adjustment_factors": "None"
+        },
+        "carpentry_framing": {
+          "trade": "Carpentry",
+          "frame_rate": "2.0 m²/day",
+          "roof_rate": "20 m²/day",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": 1.0,
+          "derivation": "Roof 157.5m² ÷ 20 = 7.9 days"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": 1.0,
+          "derivation": "~34 hours total"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": 1.0,
+          "derivation": "2 bathrooms × 8-10 hrs rough-in + fixtures"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.1,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.1,
+        "floor_wall_tiles": 1.1,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "cladding",
+        "roofing",
+        "flooring",
+        "windows",
+        "kitchen",
+        "bathroom"
+      ],
+      "tags": [
+        "residential",
+        "duplex",
+        "brick_veneer",
+        "new_build",
+        "australia",
+        "3bed"
+      ]
+    },
+    {
+      "template_id": "au-res-4bed-duplex-165",
+      "name": "4-Bedroom Duplex (per side)",
+      "description": "Duplex, 165m² GFA, brick veneer, standard finishes",
+      "building_type": "duplex",
+      "sector": "residential",
+      "specifications": {
+        "gfa_m2": 165,
+        "storeys": 1,
+        "bedrooms": 4,
+        "bathrooms": 2,
+        "living_areas": 2,
+        "garage_spaces": 2,
+        "default_construction": "brick_veneer",
+        "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian suburban"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Residential GFA measured from internal faces per NCC Volume 2. 1 storey, 165m² total. Includes all habitable and non-habitable rooms.",
+        "typical_layout": {
+          "total_gfa": "165m²",
+          "note": "4 bedrooms, 2 bathrooms, 1 storey"
+        },
+        "derivation_notes": "4-bedroom duplex design. Ceiling height 2.7m per NCC. Standard Australian residential construction.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Kitchen fitout",
+              "scaling_rule": "1 kitchen per dwelling",
+              "derivation": "1 kitchen fixed cost"
+            },
+            {
+              "item": "Bathrooms",
+              "scaling_rule": "2 bathroom(s) per dwelling",
+              "derivation": "2 bathroom(s)"
+            },
+            {
+              "item": "Hot water system",
+              "scaling_rule": "1 HWS per dwelling",
+              "derivation": "1 HWS unit"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = sqrt(GFA × 4) × 1.2",
+          "calculation": "sqrt(165 × 4) × 1.2 = 30.8m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Height × Storeys",
+          "calculation": "30.8m × 2.7m × 1 = 83.2m²",
+          "waste_applied": "Brick veneer 1.07 (7% waste) = 89.0m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.20",
+          "calculation": "165m² × 1.20 = 198.0m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 207.9m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "power_points": {
+          "formula": "Power Points = GFA ÷ 6m²",
+          "calculation": "165m² ÷ 6 = 28 power points",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 10m²",
+          "calculation": "165m² ÷ 10 = 16 light points",
+          "nrm_reference": "5.4 Electrical Installation"
+        }
+      },
+      "productivity_standards": {
+        "bricklaying": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "2 bricklayers + 1 labourer",
+          "multiplier": 1.0,
+          "derivation": "89.0m² ÷ 5.78 = 15.4 person-days",
+          "adjustment_factors": "None"
+        },
+        "carpentry_framing": {
+          "trade": "Carpentry",
+          "frame_rate": "2.0 m²/day",
+          "roof_rate": "20 m²/day",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": 1.0,
+          "derivation": "Roof 207.9m² ÷ 20 = 10.4 days"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": 1.0,
+          "derivation": "~42 hours total"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": 1.0,
+          "derivation": "2 bathrooms × 8-10 hrs rough-in + fixtures"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.1,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.1,
+        "floor_wall_tiles": 1.1,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "cladding",
+        "roofing",
+        "flooring",
+        "windows",
+        "kitchen",
+        "bathroom"
+      ],
+      "tags": [
+        "residential",
+        "duplex",
+        "brick_veneer",
+        "new_build",
+        "australia",
+        "4bed"
+      ]
+    },
+    {
+      "template_id": "au-res-1bed-apartment-55",
+      "name": "1-Bedroom Apartment",
+      "description": "Apartment, 55m² GFA, cavity brick metal stud, standard finishes",
+      "building_type": "residential_unit",
+      "sector": "residential",
+      "specifications": {
+        "gfa_m2": 55,
+        "storeys": 1,
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "living_areas": 1,
+        "garage_spaces": 0,
+        "default_construction": "cavity_brick_metal_stud",
+        "construction_notes": "110mm face brick + 90mm cavity + 90mm metal stud + 13mm plasterboard",
+        "default_roofing": "metal",
+        "roof_type": "Metal Deck",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian suburban"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Residential GFA measured from internal faces per NCC Volume 2. 1 storey, 55m² total. Includes all habitable and non-habitable rooms.",
+        "typical_layout": {
+          "total_gfa": "55m²",
+          "note": "1 bedrooms, 1 bathrooms, 1 storey"
+        },
+        "derivation_notes": "1-bedroom apartment design. Ceiling height 2.7m per NCC. Standard Australian residential construction.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Kitchen fitout",
+              "scaling_rule": "1 kitchen per dwelling",
+              "derivation": "1 kitchen fixed cost"
+            },
+            {
+              "item": "Bathrooms",
+              "scaling_rule": "1 bathroom(s) per dwelling",
+              "derivation": "1 bathroom(s)"
+            },
+            {
+              "item": "Hot water system",
+              "scaling_rule": "1 HWS per dwelling",
+              "derivation": "1 HWS unit"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = sqrt(GFA × 4) × 1.2",
+          "calculation": "sqrt(55 × 4) × 1.2 = 17.8m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Height × Storeys",
+          "calculation": "17.8m × 2.7m × 1 = 48.1m²",
+          "waste_applied": "Brick veneer 1.07 (7% waste) = 51.5m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.20",
+          "calculation": "55m² × 1.20 = 66.0m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 69.3m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "power_points": {
+          "formula": "Power Points = GFA ÷ 6m²",
+          "calculation": "55m² ÷ 6 = 9 power points",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 10m²",
+          "calculation": "55m² ÷ 10 = 6 light points",
+          "nrm_reference": "5.4 Electrical Installation"
+        }
+      },
+      "productivity_standards": {
+        "bricklaying": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "2 bricklayers + 1 labourer",
+          "multiplier": 1.0,
+          "derivation": "51.5m² ÷ 5.78 = 8.9 person-days",
+          "adjustment_factors": "None"
+        },
+        "carpentry_framing": {
+          "trade": "Carpentry",
+          "frame_rate": "2.0 m²/day",
+          "roof_rate": "20 m²/day",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": 1.0,
+          "derivation": "Roof 69.3m² ÷ 20 = 3.5 days"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": 1.0,
+          "derivation": "~19 hours total"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": 1.0,
+          "derivation": "1 bathrooms × 8-10 hrs rough-in + fixtures"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.1,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.1,
+        "floor_wall_tiles": 1.1,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "flooring",
+        "kitchen",
+        "bathroom"
+      ],
+      "tags": [
+        "residential",
+        "apartment",
+        "cavity_brick_metal_stud",
+        "new_build",
+        "australia",
+        "1bed"
+      ]
+    },
+    {
+      "template_id": "au-res-2bed-apartment-75",
+      "name": "2-Bedroom Apartment",
+      "description": "Apartment, 75m² GFA, cavity brick metal stud, standard finishes",
+      "building_type": "residential_unit",
+      "sector": "residential",
+      "specifications": {
+        "gfa_m2": 75,
+        "storeys": 1,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "living_areas": 1,
+        "garage_spaces": 0,
+        "default_construction": "cavity_brick_metal_stud",
+        "construction_notes": "110mm face brick + 90mm cavity + 90mm metal stud + 13mm plasterboard",
+        "default_roofing": "metal",
+        "roof_type": "Metal Deck",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian suburban"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Residential GFA measured from internal faces per NCC Volume 2. 1 storey, 75m² total. Includes all habitable and non-habitable rooms.",
+        "typical_layout": {
+          "total_gfa": "75m²",
+          "note": "2 bedrooms, 1 bathrooms, 1 storey"
+        },
+        "derivation_notes": "2-bedroom apartment design. Ceiling height 2.7m per NCC. Standard Australian residential construction.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Kitchen fitout",
+              "scaling_rule": "1 kitchen per dwelling",
+              "derivation": "1 kitchen fixed cost"
+            },
+            {
+              "item": "Bathrooms",
+              "scaling_rule": "1 bathroom(s) per dwelling",
+              "derivation": "1 bathroom(s)"
+            },
+            {
+              "item": "Hot water system",
+              "scaling_rule": "1 HWS per dwelling",
+              "derivation": "1 HWS unit"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = sqrt(GFA × 4) × 1.2",
+          "calculation": "sqrt(75 × 4) × 1.2 = 20.8m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Height × Storeys",
+          "calculation": "20.8m × 2.7m × 1 = 56.2m²",
+          "waste_applied": "Brick veneer 1.07 (7% waste) = 60.1m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.20",
+          "calculation": "75m² × 1.20 = 90.0m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 94.5m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "power_points": {
+          "formula": "Power Points = GFA ÷ 6m²",
+          "calculation": "75m² ÷ 6 = 12 power points",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 10m²",
+          "calculation": "75m² ÷ 10 = 8 light points",
+          "nrm_reference": "5.4 Electrical Installation"
+        }
+      },
+      "productivity_standards": {
+        "bricklaying": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "2 bricklayers + 1 labourer",
+          "multiplier": 1.0,
+          "derivation": "60.1m² ÷ 5.78 = 10.4 person-days",
+          "adjustment_factors": "None"
+        },
+        "carpentry_framing": {
+          "trade": "Carpentry",
+          "frame_rate": "2.0 m²/day",
+          "roof_rate": "20 m²/day",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": 1.0,
+          "derivation": "Roof 94.5m² ÷ 20 = 4.7 days"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": 1.0,
+          "derivation": "~24 hours total"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": 1.0,
+          "derivation": "1 bathrooms × 8-10 hrs rough-in + fixtures"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.1,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.1,
+        "floor_wall_tiles": 1.1,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "flooring",
+        "kitchen",
+        "bathroom"
+      ],
+      "tags": [
+        "residential",
+        "apartment",
+        "cavity_brick_metal_stud",
+        "new_build",
+        "australia",
+        "2bed"
+      ]
+    },
+    {
+      "template_id": "au-res-3bed-apartment-105",
+      "name": "3-Bedroom Apartment",
+      "description": "Apartment, 105m² GFA, cavity brick metal stud, standard finishes",
+      "building_type": "residential_unit",
+      "sector": "residential",
+      "specifications": {
+        "gfa_m2": 105,
+        "storeys": 1,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "living_areas": 2,
+        "garage_spaces": 0,
+        "default_construction": "cavity_brick_metal_stud",
+        "construction_notes": "110mm face brick + 90mm cavity + 90mm metal stud + 13mm plasterboard",
+        "default_roofing": "metal",
+        "roof_type": "Metal Deck",
+        "foundation_type": "Slab on Ground",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian suburban"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Residential GFA measured from internal faces per NCC Volume 2. 1 storey, 105m² total. Includes all habitable and non-habitable rooms.",
+        "typical_layout": {
+          "total_gfa": "105m²",
+          "note": "3 bedrooms, 2 bathrooms, 1 storey"
+        },
+        "derivation_notes": "3-bedroom apartment design. Ceiling height 2.7m per NCC. Standard Australian residential construction.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Kitchen fitout",
+              "scaling_rule": "1 kitchen per dwelling",
+              "derivation": "1 kitchen fixed cost"
+            },
+            {
+              "item": "Bathrooms",
+              "scaling_rule": "2 bathroom(s) per dwelling",
+              "derivation": "2 bathroom(s)"
+            },
+            {
+              "item": "Hot water system",
+              "scaling_rule": "1 HWS per dwelling",
+              "derivation": "1 HWS unit"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = sqrt(GFA × 4) × 1.2",
+          "calculation": "sqrt(105 × 4) × 1.2 = 24.6m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Height × Storeys",
+          "calculation": "24.6m × 2.7m × 1 = 66.4m²",
+          "waste_applied": "Brick veneer 1.07 (7% waste) = 71.0m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.20",
+          "calculation": "105m² × 1.20 = 126.0m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 132.3m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "power_points": {
+          "formula": "Power Points = GFA ÷ 6m²",
+          "calculation": "105m² ÷ 6 = 18 power points",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 10m²",
+          "calculation": "105m² ÷ 10 = 10 light points",
+          "nrm_reference": "5.4 Electrical Installation"
+        }
+      },
+      "productivity_standards": {
+        "bricklaying": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "2 bricklayers + 1 labourer",
+          "multiplier": 1.0,
+          "derivation": "71.0m² ÷ 5.78 = 12.3 person-days",
+          "adjustment_factors": "None"
+        },
+        "carpentry_framing": {
+          "trade": "Carpentry",
+          "frame_rate": "2.0 m²/day",
+          "roof_rate": "20 m²/day",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": 1.0,
+          "derivation": "Roof 132.3m² ÷ 20 = 6.6 days"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": 1.0,
+          "derivation": "~30 hours total"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": 1.0,
+          "derivation": "2 bathrooms × 8-10 hrs rough-in + fixtures"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.1,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.1,
+        "floor_wall_tiles": 1.1,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "flooring",
+        "kitchen",
+        "bathroom"
+      ],
+      "tags": [
+        "residential",
+        "apartment",
+        "cavity_brick_metal_stud",
+        "new_build",
+        "australia",
+        "3bed"
+      ]
+    },
+    {
+      "template_id": "au-res-4bed-house-premium-220",
+      "name": "4-Bedroom House Premium",
+      "description": "House, 220m² GFA, brick veneer, standard finishes",
+      "building_type": "residential_house",
+      "sector": "residential",
+      "specifications": {
+        "gfa_m2": 220,
+        "storeys": 1,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "living_areas": 3,
+        "garage_spaces": 2,
+        "default_construction": "brick_veneer",
+        "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Strip Footings",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian suburban"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Residential GFA measured from internal faces per NCC Volume 2. 1 storey, 220m² total. Includes all habitable and non-habitable rooms.",
+        "typical_layout": {
+          "total_gfa": "220m²",
+          "note": "4 bedrooms, 3 bathrooms, 1 storey"
+        },
+        "derivation_notes": "4-bedroom premium design. Ceiling height 2.7m per NCC. Standard Australian residential construction.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Kitchen fitout",
+              "scaling_rule": "1 kitchen per dwelling",
+              "derivation": "1 kitchen fixed cost"
+            },
+            {
+              "item": "Bathrooms",
+              "scaling_rule": "3 bathroom(s) per dwelling",
+              "derivation": "3 bathroom(s)"
+            },
+            {
+              "item": "Hot water system",
+              "scaling_rule": "1 HWS per dwelling",
+              "derivation": "1 HWS unit"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = sqrt(GFA × 4) × 1.2",
+          "calculation": "sqrt(220 × 4) × 1.2 = 35.6m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Height × Storeys",
+          "calculation": "35.6m × 2.7m × 1 = 96.1m²",
+          "waste_applied": "Brick veneer 1.07 (7% waste) = 102.8m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.20",
+          "calculation": "220m² × 1.20 = 264.0m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 277.2m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "power_points": {
+          "formula": "Power Points = GFA ÷ 6m²",
+          "calculation": "220m² ÷ 6 = 37 power points",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 10m²",
+          "calculation": "220m² ÷ 10 = 22 light points",
+          "nrm_reference": "5.4 Electrical Installation"
+        }
+      },
+      "productivity_standards": {
+        "bricklaying": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "2 bricklayers + 1 labourer",
+          "multiplier": 1.0,
+          "derivation": "102.8m² ÷ 5.78 = 17.8 person-days",
+          "adjustment_factors": "None"
+        },
+        "carpentry_framing": {
+          "trade": "Carpentry",
+          "frame_rate": "2.0 m²/day",
+          "roof_rate": "20 m²/day",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": 1.0,
+          "derivation": "Roof 277.2m² ÷ 20 = 13.9 days"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": 1.0,
+          "derivation": "~53 hours total"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": 1.0,
+          "derivation": "3 bathrooms × 8-10 hrs rough-in + fixtures"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.1,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.1,
+        "floor_wall_tiles": 1.1,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "cladding",
+        "roofing",
+        "flooring",
+        "windows",
+        "kitchen",
+        "bathroom"
+      ],
+      "tags": [
+        "residential",
+        "premium",
+        "brick_veneer",
+        "new_build",
+        "australia",
+        "4bed"
+      ]
+    },
+    {
+      "template_id": "au-res-5bed-house-premium-320",
+      "name": "5-Bedroom House Premium",
+      "description": "House, 320m² GFA, brick veneer, standard finishes",
+      "building_type": "residential_house",
+      "sector": "residential",
+      "specifications": {
+        "gfa_m2": 320,
+        "storeys": 1,
+        "bedrooms": 5,
+        "bathrooms": 3,
+        "living_areas": 3,
+        "garage_spaces": 2,
+        "default_construction": "brick_veneer",
+        "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Strip Footings",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian suburban"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Residential GFA measured from internal faces per NCC Volume 2. 1 storey, 320m² total. Includes all habitable and non-habitable rooms.",
+        "typical_layout": {
+          "total_gfa": "320m²",
+          "note": "5 bedrooms, 3 bathrooms, 1 storey"
+        },
+        "derivation_notes": "5-bedroom premium design. Ceiling height 2.7m per NCC. Standard Australian residential construction.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Kitchen fitout",
+              "scaling_rule": "1 kitchen per dwelling",
+              "derivation": "1 kitchen fixed cost"
+            },
+            {
+              "item": "Bathrooms",
+              "scaling_rule": "3 bathroom(s) per dwelling",
+              "derivation": "3 bathroom(s)"
+            },
+            {
+              "item": "Hot water system",
+              "scaling_rule": "1 HWS per dwelling",
+              "derivation": "1 HWS unit"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = sqrt(GFA × 4) × 1.2",
+          "calculation": "sqrt(320 × 4) × 1.2 = 42.9m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Height × Storeys",
+          "calculation": "42.9m × 2.7m × 1 = 115.8m²",
+          "waste_applied": "Brick veneer 1.07 (7% waste) = 123.9m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.20",
+          "calculation": "320m² × 1.20 = 384.0m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 403.2m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "power_points": {
+          "formula": "Power Points = GFA ÷ 6m²",
+          "calculation": "320m² ÷ 6 = 53 power points",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 10m²",
+          "calculation": "320m² ÷ 10 = 32 light points",
+          "nrm_reference": "5.4 Electrical Installation"
+        }
+      },
+      "productivity_standards": {
+        "bricklaying": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "2 bricklayers + 1 labourer",
+          "multiplier": 1.0,
+          "derivation": "123.9m² ÷ 5.78 = 21.4 person-days",
+          "adjustment_factors": "None"
+        },
+        "carpentry_framing": {
+          "trade": "Carpentry",
+          "frame_rate": "2.0 m²/day",
+          "roof_rate": "20 m²/day",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": 1.0,
+          "derivation": "Roof 403.2m² ÷ 20 = 20.2 days"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": 1.0,
+          "derivation": "~74 hours total"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": 1.0,
+          "derivation": "3 bathrooms × 8-10 hrs rough-in + fixtures"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.1,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.1,
+        "floor_wall_tiles": 1.1,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "cladding",
+        "roofing",
+        "flooring",
+        "windows",
+        "kitchen",
+        "bathroom"
+      ],
+      "tags": [
+        "residential",
+        "premium",
+        "brick_veneer",
+        "new_build",
+        "australia",
+        "5bed"
+      ]
+    },
+    {
+      "template_id": "au-res-3bed-house-two-storey-170",
+      "name": "3-Bedroom House Two-Storey",
+      "description": "House, 170m² GFA, brick veneer, standard finishes",
+      "building_type": "residential_house",
+      "sector": "residential",
+      "specifications": {
+        "gfa_m2": 170,
+        "storeys": 2,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "living_areas": 2,
+        "garage_spaces": 2,
+        "default_construction": "brick_veneer",
+        "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Strip Footings",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian suburban"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Residential GFA measured from internal faces per NCC Volume 2. 2 storey, 170m² total. Includes all habitable and non-habitable rooms.",
+        "typical_layout": {
+          "total_gfa": "170m²",
+          "note": "3 bedrooms, 2 bathrooms, 2 storey"
+        },
+        "derivation_notes": "3-bedroom two_storey design. Ceiling height 2.7m per NCC. Standard Australian residential construction.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Kitchen fitout",
+              "scaling_rule": "1 kitchen per dwelling",
+              "derivation": "1 kitchen fixed cost"
+            },
+            {
+              "item": "Bathrooms",
+              "scaling_rule": "2 bathroom(s) per dwelling",
+              "derivation": "2 bathroom(s)"
+            },
+            {
+              "item": "Hot water system",
+              "scaling_rule": "1 HWS per dwelling",
+              "derivation": "1 HWS unit"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = sqrt(GFA × 4) × 1.2",
+          "calculation": "sqrt(170 × 4) × 1.2 = 22.1m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Height × Storeys",
+          "calculation": "22.1m × 2.7m × 2 = 119.3m²",
+          "waste_applied": "Brick veneer 1.07 (7% waste) = 127.7m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.18",
+          "calculation": "170m² × 1.18 = 100.3m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 105.3m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "power_points": {
+          "formula": "Power Points = GFA ÷ 6m²",
+          "calculation": "170m² ÷ 6 = 28 power points",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 10m²",
+          "calculation": "170m² ÷ 10 = 17 light points",
+          "nrm_reference": "5.4 Electrical Installation"
+        }
+      },
+      "productivity_standards": {
+        "bricklaying": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "2 bricklayers + 1 labourer",
+          "multiplier": 0.95,
+          "derivation": "127.7m² ÷ 5.78 = 22.1 person-days",
+          "adjustment_factors": "Two-storey 0.95"
+        },
+        "carpentry_framing": {
+          "trade": "Carpentry",
+          "frame_rate": "2.0 m²/day",
+          "roof_rate": "20 m²/day",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": 0.9,
+          "derivation": "Roof 105.3m² ÷ 20 = 5.3 days"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": 1.05,
+          "derivation": "~43 hours total"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": 1.08,
+          "derivation": "2 bathrooms × 8-10 hrs rough-in + fixtures"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.1,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.1,
+        "floor_wall_tiles": 1.1,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "cladding",
+        "roofing",
+        "flooring",
+        "windows",
+        "kitchen",
+        "bathroom"
+      ],
+      "tags": [
+        "residential",
+        "two_storey",
+        "brick_veneer",
+        "new_build",
+        "australia",
+        "3bed"
+      ]
+    },
+    {
+      "template_id": "au-res-4bed-house-two-storey-230",
+      "name": "4-Bedroom House Two-Storey",
+      "description": "House, 230m² GFA, brick veneer, standard finishes",
+      "building_type": "residential_house",
+      "sector": "residential",
+      "specifications": {
+        "gfa_m2": 230,
+        "storeys": 2,
+        "bedrooms": 4,
+        "bathrooms": 2,
+        "living_areas": 3,
+        "garage_spaces": 2,
+        "default_construction": "brick_veneer",
+        "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Strip Footings",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian suburban"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Residential GFA measured from internal faces per NCC Volume 2. 2 storey, 230m² total. Includes all habitable and non-habitable rooms.",
+        "typical_layout": {
+          "total_gfa": "230m²",
+          "note": "4 bedrooms, 2 bathrooms, 2 storey"
+        },
+        "derivation_notes": "4-bedroom two_storey design. Ceiling height 2.7m per NCC. Standard Australian residential construction.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Kitchen fitout",
+              "scaling_rule": "1 kitchen per dwelling",
+              "derivation": "1 kitchen fixed cost"
+            },
+            {
+              "item": "Bathrooms",
+              "scaling_rule": "2 bathroom(s) per dwelling",
+              "derivation": "2 bathroom(s)"
+            },
+            {
+              "item": "Hot water system",
+              "scaling_rule": "1 HWS per dwelling",
+              "derivation": "1 HWS unit"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = sqrt(GFA × 4) × 1.2",
+          "calculation": "sqrt(230 × 4) × 1.2 = 25.7m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Height × Storeys",
+          "calculation": "25.7m × 2.7m × 2 = 138.8m²",
+          "waste_applied": "Brick veneer 1.07 (7% waste) = 148.5m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.18",
+          "calculation": "230m² × 1.18 = 135.7m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 142.5m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "power_points": {
+          "formula": "Power Points = GFA ÷ 6m²",
+          "calculation": "230m² ÷ 6 = 38 power points",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 10m²",
+          "calculation": "230m² ÷ 10 = 23 light points",
+          "nrm_reference": "5.4 Electrical Installation"
+        }
+      },
+      "productivity_standards": {
+        "bricklaying": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "2 bricklayers + 1 labourer",
+          "multiplier": 0.95,
+          "derivation": "148.5m² ÷ 5.78 = 25.7 person-days",
+          "adjustment_factors": "Two-storey 0.95"
+        },
+        "carpentry_framing": {
+          "trade": "Carpentry",
+          "frame_rate": "2.0 m²/day",
+          "roof_rate": "20 m²/day",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": 0.9,
+          "derivation": "Roof 142.5m² ÷ 20 = 7.1 days"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": 1.05,
+          "derivation": "~56 hours total"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": 1.08,
+          "derivation": "2 bathrooms × 8-10 hrs rough-in + fixtures"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.1,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.1,
+        "floor_wall_tiles": 1.1,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "cladding",
+        "roofing",
+        "flooring",
+        "windows",
+        "kitchen",
+        "bathroom"
+      ],
+      "tags": [
+        "residential",
+        "two_storey",
+        "brick_veneer",
+        "new_build",
+        "australia",
+        "4bed"
+      ]
+    },
+    {
+      "template_id": "au-res-5bed-house-two-storey-300",
+      "name": "5-Bedroom House Two-Storey",
+      "description": "House, 300m² GFA, brick veneer, standard finishes",
+      "building_type": "residential_house",
+      "sector": "residential",
+      "specifications": {
+        "gfa_m2": 300,
+        "storeys": 2,
+        "bedrooms": 5,
+        "bathrooms": 3,
+        "living_areas": 3,
+        "garage_spaces": 2,
+        "default_construction": "brick_veneer",
+        "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Strip Footings",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian suburban"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Residential GFA measured from internal faces per NCC Volume 2. 2 storey, 300m² total. Includes all habitable and non-habitable rooms.",
+        "typical_layout": {
+          "total_gfa": "300m²",
+          "note": "5 bedrooms, 3 bathrooms, 2 storey"
+        },
+        "derivation_notes": "5-bedroom two_storey design. Ceiling height 2.7m per NCC. Standard Australian residential construction.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Kitchen fitout",
+              "scaling_rule": "1 kitchen per dwelling",
+              "derivation": "1 kitchen fixed cost"
+            },
+            {
+              "item": "Bathrooms",
+              "scaling_rule": "3 bathroom(s) per dwelling",
+              "derivation": "3 bathroom(s)"
+            },
+            {
+              "item": "Hot water system",
+              "scaling_rule": "1 HWS per dwelling",
+              "derivation": "1 HWS unit"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = sqrt(GFA × 4) × 1.2",
+          "calculation": "sqrt(300 × 4) × 1.2 = 29.4m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Height × Storeys",
+          "calculation": "29.4m × 2.7m × 2 = 158.8m²",
+          "waste_applied": "Brick veneer 1.07 (7% waste) = 169.9m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.18",
+          "calculation": "300m² × 1.18 = 177.0m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 185.8m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "power_points": {
+          "formula": "Power Points = GFA ÷ 6m²",
+          "calculation": "300m² ÷ 6 = 50 power points",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 10m²",
+          "calculation": "300m² ÷ 10 = 30 light points",
+          "nrm_reference": "5.4 Electrical Installation"
+        }
+      },
+      "productivity_standards": {
+        "bricklaying": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "2 bricklayers + 1 labourer",
+          "multiplier": 0.95,
+          "derivation": "169.9m² ÷ 5.78 = 29.4 person-days",
+          "adjustment_factors": "Two-storey 0.95"
+        },
+        "carpentry_framing": {
+          "trade": "Carpentry",
+          "frame_rate": "2.0 m²/day",
+          "roof_rate": "20 m²/day",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": 0.9,
+          "derivation": "Roof 185.8m² ÷ 20 = 9.3 days"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": 1.05,
+          "derivation": "~70 hours total"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": 1.08,
+          "derivation": "3 bathrooms × 8-10 hrs rough-in + fixtures"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.1,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.1,
+        "floor_wall_tiles": 1.1,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "cladding",
+        "roofing",
+        "flooring",
+        "windows",
+        "kitchen",
+        "bathroom"
+      ],
+      "tags": [
+        "residential",
+        "two_storey",
+        "brick_veneer",
+        "new_build",
+        "australia",
+        "5bed"
+      ]
+    },
+    {
+      "template_id": "au-res-4bed-rural-250",
+      "name": "4-Bedroom Rural House",
+      "description": "House, 250m² GFA, brick veneer, standard finishes",
+      "building_type": "residential_house",
+      "sector": "residential",
+      "specifications": {
+        "gfa_m2": 250,
+        "storeys": 1,
+        "bedrooms": 4,
+        "bathrooms": 2,
+        "living_areas": 3,
+        "garage_spaces": 2,
+        "default_construction": "brick_veneer",
+        "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Strip Footings",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian rural"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Residential GFA measured from internal faces per NCC Volume 2. 1 storey, 250m² total. Includes all habitable and non-habitable rooms.",
+        "typical_layout": {
+          "total_gfa": "250m²",
+          "note": "4 bedrooms, 2 bathrooms, 1 storey"
+        },
+        "derivation_notes": "4-bedroom rural design. Ceiling height 2.7m per NCC. Standard Australian residential construction.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Kitchen fitout",
+              "scaling_rule": "1 kitchen per dwelling",
+              "derivation": "1 kitchen fixed cost"
+            },
+            {
+              "item": "Bathrooms",
+              "scaling_rule": "2 bathroom(s) per dwelling",
+              "derivation": "2 bathroom(s)"
+            },
+            {
+              "item": "Hot water system",
+              "scaling_rule": "1 HWS per dwelling",
+              "derivation": "1 HWS unit"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = sqrt(GFA × 4) × 1.2",
+          "calculation": "sqrt(250 × 4) × 1.2 = 37.9m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Height × Storeys",
+          "calculation": "37.9m × 2.7m × 1 = 102.3m²",
+          "waste_applied": "Brick veneer 1.07 (7% waste) = 109.5m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.20",
+          "calculation": "250m² × 1.20 = 300.0m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 315.0m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "power_points": {
+          "formula": "Power Points = GFA ÷ 6m²",
+          "calculation": "250m² ÷ 6 = 42 power points",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 10m²",
+          "calculation": "250m² ÷ 10 = 25 light points",
+          "nrm_reference": "5.4 Electrical Installation"
+        }
+      },
+      "productivity_standards": {
+        "bricklaying": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "2 bricklayers + 1 labourer",
+          "multiplier": 1.0,
+          "derivation": "109.5m² ÷ 5.78 = 18.9 person-days",
+          "adjustment_factors": "None"
+        },
+        "carpentry_framing": {
+          "trade": "Carpentry",
+          "frame_rate": "2.0 m²/day",
+          "roof_rate": "20 m²/day",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": 1.0,
+          "derivation": "Roof 315.0m² ÷ 20 = 15.8 days"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": 1.0,
+          "derivation": "~60 hours total"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": 1.0,
+          "derivation": "2 bathrooms × 8-10 hrs rough-in + fixtures"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.1,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.1,
+        "floor_wall_tiles": 1.1,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "cladding",
+        "roofing",
+        "flooring",
+        "windows",
+        "kitchen",
+        "bathroom"
+      ],
+      "tags": [
+        "residential",
+        "rural",
+        "brick_veneer",
+        "new_build",
+        "australia",
+        "4bed"
+      ]
+    },
+    {
+      "template_id": "au-res-5bed-acreage-350",
+      "name": "5-Bedroom Acreage House",
+      "description": "House, 350m² GFA, brick veneer, standard finishes",
+      "building_type": "residential_house",
+      "sector": "residential",
+      "specifications": {
+        "gfa_m2": 350,
+        "storeys": 1,
+        "bedrooms": 5,
+        "bathrooms": 3,
+        "living_areas": 3,
+        "garage_spaces": 2,
+        "default_construction": "brick_veneer",
+        "construction_notes": "110mm face brick + 40mm cavity + 90mm timber frame + 10mm plasterboard",
+        "default_roofing": "metal",
+        "roof_type": "Steel (Colorbond)",
+        "foundation_type": "Strip Footings",
+        "ceiling_height_m": 2.7,
+        "finish_level": "standard",
+        "project_type": "new_build",
+        "location_context": "Australian acreage"
+      },
+      "measurement_assumptions": {
+        "gfa_definition": "Residential GFA measured from internal faces per NCC Volume 2. 1 storey, 350m² total. Includes all habitable and non-habitable rooms.",
+        "typical_layout": {
+          "total_gfa": "350m²",
+          "note": "5 bedrooms, 3 bathrooms, 1 storey"
+        },
+        "derivation_notes": "5-bedroom acreage design. Ceiling height 2.7m per NCC. Standard Australian residential construction.",
+        "scaling_rules": {
+          "nonlinear_items": [
+            {
+              "item": "Kitchen fitout",
+              "scaling_rule": "1 kitchen per dwelling",
+              "derivation": "1 kitchen fixed cost"
+            },
+            {
+              "item": "Bathrooms",
+              "scaling_rule": "3 bathroom(s) per dwelling",
+              "derivation": "3 bathroom(s)"
+            },
+            {
+              "item": "Hot water system",
+              "scaling_rule": "1 HWS per dwelling",
+              "derivation": "1 HWS unit"
+            }
+          ]
+        }
+      },
+      "derivation_formulas": {
+        "perimeter_calculation": {
+          "formula": "Perimeter = sqrt(GFA × 4) × 1.2",
+          "calculation": "sqrt(350 × 4) × 1.2 = 44.9m",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "external_wall_area": {
+          "formula": "Wall Area = Perimeter × Height × Storeys",
+          "calculation": "44.9m × 2.7m × 1 = 121.2m²",
+          "waste_applied": "Brick veneer 1.07 (7% waste) = 129.7m²",
+          "nrm_reference": "2.5 External Walls"
+        },
+        "roof_area": {
+          "formula": "Roof Area = GFA × 1.20",
+          "calculation": "350m² × 1.20 = 420.0m²",
+          "waste_applied": "Metal roofing 1.05 (5% waste) = 441.0m²",
+          "nrm_reference": "2.7 Roof Coverings"
+        },
+        "power_points": {
+          "formula": "Power Points = GFA ÷ 6m²",
+          "calculation": "350m² ÷ 6 = 58 power points",
+          "nrm_reference": "5.4 Electrical Installation"
+        },
+        "light_points": {
+          "formula": "Light Points = GFA ÷ 10m²",
+          "calculation": "350m² ÷ 10 = 35 light points",
+          "nrm_reference": "5.4 Electrical Installation"
+        }
+      },
+      "productivity_standards": {
+        "bricklaying": {
+          "trade": "Bricklaying",
+          "rate": "5.78 m²/person/day",
+          "gang_size": "2 bricklayers + 1 labourer",
+          "multiplier": 1.0,
+          "derivation": "129.7m² ÷ 5.78 = 22.4 person-days",
+          "adjustment_factors": "None"
+        },
+        "carpentry_framing": {
+          "trade": "Carpentry",
+          "frame_rate": "2.0 m²/day",
+          "roof_rate": "20 m²/day",
+          "gang_size": "2 carpenters + 1 labourer",
+          "multiplier": 1.0,
+          "derivation": "Roof 441.0m² ÷ 20 = 22.1 days"
+        },
+        "electrical": {
+          "trade": "Electrical",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 electrician + 1 apprentice",
+          "multiplier": 1.0,
+          "derivation": "~80 hours total"
+        },
+        "plumbing": {
+          "trade": "Plumbing",
+          "minimum_callout": "4 hours",
+          "gang_size": "1 plumber + 1 apprentice",
+          "multiplier": 1.0,
+          "derivation": "3 bathrooms × 8-10 hrs rough-in + fixtures"
+        }
+      },
+      "material_waste_factors": {
+        "concrete": 1.05,
+        "timber_framing": 1.1,
+        "brickwork_masonry": 1.07,
+        "plasterboard": 1.1,
+        "floor_wall_tiles": 1.1,
+        "carpet_vinyl": 1.15,
+        "roof_tiles": 1.08,
+        "metal_roofing": 1.05,
+        "electrical_cable": 1.05,
+        "plumbing_pipe": 1.05
+      },
+      "is_active": true,
+      "applicable_swaps": [
+        "cladding",
+        "roofing",
+        "flooring",
+        "windows",
+        "kitchen",
+        "bathroom"
+      ],
+      "tags": [
+        "residential",
+        "acreage",
+        "brick_veneer",
+        "new_build",
+        "australia",
+        "5bed"
+      ]
+    }
+  ]
+}

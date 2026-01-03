@@ -1,0 +1,979 @@
+{
+  "meta": {
+    "nrm_group": 0,
+    "group_name": "facilitating",
+    "count": 17,
+    "generated": "2026-01-03",
+    "source": "Composite_Rate_Descriptions.xlsx",
+    "transformed": "2026-01-03",
+    "resource_linked": true,
+    "enriched_date": "2026-01-03",
+    "crosswalk_version": "NRM1_L4_to_NRM2_Crosswalk.csv"
+  },
+  "rates": [
+    {
+      "code": "GRP0-ASBREM-001",
+      "name": "Asbestos removal - bonded sheeting",
+      "description": "Licensed removal, disposal, clearance certificate",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CIVIL",
+            "qty": 0.3,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.3,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "resource_id": "PLT_AU_SKID_STEER",
+            "qty": 1.0,
+            "unit": "m²"
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.6,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.05,
+      "labour_total": 28.5,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 71.92,
+      "ohp_percent": 15,
+      "total_rate": 82.71,
+      "nrm1_l4_code": "0.1.1.1",
+      "nrm1_l3_code": "0.1.1",
+      "nrm1_l2_code": "0.1",
+      "nrm1_description": "Toxic or hazardous material removal: details to be stated.",
+      "nrm2_primary_ws": "6",
+      "nrm2_primary_ws_name": "Ground remediation",
+      "nrm2_primary_items": "",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Manual"
+    },
+    {
+      "code": "GRP0-ASBREM-002",
+      "name": "Asbestos removal - friable",
+      "description": "Full containment, decontamination",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CIVIL",
+            "qty": 0.3,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.3,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.6,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.05,
+      "labour_total": 28.5,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 71.92,
+      "ohp_percent": 15,
+      "total_rate": 82.71,
+      "nrm1_l4_code": "0.1.1.1",
+      "nrm1_l3_code": "0.1.1",
+      "nrm1_l2_code": "0.1",
+      "nrm1_description": "Toxic or hazardous material removal: details to be stated.",
+      "nrm2_primary_ws": "6",
+      "nrm2_primary_ws_name": "Ground remediation",
+      "nrm2_primary_items": "",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Manual"
+    },
+    {
+      "code": "GRP0-LEAPAI-003",
+      "name": "Lead paint removal",
+      "description": "Encapsulation or full removal",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CIVIL",
+            "qty": 0.12,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.12,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 7.92,
+      "materials_total": 15.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 39.82,
+      "ohp_percent": 15,
+      "total_rate": 45.79,
+      "nrm1_l4_code": "0.1.1.1",
+      "nrm1_l3_code": "0.1.1",
+      "nrm1_l2_code": "0.1",
+      "nrm1_description": "Toxic or hazardous material removal: details to be stated.",
+      "nrm2_primary_ws": "6",
+      "nrm2_primary_ws_name": "Ground remediation",
+      "nrm2_primary_items": "",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Manual"
+    },
+    {
+      "code": "GRP0-DEM-004",
+      "name": "Demolition - single storey residential",
+      "description": "GFA basis, includes site clearance",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CIVIL",
+            "qty": 0.3,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.3,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "resource_id": "PLT_AU_SKID_STEER",
+            "qty": 1.0,
+            "unit": "m²"
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.6,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.05,
+      "labour_total": 28.5,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 71.92,
+      "ohp_percent": 15,
+      "total_rate": 82.71,
+      "nrm1_l4_code": "0.2.1.1",
+      "nrm1_l3_code": "0.2.1",
+      "nrm1_l2_code": "0.2",
+      "nrm1_description": "Demolition of entire buildings: details to be stated.",
+      "nrm2_primary_ws": "3",
+      "nrm2_primary_ws_name": "Demolitions",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Manual"
+    },
+    {
+      "code": "GRP0-DEM-005",
+      "name": "Demolition - two storey residential",
+      "description": "GFA basis, includes site clearance",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CIVIL",
+            "qty": 0.3,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.3,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "resource_id": "PLT_AU_SKID_STEER",
+            "qty": 1.0,
+            "unit": "m²"
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.6,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.05,
+      "labour_total": 28.5,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 71.92,
+      "ohp_percent": 15,
+      "total_rate": 82.71,
+      "nrm1_l4_code": "0.2.1.1",
+      "nrm1_l3_code": "0.2.1",
+      "nrm1_l2_code": "0.2",
+      "nrm1_description": "Demolition of entire buildings: details to be stated.",
+      "nrm2_primary_ws": "3",
+      "nrm2_primary_ws_name": "Demolitions",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Manual"
+    },
+    {
+      "code": "GRP0-DEM-006",
+      "name": "Demolition - commercial/industrial shed",
+      "description": "Steel frame, metal clad",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_STEEL_FIXER",
+            "qty": 0.3,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.3,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.6,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.05,
+      "labour_total": 28.5,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 71.92,
+      "ohp_percent": 15,
+      "total_rate": 82.71,
+      "nrm1_l4_code": "0.2.1.1",
+      "nrm1_l3_code": "0.2.1",
+      "nrm1_l2_code": "0.2",
+      "nrm1_description": "Demolition of entire buildings: details to be stated.",
+      "nrm2_primary_ws": "3",
+      "nrm2_primary_ws_name": "Demolitions",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Manual"
+    },
+    {
+      "code": "GRP0-DEM-007",
+      "name": "Demolition - masonry building",
+      "description": "Brick/block construction",
+      "unit": "m³",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_BRICKLAYER",
+            "qty": 1.5,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 1.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m³",
+            "rate": 125.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m³",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 3.0,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.07,
+      "labour_total": 142.5,
+      "materials_total": 125.0,
+      "plant_total": 15.0,
+      "waste_percent": 7,
+      "nett_total": 291.25,
+      "ohp_percent": 15,
+      "total_rate": 334.94,
+      "nrm1_l4_code": "0.2.1.1",
+      "nrm1_l3_code": "0.2.1",
+      "nrm1_l2_code": "0.2",
+      "nrm1_description": "Demolition of entire buildings: details to be stated.",
+      "nrm2_primary_ws": "3",
+      "nrm2_primary_ws_name": "Demolitions",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Manual"
+    },
+    {
+      "code": "GRP0-DEM-008",
+      "name": "Demolition - concrete structure",
+      "description": "RC frame, includes breaking",
+      "unit": "m³",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 3.0,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m³",
+            "rate": 175.0
+          }
+        ],
+        "plant": [
+          {
+            "resource_id": "PLT_AU_BREAKER",
+            "qty": 1.0,
+            "unit": "m³"
+          }
+        ]
+      },
+      "labour_hours_per_unit": 3.0,
+      "gang_composition": "0+2",
+      "material_waste_factor": 1.05,
+      "labour_total": 165.0,
+      "materials_total": 175.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 372.75,
+      "ohp_percent": 15,
+      "total_rate": 428.66,
+      "nrm1_l4_code": "0.2.1.1",
+      "nrm1_l3_code": "0.2.1",
+      "nrm1_l2_code": "0.2",
+      "nrm1_description": "Demolition of entire buildings: details to be stated.",
+      "nrm2_primary_ws": "3",
+      "nrm2_primary_ws_name": "Demolitions",
+      "nrm2_primary_items": "1",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Manual"
+    },
+    {
+      "code": "GRP0-TEMSTO-009",
+      "name": "Temporary stormwater diversion",
+      "description": "During construction",
+      "unit": "item",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CIVIL",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "item",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "item",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.5,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 92.0,
+      "materials_total": 20.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 133.35,
+      "ohp_percent": 15,
+      "total_rate": 153.35,
+      "nrm1_l4_code": "0.5.1.1",
+      "nrm1_l3_code": "0.5.1",
+      "nrm1_l2_code": "0.5",
+      "nrm1_description": "Temporary diversion of drains: details to be stated.",
+      "nrm2_primary_ws": "35",
+      "nrm2_primary_ws_name": "Site works",
+      "nrm2_primary_items": "",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Manual"
+    },
+    {
+      "code": "GRP0-TEMSEW-010",
+      "name": "Temporary sewer bypass",
+      "description": "Pump and treat",
+      "unit": "item",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CIVIL",
+            "qty": 1.0,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 1.0,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "item",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "resource_id": "PLT_AU_CONCRETE_PUMP",
+            "qty": 1.0,
+            "unit": "item"
+          }
+        ]
+      },
+      "labour_hours_per_unit": 2.0,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.05,
+      "labour_total": 95.0,
+      "materials_total": 20.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 136.5,
+      "ohp_percent": 15,
+      "total_rate": 156.97,
+      "nrm1_l4_code": "0.5.1.1",
+      "nrm1_l3_code": "0.5.1",
+      "nrm1_l2_code": "0.5",
+      "nrm1_description": "Temporary diversion of drains: details to be stated.",
+      "nrm2_primary_ws": "35",
+      "nrm2_primary_ws_name": "Site works",
+      "nrm2_primary_items": "",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Manual"
+    },
+    {
+      "code": "GRP0-TEMPOW-011",
+      "name": "Temporary power supply",
+      "description": "Builder's temporary",
+      "unit": "item",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CIVIL",
+            "qty": 1.0,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "item",
+            "rate": 20.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "item",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 1.0,
+      "gang_composition": "1+0",
+      "material_waste_factor": 1.05,
+      "labour_total": 84.0,
+      "materials_total": 20.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 124.95,
+      "ohp_percent": 15,
+      "total_rate": 143.69,
+      "nrm1_l4_code": "0.5.1.2",
+      "nrm1_l3_code": "0.5.1",
+      "nrm1_l2_code": "0.5",
+      "nrm1_description": "Temporary diversion of services: details to be stated.",
+      "nrm2_primary_ws": "35",
+      "nrm2_primary_ws_name": "Site works",
+      "nrm2_primary_items": "",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Manual"
+    },
+    {
+      "code": "GRP0-ROCBRE-012",
+      "name": "Rock breaking - surface",
+      "description": "Hydraulic hammer",
+      "unit": "m³",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CIVIL",
+            "qty": 1.5,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 1.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m³",
+            "rate": 125.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m³",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 3.0,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.05,
+      "labour_total": 142.5,
+      "materials_total": 125.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 296.62,
+      "ohp_percent": 15,
+      "total_rate": 341.12,
+      "nrm1_l4_code": "0.6.1.1",
+      "nrm1_l3_code": "0.6.1",
+      "nrm1_l2_code": "0.6",
+      "nrm1_description": "Excavation works: details to be stated.",
+      "nrm2_primary_ws": "5",
+      "nrm2_primary_ws_name": "Excavating and filling",
+      "nrm2_primary_items": "6",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Manual"
+    },
+    {
+      "code": "GRP0-ROCBRE-013",
+      "name": "Rock breaking - below surface",
+      "description": "Controlled blasting may be required",
+      "unit": "m³",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CIVIL",
+            "qty": 1.5,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 1.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m³",
+            "rate": 125.0
+          }
+        ],
+        "plant": [
+          {
+            "resource_id": "PLT_AU_COMPACTOR",
+            "qty": 1.0,
+            "unit": "m³"
+          }
+        ]
+      },
+      "labour_hours_per_unit": 3.0,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.05,
+      "labour_total": 142.5,
+      "materials_total": 125.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 296.62,
+      "ohp_percent": 15,
+      "total_rate": 341.12,
+      "nrm1_l4_code": "0.6.1.1",
+      "nrm1_l3_code": "0.6.1",
+      "nrm1_l2_code": "0.6",
+      "nrm1_description": "Excavation works: details to be stated.",
+      "nrm2_primary_ws": "5",
+      "nrm2_primary_ws_name": "Excavating and filling",
+      "nrm2_primary_items": "6",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Manual"
+    },
+    {
+      "code": "GRP0-DEW-014",
+      "name": "Dewatering - sump pumping",
+      "description": "Open excavation",
+      "unit": "week",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CIVIL",
+            "qty": 0.5,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.25,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "week",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "resource_id": "PLT_AU_MINI_EXCAVATOR",
+            "qty": 1.0,
+            "unit": "week"
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.75,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 46.0,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 90.3,
+      "ohp_percent": 15,
+      "total_rate": 103.84,
+      "nrm1_l4_code": "0.4.1.1",
+      "nrm1_l3_code": "0.4.1",
+      "nrm1_l2_code": "0.4",
+      "nrm1_description": "Site dewatering: details to be stated.",
+      "nrm2_primary_ws": "38",
+      "nrm2_primary_ws_name": "Mechanical services",
+      "nrm2_primary_items": "13",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Manual"
+    },
+    {
+      "code": "GRP0-DEW-015",
+      "name": "Dewatering - wellpoints",
+      "description": "Perimeter installation",
+      "unit": "m",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CIVIL",
+            "qty": 0.25,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.125,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.375,
+      "gang_composition": "1+0.5",
+      "material_waste_factor": 1.05,
+      "labour_total": 23.0,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 66.15,
+      "ohp_percent": 15,
+      "total_rate": 76.07,
+      "nrm1_l4_code": "0.4.1.1",
+      "nrm1_l3_code": "0.4.1",
+      "nrm1_l2_code": "0.4",
+      "nrm1_description": "Site dewatering: details to be stated.",
+      "nrm2_primary_ws": "38",
+      "nrm2_primary_ws_name": "Mechanical services",
+      "nrm2_primary_items": "13",
+      "nrm2_secondary_ws": "",
+      "mapping_confidence": "Manual"
+    },
+    {
+      "code": "GRP0-GROIMP-016",
+      "name": "Ground improvement - vibro compaction",
+      "description": "Granular soils",
+      "unit": "m²",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CIVIL",
+            "qty": 0.3,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 0.3,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 25.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m²",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 0.6,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.05,
+      "labour_total": 28.5,
+      "materials_total": 25.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 71.92,
+      "ohp_percent": 15,
+      "total_rate": 82.71,
+      "nrm1_l4_code": "0.4.2.1",
+      "nrm1_l3_code": "0.4.2",
+      "nrm1_l2_code": "0.4",
+      "nrm1_description": "Soil stabilisation measures: details to be stated.",
+      "nrm2_primary_ws": "5",
+      "nrm2_primary_ws_name": "Excavating and filling",
+      "nrm2_primary_items": "",
+      "nrm2_secondary_ws": "WS6:; WS7:",
+      "mapping_confidence": "Manual"
+    },
+    {
+      "code": "GRP0-GROIMP-017",
+      "name": "Ground improvement - grouting",
+      "description": "Cement/chemical",
+      "unit": "m³",
+      "spec_level": "Standard",
+      "base_date": "Jan-2025",
+      "region": "Sydney Metro",
+      "components": {
+        "labour": [
+          {
+            "resource_id": "LAB_AU_CIVIL",
+            "qty": 1.5,
+            "unit": "hr"
+          },
+          {
+            "resource_id": "LAB_AU_LABOURER",
+            "qty": 1.5,
+            "unit": "hr"
+          }
+        ],
+        "materials": [
+          {
+            "description": "Materials allowance",
+            "qty": 1.0,
+            "unit": "m³",
+            "rate": 125.0
+          }
+        ],
+        "plant": [
+          {
+            "description": "Plant allowance",
+            "qty": 1.0,
+            "unit": "m³",
+            "rate": 15.0
+          }
+        ]
+      },
+      "labour_hours_per_unit": 3.0,
+      "gang_composition": "1+1",
+      "material_waste_factor": 1.05,
+      "labour_total": 142.5,
+      "materials_total": 125.0,
+      "plant_total": 15.0,
+      "waste_percent": 5,
+      "nett_total": 296.62,
+      "ohp_percent": 15,
+      "total_rate": 341.12,
+      "nrm1_l4_code": "0.4.2.1",
+      "nrm1_l3_code": "0.4.2",
+      "nrm1_l2_code": "0.4",
+      "nrm1_description": "Soil stabilisation measures: details to be stated.",
+      "nrm2_primary_ws": "5",
+      "nrm2_primary_ws_name": "Excavating and filling",
+      "nrm2_primary_items": "",
+      "nrm2_secondary_ws": "WS6:; WS7:",
+      "mapping_confidence": "Manual"
+    }
+  ]
+}
