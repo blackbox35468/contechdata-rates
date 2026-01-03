@@ -1,0 +1,991 @@
+{
+  "metadata": {
+    "standard": "CESMM4",
+    "class_codes": ["I", "J", "K", "L"],
+    "class_names": [
+      "PIPEWORK - PIPES",
+      "PIPEWORK - FITTINGS AND VALVES",
+      "PIPEWORK - MANHOLES AND PIPEWORK ANCILLARIES",
+      "PIPEWORK - SUPPORTS AND PROTECTION, ANCILLARIES TO LAYING AND EXCAVATION"
+    ],
+    "version": "4th Edition",
+    "created_date": "2026-01-03",
+    "description": "Civil Engineering Standard Method of Measurement - Classes I, J, K, L measurement rules for drainage and pipework",
+    "source_file": "CESSM4_Complete_Reference.html",
+    "australian_context": "Applied to Australian civil drainage and sewer systems with AS/NZS 3725, AS/NZS 2566, AS 3500 references"
+  },
+  "class_i_pipes": {
+    "class_code": "I",
+    "class_name": "PIPEWORK - PIPES",
+    "scope": {
+      "includes": [
+        "Provision of pipes",
+        "Laying of pipes",
+        "Jointing of pipes"
+      ],
+      "excludes": [
+        "Pipe fittings and valves (Class J)",
+        "Manholes and ancillaries (Class K)",
+        "Pipe supports and extras to excavation (Class L)",
+        "Sewer renovation (Class Y)"
+      ]
+    },
+    "measurement_rules": {
+      "M1": {
+        "rule_id": "I.M1",
+        "summary": "The Commencing Surface reference for pipes not in trenches",
+        "application": "Pipes above ground or in structures measured from defined surface"
+      },
+      "M2": {
+        "rule_id": "I.M2",
+        "summary": "Backfilling of trenches shall be separate from pipe laying",
+        "application": "Excavation and backfill measured in Class E or L, not Class I"
+      },
+      "M3": {
+        "rule_id": "I.M3",
+        "summary": "Lengths of pipes shall be laid in trenches with differentiation between categories",
+        "application": "Classify pipes by nominal bore, material, and trench depth"
+      },
+      "M4": {
+        "rule_id": "I.M4",
+        "summary": "Additional items for extras to excavation and backfilling",
+        "application": "Link to Class L for rock excavation, dewatering, etc."
+      },
+      "M5": {
+        "rule_id": "I.M5",
+        "summary": "Lengths of pipes entering buildings identify separately",
+        "application": "Building penetrations measured as discrete items"
+      }
+    },
+    "definition_rules": {
+      "D1": {
+        "rule_id": "I.D1",
+        "summary": "Pipes not in trenches shall be classified by location/type",
+        "pipe_locations": [
+          "In manholes or chambers",
+          "In structures or buildings",
+          "Above ground on supports",
+          "In tunnels or headings"
+        ]
+      },
+      "D2": {
+        "rule_id": "I.D2",
+        "summary": "Pipes not in trenches shall be stated in item descriptions",
+        "application": "Full specification of support method and location"
+      },
+      "D3": {
+        "rule_id": "I.D3",
+        "summary": "Depths used for classification of pipes listed in rule D1",
+        "depth_categories": [
+          "Not exceeding 1.5m",
+          "1.5-2.5m",
+          "2.5-4.0m",
+          "4.0-6.0m",
+          "Exceeding 6.0m"
+        ],
+        "australian_note": "Depth from ground level to pipe invert"
+      }
+    },
+    "additional_description_rules": {
+      "A1": {
+        "rule_id": "I.A1",
+        "summary": "The location or type of pipes by reference to the Drawings",
+        "application": "Specify pipe run, chainage, location description"
+      },
+      "A2": {
+        "rule_id": "I.A2",
+        "summary": "The materials, joint types, and construction details",
+        "pipe_materials": [
+          "Vitrified clay (VC)",
+          "Concrete (non-pressure)",
+          "Ductile iron (DI)",
+          "PVC-U (uPVC)",
+          "High density polyethylene (HDPE)",
+          "Medium density polyethylene (MDPE)",
+          "Glass reinforced plastic (GRP)",
+          "Steel (welded or flanged)"
+        ],
+        "joint_types": [
+          "Push-fit rubber ring",
+          "Solvent weld",
+          "Electrofusion",
+          "Butt fusion",
+          "Flanged",
+          "Mechanical coupling"
+        ],
+        "australian_standards": {
+          "AS_NZS_3725": "Design, construction and testing of water supply pipelines",
+          "AS_NZS_2566": "Buried flexible pipelines",
+          "AS_3500": "Plumbing and drainage - Sanitary plumbing and drainage"
+        }
+      },
+      "A3": {
+        "rule_id": "I.A3",
+        "summary": "Item descriptions for pipes in different categories",
+        "application": "Classify by nominal bore, material, depth category"
+      },
+      "A4": {
+        "rule_id": "I.A4",
+        "summary": "The Commencing Surface and excavation reference points",
+        "application": "Define datum level for depth measurement"
+      },
+      "A5": {
+        "rule_id": "I.A5",
+        "summary": "Where more than one pipe category exists, identify separately",
+        "application": "Separate items for different pipe sizes/materials in same trench"
+      },
+      "A6": {
+        "rule_id": "I.A6",
+        "summary": "Trench depths exceeding standard depths require separate identification",
+        "application": "Deep excavation productivity impacts"
+      },
+      "A7": {
+        "rule_id": "I.A7",
+        "summary": "Item descriptions shall state breaking up and reinstatement of roads",
+        "application": "Road/pavement breaking measured in Class K or L"
+      }
+    },
+    "nominal_bore_categories": [
+      {
+        "category": 1,
+        "description": "Not exceeding 200mm",
+        "typical_uses": "Household drainage, small stormwater, services"
+      },
+      {
+        "category": 2,
+        "description": "200-300mm",
+        "typical_uses": "Street drainage, small sewer mains"
+      },
+      {
+        "category": 3,
+        "description": "300-600mm",
+        "typical_uses": "Trunk sewers, stormwater mains"
+      },
+      {
+        "category": 4,
+        "description": "600-900mm",
+        "typical_uses": "Major trunk sewers, stormwater channels"
+      },
+      {
+        "category": 5,
+        "description": "900-1200mm",
+        "typical_uses": "Large trunk mains, detention basin outlets"
+      },
+      {
+        "category": 6,
+        "description": "1200-1500mm",
+        "typical_uses": "Major stormwater culverts"
+      },
+      {
+        "category": 7,
+        "description": "Exceeding 1500mm",
+        "typical_uses": "Large culverts, river diversions"
+      }
+    ]
+  },
+  "class_j_fittings_valves": {
+    "class_code": "J",
+    "class_name": "PIPEWORK - FITTINGS AND VALVES",
+    "scope": {
+      "includes": [
+        "Bends and elbows",
+        "Junctions and branches",
+        "Tapers and reducers",
+        "Adaptors and couplings",
+        "Valves and penstocks",
+        "Special fittings"
+      ],
+      "excludes": [
+        "Straight pipe lengths (Class I)",
+        "Manholes and chambers (Class K)",
+        "Support structures (Class L)"
+      ]
+    },
+    "coverage_rules": {
+      "C1": {
+        "rule_id": "J.C1",
+        "summary": "Items for fittings and valves shall be measured by number",
+        "application": "Count all fittings and valves individually (nr)"
+      },
+      "C2": {
+        "rule_id": "J.C2",
+        "summary": "Items for fittings and valves on different pipe materials",
+        "application": "Separate items for clay, concrete, steel, PVC, HDPE, etc."
+      },
+      "C3": {
+        "rule_id": "J.C3",
+        "summary": "Items for straight specials shall include all materials and joint types",
+        "application": "Prefabricated pipe assemblies with integral fittings"
+      }
+    },
+    "measurement_rules": {
+      "M1": {
+        "rule_id": "J.M1",
+        "summary": "Pipe fittings comprising bends, junctions, and branches measured by number",
+        "application": "Each fitting is a numbered item (nr)"
+      },
+      "M2": {
+        "rule_id": "J.M2",
+        "summary": "Straight specials shall be described with nominal bore and material",
+        "application": "Custom fabricated pipe sections with fittings"
+      }
+    },
+    "definition_rules": {
+      "D1": {
+        "rule_id": "J.D1",
+        "summary": "Pipe fittings on pipes of different materials and bores",
+        "application": "Classify by pipe material and nominal bore category"
+      },
+      "D2": {
+        "rule_id": "J.D2",
+        "summary": "A straight special is a length of pipe with fittings or components integral to it",
+        "application": "Combined pipe-fitting assemblies measured as units"
+      }
+    },
+    "additional_description_rules": {
+      "A1": {
+        "rule_id": "J.A1",
+        "summary": "The materials, joint types, nominal bore and specification",
+        "application": "Full material specification matching Class I pipe"
+      },
+      "A2": {
+        "rule_id": "J.A2",
+        "summary": "Item descriptions for pipe fittings classified by type and size",
+        "application": "Specify fitting type (bend, junction, taper) and bore size"
+      },
+      "A3": {
+        "rule_id": "J.A3",
+        "summary": "Vertical bends in pipework shall be stated separately",
+        "application": "Distinguish vertical vs horizontal bends for access/installation"
+      },
+      "A4": {
+        "rule_id": "J.A4",
+        "summary": "Fittings to pipework not in trenches requiring special identification",
+        "application": "Above-ground or in-structure fittings noted separately"
+      },
+      "A5": {
+        "rule_id": "J.A5",
+        "summary": "Fittings to relined water services and existing pipework",
+        "application": "Renovation and repair fittings (Class Y overlap)"
+      },
+      "A6": {
+        "rule_id": "J.A6",
+        "summary": "The materials, nominal bores, and dimensional specifications",
+        "application": "Complete dimensional and material specification"
+      },
+      "A7": {
+        "rule_id": "J.A7",
+        "summary": "Valves and penstocks to gates, filters, and control devices",
+        "application": "Valve type, operation method, duty rating"
+      }
+    },
+    "fitting_types": {
+      "bends": [
+        {
+          "code": "J.x.1",
+          "description": "Bends (elbows)",
+          "angles": ["15°", "22.5°", "30°", "45°", "90°"],
+          "unit": "nr"
+        }
+      ],
+      "junctions_branches": [
+        {
+          "code": "J.x.2",
+          "description": "Junctions and branches (Y-junctions, T-junctions)",
+          "configurations": ["Equal", "Reduced", "Oblique"],
+          "unit": "nr"
+        }
+      ],
+      "tapers": [
+        {
+          "code": "J.x.3",
+          "description": "Tapers and reducers",
+          "types": ["Concentric", "Eccentric"],
+          "unit": "nr"
+        }
+      ],
+      "adaptors": [
+        {
+          "code": "J.x.4",
+          "description": "Adaptors and couplings",
+          "types": ["Material transition", "Size transition", "Repair couplings"],
+          "unit": "nr"
+        }
+      ],
+      "valves": [
+        {
+          "code": "J.8",
+          "description": "Valves and penstocks",
+          "valve_types": [
+            "Gate valve - hand operated",
+            "Gate valve - motor operated",
+            "Butterfly valve",
+            "Non-return valve (flap/swing check)",
+            "Air valve (release/vacuum)",
+            "Scour valve",
+            "Pressure reducing valve",
+            "Flow control valve"
+          ],
+          "unit": "nr"
+        }
+      ]
+    },
+    "australian_compliance": {
+      "AS_2638": "Valves for water supply",
+      "AS_4130": "Polyethylene (PE) pipes for pressure applications",
+      "AS_NZS_4020": "Testing of products for use in contact with drinking water"
+    }
+  },
+  "class_k_manholes_ancillaries": {
+    "class_code": "K",
+    "class_name": "PIPEWORK - MANHOLES AND PIPEWORK ANCILLARIES",
+    "scope": {
+      "includes": [
+        "Manholes and inspection chambers",
+        "Gullies and catch pits",
+        "Ducts and culverts",
+        "River and road crossings",
+        "Reinstatement works",
+        "Field restoration"
+      ],
+      "excludes": [
+        "Pipe laying (Class I)",
+        "Pipe fittings (Class J)",
+        "Excavation extras (Class L)"
+      ]
+    },
+    "coverage_rules": {
+      "C1": "Items for work in this class shall be separately identified",
+      "C2": "Items for work in this class with different pipe materials",
+      "C3": "Item for manholes, other chambers with type or mark numbers",
+      "C4": "Items for manholes with different loading duties and construction methods",
+      "C5": "Items for ducts and metal culverts with different cross-sections",
+      "C6": "Items for crossings shall identify the type of watercourse or obstruction",
+      "C7": "Additional reinstatement shall state depth and method",
+      "C8": "Removal and reinstatement of existing services and roads",
+      "C9": "Items for strip topsoil from easements and excavation areas",
+      "C10": "Items for reinstatement of field drains and marker posts"
+    },
+    "measurement_rules": {
+      "M1": "Excavation and pipe laying measured separately by depth category",
+      "M2": "The cross-sectional areas of ducts and culverts measured in square metres",
+      "M3": "The rules in class I for pipes applied to culvert classification",
+      "M4": "Crossings shall be measured by length of watercourse or obstruction",
+      "M5": "Crossings of streams shall be measured along pipe/duct/culvert centre lines",
+      "M6": "Reinstatement shall be measured by length and surface area",
+      "M7": "Lengths of reinstatement measured from start to finish of crossing",
+      "M8": "Strip topsoil from easement classed as breaking up reinstatement of roads",
+      "M9": "Other pipework ancillaries measured by number or length",
+      "M10": "The lengths measured for hedges and vegetation removal",
+      "M11": "The area measured for field restoration and landscape reinstatement"
+    },
+    "definition_rules": {
+      "D1": "The centre line for multiple pipes shall be measured from centre to centre",
+      "D2": "The depths of manholes and chambers measured from invert to surface",
+      "D3": "Drawpits shall be classed as chambers with specific measurement rules",
+      "D4": "Non-circular metal culverts shall identify the nature of cross-section",
+      "D5": "The rules in class I for pipes applied to duct classification",
+      "D6": "River, stream and canal crossings identified by width and type of lining",
+      "D7": "The dimension used for classification of crossings and reinstatement",
+      "D8": "Crossings of roads and paths deemed to be included in reinstatement work"
+    },
+    "manhole_types": {
+      "construction_materials": [
+        {
+          "code": "K.1.1",
+          "material": "Brick",
+          "typical_depths": "0.9-4.0m",
+          "australian_standard": "AS/NZS 3725 - Masonry construction"
+        },
+        {
+          "code": "K.1.2",
+          "material": "Concrete (in-situ or precast)",
+          "typical_depths": "0.9-6.0m+",
+          "australian_standard": "AS/NZS 3725 - Concrete manholes"
+        },
+        {
+          "code": "K.1.3",
+          "material": "Plastic (HDPE/PP/GRP)",
+          "typical_depths": "0.6-3.0m",
+          "australian_standard": "AS 3996 - Access chambers and gully pits"
+        }
+      ],
+      "loading_classes": [
+        {
+          "class": "A15",
+          "duty": "Pedestrian/light duty",
+          "max_load_kN": 15
+        },
+        {
+          "class": "B125",
+          "duty": "Light traffic (driveways)",
+          "max_load_kN": 125
+        },
+        {
+          "class": "C250",
+          "duty": "Medium traffic (roads)",
+          "max_load_kN": 250
+        },
+        {
+          "class": "D400",
+          "duty": "Heavy traffic (highways)",
+          "max_load_kN": 400
+        },
+        {
+          "class": "E600",
+          "duty": "Extra heavy (industrial)",
+          "max_load_kN": 600
+        }
+      ],
+      "depth_categories": [
+        {
+          "category": 1,
+          "depth_range": "Not exceeding 1.5m",
+          "notes": "Shallow manholes, standard access"
+        },
+        {
+          "category": 2,
+          "depth_range": "1.5-2.5m",
+          "notes": "Standard depth, step irons required"
+        },
+        {
+          "category": 3,
+          "depth_range": "2.5-4.0m",
+          "notes": "Deep access, confined space entry procedures"
+        },
+        {
+          "category": 4,
+          "depth_range": "Exceeding 4.0m",
+          "notes": "Very deep, special access equipment, safety systems"
+        }
+      ]
+    },
+    "chambers_and_pits": {
+      "gullies": {
+        "code": "K.3",
+        "description": "Gullies and catch pits",
+        "materials": ["Clay", "Concrete", "Plastic"],
+        "unit": "nr",
+        "australian_note": "AS 3996 - Side entry and kerb inlet pits"
+      },
+      "junction_chambers": {
+        "code": "K.2",
+        "description": "Other stated chambers (junction chambers, drop pits, change of direction)",
+        "measurement": "By number (nr) with depth and size classification",
+        "unit": "nr"
+      }
+    },
+    "ducts_culverts": {
+      "code": "K.5",
+      "description": "Ducts and metal culverts",
+      "unit": "m (linear)",
+      "measurement": "Cross-sectional area classification (m²)",
+      "types": [
+        "Cable ducts (telecommunications, electrical)",
+        "Multiple pipe ducts",
+        "Box culverts (concrete, metal)",
+        "Arch culverts"
+      ],
+      "australian_standards": {
+        "AS_2041": "Buried corrugated metal structures",
+        "AS_NZS_2566": "Buried flexible pipelines"
+      }
+    },
+    "crossings": {
+      "code": "K.6",
+      "description": "Crossings of watercourses and obstructions",
+      "unit": "nr",
+      "types": [
+        {
+          "type": "River, stream or canal",
+          "width_categories": ["Not exceeding 5m", "5-10m", "10-20m", "Exceeding 20m"],
+          "australian_compliance": "EPA watercourse protection permits"
+        },
+        {
+          "type": "Road or railway",
+          "methods": ["Open cut", "Thrust bore", "Tunnel", "Directional drill"],
+          "australian_compliance": "Road authority permits, traffic management plans"
+        },
+        {
+          "type": "Existing services",
+          "methods": ["Hand excavation", "Vacuum excavation", "Directional drill"],
+          "australian_note": "Dial Before You Dig (1100) mandatory"
+        }
+      ]
+    },
+    "reinstatement": {
+      "code": "K.7",
+      "description": "Breaking up and reinstatement of roads, paths, and surfaces",
+      "unit": "m² (area)",
+      "surface_types": [
+        {
+          "type": "Flexible pavement (asphalt)",
+          "thickness_categories": ["Not exceeding 50mm", "50-100mm", "Exceeding 100mm"],
+          "australian_standard": "AS 2758 - Aggregates and rock for engineering purposes"
+        },
+        {
+          "type": "Rigid pavement (concrete)",
+          "thickness_categories": ["Not exceeding 150mm", "150-250mm", "Exceeding 250mm"],
+          "australian_standard": "AS 3727 - Road pavements"
+        },
+        {
+          "type": "Gravel or unsealed",
+          "depth": "Minimum 150mm compacted gravel",
+          "australian_note": "Restore to pre-construction condition"
+        },
+        {
+          "type": "Topsoil and grass",
+          "specification": "100-150mm topsoil, turfing or seeding",
+          "australian_standard": "AS 4419 - Soils for landscaping"
+        }
+      ]
+    },
+    "other_ancillaries": {
+      "code": "K.8",
+      "description": "Other pipework ancillaries",
+      "items": [
+        {
+          "item": "Reinstatement of field drains",
+          "unit": "m",
+          "specification": "Perforated pipe in gravel envelope, AS 1254"
+        },
+        {
+          "item": "Marker posts",
+          "unit": "nr",
+          "types": ["Sewer marker", "Water main marker", "Gas marker"]
+        },
+        {
+          "item": "Fence and gate removal/reinstatement",
+          "unit": "m",
+          "notes": "Temporary removal during construction, full reinstatement"
+        },
+        {
+          "item": "Hedge and vegetation removal",
+          "unit": "m",
+          "notes": "Linear measurement, replanting if required"
+        }
+      ]
+    }
+  },
+  "class_l_supports_extras": {
+    "class_code": "L",
+    "class_name": "PIPEWORK - SUPPORTS AND PROTECTION, ANCILLARIES TO LAYING AND EXCAVATION",
+    "scope": {
+      "includes": [
+        "Extras to excavation (rock, groundwater, obstructions)",
+        "Special pipe laying methods (thrust boring, pipe jacking, headings)",
+        "Pipe bedding and surround materials",
+        "Wrapping and protective coatings",
+        "Concrete thrust blocks and supports"
+      ],
+      "excludes": [
+        "Standard trench excavation (Class E)",
+        "Pipe laying in standard conditions (Class I)",
+        "Manholes and chambers (Class K)"
+      ]
+    },
+    "coverage_rules": {
+      "C1": "Items for work in this class shall be separately identified",
+      "C2": "Items for work in this class with different pipe materials and sizes",
+      "C3": "Items for special pipe laying methods (thrust boring, pipe jacking, headings)",
+      "C4": "Items for wrapping and lagging materials for pipes and culverts",
+      "C5": "Items for concrete stools and thrust blocks supporting pipes"
+    },
+    "measurement_rules": {
+      "M1": "Items shall be given in this class as extras to excavation",
+      "M2": "Work in this class associated with excavation and backfilling",
+      "M3": "Breaking up and removal of obstruction layers during trench excavation",
+      "M4": "The volume of extras to excavation calculated from nominal trench width",
+      "M5": "No volume of extras allowed if distance not exceeding nominal width",
+      "M6": "The volume of extras to excavation for rock and obstruction material",
+      "M7": "Backfilling above the Final Surface measured separately",
+      "M8": "An isolated volume of rock measured as discrete item",
+      "M9": "Special pipe laying methods (headings, thrust boring) measured by length",
+      "M10": "Access pits, shafts and removal measured by number and classification",
+      "M11": "Lengths of beds, haunches and surrounds measured along pipe centre lines",
+      "M12": "Lengths of wrapping and lagging measured along pipe length with material specification"
+    },
+    "definition_rules": {
+      "D1": "The nominal trench width if not stated shall be deemed standard width",
+      "D2": "Items for haunches and surrounds defined by pipe size category",
+      "D3": "Items for beds, haunches and surrounds classified by material type",
+      "D4": "The volumes used for surrounds and supports measured as separate items",
+      "D5": "The height of pipe supports measured from pipe springline to support surface",
+      "D6": "Where two or more pipes are adjacent, calculate surrounds as composite"
+    },
+    "nominal_trench_widths": {
+      "description": "Standard trench widths for different pipe sizes (measured at pipe crown level)",
+      "widths": [
+        {
+          "pipe_bore": "Not exceeding 300mm",
+          "trench_width": "600mm"
+        },
+        {
+          "pipe_bore": "300-600mm",
+          "trench_width": "900mm"
+        },
+        {
+          "pipe_bore": "600-900mm",
+          "trench_width": "1200mm"
+        },
+        {
+          "pipe_bore": "900-1500mm",
+          "trench_width": "1800mm"
+        },
+        {
+          "pipe_bore": "Exceeding 1500mm",
+          "trench_width": "Pipe OD + 600mm minimum"
+        }
+      ],
+      "australian_note": "Widths per AS/NZS 2566.1 - Minimum working space requirements"
+    },
+    "extras_to_excavation": {
+      "code": "L.1",
+      "description": "Extras to excavation and backfilling",
+      "unit": "m³",
+      "categories": [
+        {
+          "type": "Excavation of rock",
+          "methods": ["Hydraulic rock breaker", "Controlled blasting", "Chemical rock splitting"],
+          "australian_compliance": "AS 2187.2 - Explosives storage and use",
+          "productivity_factor": "Rock excavation typically 15-25% of standard soil excavation rate"
+        },
+        {
+          "type": "Excavation in running sand",
+          "methods": ["Sheet piling", "Wellpoint dewatering", "Chemical grouting"],
+          "australian_note": "Unstable ground requiring temporary support"
+        },
+        {
+          "type": "Excavation of artificial hard material",
+          "examples": ["Concrete pavements", "Asphalt", "Masonry walls", "Foundations"],
+          "methods": ["Hydraulic breaker", "Sawing and breaking"],
+          "thickness_categories": ["Not exceeding 150mm", "150-300mm", "Exceeding 300mm"]
+        },
+        {
+          "type": "Dewatering and pumping",
+          "unit": "Hours (h) or sum (item)",
+          "methods": ["Sump pumping", "Wellpoint system", "Deep well system"],
+          "australian_standard": "AS 3798 - Guidelines on earthworks for commercial and residential developments"
+        },
+        {
+          "type": "Disposal of contaminated material",
+          "unit": "m³",
+          "australian_compliance": "EPA contaminated land regulations, waste tracking",
+          "classification": "Classification per AS 4439.3 - Waste classification"
+        }
+      ]
+    },
+    "special_laying_methods": {
+      "code": "L.2",
+      "description": "Special pipe laying methods",
+      "unit": "m (linear)",
+      "methods": [
+        {
+          "method": "In headings (hand excavated tunnel)",
+          "bore_categories": ["Not exceeding 600mm", "600-1200mm", "Exceeding 1200mm"],
+          "depth_categories": ["Not exceeding 3m", "3-6m", "Exceeding 6m"],
+          "australian_note": "Confined space entry requirements, ventilation, shoring"
+        },
+        {
+          "method": "Thrust boring (auger boring)",
+          "typical_sizes": "300-1200mm diameter",
+          "australian_use": "Road/railway crossings, service protection",
+          "equipment": "Hydraulic jacking frame, auger boring machine"
+        },
+        {
+          "method": "Pipe jacking",
+          "typical_sizes": "600-3000mm diameter",
+          "australian_use": "Major crossings, deep installations",
+          "components": "Jacking pipes, intermediate jacking stations, tunnel boring machine"
+        },
+        {
+          "method": "Horizontal directional drilling (HDD)",
+          "typical_sizes": "50-600mm diameter (PE/steel pipes)",
+          "australian_use": "River crossings, minimal surface disruption",
+          "australian_compliance": "AS 2885.1 - Pipelines - Gas and liquid petroleum (for crossings)"
+        }
+      ],
+      "access_pits": {
+        "code": "L.2.10",
+        "description": "Access pits and shafts for thrust boring/jacking",
+        "unit": "nr",
+        "size_categories": [
+          {
+            "size": "Small (2m x 2m x 2m deep)",
+            "use": "Thrust boring launch/reception"
+          },
+          {
+            "size": "Medium (3m x 3m x 3m deep)",
+            "use": "Pipe jacking small diameter"
+          },
+          {
+            "size": "Large (5m x 5m x 4m+ deep)",
+            "use": "Pipe jacking large diameter, deep shafts"
+          }
+        ]
+      }
+    },
+    "beds_haunches_surrounds": {
+      "code": "L.5",
+      "description": "Pipe bedding, haunches, and surround materials",
+      "unit": "m (linear)",
+      "purpose": "Support pipes, prevent damage, distribute loads",
+      "materials": [
+        {
+          "material": "Sand bedding",
+          "specification": "Clean sand, free of clay/organic matter, 100-150mm depth",
+          "australian_standard": "AS 2758.1 - Aggregates and rock for engineering purposes",
+          "typical_use": "Small diameter pipes (<300mm), light duty"
+        },
+        {
+          "material": "Imported granular fill (select fill, gravel)",
+          "specification": "Graded gravel 5-20mm, compacted in 150mm layers to 95% modified",
+          "australian_standard": "AS 1289.5.2 - Compaction control",
+          "typical_use": "All pipe sizes, standard specification"
+        },
+        {
+          "material": "Concrete bed/surround",
+          "specification": "C20/25 concrete, minimum 100mm below pipe, 150mm sides",
+          "australian_standard": "AS 1379 - Specification and supply of concrete",
+          "typical_use": "Heavy loads, unstable ground, large diameter pipes"
+        },
+        {
+          "material": "Controlled low strength material (CLSM) / flowable fill",
+          "specification": "Self-compacting cementitious slurry, 1-2 MPa strength",
+          "typical_use": "Difficult access, irregular trenches, reinstatement",
+          "australian_note": "Increasingly common in urban reinstatement projects"
+        }
+      ],
+      "bedding_factors": {
+        "description": "Bedding factor improves pipe load-bearing capacity",
+        "factors": [
+          {
+            "bedding_class": "F (sand bedding only)",
+            "bedding_factor": 1.1,
+            "description": "Loose sand under pipe, no haunch"
+          },
+          {
+            "bedding_class": "B (granular surround to springline)",
+            "bedding_factor": 1.5,
+            "description": "Granular bed and haunch to pipe springline, compacted"
+          },
+          {
+            "bedding_class": "A (granular surround to crown)",
+            "bedding_factor": 2.2,
+            "description": "Granular bed and haunch to 150mm above pipe crown, fully compacted"
+          },
+          {
+            "bedding_class": "Concrete encasement",
+            "bedding_factor": 3.4,
+            "description": "Concrete cradle or full encasement"
+          }
+        ],
+        "australian_reference": "AS/NZS 2566.2 - Installation of buried flexible pipes"
+      }
+    },
+    "wrapping_lagging": {
+      "code": "L.6",
+      "description": "Wrapping and protective coatings",
+      "unit": "m (linear)",
+      "purpose": "Corrosion protection, abrasion resistance, insulation",
+      "types": [
+        {
+          "material": "Bituminous wrapping",
+          "specification": "Hot applied bitumen or tape wrap",
+          "typical_use": "Steel pipes, ductile iron pipes",
+          "australian_standard": "AS 1580 - Bituminous coating materials"
+        },
+        {
+          "material": "Polyethylene sleeving",
+          "specification": "PE sleeve over ductile iron/steel pipe, heat shrink or loose fit",
+          "typical_use": "Corrosive soil conditions, aggressive groundwater",
+          "australian_note": "Common for water mains in coastal/industrial areas"
+        },
+        {
+          "material": "Epoxy coating",
+          "specification": "Fusion bonded epoxy (FBE) or liquid epoxy",
+          "typical_use": "Internal/external coating for steel pipes",
+          "australian_standard": "AS 3680 - Guide to the application of coatings to metal pipelines"
+        },
+        {
+          "material": "Concrete encasement",
+          "specification": "Minimum 50mm concrete cover all around pipe",
+          "typical_use": "High load protection, cathodic protection",
+          "australian_note": "Used for road/rail crossings, unstable ground"
+        }
+      ]
+    },
+    "thrust_blocks_supports": {
+      "code": "L.7",
+      "description": "Concrete thrust blocks and supports",
+      "unit": "nr",
+      "purpose": "Resist thrust forces at bends, tees, valves; prevent pipe movement",
+      "volume_categories": [
+        {
+          "volume": "Not exceeding 0.1m³",
+          "typical_use": "Small pipes (<200mm), standard bends"
+        },
+        {
+          "volume": "0.1-0.5m³",
+          "typical_use": "Medium pipes (200-600mm), bends, tees"
+        },
+        {
+          "volume": "0.5-1.0m³",
+          "typical_use": "Large pipes (600-1200mm), high pressure systems"
+        },
+        {
+          "volume": "Exceeding 1.0m³",
+          "typical_use": "Very large pipes, pumping mains, high pressure"
+        }
+      ],
+      "design_requirements": {
+        "calculation": "Thrust force = Pressure × Pipe cross-sectional area × Factor (based on bend angle)",
+        "soil_bearing": "Bearing capacity check required (AS 1726 - Geotechnical investigations)",
+        "reinforcement": "Mesh reinforcement typically required for volumes >0.5m³",
+        "australian_standard": "AS/NZS 3725 Appendix C - Thrust block design"
+      },
+      "other_supports": {
+        "code": "L.8",
+        "description": "Other isolated pipe supports (piers, cradles, hangers)",
+        "unit": "nr",
+        "height_categories": ["Not exceeding 1m", "1-2m", "2-4m", "Exceeding 4m"],
+        "typical_use": "Above-ground pipes, bridge crossings, gantries"
+      }
+    }
+  },
+  "template_mapping": {
+    "description": "Mapping of Australian civils drainage templates to CESMM4 Classes I, J, K, L",
+    "mappings": [
+      {
+        "template_id": "au-civ-drainage-channel-lined-100m",
+        "template_name": "Open Channel Drainage - Lined",
+        "cesmm4_primary_items": ["K.5", "F.1-F.8"],
+        "description": "Open channels measured as ducts/culverts (K.5) + concrete lining (Class F)",
+        "measurement_units": {
+          "channel_length": "m (linear)",
+          "concrete_lining": "m³ or m² (Class F)",
+          "excavation": "m³ (Class E)"
+        },
+        "key_rules": ["K.M2", "K.D4", "F.M1"],
+        "australian_compliance": {
+          "hydraulic_design": "ARR2019 - Australian Rainfall and Runoff",
+          "concrete_specification": "AS 3600 - Concrete structures"
+        }
+      },
+      {
+        "template_id": "au-civ-drainage-channel-grass-100m",
+        "template_name": "Open Channel Drainage - Grass",
+        "cesmm4_primary_items": ["E.2", "E.7", "E.8"],
+        "description": "Excavation (E.2) + surface preparation (E.7) + turfing (E.8)",
+        "measurement_units": {
+          "excavation": "m³",
+          "surface_preparation": "m²",
+          "turfing": "m²"
+        },
+        "key_rules": ["E.M2", "E.M23", "E.M26"],
+        "australian_compliance": {
+          "erosion_control": "IECA Best Practice Erosion and Sediment Control",
+          "vegetation": "Local council native species list"
+        }
+      },
+      {
+        "template_id": "au-civ-drainage-basin-small-500m2",
+        "template_name": "Detention Basin - Small",
+        "cesmm4_primary_items": ["E.2", "E.6", "K.2", "I.x", "E.8"],
+        "description": "Excavation (E.2) + fill batters (E.6) + outlet pit (K.2) + outlet pipe (I) + turfing (E.8)",
+        "measurement_units": {
+          "excavation": "m³",
+          "fill": "m³",
+          "outlet_chamber": "nr",
+          "outlet_pipe": "m",
+          "landscaping": "m²"
+        },
+        "key_rules": ["E.M2", "E.M16", "K.M1", "I.M3"],
+        "australian_compliance": {
+          "detention_design": "QUDM (Queensland Urban Drainage Manual) or local authority standards",
+          "outlet_structure": "AS 3996 - Access chambers"
+        }
+      },
+      {
+        "template_id": "au-civ-drainage-basin-large-2000m2",
+        "template_name": "Detention Basin - Large",
+        "cesmm4_primary_items": ["E.2", "E.6", "K.2", "I.x", "E.8", "J.8"],
+        "description": "Bulk excavation (E.2) + embankment fill (E.6) + outlet structure (K.2) + outlet pipes (I) + valves (J.8) + landscaping (E.8)",
+        "measurement_units": {
+          "excavation": "m³",
+          "embankment_fill": "m³",
+          "outlet_structure": "nr (complex chamber)",
+          "outlet_pipework": "m",
+          "valves": "nr",
+          "landscaping": "m²"
+        },
+        "key_rules": ["E.M2", "E.M16", "K.M1", "I.M3", "J.M1"],
+        "australian_compliance": {
+          "dam_safety": "ANCOLD Guidelines on Dam Safety Management (if >5m height)",
+          "environmental": "EPA stormwater treatment objectives"
+        }
+      },
+      {
+        "template_id": "au-civ-drainage-kerb-gutter-100m",
+        "template_name": "Kerb & Gutter",
+        "cesmm4_primary_items": ["F.1-F.8", "E.4"],
+        "description": "In-situ concrete kerb and gutter (Class F) + minor excavation (E.4)",
+        "measurement_units": {
+          "concrete": "m (linear) or m³ (volume)",
+          "formwork": "m² (Class G)",
+          "excavation": "m³"
+        },
+        "key_rules": ["F.M1", "G.M1", "E.M2"],
+        "australian_compliance": {
+          "profile_standard": "AS/NZS 3725 Appendix D - Kerb and gutter profiles",
+          "concrete_specification": "AS 1379 - C25/30 minimum for kerbs"
+        }
+      }
+    ]
+  },
+  "australian_context": {
+    "standards_references": {
+      "AS_NZS_3725": "Design, construction and testing of water supply pipelines",
+      "AS_NZS_2566_1": "Buried flexible pipelines - Structural design",
+      "AS_NZS_2566_2": "Buried flexible pipelines - Installation",
+      "AS_3500_2": "Plumbing and drainage - Sanitary plumbing and drainage",
+      "AS_3996": "Access chambers for buried pipework",
+      "AS_2041": "Buried corrugated metal structures",
+      "AS_1254": "PVC pipes and fittings for storm and surface water applications",
+      "AS_3680": "Guide to the application of coatings to metal pipelines",
+      "AS_2885_1": "Pipelines - Gas and liquid petroleum",
+      "AS_2187_2": "Explosives - Storage and use - Use of explosives",
+      "AS_1726": "Geotechnical site investigations"
+    },
+    "environmental_compliance": {
+      "EPA_permits": "Watercourse crossings, discharge permits, contaminated land",
+      "erosion_control": "IECA Best Practice Erosion and Sediment Control",
+      "waste_tracking": "Classification per AS 4439.3, tracking for contaminated spoil",
+      "dial_before_you_dig": "1100 - Mandatory 3 working days before excavation"
+    },
+    "industry_practice": {
+      "trench_safety": {
+        "depth_triggers": {
+          "1_5m": "Shoring or battered slopes required",
+          "3_0m": "Engineered shoring system mandatory",
+          "4_0m": "Confined space entry procedures, ventilation, gas monitoring"
+        },
+        "standards": "AS 2885.1 - Trench safety requirements"
+      },
+      "productivity_benchmarks": {
+        "pipe_laying_150mm_pvc_m_per_day": 60,
+        "pipe_laying_300mm_concrete_m_per_day": 40,
+        "pipe_laying_600mm_concrete_m_per_day": 25,
+        "manhole_construction_per_day": "1 manhole to 2.0m depth (brick/precast)",
+        "equipment": "20T excavator, 10T compactor, laser level"
+      }
+    }
+  },
+  "notes": [
+    "This combined reference covers all drainage and pipework measurement in CESMM4",
+    "Classes I-L work together: I=pipes, J=fittings, K=structures, L=installation extras",
+    "All rule texts are abbreviated - consult official CESMM4 for complete definitions",
+    "Australian Standards provide local compliance framework",
+    "Template mapping enables automated CESMM4 code assignment during estimating"
+  ]
+}

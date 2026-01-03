@@ -1,0 +1,248 @@
+{
+  "metadata": {
+    "standard": "CESMM4",
+    "class_code": "R",
+    "class_name": "ROADS AND PAVINGS",
+    "version": "4th Edition",
+    "created_date": "2026-01-03",
+    "description": "Civil Engineering Standard Method of Measurement - Class R for road pavements and paving",
+    "australian_context": "Applied with Austroads standards and AS 2150 for road materials"
+  },
+  "scope": {
+    "includes": [
+      "Sub-base (unbound granular)",
+      "Base courses (bituminous, concrete, unbound)",
+      "Surfacing (asphalt, concrete, block paving)",
+      "Kerbs and channels",
+      "Footways and paved areas",
+      "Road marking and signage"
+    ],
+    "excludes": [
+      "Earthworks and site preparation (Class E)",
+      "Drainage pipes and structures (Classes I, J, K, L)"
+    ]
+  },
+  "measurement_divisions": {
+    "R1_unbound_subbase": {
+      "code": "R.1",
+      "description": "Unbound sub-base (granular base course)",
+      "unit": "m²",
+      "depth_categories": [
+        "Not exceeding 30mm",
+        "30-50mm",
+        "50-75mm",
+        "75-100mm",
+        "100-150mm",
+        "150-200mm",
+        "200-300mm",
+        "Exceeding 300mm"
+      ],
+      "australian_materials": {
+        "Type_1_unbound": "AS 2758.1 - Crushed rock 20-40mm graded aggregate",
+        "select_subgrade": "AS 1289.6.2 - CBR ≥10%, PI <10",
+        "compaction": "98% modified AASHTO (AS 1289.5.2)"
+      }
+    },
+    "R4_bituminous_pavements": {
+      "code": "R.4",
+      "description": "Bituminous bound pavements (asphalt base, binder, wearing course)",
+      "unit": "m²",
+      "types": [
+        {
+          "type": "Dense base and binder course",
+          "australian_spec": "AS 2150 - Asphalt 14mm nominal size, C320 bitumen",
+          "typical_thickness": "40-100mm"
+        },
+        {
+          "type": "Asphalt wearing course",
+          "australian_spec": "AS 2150 - Dense graded asphalt (DGA) 10mm or 14mm",
+          "typical_thickness": "30-50mm"
+        },
+        {
+          "type": "Open graded asphalt (OGA)",
+          "australian_spec": "AS 2150 - Open graded asphalt for drainage",
+          "typical_thickness": "40-50mm"
+        },
+        {
+          "type": "Stone mastic asphalt (SMA)",
+          "australian_spec": "AS 2150 - High durability wearing course",
+          "typical_thickness": "30-40mm"
+        }
+      ],
+      "australian_compliance": {
+        "design": "Austroads Guide to Pavement Technology (AGPT)",
+        "quality": "AS 2150 - Hot mix asphalt specifications",
+        "testing": "AS 2891 - Asphalt test methods (Marshall stability, density)"
+      }
+    },
+    "R5_concrete_pavements": {
+      "code": "R.5",
+      "description": "Concrete pavements (rigid pavement construction)",
+      "unit": "m²",
+      "types": [
+        {
+          "type": "Unreinforced concrete surface (plain concrete pavement)",
+          "thickness_categories": ["Not exceeding 150mm", "150-250mm", "Exceeding 250mm"],
+          "australian_spec": "AS 3727 - Pavements for roads and car parks; C32/40 concrete minimum"
+        },
+        {
+          "type": "Reinforced concrete surface (continuously reinforced)",
+          "reinforcement": "D12 bars @ 150mm c/c both directions, AS 4671",
+          "australian_spec": "AS 3727 - CRCP (Continuously Reinforced Concrete Pavement)"
+        }
+      ]
+    },
+    "R6_joints_concrete": {
+      "code": "R.6",
+      "description": "Joints in concrete pavements",
+      "unit": "m (linear)",
+      "joint_types": [
+        {
+          "type": "Transverse contraction joints",
+          "spacing": "4.5-6.0m (plain concrete), 3.0-4.5m (reinforced)",
+          "depth": "1/3 slab thickness minimum",
+          "sealant": "Hot applied bitumen or silicone sealant"
+        },
+        {
+          "type": "Longitudinal joints",
+          "spacing": "Width of paving lane (typically 3.5-4.0m)",
+          "tied_or_dummy": "Tied joints with dowels or dummy joints"
+        },
+        {
+          "type": "Expansion joints",
+          "spacing": "40-60m intervals",
+          "material": "Compressible filler board + sealant",
+          "australian_spec": "AS 3727 - Joint detailing requirements"
+        }
+      ]
+    },
+    "R7_kerbs_channels": {
+      "code": "R.7",
+      "description": "Kerbs, channels, edgings, footways and paved areas",
+      "unit": "m (linear) or m² (area)",
+      "types": [
+        {
+          "type": "Precast concrete kerbs",
+          "profiles": ["Standard extruded (150mm high)", "Barrier kerb (225mm high)", "Mountable (75-100mm)"],
+          "unit": "m (linear)",
+          "australian_spec": "AS/NZS 3725 Appendix D - Kerb profiles"
+        },
+        {
+          "type": "Cast in-situ kerb and channel",
+          "specification": "Extruded or formed concrete, 150mm kerb + 400mm channel",
+          "unit": "m (linear)",
+          "concrete_spec": "C25/30 minimum, AS 1379"
+        },
+        {
+          "type": "Concrete footway paving",
+          "thickness": "75-100mm plain concrete",
+          "unit": "m²",
+          "australian_spec": "AS 3727 - Footway construction"
+        },
+        {
+          "type": "Concrete block paving (pavers)",
+          "specification": "80mm interlocking pavers on 30mm sand bedding",
+          "unit": "m²",
+          "australian_spec": "AS 4456 - Masonry units and segmental pavers"
+        }
+      ]
+    },
+    "R8_ancillaries": {
+      "code": "R.8",
+      "description": "Road ancillaries (line marking, signage, furniture)",
+      "items": [
+        {
+          "item": "Road line marking",
+          "unit": "m (linear)",
+          "types": ["Thermoplastic", "Paint", "Raised pavement markers (RPM)"],
+          "australian_spec": "AS 1742 - Manual of uniform traffic control devices; AS 4049 - Pavement marking materials"
+        },
+        {
+          "item": "Traffic signs",
+          "unit": "nr (number)",
+          "types": ["Regulatory (speed, stop)", "Warning (curves, hazards)", "Guide (directional)"],
+          "australian_spec": "AS 1742 - Traffic control devices for works on roads"
+        },
+        {
+          "item": "Tactile ground surface indicators (TGSIs)",
+          "unit": "m² or nr",
+          "types": ["Directional (warning)", "Hazard warning"],
+          "australian_spec": "AS 1428.4 - Design for access and mobility (TGSIs)"
+        }
+      ]
+    }
+  },
+  "template_mapping": {
+    "au-civ-roads-*": {
+      "cesmm4_primary_items": ["R.1", "R.4", "R.5", "R.7"],
+      "typical_pavement_structure": [
+        {
+          "layer": "Subgrade (natural ground)",
+          "specification": "Proof rolled, CBR ≥5% (AS 1289.6.2)",
+          "measurement": "Class E (preparation)"
+        },
+        {
+          "layer": "Sub-base (select fill)",
+          "item": "R.1 - Unbound sub-base Type 1",
+          "thickness": "150-300mm",
+          "compaction": "98% modified",
+          "measurement_unit": "m²"
+        },
+        {
+          "layer": "Base course",
+          "item": "R.1 - Unbound (crushed rock) OR R.4 - Bituminous base",
+          "thickness": "150-200mm",
+          "measurement_unit": "m²"
+        },
+        {
+          "layer": "Binder course (asphalt only)",
+          "item": "R.4 - Dense base and binder",
+          "thickness": "40-75mm",
+          "measurement_unit": "m²"
+        },
+        {
+          "layer": "Wearing course",
+          "item": "R.4 - Asphalt wearing course OR R.5 - Concrete surface",
+          "thickness": "30-50mm (asphalt) OR 150-250mm (concrete)",
+          "measurement_unit": "m²"
+        },
+        {
+          "layer": "Kerb and channel",
+          "item": "R.7 - Cast in-situ kerb and channel",
+          "measurement_unit": "m (linear)"
+        }
+      ]
+    }
+  },
+  "australian_context": {
+    "standards": {
+      "Austroads_AGPT": "Guide to Pavement Technology - Design, construction, maintenance",
+      "AS_2150": "Hot mix asphalt - Material and construction requirements",
+      "AS_2758_1": "Aggregates and rock for engineering purposes - Concrete aggregates",
+      "AS_3727": "Guide to residential pavements",
+      "AS_1742": "Manual of uniform traffic control devices",
+      "AS_1379": "Specification and supply of concrete",
+      "AS_4456": "Masonry units and segmental pavers"
+    },
+    "waste_factors": {
+      "asphalt": 1.07,
+      "concrete_pavement": 1.05,
+      "granular_subbase": 1.03,
+      "crushed_rock_base": 1.05,
+      "pavers": 1.10
+    },
+    "productivity_benchmarks": {
+      "asphalt_paving_m2_per_hour": 120,
+      "concrete_paving_m2_per_hour": 50,
+      "kerb_and_channel_m_per_day": 80,
+      "equipment": "Asphalt paver (6-7m width), vibratory roller (10T), concrete slip-form paver"
+    }
+  },
+  "notes": [
+    "Class R covers all road pavement layers from sub-base to wearing course",
+    "Earthworks (excavation, fill) are measured separately in Class E",
+    "Drainage is measured in Classes I, J, K, L",
+    "Australian road design follows Austroads AGPT (most comprehensive pavement design guide)",
+    "All measurements in m² (area) except kerbs (m linear) and signs (nr)"
+  ]
+}
