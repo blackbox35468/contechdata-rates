@@ -1,0 +1,852 @@
+{
+  "metadata": {
+    "standard": "CESMM4",
+    "class_code": "E",
+    "class_name": "EARTHWORKS",
+    "version": "4th Edition",
+    "created_date": "2026-01-03",
+    "description": "Civil Engineering Standard Method of Measurement - Class E measurement rules for earthworks",
+    "source_file": "CESSM4_Complete_Reference.html",
+    "australian_context": "Applied to Australian civil construction projects with references to AS standards"
+  },
+  "scope": {
+    "includes": [
+      "Excavation",
+      "Dredging",
+      "Filling",
+      "Compaction",
+      "Disposal",
+      "Landscaping"
+    ],
+    "excludes": [
+      "Excavation for ground investigation (Class B)",
+      "Excavation for specialist processes (Class C)",
+      "Excavation for piling (Class P)",
+      "Excavation for pipework (Class L)"
+    ]
+  },
+  "coverage_rules": {
+    "C1": {
+      "rule_id": "C1",
+      "summary": "Items for excavation shall be classified by location and material type",
+      "links_to": ["A1", "D1", "M2"],
+      "australian_note": "Material classification aligns with AS 1289 soil classification standards"
+    },
+    "C2": {
+      "rule_id": "C2",
+      "summary": "Item descriptions for excavation below a body of water",
+      "links_to": ["A2", "D2"],
+      "australian_note": "Subject to environmental permits and water quality management plans"
+    },
+    "C3": {
+      "rule_id": "C3",
+      "summary": "Items for excavation within confined areas or under live services",
+      "links_to": ["A3"],
+      "australian_note": "Dial Before You Dig requirements apply; must identify all services"
+    },
+    "C4": {
+      "rule_id": "C4",
+      "summary": "Items for filling shall be classified by material type and compaction requirements",
+      "links_to": ["A12", "D7", "M16"],
+      "australian_note": "Compaction requirements typically specified to AS 1289.5.1 (Standard) or AS 1289.5.2 (Modified)"
+    },
+    "C5": {
+      "rule_id": "C5",
+      "summary": "Items for landscaping shall be measured separately",
+      "links_to": ["A20", "A21", "M26"],
+      "australian_note": "Native species preferred for erosion control and environmental compliance"
+    }
+  },
+  "measurement_rules": {
+    "M1": {
+      "rule_id": "M1",
+      "summary": "Measurement in accordance with CESMM4 paragraph 5",
+      "application": "General measurement principles for all earthworks"
+    },
+    "M2": {
+      "rule_id": "M2",
+      "summary": "The Commencing Surface shall be identified for all excavation measurement",
+      "links_to": ["D1", "C1", "A1", "A4"],
+      "application": "Establishes baseline elevation from which excavation depths are measured",
+      "australian_note": "Typically referenced to AHD (Australian Height Datum)"
+    },
+    "M3": {
+      "rule_id": "M3",
+      "summary": "Excavation classed by material type (topsoil, other material, rock, artificial hard material)",
+      "links_to": ["D2", "A2"],
+      "application": "Material classification determines excavation method and productivity rates"
+    },
+    "M4": {
+      "rule_id": "M4",
+      "summary": "Measurement of excavation from borrow pits shall be deemed to include haulage",
+      "links_to": ["A3"],
+      "application": "Import of fill material from off-site sources"
+    },
+    "M5": {
+      "rule_id": "M5",
+      "summary": "An item shall be given for disposal where method is otherwise uncertain",
+      "application": "Separate measurement for disposal when not included in excavation item"
+    },
+    "M6": {
+      "rule_id": "M6",
+      "summary": "The volume measured for excavation",
+      "application": "Volumes measured in m³ to stated depth or thickness"
+    },
+    "M7": {
+      "rule_id": "M7",
+      "summary": "The volume measured for excavation identified in the description",
+      "application": "Specific volume measurements requiring detailed description"
+    },
+    "M8": {
+      "rule_id": "M8",
+      "summary": "An isolated volume of excavation shall be identified separately",
+      "application": "Separate measurement for discrete excavation areas"
+    },
+    "M9": {
+      "rule_id": "M9",
+      "summary": "The volume measured for disposal",
+      "application": "Disposal volumes include bulking factors"
+    },
+    "M10": {
+      "rule_id": "M10",
+      "summary": "Trimming of excavated surfaces measured in m²",
+      "links_to": ["D5", "A8"],
+      "application": "Surface preparation after excavation (batters, base slabs)"
+    },
+    "M11": {
+      "rule_id": "M11",
+      "summary": "Preparation of excavated surfaces includes trimming",
+      "application": "Surface finishing before placing concrete or fill"
+    },
+    "M12": {
+      "rule_id": "M12",
+      "summary": "The volume of disposal of excavated material",
+      "links_to": ["A10"],
+      "application": "Separate item for off-site disposal including haulage"
+    },
+    "M13": {
+      "rule_id": "M13",
+      "summary": "Double handling of hazardous materials shall state method",
+      "application": "Contaminated soil management and remediation",
+      "australian_note": "Must comply with EPA Victoria/NSW contaminated land regulations"
+    },
+    "M14": {
+      "rule_id": "M14",
+      "summary": "Dredging to remove silt from waterbodies",
+      "application": "Underwater excavation measurement"
+    },
+    "M15": {
+      "rule_id": "M15",
+      "summary": "The area measured for surface treatments",
+      "application": "Measured in m² for surface-based operations"
+    },
+    "M16": {
+      "rule_id": "M16",
+      "summary": "Filling of excavations shall be measured as placed volume",
+      "links_to": ["D7", "C4", "A12"],
+      "application": "Compacted in-place volume measurement"
+    },
+    "M17": {
+      "rule_id": "M17",
+      "summary": "Where filling to form embankments, material shall be classed as excavated rock only when compaction requirements are specified for the same filling",
+      "links_to": ["D8"],
+      "application": "Rock fill classification and compaction specification"
+    },
+    "M18": {
+      "rule_id": "M18",
+      "summary": "Additional filling thickness such as in drainage layers",
+      "links_to": ["A15"],
+      "application": "Measurement of granular sub-base and drainage layers"
+    },
+    "M19": {
+      "rule_id": "M19",
+      "summary": "The volume of imported fill shall be stated to stated depth or thickness",
+      "application": "Imported material from off-site sources with specified depth"
+    },
+    "M20": {
+      "rule_id": "M20",
+      "summary": "Where rock filling is specified: (a) horizontal (b) sloping (c) vertical",
+      "application": "Measurement classification by placement orientation"
+    },
+    "M21": {
+      "rule_id": "M21",
+      "summary": "Where filling is to be subject to specific compaction requirements",
+      "application": "Compaction specification linkage"
+    },
+    "M22": {
+      "rule_id": "M22",
+      "summary": "High energy impact compaction measured separately",
+      "application": "Heavy compaction for structural fills (>95% modified)"
+    },
+    "M23": {
+      "rule_id": "M23",
+      "summary": "Trimming of filled surfaces measured in m²",
+      "links_to": ["D10", "A18"],
+      "application": "Surface preparation after fill placement"
+    },
+    "M24": {
+      "rule_id": "M24",
+      "summary": "Preparation of filled surfaces at 45°–90° to the horizontal",
+      "application": "Batter slope finishing and surface treatment"
+    },
+    "M25": {
+      "rule_id": "M25",
+      "summary": "The area of additional surface treatments",
+      "application": "Erosion control, mulching, stabilization"
+    },
+    "M26": {
+      "rule_id": "M26",
+      "summary": "The lengths of hedges measured in linear metres",
+      "links_to": ["C5", "A20"],
+      "application": "Landscaping and boundary vegetation"
+    }
+  },
+  "definition_rules": {
+    "D1": {
+      "rule_id": "D1",
+      "summary": "Excavated material shall be classified by type",
+      "links_to": ["C1", "A1"],
+      "material_types": [
+        "Topsoil (vegetated surface material)",
+        "Material other than topsoil, rock, or artificial hard material (general soil/clay/sand)",
+        "Rock (requires breaking or blasting)",
+        "Stated artificial hard material (concrete, asphalt, masonry)"
+      ]
+    },
+    "D2": {
+      "rule_id": "D2",
+      "summary": "Excavation in or under water or below services",
+      "links_to": ["A2"],
+      "application": "Special excavation conditions requiring additional measures"
+    },
+    "D3": {
+      "rule_id": "D3",
+      "summary": "Excavation from within body of water (dredging)",
+      "application": "Underwater excavation operations"
+    },
+    "D4": {
+      "rule_id": "D4",
+      "summary": "Controlled and hazardous materials include removal and replacement; excavation for foundations shall be specified",
+      "application": "Contaminated soil handling and remediation"
+    },
+    "D5": {
+      "rule_id": "D5",
+      "summary": "Disposal of excavated material includes off-site haulage",
+      "links_to": ["A8"],
+      "application": "Waste management and environmental compliance"
+    },
+    "D6": {
+      "rule_id": "D6",
+      "summary": "Trimming, preparation of surfaces",
+      "application": "Surface finishing operations post-excavation/fill"
+    },
+    "D7": {
+      "rule_id": "D7",
+      "summary": "Filling material shall be classified by source and type",
+      "links_to": ["C4", "A12"],
+      "fill_types": [
+        "Excavated topsoil (from site clearing)",
+        "Excavated other material (general soil from site cuts)",
+        "Excavated rock (blasted or broken rock from site)",
+        "Imported topsoil",
+        "Imported granular fill (select fill, sand, gravel)",
+        "Imported rock fill"
+      ]
+    },
+    "D8": {
+      "rule_id": "D8",
+      "summary": "Filling material shall be classed as excavated rock only when compaction requirements are specified for the same filling",
+      "application": "Rock fill specification and compaction linkage"
+    },
+    "D9": {
+      "rule_id": "D9",
+      "summary": "Filling shall be classed by placement method and compaction",
+      "application": "Compaction standards (90%, 95%, 98% modified/standard)"
+    },
+    "D10": {
+      "rule_id": "D10",
+      "summary": "Trimming and preparation of filled surfaces",
+      "links_to": ["A18"],
+      "application": "Surface finishing after compaction"
+    }
+  },
+  "additional_description_rules": {
+    "A1": {
+      "rule_id": "A1",
+      "summary": "The location and limits of excavation shall be stated",
+      "application": "Specify excavation boundaries, depths, and reference levels"
+    },
+    "A2": {
+      "rule_id": "A2",
+      "summary": "Item descriptions for excavation types and special conditions",
+      "application": "Detail material type, method, and constraints"
+    },
+    "A3": {
+      "rule_id": "A3",
+      "summary": "The location and limits of borrow pits",
+      "application": "Specify source location and haulage distance for imported fill"
+    },
+    "A4": {
+      "rule_id": "A4",
+      "summary": "The Commencing Surface shall be defined",
+      "application": "Establish baseline elevation/datum for measurement"
+    },
+    "A5": {
+      "rule_id": "A5",
+      "summary": "Item descriptions for excavation materials and conditions",
+      "application": "Describe soil type, moisture, contamination, etc."
+    },
+    "A6": {
+      "rule_id": "A6",
+      "summary": "Item descriptions shall state specific details",
+      "application": "Complete description including all relevant attributes"
+    },
+    "A7": {
+      "rule_id": "A7",
+      "summary": "Item descriptions for excavation ancillaries",
+      "application": "Support operations (dewatering, shoring, trimming)"
+    },
+    "A8": {
+      "rule_id": "A8",
+      "summary": "Item descriptions for disposal and handling",
+      "application": "Specify disposal method, distance, and environmental compliance"
+    },
+    "A9": {
+      "rule_id": "A9",
+      "summary": "Item descriptions for specific excavation conditions",
+      "application": "Detail constraints (depth, access, water table, services)"
+    },
+    "A10": {
+      "rule_id": "A10",
+      "summary": "Where material is for reuse or disposal",
+      "application": "Specify destination (on-site stockpile, off-site disposal, reuse location)"
+    },
+    "A11": {
+      "rule_id": "A11",
+      "summary": "Item descriptions for classified materials",
+      "application": "Hazardous, contaminated, or special handling materials"
+    },
+    "A12": {
+      "rule_id": "A12",
+      "summary": "The materials shall be specified for filling",
+      "application": "Detail fill type, source, grading, and compaction requirements"
+    },
+    "A13": {
+      "rule_id": "A13",
+      "summary": "Where different materials or conditions apply",
+      "application": "Separate items for varying material types or placement conditions"
+    },
+    "A14": {
+      "rule_id": "A14",
+      "summary": "Where the rate of compaction or settlement",
+      "application": "Specify compaction method, equipment, and acceptance criteria"
+    },
+    "A15": {
+      "rule_id": "A15",
+      "summary": "The materials shall be stated for imported fill",
+      "application": "Describe imported material specifications and source"
+    },
+    "A16": {
+      "rule_id": "A16",
+      "summary": "Item descriptions for filling types and methods",
+      "application": "Detail placement method (layers, thickness, moisture control)"
+    },
+    "A17": {
+      "rule_id": "A17",
+      "summary": "Item descriptions for high energy compaction",
+      "application": "Specify compaction equipment and energy requirements"
+    },
+    "A18": {
+      "rule_id": "A18",
+      "summary": "Item descriptions for filled surface finishing",
+      "application": "Detail surface treatment (grading, leveling, erosion control)"
+    },
+    "A19": {
+      "rule_id": "A19",
+      "summary": "The type and grade of materials",
+      "application": "Specify material standards and quality requirements"
+    },
+    "A20": {
+      "rule_id": "A20",
+      "summary": "Where turfing is pegged or specified details",
+      "application": "Turfing method, species, watering, and establishment"
+    },
+    "A21": {
+      "rule_id": "A21",
+      "summary": "Item descriptions for turfing and landscaping",
+      "application": "Detail vegetation type, planting density, and maintenance"
+    }
+  },
+  "measurement_divisions": {
+    "division_structure": "CESMM4 uses 3-division coding: 1st (category), 2nd (type), 3rd (classification)",
+    "items": [
+      {
+        "item_number": 1,
+        "first_division": {
+          "code": "E1",
+          "description": "Excavation by dredging",
+          "unit": "m³",
+          "australian_context": "Underwater excavation for channels, basins, port works"
+        },
+        "second_division": [
+          {
+            "code": "E1.1",
+            "description": "Topsoil",
+            "unit": "m³"
+          },
+          {
+            "code": "E1.2",
+            "description": "Material other than topsoil, rock or artificial hard material",
+            "unit": "m³"
+          },
+          {
+            "code": "E1.3",
+            "description": "Rock",
+            "unit": "m³"
+          },
+          {
+            "code": "E1.4",
+            "description": "Artificial hard material",
+            "unit": "m³"
+          }
+        ],
+        "third_division": {
+          "description": "None typically specified for dredging - bulk volume measurement"
+        }
+      },
+      {
+        "item_number": 2,
+        "first_division": {
+          "code": "E2",
+          "description": "Excavation for cuttings",
+          "unit": "m³",
+          "australian_context": "Bulk earthworks for roads, building platforms, drainage channels"
+        },
+        "second_division": [
+          {
+            "code": "E2.1",
+            "description": "Topsoil",
+            "unit": "m³"
+          },
+          {
+            "code": "E2.2",
+            "description": "Material other than topsoil, rock or artificial hard material",
+            "unit": "m³",
+            "notes": "Most common - clay, sand, silt, gravel mixtures"
+          },
+          {
+            "code": "E2.3",
+            "description": "Rock",
+            "unit": "m³"
+          },
+          {
+            "code": "E2.4",
+            "description": "Artificial hard material",
+            "unit": "m³"
+          }
+        ],
+        "third_division": {
+          "description": "None specified - measured as bulk volume"
+        }
+      },
+      {
+        "item_number": 3,
+        "first_division": {
+          "code": "E3",
+          "description": "Excavation for foundations",
+          "unit": "m³",
+          "australian_context": "Footing trenches, pad footings, pier excavations"
+        },
+        "second_division": [
+          {
+            "code": "E3.1",
+            "description": "Topsoil",
+            "unit": "m³"
+          },
+          {
+            "code": "E3.2",
+            "description": "Material other than topsoil, rock or artificial hard material",
+            "unit": "m³"
+          },
+          {
+            "code": "E3.3",
+            "description": "Rock",
+            "unit": "m³"
+          },
+          {
+            "code": "E3.4",
+            "description": "Artificial hard material",
+            "unit": "m³"
+          }
+        ],
+        "third_division": {
+          "options": [
+            {
+              "code": "E3.x.1",
+              "description": "Maximum depth not exceeding 0.25m"
+            },
+            {
+              "code": "E3.x.2",
+              "description": "Maximum depth 0.25-0.5m"
+            },
+            {
+              "code": "E3.x.3",
+              "description": "Maximum depth 0.5-1.0m"
+            },
+            {
+              "code": "E3.x.4",
+              "description": "Maximum depth 1.0-2.0m"
+            },
+            {
+              "code": "E3.x.5",
+              "description": "Maximum depth 2.0-4.0m"
+            },
+            {
+              "code": "E3.x.6",
+              "description": "Maximum depth exceeding 4.0m"
+            }
+          ]
+        }
+      },
+      {
+        "item_number": 4,
+        "first_division": {
+          "code": "E4",
+          "description": "General excavation",
+          "unit": "m³",
+          "australian_context": "Site leveling, bulk cuts not classified as cuttings or foundations"
+        },
+        "second_division": [
+          {
+            "code": "E4.1",
+            "description": "Topsoil",
+            "unit": "m³"
+          },
+          {
+            "code": "E4.2",
+            "description": "Material other than topsoil, rock or artificial hard material",
+            "unit": "m³"
+          },
+          {
+            "code": "E4.3",
+            "description": "Rock",
+            "unit": "m³"
+          },
+          {
+            "code": "E4.4",
+            "description": "Stated artificial hard material exposed not exceeding 0.25m",
+            "unit": "m³",
+            "notes": "Thin pavements, surface slabs, thin concrete layers"
+          }
+        ],
+        "third_division": {
+          "description": "None specified - bulk measurement"
+        }
+      },
+      {
+        "item_number": 5,
+        "first_division": {
+          "code": "E5",
+          "description": "Excavation ancillaries",
+          "unit": "m²",
+          "australian_context": "Surface preparation, trimming, and finishing operations"
+        },
+        "second_division": [
+          {
+            "code": "E5.1",
+            "description": "Trimming of excavated surfaces",
+            "unit": "m²",
+            "subdivisions": [
+              {
+                "code": "E5.1.1",
+                "description": "Topsoil"
+              },
+              {
+                "code": "E5.1.2",
+                "description": "Material other than topsoil, rock or artificial hard material"
+              },
+              {
+                "code": "E5.1.3",
+                "description": "Rock"
+              }
+            ]
+          },
+          {
+            "code": "E5.2",
+            "description": "Preparation of excavated surfaces",
+            "unit": "m²",
+            "notes": "Includes compaction, proof rolling, moisture conditioning"
+          }
+        ],
+        "third_division": {
+          "description": "Material type classification only (per M10)"
+        }
+      },
+      {
+        "item_number": 6,
+        "first_division": {
+          "code": "E6",
+          "description": "Filling",
+          "unit": "m³",
+          "australian_context": "Controlled fill placement with specified compaction"
+        },
+        "second_division": [
+          {
+            "code": "E6.1",
+            "description": "To structures (backfill around foundations, retaining walls)",
+            "unit": "m³"
+          },
+          {
+            "code": "E6.2",
+            "description": "To make up levels (platform fills, site leveling)",
+            "unit": "m³"
+          },
+          {
+            "code": "E6.3",
+            "description": "General filling (embankments, berms)",
+            "unit": "m³"
+          }
+        ],
+        "third_division": {
+          "material_types": [
+            {
+              "code": "E6.x.1",
+              "description": "Excavated topsoil"
+            },
+            {
+              "code": "E6.x.2",
+              "description": "Excavated other material"
+            },
+            {
+              "code": "E6.x.3",
+              "description": "Excavated rock"
+            },
+            {
+              "code": "E6.x.4",
+              "description": "Imported topsoil"
+            },
+            {
+              "code": "E6.x.5",
+              "description": "Imported granular fill (select fill)"
+            },
+            {
+              "code": "E6.x.6",
+              "description": "Imported rock fill"
+            }
+          ],
+          "compaction_classification": [
+            {
+              "code": "E6.x.x.A",
+              "description": "No compaction specified"
+            },
+            {
+              "code": "E6.x.x.B",
+              "description": "Compacted to 90% Standard Proctor (AS 1289.5.1)",
+              "australian_use": "General landscaping, non-structural fills"
+            },
+            {
+              "code": "E6.x.x.C",
+              "description": "Compacted to 95% Modified Proctor (AS 1289.5.2)",
+              "australian_use": "Structural fills, building platforms, retaining wall backfill"
+            },
+            {
+              "code": "E6.x.x.D",
+              "description": "Compacted to 98% Modified Proctor (AS 1289.5.2)",
+              "australian_use": "Road sub-base, heavy industrial floors"
+            }
+          ]
+        }
+      },
+      {
+        "item_number": 7,
+        "first_division": {
+          "code": "E7",
+          "description": "Filling ancillaries",
+          "unit": "m²",
+          "australian_context": "Surface finishing after fill placement"
+        },
+        "second_division": [
+          {
+            "code": "E7.1",
+            "description": "Trimming of filled surfaces",
+            "unit": "m²",
+            "subdivisions": [
+              {
+                "code": "E7.1.1",
+                "description": "Topsoil"
+              },
+              {
+                "code": "E7.1.2",
+                "description": "Other material"
+              }
+            ]
+          },
+          {
+            "code": "E7.2",
+            "description": "Preparation of filled surfaces",
+            "unit": "m²",
+            "notes": "Proof rolling, final grading, moisture conditioning"
+          }
+        ],
+        "third_division": {
+          "description": "Material type classification only (per M23)"
+        }
+      },
+      {
+        "item_number": 8,
+        "first_division": {
+          "code": "E8",
+          "description": "Landscaping",
+          "unit": "m² or m (linear for hedges)",
+          "australian_context": "Erosion control, vegetation establishment, environmental compliance"
+        },
+        "second_division": [
+          {
+            "code": "E8.1",
+            "description": "Turfing",
+            "unit": "m²",
+            "notes": "Turf species, pegging, watering requirements"
+          },
+          {
+            "code": "E8.2",
+            "description": "Seeding",
+            "unit": "m²",
+            "notes": "Grass seed mix, mulching, erosion control matting"
+          },
+          {
+            "code": "E8.3",
+            "description": "Planting",
+            "unit": "nr (number)",
+            "notes": "Trees, shrubs, groundcovers - native species preferred"
+          },
+          {
+            "code": "E8.4",
+            "description": "Hedges",
+            "unit": "m (linear)",
+            "notes": "Height, spacing, species"
+          }
+        ],
+        "third_division": {
+          "description": "None specified - species and planting density stated in descriptions"
+        }
+      }
+    ]
+  },
+  "template_mapping": {
+    "description": "Mapping of Australian civils templates to CESMM4 measurement items",
+    "mappings": [
+      {
+        "template_id": "au-civ-earthwork-cut-clay-1000m3",
+        "template_name": "Bulk Earthwork - Cut (Clay)",
+        "cesmm4_primary_item": "E2",
+        "cesmm4_code": "E2.2",
+        "description": "Excavation for cuttings - Material other than topsoil, rock",
+        "measurement_unit": "m³",
+        "key_rules": ["M2", "M3", "M5", "M6", "D1", "A1", "A2"],
+        "australian_compliance": {
+          "soil_classification": "AS 1289 - Clay classification",
+          "disposal_requirements": "EPA waste tracking (>5m³ off-site)",
+          "environmental": "Erosion and sediment control plan required"
+        }
+      },
+      {
+        "template_id": "au-civ-earthwork-fill-select-1000m3",
+        "template_name": "Bulk Earthwork - Fill (Select)",
+        "cesmm4_primary_item": "E6",
+        "cesmm4_code": "E6.2.5.C",
+        "description": "Filling to make up levels - Imported granular fill - Compacted to 95% Modified",
+        "measurement_unit": "m³",
+        "key_rules": ["M16", "M17", "M21", "D7", "D9", "A12", "A14"],
+        "australian_compliance": {
+          "compaction_standard": "AS 1289.5.2 - Modified Proctor 95%",
+          "material_specification": "AS 1289.3.6 - CBR testing for select fill",
+          "testing_frequency": "1 density test per 500m³ or layer"
+        }
+      },
+      {
+        "template_id": "au-civ-siteprep-small-1ha",
+        "template_name": "Site Preparation - Small",
+        "cesmm4_primary_items": ["E2.1", "E6.1.1"],
+        "description": "Topsoil stripping (E2.1) + stockpiling/respread (E6.1.1)",
+        "measurement_unit": "m³",
+        "key_rules": ["M2", "M3", "M10", "D1", "A1"],
+        "australian_compliance": {
+          "topsoil_depth": "AS 4419 - Soils for landscaping (minimum 100mm)",
+          "stockpile_management": "EPA erosion control during stockpile period"
+        }
+      },
+      {
+        "template_id": "au-civ-siteprep-large-5ha",
+        "template_name": "Site Preparation - Large",
+        "cesmm4_primary_items": ["E2.1", "E5.1.1"],
+        "description": "Topsoil excavation (E2.1) + trimming (E5.1.1) + off-site disposal",
+        "measurement_unit": "m³ for excavation, m² for trimming",
+        "key_rules": ["M2", "M3", "M10", "M12", "D1", "D5"],
+        "australian_compliance": {
+          "disposal_tracking": "EPA waste tracking for >20m³ loads",
+          "environmental": "Sediment control during stripping operations"
+        }
+      },
+      {
+        "template_id": "au-civ-excavation-rock-500m3",
+        "template_name": "Excavation - Rock",
+        "cesmm4_primary_item": "E2.3",
+        "cesmm4_code": "E2.3 or E4.3",
+        "description": "Excavation for cuttings - Rock (requires breaking/blasting)",
+        "measurement_unit": "m³",
+        "key_rules": ["M3", "M6", "D1", "A2", "A5"],
+        "australian_compliance": {
+          "blasting_permits": "Local council explosives permit required",
+          "vibration_monitoring": "AS 2187.2 - Vibration limits for nearby structures",
+          "safety": "Shot firer license, exclusion zones, blast design documentation"
+        }
+      }
+    ]
+  },
+  "australian_context": {
+    "standards_references": {
+      "AS_1289": "Methods of testing soils for engineering purposes",
+      "AS_1289_5_1": "Soil compaction and density tests - Standard compaction",
+      "AS_1289_5_2": "Soil compaction and density tests - Modified compaction",
+      "AS_1289_3_6": "Soil classification and strength tests - CBR",
+      "AS_2187_2": "Explosives - Storage and use - Use of explosives",
+      "AS_4419": "Soils for landscaping and garden use",
+      "AS_1726": "Geotechnical site investigations"
+    },
+    "environmental_compliance": {
+      "EPA_Victoria": "Environment Protection Act - sediment and erosion control",
+      "EPA_NSW": "Contaminated land management regulations",
+      "waste_tracking": "Off-site disposal tracking for volumes >5m³ (urban) or >20m³ (rural)",
+      "dial_before_you_dig": "Mandatory service location before excavation (1100)"
+    },
+    "industry_practice": {
+      "bulking_factors": {
+        "clay": 1.25,
+        "sand": 1.15,
+        "rock": 1.60,
+        "mixed_soil": 1.30,
+        "note": "Applied to cut material for disposal volume calculation"
+      },
+      "compaction_shrinkage": {
+        "select_fill_95_modified": 0.90,
+        "select_fill_98_modified": 0.85,
+        "general_fill_90_standard": 0.95,
+        "note": "Shrinkage factor - 1m³ loose fill compacts to X m³ in-place"
+      },
+      "productivity_benchmarks": {
+        "excavation_clay_m3_per_hour": 15,
+        "excavation_sand_m3_per_hour": 20,
+        "excavation_rock_m3_per_hour": 6,
+        "compaction_95_modified_m3_per_hour": 30,
+        "equipment": "20-30T excavator, 10-15T vibratory roller"
+      }
+    }
+  },
+  "notes": [
+    "This reference file provides CESMM4 Class E measurement framework adapted for Australian civil construction",
+    "All rule texts are abbreviated - consult official CESMM4 standard for complete rule definitions",
+    "Australian Standards references (AS) provide local compliance requirements",
+    "Bulking and compaction factors are industry benchmarks - verify with geotechnical testing",
+    "Template mapping enables automated CESMM4 code assignment during estimate generation"
+  ]
+}
